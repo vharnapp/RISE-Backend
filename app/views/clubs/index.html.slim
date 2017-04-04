@@ -1,0 +1,23 @@
+h1 Listing clubs
+
+table
+  thead
+    tr
+      th Name
+      th String
+      th
+      th
+      th
+
+  tbody
+    - @clubs.each do |club|
+      tr
+        td = club.name
+        td = club.string
+        td = link_to 'Show', club
+        td = link_to 'Edit', edit_club_path(club)
+        td = link_to 'Destroy', club, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Club', new_club_path
