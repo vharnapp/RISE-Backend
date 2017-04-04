@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@import "normalize-rails";
+
+@import "bourbon";
+$visual-grid: true;
+$visual-grid-color: #9cf !default;
+$visual-grid-index: front !default;
+$visual-grid-opacity: 0.1 !default;
+@import "neat";
+
+@import "base/base";
+@import "refills/flashes";
+@import "refills/navigation";
+@import "refills/footer";
+
+@import "athletefit_backend";
+
