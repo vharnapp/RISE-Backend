@@ -14,6 +14,9 @@ class User < ApplicationRecord
   acts_as_user roles: ROLES
   roles ROLES
 
+  has_many :affiliations
+  has_many :teams, through: :affiliations
+
   validates :email,
             presence: true,
             format: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,8}\z/i,
