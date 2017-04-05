@@ -39,3 +39,13 @@ you can deploy to staging and production with:
 
     % ./bin/deploy staging
     % ./bin/deploy production
+
+# Set Heroku Config Vars
+
+    heroku config:set FORCE_SEED=1
+    heroku config:set SEGMENT_ANALYTICS_RUBY_KEY=''
+    heroku config:set SMTP_ADDRESS=''
+    heroku config:set SMTP_DOMAIN=''
+    heroku config:set SMTP_PASSWORD=''
+    heroku config:set SMTP_USERNAME=''
+    heroku config:set APPLICATION_HOST='athletefit.headway.io'
