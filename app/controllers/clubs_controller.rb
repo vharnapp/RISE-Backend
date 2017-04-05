@@ -53,6 +53,6 @@ class ClubsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def club_params
-      params.require(:club).permit(:name, :string)
+      params.require(:club).permit(:name)
     end
 end
