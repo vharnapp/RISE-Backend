@@ -1,4 +1,9 @@
 h2 Editing User
 
 = simple_form_for(@user, url: admin_user_path(@user), html: { method: :put }) do |f|
-  = render partial: 'users/form', locals: { f: f, user: @user }
+  = errors_for(@user)
+  .form-inputs
+    = render partial: 'users/form', locals: { f: f, user: @user }
+
+  .form-actions
+    = f.button :submit, 'Update'

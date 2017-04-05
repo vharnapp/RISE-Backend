@@ -10,22 +10,37 @@ module Admin
       respond_with(@users)
     end
 
-    def destroy
-      @user.destroy
-      flash[:notice] = 'User destroyed'
-      redirect_to admin_users_path
+    def new
+      @user = User.new
+    end
+
+    def create
+      @user = User.new(user_params)
+      @user.roles << :admin if params[:admin] && params[:admin] == 'true'
+      if @user.save
+        flash[:notice] = "User successfully created#{@user.admin? ? ' as an admin' : ''}"
+        redirect_to admin_users_path
+      else
+        render :new
+      end
     end
 
     def edit; end
 
     def update
       if @user.update(user_params)
-        flash[:notice] = 'User successfully destroyed'
+        flash[:notice] = 'User successfully updated'
         redirect_to admin_users_path
       else
         flash[:error] = 'An error occurred'
         render :edit
       end
+    end
+
+    def destroy
+      @user.destroy
+      flash[:notice] = 'User successfully destroyed'
+      redirect_to admin_users_path
     end
 
     def impersonate
