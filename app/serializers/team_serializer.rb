@@ -6,6 +6,7 @@ end
 #
 # Table name: teams
 #
+#  club_id    :integer
 #  created_at :datetime         not null
 #  id         :integer          not null, primary key
 #  name       :string

@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :team do
-    name "MyString"
+    name 'Headway'
   end
 end
 
@@ -8,6 +8,7 @@ end
 #
 # Table name: teams
 #
+#  club_id    :integer
 #  created_at :datetime         not null
 #  id         :integer          not null, primary key
 #  name       :string
