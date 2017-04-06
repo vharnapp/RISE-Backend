@@ -13,6 +13,8 @@ class Team < ApplicationRecord
            through: :player_affiliations,
            class_name: 'User',
            source: :user
+
+  validates :name, presence: true
 end
 
 # == Schema Information

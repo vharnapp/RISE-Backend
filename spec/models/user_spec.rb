@@ -4,7 +4,7 @@ RSpec.describe User, type: :model do
   describe 'constants' do
     context 'roles' do
       it 'has the admin role' do
-        expect(User::ROLES).to eq([:admin])
+        expect(User::ROLES).to eq([:admin, :club_admin, :coach, :player])
       end
     end
   end
@@ -13,6 +13,11 @@ RSpec.describe User, type: :model do
     it { is_expected.to validate_presence_of(:email) }
     it { is_expected.to validate_presence_of(:password) }
     it { is_expected.to validate_presence_of(:password_confirmation) }
+  end
+
+  describe 'associations' do
+    it { is_expected.to have_many(:affiliations) }
+    it { is_expected.to have_many(:teams) }
   end
 
   context '#tester?' do

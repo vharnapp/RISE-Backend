@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   # Permissions cascade/inherit through the roles listed below. The order of
   # this list is important, it should progress from least to most privelage
-  ROLES = [:admin].freeze
+  ROLES = [:admin, :club_admin, :coach, :player].freeze
   acts_as_user roles: ROLES
   roles ROLES
 

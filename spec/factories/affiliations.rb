@@ -1,8 +1,5 @@
 FactoryGirl.define do
   factory :affiliation do
-    user nil
-    team nil
-    coach false
   end
 end
 

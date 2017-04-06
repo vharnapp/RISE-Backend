@@ -23,7 +23,8 @@ module AthletefitBackend
     config.generators do |g|
       g.helper false
       g.javascript_engine false
-      g.request_specs false
+      g.request_specs true
+      g.controller_specs false
       g.routing_specs false
       g.stylesheets false
       g.test_framework :rspec

@@ -1,5 +1,7 @@
 class Club < ApplicationRecord
   has_many :teams
+
+  validates :name, presence: true
 end
 
 # == Schema Information
