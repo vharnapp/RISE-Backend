@@ -23,7 +23,7 @@ module Admin
       @user.roles << :player     if params[:player]     && params[:player] == 'true'
 
       if @user.save
-        team_id = params['user']['team_ids'].reject{ |a| a.blank? }.first
+        team_id = params['user']['team_ids'].reject(&:blank?).first
         if params[:coach] && params[:coach] == 'true'
           a = Affiliation.find_by(user_id: @user.id, team_id: team_id)
           a.update(coach: true)

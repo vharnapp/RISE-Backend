@@ -32,9 +32,9 @@ gem 'slim-rails'
 gem 'gon' # pass variables betwween rails and javascript. Several examples in the application_controller.rb
 gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
+gem 'jsonapi-utils', '~> 0.6.0.beta'
 gem 'nprogress-rails' # Show request progress when a link is clicked
 gem 'responders' # respond to json/html/js more easily in controllers
-gem 'jsonapi-utils', '~> 0.6.0.beta'
 gem 'turbolinks'
 
 # Authentication / Authorization

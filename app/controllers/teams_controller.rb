@@ -18,7 +18,8 @@ class TeamsController < ApplicationController
     @team = Team.new(team_params)
 
     if @team.save
-      redirect_to club_path(@team.club), notice: 'Team was successfully created.'
+      flash[:notice] = 'Team was successfully created.'
+      redirect_to club_path(@team.club)
     else
       render :new
     end
@@ -26,7 +27,8 @@ class TeamsController < ApplicationController
 
   def update
     if @team.update(team_params)
-      redirect_to teams_path, notice: 'Team was successfully updated.'
+      flash[:notice] = 'Team was successfully updated.'
+      redirect_to club_team_path(@team.club, @team)
     else
       render :edit
     end
