@@ -22,6 +22,7 @@ end
 #  reset_password_token   :string
 #  roles_mask             :integer
 #  sign_in_count          :integer          default(0), not null
+#  slug                   :string
 #  updated_at             :datetime         not null
 #  uuid                   :string
 #
@@ -30,4 +31,5 @@ end
 #  index_users_on_authentication_token  (authentication_token) UNIQUE
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
+#  index_users_on_slug                  (slug) UNIQUE
 #

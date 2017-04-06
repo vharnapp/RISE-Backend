@@ -11,5 +11,10 @@ end
 #  created_at :datetime         not null
 #  id         :integer          not null, primary key
 #  name       :string
+#  slug       :string
 #  updated_at :datetime         not null
+#
+# Indexes
+#
+#  index_clubs_on_slug  (slug) UNIQUE
 #

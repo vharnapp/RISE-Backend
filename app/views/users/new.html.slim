@@ -1,0 +1,12 @@
+h2 Add Affiliation
+
+= simple_form_for(@user) do |f|
+  = errors_for(@user)
+  .form-inputs
+    = render partial: 'users/form', locals: { f: f, user: @user }
+
+  .clearfix
+    br
+
+  .form-actions
+    = f.button :submit, 'Create'

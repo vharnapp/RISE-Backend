@@ -1,7 +1,10 @@
 class Team < ApplicationRecord
+  extend FriendlyId
+  friendly_id :name
+
   belongs_to :club
 
-  has_many :affiliations
+  has_many :affiliations, dependent: :destroy
   has_many :coach_affiliations,  -> { coaches }, class_name: 'Affiliation'
   has_many :player_affiliations, -> { players }, class_name: 'Affiliation'
 
@@ -25,5 +28,10 @@ end
 #  created_at :datetime         not null
 #  id         :integer          not null, primary key
 #  name       :string
+#  slug       :string
 #  updated_at :datetime         not null
+#
+# Indexes
+#
+#  index_teams_on_slug  (slug) UNIQUE
 #

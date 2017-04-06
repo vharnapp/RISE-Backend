@@ -4,6 +4,10 @@ class Affiliation < ApplicationRecord
 
   scope :coaches, (-> { where(coach: true) })
   scope :players, (-> { where(coach: false) })
+
+  def title
+    coach ? 'Coach' : 'Player'
+  end
 end
 
 # == Schema Information

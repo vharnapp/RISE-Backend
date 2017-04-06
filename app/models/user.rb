@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  extend FriendlyId
+  friendly_id :full_name
+
   acts_as_token_authenticatable
 
   # Include default devise modules. Others available are:
@@ -10,11 +13,11 @@ class User < ApplicationRecord
 
   # Permissions cascade/inherit through the roles listed below. The order of
   # this list is important, it should progress from least to most privelage
-  ROLES = [:admin, :club_admin, :coach, :player].freeze
+  ROLES = [:player, :coach, :club_admin, :admin].freeze
   acts_as_user roles: ROLES
   roles ROLES
 
-  has_many :affiliations
+  has_many :affiliations, dependent: :destroy
   has_many :teams, through: :affiliations
 
   validates :email,
@@ -34,6 +37,14 @@ class User < ApplicationRecord
 
   def tester?
     (email =~ /(example.com|headway.io)$/).present?
+  end
+
+  def full_name
+    first_name + ' ' + last_name
+  end
+
+  def role_list
+    roles.map(&:to_s).map(&:titleize).join(', ')
   end
 
   private
@@ -67,6 +78,7 @@ end
 #  reset_password_token   :string
 #  roles_mask             :integer
 #  sign_in_count          :integer          default(0), not null
+#  slug                   :string
 #  updated_at             :datetime         not null
 #  uuid                   :string
 #
@@ -75,4 +87,5 @@ end
 #  index_users_on_authentication_token  (authentication_token) UNIQUE
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
+#  index_users_on_slug                  (slug) UNIQUE
 #
