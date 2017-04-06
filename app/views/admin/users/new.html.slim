@@ -1,0 +1,14 @@
+h2 Add User
+
+= simple_form_for(@user, url: admin_users_path, html: { method: :post }) do |f|
+  = errors_for(@user)
+  .form-inputs
+    = render partial: 'users/form', locals: { f: f, user: @user }
+    = label_tag 'admin', 'Admin?', style: 'float: left;'
+    = check_box_tag 'admin', 'true', false, style: 'margin-left: 8px;'
+
+  .clearfix
+    br
+
+  .form-actions
+    = f.button :submit, 'Create'
