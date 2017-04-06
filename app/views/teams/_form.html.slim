@@ -1,8 +1,7 @@
 = simple_form_for(@team) do |f|
   = f.error_notification
 
-  .form-inputs
-    = f.association :club
+  = f.input :club_id, input_html: { value: @club.id, hidden: true }, label: false
 
   .form-inputs
     = f.input :name

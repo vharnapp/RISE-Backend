@@ -6,13 +6,18 @@ class TeamsController < ApplicationController
     @teams = Team.all
   end
 
-  def show; end
+  def show
+    @club = Club.find(params[:club_id])
+  end
 
   def new
     @team = Team.new
+    @club = Club.find(params[:club_id])
   end
 
-  def edit; end
+  def edit
+    @club = Club.find(params[:club_id])
+  end
 
   def create
     @team = Team.new(team_params)
@@ -36,7 +41,8 @@ class TeamsController < ApplicationController
 
   def destroy
     @team.destroy
-    redirect_to teams_url, notice: 'Team was successfully destroyed.'
+    flash[:notice] = 'Team was successfully destroyed.'
+    redirect_to club_path(@team.club)
   end
 
   private

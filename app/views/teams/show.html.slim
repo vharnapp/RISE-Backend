@@ -25,6 +25,8 @@ br
 br
 br
 
-= link_to 'Edit', edit_team_path(@team)
+= link_to 'Edit', edit_club_team_path(@club, @team)
 '  |
 = link_to 'Back', club_path(@team.club)
+'  |
+= link_to 'Destroy', team_path(@team), method: :delete, data: { confirm: 'Are you sure?' }
