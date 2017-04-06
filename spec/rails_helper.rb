@@ -38,7 +38,9 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = false
 
   config.include Devise::Test::ControllerHelpers, type: :controller
-  config.include RequestSpecHelper, type: :request
+  config.include Request::SessionHelpers, type: :request
+  config.include Request::JsonHelpers, type: :request
+  config.include Request::HeadersHelpers, type: :request
   config.include Features::SessionHelpers, type: :feature
   # config.include Paperclip::Shoulda::Matchers
 
@@ -60,6 +62,10 @@ RSpec.configure do |config|
     # Sidekiq::Testing.fake!
     # # This runs jobs immediately in the same thread
     # Sidekiq::Testing.inline! if spec.metadata[:inline]
+  end
+
+  config.before(:each, type: :request) do
+    include_default_accept_headers
   end
 
   config.before(:suite) do

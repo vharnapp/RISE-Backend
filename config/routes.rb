@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :clubs
+  resources :teams
   devise_for :users, controllers: {
     registrations: 'devise_customizations/registrations',
   }

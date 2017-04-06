@@ -31,6 +31,7 @@ describe 'Retrieve user list from API', type: :request do
 
       expect(response.status).to eq 200
     end
+
     it 'returns value user JSON matching schema' do
       user = create(:user, :admin)
       token_header_params = { 'X-User-Email': user.email,
