@@ -34,17 +34,18 @@ class User < ApplicationRecord
   validates :password_confirmation,
             presence: true,
             on: :create
+  validates :first_name, :last_name, presence: true
 
   def tester?
     (email =~ /(example.com|headway.io)$/).present?
   end
 
   def full_name
-    first_name + ' ' + last_name
+    "#{first_name} #{last_name}"
   end
 
   def role_list
-    roles.map(&:to_s).map(&:titleize).join(', ')
+    roles.map(&:to_s).map(&:titleize).sort.join(', ')
   end
 
   private

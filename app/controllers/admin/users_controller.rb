@@ -14,13 +14,17 @@ module Admin
       @user = User.new
     end
 
+    # TODO: (2017-04-08) jon => extract this to a service object or form object
+    # after looking at the wireframes and figuring out how the UI will handle
+    # these user additions.
+    # rubocop:disable Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/LineLength
     def create
       @user = User.new(user_params)
 
-      @user.roles << :admin      if params[:admin]      && params[:admin] == 'true'
-      @user.roles << :club_admin if params[:club_admin] && params[:club_admin] == 'true'
-      @user.roles << :coach      if params[:coach]      && params[:coach] == 'true'
-      @user.roles << :player     if params[:player]     && params[:player] == 'true'
+      %i[admin club_admin coach player].each do |role|
+        next unless params[role] && params[role] == 'true'
+        @user.roles << role
+      end
 
       if @user.save
         team_id = params['user']['team_ids'].reject(&:blank?).first
@@ -30,7 +34,8 @@ module Admin
         end
 
         if params[:player] && params[:player] == 'true'
-          Affiliation.where(user_id: @user.id, team_id: team_id, coach: false).first_or_create
+          attrs = { user_id: @user.id, team_id: team_id, coach: false }
+          Affiliation.where(attrs).first_or_create
         end
 
         flash[:notice] = "User successfully created as: #{@user.role_list}"
@@ -44,6 +49,7 @@ module Admin
         render :new
       end
     end
+    # rubocop:enable Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/LineLength
 
     def edit; end
 

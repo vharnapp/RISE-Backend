@@ -1,30 +1,20 @@
 class TeamsController < ApplicationController
-  load_and_authorize_resource
+  load_and_authorize_resource :club
+  load_and_authorize_resource through: :club
 
-  def index
-    @club = Club.find(params[:club_id])
-    @teams = Team.all
-  end
-
-  def show
-    @club = Club.find(params[:club_id])
-  end
+  def show; end
 
   def new
     @team = Team.new
-    @club = Club.find(params[:club_id])
   end
 
-  def edit
-    @club = Club.find(params[:club_id])
-  end
+  def edit; end
 
   def create
     @team = Team.new(team_params)
 
     if @team.save
-      flash[:notice] = 'Team was successfully created.'
-      redirect_to club_path(@team.club)
+      redirect_to club_path(@club), notice: 'Team was successfully created.'
     else
       render :new
     end
@@ -33,7 +23,7 @@ class TeamsController < ApplicationController
   def update
     if @team.update(team_params)
       flash[:notice] = 'Team was successfully updated.'
-      redirect_to club_team_path(@team.club, @team)
+      redirect_to club_team_path(@club, @team)
     else
       render :edit
     end
@@ -41,8 +31,7 @@ class TeamsController < ApplicationController
 
   def destroy
     @team.destroy
-    flash[:notice] = 'Team was successfully destroyed.'
-    redirect_to club_path(@team.club)
+    redirect_to club_path(@club), notice: 'Club was successfully destroyed.'
   end
 
   private
