@@ -20,7 +20,6 @@ end
 #
 # Table name: users
 #
-#  authentication_token   :string(30)
 #  created_at             :datetime         not null
 #  current_sign_in_at     :datetime
 #  current_sign_in_ip     :inet
@@ -42,7 +41,6 @@ end
 #
 # Indexes
 #
-#  index_users_on_authentication_token  (authentication_token) UNIQUE
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #  index_users_on_slug                  (slug) UNIQUE

@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   check_authorization unless: :devise_or_pages_controller?
   impersonates :user
-  acts_as_token_authentication_handler_for User
 
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user!, unless: -> { is_a?(HighVoltage::PagesController) }

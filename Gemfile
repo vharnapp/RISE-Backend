@@ -32,7 +32,6 @@ gem 'slim-rails'
 gem 'gon' # pass variables betwween rails and javascript. Several examples in the application_controller.rb
 gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
-gem 'jsonapi-utils', '~> 0.6.0.beta'
 gem 'nprogress-rails' # Show request progress when a link is clicked
 gem 'responders' # respond to json/html/js more easily in controllers
 gem 'turbolinks'
@@ -41,8 +40,10 @@ gem 'turbolinks'
 gem 'canard', git: 'https://github.com/jondkinney/canard.git', branch: 'feature/fixed-generators-and-rails-5' # ties into cancancan, adds roles for the user
 gem 'cancancan' # authorization library
 gem 'devise'
+gem 'devise-doorkeeper'
+gem 'doorkeeper'
+gem 'jsonapi-utils', '~> 0.6.0.beta'
 gem 'pretender' # impersonate users as an admin
-gem 'simple_token_authentication', '~> 1.0' # adds token authentication to Devise
 
 # Database Tweaks
 gem 'active_model_serializers', '~> 0.10.0'
@@ -94,6 +95,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 
   # Customizations
+  gem 'airborne', github: 'mcasper/airborne', branch: 'ruby-2-4-warnings'
   gem 'letter_opener' # auto-open emails when they're sent
   gem 'redcarpet' # used to render the readme inside a static welcome page from the high_voltage gem
   gem 'rubocop'

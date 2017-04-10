@@ -2,12 +2,10 @@ class User < ApplicationRecord
   extend FriendlyId
   friendly_id :full_name
 
-  acts_as_token_authenticatable
-
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable,
+         :trackable, :validatable, :doorkeeper
 
   before_create :generate_uuid
 
@@ -63,7 +61,6 @@ end
 #
 # Table name: users
 #
-#  authentication_token   :string(30)
 #  created_at             :datetime         not null
 #  current_sign_in_at     :datetime
 #  current_sign_in_ip     :inet
@@ -85,7 +82,6 @@ end
 #
 # Indexes
 #
-#  index_users_on_authentication_token  (authentication_token) UNIQUE
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #  index_users_on_slug                  (slug) UNIQUE

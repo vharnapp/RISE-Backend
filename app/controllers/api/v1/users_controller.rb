@@ -23,18 +23,15 @@ module Api
 
       def update
         if @user.update_attributes(user_params)
-          respond_with(@user)
+          jsonapi_render json: @user, status: :updated
         else
-          respond_with_errors(@user)
+          jsonapi_render_errors json: @user, status: :unprocessable_entity
         end
       end
 
       def destroy
-        if @user.destroy
-          render json: {}, status: 204
-        else
-          render json: {}, status: 500
-        end
+        @user.destroy
+        head :no_content
       end
 
       private

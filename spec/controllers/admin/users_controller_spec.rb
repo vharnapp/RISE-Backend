@@ -26,15 +26,19 @@ RSpec.describe Admin::UsersController, type: :request do
           end
 
           it 'lists all users as json' do
-            token_header_params = {
-              'X-User-Email': admin_user.email,
-              'X-User-Token': admin_user.authentication_token,
+            user_attributes = {
+              first_name: user.first_name,
+              last_name: user.last_name,
+              full_name: user.full_name,
+              email: user.email,
             }
 
-            get admin_users_url, headers: token_header_params, as: :json
+            authenticate(admin_user)
 
-            expect(response.content_type).to eq('application/json')
-            expect(response).to have_http_status(:success)
+            authed_get api_v1_users_path
+
+            expect_status :ok
+            expect_attributes_in_list(user_attributes)
           end
         end
 

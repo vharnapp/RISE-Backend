@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  use_doorkeeper
+
   resources :clubs do
     resources :teams
   end
@@ -37,13 +39,6 @@ Rails.application.routes.draw do
     get 'sign-out', to: 'devise/sessions#destroy'
   end
   root 'high_voltage/pages#show', id: 'welcome'
-
-  # API-specific routes
-  # namespace 'api' do
-  #   namespace 'v1' do
-  #     resources :users, except: [:new, :edit]
-  #   end
-  # end
 
   namespace 'api' do
     namespace 'v1' do
