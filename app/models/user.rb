@@ -5,7 +5,7 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable,
-         :trackable, :validatable, :doorkeeper
+         :trackable, :validatable, :token_authenticatable
 
   before_create :generate_uuid
 
@@ -14,6 +14,8 @@ class User < ApplicationRecord
   ROLES = [:player, :coach, :club_admin, :admin].freeze
   acts_as_user roles: ROLES
   roles ROLES
+
+  has_many :authentication_tokens, dependent: :destroy
 
   has_many :affiliations, dependent: :destroy
   has_many :teams, through: :affiliations

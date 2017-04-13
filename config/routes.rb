@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  use_doorkeeper
-
   resources :clubs do
     resources :teams
   end

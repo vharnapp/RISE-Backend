@@ -1,13 +1,8 @@
 module HttpHelpers
-  def authenticate(user, scopes: 'public')
-    @doorkeeper_app ||= Doorkeeper::Application.last
-
-    @access_token =
-      Doorkeeper::AccessToken.create!(
-        application_id: @doorkeeper_app.id,
-        resource_owner_id: user.id,
-        scopes: scopes,
-      )
+  def authenticate(user)
+    request = double(remote_ip: '127.0.0.1', user_agent: 'RSpec')
+    @user = user
+    @authentication_token = Tiddle.create_and_return_token(user, request)
   end
 
   def authed_get(endpoint, opts = {})
@@ -51,17 +46,13 @@ module HttpHelpers
   private
 
   def auth_header
-    { 'Authorization' => "Bearer #{@access_token.token}" }
+    {
+      'X-User-Email' => @user.email,
+      'X-User-Token' => @authentication_token,
+    }
   end
 end
 
 RSpec.configure do |config|
   config.include HttpHelpers
-
-  config.before(:suite) do
-    Doorkeeper::Application.create!(
-      name: 'MyApp',
-      redirect_uri: 'https://host.name/oauth/callback',
-    )
-  end
 end
