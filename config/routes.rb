@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   devise_for :users, controllers: {
     registrations: 'devise_customizations/registrations',
+    sessions: 'devise_customizations/sessions',
   }
 
   resources :users do
@@ -35,6 +36,10 @@ Rails.application.routes.draw do
   devise_scope :user do
     get 'sign-in',  to: 'devise/sessions#new'
     get 'sign-out', to: 'devise/sessions#destroy'
+
+    # API-token creation aliases
+    post 'api/v1/sign_in', to: 'devise_customizations/sessions#create'
+    get 'api/v1/sign_out', to: 'devise_customizations/sessions#destroy'
   end
   root 'high_voltage/pages#show', id: 'welcome'
 

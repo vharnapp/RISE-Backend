@@ -1,10 +1,8 @@
 FactoryGirl.define do
   factory :authentication_token do
-    body "MyString"
-    user nil
-    last_used_at "2017-04-12 22:12:22"
-    ip_address "MyString"
-    user_agent "MyString"
+    body 'asdfjkl123'
+    ip_address '127.0.0.1'
+    user_agent 'RSpec'
   end
 end
 
