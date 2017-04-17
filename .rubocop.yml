@@ -85,3 +85,6 @@ Metrics/AbcSize:
 
 Style/SymbolArray:
   Enabled: false
+
+Style/AndOr:
+  Enabled: false
