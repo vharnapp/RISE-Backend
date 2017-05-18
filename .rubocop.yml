@@ -26,7 +26,7 @@ RSpec/MultipleExpectations:
   Max: 2
 
 RSpec/ExampleLength:
-  Max: 15
+  Max: 18
 
 Rails:
  Enabled: true
@@ -84,4 +84,7 @@ Metrics/AbcSize:
   Enabled: false
 
 Style/SymbolArray:
+  Enabled: false
+
+Style/AndOr:
   Enabled: false

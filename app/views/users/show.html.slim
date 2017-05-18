@@ -1,0 +1,10 @@
+h2
+  | Player:&nbsp;
+  = @user.full_name
+
+h3
+  | Teams:&nbsp;
+
+ul
+- @user.affiliations.each do |affiliation|
+  li= link_to "#{affiliation.team.name} (#{affiliation.title})", club_team_path(affiliation.team.club, affiliation.team)

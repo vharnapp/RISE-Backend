@@ -1,9 +1,6 @@
 class TeamsController < ApplicationController
-  load_and_authorize_resource
-
-  def index
-    @teams = Team.all
-  end
+  load_and_authorize_resource :club
+  load_and_authorize_resource through: :club
 
   def show; end
 
@@ -17,7 +14,7 @@ class TeamsController < ApplicationController
     @team = Team.new(team_params)
 
     if @team.save
-      redirect_to teams_path, notice: 'Team was successfully created.'
+      redirect_to club_path(@club), notice: 'Team was successfully created.'
     else
       render :new
     end
@@ -25,7 +22,8 @@ class TeamsController < ApplicationController
 
   def update
     if @team.update(team_params)
-      redirect_to teams_path, notice: 'Team was successfully updated.'
+      flash[:notice] = 'Team was successfully updated.'
+      redirect_to club_team_path(@club, @team)
     else
       render :edit
     end
@@ -33,7 +31,7 @@ class TeamsController < ApplicationController
 
   def destroy
     @team.destroy
-    redirect_to teams_url, notice: 'Team was successfully destroyed.'
+    redirect_to club_path(@club), notice: 'Club was successfully destroyed.'
   end
 
   private

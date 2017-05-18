@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   check_authorization unless: :devise_or_pages_controller?
   impersonates :user
-  acts_as_token_authentication_handler_for User
 
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user!, unless: -> { is_a?(HighVoltage::PagesController) }
@@ -11,7 +10,18 @@ class ApplicationController < ActionController::Base
   before_action :detect_device_type
 
   rescue_from CanCan::AccessDenied do |exception|
-    redirect_to root_path, alert: exception.message
+    respond_to do |format|
+      format.json do
+        render json: {
+          errors: [
+            title: exception.message,
+            status: '403',
+          ],
+        }, status: :forbidden
+      end
+
+      format.html { redirect_to root_path, alert: exception.message }
+    end
   end
 
   # Example Traditional Event: analytics_track(user, 'Created Widget', { widget_name: 'foo' })

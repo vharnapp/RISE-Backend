@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  # https://github.com/CanCanCommunity/cancancan/wiki/authorizing-controller-actions
-  # load_and_authorize_resource only: []
+  load_and_authorize_resource
   skip_authorization_check only: [:analytics_alias]
 
   def analytics_alias

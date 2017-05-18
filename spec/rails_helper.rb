@@ -15,6 +15,7 @@ require 'capybara/poltergeist'
 require 'shoulda/matchers'
 require 'database_cleaner'
 require 'cadre/rspec3'
+require 'airborne'
 # require 'sidekiq/testing'
 # require 'paperclip/matchers'
 
@@ -39,8 +40,6 @@ RSpec.configure do |config|
 
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Request::SessionHelpers, type: :request
-  config.include Request::JsonHelpers, type: :request
-  config.include Request::HeadersHelpers, type: :request
   config.include Features::SessionHelpers, type: :feature
   # config.include Paperclip::Shoulda::Matchers
 
@@ -62,10 +61,6 @@ RSpec.configure do |config|
     # Sidekiq::Testing.fake!
     # # This runs jobs immediately in the same thread
     # Sidekiq::Testing.inline! if spec.metadata[:inline]
-  end
-
-  config.before(:each, type: :request) do
-    include_default_accept_headers
   end
 
   config.before(:suite) do

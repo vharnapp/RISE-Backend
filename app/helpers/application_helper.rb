@@ -1,4 +1,5 @@
 module ApplicationHelper
+  # rubocop:disable Metrics/MethodLength
   def errors_for(object)
     return if object.errors.blank?
 
@@ -7,7 +8,7 @@ module ApplicationHelper
         content_tag(:div, class: 'panel-heading') do
           concat(
             content_tag(:h4, class: 'panel-title') do
-              concat("#{pluralize(object.errors.count, 'error')} prohibited this #{object.class.name.downcase} from being saved:")
+              concat("#{pluralize(object.errors.count, 'error')} prohibited this #{object.class.name.downcase} from being saved:") # rubocop:disable Metrics/LineLength
             end,
           )
         end,
@@ -25,4 +26,5 @@ module ApplicationHelper
       )
     end
   end
+  # rubocop:enable Metrics/MethodLength
 end

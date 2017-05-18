@@ -4,20 +4,37 @@ RSpec.describe User, type: :model do
   describe 'constants' do
     context 'roles' do
       it 'has the admin role' do
-        expect(User::ROLES).to eq([:admin, :club_admin, :coach, :player])
+        expect(User::ROLES).to eq([:player, :coach, :club_admin, :admin])
       end
     end
   end
 
   describe 'validations' do
-    it { is_expected.to validate_presence_of(:email) }
-    it { is_expected.to validate_presence_of(:password) }
-    it { is_expected.to validate_presence_of(:password_confirmation) }
+    context 'email' do
+      it { is_expected.to validate_presence_of(:email) }
+      context 'valid' do
+        it { is_expected.to allow_value('email@addresse.foo').for(:email) }
+      end
+      context 'invalid' do
+        it { is_expected.to_not allow_value('foo').for(:email) }
+        it { is_expected.to_not allow_value('foo@com').for(:email) }
+        it { is_expected.to_not allow_value('@foo.com').for(:email) }
+        it { is_expected.to_not allow_value('foo@.com').for(:email) }
+      end
+    end
+    context 'password' do
+      it { is_expected.to validate_presence_of(:password) }
+      it { is_expected.to validate_presence_of(:password_confirmation) }
+    end
+    context 'name' do
+      it { is_expected.to validate_presence_of(:first_name) }
+      it { is_expected.to validate_presence_of(:last_name) }
+    end
   end
 
   describe 'associations' do
-    it { is_expected.to have_many(:affiliations) }
-    it { is_expected.to have_many(:teams) }
+    it { is_expected.to have_many(:affiliations).dependent(:destroy) }
+    it { is_expected.to have_many(:teams).through(:affiliations) }
   end
 
   context '#tester?' do
@@ -31,6 +48,22 @@ RSpec.describe User, type: :model do
     it 'an email including the gmail.com domain is NOT a tester' do
       user = build(:user, email: 'asdf@gmail.com')
       expect(user.tester?).to eq(false)
+    end
+  end
+
+  context '#full_name' do
+    it 'concatenates the first and last names' do
+      user = build(:user)
+      expect("#{user.first_name} #{user.last_name}").to eq(user.full_name)
+    end
+  end
+
+  context '#role_list' do
+    it 'lists all the user roles in alphabetical order, comma separated' do
+      user = create(:user, :admin)
+      user.roles << :coach
+      user.save
+      expect(user.role_list).to eq('Admin, Coach')
     end
   end
 
@@ -51,7 +84,6 @@ end
 #
 # Table name: users
 #
-#  authentication_token   :string(30)
 #  created_at             :datetime         not null
 #  current_sign_in_at     :datetime
 #  current_sign_in_ip     :inet
@@ -67,12 +99,13 @@ end
 #  reset_password_token   :string
 #  roles_mask             :integer
 #  sign_in_count          :integer          default(0), not null
+#  slug                   :string
 #  updated_at             :datetime         not null
 #  uuid                   :string
 #
 # Indexes
 #
-#  index_users_on_authentication_token  (authentication_token) UNIQUE
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
+#  index_users_on_slug                  (slug) UNIQUE
 #

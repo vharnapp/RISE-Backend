@@ -1,60 +1,43 @@
 module Api
   module V1
     class UsersController < BaseApiController
-      authorize_resource
-      respond_to :json
+      load_and_authorize_resource
 
       def index
-        respond_with(User.all)
+        jsonapi_render json: User.all
       end
 
       def show
-        @user = User.find(params[:id])
-        respond_with(@user)
+        jsonapi_render json: @user
       end
 
       def create
         @user = User.new(user_params)
 
         if @user.save
-          respond_with @user do |format|
-            format.json { render json: @user, status: :created }
-          end
+          jsonapi_render json: @user, status: :created
         else
-          respond_with_errors(@user)
+          jsonapi_render_errors json: @user, status: :unprocessable_entity
         end
       end
 
       def update
-        @user = User.find(params[:id])
-
         if @user.update_attributes(user_params)
-          respond_with(@user)
+          jsonapi_render json: @user, status: :updated
         else
-          respond_with_errors(@user)
+          jsonapi_render_errors json: @user, status: :unprocessable_entity
         end
       end
 
       def destroy
-        user = User.find(params[:id])
-
-        if user.destroy
-          render json: {}, status: 204
-        else
-          render json: {}, status: 500
-        end
+        @user.destroy
+        head :no_content
       end
 
       private
 
       def user_params
-        params.require(:user).permit(
-          :first_name,
-          :last_name,
-          :email,
-          :password,
-          :password_confirmation,
-        )
+        resource_params
       end
     end
   end

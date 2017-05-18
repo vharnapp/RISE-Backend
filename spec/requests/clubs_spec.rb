@@ -8,8 +8,9 @@ RSpec.describe 'Clubs', type: :request do
   before { sign_in(admin_user) }
 
   describe 'GET /clubs' do
+    before { club } # let is lazy, force a club to the db
+
     it 'lists all clubs' do
-      club
       get clubs_path
       expect(response.body).to include(club.name)
     end
@@ -23,14 +24,14 @@ RSpec.describe 'Clubs', type: :request do
   end
 
   describe 'GET /clubs/new' do
-    it 'loads the new template' do
+    it 'responds successfully when loading the new action' do
       get new_club_path
       expect(response).to be_success
     end
   end
 
   describe 'GET /clubs/:id/edit' do
-    it 'loads the edit template' do
+    it 'responds successfully when loading the edit action' do
       get edit_club_path(club.id)
       expect(response).to be_success
     end
@@ -98,7 +99,7 @@ RSpec.describe 'Clubs', type: :request do
 
   describe 'DELETE clubs/:id' do
     it 'destroys the requested club' do
-      club
+      club # let is lazy, force a club to the db
       expect do
         delete club_path(club)
       end.to change(Club, :count).by(-1)

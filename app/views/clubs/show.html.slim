@@ -1,8 +1,21 @@
-p#notice = notice
-
-p
-  strong Name:
+h2
+  | Club:&nbsp;
   = @club.name
+
+h3
+  | Teams:&nbsp;
+
+ul
+- @club.teams.each do |team|
+  li= link_to team.name, club_team_path(team.club, team)
+
+br
+br
+
+= link_to 'Add Team', new_club_team_path(@club), class: 'btn'
+
+br
+br
 
 = link_to 'Edit', edit_club_path(@club)
 '  |

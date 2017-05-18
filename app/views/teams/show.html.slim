@@ -1,9 +1,32 @@
-p#notice = notice
-
-p
-  strong Name:
+h2
+  | Team:&nbsp;
   = @team.name
 
-= link_to 'Edit', edit_team_path(@team)
+h3
+  | Players:&nbsp;
+
+ul
+- @team.players.each do |player|
+  li= link_to player.full_name, user_path(player)
+
+br
+
+h3
+  | Coaches:&nbsp;
+
+ul
+- @team.coaches.each do |coach|
+  li= link_to coach.full_name, user_path(coach)
+
+br
+
+= link_to 'Add Affiliation', new_admin_user_path, class: 'btn'
+
+br
+br
+
+= link_to 'Edit', edit_club_team_path(@club, @team)
 '  |
-= link_to 'Back', teams_path
+= link_to 'Back', club_path(@team.club)
+'  |
+= link_to 'Destroy', team_path(@team), method: :delete, data: { confirm: 'Are you sure?' }

@@ -9,7 +9,9 @@ describe Canard::Abilities, '#users' do
   describe 'on User' do
     let(:user) { FactoryGirl.create(:user) }
 
-    it { is_expected.to be_able_to(:manage, acting_user) }
+    it { is_expected.to be_able_to(:show, acting_user) }
+    it { is_expected.to be_able_to(:edit, acting_user) }
+    it { is_expected.to be_able_to(:update, acting_user) }
     it { is_expected.to_not be_able_to(:manage, user) }
     it { is_expected.to_not be_able_to(:destroy, user) }
   end
