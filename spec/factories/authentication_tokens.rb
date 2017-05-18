@@ -1,8 +1,11 @@
 FactoryGirl.define do
   factory :authentication_token do
-    body 'asdfjkl123'
     ip_address '127.0.0.1'
     user_agent 'RSpec'
+    last_used_at { Time.current }
+    body do
+      Devise.token_generator.digest(AuthenticationToken, :body, 'asdfjkl123')
+    end
   end
 end
 
