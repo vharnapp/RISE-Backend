@@ -125,6 +125,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    administrate-field-paperclip (0.0.3)
+      administrate (~> 0.4)
+      rails (~> 5.0)
     airborne (0.2.12)
       activesupport
       rack
@@ -185,7 +188,10 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     choice (0.2.0)
     chronic (0.10.2)
+    climate_control (0.2.0)
     cliver (0.3.2)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     cocoon (1.2.10)
     coderay (1.1.1)
     coffee-rails (4.2.1)
@@ -451,6 +457,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mimemagic (0.3.2)
     mini_magick (4.7.0)
     mini_portile2 (2.1.0)
     minitest (5.10.2)
@@ -475,6 +482,12 @@ GEM
     paper_trail (7.0.2)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
+    paperclip (5.1.0)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (~> 0.3.0)
     parser (2.4.0.0)
       ast (~> 2.2)
     pg (0.20.0)
@@ -707,6 +720,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   administrate!
   administrate-field-nested_has_many!
+  administrate-field-paperclip
   airborne
   analytics-ruby (~> 2.2.2)
   annotate
@@ -755,6 +769,7 @@ DEPENDENCIES
   normalize-rails (~> 3.0.0)
   nprogress-rails
   paper_trail
+  paperclip
   pg
   poltergeist
   pretender

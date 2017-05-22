@@ -34,6 +34,9 @@ gem 'slim-rails'
 gem 'administrate', github: 'thoughtbot/administrate'
 gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-nested_has_many', branch: 'rails_5'
 
+gem 'administrate-field-paperclip'
+gem 'paperclip'
+
 # Javascript Tweaks
 gem 'gon' # pass variables betwween rails and javascript. Several examples in the application_controller.rb
 gem 'jquery-turbolinks'
