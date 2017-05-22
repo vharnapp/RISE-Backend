@@ -16,6 +16,16 @@ GIT
       activesupport (>= 3.0, < 5.2)
 
 GIT
+  remote: git://github.com/headwayio/administrate-field-nested_has_many.git
+  revision: 6a43ee6b472029599dbdfb72e81c378e7aadc1af
+  branch: rails_5
+  specs:
+    administrate-field-nested_has_many (0.1.0)
+      administrate (~> 0.7.0)
+      cocoon (~> 1.2)
+      rails (~> 5.1)
+
+GIT
   remote: git://github.com/rails/webpacker.git
   revision: 7426a9a1ecf45ab5a783d012672f6fec9e20b3b6
   specs:
@@ -23,6 +33,22 @@ GIT
       activesupport (>= 4.2)
       multi_json (~> 1.2)
       railties (>= 4.2)
+
+GIT
+  remote: git://github.com/thoughtbot/administrate.git
+  revision: 164fdf8257b12b0fee59589ec47bbac04fc9d13a
+  specs:
+    administrate (0.7.0)
+      actionpack (>= 4.2, < 5.2)
+      actionview (>= 4.2, < 5.2)
+      activerecord (>= 4.2, < 5.2)
+      autoprefixer-rails (>= 6.0)
+      datetime_picker_rails (~> 0.0.7)
+      jquery-rails (>= 4.0)
+      kaminari (>= 1.0)
+      momentjs-rails (~> 2.8)
+      sass-rails (~> 5.0)
+      selectize-rails (~> 0.6)
 
 GIT
   remote: https://github.com/jondkinney/canard.git
@@ -160,6 +186,7 @@ GEM
     choice (0.2.0)
     chronic (0.10.2)
     cliver (0.3.2)
+    cocoon (1.2.10)
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -175,6 +202,8 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     database_cleaner (1.6.1)
+    datetime_picker_rails (0.0.7)
+      momentjs-rails (>= 2.8.1)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -390,6 +419,18 @@ GEM
       railties (>= 4.1)
     jsonapi-utils (0.6.0.beta)
       jsonapi-resources (= 0.9.0)
+    kaminari (1.0.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.0.1)
+      kaminari-activerecord (= 1.0.1)
+      kaminari-core (= 1.0.1)
+    kaminari-actionview (1.0.1)
+      actionview
+      kaminari-core (= 1.0.1)
+    kaminari-activerecord (1.0.1)
+      activerecord
+      kaminari-core (= 1.0.1)
+    kaminari-core (1.0.1)
     launchy (2.4.3)
       addressable (~> 2.3)
     letter_opener (1.4.1)
@@ -413,6 +454,8 @@ GEM
     mini_magick (4.7.0)
     mini_portile2 (2.1.0)
     minitest (5.10.2)
+    momentjs-rails (2.17.1)
+      railties (>= 3.1)
     multi_json (1.12.1)
     multi_xml (0.6.0)
     neat (1.8.0)
@@ -566,6 +609,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    selectize-rails (0.12.4)
     selenium-webdriver (3.4.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
@@ -661,6 +705,8 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
+  administrate!
+  administrate-field-nested_has_many!
   airborne
   analytics-ruby (~> 2.2.2)
   annotate
