@@ -36,6 +36,8 @@ gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-
 
 gem 'administrate-field-paperclip'
 gem 'paperclip'
+gem 'paperclip-av-transcoder'
+gem 'aws-sdk', '~> 2.9'
 
 # Javascript Tweaks
 gem 'gon' # pass variables betwween rails and javascript. Several examples in the application_controller.rb
@@ -64,8 +66,8 @@ gem 'paper_trail' # version active record models and soft-delete by default
 gem 'settingslogic' # yaml settings (project wide, non-editable), this is implemented with the model Settings.rb
 
 # User Uploads
-gem 'carrierwave'
-gem 'fog'
+# gem 'carrierwave'
+# gem 'fog'
 gem 'mini_magick'
 
 # Cron Jobs

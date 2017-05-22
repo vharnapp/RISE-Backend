@@ -1,4 +1,4 @@
-class AddAttachmentKeyframeToPyramidModules < ActiveRecord::Migration
+class AddAttachmentKeyframeToPyramidModules < ActiveRecord::Migration[5.1]
   def self.up
     change_table :pyramid_modules do |t|
       t.attachment :keyframe

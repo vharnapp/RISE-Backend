@@ -1,4 +1,4 @@
-class AddAttachmentVideoToPyramidModules < ActiveRecord::Migration
+class AddAttachmentVideoToPyramidModules < ActiveRecord::Migration[5.1]
   def self.up
     change_table :pyramid_modules do |t|
       t.attachment :video

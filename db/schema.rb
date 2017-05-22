@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170413031222) do
+ActiveRecord::Schema.define(version: 20170522033020) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -74,6 +74,22 @@ ActiveRecord::Schema.define(version: 20170413031222) do
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+  end
+
+  create_table "pyramid_modules", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.text "description"
+    t.string "keyframe_content_type"
+    t.string "keyframe_file_name"
+    t.integer "keyframe_file_size"
+    t.datetime "keyframe_updated_at"
+    t.string "name"
+    t.integer "track"
+    t.datetime "updated_at", null: false
+    t.string "video_content_type"
+    t.string "video_file_name"
+    t.integer "video_file_size"
+    t.datetime "video_updated_at"
   end
 
   create_table "teams", force: :cascade do |t|

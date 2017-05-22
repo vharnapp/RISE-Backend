@@ -13,6 +13,7 @@ html[lang="en"]
     title
       = title
     = stylesheet_link_tag :application, media: "all"
+    = render 'javascript'
     link[rel="apple-touch-icon" href="/assets/apple-touch-icon.png"]
     = csrf_meta_tags
     = favicon_link_tag 'favicon.ico'
@@ -27,5 +28,4 @@ html[lang="en"]
       .main
         = yield
       = render 'refills/footer'
-      = render 'javascript'
       = render 'css_overrides'

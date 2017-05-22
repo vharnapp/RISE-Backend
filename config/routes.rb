@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+    resources :pyramid_modules
+
     resources :users do
       member do
         get 'impersonate'
@@ -27,6 +29,8 @@ Rails.application.routes.draw do
         get 'stop_impersonating'
       end
     end
+
+    root to: "users#index"
   end
 
   authenticated :user do
