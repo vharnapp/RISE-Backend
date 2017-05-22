@@ -5,7 +5,10 @@ ruby '2.4.0'
 # ruby-gemset=athletefit_backend
 
 gem 'autoprefixer-rails'
-gem 'delayed_job_active_record'
+
+gem 'delayed_job_active_record', github: 'collectiveidea/delayed_job_active_record', branch: 'gogovan-rails-5-1'
+gem 'delayed_job', github: 'dsander/delayed_job', branch: 'rails51'
+
 gem 'flutie'
 gem 'honeybadger'
 gem 'jquery-rails'
@@ -13,7 +16,7 @@ gem 'normalize-rails', '~> 3.0.0'
 gem 'pg'
 gem 'puma'
 gem 'rack-canonical-host'
-gem 'rails', '~> 5.1.0.rc1'
+gem 'rails', '~> 5.1.1'
 gem 'recipient_interceptor'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
@@ -94,7 +97,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 
   # Customizations
-  gem 'airborne', github: 'mcasper/airborne', branch: 'ruby-2-4-warnings'
+  gem 'airborne'
   gem 'letter_opener' # auto-open emails when they're sent
   gem 'redcarpet' # used to render the readme inside a static welcome page from the high_voltage gem
   gem 'rubocop'
