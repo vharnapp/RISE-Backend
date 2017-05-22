@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pyramid_modules
   resources :clubs do
     resources :teams
   end

@@ -1,0 +1,2 @@
+class PyramidModule < ApplicationRecord
+end
