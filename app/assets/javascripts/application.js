@@ -15,6 +15,5 @@
 //= require jquery_ujs
 //
 // ... your other scripts here ...
-//= require cocoon
 //
 //= require turbolinks

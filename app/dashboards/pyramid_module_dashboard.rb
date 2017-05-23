@@ -14,8 +14,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     track: EnumField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    video: Field::Paperclip,
-    keyframe: Field::Paperclip,
+    video: PaperclipVideoField,
+    keyframe: KeyframeField,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -35,8 +35,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     :name,
     :description,
     :track,
-    :video,
     :keyframe,
+    :video,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -46,14 +46,14 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     :name,
     :description,
     :track,
-    :video,
     :keyframe,
+    :video,
   ].freeze
 
   # Overwrite this method to customize how pyramid modules are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(pyramid_module)
-  #   "PyramidModule ##{pyramid_module.id}"
-  # end
+  def display_resource(pyramid_module)
+    pyramid_module.name
+  end
 end

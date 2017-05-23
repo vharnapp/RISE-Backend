@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git://github.com/headwayio/administrate-field-nested_has_many.git
-  revision: 2335448bd7fa9b03e6cd4e94497a07f945aec2fd
+  revision: d349b6a97648ade84f5c0d6c1fd76866f7031590
   branch: rails_5
   specs:
     administrate-field-nested_has_many (0.1.0)
