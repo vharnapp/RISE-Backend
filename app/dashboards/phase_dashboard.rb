@@ -1,6 +1,6 @@
 require 'administrate/base_dashboard'
 
-class PyramidModuleDashboard < Administrate::BaseDashboard
+class PhaseDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,18 +8,12 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
+    pyramid_module: Field::BelongsTo,
     id: Field::Number,
     name: Field::String,
-    description: Field::Text,
-    track: EnumField,
+    supplemental: Field::Boolean,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    video: PaperclipVideoField,
-    keyframe: KeyframeField,
-    phases: Field::NestedHasMany.with_options(
-      skip: [:pyramid_module],
-      limit: 10,
-    ),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -29,37 +23,31 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :name,
-    :description,
-    :track,
+    :pyramid_module,
+    :supplemental,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :name,
-    :description,
-    :track,
-    :keyframe,
-    :video,
-    :phases,
+    :pyramid_module,
+    :supplemental,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :pyramid_module,
     :name,
-    :description,
-    :track,
-    :keyframe,
-    :video,
-    :phases,
+    :supplemental,
   ].freeze
 
-  # Overwrite this method to customize how pyramid modules are displayed
+  # Overwrite this method to customize how phases are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(pyramid_module)
-    pyramid_module.name
+  def display_resource(phase)
+    phase.name
   end
 end

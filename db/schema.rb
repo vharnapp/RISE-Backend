@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170522033020) do
+ActiveRecord::Schema.define(version: 20170524145531) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -76,6 +76,15 @@ ActiveRecord::Schema.define(version: 20170522033020) do
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
   end
 
+  create_table "phases", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.bigint "pyramid_module_id"
+    t.boolean "supplemental", default: false, null: false
+    t.datetime "updated_at", null: false
+    t.index ["pyramid_module_id"], name: "index_phases_on_pyramid_module_id"
+  end
+
   create_table "pyramid_modules", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.text "description"
@@ -127,5 +136,6 @@ ActiveRecord::Schema.define(version: 20170522033020) do
   add_foreign_key "affiliations", "teams"
   add_foreign_key "affiliations", "users"
   add_foreign_key "authentication_tokens", "users"
+  add_foreign_key "phases", "pyramid_modules"
   add_foreign_key "teams", "clubs"
 end

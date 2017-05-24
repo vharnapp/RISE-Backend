@@ -40,6 +40,9 @@ class PyramidModule < ApplicationRecord
 
   validates_attachment_content_type :video, content_type: %r{\Avideo\/.*\Z}
   validates :name, :description, :track, :keyframe, presence: true
+
+  has_many :phases
+  accepts_nested_attributes_for :phases
 end
 
 # == Schema Information

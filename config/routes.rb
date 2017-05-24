@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :phases
   resources :pyramid_modules
   resources :clubs do
     resources :teams
@@ -19,6 +20,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :pyramid_modules
+    resources :phases
 
     resources :users do
       member do
