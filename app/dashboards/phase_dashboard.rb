@@ -12,6 +12,8 @@ class PhaseDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     supplemental: Field::Boolean,
+    video: PaperclipVideoField,
+    keyframe: KeyframeField,
     workouts: Field::NestedHasMany.with_options(
       skip: [:phase],
       limit: 30,
@@ -37,6 +39,8 @@ class PhaseDashboard < Administrate::BaseDashboard
     :name,
     :pyramid_module,
     :supplemental,
+    :keyframe,
+    :video,
     :workouts,
   ].freeze
 
@@ -47,6 +51,8 @@ class PhaseDashboard < Administrate::BaseDashboard
     :pyramid_module,
     :name,
     :supplemental,
+    :keyframe,
+    :video,
     :workouts,
   ].freeze
 

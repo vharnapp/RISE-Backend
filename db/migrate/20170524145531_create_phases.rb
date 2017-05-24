@@ -4,6 +4,8 @@ class CreatePhases < ActiveRecord::Migration[5.1]
       t.string :name
       t.references :pyramid_module, foreign_key: true, index: true
       t.boolean :supplemental, default: false, null: false
+      t.attachment :video
+      t.attachment :keyframe
 
       t.timestamps
     end

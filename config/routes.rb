@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :exercises
   resources :workouts
   resources :phases
   resources :pyramid_modules
@@ -23,6 +24,7 @@ Rails.application.routes.draw do
     resources :pyramid_modules
     resources :phases
     resources :workouts
+    resources :exercises
 
     resources :users do
       member do

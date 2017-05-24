@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170524154801) do
+ActiveRecord::Schema.define(version: 20170524184949) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -64,6 +64,33 @@ ActiveRecord::Schema.define(version: 20170524154801) do
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
   end
 
+  create_table "exercise_workouts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.bigint "exercise_id"
+    t.datetime "updated_at", null: false
+    t.bigint "workout_id"
+    t.index ["exercise_id"], name: "index_exercise_workouts_on_exercise_id"
+    t.index ["workout_id"], name: "index_exercise_workouts_on_workout_id"
+  end
+
+  create_table "exercises", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.text "description"
+    t.string "keyframe_content_type"
+    t.string "keyframe_file_name"
+    t.integer "keyframe_file_size"
+    t.datetime "keyframe_updated_at"
+    t.string "name"
+    t.integer "reps"
+    t.string "rest"
+    t.integer "sets"
+    t.datetime "updated_at", null: false
+    t.string "video_content_type"
+    t.string "video_file_name"
+    t.integer "video_file_size"
+    t.datetime "video_updated_at"
+  end
+
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.datetime "created_at"
     t.string "scope"
@@ -78,10 +105,18 @@ ActiveRecord::Schema.define(version: 20170524154801) do
 
   create_table "phases", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.string "keyframe_content_type"
+    t.string "keyframe_file_name"
+    t.integer "keyframe_file_size"
+    t.datetime "keyframe_updated_at"
     t.string "name"
     t.bigint "pyramid_module_id"
     t.boolean "supplemental", default: false, null: false
     t.datetime "updated_at", null: false
+    t.string "video_content_type"
+    t.string "video_file_name"
+    t.integer "video_file_size"
+    t.datetime "video_updated_at"
     t.index ["pyramid_module_id"], name: "index_phases_on_pyramid_module_id"
   end
 
@@ -144,6 +179,8 @@ ActiveRecord::Schema.define(version: 20170524154801) do
   add_foreign_key "affiliations", "teams"
   add_foreign_key "affiliations", "users"
   add_foreign_key "authentication_tokens", "users"
+  add_foreign_key "exercise_workouts", "exercises"
+  add_foreign_key "exercise_workouts", "workouts"
   add_foreign_key "phases", "pyramid_modules"
   add_foreign_key "teams", "clubs"
   add_foreign_key "workouts", "phases"

@@ -1,6 +1,6 @@
 require 'administrate/base_dashboard'
 
-class WorkoutDashboard < Administrate::BaseDashboard
+class ExerciseDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -9,12 +9,13 @@ class WorkoutDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
-    phase: Field::BelongsTo,
     name: Field::String,
-    exercises: Field::NestedHasMany.with_options(
-      skip: [:workout],
-      limit: 30,
-    ),
+    description: Field::Text,
+    sets: Field::Number,
+    reps: Field::Number,
+    rest: Field::String,
+    video: PaperclipVideoField,
+    keyframe: KeyframeField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -26,30 +27,41 @@ class WorkoutDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :name,
-    :phase,
+    :description,
+    :sets,
+    :reps,
+    :rest,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :phase,
     :name,
-    :exercises,
+    :description,
+    :sets,
+    :reps,
+    :rest,
+    :keyframe,
+    :video,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :phase,
     :name,
-    :exercises,
+    :description,
+    :sets,
+    :reps,
+    :rest,
+    :keyframe,
+    :video,
   ].freeze
 
-  # Overwrite this method to customize how workouts are displayed
+  # Overwrite this method to customize how exercises are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(workout)
-  #   "Workout ##{workout.id}"
+  # def display_resource(exercise)
+  #   "Exercise ##{exercise.id}"
   # end
 end

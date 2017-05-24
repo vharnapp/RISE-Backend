@@ -1,21 +1,12 @@
-class PyramidModule < ApplicationRecord
-  include HasAttachedVideo
+require 'rails_helper'
 
-  enum track: {
-    speed: 0,
-    skill: 1,
-    strength: 2,
-  }
-
-  validates :name, :description, :track, presence: true
-
-  has_many :phases
-  accepts_nested_attributes_for :phases
+RSpec.describe Exercise, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
 end
 
 # == Schema Information
 #
-# Table name: pyramid_modules
+# Table name: exercises
 #
 #  created_at            :datetime         not null
 #  description           :text
@@ -25,7 +16,9 @@ end
 #  keyframe_file_size    :integer
 #  keyframe_updated_at   :datetime
 #  name                  :string
-#  track                 :integer
+#  reps                  :integer
+#  rest                  :string
+#  sets                  :integer
 #  updated_at            :datetime         not null
 #  video_content_type    :string
 #  video_file_name       :string

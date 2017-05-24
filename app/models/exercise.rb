@@ -1,21 +1,20 @@
-class PyramidModule < ApplicationRecord
+class Exercise < ApplicationRecord
   include HasAttachedVideo
 
-  enum track: {
-    speed: 0,
-    skill: 1,
-    strength: 2,
-  }
+  has_many :exercise_workouts
+  has_many :workouts, through: :exercise_workouts
 
-  validates :name, :description, :track, presence: true
-
-  has_many :phases
-  accepts_nested_attributes_for :phases
+  validates :name,
+            :description,
+            :sets,
+            :reps,
+            :rest,
+            presence: true
 end
 
 # == Schema Information
 #
-# Table name: pyramid_modules
+# Table name: exercises
 #
 #  created_at            :datetime         not null
 #  description           :text
@@ -25,7 +24,9 @@ end
 #  keyframe_file_size    :integer
 #  keyframe_updated_at   :datetime
 #  name                  :string
-#  track                 :integer
+#  reps                  :integer
+#  rest                  :string
+#  sets                  :integer
 #  updated_at            :datetime         not null
 #  video_content_type    :string
 #  video_file_name       :string

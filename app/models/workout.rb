@@ -1,5 +1,12 @@
 class Workout < ApplicationRecord
   belongs_to :phase
+
+  has_many :exercise_workouts
+  has_many :exercises, through: :exercise_workouts
+
+  validates :name, presence: true
+
+  accepts_nested_attributes_for :exercises
 end
 
 # == Schema Information
