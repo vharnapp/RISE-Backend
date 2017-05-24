@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170524145531) do
+ActiveRecord::Schema.define(version: 20170524154801) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -133,9 +133,18 @@ ActiveRecord::Schema.define(version: 20170524145531) do
     t.index ["slug"], name: "index_users_on_slug", unique: true
   end
 
+  create_table "workouts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.bigint "phase_id"
+    t.datetime "updated_at", null: false
+    t.index ["phase_id"], name: "index_workouts_on_phase_id"
+  end
+
   add_foreign_key "affiliations", "teams"
   add_foreign_key "affiliations", "users"
   add_foreign_key "authentication_tokens", "users"
   add_foreign_key "phases", "pyramid_modules"
   add_foreign_key "teams", "clubs"
+  add_foreign_key "workouts", "phases"
 end

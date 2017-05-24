@@ -17,7 +17,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     video: PaperclipVideoField,
     keyframe: KeyframeField,
     phases: Field::NestedHasMany.with_options(
-      skip: [:pyramid_module],
+      skip: [:pyramid_module, :workouts],
       limit: 10,
     ),
   }.freeze

@@ -1,6 +1,6 @@
 require 'administrate/base_dashboard'
 
-class PhaseDashboard < Administrate::BaseDashboard
+class WorkoutDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,14 +8,9 @@ class PhaseDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    pyramid_module: Field::BelongsTo,
+    phase: Field::BelongsTo,
     id: Field::Number,
     name: Field::String,
-    supplemental: Field::Boolean,
-    workouts: Field::NestedHasMany.with_options(
-      skip: [:phase],
-      limit: 30,
-    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -27,33 +22,28 @@ class PhaseDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :name,
-    :pyramid_module,
-    :supplemental,
+    :phase,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
+    :phase,
     :name,
-    :pyramid_module,
-    :supplemental,
-    :workouts,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :pyramid_module,
+    :phase,
     :name,
-    :supplemental,
-    :workouts,
   ].freeze
 
-  # Overwrite this method to customize how phases are displayed
+  # Overwrite this method to customize how workouts are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(phase)
-    phase.name
-  end
+  # def display_resource(workout)
+  #   "Workout ##{workout.id}"
+  # end
 end
