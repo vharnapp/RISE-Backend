@@ -56,6 +56,13 @@ Rails.application.routes.draw do
 
   namespace 'api' do
     namespace 'v1' do
+      jsonapi_resources :pyramid_modules do
+        jsonapi_resources :phases do
+          jsonapi_resources :workouts do
+            jsonapi_resources :exercises
+          end
+        end
+      end
       jsonapi_resources :users do
         # jsonapi_resources :posts
         # jsonapi_links :posts

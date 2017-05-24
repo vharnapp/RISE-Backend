@@ -1,2 +1,0 @@
-class PhasesController < ApplicationController
-end
