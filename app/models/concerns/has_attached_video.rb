@@ -4,13 +4,14 @@ module HasAttachedVideo
   included do
     has_attached_file :keyframe,
                       default_url: '//s3-us-west-2.amazonaws.com/rise-media2/missing/:style/missing_keyframe.png',
+                      preserve_files: true,
                       styles: {
                         medium: '300x300>',
                         thumb: '100x100>',
                       }
     validates_attachment_content_type :keyframe, content_type: %r{\Aimage\/.*\z}
 
-    has_attached_file :video
+    has_attached_file :video, preserve_files: true
     # has_attached_file :video,
                       # styles: {
                         # mp4video: {
