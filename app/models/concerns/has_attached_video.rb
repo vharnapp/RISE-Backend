@@ -3,6 +3,7 @@ module HasAttachedVideo
 
   included do
     has_attached_file :keyframe,
+                      default_url: ActionController::Base.helpers.asset_path('missing_keyframe.png'),
                       styles: {
                         medium: '300x300>',
                         thumb: '100x100>',
