@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170524184949) do
+ActiveRecord::Schema.define(version: 20170525145516) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -81,9 +81,9 @@ ActiveRecord::Schema.define(version: 20170524184949) do
     t.integer "keyframe_file_size"
     t.datetime "keyframe_updated_at"
     t.string "name"
-    t.integer "reps"
+    t.string "reps"
     t.string "rest"
-    t.integer "sets"
+    t.string "sets"
     t.datetime "updated_at", null: false
     t.string "video_content_type"
     t.string "video_file_name"

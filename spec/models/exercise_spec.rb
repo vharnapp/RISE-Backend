@@ -16,9 +16,9 @@ end
 #  keyframe_file_size    :integer
 #  keyframe_updated_at   :datetime
 #  name                  :string
-#  reps                  :integer
+#  reps                  :string
 #  rest                  :string
-#  sets                  :integer
+#  sets                  :string
 #  updated_at            :datetime         not null
 #  video_content_type    :string
 #  video_file_name       :string
