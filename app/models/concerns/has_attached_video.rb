@@ -3,7 +3,7 @@ module HasAttachedVideo
 
   included do
     has_attached_file :keyframe,
-                      default_url: 'public/images/missing_keyframe.png',
+                      default_url: '//s3-us-west-2.amazonaws.com/rise-media2/missing/:style/missing_keyframe.png',
                       styles: {
                         medium: '300x300>',
                         thumb: '100x100>',
