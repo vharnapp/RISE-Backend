@@ -7,7 +7,7 @@ class PyramidModule < ApplicationRecord
     strength: 2,
   }
 
-  has_many :phases
+  has_many :phases, dependent: :destroy
 
   accepts_nested_attributes_for :phases, allow_destroy: true
 

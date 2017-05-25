@@ -2,7 +2,7 @@ class Phase < ApplicationRecord
   include HasAttachedVideo
 
   belongs_to :pyramid_module
-  has_many :workouts
+  has_many :workouts, dependent: :destroy
 
   accepts_nested_attributes_for :workouts, allow_destroy: true
 

@@ -10,8 +10,12 @@ class WorkoutDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     phase: Field::BelongsTo,
+    phase_id: CollectionSelectField.with_options(
+      value_method: 'id',
+      text_method: 'name',
+    ),
     name: Field::String,
-    pyramid_module_name: Field::String,
+    pyramid_module_name: PyramidModuleNameField,
     exercises: Field::NestedHasMany.with_options(
       skip: [:workout],
       limit: 30,
@@ -44,7 +48,8 @@ class WorkoutDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :phase,
+    :pyramid_module_name,
+    :phase_id,
     :name,
     :exercises_multi_select,
   ].freeze
