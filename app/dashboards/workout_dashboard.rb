@@ -11,6 +11,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
     id: Field::Number,
     phase: Field::BelongsTo,
     name: Field::String,
+    pyramid_module_name: Field::String,
     exercises: Field::NestedHasMany.with_options(
       skip: [:workout],
       limit: 30,
@@ -26,6 +27,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :name,
+    :pyramid_module_name,
     :phase,
   ].freeze
 

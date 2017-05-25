@@ -7,10 +7,11 @@ class PyramidModule < ApplicationRecord
     strength: 2,
   }
 
-  validates :name, :description, :track, presence: true
-
   has_many :phases
-  accepts_nested_attributes_for :phases
+
+  accepts_nested_attributes_for :phases, allow_destroy: true
+
+  validates :name, :description, :track, presence: true
 end
 
 # == Schema Information

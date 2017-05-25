@@ -1,7 +1,7 @@
 class Exercise < ApplicationRecord
   include HasAttachedVideo
 
-  has_many :exercise_workouts
+  has_many :exercise_workouts, dependent: :destroy
   has_many :workouts, through: :exercise_workouts
 
   validates :name,

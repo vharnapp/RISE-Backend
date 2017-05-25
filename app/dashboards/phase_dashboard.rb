@@ -15,7 +15,7 @@ class PhaseDashboard < Administrate::BaseDashboard
     video: PaperclipVideoField,
     keyframe: KeyframeField,
     workouts: Field::NestedHasMany.with_options(
-      skip: [:phase],
+      skip: [:phase, :exercises],
       limit: 30,
     ),
     created_at: Field::DateTime,

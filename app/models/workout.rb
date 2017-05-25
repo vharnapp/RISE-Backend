@@ -1,12 +1,14 @@
 class Workout < ApplicationRecord
   belongs_to :phase
 
-  has_many :exercise_workouts
+  has_many :exercise_workouts, dependent: :destroy
   has_many :exercises, through: :exercise_workouts
+
+  accepts_nested_attributes_for :exercises, allow_destroy: true
 
   validates :name, presence: true
 
-  accepts_nested_attributes_for :exercises
+  delegate :pyramid_module_name, to: :phase
 end
 
 # == Schema Information

@@ -4,9 +4,13 @@ class Phase < ApplicationRecord
   belongs_to :pyramid_module
   has_many :workouts
 
-  accepts_nested_attributes_for :workouts
+  accepts_nested_attributes_for :workouts, allow_destroy: true
 
   validates :name, presence: true
+
+  def pyramid_module_name
+    pyramid_module.name
+  end
 end
 
 # == Schema Information

@@ -16,6 +16,10 @@ class ExerciseDashboard < Administrate::BaseDashboard
     rest: Field::String,
     video: PaperclipVideoField,
     keyframe: KeyframeField,
+    workouts: Field::NestedHasMany.with_options(
+      skip: [:exercise],
+      limit: 30,
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -27,6 +31,7 @@ class ExerciseDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :name,
+    :workouts,
     :description,
     :sets,
     :reps,
@@ -43,6 +48,7 @@ class ExerciseDashboard < Administrate::BaseDashboard
     :rest,
     :keyframe,
     :video,
+    :workouts,
   ].freeze
 
   # FORM_ATTRIBUTES
