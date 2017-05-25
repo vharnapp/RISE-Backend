@@ -36,6 +36,5 @@ module HasAttachedVideo
                       size: { in: 0..50.megabytes }
 
     validates_attachment_content_type :video, content_type: %r{\Avideo\/.*\Z}
-    validates :keyframe, presence: true
   end
 end

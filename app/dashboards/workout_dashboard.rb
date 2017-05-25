@@ -47,13 +47,12 @@ class WorkoutDashboard < Administrate::BaseDashboard
     :phase,
     :name,
     :exercises_multi_select,
-    :exercises,
   ].freeze
 
   # Overwrite this method to customize how workouts are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(workout)
-  #   "Workout ##{workout.id}"
-  # end
+  def display_resource(workout)
+    workout.name
+  end
 end
