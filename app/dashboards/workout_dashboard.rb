@@ -16,6 +16,8 @@ class WorkoutDashboard < Administrate::BaseDashboard
       skip: [:workout],
       limit: 30,
     ),
+    exercises_multi_select: ExerciseMultiSelectField,
+    new_exercise: NewExerciseField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -45,7 +47,8 @@ class WorkoutDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :phase,
     :name,
-    :exercises,
+    :exercises_multi_select,
+    :new_exercise,
   ].freeze
 
   # Overwrite this method to customize how workouts are displayed

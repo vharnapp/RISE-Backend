@@ -17,5 +17,23 @@ module Admin
 
     # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
     # for more information
+    def resource_params
+      params.require(:workout).permit(
+        :name,
+        :phase_id,
+        exercises_attributes: [
+          :name,
+          :description,
+          :sets,
+          :reps,
+          :rest,
+          :keyframe,
+          :video,
+          :_destroy,
+          :id,
+        ],
+        exercise_ids: [],
+      )
+    end
   end
 end
