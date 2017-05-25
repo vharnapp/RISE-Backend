@@ -9,31 +9,21 @@ module HasAttachedVideo
                       }
     validates_attachment_content_type :keyframe, content_type: %r{\Aimage\/.*\z}
 
-    has_attached_file :video,
-                      styles: {
-                        mp4video: {
-                          geometry: '520x390',
-                          format: 'mp4',
-                          # convert_options: {
-                          #   output: {
-                          #     vcodec: 'libx264',
-                          #     vpre: 'ipod640',
-                          #     b: '250k',
-                          #     bt: '50k',
-                          #     acodec: 'libfaac',
-                          #     ab: '56k',
-                          #     ac: 2,
-                          #   },
-                          # },
-                        },
-                        preview: {
-                          geometry: '300x300>',
-                          format: 'jpg',
-                          time: 5,
-                        },
-                      },
-                      processors: [:transcoder],
-                      size: { in: 0..50.megabytes }
+    has_attached_file :video
+    # has_attached_file :video,
+                      # styles: {
+                        # mp4video: {
+                          # geometry: '1920x1080',
+                          # format: 'mp4',
+                        # },
+                        # preview: {
+                          # geometry: '1920x1080>',
+                          # format: 'jpg',
+                          # time: 0,
+                        # },
+                      # },
+                      # processors: [:transcoder],
+                      # size: { in: 0..50.megabytes }
 
     validates_attachment_content_type :video, content_type: %r{\Avideo\/.*\Z}
   end
