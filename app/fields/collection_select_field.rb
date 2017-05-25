@@ -6,7 +6,7 @@ class CollectionSelectField < Administrate::Field::Base
   end
 
   def selectable_options(f)
-    f.object.phase.pyramid_module.phases
+    f.object.phase.try(:pyramid_module).try(:phases) || Phase.all
   end
 
   def selectable_value
