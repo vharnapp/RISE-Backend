@@ -10,7 +10,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     phase: Field::BelongsTo,
-    phase_id: CollectionSelectField.with_options(
+    phase_id: PhaseSelectField.with_options(
       value_method: 'id',
       text_method: 'name',
     ),

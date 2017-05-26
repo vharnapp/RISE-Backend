@@ -127,6 +127,8 @@ GEM
     administrate-field-paperclip (0.0.3)
       administrate (~> 0.4)
       rails (~> 5.0)
+    administrate-field-select (2.1.0)
+      administrate (~> 0.1, >= 0.1.5)
     airborne (0.2.12)
       activesupport
       rack
@@ -580,6 +582,7 @@ DEPENDENCIES
   administrate!
   administrate-field-nested_has_many!
   administrate-field-paperclip
+  administrate-field-select (~> 2.0)
   airborne
   analytics-ruby (~> 2.2.2)
   annotate

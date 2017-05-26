@@ -26,7 +26,10 @@ end
 #  keyframe_file_name    :string
 #  keyframe_file_size    :integer
 #  keyframe_updated_at   :datetime
+#  level                 :integer
 #  name                  :string
+#  position              :integer
+#  prereq                :text             default([]), is an Array
 #  pyramid_module_id     :integer
 #  supplemental          :boolean          default(FALSE), not null
 #  updated_at            :datetime         not null

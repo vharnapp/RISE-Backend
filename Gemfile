@@ -33,8 +33,9 @@ gem 'slim-rails'
 
 gem 'administrate', github: 'thoughtbot/administrate'
 gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-nested_has_many', branch: 'rails_5'
-
 gem 'administrate-field-paperclip'
+gem 'administrate-field-select', '~> 2.0', require: 'administrate/field/select_basic'
+
 gem 'paperclip'
 gem 'paperclip-av-transcoder'
 gem 'aws-sdk', '~> 2.9'

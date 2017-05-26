@@ -1,0 +1,16 @@
+<div class='field-unit__label'>
+  <%= f.label 'Prerequisits' %>
+</div>
+<div class='field-unit__field'>
+  <%= f.collection_select(:prereq,
+                          PyramidModule.all,
+                          :id,
+                          :name,
+                          {
+                            include_blank: false,
+                            include_hidden: false,
+                          },
+                          { multiple: true }
+                        ) %>
+
+</div>

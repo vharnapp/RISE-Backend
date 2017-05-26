@@ -18,6 +18,20 @@ module Admin
       }
     end
 
+    def sort
+      model = controller_name.classify.constantize
+
+      params[:ids].each_with_index do |id, index|
+        model.where(id: id).update(position: index + 1)
+      end
+
+      render nothing: true
+    end
+
+    def resource_params
+      params.require(resource_name).permit(*dashboard.permitted_attributes, prereq: [])
+    end
+
     # Define a custom finder by overriding the `find_resource` method:
     # def find_resource(param)
     #   PyramidModule.find_by!(slug: param)

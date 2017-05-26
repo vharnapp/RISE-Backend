@@ -11,8 +11,11 @@ end
 #  created_at :datetime         not null
 #  deleted_at :datetime
 #  id         :integer          not null, primary key
+#  level      :integer
 #  name       :string
 #  phase_id   :integer
+#  position   :integer
+#  prereq     :text             default([]), is an Array
 #  updated_at :datetime         not null
 #
 # Indexes

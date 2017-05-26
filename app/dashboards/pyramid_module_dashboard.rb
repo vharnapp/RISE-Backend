@@ -12,6 +12,11 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     name: Field::String,
     description: Field::Text,
     track: EnumField,
+    level: Field::SelectBasic.with_options(
+      choices: [1,2,3,4,5],
+      # choices: [['Level 1', 1],['Level 2', 2],['Level 3', 3],['Level 4', 4],['Level 5', 5]],
+    ),
+    prereq: PyramidModuleMultiSelectField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     video: PaperclipVideoField,
@@ -31,6 +36,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     :name,
     :description,
     :track,
+    :level,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -39,6 +45,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     :name,
     :description,
     :track,
+    :level,
+    :prereq,
     :keyframe,
     :video,
     :phases,
@@ -51,6 +59,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     :name,
     :description,
     :track,
+    :level,
+    :prereq,
     :keyframe,
     :video,
     :phases,

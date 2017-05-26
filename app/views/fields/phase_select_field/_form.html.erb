@@ -5,7 +5,7 @@
   <%= f.select(
     field.attribute,
     options_from_collection_for_select(
-      field.selectable_options,
+      field.selectable_options(f),
       field.selectable_value,
       field.selectable_text,
       field.data.presence,

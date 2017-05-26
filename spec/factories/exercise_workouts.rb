@@ -13,6 +13,9 @@ end
 #  deleted_at  :datetime
 #  exercise_id :integer
 #  id          :integer          not null, primary key
+#  level       :integer
+#  position    :integer
+#  prereq      :text             default([]), is an Array
 #  updated_at  :datetime         not null
 #  workout_id  :integer
 #

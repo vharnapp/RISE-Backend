@@ -1,12 +1,12 @@
 require 'administrate/field/base'
 
-class CollectionSelectField < Administrate::Field::Base
+class PhaseSelectField < Administrate::Field::Base
   def to_s
     data
   end
 
-  def selectable_options
-    collection
+  def selectable_options(f)
+    f.object.phase.try(:pyramid_module).try(:phases) || Phase.all
   end
 
   def selectable_value
