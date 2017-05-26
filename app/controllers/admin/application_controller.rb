@@ -8,11 +8,22 @@ module Admin
   class ApplicationController < Administrate::ApplicationController
     before_action :authenticate_admin
 
+    def destroy
+      resource_to_destroy = requested_resource
+      requested_resource.destroy
+      flash[:notice] = translate_with_resource('destroy.success') + " #{undo_link(resource_to_destroy)}."
+      redirect_to action: :index
+    end
+
     private
 
     def authenticate_admin
       txt = 'You must be an admin to perform that action'
       redirect_to root_path, alert: txt unless current_user.admin?
+    end
+
+    def undo_link(resource)
+      view_context.link_to('undo', revert_version_path(resource, model: resource.class.name), method: :post)
     end
 
     # Override this value to specify the number of elements to display at a time

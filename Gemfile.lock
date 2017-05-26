@@ -343,9 +343,6 @@ GEM
     normalize-rails (3.0.3)
     nprogress-rails (0.2.0.2)
     orm_adapter (0.5.0)
-    paper_trail (7.0.2)
-      activerecord (>= 4.0, < 5.2)
-      request_store (~> 1.1)
     paperclip (5.1.0)
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
@@ -355,6 +352,8 @@ GEM
     paperclip-av-transcoder (0.6.4)
       av (~> 0.9.0)
       paperclip (>= 2.5.2)
+    paranoia (2.3.1)
+      activerecord (>= 4.0, < 5.2)
     parser (2.4.0.0)
       ast (~> 2.2)
     pg (0.20.0)
@@ -627,9 +626,9 @@ DEPENDENCIES
   nondestructive_migrations!
   normalize-rails (~> 3.0.0)
   nprogress-rails
-  paper_trail
   paperclip
   paperclip-av-transcoder
+  paranoia
   pg
   poltergeist
   pretender

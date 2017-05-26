@@ -9,6 +9,7 @@ end
 # Table name: exercises
 #
 #  created_at            :datetime         not null
+#  deleted_at            :datetime
 #  description           :text
 #  id                    :integer          not null, primary key
 #  keyframe_content_type :string
@@ -24,4 +25,8 @@ end
 #  video_file_name       :string
 #  video_file_size       :integer
 #  video_updated_at      :datetime
+#
+# Indexes
+#
+#  index_exercises_on_deleted_at  (deleted_at)
 #

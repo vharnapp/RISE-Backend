@@ -9,6 +9,7 @@ end
 #
 #  coach      :boolean          default(FALSE), not null
 #  created_at :datetime         not null
+#  deleted_at :datetime
 #  id         :integer          not null, primary key
 #  team_id    :integer
 #  updated_at :datetime         not null
@@ -16,6 +17,7 @@ end
 #
 # Indexes
 #
-#  index_affiliations_on_team_id  (team_id)
-#  index_affiliations_on_user_id  (user_id)
+#  index_affiliations_on_deleted_at  (deleted_at)
+#  index_affiliations_on_team_id     (team_id)
+#  index_affiliations_on_user_id     (user_id)
 #

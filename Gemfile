@@ -62,7 +62,7 @@ gem 'friendly_id' # slugs in the url auto-generated
 gem 'nested_form_fields' # Dynamically add and remove nested has_many association fields in a Ruby on Rails form
 # gem 'nondestructive_migrations' # data migrations go here, not in regular ActiveRecord migrations
 gem 'nondestructive_migrations', git: 'https://github.com/mfazekas/nondestructive_migrations.git', branch: 'fix-orm-warning'
-gem 'paper_trail' # version active record models and soft-delete by default
+gem 'paranoia' # soft-delete
 gem 'settingslogic' # yaml settings (project wide, non-editable), this is implemented with the model Settings.rb
 
 # User Uploads

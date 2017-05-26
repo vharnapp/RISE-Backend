@@ -12,16 +12,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170525145516) do
+ActiveRecord::Schema.define(version: 20170525212839) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "affiliations", force: :cascade do |t|
     t.boolean "coach", default: false, null: false
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.bigint "team_id"
     t.datetime "updated_at", null: false
     t.bigint "user_id"
+    t.index ["deleted_at"], name: "index_affiliations_on_deleted_at"
     t.index ["team_id"], name: "index_affiliations_on_team_id"
     t.index ["user_id"], name: "index_affiliations_on_user_id"
   end
@@ -39,9 +41,11 @@ ActiveRecord::Schema.define(version: 20170525145516) do
 
   create_table "clubs", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.string "name"
     t.string "slug"
     t.datetime "updated_at", null: false
+    t.index ["deleted_at"], name: "index_clubs_on_deleted_at"
     t.index ["slug"], name: "index_clubs_on_slug", unique: true
   end
 
@@ -66,15 +70,18 @@ ActiveRecord::Schema.define(version: 20170525145516) do
 
   create_table "exercise_workouts", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.bigint "exercise_id"
     t.datetime "updated_at", null: false
     t.bigint "workout_id"
+    t.index ["deleted_at"], name: "index_exercise_workouts_on_deleted_at"
     t.index ["exercise_id"], name: "index_exercise_workouts_on_exercise_id"
     t.index ["workout_id"], name: "index_exercise_workouts_on_workout_id"
   end
 
   create_table "exercises", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.text "description"
     t.string "keyframe_content_type"
     t.string "keyframe_file_name"
@@ -89,6 +96,7 @@ ActiveRecord::Schema.define(version: 20170525145516) do
     t.string "video_file_name"
     t.integer "video_file_size"
     t.datetime "video_updated_at"
+    t.index ["deleted_at"], name: "index_exercises_on_deleted_at"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -105,6 +113,7 @@ ActiveRecord::Schema.define(version: 20170525145516) do
 
   create_table "phases", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.string "keyframe_content_type"
     t.string "keyframe_file_name"
     t.integer "keyframe_file_size"
@@ -117,11 +126,13 @@ ActiveRecord::Schema.define(version: 20170525145516) do
     t.string "video_file_name"
     t.integer "video_file_size"
     t.datetime "video_updated_at"
+    t.index ["deleted_at"], name: "index_phases_on_deleted_at"
     t.index ["pyramid_module_id"], name: "index_phases_on_pyramid_module_id"
   end
 
   create_table "pyramid_modules", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.text "description"
     t.string "keyframe_content_type"
     t.string "keyframe_file_name"
@@ -134,14 +145,17 @@ ActiveRecord::Schema.define(version: 20170525145516) do
     t.string "video_file_name"
     t.integer "video_file_size"
     t.datetime "video_updated_at"
+    t.index ["deleted_at"], name: "index_pyramid_modules_on_deleted_at"
   end
 
   create_table "teams", force: :cascade do |t|
     t.integer "club_id"
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.string "name"
     t.string "slug"
     t.datetime "updated_at", null: false
+    t.index ["deleted_at"], name: "index_teams_on_deleted_at"
     t.index ["slug"], name: "index_teams_on_slug", unique: true
   end
 
@@ -149,6 +163,7 @@ ActiveRecord::Schema.define(version: 20170525145516) do
     t.datetime "created_at", null: false
     t.datetime "current_sign_in_at"
     t.inet "current_sign_in_ip"
+    t.datetime "deleted_at"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "first_name"
@@ -163,6 +178,7 @@ ActiveRecord::Schema.define(version: 20170525145516) do
     t.string "slug"
     t.datetime "updated_at", null: false
     t.string "uuid"
+    t.index ["deleted_at"], name: "index_users_on_deleted_at"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["slug"], name: "index_users_on_slug", unique: true
@@ -170,9 +186,11 @@ ActiveRecord::Schema.define(version: 20170525145516) do
 
   create_table "workouts", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.string "name"
     t.bigint "phase_id"
     t.datetime "updated_at", null: false
+    t.index ["deleted_at"], name: "index_workouts_on_deleted_at"
     t.index ["phase_id"], name: "index_workouts_on_phase_id"
   end
 

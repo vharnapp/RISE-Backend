@@ -9,6 +9,7 @@ end
 # Table name: phases
 #
 #  created_at            :datetime         not null
+#  deleted_at            :datetime
 #  id                    :integer          not null, primary key
 #  keyframe_content_type :string
 #  keyframe_file_name    :string
@@ -25,5 +26,6 @@ end
 #
 # Indexes
 #
+#  index_phases_on_deleted_at         (deleted_at)
 #  index_phases_on_pyramid_module_id  (pyramid_module_id)
 #

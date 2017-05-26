@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     end
   end
 
+  post 'versions/:id/revert' => 'versions#revert', as: 'revert_version'
   namespace :admin do
     resources :pyramid_modules
     resources :phases
