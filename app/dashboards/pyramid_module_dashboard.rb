@@ -25,6 +25,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
       skip: [:pyramid_module, :workouts],
       limit: 10,
     ),
+    position: Field::Number,
   }.freeze
 
   # COLLECTION_ATTRIBUTES

@@ -1,0 +1,17 @@
+<%#
+# Navigation
+
+This partial is used to display the navigation in Administrate.
+By default, the navigation contains navigation links
+for all resources in the admin dashboard,
+as defined by the routes in the `admin/` namespace
+%>
+
+<nav class="navigation" role="navigation">
+  <%# Administrate::Namespace.new(namespace).resources.each do |resource| %>
+  <%# Administrate::Namespace.new(namespace).resources.drop(1).each do |resource| %>
+
+  <%= link_to('Pyramid Modules', admin_pyramid_modules_path, class: "navigation__link") %>
+  <%= link_to('Exercises', admin_exercises_path, class: "navigation__link") %>
+  <%= link_to('Users', admin_users_path, class: "navigation__link") %>
+</nav>

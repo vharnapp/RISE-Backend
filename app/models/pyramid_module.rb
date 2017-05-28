@@ -1,5 +1,6 @@
 class PyramidModule < ApplicationRecord
   acts_as_paranoid
+  acts_as_list scope: [:level]
 
   include HasAttachedVideo
 
@@ -9,7 +10,7 @@ class PyramidModule < ApplicationRecord
     strength: 2,
   }
 
-  has_many :phases, dependent: :destroy
+  has_many :phases, -> { order(position: :asc) }, dependent: :destroy
 
   accepts_nested_attributes_for :phases, allow_destroy: true
 

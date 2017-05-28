@@ -76,9 +76,7 @@ end
 #  last_name              :string
 #  last_sign_in_at        :datetime
 #  last_sign_in_ip        :inet
-#  level                  :integer
 #  position               :integer
-#  prereq                 :text             default([]), is an Array
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
 #  reset_password_token   :string

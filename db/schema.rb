@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170526171035) do
+ActiveRecord::Schema.define(version: 20170528052613) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,9 +20,7 @@ ActiveRecord::Schema.define(version: 20170526171035) do
     t.boolean "coach", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
-    t.integer "level"
     t.integer "position"
-    t.text "prereq", default: [], array: true
     t.bigint "team_id"
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -45,10 +43,8 @@ ActiveRecord::Schema.define(version: 20170526171035) do
   create_table "clubs", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
-    t.integer "level"
     t.string "name"
     t.integer "position"
-    t.text "prereq", default: [], array: true
     t.string "slug"
     t.datetime "updated_at", null: false
     t.index ["deleted_at"], name: "index_clubs_on_deleted_at"
@@ -78,9 +74,7 @@ ActiveRecord::Schema.define(version: 20170526171035) do
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
     t.bigint "exercise_id"
-    t.integer "level"
     t.integer "position"
-    t.text "prereq", default: [], array: true
     t.datetime "updated_at", null: false
     t.bigint "workout_id"
     t.index ["deleted_at"], name: "index_exercise_workouts_on_deleted_at"
@@ -96,10 +90,7 @@ ActiveRecord::Schema.define(version: 20170526171035) do
     t.string "keyframe_file_name"
     t.integer "keyframe_file_size"
     t.datetime "keyframe_updated_at"
-    t.integer "level"
     t.string "name"
-    t.integer "position"
-    t.text "prereq", default: [], array: true
     t.string "reps"
     t.string "rest"
     t.string "sets"
@@ -130,10 +121,8 @@ ActiveRecord::Schema.define(version: 20170526171035) do
     t.string "keyframe_file_name"
     t.integer "keyframe_file_size"
     t.datetime "keyframe_updated_at"
-    t.integer "level"
     t.string "name"
     t.integer "position"
-    t.text "prereq", default: [], array: true
     t.bigint "pyramid_module_id"
     t.boolean "supplemental", default: false, null: false
     t.datetime "updated_at", null: false
@@ -170,10 +159,8 @@ ActiveRecord::Schema.define(version: 20170526171035) do
     t.integer "club_id"
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
-    t.integer "level"
     t.string "name"
     t.integer "position"
-    t.text "prereq", default: [], array: true
     t.string "slug"
     t.datetime "updated_at", null: false
     t.index ["deleted_at"], name: "index_teams_on_deleted_at"
@@ -191,9 +178,7 @@ ActiveRecord::Schema.define(version: 20170526171035) do
     t.string "last_name"
     t.datetime "last_sign_in_at"
     t.inet "last_sign_in_ip"
-    t.integer "level"
     t.integer "position"
-    t.text "prereq", default: [], array: true
     t.datetime "remember_created_at"
     t.datetime "reset_password_sent_at"
     t.string "reset_password_token"
@@ -211,11 +196,9 @@ ActiveRecord::Schema.define(version: 20170526171035) do
   create_table "workouts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
-    t.integer "level"
     t.string "name"
     t.bigint "phase_id"
     t.integer "position"
-    t.text "prereq", default: [], array: true
     t.datetime "updated_at", null: false
     t.index ["deleted_at"], name: "index_workouts_on_deleted_at"
     t.index ["phase_id"], name: "index_workouts_on_phase_id"

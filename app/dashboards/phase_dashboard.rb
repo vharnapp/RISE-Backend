@@ -18,6 +18,7 @@ class PhaseDashboard < Administrate::BaseDashboard
       skip: [:phase_id, :pyramid_module_name, :exercises_multi_select],
       limit: 30,
     ),
+    position: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -29,6 +30,7 @@ class PhaseDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :name,
+    :position,
     :pyramid_module,
     :supplemental,
   ].freeze

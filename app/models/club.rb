@@ -4,7 +4,7 @@ class Club < ApplicationRecord
   extend FriendlyId
   friendly_id :name
 
-  has_many :teams, dependent: :destroy
+  has_many :teams, -> { order(position: :asc) }, dependent: :destroy
 
   validates :name, presence: true
 end
@@ -16,10 +16,8 @@ end
 #  created_at :datetime         not null
 #  deleted_at :datetime
 #  id         :integer          not null, primary key
-#  level      :integer
 #  name       :string
 #  position   :integer
-#  prereq     :text             default([]), is an Array
 #  slug       :string
 #  updated_at :datetime         not null
 #

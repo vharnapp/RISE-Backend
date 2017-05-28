@@ -1,9 +1,13 @@
 class Workout < ApplicationRecord
   acts_as_paranoid
+  acts_as_list scope: :phase
 
   belongs_to :phase
 
-  has_many :exercise_workouts, inverse_of: :workout, dependent: :destroy
+  has_many :exercise_workouts,
+           -> { order(position: :asc) },
+           inverse_of: :workout,
+           dependent: :destroy
   has_many :exercises, through: :exercise_workouts
 
   accepts_nested_attributes_for :exercises
@@ -21,11 +25,9 @@ end
 #  created_at :datetime         not null
 #  deleted_at :datetime
 #  id         :integer          not null, primary key
-#  level      :integer
 #  name       :string
 #  phase_id   :integer
 #  position   :integer
-#  prereq     :text             default([]), is an Array
 #  updated_at :datetime         not null
 #
 # Indexes

@@ -3,7 +3,10 @@ class Exercise < ApplicationRecord
 
   include HasAttachedVideo
 
-  has_many :exercise_workouts, inverse_of: :exercise, dependent: :destroy
+  has_many :exercise_workouts,
+           -> { order(position: :asc) },
+           inverse_of: :exercise,
+           dependent: :destroy
   has_many :workouts, through: :exercise_workouts
 
   validates :name,
@@ -12,6 +15,10 @@ class Exercise < ApplicationRecord
             :reps,
             :rest,
             presence: true
+
+  def has_many_through_sort_scope
+    ExerciseWorkout
+  end
 end
 
 # == Schema Information
@@ -26,10 +33,7 @@ end
 #  keyframe_file_name    :string
 #  keyframe_file_size    :integer
 #  keyframe_updated_at   :datetime
-#  level                 :integer
 #  name                  :string
-#  position              :integer
-#  prereq                :text             default([]), is an Array
 #  reps                  :string
 #  rest                  :string
 #  sets                  :string

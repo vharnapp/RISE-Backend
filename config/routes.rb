@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 
   post 'versions/:id/revert' => 'versions#revert', as: 'revert_version'
   namespace :admin do
+    put 'sort' => 'application#sort'
+
     resources :pyramid_modules
     resources :phases
     resources :workouts

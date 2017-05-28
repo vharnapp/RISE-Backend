@@ -12,10 +12,8 @@ end
 #  created_at :datetime         not null
 #  deleted_at :datetime
 #  id         :integer          not null, primary key
-#  level      :integer
 #  name       :string
 #  position   :integer
-#  prereq     :text             default([]), is an Array
 #  slug       :string
 #  updated_at :datetime         not null
 #
