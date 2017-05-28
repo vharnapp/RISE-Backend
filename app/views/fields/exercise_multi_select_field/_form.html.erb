@@ -3,7 +3,7 @@
 </div>
 <div class='field-unit__field'>
   <%= f.collection_select(:exercise_ids,
-                          Exercise.all,
+                          Exercise.includes(:exercise_workouts).order('exercise_workouts.position'),
                           :id,
                           :name,
                           {
