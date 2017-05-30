@@ -4,7 +4,7 @@ class PyramidModule < ApplicationRecord
 
   include HasAttachedVideo
 
-  enum track: {
+  enum display_track: {
     speed: 0,
     skill: 1,
     strength: 2,
@@ -14,7 +14,13 @@ class PyramidModule < ApplicationRecord
 
   accepts_nested_attributes_for :phases, allow_destroy: true
 
-  validates :name, :description, :track, presence: true
+  validates :name, :description, :display_track, presence: true
+
+  # Multi-select sends through an empty string for the include_blank option.
+  # This removes that.
+  before_validation do |model|
+    model.tracks&.reject!(&:blank?)
+  end
 end
 
 # == Schema Information
@@ -24,6 +30,7 @@ end
 #  created_at            :datetime         not null
 #  deleted_at            :datetime
 #  description           :text
+#  display_track         :integer
 #  id                    :integer          not null, primary key
 #  keyframe_content_type :string
 #  keyframe_file_name    :string
@@ -33,7 +40,7 @@ end
 #  name                  :string
 #  position              :integer
 #  prereq                :text             default([]), is an Array
-#  track                 :integer
+#  tracks                :text             default([]), is an Array
 #  updated_at            :datetime         not null
 #  video_content_type    :string
 #  video_file_name       :string

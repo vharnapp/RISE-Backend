@@ -1,14 +1,13 @@
-<div class="field-unit__label">
-  <%= f.label field.attribute %>
+<div class='field-unit__label'>
+  <%= f.label field.label %>
 </div>
-<div class="field-unit__field">
-  <%= f.select(
+<div class='field-unit__field'>
+  <%= f.collection_select(
     field.attribute,
-    options_from_collection_for_select(
-      field.selectable_options,
-      field.selectable_value,
-      field.selectable_text,
-      field.data.presence,
-    )
+    field.selectable_collection,
+    field.selectable_value,
+    field.selectable_text,
+    field.selectable_options,
+    { multiple: field.multiple }
   ) %>
 </div>

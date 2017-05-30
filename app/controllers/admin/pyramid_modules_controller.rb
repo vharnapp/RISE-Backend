@@ -13,7 +13,7 @@ module Admin
     private
 
     def resource_params
-      params.require(resource_name).permit(*dashboard.permitted_attributes, prereq: [])
+      params.require(resource_name).permit(*dashboard.permitted_attributes, prereq: [], tracks: [])
     end
   end
 end

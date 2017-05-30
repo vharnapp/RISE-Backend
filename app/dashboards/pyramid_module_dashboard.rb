@@ -11,12 +11,27 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     description: Field::Text,
-    track: EnumField,
+    display_track: EnumField,
+    tracks: PyramidModuleTracksSelectField.with_options(
+      choices: %w[Speed Skill Strength],
+      include_blank: 'Choose Tracks',
+      multiple: true,
+    ),
     level: Field::SelectBasic.with_options(
       choices: [1, 2, 3, 4, 5],
       include_blank: 'Choose Level',
     ),
-    prereq: PyramidModuleMultiSelectField,
+    prereq: PyramidModuleMultiSelectField.with_options(
+      collection: PyramidModule.all,
+      value_method: :id,
+      text_method: :name,
+      options: {
+        include_blank: 'For Use ONLY on Level 2 - 5 Modules',
+        include_hidden: false,
+      },
+      multiple: true,
+      label: 'Prerequisites',
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     video: PaperclipVideoField,
@@ -36,7 +51,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :name,
     :description,
-    :track,
+    :display_track,
+    :tracks,
     :level,
   ].freeze
 
@@ -45,7 +61,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :name,
     :description,
-    :track,
+    :display_track,
+    :tracks,
     :level,
     :prereq,
     :keyframe,
@@ -59,7 +76,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :name,
     :description,
-    :track,
+    :display_track,
+    :tracks,
     :level,
     :prereq,
     :keyframe,

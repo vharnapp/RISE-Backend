@@ -13,6 +13,7 @@ end
 #  created_at            :datetime         not null
 #  deleted_at            :datetime
 #  description           :text
+#  display_track         :integer
 #  id                    :integer          not null, primary key
 #  keyframe_content_type :string
 #  keyframe_file_name    :string
@@ -22,7 +23,7 @@ end
 #  name                  :string
 #  position              :integer
 #  prereq                :text             default([]), is an Array
-#  track                 :integer
+#  tracks                :text             default([]), is an Array
 #  updated_at            :datetime         not null
 #  video_content_type    :string
 #  video_file_name       :string

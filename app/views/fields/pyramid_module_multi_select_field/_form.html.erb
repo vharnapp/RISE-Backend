@@ -1,16 +1,13 @@
 <div class='field-unit__label'>
-  <%= f.label 'Prerequisites' %>
+  <%= f.label field.label %>
 </div>
 <div class='field-unit__field'>
-  <%= f.collection_select(:prereq,
-                          PyramidModule.all,
-                          :id,
-                          :name,
-                          {
-                            include_blank: 'For Use ONLY on Level 2 - 5 Modules',
-                            include_hidden: false,
-                          },
-                          { multiple: true }
-                        ) %>
-
+  <%= f.collection_select(
+    field.attribute,
+    field.selectable_collection,
+    field.selectable_value,
+    field.selectable_text,
+    field.selectable_options,
+    { multiple: field.multiple }
+  ) %>
 </div>
