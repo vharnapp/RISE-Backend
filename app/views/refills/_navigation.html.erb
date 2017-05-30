@@ -11,7 +11,7 @@
           <% if current_user != true_user %>
             <li class='nav-link'><%= link_to 'Stop Impersonating', stop_impersonating_admin_users_path %></li>
           <% else %>
-            <li class="nav-link"><a href="/admin/users">Admin</a></li>
+            <li class="nav-link"><a href="/admin/users" data-turbolinks='false'>Admin</a></li>
           <% end %>
         <% end %>
 
