@@ -387,6 +387,7 @@ GEM
       pry (~> 0.9)
       slop (~> 3.0)
     public_suffix (2.0.5)
+    puma (3.8.2)
     rack (2.0.3)
     rack-canonical-host (0.2.3)
       addressable (> 0, < 3)
@@ -645,6 +646,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   pry-remote
+  puma
   rack-canonical-host
   rack-mini-profiler
   rack-timeout

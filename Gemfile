@@ -146,6 +146,7 @@ end
 
 group :production do
   gem 'analytics-ruby', '~> 2.2.2', require: 'segment/analytics'
+  gem 'puma'
 end
 
 gem 'bourbon', '~> 5.0.0.beta.7'
