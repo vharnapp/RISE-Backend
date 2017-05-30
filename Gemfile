@@ -89,8 +89,8 @@ group :development do
 
   # Customizations
   gem 'annotate' # annotate models automatically when rake db:migrate is called
-  gem 'better_errors' # A better error page for rails when a local 500 (or similar) is thrown
-  gem 'binding_of_caller' # REPL in better_errors to debug in the browser at the point at which it failed
+  # gem 'better_errors' # A better error page for rails when a local 500 (or similar) is thrown
+  # gem 'binding_of_caller' # REPL in better_errors to debug in the browser at the point at which it failed
   gem 'bitters', '~> 1.3'
   gem 'fix-db-schema-conflicts' # when working with multiple developers schema order of columns is standardized.
   gem 'meta_request' # for chrome rails console plugin found here: https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg?hl=en-US
