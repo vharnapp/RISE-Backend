@@ -13,8 +13,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     description: Field::Text,
     track: EnumField,
     level: Field::SelectBasic.with_options(
-      choices: [1,2,3,4,5],
-      # choices: [['Level 1', 1],['Level 2', 2],['Level 3', 3],['Level 4', 4],['Level 5', 5]],
+      choices: [1, 2, 3, 4, 5],
+      include_blank: 'Choose Level',
     ),
     prereq: PyramidModuleMultiSelectField,
     created_at: Field::DateTime,
