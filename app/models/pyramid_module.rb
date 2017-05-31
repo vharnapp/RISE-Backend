@@ -10,7 +10,11 @@ class PyramidModule < ApplicationRecord
     strength: 2,
   }
 
-  has_many :phases, -> { order(position: :asc) }, dependent: :destroy
+  # FIXME: (2017-05-30) jon => Having the order on the association caused AR to
+  # trip a validation in the context of accepts_nested_attributes_for :phases
+  #
+  # has_many :phases, -> { order(position: :asc) }, dependent: :destroy
+  has_many :phases, dependent: :destroy
 
   accepts_nested_attributes_for :phases, allow_destroy: true
 

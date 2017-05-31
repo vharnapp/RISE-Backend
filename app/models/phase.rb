@@ -1,4 +1,10 @@
 class Phase < ApplicationRecord
+  # FIXME: (2017-05-30) jon => Having the order on the association in the
+  # PyramidModule class caused AR to trip a validation in the context of
+  # accepts_nested_attributes_for :phases. So instead, add a default scope here
+  # so that PyramidModule.first.phases properly includes that order sql statement
+  default_scope { order(position: :asc) }
+
   include HasAttachedVideo
 
   acts_as_paranoid
