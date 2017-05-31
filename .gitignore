@@ -19,3 +19,4 @@ errors.err
 
 /public/packs
 /node_modules
+/zbackups/*

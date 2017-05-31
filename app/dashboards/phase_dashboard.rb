@@ -30,7 +30,6 @@ class PhaseDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :name,
-    :position,
     :pyramid_module,
     :supplemental,
   ].freeze
