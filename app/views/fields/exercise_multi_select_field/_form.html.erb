@@ -1,0 +1,16 @@
+<div class='field-unit__label'>
+  <%= f.label 'Exercises' %>
+</div>
+<div class='field-unit__field'>
+  <%= f.collection_select(:exercise_ids,
+                          Exercise.includes(:exercise_workouts).order('exercise_workouts.position'),
+                          :id,
+                          :name,
+                          {
+                            include_blank: false,
+                            include_hidden: false,
+                          },
+                          { multiple: true }
+                        ) %>
+
+</div>

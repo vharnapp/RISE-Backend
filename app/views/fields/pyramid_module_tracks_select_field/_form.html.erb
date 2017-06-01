@@ -1,0 +1,16 @@
+<div class="field-unit__label">
+  <%= f.label field.attribute %>
+</div>
+<div class="field-unit__field">
+  <%= f.select(
+    field.attribute,
+    field.choices,
+    {
+      prompt: field.prompt,
+      include_blank: field.include_blank,
+    },
+    {
+      multiple: field.multiple
+    }
+  ) %>
+</div>

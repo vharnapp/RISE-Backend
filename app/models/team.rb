@@ -1,4 +1,6 @@
 class Team < ApplicationRecord
+  acts_as_paranoid
+
   extend FriendlyId
   friendly_id :name
 
@@ -26,12 +28,15 @@ end
 #
 #  club_id    :integer
 #  created_at :datetime         not null
+#  deleted_at :datetime
 #  id         :integer          not null, primary key
 #  name       :string
+#  position   :integer
 #  slug       :string
 #  updated_at :datetime         not null
 #
 # Indexes
 #
-#  index_teams_on_slug  (slug) UNIQUE
+#  index_teams_on_deleted_at  (deleted_at)
+#  index_teams_on_slug        (slug) UNIQUE
 #

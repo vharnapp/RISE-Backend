@@ -5,15 +5,17 @@ ruby '2.4.0'
 # ruby-gemset=athletefit_backend
 
 gem 'autoprefixer-rails'
-gem 'delayed_job_active_record'
+
+gem 'delayed_job_active_record', github: 'collectiveidea/delayed_job_active_record', branch: 'gogovan-rails-5-1'
+gem 'delayed_job', github: 'dsander/delayed_job', branch: 'rails51'
+
 gem 'flutie'
 gem 'honeybadger'
 gem 'jquery-rails'
 gem 'normalize-rails', '~> 3.0.0'
 gem 'pg'
-gem 'puma'
 gem 'rack-canonical-host'
-gem 'rails', '~> 5.1.0.rc1'
+gem 'rails', '~> 5.1.1'
 gem 'recipient_interceptor'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
@@ -27,6 +29,16 @@ gem 'webpacker', github: 'rails/webpacker'
 # Customizations
 gem 'font-awesome-rails'
 gem 'slim-rails'
+
+gem 'administrate', github: 'thoughtbot/administrate'
+gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-nested_has_many', branch: 'rails_5'#, path: '/rails/headway/administrate-field-nested_has_many'
+gem 'administrate-field-paperclip'
+gem 'administrate-field-select', '~> 2.0', require: 'administrate/field/select_basic'
+gem 'acts_as_list'
+
+gem 'paperclip'
+gem 'paperclip-av-transcoder'
+gem 'aws-sdk', '~> 2.9'
 
 # Javascript Tweaks
 gem 'gon' # pass variables betwween rails and javascript. Several examples in the application_controller.rb
@@ -51,12 +63,12 @@ gem 'friendly_id' # slugs in the url auto-generated
 gem 'nested_form_fields' # Dynamically add and remove nested has_many association fields in a Ruby on Rails form
 # gem 'nondestructive_migrations' # data migrations go here, not in regular ActiveRecord migrations
 gem 'nondestructive_migrations', git: 'https://github.com/mfazekas/nondestructive_migrations.git', branch: 'fix-orm-warning'
-gem 'paper_trail' # version active record models and soft-delete by default
+gem 'paranoia' # soft-delete
 gem 'settingslogic' # yaml settings (project wide, non-editable), this is implemented with the model Settings.rb
 
 # User Uploads
-gem 'carrierwave'
-gem 'fog'
+# gem 'carrierwave'
+# gem 'fog'
 gem 'mini_magick'
 
 # Cron Jobs
@@ -77,7 +89,7 @@ group :development do
 
   # Customizations
   gem 'annotate' # annotate models automatically when rake db:migrate is called
-  gem 'better_errors' # A better error page for rails when a local 500 (or similar) is thrown
+  # gem 'better_errors' # A better error page for rails when a local 500 (or similar) is thrown
   # gem 'binding_of_caller' # REPL in better_errors to debug in the browser at the point at which it failed
   gem 'bitters', '~> 1.3'
   gem 'fix-db-schema-conflicts' # when working with multiple developers schema order of columns is standardized.
@@ -94,7 +106,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 
   # Customizations
-  gem 'airborne', github: 'mcasper/airborne', branch: 'ruby-2-4-warnings'
+  gem 'airborne'
   gem 'letter_opener' # auto-open emails when they're sent
   gem 'redcarpet' # used to render the readme inside a static welcome page from the high_voltage gem
   gem 'rubocop'
@@ -134,6 +146,7 @@ end
 
 group :production do
   gem 'analytics-ruby', '~> 2.2.2', require: 'segment/analytics'
+  gem 'puma'
 end
 
 gem 'bourbon', '~> 5.0.0.beta.7'

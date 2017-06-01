@@ -1,0 +1,17 @@
+<hr>
+
+<h2 class='nested-fields__association-title'>New Exercise</h2>
+
+<br>
+
+<%= f.fields_for page.resource do |nested_form| %>
+  <% associated_form = Administrate::Page::Form.new(ExerciseDashboard.new, 'exercises') %>
+
+  <div class="nested-fields" style="width:100%">
+    <% associated_form.attributes.each do |attribute| -%>
+      <div class="field-unit field-unit--<%= attribute.html_class %>">
+        <%= render_field attribute, f: nested_form %>
+      </div>
+    <% end -%>
+  </div>
+<% end %>

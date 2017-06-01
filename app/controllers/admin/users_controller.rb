@@ -1,18 +1,18 @@
 module Admin
-  class UsersController < AdminController
-    skip_before_action :require_admin!, only: [:stop_impersonating]
-    before_action :set_user, only: [:destroy, :edit, :update]
-    respond_to :html, :json
+  class UsersController < Admin::ApplicationController
+    skip_before_action :authenticate_admin, only: [:stop_impersonating]
+    # before_action :set_user, only: [:destroy, :edit, :update]
+    # respond_to :html, :json
 
-    def index
-      @users = User.all
+    # def index
+    #   @users = User.all
 
-      respond_with(@users)
-    end
+    #   respond_with(@users)
+    # end
 
-    def new
-      @user = User.new
-    end
+    # def new
+    #   @user = User.new
+    # end
 
     # TODO: (2017-04-08) jon => extract this to a service object or form object
     # after looking at the wireframes and figuring out how the UI will handle

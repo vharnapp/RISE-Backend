@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :exercises
+  resources :workouts
+  resources :phases
+  resources :pyramid_modules
   resources :clubs do
     resources :teams
   end
@@ -16,7 +20,15 @@ Rails.application.routes.draw do
     end
   end
 
+  post 'versions/:id/revert' => 'versions#revert', as: 'revert_version'
   namespace :admin do
+    put 'sort' => 'application#sort'
+
+    resources :pyramid_modules
+    resources :phases
+    resources :workouts
+    resources :exercises
+
     resources :users do
       member do
         get 'impersonate'
@@ -26,6 +38,8 @@ Rails.application.routes.draw do
         get 'stop_impersonating'
       end
     end
+
+    root to: "users#index"
   end
 
   authenticated :user do
@@ -45,6 +59,13 @@ Rails.application.routes.draw do
 
   namespace 'api' do
     namespace 'v1' do
+      jsonapi_resources :pyramid_modules do
+        jsonapi_resources :phases do
+          jsonapi_resources :workouts do
+            jsonapi_resources :exercises
+          end
+        end
+      end
       jsonapi_resources :users do
         # jsonapi_resources :posts
         # jsonapi_links :posts

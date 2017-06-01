@@ -23,3 +23,8 @@ en:
 
   titles:
     application: Athletefit backend
+
+  helpers:
+    label:
+      workout:
+        pyramid_module_name: Pyramid Module
