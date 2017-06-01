@@ -3,6 +3,9 @@ module Api
     class PyramidModuleResource < JSONAPI::Resource
       attributes :name,
                  :description,
+                 :level,
+                 :prereq,
+                 :position,
                  :display_track,
                  :tracks,
                  :keyframe,
