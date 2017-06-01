@@ -5,6 +5,7 @@ module Api
                  :keyframe,
                  :video
 
+      belongs_to :pyramid_module
       has_many :workouts
     end
   end

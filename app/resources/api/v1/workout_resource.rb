@@ -3,6 +3,7 @@ module Api
     class WorkoutResource < JSONAPI::Resource
       attributes :name
 
+      belongs_to :phase
       has_many :exercises
     end
   end
