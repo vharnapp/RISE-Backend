@@ -22,7 +22,6 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
       include_blank: 'Choose Level',
     ),
     prereq: PyramidModuleMultiSelectField.with_options(
-      collection: PyramidModule.all,
       value_method: :id,
       text_method: :name,
       options: {
