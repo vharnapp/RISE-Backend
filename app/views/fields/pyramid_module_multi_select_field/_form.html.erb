@@ -4,7 +4,7 @@
 <div class='field-unit__field'>
   <%= f.collection_select(
     field.attribute,
-    PyramidModule.all,
+    field.selectable_collection,
     field.selectable_value,
     field.selectable_text,
     field.selectable_options,
