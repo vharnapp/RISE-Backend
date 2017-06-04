@@ -12,12 +12,12 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     name: Field::String,
     description: Field::Text,
     display_track: EnumField,
-    tracks: PyramidModuleTracksSelectField.with_options(
+    tracks: Field::SelectEssential.with_options(
       choices: %w[Speed Skill Strength],
       include_blank: 'Choose Tracks',
       multiple: true,
     ),
-    level: Field::SelectBasic.with_options(
+    level: Field::SelectEssential.with_options(
       choices: [1, 2, 3, 4, 5],
       include_blank: 'Choose Level',
     ),

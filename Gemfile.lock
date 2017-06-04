@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git://github.com/headwayio/administrate-field-nested_has_many.git
-  revision: d349b6a97648ade84f5c0d6c1fd76866f7031590
+  revision: 1f1d29433b80c4313264e1f9dcd71b2498587422
   branch: rails_5
   specs:
     administrate-field-nested_has_many (0.1.0)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: git://github.com/thoughtbot/administrate.git
-  revision: 164fdf8257b12b0fee59589ec47bbac04fc9d13a
+  revision: a34ee154d9b7af1a6fe29ce14671f6c66398210c
   specs:
     administrate (0.7.0)
       actionpack (>= 4.2, < 5.2)
@@ -129,8 +129,9 @@ GEM
     administrate-field-paperclip (0.0.3)
       administrate (~> 0.4)
       rails (~> 5.0)
-    administrate-field-select (2.1.0)
-      administrate (~> 0.1, >= 0.1.5)
+    administrate-field-select_essential (0.1.0)
+      administrate (~> 0.7)
+      rails (~> 5.0)
     airborne (0.2.12)
       activesupport
       rack
@@ -267,7 +268,7 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    i18n (0.8.1)
+    i18n (0.8.4)
     jmespath (1.3.1)
     jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
@@ -336,7 +337,7 @@ GEM
       jquery-rails
       rails (>= 3.2.0)
     netrc (0.11.0)
-    nio4r (2.0.0)
+    nio4r (2.1.0)
     nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
     normalize-rails (3.0.3)
@@ -580,7 +581,7 @@ DEPENDENCIES
   administrate!
   administrate-field-nested_has_many!
   administrate-field-paperclip
-  administrate-field-select (~> 2.0)
+  administrate-field-select_essential
   airborne
   analytics-ruby (~> 2.2.2)
   annotate
