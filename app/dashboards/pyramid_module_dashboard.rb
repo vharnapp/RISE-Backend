@@ -11,7 +11,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     description: Field::Text,
-    display_track: EnumField,
+    display_track: Field::Enum,
     tracks: Field::SelectEssential.with_options(
       choices: %w[Speed Skill Strength],
       include_blank: 'Choose Tracks',

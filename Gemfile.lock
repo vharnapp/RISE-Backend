@@ -16,6 +16,14 @@ GIT
       activesupport (>= 3.0, < 5.2)
 
 GIT
+  remote: git://github.com/headwayio/administrate-field-enum.git
+  revision: a9b51992df4753f2651d78ff210d9d2f3c14233e
+  specs:
+    administrate-field-enum (0.0.3)
+      administrate
+      rails (~> 5.0)
+
+GIT
   remote: git://github.com/headwayio/administrate-field-nested_has_many.git
   revision: 1f1d29433b80c4313264e1f9dcd71b2498587422
   branch: rails_5
@@ -579,6 +587,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   acts_as_list
   administrate!
+  administrate-field-enum!
   administrate-field-nested_has_many!
   administrate-field-paperclip
   administrate-field-select_essential
