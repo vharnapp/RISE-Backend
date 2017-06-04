@@ -22,7 +22,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
       include_blank: 'Choose Level',
     ),
     prereq: Field::CollectionSelect.with_options(
-      collection: PyramidModule.all,
+      collection: proc { PyramidModule.all },
       value_method: :id,
       text_method: :name,
       options: {
@@ -44,7 +44,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     ),
     position: Field::Number,
     prerequisites: Field::String,
-  }
+  }.freeze
 
   # COLLECTION_ATTRIBUTES
   # an array of attributes that will be displayed on the model's index page.

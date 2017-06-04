@@ -22,9 +22,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
     ),
     exercises_multi_select: Field::CollectionSelect.with_options(
       ids: :exercise_ids,
-      collection: Exercise
-                    .includes(:exercise_workouts)
-                    .order('exercise_workouts.position'),
+      collection: proc { Exercise.all },
       value_method: :id,
       text_method: :name,
       options: {
