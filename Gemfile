@@ -32,6 +32,7 @@ gem 'slim-rails'
 
 gem 'acts_as_list'
 gem 'administrate', github: 'thoughtbot/administrate'
+gem 'administrate-field-collection_select'
 gem 'administrate-field-enum', github: 'headwayio/administrate-field-enum'
 gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-nested_has_many', branch: 'rails_5'
 gem 'administrate-field-paperclip'

@@ -21,7 +21,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
       choices: [1, 2, 3, 4, 5],
       include_blank: 'Choose Level',
     ),
-    prereq: CollectionSelectField.with_options(
+    prereq: Field::CollectionSelect.with_options(
       collection: PyramidModule.all,
       value_method: :id,
       text_method: :name,
