@@ -20,7 +20,20 @@ class WorkoutDashboard < Administrate::BaseDashboard
       skip: [:workout],
       limit: 30,
     ),
-    exercises_multi_select: ExerciseMultiSelectField,
+    exercises_multi_select: Field::CollectionSelect.with_options(
+      ids: :exercise_ids,
+      collection: Exercise
+                    .includes(:exercise_workouts)
+                    .order('exercise_workouts.position'),
+      value_method: :id,
+      text_method: :name,
+      options: {
+        include_blank: false,
+        include_hidden: false,
+      },
+      multiple: true,
+      label: 'Exercises',
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
