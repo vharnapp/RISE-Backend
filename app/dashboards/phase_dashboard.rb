@@ -13,7 +13,9 @@ class PhaseDashboard < Administrate::BaseDashboard
     name: Field::String,
     supplemental: Field::Boolean,
     video: PaperclipVideoField,
-    keyframe: KeyframeField,
+    keyframe: Field::Paperclip.with_options(
+      big_style: :medium,
+    ),
     workouts: Field::NestedHasMany.with_options(
       skip: [:phase_id, :pyramid_module_name, :exercises_multi_select],
       limit: 30,

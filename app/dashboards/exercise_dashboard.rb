@@ -15,7 +15,9 @@ class ExerciseDashboard < Administrate::BaseDashboard
     reps: Field::String,
     rest: Field::String,
     video: PaperclipVideoField,
-    keyframe: KeyframeField,
+    keyframe: Field::Paperclip.with_options(
+      big_style: :medium,
+    ),
     workouts: Field::NestedHasMany.with_options(
       skip: [:exercise],
       limit: 30,

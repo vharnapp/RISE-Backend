@@ -35,7 +35,9 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     video: PaperclipVideoField,
-    keyframe: KeyframeField,
+    keyframe: Field::Paperclip.with_options(
+      big_style: :medium,
+    ),
     phases: Field::NestedHasMany.with_options(
       skip: [:pyramid_module, :workouts],
       limit: 10,
