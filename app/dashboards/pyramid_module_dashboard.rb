@@ -21,7 +21,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
       choices: [1, 2, 3, 4, 5],
       include_blank: 'Choose Level',
     ),
-    prereq: PyramidModuleMultiSelectField.with_options(
+    prereq: CollectionSelectField.with_options(
       collection: PyramidModule.all,
       value_method: :id,
       text_method: :name,
@@ -41,6 +41,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
       limit: 10,
     ),
     position: Field::Number,
+    prerequisites: Field::String,
   }
 
   # COLLECTION_ATTRIBUTES
@@ -64,7 +65,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     :display_track,
     :tracks,
     :level,
-    :prereq,
+    :prerequisites,
     :keyframe,
     :video,
     :phases,

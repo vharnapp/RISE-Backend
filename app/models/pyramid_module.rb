@@ -25,6 +25,10 @@ class PyramidModule < ApplicationRecord
   before_validation do |model|
     model.tracks&.reject!(&:blank?)
   end
+
+  def prerequisites
+    PyramidModule.where(id: prereq).map(&:name).join(', ')
+  end
 end
 
 # == Schema Information
