@@ -61,6 +61,8 @@ module Admin
       )
     end
 
+    # FIXME: (2017-06-04) jon => potentially do the splat technique here
+    # instead of manually listing _all_ of them.
     def resource_params
       params.require(:workout).permit(
         :name,
