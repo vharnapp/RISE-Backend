@@ -15,6 +15,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
       text_method: 'name',
     ),
     name: Field::String,
+    supplemental: Field::Boolean,
     pyramid_module_name: PyramidModuleNameField,
     exercises: Field::NestedHasMany.with_options(
       skip: [:workout],
@@ -45,6 +46,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
     :name,
     :pyramid_module_name,
     :phase,
+    :supplemental,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -52,6 +54,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :phase,
     :name,
+    :supplemental,
     :exercises,
   ].freeze
 
@@ -62,6 +65,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
     :pyramid_module_name,
     :phase_id,
     :name,
+    :supplemental,
     :exercises_multi_select,
   ].freeze
 

@@ -22,13 +22,14 @@ end
 #
 # Table name: workouts
 #
-#  created_at :datetime         not null
-#  deleted_at :datetime
-#  id         :integer          not null, primary key
-#  name       :string
-#  phase_id   :integer
-#  position   :integer
-#  updated_at :datetime         not null
+#  created_at   :datetime         not null
+#  deleted_at   :datetime
+#  id           :integer          not null, primary key
+#  name         :string
+#  phase_id     :integer
+#  position     :integer
+#  supplemental :boolean          default(FALSE)
+#  updated_at   :datetime         not null
 #
 # Indexes
 #

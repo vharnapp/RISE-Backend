@@ -15,7 +15,7 @@ module Api
           {
             id: exercise.id,
             name: exercise.name,
-            description: exercise.name,
+            description: exercise.description,
             sets: exercise.sets,
             reps: exercise.reps,
             rest: exercise.rest,
