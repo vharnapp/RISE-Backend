@@ -1,7 +1,7 @@
 module Api
   module V1
     class WorkoutResource < JSONAPI::Resource
-      attributes :name, :exercises
+      attributes :name, :supplemental, :exercises
 
       belongs_to :phase
 
