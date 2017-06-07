@@ -67,6 +67,7 @@ module Admin
       params.require(:workout).permit(
         :name,
         :phase_id,
+        :supplemental,
         exercise: [
           :name,
           :description,
