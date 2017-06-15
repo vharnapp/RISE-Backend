@@ -9,4 +9,9 @@ Canard::Abilities.for(:user) do
   can :read, Phase
   can :read, Workout
   can :read, Exercise
+
+  can :manage, ConfidenceRating do |cr|
+    cr.user == user
+  end
+  can :create, ConfidenceRating
 end

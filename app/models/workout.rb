@@ -10,6 +10,10 @@ class Workout < ApplicationRecord
            dependent: :destroy
   has_many :exercises, through: :exercise_workouts
 
+  has_many :confidence_ratings, dependent: :destroy
+  has_many :users, through: :confidence_ratings
+  has_many :rated_exercises, through: :confidence_ratings, class_name: 'Exercise', source: :exercise
+
   accepts_nested_attributes_for :exercises
   accepts_nested_attributes_for :exercise_workouts, allow_destroy: true
 

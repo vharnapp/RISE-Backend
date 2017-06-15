@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170615143448) do
+ActiveRecord::Schema.define(version: 20170615174515) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -49,6 +49,19 @@ ActiveRecord::Schema.define(version: 20170615143448) do
     t.datetime "updated_at", null: false
     t.index ["deleted_at"], name: "index_clubs_on_deleted_at"
     t.index ["slug"], name: "index_clubs_on_slug", unique: true
+  end
+
+  create_table "confidence_ratings", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.bigint "exercise_id"
+    t.integer "rating", default: 0
+    t.boolean "skipped", default: false, null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.bigint "workout_id"
+    t.index ["exercise_id"], name: "index_confidence_ratings_on_exercise_id"
+    t.index ["user_id"], name: "index_confidence_ratings_on_user_id"
+    t.index ["workout_id"], name: "index_confidence_ratings_on_workout_id"
   end
 
   create_table "data_migrations", id: :serial, force: :cascade do |t|
@@ -209,6 +222,9 @@ ActiveRecord::Schema.define(version: 20170615143448) do
   add_foreign_key "affiliations", "teams"
   add_foreign_key "affiliations", "users"
   add_foreign_key "authentication_tokens", "users"
+  add_foreign_key "confidence_ratings", "exercises"
+  add_foreign_key "confidence_ratings", "users"
+  add_foreign_key "confidence_ratings", "workouts"
   add_foreign_key "exercise_workouts", "exercises"
   add_foreign_key "exercise_workouts", "workouts"
   add_foreign_key "phases", "pyramid_modules"

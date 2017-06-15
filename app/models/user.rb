@@ -22,6 +22,10 @@ class User < ApplicationRecord
   has_many :affiliations, dependent: :destroy
   has_many :teams, through: :affiliations
 
+  has_many :confidence_ratings, dependent: :destroy
+  has_many :exercises, through: :confidence_ratings
+  has_many :workouts, through: :confidence_ratings
+
   validates :email,
             presence: true,
             format: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,8}\z/i,

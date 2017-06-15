@@ -1,18 +1,25 @@
 module Api
   module V1
     class WorkoutResource < JSONAPI::Resource
-      attributes :name, :supplemental, :exercises
+      attributes :name,
+                 :supplemental,
+                 :exercises
 
       belongs_to :phase
 
       has_many :exercise_workouts
       has_many :exercises, through: :exercise_workouts
 
+      has_many :confidence_ratings
+      has_many :users, through: :confidence_ratings
+      has_many :rated_exercises, through: :confidence_ratings, class_name: 'Exercise', source: :exercise
+
       def exercises
         @model.exercise_workouts.map do |exercise_workout|
           exercise = exercise_workout.exercise
 
           {
+            type: 'exercises',
             id: exercise.id,
             name: exercise.name,
             description: exercise.description,

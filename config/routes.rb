@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :confidence_ratings
   resources :exercises
   resources :workouts
   resources :phases
@@ -70,6 +71,8 @@ Rails.application.routes.draw do
         # jsonapi_resources :posts
         # jsonapi_links :posts
       end
+
+      jsonapi_resources :confidence_ratings
     end
   end
 end

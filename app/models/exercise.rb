@@ -9,6 +9,10 @@ class Exercise < ApplicationRecord
            dependent: :destroy
   has_many :workouts, through: :exercise_workouts
 
+  has_many :confidence_ratings, dependent: :destroy
+  has_many :users, through: :confidence_ratings
+  has_many :rated_workouts, through: :confidence_ratings, class_name: 'Workout', source: :workout
+
   validates :name,
             :description,
             :sets,
