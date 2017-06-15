@@ -1,6 +1,6 @@
 JSONAPI.configure do |config|
   config.json_key_format = :underscored_key
-  config.route_format = :dasherized_route
+  config.route_format = :underscored_route
 
   config.allow_include = true
   config.allow_sort = true
@@ -8,7 +8,7 @@ JSONAPI.configure do |config|
 
   config.raise_if_parameters_not_allowed = true
 
-  config.default_paginator = :paged
+  config.default_paginator = :none
 
   config.top_level_links_include_pagination = true
 
