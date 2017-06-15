@@ -1,5 +1,7 @@
 module DeviseCustomizations
   class SessionsController < Devise::SessionsController
+    include RenderJsonUserWithToken
+
     skip_before_action :verify_authenticity_token,
                        only: [:create, :destroy],
                        if: -> { json_request? }
@@ -8,8 +10,7 @@ module DeviseCustomizations
       super and return unless json_request?
 
       user = warden.authenticate!(auth_options)
-      token = Tiddle.create_and_return_token(user, request)
-      render json: { authentication_token: token }
+      render_json_user_with_token(user)
     end
 
     def destroy

@@ -4,4 +4,9 @@ Canard::Abilities.for(:user) do
   end
   cannot [:destroy], User
   cannot [:index], User
+
+  can :read, PyramidModule
+  can :read, Phase
+  can :read, Workout
+  can :read, Exercise
 end

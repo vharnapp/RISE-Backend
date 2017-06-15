@@ -6,7 +6,8 @@ module Api
                  :full_name,
                  :email,
                  :password,
-                 :password_confirmation
+                 :password_confirmation,
+                 :unlocked_pyramid_modules
 
       def fetchable_fields
         super - [:password, :password_confirmation]
