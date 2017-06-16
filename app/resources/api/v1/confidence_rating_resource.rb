@@ -10,6 +10,8 @@ module Api
       belongs_to :user
       belongs_to :exercise
       belongs_to :workout
+
+      filters :exercise_id, :workout_id
     end
   end
 end
