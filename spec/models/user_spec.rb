@@ -95,6 +95,7 @@ end
 #  last_name                :string
 #  last_sign_in_at          :datetime
 #  last_sign_in_ip          :inet
+#  nickname                 :string
 #  remember_created_at      :datetime
 #  reset_password_sent_at   :datetime
 #  reset_password_token     :string

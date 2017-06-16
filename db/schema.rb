@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170615174515) do
+ActiveRecord::Schema.define(version: 20170615203738) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -192,6 +192,7 @@ ActiveRecord::Schema.define(version: 20170615174515) do
     t.string "last_name"
     t.datetime "last_sign_in_at"
     t.inet "last_sign_in_ip"
+    t.string "nickname"
     t.datetime "remember_created_at"
     t.datetime "reset_password_sent_at"
     t.string "reset_password_token"

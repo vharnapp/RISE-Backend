@@ -4,6 +4,7 @@ module Api
       attributes :first_name,
                  :last_name,
                  :full_name,
+                 :nickname,
                  :email,
                  :password,
                  :password_confirmation,
