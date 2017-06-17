@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :phase do
-    name "MyString"
+    name { Faker::Name.phase_name }
+    pyramid_module
   end
 end
 

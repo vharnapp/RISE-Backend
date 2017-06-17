@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :workout do
-    name "MyString"
-    phase nil
+    name { Faker::Name.workout_name }
+    phase
   end
 end
 

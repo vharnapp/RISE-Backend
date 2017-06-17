@@ -54,6 +54,38 @@ class User < ApplicationRecord
     roles.map(&:to_s).map(&:titleize).sort.join(', ')
   end
 
+  # rubocop:disable Metrics/MethodLength
+  def day_streak
+    sql = %(
+      WITH RECURSIVE CTE(updated_at)
+      AS
+      (
+        SELECT * FROM
+        (
+            SELECT date(updated_at)
+            FROM confidence_ratings
+            WHERE user_id = '#{id}'
+              AND (
+                date(updated_at) = current_date
+                OR date(updated_at) = current_date - INTERVAL '1 day'
+              )
+            ORDER BY date(updated_at) DESC
+            LIMIT 1
+        ) tab
+        UNION ALL
+
+        SELECT date(a.updated_at)
+        FROM confidence_ratings a
+          INNER JOIN CTE c
+          ON date(a.updated_at) = date(c.updated_at) - INTERVAL '1 day'
+          WHERE user_id = '#{id}'
+      )
+      SELECT COUNT(*) FROM CTE;
+    ).squish
+    ActiveRecord::Base.connection.execute(sql).getvalue(0, 0)
+  end
+  # rubocop:enable Metrics/MethodLength
+
   private
 
   def generate_uuid

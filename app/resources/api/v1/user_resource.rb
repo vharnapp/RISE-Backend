@@ -8,7 +8,8 @@ module Api
                  :email,
                  :password,
                  :password_confirmation,
-                 :unlocked_pyramid_modules
+                 :unlocked_pyramid_modules,
+                 :day_streak
 
       has_many :confidence_ratings
       has_many :exercises, through: :confidence_ratings

@@ -1,8 +1,12 @@
 FactoryGirl.define do
   factory :pyramid_module do
-    name "MyString"
-    description "MyText"
-    track ""
+    name { Faker::Name.pyramid_module_name }
+    display_track { %w[speed skill strength].sample }
+
+    callback(:after_build, :after_stub, :after_create) do |model|
+      model.description = "Description for: #{model.name}"
+      model.save
+    end
   end
 end
 

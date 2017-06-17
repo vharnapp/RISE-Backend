@@ -28,3 +28,10 @@ en:
     label:
       workout:
         pyramid_module_name: Pyramid Module
+
+  faker:
+    name:
+      pyramid_module_name: ['Quickness', 'Ball Control', 'Soccer Strength', 'Soccer Power', 'Explosive Agility', 'Creative Skill', 'GameSPEED: Skill', 'First Touch', 'GameSPEED: Power', 'Soccer Speed', 'General Strength', 'Quick Skills', 'Complete Programs', 'Passing Combos', 'Powerful Bursts']
+      phase_name: ['Phase 1', 'Phase 2', 'Phase 3']
+      workout_name: ['One Touch', 'Two Touch', '1 & 2 Touch', 'Weighted Touches', 'Short & Long Touches', 'Opening Up Touches', 'Foundational Touches', 'Reset Touches', 'Behind Body Touches', '4 Cone-Lateral Targeting']
+      exercise_name: ['Quick Feet Forward Step', 'Lateral Moving Quick Feet Chops', 'Forward & Back Quick Feet Chops', 'Hip Flip Chops', 'Stationary Quick Feet Chops', 'Body Control Vertical Hop', 'Side to Side Hops - Rhythmic to Quick', 'Forward & Back Hops - Rhythmic to Quick', 'Crossover to Shuffle Back - Controlled Footwork', 'Crossover to Crossover Back']

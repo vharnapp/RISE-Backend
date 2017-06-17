@@ -1,7 +1,37 @@
 require 'rails_helper'
 
 RSpec.describe ConfidenceRating, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context 'day streak' do
+    it 'calculates number of concecutive days with a rating per user' do
+      first_user = create(:user)
+      second_user = create(:user)
+
+      # TODAY
+      create(:confidence_rating, user: first_user)
+      create(:confidence_rating, user: second_user)
+
+      # YESTERDAY
+      travel_to 1.day.ago do
+        create(:confidence_rating,  user: first_user)
+        create(:confidence_rating,  user: second_user)
+      end
+
+      travel_to 2.days.ago do
+        create(:confidence_rating,  user: first_user)
+        # Streak ends for second_user
+      end
+
+      (5..9).each do |n|
+        travel_to n.days.ago do
+          create(:confidence_rating,  user: first_user)
+          create(:confidence_rating,  user: second_user)
+        end
+      end
+
+      expect(first_user.day_streak).to eq(3)
+      expect(second_user.day_streak).to eq(2)
+    end
+  end
 end
 
 # == Schema Information
