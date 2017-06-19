@@ -78,7 +78,7 @@ class User < ApplicationRecord
         FROM confidence_ratings a
           INNER JOIN CTE c
           ON date(a.updated_at) = date(c.updated_at) - INTERVAL '1 day'
-          WHERE user_id = '#{id}'
+        WHERE user_id = '#{id}'
       )
       SELECT COUNT(*) FROM CTE;
     ).squish

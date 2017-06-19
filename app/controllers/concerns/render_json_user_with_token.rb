@@ -12,6 +12,6 @@ module RenderJsonUserWithToken
       meta: {
         authentication_token: token,
       },
-    )
+    ), status: :ok
   end
 end
