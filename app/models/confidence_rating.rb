@@ -2,6 +2,10 @@ class ConfidenceRating < ApplicationRecord
   belongs_to :user
   belongs_to :exercise
   belongs_to :workout
+
+  def pyramid_module
+    workout.phase.pyramid_module
+  end
 end
 
 # == Schema Information

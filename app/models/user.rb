@@ -88,6 +88,21 @@ class User < ApplicationRecord
   end
   # rubocop:enable Metrics/MethodLength
 
+  def days_since_last_confidence_rating_for_pyramid_module(pyramid_module)
+    workout_ids = pyramid_module.phases.flat_map(&:workouts).map(&:id)
+
+    if confidence_ratings
+      crs = confidence_ratings.where(workout: workout_ids).order(:updated_at)
+      if crs.present?
+        ((Time.current - crs.first.updated_at) / 1.day).round
+      else
+        'X'
+      end
+    else
+      'X'
+    end
+  end
+
   private
 
   def generate_uuid

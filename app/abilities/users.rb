@@ -14,4 +14,9 @@ Canard::Abilities.for(:user) do
     cr.user == user
   end
   can :create, ConfidenceRating
+
+  can :manage, UnlockedPyramidModule do |upm|
+    upm.user == user
+  end
+  can :create, UnlockedPyramidModule
 end
