@@ -107,16 +107,17 @@ RSpec.describe User, type: :model do
         @seven = create(:confidence_rating, user: user)
       end
 
-      week_hash = {
-        @one.updated_at.to_date.to_s(:db) =>   @one.workout.phase.pyramid_module.id,
-        @two.updated_at.to_date.to_s(:db) =>   @two.workout.phase.pyramid_module.id,
-        @four.updated_at.to_date.to_s(:db) =>  @four.workout.phase.pyramid_module.id,
-        @five.updated_at.to_date.to_s(:db) =>  @five.workout.phase.pyramid_module.id,
-        @six.updated_at.to_date.to_s(:db) =>   @six.workout.phase.pyramid_module.id,
-        @seven.updated_at.to_date.to_s(:db) => @seven.workout.phase.pyramid_module.id
-      }
+      week_array = [
+        { @seven.updated_at.to_date.to_s(:db) => @seven.workout.phase.pyramid_module.id },
+        { @six.updated_at.to_date.to_s(:db) =>   @six.workout.phase.pyramid_module.id },
+        { @five.updated_at.to_date.to_s(:db) =>  @five.workout.phase.pyramid_module.id },
+        { @four.updated_at.to_date.to_s(:db) =>  @four.workout.phase.pyramid_module.id },
+        { 2.days.ago.to_date.to_s(:db) =>        nil },
+        { @two.updated_at.to_date.to_s(:db) =>   @two.workout.phase.pyramid_module.id },
+        { @one.updated_at.to_date.to_s(:db) =>   @one.workout.phase.pyramid_module.id },
+      ]
 
-      expect(user.week_view).to eq(week_hash)
+      expect(user.week_view).to eq(week_array)
     end
   end
 end

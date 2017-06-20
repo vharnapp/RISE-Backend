@@ -104,13 +104,18 @@ class User < ApplicationRecord
   end
 
   def week_view
-    confidence_ratings
+    ratings = confidence_ratings
       .includes(workout: { phase: :pyramid_module })
       .where('confidence_ratings.updated_at > ?', 7.days.ago)
+      .order('confidence_ratings.updated_at')
       .uniq
       .each_with_object({}) do |wk, memo|
         memo[wk.updated_at.to_date.to_s(:db)] = wk.workout.phase.pyramid_module.id
       end
+
+    (6.days.ago.to_date..Time.current.to_date).map do |date|
+      { date.to_s(:db) => ratings.fetch(date.to_s(:db), nil) }
+    end
   end
 
   private
