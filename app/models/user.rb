@@ -115,6 +115,7 @@ class User < ApplicationRecord
 
     (6.days.ago.to_date..Time.current.to_date).map do |date|
       { date.to_s(:db) => ratings.fetch(date.to_s(:db), nil) }
+      # { date.to_s(:short).split(' ').reverse => ratings.fetch(date.to_s(:db), nil) }
     end
   end
 
