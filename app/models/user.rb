@@ -26,6 +26,8 @@ class User < ApplicationRecord
   has_many :exercises, through: :confidence_ratings
   has_many :workouts, through: :confidence_ratings
 
+  has_many :unlocked_pyramid_modules
+
   validates :email,
             presence: true,
             format: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,8}\z/i,
@@ -101,27 +103,26 @@ end
 #
 # Table name: users
 #
-#  created_at               :datetime         not null
-#  current_sign_in_at       :datetime
-#  current_sign_in_ip       :inet
-#  deleted_at               :datetime
-#  email                    :string           default(""), not null
-#  encrypted_password       :string           default(""), not null
-#  first_name               :string
-#  id                       :integer          not null, primary key
-#  last_name                :string
-#  last_sign_in_at          :datetime
-#  last_sign_in_ip          :inet
-#  nickname                 :string
-#  remember_created_at      :datetime
-#  reset_password_sent_at   :datetime
-#  reset_password_token     :string
-#  roles_mask               :integer
-#  sign_in_count            :integer          default(0), not null
-#  slug                     :string
-#  unlocked_pyramid_modules :text             default([]), is an Array
-#  updated_at               :datetime         not null
-#  uuid                     :string
+#  created_at             :datetime         not null
+#  current_sign_in_at     :datetime
+#  current_sign_in_ip     :inet
+#  deleted_at             :datetime
+#  email                  :string           default(""), not null
+#  encrypted_password     :string           default(""), not null
+#  first_name             :string
+#  id                     :integer          not null, primary key
+#  last_name              :string
+#  last_sign_in_at        :datetime
+#  last_sign_in_ip        :inet
+#  nickname               :string
+#  remember_created_at    :datetime
+#  reset_password_sent_at :datetime
+#  reset_password_token   :string
+#  roles_mask             :integer
+#  sign_in_count          :integer          default(0), not null
+#  slug                   :string
+#  updated_at             :datetime         not null
+#  uuid                   :string
 #
 # Indexes
 #

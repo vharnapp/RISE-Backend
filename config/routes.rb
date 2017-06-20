@@ -68,7 +68,7 @@ Rails.application.routes.draw do
         end
       end
       jsonapi_resources :users do
-        # jsonapi_resources :posts
+        jsonapi_resources :unlocked_pyramid_modules
         # jsonapi_links :posts
       end
 

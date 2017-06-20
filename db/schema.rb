@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170615203738) do
+ActiveRecord::Schema.define(version: 20170620105306) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -181,6 +181,16 @@ ActiveRecord::Schema.define(version: 20170615203738) do
     t.index ["slug"], name: "index_teams_on_slug", unique: true
   end
 
+  create_table "unlocked_pyramid_modules", force: :cascade do |t|
+    t.text "completed_phases", default: [], array: true
+    t.datetime "created_at", null: false
+    t.bigint "pyramid_module_id"
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["pyramid_module_id"], name: "index_unlocked_pyramid_modules_on_pyramid_module_id"
+    t.index ["user_id"], name: "index_unlocked_pyramid_modules_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "current_sign_in_at"
@@ -199,7 +209,6 @@ ActiveRecord::Schema.define(version: 20170615203738) do
     t.integer "roles_mask"
     t.integer "sign_in_count", default: 0, null: false
     t.string "slug"
-    t.text "unlocked_pyramid_modules", default: [], array: true
     t.datetime "updated_at", null: false
     t.string "uuid"
     t.index ["deleted_at"], name: "index_users_on_deleted_at"
@@ -230,5 +239,7 @@ ActiveRecord::Schema.define(version: 20170615203738) do
   add_foreign_key "exercise_workouts", "workouts"
   add_foreign_key "phases", "pyramid_modules"
   add_foreign_key "teams", "clubs"
+  add_foreign_key "unlocked_pyramid_modules", "pyramid_modules"
+  add_foreign_key "unlocked_pyramid_modules", "users"
   add_foreign_key "workouts", "phases"
 end

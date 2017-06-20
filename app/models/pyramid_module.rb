@@ -15,8 +15,9 @@ class PyramidModule < ApplicationRecord
   #
   # has_many :phases, -> { order(position: :asc) }, dependent: :destroy
   has_many :phases, dependent: :destroy
-
   accepts_nested_attributes_for :phases, allow_destroy: true
+
+  has_many :unlocked_pyramid_modules, dependent: :destroy
 
   validates :name, :description, :display_track, presence: true
 
