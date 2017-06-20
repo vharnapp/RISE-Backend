@@ -80,6 +80,7 @@ RSpec.describe User, type: :model do
   end
 
   context '#week_view' do
+    # rubocop:disable RSpec/InstanceVariable, RSpec/ExampleLength, Metrics/LineLength
     it 'pulls back pyramid modules that were rated in the last 7 days' do
       user = create(:user)
 
@@ -88,11 +89,11 @@ RSpec.describe User, type: :model do
 
       # YESTERDAY
       travel_to 1.day.ago do
-        @two = create(:confidence_rating,  user: user)
+        @two = create(:confidence_rating, user: user)
       end
 
       travel_to 3.days.ago do
-        @four = create(:confidence_rating,  user: user)
+        @four = create(:confidence_rating, user: user)
       end
 
       travel_to 4.days.ago do
