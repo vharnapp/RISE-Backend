@@ -78,6 +78,47 @@ RSpec.describe User, type: :model do
       expect(User).to have_received(:exists?).exactly(2).times
     end
   end
+
+  context '#week_view' do
+    it 'pulls back pyramid modules that were rated in the last 7 days' do
+      user = create(:user)
+
+      # TODAY
+      @one = create(:confidence_rating, user: user)
+
+      # YESTERDAY
+      travel_to 1.day.ago do
+        @two = create(:confidence_rating,  user: user)
+      end
+
+      travel_to 3.days.ago do
+        @four = create(:confidence_rating,  user: user)
+      end
+
+      travel_to 4.days.ago do
+        @five = create(:confidence_rating, user: user)
+      end
+
+      travel_to 5.days.ago do
+        @six = create(:confidence_rating, user: user)
+      end
+
+      travel_to 6.days.ago do
+        @seven = create(:confidence_rating, user: user)
+      end
+
+      week_hash = {
+        @one.updated_at.to_date.to_s(:db) =>   @one.workout.phase.pyramid_module.id,
+        @two.updated_at.to_date.to_s(:db) =>   @two.workout.phase.pyramid_module.id,
+        @four.updated_at.to_date.to_s(:db) =>  @four.workout.phase.pyramid_module.id,
+        @five.updated_at.to_date.to_s(:db) =>  @five.workout.phase.pyramid_module.id,
+        @six.updated_at.to_date.to_s(:db) =>   @six.workout.phase.pyramid_module.id,
+        @seven.updated_at.to_date.to_s(:db) => @seven.workout.phase.pyramid_module.id
+      }
+
+      expect(user.week_view).to eq(week_hash)
+    end
+  end
 end
 
 # == Schema Information

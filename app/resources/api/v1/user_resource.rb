@@ -8,7 +8,8 @@ module Api
                  :email,
                  :password,
                  :password_confirmation,
-                 :day_streak
+                 :day_streak,
+                 :week_view
 
       has_many :confidence_ratings
       has_many :exercises, through: :confidence_ratings
