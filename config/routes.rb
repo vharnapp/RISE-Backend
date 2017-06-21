@@ -73,6 +73,7 @@ Rails.application.routes.draw do
 
       jsonapi_resources :confidence_ratings
       jsonapi_resources :unlocked_pyramid_modules
+      jsonapi_resources :phase_attempts
     end
   end
 end

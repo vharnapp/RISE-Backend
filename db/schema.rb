@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170620105306) do
+ActiveRecord::Schema.define(version: 20170621135707) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -127,6 +127,16 @@ ActiveRecord::Schema.define(version: 20170620105306) do
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
   end
 
+  create_table "phase_attempts", force: :cascade do |t|
+    t.integer "count"
+    t.datetime "created_at", null: false
+    t.bigint "phase_id"
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["phase_id"], name: "index_phase_attempts_on_phase_id"
+    t.index ["user_id"], name: "index_phase_attempts_on_user_id"
+  end
+
   create_table "phases", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
@@ -237,6 +247,8 @@ ActiveRecord::Schema.define(version: 20170620105306) do
   add_foreign_key "confidence_ratings", "workouts"
   add_foreign_key "exercise_workouts", "exercises"
   add_foreign_key "exercise_workouts", "workouts"
+  add_foreign_key "phase_attempts", "phases"
+  add_foreign_key "phase_attempts", "users"
   add_foreign_key "phases", "pyramid_modules"
   add_foreign_key "teams", "clubs"
   add_foreign_key "unlocked_pyramid_modules", "pyramid_modules"

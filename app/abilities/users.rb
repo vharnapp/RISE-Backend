@@ -19,4 +19,9 @@ Canard::Abilities.for(:user) do
     upm.user == user
   end
   can :create, UnlockedPyramidModule
+
+  can :manage, PhaseAttempt do |pa|
+    pa.user == user
+  end
+  can :create, PhaseAttempt
 end

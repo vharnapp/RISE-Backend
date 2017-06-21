@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/ClassLength
 class User < ApplicationRecord
   acts_as_paranoid
 
@@ -27,6 +28,11 @@ class User < ApplicationRecord
   has_many :workouts, through: :confidence_ratings
 
   has_many :unlocked_pyramid_modules
+
+  has_many :phase_attempts
+  has_many :phases, through: :phase_attempts
+
+  #profile pics
 
   validates :email,
             presence: true,

@@ -15,6 +15,9 @@ class Phase < ApplicationRecord
 
   accepts_nested_attributes_for :workouts, allow_destroy: true
 
+  has_many :phase_attempts
+  has_many :users, through: :phase_attempts
+
   validates :name, presence: true
 
   def pyramid_module_name
