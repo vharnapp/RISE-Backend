@@ -29,7 +29,7 @@ module Api
 
       def update
         if @user.update_attributes(user_params)
-          jsonapi_render json: @user, status: :updated
+          jsonapi_render json: @user, status: :ok
         else
           jsonapi_render_errors json: @user, status: :unprocessable_entity
         end
