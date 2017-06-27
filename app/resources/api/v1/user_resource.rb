@@ -10,7 +10,8 @@ module Api
                  :password_confirmation,
                  :day_streak,
                  :week_view,
-                 :phase_attempts
+                 :phase_attempts,
+                 :avatar
 
       has_many :confidence_ratings
       has_many :exercises, through: :confidence_ratings

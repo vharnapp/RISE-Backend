@@ -69,8 +69,9 @@ gem 'paranoia' # soft-delete
 gem 'settingslogic' # yaml settings (project wide, non-editable), this is implemented with the model Settings.rb
 
 # User Uploads
-# gem 'carrierwave'
-# gem 'fog'
+gem 'carrierwave'
+gem 'carrier_wave_base64_uploader', git: 'https://github.com/headwayio/carrier_wave_base64_uploader'
+gem 'fog'
 gem 'mini_magick'
 
 # Cron Jobs
