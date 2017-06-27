@@ -127,6 +127,7 @@ end
 #
 # Table name: users
 #
+#  avatar                 :string
 #  created_at             :datetime         not null
 #  current_sign_in_at     :datetime
 #  current_sign_in_ip     :inet

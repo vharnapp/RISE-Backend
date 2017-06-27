@@ -32,7 +32,7 @@ class User < ApplicationRecord
   has_many :phase_attempts
   has_many :phases, through: :phase_attempts
 
-  #profile pics
+  mount_uploader :avatar, ImageUploader
 
   validates :email,
             presence: true,
@@ -140,6 +140,7 @@ end
 #
 # Table name: users
 #
+#  avatar                 :string
 #  created_at             :datetime         not null
 #  current_sign_in_at     :datetime
 #  current_sign_in_ip     :inet
