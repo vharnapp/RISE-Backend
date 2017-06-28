@@ -79,12 +79,14 @@ class User < ApplicationRecord
         ON date(a.updated_at) = date(c.updated_at) - INTERVAL '1 day'
         WHERE a.user_id = #{id}
       )
-      SELECT distinct * FROM CTE;
+      SELECT DISTINCT * FROM CTE ORDER BY updated_at DESC;
     ).squish
 
-    streak_days = ActiveRecord::Base.connection.execute(sql).values.flatten.sort.reverse
+    streak_days = ActiveRecord::Base.connection.execute(sql).values.flatten
 
     if streak_days.count == 1 && streak_days.first.nil?
+      0
+    elsif Date.parse(streak_days.first) < 1.day.ago.to_date
       0
     else
       streak_days.count

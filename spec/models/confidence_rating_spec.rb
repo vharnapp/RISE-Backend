@@ -2,34 +2,78 @@ require 'rails_helper'
 
 RSpec.describe ConfidenceRating, type: :model do
   context 'day streak' do
-    it 'calculates number of concecutive days with a rating per user' do
-      first_user = create(:user)
-      second_user = create(:user)
+    context 'latest rating is today' do
+      it 'calculates number of concecutive days with a rating per user' do
+        first_user = create(:user)
+        second_user = create(:user)
 
-      # TODAY
-      create(:confidence_rating, user: first_user)
-      create(:confidence_rating, user: second_user)
-
-      # YESTERDAY
-      travel_to 1.day.ago do
+        # TODAY
         create(:confidence_rating, user: first_user)
         create(:confidence_rating, user: second_user)
-      end
 
-      travel_to 2.days.ago do
-        create(:confidence_rating, user: first_user)
-        # Streak ends for second_user
-      end
-
-      (5..9).each do |n|
-        travel_to n.days.ago do
+        # YESTERDAY
+        travel_to 1.day.ago do
           create(:confidence_rating, user: first_user)
           create(:confidence_rating, user: second_user)
         end
-      end
 
-      expect(first_user.day_streak).to eq(3)
-      expect(second_user.day_streak).to eq(2)
+        travel_to 2.days.ago do
+          create(:confidence_rating, user: first_user)
+          # Streak ends for second_user
+        end
+
+        (5..9).each do |n|
+          travel_to n.days.ago do
+            create(:confidence_rating, user: first_user)
+            create(:confidence_rating, user: second_user)
+          end
+        end
+
+        expect(first_user.day_streak).to eq(3)
+        expect(second_user.day_streak).to eq(2)
+      end
+    end
+
+    context 'latest rating is yesterday' do
+      it 'calculates number of concecutive days with a rating per user' do
+        first_user = create(:user)
+        second_user = create(:user)
+
+        # YESTERDAY
+        travel_to 1.day.ago do
+          create(:confidence_rating, user: first_user)
+          create(:confidence_rating, user: second_user)
+        end
+
+        travel_to 2.days.ago do
+          create(:confidence_rating, user: first_user)
+          # Streak ends for second_user
+        end
+
+        (5..9).each do |n|
+          travel_to n.days.ago do
+            create(:confidence_rating, user: first_user)
+            create(:confidence_rating, user: second_user)
+          end
+        end
+
+        expect(first_user.day_streak).to eq(2)
+        expect(second_user.day_streak).to eq(1)
+      end
+    end
+
+    context 'latest rating was 2 days ago and they had a 4 day streak at that time' do
+      it 'displays 0 for the current streak' do
+        first_user = create(:user)
+
+        (2..5).each do |n|
+          travel_to n.days.ago do
+            create(:confidence_rating, user: first_user)
+          end
+        end
+
+        expect(first_user.day_streak).to eq(0)
+      end
     end
   end
 end
