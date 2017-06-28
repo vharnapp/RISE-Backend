@@ -1,6 +1,6 @@
 # rubocop:disable Metrics/ClassLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/LineLength
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  protect_from_forgery with: :exception, unless: -> { request.format.json? }
   check_authorization unless: :devise_or_pages_controller?
   impersonates :user
 
@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!, unless: -> { is_a?(HighVoltage::PagesController) }
   before_action :add_layout_name_to_gon
   before_action :detect_device_type
+
+  respond_to :json, :html, if: :devise_controller? # for devise reset password
 
   rescue_from CanCan::AccessDenied do |exception|
     respond_to do |format|
