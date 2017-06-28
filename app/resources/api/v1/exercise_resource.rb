@@ -1,12 +1,13 @@
 module Api
   module V1
     class ExerciseResource < JSONAPI::Resource
+      include KeyframeFields
+
       attributes :name,
                  :description,
                  :sets,
                  :reps,
                  :rest,
-                 :keyframe,
                  :video
 
       has_many :exercise_workouts

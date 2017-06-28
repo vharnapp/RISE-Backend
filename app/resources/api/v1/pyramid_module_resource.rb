@@ -1,13 +1,14 @@
 module Api
   module V1
     class PyramidModuleResource < JSONAPI::Resource
+      include KeyframeFields
+
       attributes :name,
                  :description,
                  :level,
                  :prereq,
                  :display_track,
                  :tracks,
-                 :keyframe,
                  :video,
                  :position
 

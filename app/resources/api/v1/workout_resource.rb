@@ -27,6 +27,8 @@ module Api
             reps: exercise.reps,
             rest: exercise.rest,
             keyframe: exercise.keyframe,
+            keyframe_medium: exercise.keyframe.url(:medium),
+            keyframe_thumb: exercise.keyframe.url(:thumb),
             video: exercise.video,
             position: exercise_workout.position,
           }

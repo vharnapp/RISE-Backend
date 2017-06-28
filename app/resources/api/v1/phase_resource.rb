@@ -1,10 +1,11 @@
 module Api
   module V1
     class PhaseResource < JSONAPI::Resource
+      include KeyframeFields
+
       attributes :name,
                  :position,
                  :supplemental,
-                 :keyframe,
                  :video
 
       belongs_to :pyramid_module
