@@ -79,9 +79,16 @@ class User < ApplicationRecord
         ON date(a.updated_at) = date(c.updated_at) - INTERVAL '1 day'
         WHERE a.user_id = #{id}
       )
-      select count(*) from (SELECT distinct * FROM CTE) cnt;
+      SELECT distinct * FROM CTE;
     ).squish
-    ActiveRecord::Base.connection.execute(sql).getvalue(0, 0)
+
+    streak_days = ActiveRecord::Base.connection.execute(sql).values.flatten.sort.reverse
+
+    if streak_days.count == 1 && streak_days.first.nil?
+      0
+    else
+      streak_days.count
+    end
   end
   # rubocop:enable Metrics/MethodLength
 
