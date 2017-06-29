@@ -7,6 +7,12 @@ class Affiliation < ApplicationRecord
   scope :coaches, (-> { where(coach: true) })
   scope :players, (-> { where(coach: false) })
 
+  validates :user_id,
+            uniqueness: {
+              scope: :team_id,
+              message: 'A user can only belong to a team once',
+            }
+
   def title
     coach ? 'Coach' : 'Player'
   end
