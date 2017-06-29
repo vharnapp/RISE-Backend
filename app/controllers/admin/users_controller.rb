@@ -1,18 +1,6 @@
 module Admin
   class UsersController < Admin::ApplicationController
     skip_before_action :authenticate_admin, only: [:stop_impersonating]
-    # before_action :set_user, only: [:destroy, :edit, :update]
-    # respond_to :html, :json
-
-    # def index
-    #   @users = User.all
-
-    #   respond_with(@users)
-    # end
-
-    # def new
-    #   @user = User.new
-    # end
 
     # TODO: (2017-04-08) jon => extract this to a service object or form object
     # after looking at the wireframes and figuring out how the UI will handle
@@ -51,24 +39,6 @@ module Admin
     end
     # rubocop:enable Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/LineLength
 
-    def edit; end
-
-    def update
-      if @user.update(user_params)
-        flash[:notice] = 'User successfully updated'
-        redirect_to admin_users_path
-      else
-        flash[:error] = 'An error occurred'
-        render :edit
-      end
-    end
-
-    def destroy
-      @user.destroy
-      flash[:notice] = 'User successfully destroyed'
-      redirect_to admin_users_path
-    end
-
     def impersonate
       user = User.find(params[:id])
       track_impersonation(user, 'Start')
@@ -84,20 +54,14 @@ module Admin
 
     private
 
-    def user_params
-      params.require(:user).permit(
-        :first_name,
-        :last_name,
-        :email,
+    def resource_params
+      params.require(resource_name).permit(
+        *dashboard.permitted_attributes,
         :password,
         :password_confirmation,
-        :current_password,
         team_ids: [],
+        roles: [],
       )
-    end
-
-    def set_user
-      @user = User.find(params[:id])
     end
 
     def track_impersonation(user, status)

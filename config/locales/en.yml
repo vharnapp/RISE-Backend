@@ -28,6 +28,9 @@ en:
     label:
       workout:
         pyramid_module_name: Pyramid Module
+      user:
+        teams: Teams
+        unlocked_pyramid_modules: Unlocked Modules
 
   faker:
     name:

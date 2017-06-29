@@ -29,6 +29,9 @@ Rails.application.routes.draw do
     resources :phases
     resources :workouts
     resources :exercises
+    resources :clubs
+    resources :teams
+    resources :affiliations
 
     resources :users do
       member do
