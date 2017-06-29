@@ -19,7 +19,6 @@ module Api
           exercise = exercise_workout.exercise
 
           {
-            type: 'exercises',
             id: exercise.id,
             name: exercise.name,
             description: exercise.description,

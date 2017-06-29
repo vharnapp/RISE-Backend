@@ -34,7 +34,6 @@ module Api
       def teams
         @model.teams.map do |team|
           {
-            type: 'teams',
             id: team.id,
             name: team.name,
             logo: team.logo.url,
