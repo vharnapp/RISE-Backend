@@ -9,6 +9,7 @@ end
 # Table name: teams
 #
 #  club_id    :integer
+#  code       :string
 #  created_at :datetime         not null
 #  deleted_at :datetime
 #  id         :integer          not null, primary key

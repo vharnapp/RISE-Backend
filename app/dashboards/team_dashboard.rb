@@ -21,6 +21,7 @@ class TeamDashboard < Administrate::BaseDashboard
     slug: Field::String,
     deleted_at: Field::DateTime,
     position: Field::Number,
+    code: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -33,6 +34,7 @@ class TeamDashboard < Administrate::BaseDashboard
     :club,
     :coaches,
     :players,
+    :code,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -40,6 +42,7 @@ class TeamDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :club,
     :name,
+    :code,
     :coaches,
     :players,
   ].freeze
@@ -50,6 +53,7 @@ class TeamDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :club,
     :name,
+    :code,
     :coaches,
     :players,
   ].freeze

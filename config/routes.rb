@@ -77,6 +77,9 @@ Rails.application.routes.draw do
       jsonapi_resources :confidence_ratings
       jsonapi_resources :unlocked_pyramid_modules
       jsonapi_resources :phase_attempts
+      jsonapi_resources :affiliations
+      jsonapi_resources :teams
+      jsonapi_resources :clubs
     end
   end
 end
