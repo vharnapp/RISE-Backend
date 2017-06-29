@@ -1,7 +1,8 @@
 module Api
   module V1
     class TeamsController < BaseApiController
-      load_and_authorize_resource
+      load_and_authorize_resource :user
+      load_and_authorize_resource :team, through: :user
 
       def index
         jsonapi_render json: @teams

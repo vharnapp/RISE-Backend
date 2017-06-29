@@ -72,6 +72,7 @@ Rails.application.routes.draw do
       end
       jsonapi_resources :users do
         # jsonapi_links :posts
+        jsonapi_resources :teams
       end
 
       jsonapi_resources :confidence_ratings

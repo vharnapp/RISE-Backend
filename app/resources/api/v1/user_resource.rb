@@ -23,6 +23,9 @@ module Api
       has_many :phase_attempts
       has_many :phases, through: :phase_attempts
 
+      has_many :affiliations
+      has_many :teams, through: :affiliations
+
       def fetchable_fields
         super - [:password, :password_confirmation]
       end

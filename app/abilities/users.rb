@@ -26,4 +26,6 @@ Canard::Abilities.for(:user) do
   can :create, PhaseAttempt
 
   can [:create, :update], Affiliation
+
+  can [:read], Team
 end
