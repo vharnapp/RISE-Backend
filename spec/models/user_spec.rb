@@ -121,6 +121,22 @@ RSpec.describe User, type: :model do
       expect(user.week_view).to eq(week_array)
     end
   end
+
+  # FIXME: (2017-06-29) jon => optimize so we're not creating so many database records
+  context '#skills_mastered' do
+    context '6 exercises rated at 4, 2 exercises rated at 3' do
+      it 'spec_name' do
+        user = FactoryGirl.create(:user)
+        workout = FactoryGirl.create(:workout)
+
+        FactoryGirl.create_list(:confidence_rating, 6, rating: 4, user: user, workout: workout)
+        FactoryGirl.create_list(:confidence_rating, 2, rating: 3, user: user, workout: workout)
+
+        expect(user.exercises.count).to eq(8)
+        expect(user.skills_mastered).to eq(6)
+      end
+    end
+  end
 end
 
 # == Schema Information

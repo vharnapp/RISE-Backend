@@ -8,6 +8,7 @@ module Api
                  :email,
                  :password,
                  :password_confirmation,
+                 :skills_mastered,
                  :day_streak,
                  :week_view,
                  :phase_attempts,

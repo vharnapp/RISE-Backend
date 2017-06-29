@@ -125,6 +125,13 @@ class User < ApplicationRecord
     end
   end
 
+  def skills_mastered
+    confidence_ratings
+      .includes(:workout)
+      .where(rating: 4, workouts: { supplemental: false })
+      .count
+  end
+
   private
 
   def generate_uuid
