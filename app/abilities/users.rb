@@ -24,4 +24,6 @@ Canard::Abilities.for(:user) do
     pa.user == user
   end
   can :create, PhaseAttempt
+
+  can [:create, :update], Affiliation
 end
