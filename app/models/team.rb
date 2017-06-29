@@ -4,6 +4,8 @@ class Team < ApplicationRecord
   extend FriendlyId
   friendly_id :name
 
+  mount_uploader :logo, ImageUploader
+
   belongs_to :club
 
   has_many :affiliations, dependent: :destroy
@@ -31,6 +33,7 @@ end
 #  created_at :datetime         not null
 #  deleted_at :datetime
 #  id         :integer          not null, primary key
+#  logo       :string
 #  name       :string
 #  position   :integer
 #  slug       :string

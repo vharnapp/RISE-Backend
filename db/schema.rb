@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170629020454) do
+ActiveRecord::Schema.define(version: 20170629182357) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20170629020454) do
   create_table "clubs", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
+    t.string "logo"
     t.string "name"
     t.integer "position"
     t.string "slug"
@@ -184,6 +185,7 @@ ActiveRecord::Schema.define(version: 20170629020454) do
     t.string "code"
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
+    t.string "logo"
     t.string "name"
     t.integer "position"
     t.string "slug"

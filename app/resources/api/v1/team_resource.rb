@@ -2,7 +2,8 @@ module Api
   module V1
     class TeamResource < JSONAPI::Resource
       attributes :name,
-                 :code
+                 :code,
+                 :logo
 
       belongs_to :club
       has_many :affiliations, dependent: :destroy

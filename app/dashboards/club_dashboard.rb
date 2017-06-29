@@ -16,6 +16,9 @@ class ClubDashboard < Administrate::BaseDashboard
     slug: Field::String,
     deleted_at: Field::DateTime,
     position: Field::Number,
+    logo: Field::Carrierwave.with_options(
+      image_on_index: true,
+    ),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -24,6 +27,7 @@ class ClubDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
+    :logo,
     :name,
     :teams,
   ].freeze
@@ -31,6 +35,7 @@ class ClubDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
+    :logo,
     :name,
     :teams,
   ].freeze
@@ -39,6 +44,7 @@ class ClubDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :logo,
     :name,
     :teams,
   ].freeze
