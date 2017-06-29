@@ -38,7 +38,9 @@ class UserDashboard < Administrate::BaseDashboard
     slug: Field::String,
     deleted_at: Field::DateTime,
     nickname: Field::String,
-    avatar: Field::String,
+    avatar: Field::Carrierwave.with_options(
+      image_on_index: true,
+    ),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -73,6 +75,7 @@ class UserDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :avatar,
     :first_name,
     :last_name,
     :nickname,

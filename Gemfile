@@ -37,6 +37,7 @@ gem 'administrate-field-enum', github: 'headwayio/administrate-field-enum'
 gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-nested_has_many', branch: 'rails_5'
 gem 'administrate-field-paperclip'
 gem 'administrate-field-select_essential'
+gem 'administrate-field-carrierwave', '~> 0.2.0'
 
 gem 'aws-sdk', '~> 2.9'
 gem 'paperclip'

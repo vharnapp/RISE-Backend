@@ -142,6 +142,9 @@ GEM
       activerecord (>= 3.0)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    administrate-field-carrierwave (0.2.0)
+      administrate (< 1.0.0)
+      rails (>= 4.2)
     administrate-field-collection_select (0.3.0)
       administrate (~> 0.7)
       rails (~> 5.0)
@@ -751,6 +754,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   acts_as_list
   administrate!
+  administrate-field-carrierwave (~> 0.2.0)
   administrate-field-collection_select
   administrate-field-enum!
   administrate-field-nested_has_many!
