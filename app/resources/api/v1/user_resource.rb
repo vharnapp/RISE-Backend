@@ -12,6 +12,7 @@ module Api
                  :day_streak,
                  :week_view,
                  :phase_attempts,
+                 :teams,
                  :avatar
 
       has_many :confidence_ratings
@@ -28,6 +29,17 @@ module Api
 
       def fetchable_fields
         super - [:password, :password_confirmation]
+      end
+
+      def teams
+        @model.teams.map do |team|
+          {
+            type: 'teams',
+            id: team.id,
+            name: team.name,
+            logo: team.logo.url,
+          }
+        end
       end
     end
   end
