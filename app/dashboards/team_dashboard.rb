@@ -24,6 +24,7 @@ class TeamDashboard < Administrate::BaseDashboard
     deleted_at: Field::DateTime,
     position: Field::Number,
     code: Field::String,
+    display_code: Field::String,
     logo: Field::Carrierwave.with_options(
       image_on_index: true,
     ),
@@ -40,7 +41,7 @@ class TeamDashboard < Administrate::BaseDashboard
     :club,
     :coaches,
     :players,
-    :code,
+    :display_code,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -49,7 +50,7 @@ class TeamDashboard < Administrate::BaseDashboard
     :logo,
     :club,
     :name,
-    :code,
+    :display_code,
     :coaches,
     :players,
   ].freeze

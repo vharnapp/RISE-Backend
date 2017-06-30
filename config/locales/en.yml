@@ -31,6 +31,8 @@ en:
       user:
         teams: Teams
         unlocked_pyramid_modules: Unlocked Modules
+      team:
+        display_code: Code
 
   faker:
     name:

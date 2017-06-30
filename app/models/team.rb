@@ -6,6 +6,8 @@ class Team < ApplicationRecord
 
   mount_uploader :logo, ImageUploader
 
+  before_create :generate_code
+
   belongs_to :club
 
   has_many :affiliations, dependent: :destroy
@@ -25,6 +27,24 @@ class Team < ApplicationRecord
   has_many :subscriptions, through: :enrollments
 
   validates :name, presence: true
+
+  def display_code
+    # chunk into groups of 3 separated by dashes
+    code.chars.to_a.each_slice(3).to_a.map(&:join).join('-')
+  end
+
+  private
+
+  def generate_code
+    return if self[:code].present?
+
+    loop do
+      code = SecureRandom.hex.upcase[1..6]
+      next unless code.match?(/[A-Z]/) && code.match?(/[0-9]/) # letters & num
+      self.code = code
+      break unless Team.exists?(code: code)
+    end
+  end
 end
 
 # == Schema Information

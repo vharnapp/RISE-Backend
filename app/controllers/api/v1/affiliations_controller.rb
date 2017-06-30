@@ -5,7 +5,8 @@ module Api
 
       # rubocop:disable Metrics/MethodLength
       def create
-        team = Team.find_by(code: params[:data][:attributes][:team_code])
+        code = params[:data][:attributes][:team_code].delete('-')
+        team = Team.find_by(code: code)
 
         if team.present?
           affiliation =
