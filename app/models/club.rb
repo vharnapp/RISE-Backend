@@ -24,14 +24,23 @@ end
 #
 # Table name: clubs
 #
-#  created_at :datetime         not null
-#  deleted_at :datetime
-#  id         :integer          not null, primary key
-#  logo       :string
-#  name       :string
-#  position   :integer
-#  slug       :string
-#  updated_at :datetime         not null
+#  address_city       :string
+#  address_line1      :string
+#  address_line2      :string
+#  address_state      :string
+#  address_zip        :string
+#  contact_email      :string
+#  contact_first_name :string
+#  contact_last_name  :string
+#  contact_phone      :string
+#  created_at         :datetime         not null
+#  deleted_at         :datetime
+#  id                 :integer          not null, primary key
+#  logo               :string
+#  name               :string
+#  position           :integer
+#  slug               :string
+#  updated_at         :datetime         not null
 #
 # Indexes
 #

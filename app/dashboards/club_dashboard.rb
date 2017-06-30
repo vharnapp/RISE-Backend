@@ -23,6 +23,15 @@ class ClubDashboard < Administrate::BaseDashboard
     logo: Field::Carrierwave.with_options(
       image_on_index: true,
     ),
+    contact_first_name: Field::String,
+    contact_last_name: Field::String,
+    contact_email: Field::String,
+    contact_phone: Field::String,
+    address_line1: Field::String,
+    address_line2: Field::String,
+    address_city: Field::String,
+    address_state: Field::String,
+    address_zip: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -35,6 +44,7 @@ class ClubDashboard < Administrate::BaseDashboard
     :name,
     :teams,
     :subscriptions,
+    :contact_phone,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -42,6 +52,15 @@ class ClubDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :logo,
     :name,
+    :contact_first_name,
+    :contact_last_name,
+    :contact_email,
+    :contact_phone,
+    :address_line1,
+    :address_line2,
+    :address_city,
+    :address_state,
+    :address_zip,
     :teams,
     :subscriptions,
   ].freeze
@@ -52,6 +71,15 @@ class ClubDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :logo,
     :name,
+    :contact_first_name,
+    :contact_last_name,
+    :contact_email,
+    :contact_phone,
+    :address_line1,
+    :address_line2,
+    :address_city,
+    :address_state,
+    :address_zip,
     :teams,
     :subscriptions,
   ].freeze

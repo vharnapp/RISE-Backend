@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170630014410) do
+ActiveRecord::Schema.define(version: 20170630172300) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -41,6 +41,15 @@ ActiveRecord::Schema.define(version: 20170630014410) do
   end
 
   create_table "clubs", force: :cascade do |t|
+    t.string "address_city"
+    t.string "address_line1"
+    t.string "address_line2"
+    t.string "address_state"
+    t.string "address_zip"
+    t.string "contact_email"
+    t.string "contact_first_name"
+    t.string "contact_last_name"
+    t.string "contact_phone"
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
     t.string "logo"
