@@ -33,6 +33,10 @@ class Team < ApplicationRecord
     code.chars.to_a.each_slice(3).to_a.map(&:join).join('-')
   end
 
+  before_save do
+    self.code = self[:code].delete('-')
+  end
+
   private
 
   def generate_code
