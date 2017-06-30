@@ -9,6 +9,8 @@ class TeamDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     club: Field::BelongsTo,
+    subscriptions: Field::HasMany,
+    enrollments: Field::HasMany,
     affiliations: Field::HasMany,
     coach_affiliations: Field::HasMany.with_options(class_name: 'Affiliation'),
     player_affiliations: Field::HasMany.with_options(class_name: 'Affiliation'),

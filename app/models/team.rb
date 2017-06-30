@@ -21,6 +21,9 @@ class Team < ApplicationRecord
            class_name: 'User',
            source: :user
 
+  has_many :enrollments, dependent: :destroy
+  has_many :subscriptions, through: :enrollments
+
   validates :name, presence: true
 end
 

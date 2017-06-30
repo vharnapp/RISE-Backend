@@ -40,6 +40,7 @@ class TeamsController < ApplicationController
     params.require(:team).permit(
       :name,
       :club_id,
+      :code,
     )
   end
 end

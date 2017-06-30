@@ -39,6 +39,8 @@ gem 'administrate-field-paperclip'
 gem 'administrate-field-select_essential'
 gem 'administrate-field-carrierwave', '~> 0.2.0'
 
+gem 'validates_overlap', github: 'robinbortlik/validates_overlap'
+
 gem 'aws-sdk', '~> 2.9'
 gem 'paperclip'
 gem 'paperclip-av-transcoder'

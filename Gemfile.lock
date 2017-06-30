@@ -43,6 +43,13 @@ GIT
       railties (>= 4.2)
 
 GIT
+  remote: git://github.com/robinbortlik/validates_overlap.git
+  revision: 3b6e38bae20c6c692287dba85dd7d56ca5741cec
+  specs:
+    validates_overlap (0.8.4)
+      rails (>= 3.0.0)
+
+GIT
   remote: git://github.com/thoughtbot/administrate.git
   revision: 6c9d30cf58be2bb9d403ac47ba53f25228dcd6e4
   specs:
@@ -848,6 +855,7 @@ DEPENDENCIES
   title
   turbolinks
   uglifier
+  validates_overlap!
   voyage
   web-console
   webmock

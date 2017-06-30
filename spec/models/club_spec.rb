@@ -8,6 +8,25 @@ RSpec.describe Club, type: :model do
   context 'associations' do
     it { is_expected.to have_many(:teams) }
   end
+
+  context '#fee' do
+    let!(:club) { FactoryGirl.create(:club) }
+    let!(:team1) { FactoryGirl.create(:team, name: 'Team 1', club: club) }
+    let!(:team2) { FactoryGirl.create(:team, name: 'Team 2', club: club) }
+    let!(:subscription) do
+      FactoryGirl.create(:subscription, club: club, price: 10)
+    end
+    let!(:enrollment) do
+      FactoryGirl.create(:enrollment, team: team1, subscription: subscription)
+      FactoryGirl.create(:enrollment, team: team2, subscription: subscription)
+    end
+
+    context '2 teams with 5 players each' do
+      it 'calculates the fee at $100 when the price is $10/player' do
+        expect(club.fee).to eq(100.0)
+      end
+    end
+  end
 end
 
 # == Schema Information

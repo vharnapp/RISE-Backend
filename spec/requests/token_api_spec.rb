@@ -17,10 +17,10 @@ describe 'Devise Basic Auth to receive token', type: :request do
       json_response = JSON.parse(response.body)
       token = Tiddle::TokenIssuer.build.find_token(
         user,
-        json_response['authentication_token'],
+        json_response['meta']['authentication_token'],
       )
 
-      expect(token.body).to eq user.authentication_tokens.last.body
+      expect(token.body).to eq(user.authentication_tokens.last.body)
     end
   end
 

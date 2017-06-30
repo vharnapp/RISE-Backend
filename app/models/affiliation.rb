@@ -10,7 +10,7 @@ class Affiliation < ApplicationRecord
   validates :user_id,
             uniqueness: {
               scope: :team_id,
-              message: 'A user can only belong to a team once',
+              message: 'can only belong to a team once',
             }
 
   def title

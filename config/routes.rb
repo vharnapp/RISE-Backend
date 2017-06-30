@@ -32,6 +32,8 @@ Rails.application.routes.draw do
     resources :clubs
     resources :teams
     resources :affiliations
+    resources :enrollments
+    resources :subscriptions
 
     resources :users do
       member do

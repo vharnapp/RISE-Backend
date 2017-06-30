@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170629182357) do
+ActiveRecord::Schema.define(version: 20170630014410) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -82,6 +82,15 @@ ActiveRecord::Schema.define(version: 20170629182357) do
     t.datetime "run_at"
     t.datetime "updated_at"
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
+  end
+
+  create_table "enrollments", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.bigint "subscription_id"
+    t.bigint "team_id"
+    t.datetime "updated_at", null: false
+    t.index ["subscription_id"], name: "index_enrollments_on_subscription_id"
+    t.index ["team_id"], name: "index_enrollments_on_team_id"
   end
 
   create_table "exercise_workouts", force: :cascade do |t|
@@ -180,6 +189,16 @@ ActiveRecord::Schema.define(version: 20170629182357) do
     t.index ["deleted_at"], name: "index_pyramid_modules_on_deleted_at"
   end
 
+  create_table "subscriptions", force: :cascade do |t|
+    t.bigint "club_id"
+    t.datetime "created_at", null: false
+    t.date "end_date"
+    t.decimal "price"
+    t.date "start_date"
+    t.datetime "updated_at", null: false
+    t.index ["club_id"], name: "index_subscriptions_on_club_id"
+  end
+
   create_table "teams", force: :cascade do |t|
     t.integer "club_id"
     t.string "code"
@@ -249,11 +268,14 @@ ActiveRecord::Schema.define(version: 20170629182357) do
   add_foreign_key "confidence_ratings", "exercises"
   add_foreign_key "confidence_ratings", "users"
   add_foreign_key "confidence_ratings", "workouts"
+  add_foreign_key "enrollments", "subscriptions"
+  add_foreign_key "enrollments", "teams"
   add_foreign_key "exercise_workouts", "exercises"
   add_foreign_key "exercise_workouts", "workouts"
   add_foreign_key "phase_attempts", "phases"
   add_foreign_key "phase_attempts", "users"
   add_foreign_key "phases", "pyramid_modules"
+  add_foreign_key "subscriptions", "clubs"
   add_foreign_key "teams", "clubs"
   add_foreign_key "unlocked_pyramid_modules", "pyramid_modules"
   add_foreign_key "unlocked_pyramid_modules", "users"

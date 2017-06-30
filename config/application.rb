@@ -46,5 +46,7 @@ module AthletefitBackend
     config.paperclip_defaults = {
       storage: :filesystem,
     }
+
+    config.time_zone = 'Central Time (US & Canada)'
   end
 end

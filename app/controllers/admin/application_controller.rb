@@ -7,7 +7,11 @@
 module Admin
   class ApplicationController < Administrate::ApplicationController
     include DefaultSort
+    include AnalyticsTrack
 
+    impersonates :user
+
+    before_action :authenticate_user! # TODO: (2017-06-30) jon => backport to voyage
     before_action :authenticate_admin
 
     def destroy

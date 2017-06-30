@@ -7,8 +7,17 @@ class Club < ApplicationRecord
   mount_uploader :logo, ImageUploader
 
   has_many :teams, -> { order(position: :asc) }, dependent: :destroy
+  has_many :players, through: :teams
+
+  has_many :subscriptions, -> { order(end_date: :desc) }, dependent: :destroy
+
+  accepts_nested_attributes_for :subscriptions
 
   validates :name, presence: true
+
+  def fee
+    subscriptions.current.first.price * subscriptions.current.first.players.count
+  end
 end
 
 # == Schema Information
