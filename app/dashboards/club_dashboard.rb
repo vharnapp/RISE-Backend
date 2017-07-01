@@ -36,6 +36,7 @@ class ClubDashboard < Administrate::BaseDashboard
     address_city: Field::String,
     address_state: Field::String,
     address_zip: Field::String,
+    teams_csv: Field::Carrierwave,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -84,6 +85,7 @@ class ClubDashboard < Administrate::BaseDashboard
     :address_city,
     :address_state,
     :address_zip,
+    :teams_csv,
     :subscriptions,
     :temp_teams,
   ].freeze

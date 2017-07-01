@@ -5,6 +5,7 @@ class Club < ApplicationRecord
   friendly_id :name
 
   mount_uploader :logo, ImageUploader
+  mount_uploader :teams_csv, ImageUploader # prob make a file uploader
 
   has_many :temp_teams
   has_many :teams, -> { order(position: :asc) }, dependent: :destroy
@@ -42,6 +43,7 @@ end
 #  name               :string
 #  position           :integer
 #  slug               :string
+#  teams_csv          :string
 #  updated_at         :datetime         not null
 #
 # Indexes

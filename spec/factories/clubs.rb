@@ -24,6 +24,7 @@ end
 #  name               :string
 #  position           :integer
 #  slug               :string
+#  teams_csv          :string
 #  updated_at         :datetime         not null
 #
 # Indexes
