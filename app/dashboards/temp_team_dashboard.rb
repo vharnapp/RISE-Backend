@@ -1,6 +1,6 @@
 require 'administrate/base_dashboard'
 
-class TeamDashboard < Administrate::BaseDashboard
+class TempTeamDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,27 +8,14 @@ class TeamDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    club: Field::BelongsTo,
-    subscriptions: Field::HasMany,
-    enrollments: Field::HasMany,
-    affiliations: Field::HasMany,
-    coach_affiliations: Field::HasMany.with_options(class_name: 'Affiliation'),
-    player_affiliations: Field::HasMany.with_options(class_name: 'Affiliation'),
-    coaches: Field::HasMany.with_options(class_name: 'User'),
-    players: Field::HasMany.with_options(class_name: 'User'),
     id: Field::Number,
-    num_players: Field::Number,
     name: Field::String,
+    num_players: Field::Number,
+    coach_first_name: Field::String,
+    coach_last_name: Field::String,
+    coach_email: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    slug: Field::String,
-    deleted_at: Field::DateTime,
-    position: Field::Number,
-    code: Field::String,
-    display_code: Field::String,
-    logo: Field::Carrierwave.with_options(
-      image_on_index: true,
-    ),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -37,44 +24,40 @@ class TeamDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :logo,
+    :id,
     :name,
-    :club,
-    :coaches,
     :num_players,
-    :players,
-    :display_code,
+    :coach_first_name,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :logo,
-    :club,
+    :id,
     :name,
-    :display_code,
     :num_players,
-    :coaches,
-    :players,
+    :coach_first_name,
+    :coach_last_name,
+    :coach_email,
+    :created_at,
+    :updated_at,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :logo,
-    :club,
     :name,
-    :code,
     :num_players,
-    :coaches,
-    :players,
+    :coach_first_name,
+    :coach_last_name,
+    :coach_email,
   ].freeze
 
-  # Overwrite this method to customize how teams are displayed
+  # Overwrite this method to customize how temp teams are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(team)
-    team.name
-  end
+  # def display_resource(temp_team)
+  #   "TempTeam ##{temp_team.id}"
+  # end
 end

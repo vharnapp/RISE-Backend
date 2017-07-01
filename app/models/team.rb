@@ -34,7 +34,7 @@ class Team < ApplicationRecord
   end
 
   before_save do
-    self.code = self[:code].delete('-')
+    self.code = self[:code].delete('-') if self[:code].present?
   end
 
   private
@@ -55,16 +55,17 @@ end
 #
 # Table name: teams
 #
-#  club_id    :integer
-#  code       :string
-#  created_at :datetime         not null
-#  deleted_at :datetime
-#  id         :integer          not null, primary key
-#  logo       :string
-#  name       :string
-#  position   :integer
-#  slug       :string
-#  updated_at :datetime         not null
+#  club_id     :integer
+#  code        :string
+#  created_at  :datetime         not null
+#  deleted_at  :datetime
+#  id          :integer          not null, primary key
+#  logo        :string
+#  name        :string
+#  num_players :integer
+#  position    :integer
+#  slug        :string
+#  updated_at  :datetime         not null
 #
 # Indexes
 #

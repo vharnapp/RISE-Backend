@@ -8,7 +8,17 @@ module Api
         code = params[:data][:attributes][:team_code].delete('-')
         team = Team.find_by(code: code)
 
-        if team.present?
+        if team.present? && team.players.count >= team.num_players
+          render json: {
+            errors: [
+              {
+                status: '422',
+                title: 'Unprocessable entity',
+                detail: "Team is full. #{team.num_players} players max.",
+              },
+            ],
+          }, status: :unprocessable_entity
+        elsif team.present?
           affiliation =
             Affiliation.new(team_id: team.id, user_id: current_user.id)
 

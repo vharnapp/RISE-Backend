@@ -8,8 +8,12 @@ class ClubDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    teams: Field::HasMany,
     subscriptions: Field::NestedHasMany.with_options(
+      skip: [:club, :teams],
+      limit: 30,
+    ),
+    teams: Field::HasMany,
+    temp_teams: Field::NestedHasMany.with_options(
       skip: [:club],
       limit: 30,
     ),
@@ -80,8 +84,8 @@ class ClubDashboard < Administrate::BaseDashboard
     :address_city,
     :address_state,
     :address_zip,
-    :teams,
     :subscriptions,
+    :temp_teams,
   ].freeze
 
   # Overwrite this method to customize how clubs are displayed

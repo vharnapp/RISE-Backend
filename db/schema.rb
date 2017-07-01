@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170630172300) do
+ActiveRecord::Schema.define(version: 20170630212945) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -215,11 +215,24 @@ ActiveRecord::Schema.define(version: 20170630172300) do
     t.datetime "deleted_at"
     t.string "logo"
     t.string "name"
+    t.integer "num_players"
     t.integer "position"
     t.string "slug"
     t.datetime "updated_at", null: false
     t.index ["deleted_at"], name: "index_teams_on_deleted_at"
     t.index ["slug"], name: "index_teams_on_slug", unique: true
+  end
+
+  create_table "temp_teams", force: :cascade do |t|
+    t.bigint "club_id"
+    t.string "coach_email"
+    t.string "coach_first_name"
+    t.string "coach_last_name"
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.integer "num_players"
+    t.datetime "updated_at", null: false
+    t.index ["club_id"], name: "index_temp_teams_on_club_id"
   end
 
   create_table "unlocked_pyramid_modules", force: :cascade do |t|
@@ -286,6 +299,7 @@ ActiveRecord::Schema.define(version: 20170630172300) do
   add_foreign_key "phases", "pyramid_modules"
   add_foreign_key "subscriptions", "clubs"
   add_foreign_key "teams", "clubs"
+  add_foreign_key "temp_teams", "clubs"
   add_foreign_key "unlocked_pyramid_modules", "pyramid_modules"
   add_foreign_key "unlocked_pyramid_modules", "users"
   add_foreign_key "workouts", "phases"

@@ -4,7 +4,7 @@ module AdministrateResourcesHelper
     # put 'sort' => 'application#sort'
     #
     def resources_to_ignore
-      %w[application workouts phases affiliations enrollments]
+      %w[application workouts phases affiliations enrollments temp_teams]
     end
 
     def resources_for_sidebar_nav

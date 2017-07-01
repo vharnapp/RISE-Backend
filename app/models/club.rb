@@ -6,12 +6,16 @@ class Club < ApplicationRecord
 
   mount_uploader :logo, ImageUploader
 
+  has_many :temp_teams
   has_many :teams, -> { order(position: :asc) }, dependent: :destroy
   has_many :players, through: :teams
 
-  has_many :subscriptions, -> { order(end_date: :desc) }, dependent: :destroy
+  has_many :subscriptions, -> { order(end_date: :desc) }, inverse_of: :club, dependent: :destroy
 
-  accepts_nested_attributes_for :subscriptions
+  has_many :csv_imports, dependent: :destroy
+
+  accepts_nested_attributes_for :subscriptions, allow_destroy: true
+  accepts_nested_attributes_for :temp_teams
 
   validates :name, presence: true
 

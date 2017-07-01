@@ -1,5 +1,5 @@
 class Subscription < ApplicationRecord
-  belongs_to :club
+  belongs_to :club, inverse_of: :subscriptions
 
   has_many :enrollments, dependent: :destroy
   has_many :teams, through: :enrollments

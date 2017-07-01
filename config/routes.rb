@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :temp_teams
   resources :confidence_ratings
   resources :exercises
   resources :workouts
@@ -34,6 +35,7 @@ Rails.application.routes.draw do
     resources :affiliations
     resources :enrollments
     resources :subscriptions
+    resources :temp_teams
 
     resources :users do
       member do

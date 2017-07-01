@@ -1,21 +1,52 @@
 module Admin
   class ClubsController < Admin::ApplicationController
-    # To customize the behavior of this controller,
-    # you can overwrite any of the RESTful actions. For example:
-    #
-    # def index
-    #   super
-    #   @resources = Club.
-    #     page(params[:page]).
-    #     per(10)
-    # end
 
-    # Define a custom finder by overriding the `find_resource` method:
-    # def find_resource(param)
-    #   Club.find_by!(slug: param)
-    # end
+    def new
+      club = resource_class.new
+      club.subscriptions.build(start_date: Date.today, end_date: 1.year.from_now)
+      render locals: {
+        page: Administrate::Page::Form.new(dashboard, club),
+      }
+    end
 
-    # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
-    # for more information
+    def create
+      resource = resource_class.new(resource_params)
+
+      if resource.save
+        create_teams_and_coaches(resource)
+        redirect_to(
+          [namespace, resource],
+          notice: translate_with_resource("create.success"),
+        )
+      else
+        render :new, locals: {
+          page: Administrate::Page::Form.new(dashboard, resource),
+        }
+      end
+    end
+
+    private
+
+    def create_teams_and_coaches(resource)
+      resource.temp_teams.each do |temp_team|
+        team = resource.teams.where(
+          name: temp_team.name,
+          num_players: temp_team.num_players,
+        ).first_or_create!
+
+        coach = team.coaches.create!(
+          first_name: temp_team.coach_first_name,
+          last_name: temp_team.coach_last_name,
+          password: 'asdfjkl123',
+          password_confirmation: 'asdfjkl123',
+          email: temp_team.coach_email,
+        )
+
+        coach.roles << [:coach]
+        coach.save!
+      end
+
+      resource.temp_teams.destroy_all
+    end
   end
 end

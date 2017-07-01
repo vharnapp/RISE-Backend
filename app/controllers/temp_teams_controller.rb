@@ -1,0 +1,2 @@
+class TempTeamsController < ApplicationController
+end
