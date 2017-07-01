@@ -66,8 +66,8 @@ class ClubDashboard < Administrate::BaseDashboard
     :address_city,
     :address_state,
     :address_zip,
-    :teams,
     :subscriptions,
+    :teams,
   ].freeze
 
   # FORM_ATTRIBUTES
