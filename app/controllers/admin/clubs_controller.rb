@@ -47,6 +47,8 @@ module Admin
           num_players: row['num_players'],
         ).first_or_create!
 
+        resource.subscriptions.last.teams << team
+
         coach = User.find_by(email: row['coach_email'])
 
         if coach.blank?
@@ -59,12 +61,12 @@ module Admin
           )
         else
           team.coaches << coach
-          team.save
         end
 
         coach.roles << [:coach]
-        coach.save!
+        coach.save
       end
+
     end
 
     def create_teams_and_coaches(resource)
@@ -73,6 +75,8 @@ module Admin
           name: temp_team.name,
           num_players: temp_team.num_players,
         ).first_or_create!
+
+        resource.subscriptions.last.teams << team
 
         coach = User.find_by(email: temp_team.coach_email)
 
@@ -86,11 +90,10 @@ module Admin
           )
         else
           team.coaches << coach
-          team.save
         end
 
         coach.roles << [:coach]
-        coach.save!
+        coach.save
       end
 
       resource.temp_teams.destroy_all

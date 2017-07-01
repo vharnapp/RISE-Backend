@@ -38,11 +38,11 @@ class SubscriptionDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :club,
-    :teams,
     :start_date,
     :end_date,
     :price,
     :club_fee,
+    :teams,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -50,10 +50,10 @@ class SubscriptionDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :club,
-    :teams,
     :start_date,
     :end_date,
     :price,
+    :teams,
   ].freeze
 
   # Overwrite this method to customize how subscriptions are displayed
