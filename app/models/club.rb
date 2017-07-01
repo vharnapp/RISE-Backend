@@ -12,8 +12,6 @@ class Club < ApplicationRecord
 
   has_many :subscriptions, -> { order(end_date: :desc) }, inverse_of: :club, dependent: :destroy
 
-  has_many :csv_imports, dependent: :destroy
-
   accepts_nested_attributes_for :subscriptions, allow_destroy: true
   accepts_nested_attributes_for :temp_teams
 
