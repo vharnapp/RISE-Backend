@@ -66,7 +66,6 @@ module Admin
         coach.roles << [:coach]
         coach.save
       end
-
     end
 
     def create_teams_and_coaches(resource)
