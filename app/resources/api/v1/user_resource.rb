@@ -36,8 +36,18 @@ module Api
           {
             id: team.id,
             name: team.name,
-            logo: team.logo.url,
+            logo: determine_logo(team),
           }
+        end
+      end
+
+      private
+
+      def determine_logo(team)
+        if team.logo.present?
+          team.logo.url
+        elsif team.club.logo.present?
+          team.club.logo.url
         end
       end
     end
