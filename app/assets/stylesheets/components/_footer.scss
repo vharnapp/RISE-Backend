@@ -1,0 +1,29 @@
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px 0px;
+  margin-top: 2em;
+  background: $light-gray;
+  font-size: 12px;
+  text-align: center;
+  height: 70px;
+  /* margin-bottom: -24px; */
+}
+.footer credits a {
+  color: #94989E;
+  line-height: 26px;
+}
+.footer ul li {
+  float: right;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  line-height: 26px;
+}
+.footer .disclaimer {
+  font-size: 13px;
+  color: $gray;
+  padding-top: 10px;
+}

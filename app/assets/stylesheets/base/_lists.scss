@@ -1,0 +1,39 @@
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: $bold-font-weight;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  background: #fff;
+}
+
+.main {
+  margin: 0em;
+  margin-left: 64px;
+}
