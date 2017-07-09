@@ -10,7 +10,9 @@ class ExerciseDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     name: Field::String,
-    description: Field::Text,
+    description: Field::Text.with_options(
+      searchable: true,
+    ),
     sets: Field::String,
     reps: Field::String,
     rest: Field::String,
