@@ -16,4 +16,10 @@
 //
 // ... your other scripts here ...
 //
+//= require foundation
+//= require athletefit
+//
+// ... Turbolinks needs to be last
 //= require turbolinks
+
+$(function(){ $(document).foundation(); });

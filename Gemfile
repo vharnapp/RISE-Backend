@@ -28,6 +28,7 @@ gem 'webpacker', github: 'rails/webpacker'
 
 # Customizations
 gem 'font-awesome-rails'
+gem 'foundation-rails', '~> 6.3.1'
 gem 'slim-rails'
 
 gem 'acts_as_list'
@@ -97,7 +98,6 @@ group :development do
   gem 'annotate' # annotate models automatically when rake db:migrate is called
   # gem 'better_errors' # A better error page for rails when a local 500 (or similar) is thrown
   # gem 'binding_of_caller' # REPL in better_errors to debug in the browser at the point at which it failed
-  gem 'bitters', '~> 1.3'
   gem 'fix-db-schema-conflicts' # when working with multiple developers schema order of columns is standardized.
   gem 'meta_request' # for chrome rails console plugin found here: https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg?hl=en-US
   gem 'rails-erd' # auto gen ERD Diagram of models in the app on rake db:migrate
@@ -155,7 +155,4 @@ group :production do
   gem 'puma'
 end
 
-gem 'bourbon', '~> 5.0.0.beta.7'
 gem 'high_voltage'
-gem 'neat', '~> 1.8.0'
-gem 'refills', group: %i[development test]

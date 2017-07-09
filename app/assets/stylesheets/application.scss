@@ -1,18 +1,7 @@
-@charset "utf-8";
+@import 'foundation_and_overrides';
 
-@import "normalize-rails";
+@import 'refills/flashes';
 
-@import "bourbon";
-$visual-grid: true;
-$visual-grid-color: #9cf !default;
-$visual-grid-index: front !default;
-$visual-grid-opacity: 0.1 !default;
-@import "neat";
-
-@import "base/base";
-@import "refills/flashes";
-@import "refills/navigation";
-@import "refills/footer";
-
+@import "administrate_overrides";
 @import "athletefit_backend";
 @import "form_errors";

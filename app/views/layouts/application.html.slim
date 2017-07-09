@@ -24,8 +24,8 @@ html[lang="en"]
       - # Add gon here for turbolinks benefit
       = Gon::Base.render_data
       = render 'flashes'
-      = render 'refills/navigation'
+      = render 'components/navigation'
       .main
         = yield
-      = render 'refills/footer'
+      = render 'components/footer'
       = render 'css_overrides'
