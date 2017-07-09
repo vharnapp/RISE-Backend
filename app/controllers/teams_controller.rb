@@ -2,8 +2,6 @@ class TeamsController < ApplicationController
   load_and_authorize_resource :club
   load_and_authorize_resource :team, through: :club
 
-  def index; end
-
   def show; end
 
   def edit; end

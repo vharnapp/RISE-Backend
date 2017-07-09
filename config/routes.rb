@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :clubs, only: [:show, :edit, :update] do
-    resources :teams, only: [:index, :show, :edit, :update]
+    resources :teams, only: [:show, :edit, :update]
   end
 
   devise_for :users, controllers: {
