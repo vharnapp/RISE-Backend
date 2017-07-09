@@ -1,15 +1,7 @@
 Rails.application.routes.draw do
-  resources :temp_teams
-  resources :confidence_ratings
-  resources :exercises
-  resources :workouts
-  resources :phases
-  resources :pyramid_modules
-  resources :clubs do
-    resources :teams
+  resources :clubs, only: [:show, :edit, :update] do
+    resources :teams, only: [:index, :show, :edit, :update]
   end
-
-  resources :teams
 
   devise_for :users, controllers: {
     registrations: 'devise_customizations/registrations',
@@ -75,7 +67,6 @@ Rails.application.routes.draw do
         end
       end
       jsonapi_resources :users do
-        # jsonapi_links :posts
         jsonapi_resources :teams
       end
 

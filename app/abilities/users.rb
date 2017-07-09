@@ -27,5 +27,6 @@ Canard::Abilities.for(:user) do
 
   can [:create, :update], Affiliation
 
+  can [:read], Club
   can [:read], Team
 end

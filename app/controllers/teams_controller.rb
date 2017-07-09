@@ -1,24 +1,12 @@
 class TeamsController < ApplicationController
   load_and_authorize_resource :club
-  load_and_authorize_resource through: :club
+  load_and_authorize_resource :team, through: :club
+
+  def index; end
 
   def show; end
 
-  def new
-    @team = Team.new
-  end
-
   def edit; end
-
-  def create
-    @team = Team.new(team_params)
-
-    if @team.save
-      redirect_to club_path(@club), notice: 'Team was successfully created.'
-    else
-      render :new
-    end
-  end
 
   def update
     if @team.update(team_params)
@@ -39,7 +27,6 @@ class TeamsController < ApplicationController
   def team_params
     params.require(:team).permit(
       :name,
-      :club_id,
       :code,
     )
   end
