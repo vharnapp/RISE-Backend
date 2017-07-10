@@ -10,13 +10,13 @@ class PyramidModule < ApplicationRecord
     strength: 2,
   }
 
-  scope :level_1, (-> { where(level: 1) })
+  scope :by_level, (->(level) { where(level: level) })
 
-  # FIXME: (2017-05-30) jon => Having the order on the association caused AR to
-  # trip a validation in the context of accepts_nested_attributes_for :phases
-  #
-  # has_many :phases, -> { order(position: :asc) }, dependent: :destroy
-  has_many :phases, dependent: :destroy
+  has_many :phases,
+           -> { order(position: :asc) },
+           inverse_of: :pyramid_module,
+           dependent: :destroy
+
   accepts_nested_attributes_for :phases, allow_destroy: true
 
   has_many :workouts, through: :phases
@@ -35,7 +35,7 @@ class PyramidModule < ApplicationRecord
     PyramidModule.where(id: prereq).map(&:name).join(', ')
   end
 
-  def rating_for(player)
+  def rating_for(player, debug: false)
     num_skills_mastered =
       player
         .confidence_ratings
@@ -45,10 +45,21 @@ class PyramidModule < ApplicationRecord
         .where(workouts: { supplemental: false })
         .count
 
-    num_exercises = workouts.map(&:exercises).count
+    num_exercises = workouts.flat_map(&:exercises).count
+
+    percent = (num_skills_mastered.to_d / num_exercises.to_d).round(2)
+
+    if debug
+      return %(
+        <br>mastered: #{num_skills_mastered}
+        <br>num: #{num_exercises}
+        <br>percent: #{percent}
+      ).html_safe
+    end
 
     if num_exercises.to_i.positive?
-      (num_skills_mastered.to_d / num_exercises.to_d).round
+      return 1 if percent > 1 # in case a user has more confidence ratings than exercises accidentally somhow
+      percent
     else
       0
     end

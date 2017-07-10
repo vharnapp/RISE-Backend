@@ -27,11 +27,13 @@ class User < ApplicationRecord
   has_many :confidence_ratings, dependent: :destroy
   has_many :exercises, through: :confidence_ratings
   has_many :workouts, through: :confidence_ratings
+  has_many :phases, through: :workouts
+  has_many :pyramid_modules, -> { distinct }, through: :phases
 
   has_many :unlocked_pyramid_modules, dependent: :destroy
 
   has_many :phase_attempts, dependent: :destroy
-  has_many :phases, through: :phase_attempts
+  has_many :attempted_phases, through: :phase_attempts, source: :phase
 
   mount_uploader :avatar, ImageUploader
 
@@ -131,6 +133,10 @@ class User < ApplicationRecord
       .includes(:workout)
       .where(rating: 4, workouts: { supplemental: false })
       .count
+  end
+
+  def highest_pyramid_level_achieved
+    pyramid_modules.select(:level).order(level: :desc).limit(1).first.level
   end
 
   private

@@ -2,7 +2,7 @@ class Workout < ApplicationRecord
   acts_as_paranoid
   acts_as_list scope: :phase
 
-  belongs_to :phase
+  belongs_to :phase, inverse_of: :workouts
 
   has_many :exercise_workouts,
            -> { order(position: :asc) },

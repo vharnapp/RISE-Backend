@@ -4,9 +4,8 @@ section.main-content__body.main-content__body--flush
   table
     thead
       tr
-        th
-        - @pyramid_modules.each do |pyramid_module|
-          th nowrap=true = pyramid_module.name
+        th colspan=6
+          Pyramid Modules
 
       tbody
         - @team.players.each do |player|
@@ -16,6 +15,9 @@ section.main-content__body.main-content__body--flush
                 = image_tag player.avatar.url, class: 'player-avatar'
                 span.status-badge.active
               .player-name = player.full_name
-            - @pyramid_modules.each do |pyramid_module|
+            - level = player.highest_pyramid_level_achieved
+            - PyramidModule.by_level(level).each do |pyramid_module|
               td
-                .circle data-value="#{(pyramid_module.rating_for(player) / 100)}"
+                .circle data-value="#{pyramid_module.rating_for(player)}"
+                  = pyramid_module.name
+                  = pyramid_module.rating_for(player, debug: true)
