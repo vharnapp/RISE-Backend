@@ -4,7 +4,7 @@ module Api
       load_and_authorize_resource
 
       def index
-        jsonapi_render json: current_user.unlocked_pyramid_modules
+        jsonapi_render json: current_user.unlocked_pyramid_modules.includes(:pyramid_module)
       end
 
       def create

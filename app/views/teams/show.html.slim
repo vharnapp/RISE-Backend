@@ -18,6 +18,6 @@ section.main-content__body.main-content__body--flush
             - level = player.highest_pyramid_level_achieved
             - PyramidModule.by_level(level).each do |pyramid_module|
               td
-                .circle data-value="#{pyramid_module.rating_for(player)}"
+                .circle data-value="#{pyramid_module.percent_complete_for_user(player)}"
                   = pyramid_module.name
-                  = pyramid_module.rating_for(player, debug: true)
+                  = pyramid_module.percent_complete_for_user(player, debug: true)

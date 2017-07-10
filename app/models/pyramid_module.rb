@@ -35,9 +35,9 @@ class PyramidModule < ApplicationRecord
     PyramidModule.where(id: prereq).map(&:name).join(', ')
   end
 
-  def rating_for(player, debug: false)
+  def percent_complete_for_user(user, debug: false)
     num_skills_mastered =
-      player
+      user
         .confidence_ratings
         .joins(:workout)
         .where(rating: 4)
@@ -58,10 +58,10 @@ class PyramidModule < ApplicationRecord
     end
 
     if num_exercises.to_i.positive?
-      return 1 if percent > 1 # in case a user has more confidence ratings than exercises accidentally somhow
+      return 1.0 if percent > 1.0 # in case a user has more confidence ratings than exercises accidentally somhow
       percent
     else
-      0
+      0.0
     end
   end
 end
