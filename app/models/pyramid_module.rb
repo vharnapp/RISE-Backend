@@ -47,7 +47,11 @@ class PyramidModule < ApplicationRecord
 
     num_exercises = workouts.map(&:exercises).count
 
-    (num_skills_mastered.to_d / num_exercises.to_d).round
+    if num_exercises.to_i.positive?
+      (num_skills_mastered.to_d / num_exercises.to_d).round
+    else
+      0
+    end
   end
 end
 

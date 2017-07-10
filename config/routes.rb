@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     put 'sort' => 'application#sort'
 
     resources :pyramid_modules
+    resources :unlocked_pyramid_modules
     resources :phases
     resources :workouts
     resources :exercises
