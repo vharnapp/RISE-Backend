@@ -1,32 +1,20 @@
-h2
-  | Team:&nbsp;
-  = @team.name
+= render 'components/secondary-header'
 
-h3
-  | Players:&nbsp;
+section.main-content__body.main-content__body--flush
+  table
+    thead
+      tr
+        th
+        - @pyramid_modules.each do |pyramid_module|
+          th nowrap=true = pyramid_module.name
 
-ul
-- @team.players.each do |player|
-  li= link_to player.full_name, user_path(player)
-
-br
-
-h3
-  | Coaches:&nbsp;
-
-ul
-- @team.coaches.each do |coach|
-  li= link_to coach.full_name, user_path(coach)
-
-br
-
-= link_to 'Add Affiliation', new_admin_user_path, class: 'btn'
-
-br
-br
-
-= link_to 'Edit', edit_club_team_path(@club, @team)
-'  |
-= link_to 'Back', club_path(@team.club)
-'  |
-= link_to 'Destroy', team_path(@team), method: :delete, data: { confirm: 'Are you sure?' }
+      tbody
+        - @team.players.each do |player|
+          tr
+            td.player
+              .player-avatar
+                = image_tag player.avatar.url, class: 'player-avatar'
+                span.status-badge.active
+              .player-name = player.full_name
+            - @pyramid_modules.each do |pyramid_module|
+              td = pyramid_module.rating_for(player)

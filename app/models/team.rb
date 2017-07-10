@@ -33,6 +33,14 @@ class Team < ApplicationRecord
     code.chars.to_a.each_slice(3).to_a.map(&:join).join('-')
   end
 
+  def logo_image_url
+    if logo.url.present? && !logo.url.match?(/\/assets\/fallback\/default.*/)
+      logo.url
+    else
+      club.logo.url
+    end
+  end
+
   before_save do
     self.code = self[:code].delete('-') if self[:code].present?
   end

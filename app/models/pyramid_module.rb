@@ -10,12 +10,16 @@ class PyramidModule < ApplicationRecord
     strength: 2,
   }
 
+  scope :level_1, (-> { where(level: 1) })
+
   # FIXME: (2017-05-30) jon => Having the order on the association caused AR to
   # trip a validation in the context of accepts_nested_attributes_for :phases
   #
   # has_many :phases, -> { order(position: :asc) }, dependent: :destroy
   has_many :phases, dependent: :destroy
   accepts_nested_attributes_for :phases, allow_destroy: true
+
+  has_many :workouts, through: :phases
 
   has_many :unlocked_pyramid_modules, dependent: :destroy
 
@@ -29,6 +33,21 @@ class PyramidModule < ApplicationRecord
 
   def prerequisites
     PyramidModule.where(id: prereq).map(&:name).join(', ')
+  end
+
+  def rating_for(player)
+    num_skills_mastered =
+      player
+        .confidence_ratings
+        .joins(:workout)
+        .where(rating: 4)
+        .where(workout: workouts)
+        .where(workouts: { supplemental: false })
+        .count
+
+    num_exercises = workouts.map(&:exercises).count
+
+    (num_skills_mastered.to_d / num_exercises.to_d).round
   end
 end
 

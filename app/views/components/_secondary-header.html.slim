@@ -1,13 +1,12 @@
-header.main-content__header[role="banner"]
+header.main-content__header[role='banner']
   .row.columns
     .group.small-6.medium-4.left
-      = image_tag 'headway.png', class: 'team-logo'
-      h1 FC Headway
+      = image_tag(@team.logo_image_url, class: 'team-logo')
+      h1= @team.name
     .small-6.medium-4.left.text-center.padding-t-5
       span.team-code-label Team Code
-      span.team-code 76hj5
+      span.team-code= @team.display_code
     .medium-4.left.text-right.hide-for-small-only
       span.coach-label Coaches
-      = image_tag 'jon-kinney.png', class: 'coach-avatar'
-      = image_tag 'jason-beck.png', class: 'coach-avatar'
-      = image_tag 'billy-sweetman.png', class: 'coach-avatar'
+      - @team.coaches.each do |coach|
+        = link_to image_tag(coach.avatar.url, class: 'coach-avatar'), user_path(coach)
