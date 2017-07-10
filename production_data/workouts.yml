@@ -1,0 +1,1637 @@
+---
+workout_8:
+  id: 8
+  name: Quickness Phase 1
+  phase_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:41:53.568969000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-05-25 10:41:53.568969000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:02:09.072715000 Z
+    zone: *1
+    time: 2017-06-25 17:02:09.072715000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_12:
+  id: 12
+  name: Quick Bursts & Turns
+  phase_id: 9
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 18:05:00.610546000 Z
+    zone: *1
+    time: 2017-05-25 13:05:00.610546000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:16:23.504917000 Z
+    zone: *1
+    time: 2017-06-09 16:16:23.504917000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_16:
+  id: 16
+  name: Hip Flip Patterns
+  phase_id: 10
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 19:44:19.970579000 Z
+    zone: *1
+    time: 2017-05-25 14:44:19.970579000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:59:42.763354000 Z
+    zone: *1
+    time: 2017-06-25 17:59:42.763354000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_24:
+  id: 24
+  name: First Touch Phase 1
+  phase_id: 15
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 23:59:01.093112000 Z
+    zone: *1
+    time: 2017-05-25 18:59:01.093112000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:43:35.539111000 Z
+    zone: *1
+    time: 2017-06-18 13:43:35.539111000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_26:
+  id: 26
+  name: First Touch Phase 2
+  phase_id: 16
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 23:59:40.647762000 Z
+    zone: *1
+    time: 2017-05-25 18:59:40.647762000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:40:02.599764000 Z
+    zone: *1
+    time: 2017-06-18 13:40:02.599764000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_27:
+  id: 27
+  name: First Touch Phase 3
+  phase_id: 17
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 00:00:40.860075000 Z
+    zone: *1
+    time: 2017-05-25 19:00:40.860075000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:19:34.231722000 Z
+    zone: *1
+    time: 2017-06-18 13:19:34.231722000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_32:
+  id: 32
+  name: Foundational Touches
+  phase_id: 21
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:48:40.047724000 Z
+    zone: *1
+    time: 2017-05-26 07:48:40.047724000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:48:40.047724000 Z
+    zone: *1
+    time: 2017-05-26 07:48:40.047724000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_35:
+  id: 35
+  name: Ball Control Phase 2
+  phase_id: 22
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 13:51:17.188625000 Z
+    zone: *1
+    time: 2017-05-26 08:51:17.188625000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 00:54:37.278845000 Z
+    zone: *1
+    time: 2017-06-26 19:54:37.278845000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_38:
+  id: 38
+  name: Ball Control Phase 3
+  phase_id: 23
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 15:12:44.854596000 Z
+    zone: *1
+    time: 2017-05-26 10:12:44.854596000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:09:52.543850000 Z
+    zone: *1
+    time: 2017-06-26 20:09:52.543850000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_42:
+  id: 42
+  name: Soccer Strength Phase 1
+  phase_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:29:47.246326000 Z
+    zone: *1
+    time: 2017-05-26 11:29:47.246326000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:53:17.749169000 Z
+    zone: *1
+    time: 2017-06-27 07:53:17.749169000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_45:
+  id: 45
+  name: Soccer Strength Phase 2
+  phase_id: 25
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 17:06:17.066323000 Z
+    zone: *1
+    time: 2017-05-26 12:06:17.066323000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:53:00.520192000 Z
+    zone: *1
+    time: 2017-06-27 07:53:00.520192000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_48:
+  id: 48
+  name: Soccer Strength Phase 3
+  phase_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 17:32:32.690453000 Z
+    zone: *1
+    time: 2017-05-26 12:32:32.690453000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:05:15.765625000 Z
+    zone: *1
+    time: 2017-06-27 08:05:15.765625000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_50:
+  id: 50
+  name: Warm Up (Mobility)
+  phase_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:21:09.577234000 Z
+    zone: *1
+    time: 2017-05-26 15:21:09.577234000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:21:09.577234000 Z
+    zone: *1
+    time: 2017-05-26 15:21:09.577234000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_51:
+  id: 51
+  name: General Strength (Phase 1)
+  phase_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:21:09.587767000 Z
+    zone: *1
+    time: 2017-05-26 15:21:09.587767000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:21:09.587767000 Z
+    zone: *1
+    time: 2017-05-26 15:21:09.587767000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_52:
+  id: 52
+  name: General Strength (Supersets)
+  phase_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:21:09.592201000 Z
+    zone: *1
+    time: 2017-05-26 15:21:09.592201000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:21:09.592201000 Z
+    zone: *1
+    time: 2017-05-26 15:21:09.592201000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_53:
+  id: 53
+  name: Warm Up (Mobility Combos)
+  phase_id: 28
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:43:37.066547000 Z
+    zone: *1
+    time: 2017-05-26 17:43:37.066547000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:43:37.066547000 Z
+    zone: *1
+    time: 2017-05-26 17:43:37.066547000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_54:
+  id: 54
+  name: General Strength (Phase 2)
+  phase_id: 28
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:43:37.069403000 Z
+    zone: *1
+    time: 2017-05-26 17:43:37.069403000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:43:37.069403000 Z
+    zone: *1
+    time: 2017-05-26 17:43:37.069403000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_55:
+  id: 55
+  name: General Strength (Complexes)
+  phase_id: 28
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:43:37.071495000 Z
+    zone: *1
+    time: 2017-05-26 17:43:37.071495000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:43:37.071495000 Z
+    zone: *1
+    time: 2017-05-26 17:43:37.071495000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_56:
+  id: 56
+  name: Warm Up (Mobility Combos)
+  phase_id: 29
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:22:22.343154000 Z
+    zone: *1
+    time: 2017-05-26 18:22:22.343154000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:22:22.343154000 Z
+    zone: *1
+    time: 2017-05-26 18:22:22.343154000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_57:
+  id: 57
+  name: General Strength (Phase 3)
+  phase_id: 29
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:22:22.348338000 Z
+    zone: *1
+    time: 2017-05-26 18:22:22.348338000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:22:22.348338000 Z
+    zone: *1
+    time: 2017-05-26 18:22:22.348338000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_58:
+  id: 58
+  name: General Strength Combos
+  phase_id: 29
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:22:22.352854000 Z
+    zone: *1
+    time: 2017-05-26 18:22:22.352854000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:22:22.352854000 Z
+    zone: *1
+    time: 2017-05-26 18:22:22.352854000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_59:
+  id: 59
+  name: Agility Warm Up
+  phase_id: 30
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:34:54.740912000 Z
+    zone: *1
+    time: 2017-05-27 08:34:54.740912000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 02:44:39.640258000 Z
+    zone: *1
+    time: 2017-06-06 21:44:39.640258000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_60:
+  id: 60
+  name: Agility (Phase 1)
+  phase_id: 30
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:34:54.744772000 Z
+    zone: *1
+    time: 2017-05-27 08:34:54.744772000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 02:44:41.893238000 Z
+    zone: *1
+    time: 2017-06-06 21:44:41.893238000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_61:
+  id: 61
+  name: Dynamic Control (Phase 1)
+  phase_id: 30
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:34:54.747266000 Z
+    zone: *1
+    time: 2017-05-27 08:34:54.747266000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 02:44:41.914580000 Z
+    zone: *1
+    time: 2017-06-06 21:44:41.914580000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_62:
+  id: 62
+  name: Agility Warm Up
+  phase_id: 31
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:35:33.849495000 Z
+    zone: *1
+    time: 2017-05-27 08:35:33.849495000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:35:33.849495000 Z
+    zone: *1
+    time: 2017-05-27 08:35:33.849495000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_63:
+  id: 63
+  name: Agility (Phase 2)
+  phase_id: 31
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:35:33.851928000 Z
+    zone: *1
+    time: 2017-05-27 08:35:33.851928000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:35:33.851928000 Z
+    zone: *1
+    time: 2017-05-27 08:35:33.851928000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_64:
+  id: 64
+  name: Dynamic Control (Phase 2)
+  phase_id: 31
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:35:33.853810000 Z
+    zone: *1
+    time: 2017-05-27 08:35:33.853810000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:36:23.011101000 Z
+    zone: *1
+    time: 2017-05-27 08:36:23.011101000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_65:
+  id: 65
+  name: Agility Warm Up
+  phase_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:36:13.384987000 Z
+    zone: *1
+    time: 2017-05-27 08:36:13.384987000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:36:13.384987000 Z
+    zone: *1
+    time: 2017-05-27 08:36:13.384987000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_66:
+  id: 66
+  name: Quickness Patterns
+  phase_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:36:13.387913000 Z
+    zone: *1
+    time: 2017-05-27 08:36:13.387913000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:08:40.495681000 Z
+    zone: *1
+    time: 2017-05-27 14:08:40.495681000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_67:
+  id: 67
+  name: Agility (Phase 3)
+  phase_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:36:13.391239000 Z
+    zone: *1
+    time: 2017-05-27 08:36:13.391239000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:08:40.499361000 Z
+    zone: *1
+    time: 2017-05-27 14:08:40.499361000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_68:
+  id: 68
+  name: Agility Warm Up
+  phase_id: 33
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:54:15.638848000 Z
+    zone: *1
+    time: 2017-05-27 10:54:15.638848000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:54:15.638848000 Z
+    zone: *1
+    time: 2017-05-27 10:54:15.638848000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_69:
+  id: 69
+  name: Advanced Agility Combos
+  phase_id: 33
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:54:15.643041000 Z
+    zone: *1
+    time: 2017-05-27 10:54:15.643041000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:54:15.643041000 Z
+    zone: *1
+    time: 2017-05-27 10:54:15.643041000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_70:
+  id: 70
+  name: Dynamic Control (Phase 3)
+  phase_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:08:40.501977000 Z
+    zone: *1
+    time: 2017-05-27 14:08:40.501977000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:08:40.501977000 Z
+    zone: *1
+    time: 2017-05-27 14:08:40.501977000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_71:
+  id: 71
+  name: Warm Up (Hip & Hamstring)
+  phase_id: 34
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:29:05.953333000 Z
+    zone: *1
+    time: 2017-05-28 07:29:05.953333000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:29:05.953333000 Z
+    zone: *1
+    time: 2017-05-28 07:29:05.953333000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_72:
+  id: 72
+  name: Total Body Power Combos
+  phase_id: 34
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:29:05.959538000 Z
+    zone: *1
+    time: 2017-05-28 07:29:05.959538000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:29:05.959538000 Z
+    zone: *1
+    time: 2017-05-28 07:29:05.959538000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_73:
+  id: 73
+  name: Vertical/Linear Plyo Prep
+  phase_id: 34
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:29:05.962657000 Z
+    zone: *1
+    time: 2017-05-28 07:29:05.962657000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:29:05.962657000 Z
+    zone: *1
+    time: 2017-05-28 07:29:05.962657000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_74:
+  id: 74
+  name: Core Control
+  phase_id: 34
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:29:05.965737000 Z
+    zone: *1
+    time: 2017-05-28 07:29:05.965737000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:29:05.965737000 Z
+    zone: *1
+    time: 2017-05-28 07:29:05.965737000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_75:
+  id: 75
+  name: Warm Up (Hip &  Hamstring Combos)
+  phase_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:19:17.023277000 Z
+    zone: *1
+    time: 2017-05-28 08:19:17.023277000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:19:17.023277000 Z
+    zone: *1
+    time: 2017-05-28 08:19:17.023277000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_76:
+  id: 76
+  name: Total Body Power Supersets
+  phase_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:19:17.026865000 Z
+    zone: *1
+    time: 2017-05-28 08:19:17.026865000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:19:17.026865000 Z
+    zone: *1
+    time: 2017-05-28 08:19:17.026865000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_77:
+  id: 77
+  name: Vertical/Linear Double Jump Plyos
+  phase_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:19:17.029637000 Z
+    zone: *1
+    time: 2017-05-28 08:19:17.029637000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:19:17.029637000 Z
+    zone: *1
+    time: 2017-05-28 08:19:17.029637000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_78:
+  id: 78
+  name: Core Strength
+  phase_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:19:17.034384000 Z
+    zone: *1
+    time: 2017-05-28 08:19:17.034384000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:19:17.034384000 Z
+    zone: *1
+    time: 2017-05-28 08:19:17.034384000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_79:
+  id: 79
+  name: Warm Up (Dynamic Hip & Hamstring)
+  phase_id: 36
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:06:04.986666000 Z
+    zone: *1
+    time: 2017-05-28 09:06:04.986666000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:06:04.986666000 Z
+    zone: *1
+    time: 2017-05-28 09:06:04.986666000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_80:
+  id: 80
+  name: Total Body Power Endurance
+  phase_id: 36
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:06:04.989661000 Z
+    zone: *1
+    time: 2017-05-28 09:06:04.989661000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:06:04.989661000 Z
+    zone: *1
+    time: 2017-05-28 09:06:04.989661000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_81:
+  id: 81
+  name: Plyos for Speed
+  phase_id: 36
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:06:04.992281000 Z
+    zone: *1
+    time: 2017-05-28 09:06:04.992281000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:06:04.992281000 Z
+    zone: *1
+    time: 2017-05-28 09:06:04.992281000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_82:
+  id: 82
+  name: Core Strength Endurance
+  phase_id: 36
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:06:04.994786000 Z
+    zone: *1
+    time: 2017-05-28 09:06:04.994786000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:06:04.994786000 Z
+    zone: *1
+    time: 2017-05-28 09:06:04.994786000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_83:
+  id: 83
+  name: Quick Feet Around the Ball
+  phase_id: 37
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:35:22.402170000 Z
+    zone: *1
+    time: 2017-05-28 18:35:22.402170000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:35:22.402170000 Z
+    zone: *1
+    time: 2017-05-28 18:35:22.402170000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_84:
+  id: 84
+  name: Quick Feet Combos Around the Ball
+  phase_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:51:58.070334000 Z
+    zone: *1
+    time: 2017-05-28 18:51:58.070334000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:51:58.070334000 Z
+    zone: *1
+    time: 2017-05-28 18:51:58.070334000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_85:
+  id: 85
+  name: Quick Feet Combos with a Touch
+  phase_id: 39
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:57:26.343523000 Z
+    zone: *1
+    time: 2017-05-28 18:57:26.343523000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:42:04.160597000 Z
+    zone: *1
+    time: 2017-06-07 05:42:04.160597000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_86:
+  id: 86
+  name: 180 Run Overs
+  phase_id: 37
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:14:52.872131000 Z
+    zone: *1
+    time: 2017-05-29 17:14:52.872131000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:14:52.872131000 Z
+    zone: *1
+    time: 2017-05-29 17:14:52.872131000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_87:
+  id: 87
+  name: 180 Step Overs
+  phase_id: 37
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:14:52.879757000 Z
+    zone: *1
+    time: 2017-05-29 17:14:52.879757000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:14:52.879757000 Z
+    zone: *1
+    time: 2017-05-29 17:14:52.879757000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_88:
+  id: 88
+  name: 180 Scissors
+  phase_id: 37
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:14:52.882544000 Z
+    zone: *1
+    time: 2017-05-29 17:14:52.882544000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:14:52.882544000 Z
+    zone: *1
+    time: 2017-05-29 17:14:52.882544000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_89:
+  id: 89
+  name: Outside Touch 90s
+  phase_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:47:43.170627000 Z
+    zone: *1
+    time: 2017-05-29 17:47:43.170627000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:47:43.170627000 Z
+    zone: *1
+    time: 2017-05-29 17:47:43.170627000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_90:
+  id: 90
+  name: 270 Degree Turns
+  phase_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:47:43.174053000 Z
+    zone: *1
+    time: 2017-05-29 17:47:43.174053000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:47:43.174053000 Z
+    zone: *1
+    time: 2017-05-29 17:47:43.174053000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_91:
+  id: 91
+  name: Quick Triangle Passing Warm Up
+  phase_id: 40
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:45:32.863483000 Z
+    zone: *1
+    time: 2017-05-30 05:45:32.863483000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:45:32.863483000 Z
+    zone: *1
+    time: 2017-05-30 05:45:32.863483000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_92:
+  id: 92
+  name: Lateral Passing/Receiving (Foundations)
+  phase_id: 40
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:45:32.870513000 Z
+    zone: *1
+    time: 2017-05-30 05:45:32.870513000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:45:32.870513000 Z
+    zone: *1
+    time: 2017-05-30 05:45:32.870513000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_93:
+  id: 93
+  name: Lateral Passing/Receiving (Repositioning)
+  phase_id: 40
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:45:32.872944000 Z
+    zone: *1
+    time: 2017-05-30 05:45:32.872944000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:45:32.872944000 Z
+    zone: *1
+    time: 2017-05-30 05:45:32.872944000 Z
+  deleted_at: 
+  position: 
+  supplemental: false
+workout_97:
+  id: 97
+  name: Quick Feet Passing Warm Up (Sole Focus)
+  phase_id: 41
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 13:06:47.835035000 Z
+    zone: *1
+    time: 2017-05-30 08:06:47.835035000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 22:10:06.036331000 Z
+    zone: *1
+    time: 2017-05-30 17:10:06.036331000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_98:
+  id: 98
+  name: 'Lateral Passing: Inside of the Foot Control'
+  phase_id: 41
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 13:06:47.837127000 Z
+    zone: *1
+    time: 2017-05-30 08:06:47.837127000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 22:10:11.069613000 Z
+    zone: *1
+    time: 2017-05-30 17:10:11.069613000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_99:
+  id: 99
+  name: 'Lateral Passing: Rolls and Flicks'
+  phase_id: 41
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 13:06:47.839488000 Z
+    zone: *1
+    time: 2017-05-30 08:06:47.839488000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 22:10:11.109815000 Z
+    zone: *1
+    time: 2017-05-30 17:10:11.109815000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_100:
+  id: 100
+  name: Warm Up Touches
+  phase_id: 49
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:31:01.977565000 Z
+    zone: *1
+    time: 2017-06-01 05:31:01.977565000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:31:01.977565000 Z
+    zone: *1
+    time: 2017-06-01 05:31:01.977565000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_101:
+  id: 101
+  name: Open Up Attacking Touches
+  phase_id: 49
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:31:01.988208000 Z
+    zone: *1
+    time: 2017-06-01 05:31:01.988208000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:31:01.988208000 Z
+    zone: *1
+    time: 2017-06-01 05:31:01.988208000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_102:
+  id: 102
+  name: Kill & Reposition 90s & 180s
+  phase_id: 49
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:31:01.996160000 Z
+    zone: *1
+    time: 2017-06-01 05:31:01.996160000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:31:01.996160000 Z
+    zone: *1
+    time: 2017-06-01 05:31:01.996160000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_103:
+  id: 103
+  name: Soccer Power Warm Up
+  phase_id: 53
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:11:59.804519000 Z
+    zone: *1
+    time: 2017-06-02 06:11:59.804519000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:11:59.804519000 Z
+    zone: *1
+    time: 2017-06-02 06:11:59.804519000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_104:
+  id: 104
+  name: Soccer Power Plyos
+  phase_id: 53
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:11:59.813935000 Z
+    zone: *1
+    time: 2017-06-02 06:11:59.813935000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:11:59.813935000 Z
+    zone: *1
+    time: 2017-06-02 06:11:59.813935000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_105:
+  id: 105
+  name: Soccer Power Strength 1
+  phase_id: 53
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:11:59.819507000 Z
+    zone: *1
+    time: 2017-06-02 06:11:59.819507000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:23:11.395467000 Z
+    zone: *1
+    time: 2017-06-05 10:23:11.395467000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_106:
+  id: 106
+  name: Warm Up (Touch & Reposition)
+  phase_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:36:24.288825000 Z
+    zone: *1
+    time: 2017-06-03 19:36:24.288825000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:36:24.288825000 Z
+    zone: *1
+    time: 2017-06-03 19:36:24.288825000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_107:
+  id: 107
+  name: Scissor Combos
+  phase_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:36:24.301623000 Z
+    zone: *1
+    time: 2017-06-03 19:36:24.301623000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:36:24.301623000 Z
+    zone: *1
+    time: 2017-06-03 19:36:24.301623000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_108:
+  id: 108
+  name: Cruyff Combos
+  phase_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:36:24.318479000 Z
+    zone: *1
+    time: 2017-06-03 19:36:24.318479000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:36:24.318479000 Z
+    zone: *1
+    time: 2017-06-03 19:36:24.318479000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_109:
+  id: 109
+  name: Creative Variations
+  phase_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:36:24.337869000 Z
+    zone: *1
+    time: 2017-06-03 19:36:24.337869000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:36:24.337869000 Z
+    zone: *1
+    time: 2017-06-03 19:36:24.337869000 Z
+  deleted_at: 
+  position: 4
+  supplemental: false
+workout_110:
+  id: 110
+  name: Soccer Power Warm Up (cable)
+  phase_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:44:20.991017000 Z
+    zone: *1
+    time: 2017-06-05 05:44:20.991017000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:44:20.991017000 Z
+    zone: *1
+    time: 2017-06-05 05:44:20.991017000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_111:
+  id: 111
+  name: Soccer Power (plyos and speed)
+  phase_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:44:21.001935000 Z
+    zone: *1
+    time: 2017-06-05 05:44:21.001935000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:44:21.001935000 Z
+    zone: *1
+    time: 2017-06-05 05:44:21.001935000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_112:
+  id: 112
+  name: Soccer Power Strength 2
+  phase_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:44:21.008259000 Z
+    zone: *1
+    time: 2017-06-05 05:44:21.008259000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:23:22.310403000 Z
+    zone: *1
+    time: 2017-06-05 10:23:22.310403000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_113:
+  id: 113
+  name: Soccer Power Warm Up (cable agility)
+  phase_id: 55
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:23:26.530400000 Z
+    zone: *1
+    time: 2017-06-05 10:23:26.530400000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:23:26.530400000 Z
+    zone: *1
+    time: 2017-06-05 10:23:26.530400000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_114:
+  id: 114
+  name: Soccer Power (plyos and agility)
+  phase_id: 55
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:23:26.544906000 Z
+    zone: *1
+    time: 2017-06-05 10:23:26.544906000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:23:26.544906000 Z
+    zone: *1
+    time: 2017-06-05 10:23:26.544906000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_115:
+  id: 115
+  name: Soccer Power Strength 3
+  phase_id: 55
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:23:26.554271000 Z
+    zone: *1
+    time: 2017-06-05 10:23:26.554271000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:23:26.554271000 Z
+    zone: *1
+    time: 2017-06-05 10:23:26.554271000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_116:
+  id: 116
+  name: 3 Cone Lateral Combos
+  phase_id: 39
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:37:10.519368000 Z
+    zone: *1
+    time: 2017-06-07 05:37:10.519368000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:42:04.191224000 Z
+    zone: *1
+    time: 2017-06-07 05:42:04.191224000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_117:
+  id: 117
+  name: 3 Cone Forward Combos
+  phase_id: 39
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:37:10.528612000 Z
+    zone: *1
+    time: 2017-06-07 05:37:10.528612000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:42:04.191224000 Z
+    zone: *1
+    time: 2017-06-07 05:42:04.191224000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_120:
+  id: 120
+  name: Phase 1
+  phase_id: 65
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:39:26.154755000 Z
+    zone: *1
+    time: 2017-06-13 06:39:26.154755000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:39:26.154755000 Z
+    zone: *1
+    time: 2017-06-13 06:39:26.154755000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_121:
+  id: 121
+  name: Phase 2
+  phase_id: 65
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:39:26.163434000 Z
+    zone: *1
+    time: 2017-06-13 06:39:26.163434000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:39:26.163434000 Z
+    zone: *1
+    time: 2017-06-13 06:39:26.163434000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_122:
+  id: 122
+  name: Phase 3
+  phase_id: 65
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:39:26.169749000 Z
+    zone: *1
+    time: 2017-06-13 06:39:26.169749000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:39:26.169749000 Z
+    zone: *1
+    time: 2017-06-13 06:39:26.169749000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_123:
+  id: 123
+  name: Juggling
+  phase_id: 66
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:34:33.799771000 Z
+    zone: *1
+    time: 2017-06-17 18:34:33.799771000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:03:29.565431000 Z
+    zone: *1
+    time: 2017-06-24 17:03:29.565431000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_124:
+  id: 124
+  name: Soccer Speed Phase 1
+  phase_id: 50
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:41:36.887354000 Z
+    zone: *1
+    time: 2017-06-20 19:41:36.887354000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:41:36.887354000 Z
+    zone: *1
+    time: 2017-06-20 19:41:36.887354000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_125:
+  id: 125
+  name: Creative Skill Phase 1
+  phase_id: 46
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:36:25.417882000 Z
+    zone: *1
+    time: 2017-06-22 05:36:25.417882000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:36:25.417882000 Z
+    zone: *1
+    time: 2017-06-22 05:36:25.417882000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_126:
+  id: 126
+  name: Creative Skill Phase 2
+  phase_id: 47
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 01:52:06.057695000 Z
+    zone: *1
+    time: 2017-06-22 20:52:06.057695000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 01:52:06.057695000 Z
+    zone: *1
+    time: 2017-06-22 20:52:06.057695000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_127:
+  id: 127
+  name: Creative Skill Phase 3
+  phase_id: 48
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:10:24.624113000 Z
+    zone: *1
+    time: 2017-06-24 11:10:24.624113000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:10:24.624113000 Z
+    zone: *1
+    time: 2017-06-24 11:10:24.624113000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_128:
+  id: 128
+  name: Wall Volleys
+  phase_id: 66
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:03:29.572326000 Z
+    zone: *1
+    time: 2017-06-24 17:03:29.572326000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:03:29.572326000 Z
+    zone: *1
+    time: 2017-06-24 17:03:29.572326000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_130:
+  id: 130
+  name: Phase 1 Hopping Patterns
+  phase_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:11:24.578346000 Z
+    zone: *1
+    time: 2017-06-26 06:11:24.578346000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:11:24.578346000 Z
+    zone: *1
+    time: 2017-06-26 06:11:24.578346000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_131:
+  id: 131
+  name: Phase 2 Hopping Patterns
+  phase_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:11:24.586548000 Z
+    zone: *1
+    time: 2017-06-26 06:11:24.586548000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:11:24.586548000 Z
+    zone: *1
+    time: 2017-06-26 06:11:24.586548000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_132:
+  id: 132
+  name: Phase 3 Hopping Patterns
+  phase_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:11:24.591872000 Z
+    zone: *1
+    time: 2017-06-26 06:11:24.591872000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:11:24.591872000 Z
+    zone: *1
+    time: 2017-06-26 06:11:24.591872000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_133:
+  id: 133
+  name: Phase 1 Crossover Patterns
+  phase_id: 69
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:39:45.971158000 Z
+    zone: *1
+    time: 2017-06-26 06:39:45.971158000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:39:45.971158000 Z
+    zone: *1
+    time: 2017-06-26 06:39:45.971158000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_134:
+  id: 134
+  name: Phase 2 Crossover Patterns
+  phase_id: 69
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:39:45.977065000 Z
+    zone: *1
+    time: 2017-06-26 06:39:45.977065000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:39:45.977065000 Z
+    zone: *1
+    time: 2017-06-26 06:39:45.977065000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_135:
+  id: 135
+  name: Phase 3 Crossover Patterns
+  phase_id: 69
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:39:45.982307000 Z
+    zone: *1
+    time: 2017-06-26 06:39:45.982307000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:39:45.982307000 Z
+    zone: *1
+    time: 2017-06-26 06:39:45.982307000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_136:
+  id: 136
+  name: Phase 1 Quick Feet on the Ball
+  phase_id: 70
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:55:32.581190000 Z
+    zone: *1
+    time: 2017-06-26 07:55:32.581190000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:55:32.581190000 Z
+    zone: *1
+    time: 2017-06-26 07:55:32.581190000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_137:
+  id: 137
+  name: Phase 2 Quick Feet on the Ball
+  phase_id: 70
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:55:32.593171000 Z
+    zone: *1
+    time: 2017-06-26 07:55:32.593171000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:55:32.593171000 Z
+    zone: *1
+    time: 2017-06-26 07:55:32.593171000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_138:
+  id: 138
+  name: Phase 3 Quick Feet on the Ball
+  phase_id: 70
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:55:32.601260000 Z
+    zone: *1
+    time: 2017-06-26 07:55:32.601260000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:55:32.601260000 Z
+    zone: *1
+    time: 2017-06-26 07:55:32.601260000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_139:
+  id: 139
+  name: Phase 1 Agility Footwork
+  phase_id: 71
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:46.483092000 Z
+    zone: *1
+    time: 2017-06-26 10:55:46.483092000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:46.483092000 Z
+    zone: *1
+    time: 2017-06-26 10:55:46.483092000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_140:
+  id: 140
+  name: Phase 2 Agility Footwork
+  phase_id: 71
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:46.503395000 Z
+    zone: *1
+    time: 2017-06-26 10:55:46.503395000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:46.503395000 Z
+    zone: *1
+    time: 2017-06-26 10:55:46.503395000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_141:
+  id: 141
+  name: Phase 3 Agility Footwork
+  phase_id: 71
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:46.517106000 Z
+    zone: *1
+    time: 2017-06-26 10:55:46.517106000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:46.517106000 Z
+    zone: *1
+    time: 2017-06-26 10:55:46.517106000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_142:
+  id: 142
+  name: Agility Based Fitness
+  phase_id: 72
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:58:54.409145000 Z
+    zone: *1
+    time: 2017-06-26 11:58:54.409145000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:58:54.409145000 Z
+    zone: *1
+    time: 2017-06-26 11:58:54.409145000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_143:
+  id: 143
+  name: 6 Cone Phase 1
+  phase_id: 73
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:38:23.385082000 Z
+    zone: *1
+    time: 2017-06-26 20:38:23.385082000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:38:23.385082000 Z
+    zone: *1
+    time: 2017-06-26 20:38:23.385082000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_144:
+  id: 144
+  name: 6 Cone Phase 2
+  phase_id: 73
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:38:23.394214000 Z
+    zone: *1
+    time: 2017-06-26 20:38:23.394214000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:38:23.394214000 Z
+    zone: *1
+    time: 2017-06-26 20:38:23.394214000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_145:
+  id: 145
+  name: 6 Cone Phase 3
+  phase_id: 73
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:38:23.409763000 Z
+    zone: *1
+    time: 2017-06-26 20:38:23.409763000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:38:23.409763000 Z
+    zone: *1
+    time: 2017-06-26 20:38:23.409763000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false
+workout_146:
+  id: 146
+  name: Soccer Speed Phase 2
+  phase_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:16:42.886987000 Z
+    zone: *1
+    time: 2017-06-27 20:16:42.886987000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:16:42.886987000 Z
+    zone: *1
+    time: 2017-06-27 20:16:42.886987000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_147:
+  id: 147
+  name: Soccer Speed Phase 3
+  phase_id: 52
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:07:56.809002000 Z
+    zone: *1
+    time: 2017-06-27 21:07:56.809002000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:07:56.809002000 Z
+    zone: *1
+    time: 2017-06-27 21:07:56.809002000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_148:
+  id: 148
+  name: Rate Your Daily Workouts
+  phase_id: 56
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:51:57.668047000 Z
+    zone: *1
+    time: 2017-06-28 19:51:57.668047000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:51:57.668047000 Z
+    zone: *1
+    time: 2017-06-28 19:51:57.668047000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_149:
+  id: 149
+  name: Rate Your Daily Workouts
+  phase_id: 57
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:38:19.659931000 Z
+    zone: *1
+    time: 2017-06-29 05:38:19.659931000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:38:19.659931000 Z
+    zone: *1
+    time: 2017-06-29 05:38:19.659931000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_150:
+  id: 150
+  name: Upper Body
+  phase_id: 75
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:29:25.746251000 Z
+    zone: *1
+    time: 2017-06-29 15:29:25.746251000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:29:25.746251000 Z
+    zone: *1
+    time: 2017-06-29 15:29:25.746251000 Z
+  deleted_at: 
+  position: 1
+  supplemental: false
+workout_151:
+  id: 151
+  name: Total Body
+  phase_id: 75
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:29:25.828991000 Z
+    zone: *1
+    time: 2017-06-29 15:29:25.828991000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:29:25.828991000 Z
+    zone: *1
+    time: 2017-06-29 15:29:25.828991000 Z
+  deleted_at: 
+  position: 2
+  supplemental: false
+workout_152:
+  id: 152
+  name: Lower Body
+  phase_id: 75
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:29:25.844014000 Z
+    zone: *1
+    time: 2017-06-29 15:29:25.844014000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:29:25.844014000 Z
+    zone: *1
+    time: 2017-06-29 15:29:25.844014000 Z
+  deleted_at: 
+  position: 3
+  supplemental: false

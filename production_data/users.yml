@@ -1,0 +1,2632 @@
+---
+user_1:
+  id: 1
+  first_name: Admin
+  last_name: User
+  uuid: 7f77312e-ac34-471f-b49b-48f1fe2db47f
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-05 02:06:58.024570000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-04-04 21:06:58.024570000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 17:11:35.699865000 Z
+    zone: *1
+    time: 2017-07-05 12:11:35.699865000 Z
+  email: admin@example.com
+  encrypted_password: "$2a$11$I6hVoLctGkY0z4PfBMHCbuFh6i7d.F2SUy0PK5oAJpbh8GeGcUG9y"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:20:32.767765000 Z
+    zone: *1
+    time: 2017-06-29 13:20:32.767765000 Z
+  sign_in_count: 1405
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 17:11:35.696421000 Z
+    zone: *1
+    time: 2017-07-05 12:11:35.696421000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 17:09:34.785974000 Z
+    zone: *1
+    time: 2017-07-05 12:09:34.785974000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 8
+  slug: admin-user
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_11:
+  id: 11
+  first_name: Club
+  last_name: Admin
+  uuid: '08bfa7f0-26d2-415d-9a4f-5c378b19a325'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:44:01.682546000 Z
+    zone: *1
+    time: 2017-04-06 10:44:01.682546000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:44:01.682546000 Z
+    zone: *1
+    time: 2017-04-06 10:44:01.682546000 Z
+  email: clubadmin@example.com
+  encrypted_password: "$2a$11$/kFNJiqYN2ASBM/BM9JSAOUzECTCLU0lTNnjsXx9YZ4RiJLkEbQ6y"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 4
+  slug: club-admin
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_12:
+  id: 12
+  first_name: Tammy
+  last_name: Somebody
+  uuid: '0041287a-1654-4786-82ef-3f96a9a24c35'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:45:33.307002000 Z
+    zone: *1
+    time: 2017-04-06 10:45:33.307002000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:45:33.307002000 Z
+    zone: *1
+    time: 2017-04-06 10:45:33.307002000 Z
+  email: tammy@example.com
+  encrypted_password: "$2a$11$6RY3cfInV52KbabiqtTwyerNFGl2uqqaNLsEvL.fo4mW/0.UM10MC"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 1
+  slug: tammy-somebody
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_13:
+  id: 13
+  first_name: Coach
+  last_name: Pedro
+  uuid: 2d94b329-6250-41f9-92ad-63c7598ec27b
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:50:41.080793000 Z
+    zone: *1
+    time: 2017-04-06 10:50:41.080793000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:50:41.080793000 Z
+    zone: *1
+    time: 2017-04-06 10:50:41.080793000 Z
+  email: pedro@example.com
+  encrypted_password: "$2a$11$N2h8H.0bHkhRREzyIT.dyeNBvOWg8uh3r8CN5eh7QxZNeAF2JMn/m"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: coach-pedro
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_14:
+  id: 14
+  first_name: Steve
+  last_name: Watson
+  uuid: 6363649e-e798-485e-9bbf-a4e7f3f9fc56
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:56:25.812112000 Z
+    zone: *1
+    time: 2017-04-06 10:56:25.812112000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:56:25.812112000 Z
+    zone: *1
+    time: 2017-04-06 10:56:25.812112000 Z
+  email: stevewatson@example.com
+  encrypted_password: "$2a$11$IA8hIUn.B70CHyVcMKj4meK97SyrDFpetQE7jMFpyGjTpQh2rvJpi"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 1
+  slug: steve-watson
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_15:
+  id: 15
+  first_name: GBCoach
+  last_name: Coach
+  uuid: 5ea66dcc-dbb2-40fd-ab51-401d67049865
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:57:12.885488000 Z
+    zone: *1
+    time: 2017-04-06 10:57:12.885488000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:57:12.885488000 Z
+    zone: *1
+    time: 2017-04-06 10:57:12.885488000 Z
+  email: gbcoach@example.com
+  encrypted_password: "$2a$11$0G2bb.3fgRJujRZ.jlzUbO0V5Qf0hPDOAy.gl8j4j3jvdY3U56T/y"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: gbcoach-coach
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_17:
+  id: 17
+  first_name: DTW
+  last_name: Coach
+  uuid: 4b6580f7-5135-44e5-a91c-be4213078462
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 16:00:05.375887000 Z
+    zone: *1
+    time: 2017-04-06 11:00:05.375887000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 16:00:05.375887000 Z
+    zone: *1
+    time: 2017-04-06 11:00:05.375887000 Z
+  email: dtwcoach@example.com
+  encrypted_password: "$2a$11$yro5w1owTPbHST/0wLIoe.VzGWpkZKpWQr1Id3fW7SCihFWR0fGXW"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: dtw-coach
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_18:
+  id: 18
+  first_name: DTWPlayerOne
+  last_name: Detroit
+  uuid: de45ea1a-28c1-4958-b5d7-64662b51e96a
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 16:00:40.292961000 Z
+    zone: *1
+    time: 2017-04-06 11:00:40.292961000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 16:00:40.292961000 Z
+    zone: *1
+    time: 2017-04-06 11:00:40.292961000 Z
+  email: dtwplayerone@example.com
+  encrypted_password: "$2a$11$tosSQH.7Knj6s60I4diTB.LX4QCwTbXxOIEPKxAaFuPPKjai6tUOW"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 1
+  slug: dtwplayerone-detroit
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_25:
+  id: 25
+  first_name: Dude
+  last_name: McGuy
+  uuid: c15767d0-ea14-4785-aaab-1343292826cc
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 14:11:52.471698000 Z
+    zone: *1
+    time: 2017-06-16 09:11:52.471698000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 20:00:56.903299000 Z
+    zone: *1
+    time: 2017-06-27 15:00:56.903299000 Z
+  email: dude01@example.com
+  encrypted_password: "$2a$11$ehD465TBzU83OgtKBBbXj.CHDh06mpJ/FZDDXFBPBW96D1XJVF2Ri"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 65
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 20:00:56.898481000 Z
+    zone: *1
+    time: 2017-06-27 15:00:56.898481000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 18:49:10.416424000 Z
+    zone: *1
+    time: 2017-06-27 13:49:10.416424000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: dude-mcguy
+  deleted_at: 
+  nickname: 
+  avatar: 28412eb4-1714-4099-9cd2-dd3b46dad277.photo.jpeg
+user_26:
+  id: 26
+  first_name: JonoYoko
+  last_name: Kinneyo
+  uuid: bc1b5100-55ba-4cc0-bbc5-ec90bb333992
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 15:37:50.557988000 Z
+    zone: *1
+    time: 2017-06-16 10:37:50.557988000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 15:37:50.557988000 Z
+    zone: *1
+    time: 2017-06-16 10:37:50.557988000 Z
+  email: jonoyoko6@kinneyo3.com
+  encrypted_password: "$2a$11$v4sO/Z51zpmTWGhT3n8JBeQLn1nVeG9JRx4TKSzl9ibbJlegWsedK"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 0
+  slug: jonoyoko-kinneyo
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_28:
+  id: 28
+  first_name: Scott
+  last_name: Moody
+  uuid: 7b3fa4f4-db16-4e0f-b4a7-99009fdf9f21
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 18:02:59.304645000 Z
+    zone: *1
+    time: 2017-06-16 13:02:59.304645000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.349401000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.349401000 Z
+  email: smoody@athletefit.com
+  encrypted_password: "$2a$11$ef.NRpP9knUIuOQdoL4LvOtF0tUfXNb2cU9m.goaVEmuoIrkVE7se"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 93
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 22:41:06.606064000 Z
+    zone: *1
+    time: 2017-06-29 17:41:06.606064000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 19:20:39.206962000 Z
+    zone: *1
+    time: 2017-06-29 14:20:39.206962000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1113016803
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1113016803
+    mask_addr: 4294967295
+  roles_mask: 2
+  slug: scott-moody
+  deleted_at: 
+  nickname: Testing Account
+  avatar: aa95008a-7acf-452e-8245-71f4def67699.photo.jpeg
+user_30:
+  id: 30
+  first_name: Noah
+  last_name: Settersten
+  uuid: c72c7431-64b0-49b8-ad94-6be6b61f4e89
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 19:34:21.701742000 Z
+    zone: *1
+    time: 2017-06-16 14:34:21.701742000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 19:56:26.645706000 Z
+    zone: *1
+    time: 2017-06-16 14:56:26.645706000 Z
+  email: noah@headway.io
+  encrypted_password: "$2a$11$HWUyqj0MCcMOBva37DwbUOvjfwTzFYkegmEpsCR9zTypRxCRWz9gK"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 2
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 19:56:26.641926000 Z
+    zone: *1
+    time: 2017-06-16 14:56:26.641926000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 19:34:22.018491000 Z
+    zone: *1
+    time: 2017-06-16 14:34:22.018491000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: noah-settersten
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_31:
+  id: 31
+  first_name: Lyric
+  last_name: Moody
+  uuid: e35bbf50-087a-423e-b47e-77c831266a9d
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 20:13:38.275732000 Z
+    zone: *1
+    time: 2017-06-16 15:13:38.275732000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 02:55:20.989210000 Z
+    zone: *1
+    time: 2017-07-08 21:55:20.989210000 Z
+  email: beccamoody@hotmail.com
+  encrypted_password: "$2a$11$MXSYlyqTaoAb4nuF3IydpeE0FIgJTtuu1mrFAi4cNZfPLFovh4cw2"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 15
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 02:55:20.986731000 Z
+    zone: *1
+    time: 2017-07-08 21:55:20.986731000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 02:55:20.683082000 Z
+    zone: *1
+    time: 2017-07-08 21:55:20.683082000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1153084521
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1153084521
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: lyric-moody
+  deleted_at: 
+  nickname: 
+  avatar: 8b1b05c3-128e-42d6-b7df-63b99b90d0b2.photo.jpeg
+user_32:
+  id: 32
+  first_name: billy
+  last_name: sweetman
+  uuid: 0dd4fe86-47b2-4128-aa2a-6dddaa5af386
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 20:32:23.780869000 Z
+    zone: *1
+    time: 2017-06-16 15:32:23.780869000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 21:09:01.178750000 Z
+    zone: *1
+    time: 2017-06-16 16:09:01.178750000 Z
+  email: billy@headway.io
+  encrypted_password: "$2a$11$5kWYa4TIImFL5MV8v2B2WOdNVYh/23iqBOmhWqtazRyq0E1IttT56"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 8
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 21:09:01.176600000 Z
+    zone: *1
+    time: 2017-06-16 16:09:01.176600000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-16 20:53:50.794090000 Z
+    zone: *1
+    time: 2017-06-16 15:53:50.794090000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: billy-sweetman
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_58:
+  id: 58
+  first_name: verek
+  last_name: harnapp
+  uuid: '09b49221-2592-46e4-a839-fb7583940fe2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:22:16.278215000 Z
+    zone: *1
+    time: 2017-06-22 12:22:16.278215000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:22:16.879114000 Z
+    zone: *1
+    time: 2017-06-22 12:22:16.879114000 Z
+  email: vharnapp@hotmail.com
+  encrypted_password: "$2a$11$DktZTCAr20bc8tI7Sm6kBeGZI15CPZhoto9hopo/t.qqStFF1BUb."
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:22:16.872032000 Z
+    zone: *1
+    time: 2017-06-22 12:22:16.872032000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:22:16.872032000 Z
+    zone: *1
+    time: 2017-06-22 12:22:16.872032000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1800226425
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1800226425
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: verek-harnapp
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_59:
+  id: 59
+  first_name: verek
+  last_name: harnapp
+  uuid: 92f36d88-3956-462e-8bac-b220392b37df
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:33:09.997153000 Z
+    zone: *1
+    time: 2017-06-22 12:33:09.997153000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:27:54.686201000 Z
+    zone: *1
+    time: 2017-07-02 16:27:54.686201000 Z
+  email: vharnapp@gmail.com
+  encrypted_password: "$2a$11$pHg5r9c7S5zLJLPm.j9bS.AASfmfWVgVFT95zfc/hL5FQFzD3/w0C"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 6
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:27:54.682630000 Z
+    zone: *1
+    time: 2017-07-02 16:27:54.682630000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:06:24.646921000 Z
+    zone: *1
+    time: 2017-07-02 16:06:24.646921000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2905637803
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1202613132
+    mask_addr: 4294967295
+  roles_mask: 8
+  slug: verek-harnapp-76d29a52-3254-46ce-bd72-af99a9521ce8
+  deleted_at: 
+  nickname: ''
+  avatar: 
+user_60:
+  id: 60
+  first_name: Verek
+  last_name: Harnapp
+  uuid: a093c6dd-d2ea-4368-9d91-c9b1d312377b
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 11:18:12.816670000 Z
+    zone: *1
+    time: 2017-06-24 06:18:12.816670000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 11:18:13.636158000 Z
+    zone: *1
+    time: 2017-06-24 06:18:13.636158000 Z
+  email: vharnapp@yahoo.com
+  encrypted_password: "$2a$11$gtkUTzDpLKHqAG5lMzDYmOEz0miVDi2afG/NqCgrvQWOZmh6jMTCK"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 11:18:13.629505000 Z
+    zone: *1
+    time: 2017-06-24 06:18:13.629505000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 11:18:13.629505000 Z
+    zone: *1
+    time: 2017-06-24 06:18:13.629505000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2905637803
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2905637803
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: verek-harnapp-9d87b2dd-c78c-4d2d-8c60-7cc655485209
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_61:
+  id: 61
+  first_name: Scott
+  last_name: Moody
+  uuid: 190920d8-fe14-4a7a-bf6e-5db0ae8c6f3b
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 21:51:16.479598000 Z
+    zone: *1
+    time: 2017-06-25 16:51:16.479598000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 00:57:37.765982000 Z
+    zone: *1
+    time: 2017-06-30 19:57:37.765982000 Z
+  email: test@test.com
+  encrypted_password: "$2a$11$g1KQpQbuTgyAecN9UU3y6ewNo4QXb5SZ7GAL8ceQcYJQ1kmWtGbvu"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 35
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 00:57:37.760324000 Z
+    zone: *1
+    time: 2017-06-30 19:57:37.760324000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 21:36:55.596888000 Z
+    zone: *1
+    time: 2017-06-30 16:36:55.596888000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1756684434
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1113016803
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: scott-moody-440db570-ed3b-4972-80f3-e585d31c2a08
+  deleted_at: 
+  nickname: 
+  avatar: 1a421bca-e27c-4420-a841-9da6a0b656fb.photo.jpeg
+user_68:
+  id: 68
+  first_name: Dude
+  last_name: McGuy05
+  uuid: d16ecd81-829f-4cec-97da-75766eeea8f3
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:51:39.098517000 Z
+    zone: *1
+    time: 2017-06-27 08:51:39.098517000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 16:27:18.606630000 Z
+    zone: *1
+    time: 2017-06-29 11:27:18.606630000 Z
+  email: dude05@example.com
+  encrypted_password: "$2a$11$OevmSsxoZSFl0uAYqUyQ9eztZqMivk.52bRQC2X6AWHwMLUqql2aa"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 116
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 16:27:18.604254000 Z
+    zone: *1
+    time: 2017-06-29 11:27:18.604254000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 16:25:30.240116000 Z
+    zone: *1
+    time: 2017-06-29 11:25:30.240116000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: dude-mcguy05
+  deleted_at: 
+  nickname: 
+  avatar: 34f2c933-f4d8-44e7-b75b-87e395e62ae3.photo.jpeg
+user_71:
+  id: 71
+  first_name: Verek
+  last_name: Haranpp
+  uuid: '08f64501-8b9e-4058-81c4-bb3cefb56cbc'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:47:57.588208000 Z
+    zone: *1
+    time: 2017-06-27 14:47:57.588208000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:47:57.969620000 Z
+    zone: *1
+    time: 2017-06-27 14:47:57.969620000 Z
+  email: vharnap@hotmail.com
+  encrypted_password: "$2a$11$8GDhTm4o7p4Okrqf0KmnDO9sKVIylvHSidjoXK/MW6/c3AA8m5F/O"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:47:57.967066000 Z
+    zone: *1
+    time: 2017-06-27 14:47:57.967066000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:47:57.967066000 Z
+    zone: *1
+    time: 2017-06-27 14:47:57.967066000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2794060913
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2794060913
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: verek-haranpp
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_72:
+  id: 72
+  first_name: Verek
+  last_name: Haranpp
+  uuid: f6a5abc9-348a-4bef-a480-c52de07916b1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 21:07:37.011744000 Z
+    zone: *1
+    time: 2017-06-27 16:07:37.011744000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:43:51.000561000 Z
+    zone: *1
+    time: 2017-07-02 15:43:51.000561000 Z
+  email: vharnap@gmail.com
+  encrypted_password: "$2a$11$AH..SMWJkaFXjIb9rhIZeOwjmlvUzOnd2ZJPta5BwHD5PCJW6/HmC"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 21:07:37.418505000 Z
+    zone: *1
+    time: 2017-06-27 16:07:37.418505000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 21:07:37.418505000 Z
+    zone: *1
+    time: 2017-06-27 16:07:37.418505000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2794060913
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2794060913
+    mask_addr: 4294967295
+  roles_mask: 8
+  slug: verek-haranpp-2b45af60-3ff3-4bc9-8631-e9bcb453dfa9
+  deleted_at: 
+  nickname: ''
+  avatar: 
+user_73:
+  id: 73
+  first_name: Jon
+  last_name: Kinney
+  uuid: 1504afde-9903-4c0c-b1b2-1fe3e87e4483
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 13:53:55.137100000 Z
+    zone: *1
+    time: 2017-06-28 08:53:55.137100000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 16:47:54.018032000 Z
+    zone: *1
+    time: 2017-07-09 11:47:54.018032000 Z
+  email: jon@headway.io
+  encrypted_password: "$2a$11$sMNNonHZ.Xcg3rHo3P6qMuQPDWgTf55PbWFk3T1lq5W8wIloVSJrW"
+  reset_password_token: 47b7a0facd595dac81dc725a1c057c406842228e483833706401d5afba57eb50
+  reset_password_sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:02:33.330894000 Z
+    zone: *1
+    time: 2017-06-29 13:02:33.330894000 Z
+  remember_created_at: 
+  sign_in_count: 12
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 16:47:54.015626000 Z
+    zone: *1
+    time: 2017-07-09 11:47:54.015626000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:41:48.910075000 Z
+    zone: *1
+    time: 2017-07-02 15:41:48.910075000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2925967882
+    mask_addr: 4294967295
+  roles_mask: 2
+  slug: jon-kinney
+  deleted_at: 
+  nickname: 
+  avatar: c1989e5a-dd2b-4ca8-ba2d-b757bdd0f8b7.photo.jpeg
+user_87:
+  id: 87
+  first_name: New
+  last_name: Account01
+  uuid: c732d89d-2f6b-48e6-be8c-995ec3c05d80
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:49:55.027335000 Z
+    zone: *1
+    time: 2017-06-28 14:49:55.027335000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:12:22.335588000 Z
+    zone: *1
+    time: 2017-06-28 15:12:22.335588000 Z
+  email: newaccount01@example.com
+  encrypted_password: "$2a$11$07NuG.uspjalEUDvAJnKpudvxmWikAd2RZ9JBAbcW1uqBj5FN2VvC"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 3
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:12:22.327724000 Z
+    zone: *1
+    time: 2017-06-28 15:12:22.327724000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:53:16.445525000 Z
+    zone: *1
+    time: 2017-06-28 14:53:16.445525000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: new-account01
+  deleted_at: 
+  nickname: 
+  avatar: 3473a49d-1d79-4ca8-bce5-b57104a12cd5.photo.jpeg
+user_89:
+  id: 89
+  first_name: Dude
+  last_name: McGuy10
+  uuid: eec6d575-750f-46ab-947f-b3ed6e8aa419
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:50:51.981022000 Z
+    zone: *1
+    time: 2017-06-28 15:50:51.981022000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:54:24.356396000 Z
+    zone: *1
+    time: 2017-06-28 15:54:24.356396000 Z
+  email: dude10@example.com
+  encrypted_password: "$2a$11$ri5KOk5ZWXZuCgdRXD9JQuDI4scFNkxTqsSZ6DE5KfujYJY7/dRLC"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 2
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:54:24.354211000 Z
+    zone: *1
+    time: 2017-06-28 15:54:24.354211000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:50:52.371351000 Z
+    zone: *1
+    time: 2017-06-28 15:50:52.371351000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: dude-mcguy10
+  deleted_at: 
+  nickname: 
+  avatar: 6e766386-6d5d-41e5-8aa3-41eb5a198e15.photo.jpeg
+user_91:
+  id: 91
+  first_name: John
+  last_name: Oooh
+  uuid: 3064d95e-b2bc-4cd1-8af4-b518a9ade30e
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:27:19.992216000 Z
+    zone: *1
+    time: 2017-06-28 19:27:19.992216000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:28:09.695932000 Z
+    zone: *1
+    time: 2017-06-28 19:28:09.695932000 Z
+  email: jon+ooh@headway.io
+  encrypted_password: "$2a$11$xv9M47yYB3bHfBe1KhhhhOcBkowuKrnaJxGElxWgPsMlQE/Pqqz92"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:27:20.836265000 Z
+    zone: *1
+    time: 2017-06-28 19:27:20.836265000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:27:20.836265000 Z
+    zone: *1
+    time: 2017-06-28 19:27:20.836265000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: john-oooh
+  deleted_at: 
+  nickname: 
+  avatar: f37a1f07-3173-48f1-8ba8-291e4c280b96.photo.jpeg
+user_92:
+  id: 92
+  first_name: AthleteFIT
+  last_name: Player
+  uuid: 1e43255c-c4c9-4b56-95a2-cb000bb87975
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:45:24.232526000 Z
+    zone: *1
+    time: 2017-06-29 05:45:24.232526000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:16:31.795578000 Z
+    zone: *1
+    time: 2017-07-03 17:16:31.795578000 Z
+  email: player@athletefit.com
+  encrypted_password: "$2a$11$HdeqN464CqrfDWfpVD8n6eGXJGnPzkPeQ.2NJnwCQR.1gqxXpAh4y"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 6
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:16:31.789581000 Z
+    zone: *1
+    time: 2017-07-03 17:16:31.789581000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:13:46.033769000 Z
+    zone: *1
+    time: 2017-07-03 17:13:46.033769000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1113016409
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1113016409
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: athletefit-player
+  deleted_at: 
+  nickname: 
+  avatar: f027bccf-fd84-4203-b2ad-2e68f86d8d22.photo.jpeg
+user_93:
+  id: 93
+  first_name: Andrew
+  last_name: Verboncouer
+  uuid: 45ee1f53-391a-42ac-ad5e-acc1a794385b
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 12:52:08.514700000 Z
+    zone: *1
+    time: 2017-06-29 07:52:08.514700000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 12:53:49.228605000 Z
+    zone: *1
+    time: 2017-06-29 07:53:49.228605000 Z
+  email: andrewverbs@gmail.com
+  encrypted_password: "$2a$11$yUSFrecNW7pJsCCzbXJ1keBSSjTn9b1NULFi05nveNMyJ0Oah2bS."
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 12:52:08.897790000 Z
+    zone: *1
+    time: 2017-06-29 07:52:08.897790000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 12:52:08.897790000 Z
+    zone: *1
+    time: 2017-06-29 07:52:08.897790000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: andrew-verboncouer
+  deleted_at: 
+  nickname: 
+  avatar: 2c7891e0-6d0f-4efb-8429-4abc82ca7566.photo.jpeg
+user_95:
+  id: 95
+  first_name: Jason
+  last_name: Beck
+  uuid: 3f3bbbca-8c67-497e-b24a-4b58dccf0bc4
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 14:29:27.638332000 Z
+    zone: *1
+    time: 2017-06-29 09:29:27.638332000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 23:54:18.621251000 Z
+    zone: *1
+    time: 2017-07-03 18:54:18.621251000 Z
+  email: jasonbeck2001@yahoo.com
+  encrypted_password: "$2a$11$BIXNAzL7vSifiPTlg5HuA./LSjl3W10XQ.YsJXbjwIZf1onfdrK6e"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 42
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 23:54:18.618733000 Z
+    zone: *1
+    time: 2017-07-03 18:54:18.618733000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 23:53:36.420424000 Z
+    zone: *1
+    time: 2017-07-03 18:53:36.420424000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3090926076
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3090926076
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: jason-beck
+  deleted_at: 
+  nickname: 
+  avatar: 8d6d1e72-7754-4c4c-a37f-4747f28ae49c.photo.jpeg
+user_97:
+  id: 97
+  first_name: Jschwab11@gmail.com
+  last_name: Shelly11
+  uuid: ae54be99-e235-4a66-adfc-b4cf12fe7baa
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 15:40:30.826082000 Z
+    zone: *1
+    time: 2017-06-29 10:40:30.826082000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 15:40:31.479315000 Z
+    zone: *1
+    time: 2017-06-29 10:40:31.479315000 Z
+  email: jschwab11@gmail.com
+  encrypted_password: "$2a$11$TaCGkhlJk4s4w/JFgCAWQ.wdeGZvnGZgeGxfCXPv2nMJFQ9FhOgrC"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 15:40:31.476821000 Z
+    zone: *1
+    time: 2017-06-29 10:40:31.476821000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 15:40:31.476821000 Z
+    zone: *1
+    time: 2017-06-29 10:40:31.476821000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3338151449
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3338151449
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: jschwab11-gmail-com-shelly11
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_98:
+  id: 98
+  first_name: jim
+  last_name: Schwab
+  uuid: 299c0a61-4355-4b60-bd8a-cf546df67c64
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 15:43:15.528844000 Z
+    zone: *1
+    time: 2017-06-29 10:43:15.528844000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 17:08:34.333695000 Z
+    zone: *1
+    time: 2017-06-29 12:08:34.333695000 Z
+  email: jschwab@jccc.edu
+  encrypted_password: "$2a$11$0faGwNdxob3wdlRLvwfSluEq0MugCXVMvx/tvwX.Q.aWWri31uSRO"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 2
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 17:08:34.322428000 Z
+    zone: *1
+    time: 2017-06-29 12:08:34.322428000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 15:43:16.012570000 Z
+    zone: *1
+    time: 2017-06-29 10:43:16.012570000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3338151448
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3338151449
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: jim-schwab
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_99:
+  id: 99
+  first_name: Dude
+  last_name: McGuy55
+  uuid: 552c3e37-f8a7-4774-bd72-e4893fc31833
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 17:01:10.200633000 Z
+    zone: *1
+    time: 2017-06-29 12:01:10.200633000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 19:08:50.058688000 Z
+    zone: *1
+    time: 2017-06-29 14:08:50.058688000 Z
+  email: dude55@example.com
+  encrypted_password: "$2a$11$4/1/5/Kl7A3T2Qb9p.JSN.ipcaV9dQ.b5UgM3f1vQZg54pd2R/K2u"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 15
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 19:08:50.055132000 Z
+    zone: *1
+    time: 2017-06-29 14:08:50.055132000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:11:04.268478000 Z
+    zone: *1
+    time: 2017-06-29 13:11:04.268478000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: dude-mcguy55
+  deleted_at: 
+  nickname: Super Dude
+  avatar: 53dcf99e-cf22-47f7-a541-1434335f1913.photo.jpeg
+user_113:
+  id: 113
+  first_name: Test
+  last_name: Team107
+  uuid: '08b63d82-0e52-4cc1-b971-c9c5a7dc4d12'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 14:13:00.248714000 Z
+    zone: *1
+    time: 2017-06-30 09:13:00.248714000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 14:13:00.815400000 Z
+    zone: *1
+    time: 2017-06-30 09:13:00.815400000 Z
+  email: testteam107@example.com
+  encrypted_password: "$2a$11$Trl7mGy3gx0.GKODKp121eGiR/HLiMeJ1V/FGY3AzHJIv1bPFB/Yq"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 14:13:00.810968000 Z
+    zone: *1
+    time: 2017-06-30 09:13:00.810968000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 14:13:00.810968000 Z
+    zone: *1
+    time: 2017-06-30 09:13:00.810968000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team107
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_134:
+  id: 134
+  first_name: Soccer
+  last_name: Star
+  uuid: b5052b03-96a6-4a9a-92d2-ac264ca4b20d
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:01:23.679358000 Z
+    zone: *1
+    time: 2017-06-30 12:01:23.679358000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:01:53.428228000 Z
+    zone: *1
+    time: 2017-06-30 12:01:53.428228000 Z
+  email: soccerstar@example.com
+  encrypted_password: "$2a$11$39FxhQPwyT4T7sHVjnAFk.jpMiYkeArFOdlHS7czbuWFFFDObA0RW"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:01:24.583805000 Z
+    zone: *1
+    time: 2017-06-30 12:01:24.583805000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:01:24.583805000 Z
+    zone: *1
+    time: 2017-06-30 12:01:24.583805000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: soccer-star
+  deleted_at: 
+  nickname: 
+  avatar: 57e90bf6-ffc8-4d89-b377-19a653070c84.photo.jpeg
+user_146:
+  id: 146
+  first_name: Test
+  last_name: Team5000
+  uuid: e6d8e88c-2a76-4d6e-adc5-99329cdec18c
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:31:49.313114000 Z
+    zone: *1
+    time: 2017-06-30 13:31:49.313114000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:31:49.935101000 Z
+    zone: *1
+    time: 2017-06-30 13:31:49.935101000 Z
+  email: testteam5000@example.com
+  encrypted_password: "$2a$11$o8NKvLT02bVHP03S3p7Rl.vMIvnT698cyQRFt5sAES19YWDgEf3jC"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:31:49.931589000 Z
+    zone: *1
+    time: 2017-06-30 13:31:49.931589000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:31:49.931589000 Z
+    zone: *1
+    time: 2017-06-30 13:31:49.931589000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5000
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_147:
+  id: 147
+  first_name: Test
+  last_name: Team5001
+  uuid: 4d36ab1a-6510-4632-8e22-b165146dfdd9
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:32:23.059098000 Z
+    zone: *1
+    time: 2017-06-30 13:32:23.059098000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:32:23.470883000 Z
+    zone: *1
+    time: 2017-06-30 13:32:23.470883000 Z
+  email: testteam5001@example.com
+  encrypted_password: "$2a$11$8MDedhiMl29SaNOx2rSt.OZj8LS3tTi/fYWpf11H/3X3Jq7k0iGZS"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:32:23.468821000 Z
+    zone: *1
+    time: 2017-06-30 13:32:23.468821000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:32:23.468821000 Z
+    zone: *1
+    time: 2017-06-30 13:32:23.468821000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5001
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_148:
+  id: 148
+  first_name: Test
+  last_name: Team5002
+  uuid: f9e61e42-93ee-47ca-8c25-47dad3f76cb3
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:34:08.386107000 Z
+    zone: *1
+    time: 2017-06-30 13:34:08.386107000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:34:08.733500000 Z
+    zone: *1
+    time: 2017-06-30 13:34:08.733500000 Z
+  email: testteam5002@example.com
+  encrypted_password: "$2a$11$HpxkT.E9PjGNfmBECLzcT.jX.QgX8vPjEZFoO2MdyVB5zbESLOzHy"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:34:08.731837000 Z
+    zone: *1
+    time: 2017-06-30 13:34:08.731837000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:34:08.731837000 Z
+    zone: *1
+    time: 2017-06-30 13:34:08.731837000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5002
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_149:
+  id: 149
+  first_name: Test
+  last_name: Team5003
+  uuid: 8a5a69f1-1147-4094-b146-77de368a3a94
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:35:04.460162000 Z
+    zone: *1
+    time: 2017-06-30 13:35:04.460162000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:35:04.857031000 Z
+    zone: *1
+    time: 2017-06-30 13:35:04.857031000 Z
+  email: testteam5003@example.com
+  encrypted_password: "$2a$11$/ie3hb6Aq7E4ca7ujJR9EueVGSetjKlxcKGlKtR2.DEtbIF0mneli"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:35:04.854694000 Z
+    zone: *1
+    time: 2017-06-30 13:35:04.854694000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:35:04.854694000 Z
+    zone: *1
+    time: 2017-06-30 13:35:04.854694000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5003
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_150:
+  id: 150
+  first_name: Test
+  last_name: Team5004
+  uuid: 3b08a28c-5b50-4066-b06b-29a94d07ac84
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:34.422469000 Z
+    zone: *1
+    time: 2017-06-30 13:36:34.422469000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:34.759162000 Z
+    zone: *1
+    time: 2017-06-30 13:36:34.759162000 Z
+  email: testteam5004@example.com
+  encrypted_password: "$2a$11$rNGNDfqOFx0YLFPlMa9hqePs6a2RAZxn/sxk8WIL4u7i.Uwq0hUZG"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:34.757017000 Z
+    zone: *1
+    time: 2017-06-30 13:36:34.757017000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:34.757017000 Z
+    zone: *1
+    time: 2017-06-30 13:36:34.757017000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5004
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_151:
+  id: 151
+  first_name: Test
+  last_name: Team5005
+  uuid: 0e8cd89b-2f44-46ea-837c-15ffd5adba89
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:52.930303000 Z
+    zone: *1
+    time: 2017-06-30 13:36:52.930303000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:53.423839000 Z
+    zone: *1
+    time: 2017-06-30 13:36:53.423839000 Z
+  email: testteam5005@example.com
+  encrypted_password: "$2a$11$jNQoo4o25IiWwmS2ljKACuV6aovtIKxqNnQqKerj0LFhNBQ9M..Jy"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:53.421164000 Z
+    zone: *1
+    time: 2017-06-30 13:36:53.421164000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:53.421164000 Z
+    zone: *1
+    time: 2017-06-30 13:36:53.421164000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5005
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_152:
+  id: 152
+  first_name: Test
+  last_name: Team5006
+  uuid: 93da084c-e0d7-4603-9a48-40a5679dc7c4
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:01.469745000 Z
+    zone: *1
+    time: 2017-06-30 13:39:01.469745000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:01.981312000 Z
+    zone: *1
+    time: 2017-06-30 13:39:01.981312000 Z
+  email: testteam5006@example.com
+  encrypted_password: "$2a$11$HqbxCcLuTQzGuYdWLdbxZO/M6QZmo4GV9zarjTTOfaPhD.Opwpd2y"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:01.978758000 Z
+    zone: *1
+    time: 2017-06-30 13:39:01.978758000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:01.978758000 Z
+    zone: *1
+    time: 2017-06-30 13:39:01.978758000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5006
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_153:
+  id: 153
+  first_name: Test
+  last_name: Team5007
+  uuid: d2a00e27-6d68-4268-9303-f24a98118a55
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:49.880242000 Z
+    zone: *1
+    time: 2017-06-30 13:39:49.880242000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:50.363345000 Z
+    zone: *1
+    time: 2017-06-30 13:39:50.363345000 Z
+  email: testteam5007@example.com
+  encrypted_password: "$2a$11$RuZE.U72AE4NgXaH8/Osdu//AJwKLco1wD6evX.nr3I1nZKwegmFS"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:50.360955000 Z
+    zone: *1
+    time: 2017-06-30 13:39:50.360955000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:50.360955000 Z
+    zone: *1
+    time: 2017-06-30 13:39:50.360955000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5007
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_154:
+  id: 154
+  first_name: Test
+  last_name: Team5008
+  uuid: cdd61539-3376-4c11-98da-25593fcb518b
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:40:20.649225000 Z
+    zone: *1
+    time: 2017-06-30 13:40:20.649225000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:40:21.079618000 Z
+    zone: *1
+    time: 2017-06-30 13:40:21.079618000 Z
+  email: testteam5008@example.com
+  encrypted_password: "$2a$11$inlo32P0hGRwY84aOtCw3eGJGUcrKF53ryrfm8abFoXHSxhnV34b."
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:40:21.077935000 Z
+    zone: *1
+    time: 2017-06-30 13:40:21.077935000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:40:21.077935000 Z
+    zone: *1
+    time: 2017-06-30 13:40:21.077935000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5008
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_155:
+  id: 155
+  first_name: Test
+  last_name: Team5009
+  uuid: 4fee5843-0ae4-4c63-8e1a-3693afd02fc9
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:03.933490000 Z
+    zone: *1
+    time: 2017-06-30 13:41:03.933490000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:04.391206000 Z
+    zone: *1
+    time: 2017-06-30 13:41:04.391206000 Z
+  email: testteam5009@example.com
+  encrypted_password: "$2a$11$6uGy2gRd11DgvaniygmcpeMUhsv0odT8...Q5X/RE2JJaHx/nuSne"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:04.388513000 Z
+    zone: *1
+    time: 2017-06-30 13:41:04.388513000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:04.388513000 Z
+    zone: *1
+    time: 2017-06-30 13:41:04.388513000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5009
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_156:
+  id: 156
+  first_name: Test
+  last_name: Team5010
+  uuid: e51c2dc0-4171-4584-8885-21333f854868
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:51.269634000 Z
+    zone: *1
+    time: 2017-06-30 13:41:51.269634000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 17:09:39.360396000 Z
+    zone: *1
+    time: 2017-07-03 12:09:39.360396000 Z
+  email: testteam5010@example.com
+  encrypted_password: "$2a$11$XsAwf2BWcvHfQNPUOubAd./xT56WixdjI8FODQWR1jwFgRAnItHw6"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 32
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 17:09:39.357545000 Z
+    zone: *1
+    time: 2017-07-03 12:09:39.357545000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 17:09:15.781170000 Z
+    zone: *1
+    time: 2017-07-03 12:09:15.781170000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1800231194
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1800231194
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-team5010
+  deleted_at: 
+  nickname: 
+  avatar: '039d22d9-af96-4552-85c4-cde5b8f7d587.photo.jpeg'
+user_157:
+  id: 157
+  first_name: Phone
+  last_name: TestTeams01
+  uuid: 315d3a0d-4577-4496-87f4-fd1dbfad9970
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:45:23.646298000 Z
+    zone: *1
+    time: 2017-06-30 13:45:23.646298000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:14:02.872908000 Z
+    zone: *1
+    time: 2017-06-30 14:14:02.872908000 Z
+  email: phonetestteams01@example.com
+  encrypted_password: "$2a$11$8CG/IsShDyFZrc.ogIDOl.02Wbbkq5EbESbx84Gsk8GZNBRobYTPG"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 5
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:14:02.870887000 Z
+    zone: *1
+    time: 2017-06-30 14:14:02.870887000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:57:08.467206000 Z
+    zone: *1
+    time: 2017-06-30 13:57:08.467206000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: phone-testteams01
+  deleted_at: 
+  nickname: 
+  avatar: d57b7ae6-f60b-4390-abfc-d03e9e1e5d23.photo.jpeg
+user_158:
+  id: 158
+  first_name: Test
+  last_name: Spinner
+  uuid: cf213c46-0fce-415c-9c89-46601f738223
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:40:07.828359000 Z
+    zone: *1
+    time: 2017-06-30 14:40:07.828359000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 20:37:38.985040000 Z
+    zone: *1
+    time: 2017-06-30 15:37:38.985040000 Z
+  email: testspinner01@example.com
+  encrypted_password: "$2a$11$rFxv1FSqE/TkPHN6fD324.11A54TvIvo32f1Ados6UTVkCCMt2Rua"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 8
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 20:37:38.977808000 Z
+    zone: *1
+    time: 2017-06-30 15:37:38.977808000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:55:02.156975000 Z
+    zone: *1
+    time: 2017-06-30 14:55:02.156975000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-spinner
+  deleted_at: 
+  nickname: 
+  avatar: 37e1e253-e8b5-4c8b-8572-4e27b2a4ef0e.photo.jpeg
+user_159:
+  id: 159
+  first_name: Jon
+  last_name: Test
+  uuid: f543b0f4-eea5-4a50-998a-7f4246dd1d2b
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.448092000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.448092000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.517475000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.517475000 Z
+  email: jon@test.com
+  encrypted_password: "$2a$11$auRlaaxzDG39UDnqGDOjXOCqo.ck2L4z0od3dlC2fbGPC/ykbnwD."
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: jon-test
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_160:
+  id: 160
+  first_name: Bob
+  last_name: Test
+  uuid: e64a3e23-dc1b-4348-b817-b7c8aa717338
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.755521000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.755521000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.800446000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.800446000 Z
+  email: bob@test.com
+  encrypted_password: "$2a$11$mLo8zZluoGmc3ur5NeLMO.ve9wWSBEDj481XNmFJPwqbgH7yVxrQS"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: bob-test
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_161:
+  id: 161
+  first_name: Demo
+  last_name: Player
+  uuid: 2b62fe40-1c1f-45aa-8d9d-51f587d4bf05
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 16:02:53.823235000 Z
+    zone: *1
+    time: 2017-07-01 11:02:53.823235000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 16:02:56.543708000 Z
+    zone: *1
+    time: 2017-07-01 11:02:56.543708000 Z
+  email: demo@test.com
+  encrypted_password: "$2a$11$Q5vEbiM7mWIL65OcsSccpusxbBhLs6exEY.Nz4Ji8P1Hj4a3kwO.."
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 16:02:56.540686000 Z
+    zone: *1
+    time: 2017-07-01 11:02:56.540686000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 16:02:56.540686000 Z
+    zone: *1
+    time: 2017-07-01 11:02:56.540686000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1113016723
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1113016723
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: demo-player
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_163:
+  id: 163
+  first_name: Fun
+  last_name: Coach
+  uuid: 0db14a9e-74ab-4ea8-b621-78249299441e
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.246162000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.246162000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.309921000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.309921000 Z
+  email: fun@coach.com
+  encrypted_password: "$2a$11$A7fXwBYk2UIqcvZ68wni7OWaSIAAuXtkXTujPiEZ2LJHe.rfo/xsa"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: fun-coach
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_164:
+  id: 164
+  first_name: Bad
+  last_name: Coach
+  uuid: 4586c836-ef25-4ba1-8a69-b483697e2f06
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.574660000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.574660000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.603727000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.603727000 Z
+  email: bad@coach.com
+  encrypted_password: "$2a$11$5VQF56fdTE/RjppdVYOCD.Iav810kdh6AVDNDRXOB8DSmfxe2.kKO"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: bad-coach
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_165:
+  id: 165
+  first_name: Hello
+  last_name: Coach
+  uuid: c2a50b75-a19f-4a24-b24f-f23aa3209578
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.217347000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.217347000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.301125000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.301125000 Z
+  email: hello@coach.com
+  encrypted_password: "$2a$11$T0ymCVM.XTqzuGceIPeHceu/75tXHFzkBUz.43DA7eNDVinEIJMka"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: hello-coach
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_166:
+  id: 166
+  first_name: Good
+  last_name: ByeCoach
+  uuid: 269620df-3b48-4665-abdf-a3838e563f7b
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.588602000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.588602000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.676400000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.676400000 Z
+  email: good@byecoach.com
+  encrypted_password: "$2a$11$6xvpP396.0s.aPy8W7tTIuMbxukJ8j3mNJHL9QFq2GCsXWDSa5SA6"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: good-byecoach
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_167:
+  id: 167
+  first_name: Tim
+  last_name: Hurley
+  uuid: 7d36aa1a-4c90-495d-8b18-bcb3d3c1381f
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.697400000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.697400000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.740562000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.740562000 Z
+  email: thurley@bgu.edu
+  encrypted_password: "$2a$11$bPj.xPFoDO3rKdS/j4Mz0euF0dH.fYi98bMh0E2kSZZn/2sumJj86"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: tim-hurley
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_168:
+  id: 168
+  first_name: Tonya
+  last_name: Harding
+  uuid: 5022b9eb-1ec1-4b41-8474-60e07c7a79c5
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.965527000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.965527000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.992251000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.992251000 Z
+  email: tharding@bgu.edu
+  encrypted_password: "$2a$11$x6WDuDjhq/9Te/w4ElBFO.v5z6G6hGRtGMhqTkl/zDeoDrwWehpIW"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: tonya-harding
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_169:
+  id: 169
+  first_name: Tim
+  last_name: McCarthy
+  uuid: f21100fe-beef-47a9-a10f-f8885752dff7
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.590604000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.590604000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.629185000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.629185000 Z
+  email: timm@crew.com
+  encrypted_password: "$2a$11$BLtyiIBE/l5BuCrure2KcOEsev0M6FlCoiGdXeH1ovnoaM86K1bsO"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: tim-mccarthy
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_170:
+  id: 170
+  first_name: Rebecca
+  last_name: Stamos
+  uuid: d217a278-ead4-45ed-9b3b-779d97a7a550
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.828088000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.828088000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.861005000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.861005000 Z
+  email: beckys@crew.com
+  encrypted_password: "$2a$11$ozFG/1OtgtqT.FCJnhLMSeQ8tMC75tXS8t6xeYaAghHTOlrzgFWLy"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  roles_mask: 2
+  slug: rebecca-stamos
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_171:
+  id: 171
+  first_name: Test
+  last_name: Unlock001
+  uuid: 6b55a0dc-3d3b-49fc-a8cb-1c4849df4711
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 14:08:33.063176000 Z
+    zone: *1
+    time: 2017-07-03 09:08:33.063176000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:39:46.333424000 Z
+    zone: *1
+    time: 2017-07-05 08:39:46.333424000 Z
+  email: testunlock001@example.com
+  encrypted_password: "$2a$11$BhtXPPIHRinGxCexzPr4NO3Uq.swTQ.vOef0r8t8TjBtNZLKB427y"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 77
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:39:46.330947000 Z
+    zone: *1
+    time: 2017-07-05 08:39:46.330947000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:16:59.984127000 Z
+    zone: *1
+    time: 2017-07-05 08:16:59.984127000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-unlock001
+  deleted_at: 
+  nickname: 
+  avatar: e1ac000b-71fd-4f09-a823-5fc333f8184e.photo.jpeg
+user_172:
+  id: 172
+  first_name: AF
+  last_name: Player
+  uuid: 163504df-0427-41f6-bd22-14b13c9e243e
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:12:23.159806000 Z
+    zone: *1
+    time: 2017-07-03 20:12:23.159806000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 02:17:59.035897000 Z
+    zone: *1
+    time: 2017-07-09 21:17:59.035897000 Z
+  email: af@athletefit.com
+  encrypted_password: "$2a$11$7QJXcUGZT6LCj.nyaj13RecNvwaobF9ZC6zPH3D4w..aZsR9s7Wri"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 13
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 02:17:59.032053000 Z
+    zone: *1
+    time: 2017-07-09 21:17:59.032053000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 03:49:28.344633000 Z
+    zone: *1
+    time: 2017-07-06 22:49:28.344633000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3414183171
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3414183180
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: af-player
+  deleted_at: 
+  nickname: 
+  avatar: 218509b9-e298-47f5-85d7-c28f7956d478.photo.jpeg
+user_173:
+  id: 173
+  first_name: Unlock
+  last_name: Bug001
+  uuid: bf3c360f-9e28-4ea3-9da9-50fafdb34b57
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:43:07.954069000 Z
+    zone: *1
+    time: 2017-07-05 08:43:07.954069000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 15:56:00.006499000 Z
+    zone: *1
+    time: 2017-07-06 10:56:00.006499000 Z
+  email: unlockbug001@example.com
+  encrypted_password: "$2a$11$47J7c7CtuwJr/yEL0wt96OJZS.G6By59ZePDZ/OB6tPOXeI4UeJp."
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 106
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 15:56:00.004372000 Z
+    zone: *1
+    time: 2017-07-06 10:56:00.004372000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 15:54:41.808163000 Z
+    zone: *1
+    time: 2017-07-06 10:54:41.808163000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: unlock-bug001
+  deleted_at: 
+  nickname: NickName
+  avatar: 7d5f0740-b6a0-46e6-bd0a-696b84b69899.photo.jpeg
+user_174:
+  id: 174
+  first_name: LinkWorkouts
+  last_name: ToExercises
+  uuid: 3c1e3f33-9ddc-4b96-ad71-baeb3a002f2a
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 14:13:20.716882000 Z
+    zone: *1
+    time: 2017-07-06 09:13:20.716882000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:13:36.234578000 Z
+    zone: *1
+    time: 2017-07-06 14:13:36.234578000 Z
+  email: linkworkouts001@example.com
+  encrypted_password: "$2a$11$rlBngfplpjVS6zPXTcWzb.dpvYgB3lZXKZk5JxF099CF3xcTL0/.K"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 38
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:13:36.232475000 Z
+    zone: *1
+    time: 2017-07-06 14:13:36.232475000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:12:57.297269000 Z
+    zone: *1
+    time: 2017-07-06 14:12:57.297269000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: linkworkouts-toexercises
+  deleted_at: 
+  nickname: 'linkalicious '
+  avatar: 
+user_175:
+  id: 175
+  first_name: Link
+  last_name: Workouts
+  uuid: e19b5911-0bf7-4493-a711-864d58dc199e
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:54:26.004581000 Z
+    zone: *1
+    time: 2017-07-06 11:54:26.004581000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:38:50.295565000 Z
+    zone: *1
+    time: 2017-07-06 14:38:50.295565000 Z
+  email: linkworkouts002@example.com
+  encrypted_password: "$2a$11$hlmbHYgx9AgRyLL72caEnuDanWGbN0FdfzKKF5SXXfpbfL6jQakCm"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 26
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:38:50.288677000 Z
+    zone: *1
+    time: 2017-07-06 14:38:50.288677000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:31:48.729076000 Z
+    zone: *1
+    time: 2017-07-06 14:31:48.729076000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: link-workouts
+  deleted_at: 
+  nickname: A Long Nickname For Testing
+  avatar: 933f0ed6-b46f-4937-8080-b27524d8bcd3.photo.jpeg
+user_176:
+  id: 176
+  first_name: Test
+  last_name: Linking001
+  uuid: 886efac1-7ad9-4982-a8a3-6624d7265cfb
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:36:55.464590000 Z
+    zone: *1
+    time: 2017-07-06 14:36:55.464590000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:00:14.118299000 Z
+    zone: *1
+    time: 2017-07-06 15:00:14.118299000 Z
+  email: testlinking001@example.com
+  encrypted_password: "$2a$11$mQV06rRDYaaZZ1r/z15pPOEfx84P/1mpgcb4ls.3oqedD3xLLnb9G"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 7
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:00:14.111163000 Z
+    zone: *1
+    time: 2017-07-06 15:00:14.111163000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:52:14.869597000 Z
+    zone: *1
+    time: 2017-07-06 14:52:14.869597000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-linking001
+  deleted_at: 
+  nickname: Linky
+  avatar: 
+user_177:
+  id: 177
+  first_name: Test
+  last_name: Linking002
+  uuid: 43f254e4-f531-4ae9-831e-ee182b522fc7
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:40:53.718217000 Z
+    zone: *1
+    time: 2017-07-06 14:40:53.718217000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:15:31.157691000 Z
+    zone: *1
+    time: 2017-07-06 15:15:31.157691000 Z
+  email: testlinking002@example.com
+  encrypted_password: "$2a$11$QVloOj2xW09J4K26xWGJTewb2GiyOvjo/22hNIWYGjZQIEDSPF8lm"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 18
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:15:31.152385000 Z
+    zone: *1
+    time: 2017-07-06 15:15:31.152385000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:14:52.503456000 Z
+    zone: *1
+    time: 2017-07-06 15:14:52.503456000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: test-linking002
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_178:
+  id: 178
+  first_name: Spuds
+  last_name: Makenzie001
+  uuid: d7d1d205-44a6-4ba9-b62f-83257ab8d93d
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:59:08.574162000 Z
+    zone: *1
+    time: 2017-07-06 15:59:08.574162000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:59:09.402755000 Z
+    zone: *1
+    time: 2017-07-06 15:59:09.402755000 Z
+  email: spuds001@example.com
+  encrypted_password: "$2a$11$kvZR3gCIWlozPorxC2yUm.GRSnFVrjGxE2bCm/hry3J63LbwMrc76"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:59:09.400930000 Z
+    zone: *1
+    time: 2017-07-06 15:59:09.400930000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:59:09.400930000 Z
+    zone: *1
+    time: 2017-07-06 15:59:09.400930000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: spuds-makenzie001
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_179:
+  id: 179
+  first_name: Spuds
+  last_name: Makenzie002
+  uuid: f6edcc58-00d9-401a-82f4-cd152688050e
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:59:50.409736000 Z
+    zone: *1
+    time: 2017-07-06 15:59:50.409736000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:59:51.209171000 Z
+    zone: *1
+    time: 2017-07-06 15:59:51.209171000 Z
+  email: spuds002@example.com
+  encrypted_password: "$2a$11$WKj/cWKlntM2DwTfkJlA.ut4Kb71.4F02wX/SmPfzt4tAGppUzjDm"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:59:51.207238000 Z
+    zone: *1
+    time: 2017-07-06 15:59:51.207238000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:59:51.207238000 Z
+    zone: *1
+    time: 2017-07-06 15:59:51.207238000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: spuds-makenzie002
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_180:
+  id: 180
+  first_name: Spuds
+  last_name: Makenzie003
+  uuid: 7f90ddd7-6dd5-4f9e-9c38-98704b6e475f
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 21:05:09.804571000 Z
+    zone: *1
+    time: 2017-07-06 16:05:09.804571000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 21:05:10.296979000 Z
+    zone: *1
+    time: 2017-07-06 16:05:10.296979000 Z
+  email: spuds003@example.com
+  encrypted_password: "$2a$11$DzkuPmKyGYnrHnbdJs3p9.oFHuD02UByRpTv6OO58tH3og08ia9/a"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 21:05:10.294417000 Z
+    zone: *1
+    time: 2017-07-06 16:05:10.294417000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 21:05:10.294417000 Z
+    zone: *1
+    time: 2017-07-06 16:05:10.294417000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: spuds-makenzie003
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_181:
+  id: 181
+  first_name: spuds
+  last_name: makenzie005
+  uuid: 58654a50-608f-47ca-a758-2dd5fbf160b6
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 21:12:52.008821000 Z
+    zone: *1
+    time: 2017-07-06 16:12:52.008821000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 16:24:37.133551000 Z
+    zone: *1
+    time: 2017-07-09 11:24:37.133551000 Z
+  email: spuds005@example.com
+  encrypted_password: "$2a$11$Mmm/oN5VrJNBE8SpRoImFOtdUfPUPvkiM73.iEcK/RWOFLKfPD0He"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 17
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 16:23:19.631028000 Z
+    zone: *1
+    time: 2017-07-09 11:23:19.631028000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 10:12:28.530227000 Z
+    zone: *1
+    time: 2017-07-09 05:12:28.530227000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 1800230769
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3090926076
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: spuds-makenzie005
+  deleted_at: 
+  nickname: 
+  avatar: 22cfd81c-59dc-44b8-8025-bda76ddea8f4.photo.jpeg
+user_182:
+  id: 182
+  first_name: Spuds
+  last_name: Makenzie006
+  uuid: 415d7509-d77a-4b98-af09-4b728db15b54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 21:14:15.520455000 Z
+    zone: *1
+    time: 2017-07-06 16:14:15.520455000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 13:11:34.825640000 Z
+    zone: *1
+    time: 2017-07-07 08:11:34.825640000 Z
+  email: spuds006@example.com
+  encrypted_password: "$2a$11$C.UKYtMp9fmxDq1QqKUiDuOnq353.DvV2Uut3WFqRyU1JCJakKrQG"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 2
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 13:11:34.823900000 Z
+    zone: *1
+    time: 2017-07-07 08:11:34.823900000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 21:14:15.804880000 Z
+    zone: *1
+    time: 2017-07-06 16:14:15.804880000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3090926076
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 2926035119
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: spuds-makenzie006
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_183:
+  id: 183
+  first_name: Spuds
+  last_name: Makenzie007
+  uuid: a4b5c5c7-72c9-47c1-b9ca-ad5051b0ba86
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 21:15:18.881806000 Z
+    zone: *1
+    time: 2017-07-06 16:15:18.881806000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 13:03:59.123168000 Z
+    zone: *1
+    time: 2017-07-07 08:03:59.123168000 Z
+  email: spuds007@example.com
+  encrypted_password: "$2a$11$il1G31u/DXCRuxyW6G2nmuIboBZtrdh/kxdKrzFBeAYUg8gNEmemm"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 3
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 13:03:59.119927000 Z
+    zone: *1
+    time: 2017-07-07 08:03:59.119927000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 12:44:06.299480000 Z
+    zone: *1
+    time: 2017-07-07 07:44:06.299480000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3090926076
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3090926076
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: spuds-makenzie007
+  deleted_at: 
+  nickname: 
+  avatar: 
+user_184:
+  id: 184
+  first_name: steve
+  last_name: test
+  uuid: 0c32e1e6-4908-4ac1-9c37-21e912d3fbc8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 14:03:03.392027000 Z
+    zone: *1
+    time: 2017-07-07 09:03:03.392027000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 14:03:03.908352000 Z
+    zone: *1
+    time: 2017-07-07 09:03:03.908352000 Z
+  email: stevetest001@example.com
+  encrypted_password: "$2a$11$d7is8w.j0tHSi9y8KpQmgeNgGPDmopAb9nFn93P1v4F17MoOKdCoi"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 14:03:03.906498000 Z
+    zone: *1
+    time: 2017-07-07 09:03:03.906498000 Z
+  last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 14:03:03.906498000 Z
+    zone: *1
+    time: 2017-07-07 09:03:03.906498000 Z
+  current_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3090926076
+    mask_addr: 4294967295
+  last_sign_in_ip: !ruby/object:IPAddr
+    family: 2
+    addr: 3090926076
+    mask_addr: 4294967295
+  roles_mask: 0
+  slug: steve-test
+  deleted_at: 
+  nickname: 
+  avatar: 

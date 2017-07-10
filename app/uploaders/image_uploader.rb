@@ -10,6 +10,9 @@ class ImageUploader < CarrierWave::Uploader::Base
     # :nocov:
   end
 
+  # FIXME: (2017-07-10) jon => remove this after styling is complete
+  storage :fog
+
   def default_url
     ActionController::Base.helpers.asset_path('fallback/' + [version_name, 'default.png'].compact.join('_'))
   end

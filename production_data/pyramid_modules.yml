@@ -1,0 +1,551 @@
+---
+pyramidmodule_3:
+  id: 3
+  name: Quickness
+  description: 'This module is the perfect starting point from which the skill, power
+    and agility programs will be built around. The Quickness module is primarily focused
+    on teaching you how to find your most "athletic position", from which you can
+    decelerate and change directions with explosive bursts, perform quick skills with
+    the ball and feel stronger and more athletic in the weight room. '
+  display_track: speed
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:38:58.918712000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-05-25 10:38:58.918712000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 18:27:00.888699000 Z
+    zone: *1
+    time: 2017-06-08 13:27:00.888699000 Z
+  video_file_name: Quickness_Overview.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3663284
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:53:42.632150000 Z
+    zone: *1
+    time: 2017-05-25 10:53:42.632150000 Z
+  keyframe_file_name: Screen_Shot_2017-06-07_at_6.55.56_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 406458
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 23:56:30.781217000 Z
+    zone: *1
+    time: 2017-06-07 18:56:30.781217000 Z
+  deleted_at: 
+  position: 3
+  level: 1
+  prereq: []
+  tracks:
+  - Speed
+  - Skill
+  - Strength
+pyramidmodule_5:
+  id: 5
+  name: First Touch
+  description: This module focuses on controlling the ball off the pass with all surfaces
+    of the foot (inside, outside & sole), with quick repositioning techniques to help
+    direct the ball across the body, away from the body and behind the body. These
+    exercises can be performed against a wall (as shown in the videos) or with a partner.
+  display_track: skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 23:57:55.985072000 Z
+    zone: *1
+    time: 2017-05-25 18:57:55.985072000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 17:45:10.075886000 Z
+    zone: *1
+    time: 2017-06-24 12:45:10.075886000 Z
+  video_file_name: FTP3-Open_Up-Inside_to_Ripacross.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3374991
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 13:08:06.302342000 Z
+    zone: *1
+    time: 2017-06-03 08:08:06.302342000 Z
+  keyframe_file_name: Screen_Shot_2017-06-03_at_8.05.11_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 440621
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 17:45:08.903529000 Z
+    zone: *1
+    time: 2017-06-24 12:45:08.903529000 Z
+  deleted_at: 
+  position: 1
+  level: 1
+  prereq: []
+  tracks:
+  - Skill
+pyramidmodule_7:
+  id: 7
+  name: Ball Control
+  description: The exercises in this module are designed to build a confident control
+    of the ball inside your frame as you reposition your feet. These ball guiding
+    patterns and combinations work hand in hand with the Quickness module to help
+    you add more athleticism to your touches. Start slow to build rhythmic control,
+    then gradually speed up the patterns with quick bursts.
+  display_track: skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:40:59.230190000 Z
+    zone: *1
+    time: 2017-05-26 07:40:59.230190000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:28:53.729862000 Z
+    zone: *1
+    time: 2017-06-08 14:28:53.729862000 Z
+  video_file_name: BCP2-6_Cone-Pullback_Inside_1_Gate.mp4
+  video_content_type: video/quicktime
+  video_file_size: 2243436
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 13:27:34.760264000 Z
+    zone: *1
+    time: 2017-06-03 08:27:34.760264000 Z
+  keyframe_file_name: Screen_Shot_2017-06-08_at_2.28.20_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 676091
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:28:53.227882000 Z
+    zone: *1
+    time: 2017-06-08 14:28:53.227882000 Z
+  deleted_at: 
+  position: 2
+  level: 1
+  prereq: []
+  tracks:
+  - Speed
+  - Skill
+pyramidmodule_8:
+  id: 8
+  name: Soccer Strength
+  description: In this module we will introduce the foundation of our soccer specific
+    strength program. Most of these exercises are focused on the core and lower body
+    and no additional equipment is needed, making these exercises perfect before or
+    after practice on the field. Although it is not a total strength program, we do
+    believe that these are the foundational strengthening patterns required for success.
+  display_track: strength
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:25:17.851661000 Z
+    zone: *1
+    time: 2017-05-26 11:25:17.851661000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:33:20.282168000 Z
+    zone: *1
+    time: 2017-06-08 14:33:20.282168000 Z
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-08_at_2.32.55_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 536583
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:33:19.946392000 Z
+    zone: *1
+    time: 2017-06-08 14:33:19.946392000 Z
+  deleted_at: 
+  position: 4
+  level: 1
+  prereq: []
+  tracks:
+  - Speed
+  - Strength
+pyramidmodule_9:
+  id: 9
+  name: General Strength
+  description: This module focuses on a total body progression (upper body, core and
+    lower body exercises). You will start off with body weight exercises in phase
+    1, then add dumbbells in phase 2 and 3 as you build a strong foundation that will
+    set the stage for the powerful bursts in later levels.
+  display_track: strength
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 18:00:00.783513000 Z
+    zone: *1
+    time: 2017-05-26 13:00:00.783513000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:34:56.178084000 Z
+    zone: *1
+    time: 2017-06-08 14:34:56.178084000 Z
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-08_at_2.34.17_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 430685
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:34:55.772201000 Z
+    zone: *1
+    time: 2017-06-08 14:34:55.772201000 Z
+  deleted_at: 
+  position: 5
+  level: 1
+  prereq: []
+  tracks:
+  - Strength
+pyramidmodule_10:
+  id: 10
+  name: Explosive Agility
+  description: In this module we start to integrate the quickness drills and soccer
+    specific strength exercises, and progress them into more explosive patterns to
+    enhance your agility.
+  display_track: speed
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:31:24.663773000 Z
+    zone: *1
+    time: 2017-05-27 08:31:24.663773000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:53:15.522511000 Z
+    zone: *1
+    time: 2017-06-08 14:53:15.522511000 Z
+  video_file_name: EAP2-Agility-Jockey_to_Run_L_Pattern_Combo.mp4
+  video_content_type: video/quicktime
+  video_file_size: 1871694
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 02:44:15.852463000 Z
+    zone: *1
+    time: 2017-06-02 21:44:15.852463000 Z
+  keyframe_file_name: Screen_Shot_2017-06-08_at_2.52.11_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 574868
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:53:15.128778000 Z
+    zone: *1
+    time: 2017-06-08 14:53:15.128778000 Z
+  deleted_at: 
+  position: 8
+  level: 2
+  prereq:
+  - '3'
+  - '8'
+  tracks:
+  - Speed
+  - Strength
+pyramidmodule_11:
+  id: 11
+  name: Powerful Bursts
+  description: In this module we combine the soccer specific strength and general
+    strength programs and advance the power exercises with additional plyometric emphasis
+    (quick, explosive hops, jumps and bounds).
+  display_track: strength
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:21:34.735399000 Z
+    zone: *1
+    time: 2017-05-27 17:21:34.735399000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:58:54.028354000 Z
+    zone: *1
+    time: 2017-06-08 14:58:54.028354000 Z
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-08_at_2.58.20_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 509774
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:58:53.559993000 Z
+    zone: *1
+    time: 2017-06-08 14:58:53.559993000 Z
+  deleted_at: 
+  position: 9
+  level: 2
+  prereq:
+  - '8'
+  - '9'
+  tracks:
+  - Strength
+pyramidmodule_12:
+  id: 12
+  name: Quick Skills
+  description: In this module we combine the quickness drills with the foundational
+    ball skills in aggressive agility combinations. Make sure that you have mastered
+    all the exercises from the Ball Control and Quickness modules before you move
+    into this level as we will be blending specific quickness patterns into ball skill
+    patterns to enhance explosive speed with the ball.
+  display_track: speed
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:26:13.298974000 Z
+    zone: *1
+    time: 2017-05-28 10:26:13.298974000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:38:38.871538000 Z
+    zone: *1
+    time: 2017-06-08 14:38:38.871538000 Z
+  video_file_name: QSP1-Scissors_Outside_Touch_Cruyff_Back.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3422378
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 02:07:02.062266000 Z
+    zone: *1
+    time: 2017-06-02 21:07:02.062266000 Z
+  keyframe_file_name: Screen_Shot_2017-06-08_at_2.38.00_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 234935
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:38:38.514451000 Z
+    zone: *1
+    time: 2017-06-08 14:38:38.514451000 Z
+  deleted_at: 
+  position: 7
+  level: 2
+  prereq:
+  - '3'
+  - '7'
+  tracks:
+  - Speed
+  - Skill
+pyramidmodule_13:
+  id: 13
+  name: Passing Combos
+  description: This module integrates key aspects of Ball Control (quickly repositioning
+    the ball under your feet) and First Touch (controlling the ball off the pass with
+    all surfaces of the foot. These two aspects are blended into quick combinations
+    that focus on how you receive the ball and reposition athletically to enhance
+    confidence and speed of play.
+  display_track: skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:41:13.926772000 Z
+    zone: *1
+    time: 2017-05-30 05:41:13.926772000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:40:36.590372000 Z
+    zone: *1
+    time: 2017-06-08 14:40:36.590372000 Z
+  video_file_name: PCP3-Creative_Open_Up_180s_Forward___Back.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3268933
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:59:55.736000000 Z
+    zone: *1
+    time: 2017-06-04 07:59:55.736000000 Z
+  keyframe_file_name: Screen_Shot_2017-06-08_at_2.40.03_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 347124
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:40:36.252942000 Z
+    zone: *1
+    time: 2017-06-08 14:40:36.252942000 Z
+  deleted_at: 
+  position: 6
+  level: 2
+  prereq:
+  - '7'
+  - '5'
+  tracks:
+  - Skill
+pyramidmodule_15:
+  id: 15
+  name: Creative Skill
+  description: In this module we integrate the Passing Combos and Quick Skills, and
+    progress them into creative variations that build confidence with the ball at
+    your feet. We will be introducing advanced combinations off the pass and off the
+    dribble, but the key focus is the ability to reposition your body to create an
+    athletic advantage.
+  display_track: skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 12:57:56.119501000 Z
+    zone: *1
+    time: 2017-05-31 07:57:56.119501000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 17:14:16.783629000 Z
+    zone: *1
+    time: 2017-06-17 12:14:16.783629000 Z
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-17_at_12.13.45_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 639923
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 17:14:16.348103000 Z
+    zone: *1
+    time: 2017-06-17 12:14:16.348103000 Z
+  deleted_at: 
+  position: 10
+  level: 3
+  prereq:
+  - '12'
+  - '13'
+  tracks:
+  - Skill
+pyramidmodule_16:
+  id: 16
+  name: Soccer Speed
+  description: This module contains a collective mix of training sessions that all
+    work together to enhance your speed, fitness and skill. These on-field sessions
+    are a perfect way to get in soccer shape while still enhancing your speed, skill
+    and powerful potential.
+  display_track: speed
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:52:31.977395000 Z
+    zone: *1
+    time: 2017-06-02 05:52:31.977395000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:10:48.811024000 Z
+    zone: *1
+    time: 2017-06-17 18:10:48.811024000 Z
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-17_at_6.10.11_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 547624
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:10:48.368994000 Z
+    zone: *1
+    time: 2017-06-17 18:10:48.368994000 Z
+  deleted_at: 
+  position: 11
+  level: 3
+  prereq:
+  - '10'
+  - '12'
+  tracks:
+  - Speed
+  - Skill
+  - Strength
+pyramidmodule_17:
+  id: 17
+  name: Soccer Power
+  description: This module is the final progression of our strength focused program.
+    These sessions integrate plyometric bursts, quickness and agility into explosive
+    exercises that build off the foundation set in the general strength module.
+  display_track: strength
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:55:56.697624000 Z
+    zone: *1
+    time: 2017-06-02 05:55:56.697624000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:34:49.454986000 Z
+    zone: *1
+    time: 2017-06-05 05:34:49.454986000 Z
+  video_file_name: SPP2-Stability-Cable_Rotation_to_Extend.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3012546
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:34:49.361361000 Z
+    zone: *1
+    time: 2017-06-05 05:34:49.361361000 Z
+  keyframe_file_name: Screen_Shot_2017-06-05_at_5.32.56_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 415927
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:34:48.700400000 Z
+    zone: *1
+    time: 2017-06-05 05:34:48.700400000 Z
+  deleted_at: 
+  position: 12
+  level: 3
+  prereq:
+  - '10'
+  - '11'
+  tracks:
+  - Strength
+pyramidmodule_18:
+  id: 18
+  name: 'GameSPEED: Skill'
+  description: "DO NOT START THIS PROGRAM UNTIL THE END OF YOUR SEASON...\r\n\r\nIn
+    this module, each phase represents a specific season. Phase 1 (Off-Season), Phase
+    2 (Pre-Season) and Phase 3 (In-Season) will use supplemental workouts to create
+    3-5 day training programs for fitness, speed and skill. "
+  display_track: skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:01:13.932698000 Z
+    zone: *1
+    time: 2017-06-02 06:01:13.932698000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:34:53.650378000 Z
+    zone: *1
+    time: 2017-06-28 19:34:53.650378000 Z
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-17_at_6.15.21_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 573725
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:16:26.613134000 Z
+    zone: *1
+    time: 2017-06-17 18:16:26.613134000 Z
+  deleted_at: 
+  position: 13
+  level: 4
+  prereq:
+  - '15'
+  - '16'
+  tracks:
+  - Speed
+  - Skill
+pyramidmodule_19:
+  id: 19
+  name: 'GameSPEED: Power'
+  description: 'In this module, each phase represents a specific season. Phase 1 (Off-Season),
+    Phase 2 (Pre-Season) and Phase 3 (In-Season) will use supplemental workouts to
+    create 3-5 day training programs for fitness, speed and power from a strength
+    and conditioning perspective. '
+  display_track: strength
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:05:25.779875000 Z
+    zone: *1
+    time: 2017-06-02 06:05:25.779875000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:18:30.516321000 Z
+    zone: *1
+    time: 2017-06-17 18:18:30.516321000 Z
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-17_at_6.17.55_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 463941
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:18:30.034559000 Z
+    zone: *1
+    time: 2017-06-17 18:18:30.034559000 Z
+  deleted_at: 
+  position: 14
+  level: 4
+  prereq:
+  - '17'
+  - '16'
+  tracks:
+  - Speed
+  - Strength
+pyramidmodule_20:
+  id: 20
+  name: Complete Programs
+  description: This is the complete program which integrates all aspects into a daily
+    training program for elite level players.
+  display_track: speed
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:31:41.035668000 Z
+    zone: *1
+    time: 2017-06-02 06:31:41.035668000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:21:29.332524000 Z
+    zone: *1
+    time: 2017-06-17 18:21:29.332524000 Z
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-17_at_6.21.01_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 836598
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:21:28.793645000 Z
+    zone: *1
+    time: 2017-06-17 18:21:28.793645000 Z
+  deleted_at: 
+  position: 15
+  level: 5
+  prereq:
+  - '19'
+  - '18'
+  tracks:
+  - Speed
+  - Skill
+  - Strength

@@ -1,0 +1,767 @@
+---
+affiliation_2:
+  id: 2
+  user_id: 12
+  team_id: 2
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:49:59.785996000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-04-06 10:49:59.785996000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:49:59.785996000 Z
+    zone: *1
+    time: 2017-04-06 10:49:59.785996000 Z
+  deleted_at: 
+  position: 
+affiliation_3:
+  id: 3
+  user_id: 13
+  team_id: 2
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:50:41.085823000 Z
+    zone: *1
+    time: 2017-04-06 10:50:41.085823000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:50:41.098642000 Z
+    zone: *1
+    time: 2017-04-06 10:50:41.098642000 Z
+  deleted_at: 
+  position: 
+affiliation_69:
+  id: 69
+  user_id: 134
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:02:20.250320000 Z
+    zone: *1
+    time: 2017-06-30 12:02:20.250320000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:02:20.250320000 Z
+    zone: *1
+    time: 2017-06-30 12:02:20.250320000 Z
+  deleted_at: 
+  position: 
+affiliation_70:
+  id: 70
+  user_id: 134
+  team_id: 2
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:02:31.394801000 Z
+    zone: *1
+    time: 2017-06-30 12:02:31.394801000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:02:31.394801000 Z
+    zone: *1
+    time: 2017-06-30 12:02:31.394801000 Z
+  deleted_at: 
+  position: 
+affiliation_71:
+  id: 71
+  user_id: 134
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:02:42.341441000 Z
+    zone: *1
+    time: 2017-06-30 12:02:42.341441000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 17:02:42.341441000 Z
+    zone: *1
+    time: 2017-06-30 12:02:42.341441000 Z
+  deleted_at: 
+  position: 
+affiliation_83:
+  id: 83
+  user_id: 147
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:33:52.086138000 Z
+    zone: *1
+    time: 2017-06-30 13:33:52.086138000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:33:52.086138000 Z
+    zone: *1
+    time: 2017-06-30 13:33:52.086138000 Z
+  deleted_at: 
+  position: 
+affiliation_84:
+  id: 84
+  user_id: 148
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:34:10.853586000 Z
+    zone: *1
+    time: 2017-06-30 13:34:10.853586000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:34:10.853586000 Z
+    zone: *1
+    time: 2017-06-30 13:34:10.853586000 Z
+  deleted_at: 
+  position: 
+affiliation_85:
+  id: 85
+  user_id: 149
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:35:06.370722000 Z
+    zone: *1
+    time: 2017-06-30 13:35:06.370722000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:35:06.370722000 Z
+    zone: *1
+    time: 2017-06-30 13:35:06.370722000 Z
+  deleted_at: 
+  position: 
+affiliation_86:
+  id: 86
+  user_id: 150
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:35.932466000 Z
+    zone: *1
+    time: 2017-06-30 13:36:35.932466000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:36:35.932466000 Z
+    zone: *1
+    time: 2017-06-30 13:36:35.932466000 Z
+  deleted_at: 
+  position: 
+affiliation_87:
+  id: 87
+  user_id: 152
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:08.409597000 Z
+    zone: *1
+    time: 2017-06-30 13:39:08.409597000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:08.409597000 Z
+    zone: *1
+    time: 2017-06-30 13:39:08.409597000 Z
+  deleted_at: 
+  position: 
+affiliation_88:
+  id: 88
+  user_id: 153
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:51.566926000 Z
+    zone: *1
+    time: 2017-06-30 13:39:51.566926000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:39:51.566926000 Z
+    zone: *1
+    time: 2017-06-30 13:39:51.566926000 Z
+  deleted_at: 
+  position: 
+affiliation_89:
+  id: 89
+  user_id: 154
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:40:25.126879000 Z
+    zone: *1
+    time: 2017-06-30 13:40:25.126879000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:40:25.126879000 Z
+    zone: *1
+    time: 2017-06-30 13:40:25.126879000 Z
+  deleted_at: 
+  position: 
+affiliation_90:
+  id: 90
+  user_id: 155
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:05.821930000 Z
+    zone: *1
+    time: 2017-06-30 13:41:05.821930000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:05.821930000 Z
+    zone: *1
+    time: 2017-06-30 13:41:05.821930000 Z
+  deleted_at: 
+  position: 
+affiliation_91:
+  id: 91
+  user_id: 156
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:54.645673000 Z
+    zone: *1
+    time: 2017-06-30 13:41:54.645673000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:41:54.645673000 Z
+    zone: *1
+    time: 2017-06-30 13:41:54.645673000 Z
+  deleted_at: 
+  position: 
+affiliation_92:
+  id: 92
+  user_id: 157
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:45:35.721159000 Z
+    zone: *1
+    time: 2017-06-30 13:45:35.721159000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:45:35.721159000 Z
+    zone: *1
+    time: 2017-06-30 13:45:35.721159000 Z
+  deleted_at: 
+  position: 
+affiliation_93:
+  id: 93
+  user_id: 157
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:45:53.239063000 Z
+    zone: *1
+    time: 2017-06-30 13:45:53.239063000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:45:53.239063000 Z
+    zone: *1
+    time: 2017-06-30 13:45:53.239063000 Z
+  deleted_at: 
+  position: 
+affiliation_94:
+  id: 94
+  user_id: 157
+  team_id: 2
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:46:10.555082000 Z
+    zone: *1
+    time: 2017-06-30 13:46:10.555082000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:46:10.555082000 Z
+    zone: *1
+    time: 2017-06-30 13:46:10.555082000 Z
+  deleted_at: 
+  position: 
+affiliation_95:
+  id: 95
+  user_id: 156
+  team_id: 2
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:10:20.425757000 Z
+    zone: *1
+    time: 2017-06-30 14:10:20.425757000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:10:20.425757000 Z
+    zone: *1
+    time: 2017-06-30 14:10:20.425757000 Z
+  deleted_at: 
+  position: 
+affiliation_96:
+  id: 96
+  user_id: 156
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:10:33.106877000 Z
+    zone: *1
+    time: 2017-06-30 14:10:33.106877000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:10:33.106877000 Z
+    zone: *1
+    time: 2017-06-30 14:10:33.106877000 Z
+  deleted_at: 
+  position: 
+affiliation_97:
+  id: 97
+  user_id: 158
+  team_id: 2
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:40:16.240869000 Z
+    zone: *1
+    time: 2017-06-30 14:40:16.240869000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:40:16.240869000 Z
+    zone: *1
+    time: 2017-06-30 14:40:16.240869000 Z
+  deleted_at: 
+  position: 
+affiliation_98:
+  id: 98
+  user_id: 73
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 02:11:14.646976000 Z
+    zone: *1
+    time: 2017-06-30 21:11:14.646976000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 02:11:14.646976000 Z
+    zone: *1
+    time: 2017-06-30 21:11:14.646976000 Z
+  deleted_at: 
+  position: 
+affiliation_99:
+  id: 99
+  user_id: 73
+  team_id: 9
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:45:35.197244000 Z
+    zone: *1
+    time: 2017-07-01 09:45:35.197244000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:45:35.197244000 Z
+    zone: *1
+    time: 2017-07-01 09:45:35.197244000 Z
+  deleted_at: 
+  position: 
+affiliation_100:
+  id: 100
+  user_id: 159
+  team_id: 10
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.502512000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.502512000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.502512000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.502512000 Z
+  deleted_at: 
+  position: 
+affiliation_101:
+  id: 101
+  user_id: 160
+  team_id: 11
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.778661000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.778661000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.778661000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.778661000 Z
+  deleted_at: 
+  position: 
+affiliation_102:
+  id: 102
+  user_id: 163
+  team_id: 12
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.289829000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.289829000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.289829000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.289829000 Z
+  deleted_at: 
+  position: 
+affiliation_103:
+  id: 103
+  user_id: 164
+  team_id: 13
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.594376000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.594376000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.594376000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.594376000 Z
+  deleted_at: 
+  position: 
+affiliation_104:
+  id: 104
+  user_id: 165
+  team_id: 14
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.283930000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.283930000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.283930000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.283930000 Z
+  deleted_at: 
+  position: 
+affiliation_105:
+  id: 105
+  user_id: 166
+  team_id: 15
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.658056000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.658056000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.658056000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.658056000 Z
+  deleted_at: 
+  position: 
+affiliation_106:
+  id: 106
+  user_id: 167
+  team_id: 16
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.725906000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.725906000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.725906000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.725906000 Z
+  deleted_at: 
+  position: 
+affiliation_107:
+  id: 107
+  user_id: 168
+  team_id: 17
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.981758000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.981758000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.981758000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.981758000 Z
+  deleted_at: 
+  position: 
+affiliation_108:
+  id: 108
+  user_id: 167
+  team_id: 18
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:31.062987000 Z
+    zone: *1
+    time: 2017-07-03 07:38:31.062987000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:31.062987000 Z
+    zone: *1
+    time: 2017-07-03 07:38:31.062987000 Z
+  deleted_at: 
+  position: 
+affiliation_109:
+  id: 109
+  user_id: 169
+  team_id: 19
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.617914000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.617914000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.617914000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.617914000 Z
+  deleted_at: 
+  position: 
+affiliation_110:
+  id: 110
+  user_id: 170
+  team_id: 20
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.844371000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.844371000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.844371000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.844371000 Z
+  deleted_at: 
+  position: 
+affiliation_111:
+  id: 111
+  user_id: 169
+  team_id: 21
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.915313000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.915313000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.915313000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.915313000 Z
+  deleted_at: 
+  position: 
+affiliation_112:
+  id: 112
+  user_id: 170
+  team_id: 22
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.977924000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.977924000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.977924000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.977924000 Z
+  deleted_at: 
+  position: 
+affiliation_113:
+  id: 113
+  user_id: 28
+  team_id: 23
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.331503000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.331503000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.331503000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.331503000 Z
+  deleted_at: 
+  position: 
+affiliation_114:
+  id: 114
+  user_id: 28
+  team_id: 24
+  coach: true
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.420488000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.420488000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.420488000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.420488000 Z
+  deleted_at: 
+  position: 
+affiliation_115:
+  id: 115
+  user_id: 172
+  team_id: 23
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:13:16.271907000 Z
+    zone: *1
+    time: 2017-07-03 20:13:16.271907000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:13:16.271907000 Z
+    zone: *1
+    time: 2017-07-03 20:13:16.271907000 Z
+  deleted_at: 
+  position: 
+affiliation_116:
+  id: 116
+  user_id: 171
+  team_id: 2
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:41:01.059447000 Z
+    zone: *1
+    time: 2017-07-05 07:41:01.059447000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:41:01.059447000 Z
+    zone: *1
+    time: 2017-07-05 07:41:01.059447000 Z
+  deleted_at: 
+  position: 
+affiliation_117:
+  id: 117
+  user_id: 171
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:42:44.878870000 Z
+    zone: *1
+    time: 2017-07-05 07:42:44.878870000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:42:44.878870000 Z
+    zone: *1
+    time: 2017-07-05 07:42:44.878870000 Z
+  deleted_at: 
+  position: 
+affiliation_118:
+  id: 118
+  user_id: 171
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:42:52.409511000 Z
+    zone: *1
+    time: 2017-07-05 07:42:52.409511000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:42:52.409511000 Z
+    zone: *1
+    time: 2017-07-05 07:42:52.409511000 Z
+  deleted_at: 
+  position: 
+affiliation_119:
+  id: 119
+  user_id: 171
+  team_id: 14
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:43:14.579334000 Z
+    zone: *1
+    time: 2017-07-05 07:43:14.579334000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:43:14.579334000 Z
+    zone: *1
+    time: 2017-07-05 07:43:14.579334000 Z
+  deleted_at: 
+  position: 
+affiliation_120:
+  id: 120
+  user_id: 171
+  team_id: 9
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:43:45.940377000 Z
+    zone: *1
+    time: 2017-07-05 07:43:45.940377000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:43:45.940377000 Z
+    zone: *1
+    time: 2017-07-05 07:43:45.940377000 Z
+  deleted_at: 
+  position: 
+affiliation_121:
+  id: 121
+  user_id: 173
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:43:14.198568000 Z
+    zone: *1
+    time: 2017-07-05 08:43:14.198568000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:43:14.198568000 Z
+    zone: *1
+    time: 2017-07-05 08:43:14.198568000 Z
+  deleted_at: 
+  position: 
+affiliation_122:
+  id: 122
+  user_id: 173
+  team_id: 2
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 19:04:37.705877000 Z
+    zone: *1
+    time: 2017-07-05 14:04:37.705877000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 19:04:37.705877000 Z
+    zone: *1
+    time: 2017-07-05 14:04:37.705877000 Z
+  deleted_at: 
+  position: 
+affiliation_123:
+  id: 123
+  user_id: 173
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 19:21:55.863032000 Z
+    zone: *1
+    time: 2017-07-05 14:21:55.863032000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 19:21:55.863032000 Z
+    zone: *1
+    time: 2017-07-05 14:21:55.863032000 Z
+  deleted_at: 
+  position: 
+affiliation_124:
+  id: 124
+  user_id: 174
+  team_id: 4
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 14:17:45.176903000 Z
+    zone: *1
+    time: 2017-07-06 09:17:45.176903000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 14:17:45.176903000 Z
+    zone: *1
+    time: 2017-07-06 09:17:45.176903000 Z
+  deleted_at: 
+  position: 
+affiliation_125:
+  id: 125
+  user_id: 175
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:54:50.927277000 Z
+    zone: *1
+    time: 2017-07-06 11:54:50.927277000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:54:50.927277000 Z
+    zone: *1
+    time: 2017-07-06 11:54:50.927277000 Z
+  deleted_at: 
+  position: 
+affiliation_126:
+  id: 126
+  user_id: 176
+  team_id: 2
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:37:03.127951000 Z
+    zone: *1
+    time: 2017-07-06 14:37:03.127951000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:37:03.127951000 Z
+    zone: *1
+    time: 2017-07-06 14:37:03.127951000 Z
+  deleted_at: 
+  position: 
+affiliation_127:
+  id: 127
+  user_id: 177
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:41:03.713711000 Z
+    zone: *1
+    time: 2017-07-06 14:41:03.713711000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:41:03.713711000 Z
+    zone: *1
+    time: 2017-07-06 14:41:03.713711000 Z
+  deleted_at: 
+  position: 
+affiliation_128:
+  id: 128
+  user_id: 181
+  team_id: 8
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 16:25:10.032631000 Z
+    zone: *1
+    time: 2017-07-09 11:25:10.032631000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-09 16:25:10.032631000 Z
+    zone: *1
+    time: 2017-07-09 11:25:10.032631000 Z
+  deleted_at: 
+  position: 
