@@ -11,6 +11,8 @@ FactoryGirl.define do
       a_coaches = create_list(:user, 2, :coach)
       model.coaches << a_coaches
 
+      model.subscriptions << model.club.subscriptions
+
       # FIXME: (2017-06-29) jon => I forget why the association is invalid.
       # Investigate.
       model.save(validate: false)
