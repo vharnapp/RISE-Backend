@@ -51,10 +51,9 @@ th:last-child {
 }
 
 td img {
-  max-height: 2rem;
 }
 td {
-  height: 67px;
+  height: 90px;
 }
 thead, tbody, tfoot {
     border: none;
@@ -66,9 +65,8 @@ tbody tr:nth-child(even) {
   background-color: #ffffff;
 }
 thead th {
-    background: $primary;
+    background: $gray;
     color: white;
-    height: 67px;
 }
 table {
   box-shadow: 1px 3px 22px rgba(0, 0, 0, 0.18);

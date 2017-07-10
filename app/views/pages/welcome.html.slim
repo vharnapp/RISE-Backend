@@ -1,23 +1,40 @@
 = render 'components/secondary-header'
 
 section.main-content__body.main-content__body--flush
-  table.patients
+  table
       thead
-        tr.row
-          th nowrap=true Player Name
-          th nowrap=true Module 1
-          th nowrap=true Module 2
-          th nowrap=true Module 3
-          th nowrap=true Module 4
-          th nowrap=true Module 5
-          th
+          tr
+            th nowrap=true Player
+            th nowrap=true Module 1
+            th nowrap=true Module 2
+            th nowrap=true Module 3
+            th nowrap=true Module 4
+            th nowrap=true Module 5
+            th
 
       tbody
-        tr.row
-          td 12
-          td 12
-          td 12
-          td 12
-          td 12
-          td 12
-          td
+          tr
+            td.player
+              .player-avatar
+                = image_tag 'jon-kinney.png', class: 'player-avatar'
+                span.status-badge.active
+              .player-name Jon Skinner
+            td 12
+            td 12
+            td 12
+            td 12
+            td 12
+            td
+
+          tr
+            td.player
+              .player-avatar
+                = image_tag 'billy-sweetman.png', class: 'player-avatar'
+                span.status-badge.active
+              .player-name Billy Sweetman
+            td 12
+            td 12
+            td 12
+            td 12
+            td 12
+            td
