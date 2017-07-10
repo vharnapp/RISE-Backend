@@ -22,6 +22,7 @@ class User < ApplicationRecord
 
   has_many :affiliations, dependent: :destroy
   has_many :teams, through: :affiliations
+  has_many :clubs, through: :teams
 
   has_many :confidence_ratings, dependent: :destroy
   has_many :exercises, through: :confidence_ratings

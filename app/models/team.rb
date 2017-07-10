@@ -31,6 +31,8 @@ class Team < ApplicationRecord
   def display_code
     # chunk into groups of 3 separated by dashes
     code.chars.to_a.each_slice(3).to_a.map(&:join).join('-')
+  rescue
+    'n/a'
   end
 
   def logo_image_url

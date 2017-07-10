@@ -1,6 +1,6 @@
 class TeamsController < ApplicationController
   load_and_authorize_resource :club
-  load_and_authorize_resource :team, through: :club
+  load_and_authorize_resource :team, through: :club, shallow: true
 
   def show
     @pyramid_modules = PyramidModule.level_1

@@ -17,4 +17,5 @@ section.main-content__body.main-content__body--flush
                 span.status-badge.active
               .player-name = player.full_name
             - @pyramid_modules.each do |pyramid_module|
-              td = pyramid_module.rating_for(player)
+              td
+                .circle data-value="#{(pyramid_module.rating_for(player) / 100)}"

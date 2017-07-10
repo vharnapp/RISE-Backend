@@ -1,0 +1,16 @@
+section.main-content__body.main-content__body--flush
+  table
+    thead
+      tr
+        th nowrap=true Name
+        th nowrap=true Teams
+
+      tbody
+        - User.coaches.each do |coach|
+          tr
+            td = coach.full_name
+            td
+              - coach.affiliations.merge(Affiliation.coaches).each_with_index do |affiliation, index|
+                = '&nbsp;&nbsp;|&nbsp;&nbsp;'.html_safe unless index.zero?
+                = link_to affiliation.team.name, club_team_path(affiliation.team.club, affiliation.team)
+

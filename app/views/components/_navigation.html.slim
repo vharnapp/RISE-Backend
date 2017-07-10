@@ -6,15 +6,9 @@
           li.menu-text
             = link_to root_path do
               = image_tag 'rise-logo.png', class:'logo'
-          li
-            a[href="/clubs"]
-              | Clubs
-          li
-            a[href="/coaches"]
-              | Coaches
-          li
-            a[href="/teams"]
-              | Teams
+          li = link_to 'Clubs', clubs_path
+          li = link_to 'Coaches', users_path(type: 'coaches')
+          li = link_to 'Teams', teams_path
       .top-bar-right.hide-for-small-only
         ul
           li

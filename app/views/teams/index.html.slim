@@ -1,0 +1,9 @@
+h1 My Teams
+
+hr
+- current_user.clubs.each do |club|
+  h3= link_to club.name, club_path(club)
+  ul
+  - club.teams.each do |team|
+    li= link_to team.name, club_team_path(club, team)
+  hr

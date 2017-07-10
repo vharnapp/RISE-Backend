@@ -1,0 +1,5 @@
+h1 My Clubs
+
+ul
+- current_user.clubs.each do |club|
+  li= link_to club.name, club_path(club)
