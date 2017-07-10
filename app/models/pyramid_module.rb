@@ -45,7 +45,7 @@ class PyramidModule < ApplicationRecord
         .where(workouts: { supplemental: false })
         .count
 
-    num_exercises = workouts.flat_map(&:exercises).count
+    num_exercises = workouts.includes(:exercises).flat_map(&:exercises).count
 
     percent = (num_skills_mastered.to_d / num_exercises.to_d).round(2)
 
