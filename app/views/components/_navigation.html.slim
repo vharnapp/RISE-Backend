@@ -7,8 +7,14 @@
             = link_to root_path do
               = image_tag 'rise-logo.png', class:'logo'
           li = link_to 'Clubs', clubs_path
-          li = link_to 'Coaches', users_path(type: 'coaches')
+          li = link_to 'Coaches', users_path
           li = link_to 'Teams', teams_path
+
+          - if true_user && true_user.admin?
+            - if current_user != true_user
+              li = link_to '<span>Stop</span>'.html_safe, stop_impersonating_admin_users_path
+            - else
+              li = link_to 'Admin', admin_users_path
       .top-bar-right.hide-for-small-only
         ul
           li

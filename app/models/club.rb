@@ -7,7 +7,7 @@ class Club < ApplicationRecord
   mount_uploader :logo, ImageUploader
   mount_uploader :teams_csv, ImageUploader # prob make a file uploader
 
-  has_many :temp_teams
+  has_many :temp_teams, dependent: :destroy
   has_many :teams, -> { order(position: :asc) }, dependent: :destroy
   has_many :players, through: :teams
 

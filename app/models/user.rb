@@ -28,9 +28,9 @@ class User < ApplicationRecord
   has_many :exercises, through: :confidence_ratings
   has_many :workouts, through: :confidence_ratings
 
-  has_many :unlocked_pyramid_modules
+  has_many :unlocked_pyramid_modules, dependent: :destroy
 
-  has_many :phase_attempts
+  has_many :phase_attempts, dependent: :destroy
   has_many :phases, through: :phase_attempts
 
   mount_uploader :avatar, ImageUploader
