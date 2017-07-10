@@ -10,6 +10,7 @@ FactoryGirl.define do
     contact_first_name   { Faker::Name.first_name }
     contact_last_name    { Faker::Name.last_name }
     contact_phone        { Faker::PhoneNumber.phone_number }
+    subscription
   end
 end
 
