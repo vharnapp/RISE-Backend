@@ -8,7 +8,7 @@ module Api
           current_user.unlocked_pyramid_modules.includes(:pyramid_module)
 
         if unlocked_pyramid_modules.blank?
-          unlocked_pyramid_modules = PyramidModule.default_unlocked
+          unlocked_pyramid_modules = current_user.unlock_starting_pyramid_module
         end
 
         jsonapi_render json: unlocked_pyramid_modules

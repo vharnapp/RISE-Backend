@@ -144,6 +144,7 @@ class User < ApplicationRecord
   def unlock_starting_pyramid_module
     pm = PyramidModule.default_unlocked
     unlocked_pyramid_modules.create(pyramid_module: pm)
+    unlocked_pyramid_modules
   end
 
   private
