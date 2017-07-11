@@ -26119,4 +26119,40 @@ authenticationtoken_2434:
     utc: 2017-07-10 02:17:59.317304000 Z
     zone: *1
     time: 2017-07-09 21:17:59.317304000 Z
+authenticationtoken_2435:
+  id: 2435
+  body: a1be7f78e2216dda0c2e5f241e5296c90063612d8fb07977acb54a4d230d2d91
+  user_id: 1
+  last_used_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 19:48:39.966002000 Z
+    zone: *1
+    time: 2017-07-10 14:48:39.966002000 Z
+  ip_address: "::1"
+  user_agent: PostmanRuntime/6.1.6
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 19:48:39.974382000 Z
+    zone: *1
+    time: 2017-07-10 14:48:39.974382000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 19:48:39.974382000 Z
+    zone: *1
+    time: 2017-07-10 14:48:39.974382000 Z
+authenticationtoken_2436:
+  id: 2436
+  body: b9401e18b969910041007b6f82dac05d5f3c65d98939076bdeeeb5f8aae59819
+  user_id: 25
+  last_used_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 19:48:58.459844000 Z
+    zone: *1
+    time: 2017-07-10 14:48:58.459844000 Z
+  ip_address: "::1"
+  user_agent: PostmanRuntime/6.1.6
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 19:48:58.461866000 Z
+    zone: *1
+    time: 2017-07-10 14:48:58.461866000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 19:48:58.461866000 Z
+    zone: *1
+    time: 2017-07-10 14:48:58.461866000 Z
 

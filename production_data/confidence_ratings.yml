@@ -9544,7 +9544,7 @@ confidencerating_2485:
   id: 2485
   user_id: 91
   exercise_id: 3
-  workout_id: 8
+  workout_id: 148
   rating: 4
   skipped: false
   created_at: !ruby/object:ActiveSupport::TimeWithZone
@@ -9552,9 +9552,9 @@ confidencerating_2485:
     zone: *1
     time: 2017-06-28 19:29:14.790776000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-29 00:29:18.152628000 Z
+    utc: 2017-07-11 05:25:19.893860000 Z
     zone: *1
-    time: 2017-06-28 19:29:18.152628000 Z
+    time: 2017-07-11 00:25:19.893860000 Z
 confidencerating_2486:
   id: 2486
   user_id: 28
@@ -39257,4 +39257,34 @@ confidencerating_4490:
     utc: 2017-07-10 03:03:44.930241000 Z
     zone: *1
     time: 2017-07-09 22:03:44.930241000 Z
+confidencerating_4491:
+  id: 4491
+  user_id: 14
+  exercise_id: 263
+  workout_id: 91
+  rating: 4
+  skipped: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:31:45.380961000 Z
+    zone: *1
+    time: 2017-07-11 00:31:45.380961000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:31:45.380961000 Z
+    zone: *1
+    time: 2017-07-11 00:31:45.380961000 Z
+confidencerating_4492:
+  id: 4492
+  user_id: 25
+  exercise_id: 377
+  workout_id: 125
+  rating: 4
+  skipped: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:32:20.241969000 Z
+    zone: *1
+    time: 2017-07-11 00:32:20.241969000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:32:20.241969000 Z
+    zone: *1
+    time: 2017-07-11 00:32:20.241969000 Z
 

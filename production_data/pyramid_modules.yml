@@ -8,21 +8,13 @@ pyramidmodule_3:
     decelerate and change directions with explosive bursts, perform quick skills with
     the ball and feel stronger and more athletic in the weight room. '
   display_track: speed
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-25 15:38:58.918712000 Z
-    zone: &1 !ruby/object:ActiveSupport::TimeZone
-      name: America/Chicago
-    time: 2017-05-25 10:38:58.918712000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 18:27:00.888699000 Z
-    zone: *1
-    time: 2017-06-08 13:27:00.888699000 Z
   video_file_name: Quickness_Overview.mp4
   video_content_type: video/quicktime
   video_file_size: 3663284
   video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
     utc: 2017-05-25 15:53:42.632150000 Z
-    zone: *1
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
     time: 2017-05-25 10:53:42.632150000 Z
   keyframe_file_name: Screen_Shot_2017-06-07_at_6.55.56_PM.png
   keyframe_content_type: image/png
@@ -31,6 +23,14 @@ pyramidmodule_3:
     utc: 2017-06-07 23:56:30.781217000 Z
     zone: *1
     time: 2017-06-07 18:56:30.781217000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:38:58.918712000 Z
+    zone: *1
+    time: 2017-05-25 10:38:58.918712000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 18:27:00.888699000 Z
+    zone: *1
+    time: 2017-06-08 13:27:00.888699000 Z
   deleted_at: 
   position: 3
   level: 1
@@ -47,14 +47,6 @@ pyramidmodule_5:
     direct the ball across the body, away from the body and behind the body. These
     exercises can be performed against a wall (as shown in the videos) or with a partner.
   display_track: skill
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-25 23:57:55.985072000 Z
-    zone: *1
-    time: 2017-05-25 18:57:55.985072000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-24 17:45:10.075886000 Z
-    zone: *1
-    time: 2017-06-24 12:45:10.075886000 Z
   video_file_name: FTP3-Open_Up-Inside_to_Ripacross.mp4
   video_content_type: video/quicktime
   video_file_size: 3374991
@@ -69,6 +61,14 @@ pyramidmodule_5:
     utc: 2017-06-24 17:45:08.903529000 Z
     zone: *1
     time: 2017-06-24 12:45:08.903529000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 23:57:55.985072000 Z
+    zone: *1
+    time: 2017-05-25 18:57:55.985072000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 17:45:10.075886000 Z
+    zone: *1
+    time: 2017-06-24 12:45:10.075886000 Z
   deleted_at: 
   position: 1
   level: 1
@@ -84,14 +84,6 @@ pyramidmodule_7:
     you add more athleticism to your touches. Start slow to build rhythmic control,
     then gradually speed up the patterns with quick bursts.
   display_track: skill
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-26 12:40:59.230190000 Z
-    zone: *1
-    time: 2017-05-26 07:40:59.230190000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:28:53.729862000 Z
-    zone: *1
-    time: 2017-06-08 14:28:53.729862000 Z
   video_file_name: BCP2-6_Cone-Pullback_Inside_1_Gate.mp4
   video_content_type: video/quicktime
   video_file_size: 2243436
@@ -106,6 +98,14 @@ pyramidmodule_7:
     utc: 2017-06-08 19:28:53.227882000 Z
     zone: *1
     time: 2017-06-08 14:28:53.227882000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:40:59.230190000 Z
+    zone: *1
+    time: 2017-05-26 07:40:59.230190000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:28:53.729862000 Z
+    zone: *1
+    time: 2017-06-08 14:28:53.729862000 Z
   deleted_at: 
   position: 2
   level: 1
@@ -122,14 +122,6 @@ pyramidmodule_8:
     after practice on the field. Although it is not a total strength program, we do
     believe that these are the foundational strengthening patterns required for success.
   display_track: strength
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-26 16:25:17.851661000 Z
-    zone: *1
-    time: 2017-05-26 11:25:17.851661000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:33:20.282168000 Z
-    zone: *1
-    time: 2017-06-08 14:33:20.282168000 Z
   video_file_name: 
   video_content_type: 
   video_file_size: 
@@ -141,6 +133,14 @@ pyramidmodule_8:
     utc: 2017-06-08 19:33:19.946392000 Z
     zone: *1
     time: 2017-06-08 14:33:19.946392000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:25:17.851661000 Z
+    zone: *1
+    time: 2017-05-26 11:25:17.851661000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:33:20.282168000 Z
+    zone: *1
+    time: 2017-06-08 14:33:20.282168000 Z
   deleted_at: 
   position: 4
   level: 1
@@ -156,14 +156,6 @@ pyramidmodule_9:
     1, then add dumbbells in phase 2 and 3 as you build a strong foundation that will
     set the stage for the powerful bursts in later levels.
   display_track: strength
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-26 18:00:00.783513000 Z
-    zone: *1
-    time: 2017-05-26 13:00:00.783513000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:34:56.178084000 Z
-    zone: *1
-    time: 2017-06-08 14:34:56.178084000 Z
   video_file_name: 
   video_content_type: 
   video_file_size: 
@@ -175,6 +167,14 @@ pyramidmodule_9:
     utc: 2017-06-08 19:34:55.772201000 Z
     zone: *1
     time: 2017-06-08 14:34:55.772201000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 18:00:00.783513000 Z
+    zone: *1
+    time: 2017-05-26 13:00:00.783513000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:34:56.178084000 Z
+    zone: *1
+    time: 2017-06-08 14:34:56.178084000 Z
   deleted_at: 
   position: 5
   level: 1
@@ -188,14 +188,6 @@ pyramidmodule_10:
     specific strength exercises, and progress them into more explosive patterns to
     enhance your agility.
   display_track: speed
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-27 13:31:24.663773000 Z
-    zone: *1
-    time: 2017-05-27 08:31:24.663773000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:53:15.522511000 Z
-    zone: *1
-    time: 2017-06-08 14:53:15.522511000 Z
   video_file_name: EAP2-Agility-Jockey_to_Run_L_Pattern_Combo.mp4
   video_content_type: video/quicktime
   video_file_size: 1871694
@@ -210,6 +202,14 @@ pyramidmodule_10:
     utc: 2017-06-08 19:53:15.128778000 Z
     zone: *1
     time: 2017-06-08 14:53:15.128778000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:31:24.663773000 Z
+    zone: *1
+    time: 2017-05-27 08:31:24.663773000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:53:15.522511000 Z
+    zone: *1
+    time: 2017-06-08 14:53:15.522511000 Z
   deleted_at: 
   position: 8
   level: 2
@@ -226,14 +226,6 @@ pyramidmodule_11:
     strength programs and advance the power exercises with additional plyometric emphasis
     (quick, explosive hops, jumps and bounds).
   display_track: strength
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-27 22:21:34.735399000 Z
-    zone: *1
-    time: 2017-05-27 17:21:34.735399000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:58:54.028354000 Z
-    zone: *1
-    time: 2017-06-08 14:58:54.028354000 Z
   video_file_name: 
   video_content_type: 
   video_file_size: 
@@ -245,6 +237,14 @@ pyramidmodule_11:
     utc: 2017-06-08 19:58:53.559993000 Z
     zone: *1
     time: 2017-06-08 14:58:53.559993000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:21:34.735399000 Z
+    zone: *1
+    time: 2017-05-27 17:21:34.735399000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:58:54.028354000 Z
+    zone: *1
+    time: 2017-06-08 14:58:54.028354000 Z
   deleted_at: 
   position: 9
   level: 2
@@ -262,14 +262,6 @@ pyramidmodule_12:
     into this level as we will be blending specific quickness patterns into ball skill
     patterns to enhance explosive speed with the ball.
   display_track: speed
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-28 15:26:13.298974000 Z
-    zone: *1
-    time: 2017-05-28 10:26:13.298974000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:38:38.871538000 Z
-    zone: *1
-    time: 2017-06-08 14:38:38.871538000 Z
   video_file_name: QSP1-Scissors_Outside_Touch_Cruyff_Back.mp4
   video_content_type: video/quicktime
   video_file_size: 3422378
@@ -284,6 +276,14 @@ pyramidmodule_12:
     utc: 2017-06-08 19:38:38.514451000 Z
     zone: *1
     time: 2017-06-08 14:38:38.514451000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:26:13.298974000 Z
+    zone: *1
+    time: 2017-05-28 10:26:13.298974000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:38:38.871538000 Z
+    zone: *1
+    time: 2017-06-08 14:38:38.871538000 Z
   deleted_at: 
   position: 7
   level: 2
@@ -302,14 +302,6 @@ pyramidmodule_13:
     that focus on how you receive the ball and reposition athletically to enhance
     confidence and speed of play.
   display_track: skill
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-30 10:41:13.926772000 Z
-    zone: *1
-    time: 2017-05-30 05:41:13.926772000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:40:36.590372000 Z
-    zone: *1
-    time: 2017-06-08 14:40:36.590372000 Z
   video_file_name: PCP3-Creative_Open_Up_180s_Forward___Back.mp4
   video_content_type: video/quicktime
   video_file_size: 3268933
@@ -324,6 +316,14 @@ pyramidmodule_13:
     utc: 2017-06-08 19:40:36.252942000 Z
     zone: *1
     time: 2017-06-08 14:40:36.252942000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:41:13.926772000 Z
+    zone: *1
+    time: 2017-05-30 05:41:13.926772000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-08 19:40:36.590372000 Z
+    zone: *1
+    time: 2017-06-08 14:40:36.590372000 Z
   deleted_at: 
   position: 6
   level: 2
@@ -341,14 +341,6 @@ pyramidmodule_15:
     dribble, but the key focus is the ability to reposition your body to create an
     athletic advantage.
   display_track: skill
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-05-31 12:57:56.119501000 Z
-    zone: *1
-    time: 2017-05-31 07:57:56.119501000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-17 17:14:16.783629000 Z
-    zone: *1
-    time: 2017-06-17 12:14:16.783629000 Z
   video_file_name: 
   video_content_type: 
   video_file_size: 
@@ -360,6 +352,14 @@ pyramidmodule_15:
     utc: 2017-06-17 17:14:16.348103000 Z
     zone: *1
     time: 2017-06-17 12:14:16.348103000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 12:57:56.119501000 Z
+    zone: *1
+    time: 2017-05-31 07:57:56.119501000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 17:14:16.783629000 Z
+    zone: *1
+    time: 2017-06-17 12:14:16.783629000 Z
   deleted_at: 
   position: 10
   level: 3
@@ -376,14 +376,6 @@ pyramidmodule_16:
     are a perfect way to get in soccer shape while still enhancing your speed, skill
     and powerful potential.
   display_track: speed
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-02 10:52:31.977395000 Z
-    zone: *1
-    time: 2017-06-02 05:52:31.977395000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-17 23:10:48.811024000 Z
-    zone: *1
-    time: 2017-06-17 18:10:48.811024000 Z
   video_file_name: 
   video_content_type: 
   video_file_size: 
@@ -395,6 +387,14 @@ pyramidmodule_16:
     utc: 2017-06-17 23:10:48.368994000 Z
     zone: *1
     time: 2017-06-17 18:10:48.368994000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:52:31.977395000 Z
+    zone: *1
+    time: 2017-06-02 05:52:31.977395000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:10:48.811024000 Z
+    zone: *1
+    time: 2017-06-17 18:10:48.811024000 Z
   deleted_at: 
   position: 11
   level: 3
@@ -412,14 +412,6 @@ pyramidmodule_17:
     These sessions integrate plyometric bursts, quickness and agility into explosive
     exercises that build off the foundation set in the general strength module.
   display_track: strength
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-02 10:55:56.697624000 Z
-    zone: *1
-    time: 2017-06-02 05:55:56.697624000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-05 10:34:49.454986000 Z
-    zone: *1
-    time: 2017-06-05 05:34:49.454986000 Z
   video_file_name: SPP2-Stability-Cable_Rotation_to_Extend.mp4
   video_content_type: video/quicktime
   video_file_size: 3012546
@@ -434,6 +426,14 @@ pyramidmodule_17:
     utc: 2017-06-05 10:34:48.700400000 Z
     zone: *1
     time: 2017-06-05 05:34:48.700400000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:55:56.697624000 Z
+    zone: *1
+    time: 2017-06-02 05:55:56.697624000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:34:49.454986000 Z
+    zone: *1
+    time: 2017-06-05 05:34:49.454986000 Z
   deleted_at: 
   position: 12
   level: 3
@@ -450,14 +450,6 @@ pyramidmodule_18:
     2 (Pre-Season) and Phase 3 (In-Season) will use supplemental workouts to create
     3-5 day training programs for fitness, speed and skill. "
   display_track: skill
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-02 11:01:13.932698000 Z
-    zone: *1
-    time: 2017-06-02 06:01:13.932698000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-29 00:34:53.650378000 Z
-    zone: *1
-    time: 2017-06-28 19:34:53.650378000 Z
   video_file_name: 
   video_content_type: 
   video_file_size: 
@@ -469,6 +461,14 @@ pyramidmodule_18:
     utc: 2017-06-17 23:16:26.613134000 Z
     zone: *1
     time: 2017-06-17 18:16:26.613134000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:01:13.932698000 Z
+    zone: *1
+    time: 2017-06-02 06:01:13.932698000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:34:53.650378000 Z
+    zone: *1
+    time: 2017-06-28 19:34:53.650378000 Z
   deleted_at: 
   position: 13
   level: 4
@@ -486,14 +486,6 @@ pyramidmodule_19:
     create 3-5 day training programs for fitness, speed and power from a strength
     and conditioning perspective. '
   display_track: strength
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-02 11:05:25.779875000 Z
-    zone: *1
-    time: 2017-06-02 06:05:25.779875000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-17 23:18:30.516321000 Z
-    zone: *1
-    time: 2017-06-17 18:18:30.516321000 Z
   video_file_name: 
   video_content_type: 
   video_file_size: 
@@ -505,6 +497,14 @@ pyramidmodule_19:
     utc: 2017-06-17 23:18:30.034559000 Z
     zone: *1
     time: 2017-06-17 18:18:30.034559000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:05:25.779875000 Z
+    zone: *1
+    time: 2017-06-02 06:05:25.779875000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:18:30.516321000 Z
+    zone: *1
+    time: 2017-06-17 18:18:30.516321000 Z
   deleted_at: 
   position: 14
   level: 4
@@ -520,14 +520,6 @@ pyramidmodule_20:
   description: This is the complete program which integrates all aspects into a daily
     training program for elite level players.
   display_track: speed
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-02 11:31:41.035668000 Z
-    zone: *1
-    time: 2017-06-02 06:31:41.035668000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-17 23:21:29.332524000 Z
-    zone: *1
-    time: 2017-06-17 18:21:29.332524000 Z
   video_file_name: 
   video_content_type: 
   video_file_size: 
@@ -539,6 +531,14 @@ pyramidmodule_20:
     utc: 2017-06-17 23:21:28.793645000 Z
     zone: *1
     time: 2017-06-17 18:21:28.793645000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:31:41.035668000 Z
+    zone: *1
+    time: 2017-06-02 06:31:41.035668000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:21:29.332524000 Z
+    zone: *1
+    time: 2017-06-17 18:21:29.332524000 Z
   deleted_at: 
   position: 15
   level: 5
@@ -549,3 +549,29 @@ pyramidmodule_20:
   - Speed
   - Skill
   - Strength
+pyramidmodule_22:
+  id: 22
+  name: Yeaher
+  description: asdf
+  display_track: speed
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 16:42:35.003740000 Z
+    zone: *1
+    time: 2017-07-10 11:42:35.003740000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 16:42:35.003740000 Z
+    zone: *1
+    time: 2017-07-10 11:42:35.003740000 Z
+  deleted_at: 
+  position: 1
+  level: 
+  prereq: []
+  tracks: []

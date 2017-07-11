@@ -765,3 +765,63 @@ affiliation_128:
     time: 2017-07-09 11:25:10.032631000 Z
   deleted_at: 
   position: 
+affiliation_129:
+  id: 129
+  user_id: 25
+  team_id: 23
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 17:11:19.629522000 Z
+    zone: *1
+    time: 2017-07-10 12:11:19.629522000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 17:11:19.629522000 Z
+    zone: *1
+    time: 2017-07-10 12:11:19.629522000 Z
+  deleted_at: 
+  position: 
+affiliation_130:
+  id: 130
+  user_id: 91
+  team_id: 23
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:21:32.098398000 Z
+    zone: *1
+    time: 2017-07-11 00:21:32.098398000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:21:32.098398000 Z
+    zone: *1
+    time: 2017-07-11 00:21:32.098398000 Z
+  deleted_at: 
+  position: 
+affiliation_131:
+  id: 131
+  user_id: 14
+  team_id: 23
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:27:05.561005000 Z
+    zone: *1
+    time: 2017-07-11 00:27:05.561005000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:27:05.561005000 Z
+    zone: *1
+    time: 2017-07-11 00:27:05.561005000 Z
+  deleted_at: 
+  position: 
+affiliation_132:
+  id: 132
+  user_id: 12
+  team_id: 23
+  coach: false
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:27:05.570121000 Z
+    zone: *1
+    time: 2017-07-11 00:27:05.570121000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 05:27:05.570121000 Z
+    zone: *1
+    time: 2017-07-11 00:27:05.570121000 Z
+  deleted_at: 
+  position: 

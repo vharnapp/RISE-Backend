@@ -10,9 +10,9 @@ user_1:
       name: America/Chicago
     time: 2017-04-04 21:06:58.024570000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-07-05 17:11:35.699865000 Z
+    utc: 2017-07-11 04:50:27.903995000 Z
     zone: *1
-    time: 2017-07-05 12:11:35.699865000 Z
+    time: 2017-07-10 23:50:27.903995000 Z
   email: admin@example.com
   encrypted_password: "$2a$11$I6hVoLctGkY0z4PfBMHCbuFh6i7d.F2SUy0PK5oAJpbh8GeGcUG9y"
   reset_password_token: 
@@ -21,23 +21,23 @@ user_1:
     utc: 2017-06-29 18:20:32.767765000 Z
     zone: *1
     time: 2017-06-29 13:20:32.767765000 Z
-  sign_in_count: 1405
+  sign_in_count: 1407
   current_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-07-05 17:11:35.696421000 Z
+    utc: 2017-07-11 04:50:27.902031000 Z
     zone: *1
-    time: 2017-07-05 12:11:35.696421000 Z
+    time: 2017-07-10 23:50:27.902031000 Z
   last_sign_in_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-07-05 17:09:34.785974000 Z
+    utc: 2017-07-10 12:46:39.294088000 Z
     zone: *1
-    time: 2017-07-05 12:09:34.785974000 Z
+    time: 2017-07-10 07:46:39.294088000 Z
   current_sign_in_ip: !ruby/object:IPAddr
-    family: 2
-    addr: 2926035119
-    mask_addr: 4294967295
+    family: 30
+    addr: 1
+    mask_addr: 340282366920938463463374607431768211455
   last_sign_in_ip: !ruby/object:IPAddr
-    family: 2
-    addr: 2926035119
-    mask_addr: 4294967295
+    family: 30
+    addr: 1
+    mask_addr: 340282366920938463463374607431768211455
   roles_mask: 8
   slug: admin-user
   deleted_at: 
@@ -249,9 +249,9 @@ user_25:
     zone: *1
     time: 2017-06-16 09:11:52.471698000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-27 20:00:56.903299000 Z
+    utc: 2017-07-10 17:11:19.640279000 Z
     zone: *1
-    time: 2017-06-27 15:00:56.903299000 Z
+    time: 2017-07-10 12:11:19.640279000 Z
   email: dude01@example.com
   encrypted_password: "$2a$11$ehD465TBzU83OgtKBBbXj.CHDh06mpJ/FZDDXFBPBW96D1XJVF2Ri"
   reset_password_token: 
@@ -274,10 +274,10 @@ user_25:
     family: 2
     addr: 2926035119
     mask_addr: 4294967295
-  roles_mask: 0
+  roles_mask: 1
   slug: dude-mcguy
   deleted_at: 
-  nickname: 
+  nickname: ''
   avatar: 28412eb4-1714-4099-9cd2-dd3b46dad277.photo.jpeg
 user_26:
   id: 26
@@ -880,9 +880,9 @@ user_91:
     zone: *1
     time: 2017-06-28 19:27:19.992216000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-29 00:28:09.695932000 Z
+    utc: 2017-07-11 05:21:44.139061000 Z
     zone: *1
-    time: 2017-06-28 19:28:09.695932000 Z
+    time: 2017-07-11 00:21:44.139061000 Z
   email: jon+ooh@headway.io
   encrypted_password: "$2a$11$xv9M47yYB3bHfBe1KhhhhOcBkowuKrnaJxGElxWgPsMlQE/Pqqz92"
   reset_password_token: 
@@ -905,10 +905,10 @@ user_91:
     family: 2
     addr: 2926035119
     mask_addr: 4294967295
-  roles_mask: 0
+  roles_mask: 1
   slug: john-oooh
   deleted_at: 
-  nickname: 
+  nickname: ''
   avatar: f37a1f07-3173-48f1-8ba8-291e4c280b96.photo.jpeg
 user_92:
   id: 92
