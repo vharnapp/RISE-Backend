@@ -137,6 +137,8 @@ class User < ApplicationRecord
 
   def highest_pyramid_level_achieved
     pyramid_modules.select(:level).order(level: :desc).limit(1).first.level
+  rescue
+    1
   end
 
   private
