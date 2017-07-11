@@ -12,6 +12,7 @@ end
 #  deleted_at            :datetime
 #  description           :text
 #  display_track         :integer
+#  icon                  :string
 #  id                    :integer          not null, primary key
 #  keyframe_content_type :string
 #  keyframe_file_name    :string

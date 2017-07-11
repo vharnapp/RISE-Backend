@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170701141442) do
+ActiveRecord::Schema.define(version: 20170711164144) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -182,6 +182,7 @@ ActiveRecord::Schema.define(version: 20170701141442) do
     t.datetime "deleted_at"
     t.text "description"
     t.integer "display_track"
+    t.string "icon"
     t.string "keyframe_content_type"
     t.string "keyframe_file_name"
     t.integer "keyframe_file_size"

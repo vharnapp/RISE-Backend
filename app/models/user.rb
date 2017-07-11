@@ -141,6 +141,11 @@ class User < ApplicationRecord
     1
   end
 
+  def unlock_starting_pyramid_module
+    pm = PyramidModule.find_by(position: 3)
+    unlocked_pyramid_modules.create(pyramid_module: pm)
+  end
+
   private
 
   def generate_uuid

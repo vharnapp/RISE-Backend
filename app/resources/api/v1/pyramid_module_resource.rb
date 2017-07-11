@@ -4,6 +4,7 @@ module Api
       include KeyframeFields
 
       attributes :name,
+                 :icon,
                  :description,
                  :level,
                  :prereq,
