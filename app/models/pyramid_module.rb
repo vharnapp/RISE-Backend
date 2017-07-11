@@ -10,7 +10,7 @@ class PyramidModule < ApplicationRecord
     strength: 2,
   }
 
-  scope :by_level, (->(level) { where(level: level) })
+  scope :by_level, (->(level) { where(level: level).order(:position) })
 
   has_many :phases,
            -> { order(position: :asc) },
