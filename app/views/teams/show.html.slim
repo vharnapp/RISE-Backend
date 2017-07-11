@@ -1,23 +1,24 @@
 = render 'components/secondary-header'
 
 section.main-content__body.main-content__body--flush
-  table
-    thead
-      tr
-        th colspan=6
-          Pyramid Modules
+  .players.row
+    - @team.players.each do |player|
+      .player
+        .player-info
+          .player-avatar
+            = image_tag player.avatar.url, class: 'player-avatar'
+            span.status-badge.active
 
-      tbody
-        - @team.players.each do |player|
-          tr
-            td.player
-              .player-avatar
-                = image_tag player.avatar.url, class: 'player-avatar'
-                span.status-badge.active
-              .player-name = player.full_name
-            - level = player.highest_pyramid_level_achieved
-            - PyramidModule.by_level(level).each do |pyramid_module|
-              td
-                .circle data-value="#{pyramid_module.percent_complete_for_user(player)}"
-                  = pyramid_module.name
-                  = pyramid_module.percent_complete_for_user(player, debug: true)
+          .player-name = player.full_name
+
+        - level = player.highest_pyramid_level_achieved
+        .pyramid-modules
+          - PyramidModule.by_level(level).each do |pyramid_module|
+            .circle-container
+              .circle data-value="#{pyramid_module.percent_complete_for_user(player)}"
+              = check_box_tag 'unlock_pyramid_module',
+                              pyramid_module.id,
+                              player.unlocked_pyramid_modules.includes(:pyramid_module).flat_map(&:pyramid_module).include?(pyramid_module),
+                              class: 'unlock-pyramid-module-checkbox'
+              = pyramid_module.name
+              / = pyramid_module.percent_complete_for_user(player, debug: true)
