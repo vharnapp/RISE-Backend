@@ -142,7 +142,7 @@ class User < ApplicationRecord
   end
 
   def unlock_starting_pyramid_module
-    pm = PyramidModule.find_by(position: 3)
+    pm = PyramidModule.default_unlocked
     unlocked_pyramid_modules.create(pyramid_module: pm)
   end
 

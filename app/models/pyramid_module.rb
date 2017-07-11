@@ -32,6 +32,10 @@ class PyramidModule < ApplicationRecord
     model.tracks&.reject!(&:blank?)
   end
 
+  def self.default_unlocked
+    find_by(position: 3)
+  end
+
   def prerequisites
     PyramidModule.where(id: prereq).map(&:name).join(', ')
   end
