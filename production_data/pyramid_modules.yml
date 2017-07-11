@@ -28,9 +28,9 @@ pyramidmodule_3:
     zone: *1
     time: 2017-05-25 10:38:58.918712000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 18:27:00.888699000 Z
+    utc: 2017-07-11 16:57:57.392152000 Z
     zone: *1
-    time: 2017-06-08 13:27:00.888699000 Z
+    time: 2017-07-11 11:57:57.392152000 Z
   deleted_at: 
   position: 3
   level: 1
@@ -39,6 +39,7 @@ pyramidmodule_3:
   - Speed
   - Skill
   - Strength
+  icon: Quickness.png
 pyramidmodule_5:
   id: 5
   name: First Touch
@@ -66,15 +67,16 @@ pyramidmodule_5:
     zone: *1
     time: 2017-05-25 18:57:55.985072000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-24 17:45:10.075886000 Z
+    utc: 2017-07-11 16:56:34.953382000 Z
     zone: *1
-    time: 2017-06-24 12:45:10.075886000 Z
+    time: 2017-07-11 11:56:34.953382000 Z
   deleted_at: 
   position: 1
   level: 1
   prereq: []
   tracks:
   - Skill
+  icon: First_Touch.png
 pyramidmodule_7:
   id: 7
   name: Ball Control
@@ -103,9 +105,9 @@ pyramidmodule_7:
     zone: *1
     time: 2017-05-26 07:40:59.230190000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:28:53.729862000 Z
+    utc: 2017-07-11 16:57:43.547786000 Z
     zone: *1
-    time: 2017-06-08 14:28:53.729862000 Z
+    time: 2017-07-11 11:57:43.547786000 Z
   deleted_at: 
   position: 2
   level: 1
@@ -113,6 +115,7 @@ pyramidmodule_7:
   tracks:
   - Speed
   - Skill
+  icon: Ball_Control.png
 pyramidmodule_8:
   id: 8
   name: Soccer Strength
@@ -138,9 +141,9 @@ pyramidmodule_8:
     zone: *1
     time: 2017-05-26 11:25:17.851661000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:33:20.282168000 Z
+    utc: 2017-07-11 16:58:15.217675000 Z
     zone: *1
-    time: 2017-06-08 14:33:20.282168000 Z
+    time: 2017-07-11 11:58:15.217675000 Z
   deleted_at: 
   position: 4
   level: 1
@@ -148,6 +151,7 @@ pyramidmodule_8:
   tracks:
   - Speed
   - Strength
+  icon: Soccer_Strength.png
 pyramidmodule_9:
   id: 9
   name: General Strength
@@ -172,15 +176,16 @@ pyramidmodule_9:
     zone: *1
     time: 2017-05-26 13:00:00.783513000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:34:56.178084000 Z
+    utc: 2017-07-11 16:58:27.631323000 Z
     zone: *1
-    time: 2017-06-08 14:34:56.178084000 Z
+    time: 2017-07-11 11:58:27.631323000 Z
   deleted_at: 
   position: 5
   level: 1
   prereq: []
   tracks:
   - Strength
+  icon: General_Strength.png
 pyramidmodule_10:
   id: 10
   name: Explosive Agility
@@ -207,9 +212,9 @@ pyramidmodule_10:
     zone: *1
     time: 2017-05-27 08:31:24.663773000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:53:15.522511000 Z
+    utc: 2017-07-11 16:59:11.153895000 Z
     zone: *1
-    time: 2017-06-08 14:53:15.522511000 Z
+    time: 2017-07-11 11:59:11.153895000 Z
   deleted_at: 
   position: 8
   level: 2
@@ -219,6 +224,7 @@ pyramidmodule_10:
   tracks:
   - Speed
   - Strength
+  icon: Power_Agility.png
 pyramidmodule_11:
   id: 11
   name: Powerful Bursts
@@ -242,9 +248,9 @@ pyramidmodule_11:
     zone: *1
     time: 2017-05-27 17:21:34.735399000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:58:54.028354000 Z
+    utc: 2017-07-11 16:59:26.459414000 Z
     zone: *1
-    time: 2017-06-08 14:58:54.028354000 Z
+    time: 2017-07-11 11:59:26.459414000 Z
   deleted_at: 
   position: 9
   level: 2
@@ -253,6 +259,7 @@ pyramidmodule_11:
   - '9'
   tracks:
   - Strength
+  icon: Powerful_Bursts.png
 pyramidmodule_12:
   id: 12
   name: Quick Skills
@@ -281,18 +288,19 @@ pyramidmodule_12:
     zone: *1
     time: 2017-05-28 10:26:13.298974000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:38:38.871538000 Z
+    utc: 2017-07-11 16:58:49.595948000 Z
     zone: *1
-    time: 2017-06-08 14:38:38.871538000 Z
+    time: 2017-07-11 11:58:49.595948000 Z
   deleted_at: 
   position: 7
   level: 2
   prereq:
-  - '3'
   - '7'
+  - '3'
   tracks:
   - Speed
   - Skill
+  icon: Quick_Skills.png
 pyramidmodule_13:
   id: 13
   name: Passing Combos
@@ -321,17 +329,18 @@ pyramidmodule_13:
     zone: *1
     time: 2017-05-30 05:41:13.926772000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-08 19:40:36.590372000 Z
+    utc: 2017-07-11 16:58:39.220713000 Z
     zone: *1
-    time: 2017-06-08 14:40:36.590372000 Z
+    time: 2017-07-11 11:58:39.220713000 Z
   deleted_at: 
   position: 6
   level: 2
   prereq:
-  - '7'
   - '5'
+  - '7'
   tracks:
   - Skill
+  icon: Passing_Combos.png
 pyramidmodule_15:
   id: 15
   name: Creative Skill
@@ -357,17 +366,18 @@ pyramidmodule_15:
     zone: *1
     time: 2017-05-31 07:57:56.119501000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-17 17:14:16.783629000 Z
+    utc: 2017-07-11 16:59:40.415464000 Z
     zone: *1
-    time: 2017-06-17 12:14:16.783629000 Z
+    time: 2017-07-11 11:59:40.415464000 Z
   deleted_at: 
   position: 10
   level: 3
   prereq:
-  - '12'
   - '13'
+  - '12'
   tracks:
   - Skill
+  icon: Creative.png
 pyramidmodule_16:
   id: 16
   name: Soccer Speed
@@ -392,19 +402,20 @@ pyramidmodule_16:
     zone: *1
     time: 2017-06-02 05:52:31.977395000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-17 23:10:48.811024000 Z
+    utc: 2017-07-11 16:59:51.774212000 Z
     zone: *1
-    time: 2017-06-17 18:10:48.811024000 Z
+    time: 2017-07-11 11:59:51.774212000 Z
   deleted_at: 
   position: 11
   level: 3
   prereq:
-  - '10'
   - '12'
+  - '10'
   tracks:
   - Speed
   - Skill
   - Strength
+  icon: Soccer_Speed.png
 pyramidmodule_17:
   id: 17
   name: Soccer Power
@@ -431,9 +442,9 @@ pyramidmodule_17:
     zone: *1
     time: 2017-06-02 05:55:56.697624000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-05 10:34:49.454986000 Z
+    utc: 2017-07-11 17:00:02.003959000 Z
     zone: *1
-    time: 2017-06-05 05:34:49.454986000 Z
+    time: 2017-07-11 12:00:02.003959000 Z
   deleted_at: 
   position: 12
   level: 3
@@ -442,6 +453,7 @@ pyramidmodule_17:
   - '11'
   tracks:
   - Strength
+  icon: Soccer_Power.png
 pyramidmodule_18:
   id: 18
   name: 'GameSPEED: Skill'
@@ -466,9 +478,9 @@ pyramidmodule_18:
     zone: *1
     time: 2017-06-02 06:01:13.932698000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-29 00:34:53.650378000 Z
+    utc: 2017-07-11 17:00:21.024196000 Z
     zone: *1
-    time: 2017-06-28 19:34:53.650378000 Z
+    time: 2017-07-11 12:00:21.024196000 Z
   deleted_at: 
   position: 13
   level: 4
@@ -478,6 +490,7 @@ pyramidmodule_18:
   tracks:
   - Speed
   - Skill
+  icon: GameSpeedSkill.png
 pyramidmodule_19:
   id: 19
   name: 'GameSPEED: Power'
@@ -502,18 +515,19 @@ pyramidmodule_19:
     zone: *1
     time: 2017-06-02 06:05:25.779875000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-17 23:18:30.516321000 Z
+    utc: 2017-07-11 17:00:32.525856000 Z
     zone: *1
-    time: 2017-06-17 18:18:30.516321000 Z
+    time: 2017-07-11 12:00:32.525856000 Z
   deleted_at: 
   position: 14
   level: 4
   prereq:
-  - '17'
   - '16'
+  - '17'
   tracks:
   - Speed
   - Strength
+  icon: GameSpeedPower.png
 pyramidmodule_20:
   id: 20
   name: Complete Programs
@@ -536,42 +550,17 @@ pyramidmodule_20:
     zone: *1
     time: 2017-06-02 06:31:41.035668000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-06-17 23:21:29.332524000 Z
+    utc: 2017-07-11 17:01:32.267553000 Z
     zone: *1
-    time: 2017-06-17 18:21:29.332524000 Z
+    time: 2017-07-11 12:01:32.267553000 Z
   deleted_at: 
   position: 15
   level: 5
   prereq:
-  - '19'
   - '18'
+  - '19'
   tracks:
   - Speed
   - Skill
   - Strength
-pyramidmodule_22:
-  id: 22
-  name: Yeaher
-  description: asdf
-  display_track: speed
-  video_file_name: 
-  video_content_type: 
-  video_file_size: 
-  video_updated_at: 
-  keyframe_file_name: 
-  keyframe_content_type: 
-  keyframe_file_size: 
-  keyframe_updated_at: 
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-07-10 16:42:35.003740000 Z
-    zone: *1
-    time: 2017-07-10 11:42:35.003740000 Z
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2017-07-10 16:42:35.003740000 Z
-    zone: *1
-    time: 2017-07-10 11:42:35.003740000 Z
-  deleted_at: 
-  position: 1
-  level: 
-  prereq: []
-  tracks: []
+  icon: Seasonal_Programs.png

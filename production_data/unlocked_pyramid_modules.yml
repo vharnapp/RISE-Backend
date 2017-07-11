@@ -3853,3 +3853,16 @@ unlockedpyramidmodule_256:
     utc: 2017-07-10 02:49:16.153287000 Z
     zone: *1
     time: 2017-07-09 21:49:16.153287000 Z
+unlockedpyramidmodule_257:
+  id: 257
+  user_id: 184
+  pyramid_module_id: 3
+  completed_phases: []
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 17:30:42.993057000 Z
+    zone: *1
+    time: 2017-07-11 12:30:42.993057000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 17:30:42.993057000 Z
+    zone: *1
+    time: 2017-07-11 12:30:42.993057000 Z
