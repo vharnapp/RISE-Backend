@@ -14,7 +14,7 @@
             - if current_user != true_user
               li = link_to '<span>Stop</span>'.html_safe, stop_impersonating_admin_users_path
             - else
-              li = link_to 'Admin', admin_users_path
+              li = link_to 'Admin', admin_users_path, data: { turbolinks: false }
       .top-bar-right.hide-for-small-only
         ul
           li
