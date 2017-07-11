@@ -9,13 +9,18 @@ section.main-content__body.main-content__body--flush
             = image_tag player.avatar.url, class: 'player-avatar'
             span.status-badge.active
 
-          .player-name = player.full_name
+          .player-name
+            = player.full_name
+            br
+            = "#{player.phase_attempts.count} Lifetime Attempts"
 
         - level = player.highest_pyramid_level_achieved
         .pyramid-modules
           - PyramidModule.by_level(level).each do |pyramid_module|
             .circle-container
               .circle data-value="#{pyramid_module.percent_complete_for_user(player)}"
+                .logo-container
+                  = image_tag pyramid_module.icon.url
               = check_box_tag 'unlock_pyramid_module',
                               pyramid_module.id,
                               player.unlocked_pyramid_modules.includes(:pyramid_module).flat_map(&:pyramid_module).include?(pyramid_module),
