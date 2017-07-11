@@ -7,5 +7,6 @@ $(document).on('turbolinks:load', function() {
     size: '50',
     thickness: '3',
     animationStartValue: '0',
+    fill: { color: "#96E17D" },
   });
 });
