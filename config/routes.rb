@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
 
   resources :unlocked_pyramid_modules, only: [:create, :destroy]
+  resources :affiliations, only: [:destroy]
 
   devise_for :users, controllers: {
     registrations: 'devise_customizations/registrations',

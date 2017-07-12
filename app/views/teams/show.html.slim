@@ -29,3 +29,10 @@ section.main-content__body.main-content__body--flush
                               data: { user_id: player.id, pyramid_module_id: pyramid_module.id, unlocked_pyramid_module_id: unlocked_pyramid_module.try(:id) }
               = pyramid_module.name
               / = pyramid_module.percent_complete_for_user(player, debug: true)
+
+          .circle-container
+            - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
+
+            div(style='position: absolute; right: -100px; top: 20px;')
+              span(data-tooltip aria-haspopup='true' class='has-tip' data-disable-hover='false' tabindex='1' title="Delete #{player.full_name}?" style='cursor:pointer; border-bottom: none;')
+                = link_to '...', affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }

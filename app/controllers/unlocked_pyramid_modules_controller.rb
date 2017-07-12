@@ -1,6 +1,7 @@
 class UnlockedPyramidModulesController < ApplicationController
   load_and_authorize_resource
 
+  # TODO: (2017-07-12) jon => move this to the API controller and access it from there
   def create
     @unlocked_pyramid_module = UnlockedPyramidModule.new(unlocked_pyramid_module_params)
     @unlocked_pyramid_module.save
