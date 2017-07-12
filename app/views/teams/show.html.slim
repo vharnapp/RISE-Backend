@@ -21,9 +21,11 @@ section.main-content__body.main-content__body--flush
               .circle data-value="#{pyramid_module.percent_complete_for_user(player)}"
                 .logo-container
                   = image_tag pyramid_module.icon.url
-              = check_box_tag 'unlock_pyramid_module',
+              - unlocked_pyramid_module = player.unlocked_pyramid_modules.find_by(pyramid_module_id: pyramid_module.id)
+              = check_box_tag "unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}",
                               pyramid_module.id,
                               player.unlocked_pyramid_modules.includes(:pyramid_module).flat_map(&:pyramid_module).include?(pyramid_module),
-                              class: 'unlock-pyramid-module-checkbox'
+                              class: 'unlock-pyramid-module-checkbox',
+                              data: { user_id: player.id, pyramid_module_id: pyramid_module.id, unlocked_pyramid_module_id: unlocked_pyramid_module.try(:id) }
               = pyramid_module.name
               / = pyramid_module.percent_complete_for_user(player, debug: true)

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :teams, only: [:show, :edit, :update]
   end
 
+  resources :unlocked_pyramid_modules, only: [:create, :destroy]
+
   devise_for :users, controllers: {
     registrations: 'devise_customizations/registrations',
     sessions: 'devise_customizations/sessions',
