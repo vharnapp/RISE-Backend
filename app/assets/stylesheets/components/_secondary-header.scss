@@ -36,8 +36,12 @@
   margin: 0;
 }
 .pyramid-module{
-  text-align: center;
   flex-basis: 200px;
+  text-align: center;
+}
+.pyramid-module canvas{
+  display: block;
+  margin: 0px auto;
 }
 .circle{
   // background: red;
@@ -48,9 +52,10 @@
   height: 66px;
   background: black;
   border-radius: 50%;
-  position: relative;
-  top: -77px;
-  left: 67px;
+  // position: relative;
+  // margin-top: -77px;
+  // margin-left: 5px;
+  margin: -71px auto 0 auto;
   color: white;
 }
 .logo-container img{
