@@ -37,11 +37,12 @@ $flashes: (
   border-radius: 2px;
   // display: block;
   // width: 180px;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 30px;
   width: 180px;
   margin-left: -90px;
+  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.26);
 }
 
 .remove-flash{

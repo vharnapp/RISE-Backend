@@ -11,20 +11,6 @@
   margin: 0px 5px;
 }
 
-// put this somewhere that makes sense
-.player{
-  clear: both;
-  height: 150px;
-  padding: 25px 0;
-  border-bottom: 1px solid;
-  vertical-align: center;
-  display: flex;
-  flex-direction: row;
-}
-.player-info {
-  width: 200px;
-}
-
 .pyramid-modules{
   display: flex;
   flex: 1;
@@ -32,6 +18,25 @@
   justify-content: center;
   position: relative;
 }
+
+@media screen and (max-width: 500px) {
+
+  .pyramid-modules {
+  }
+  .logo-container{
+    width: 40px;
+    height: 40px;
+  }
+  .logo-container img{
+    width: 20px;
+    height: 20px;
+  }
+  .circle{
+    height: 50px;
+  }
+}
+
+
 .pyramid-modules label{
   margin: 0;
 }
@@ -81,10 +86,24 @@
   top: 5px;
 }
 
+// put this somewhere that makes sense
+.player{
+  clear: both;
+  padding: 25px 0;
+  border-bottom: 1px solid #e8e8e8;
+  vertical-align: center;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.player-info {
+  /* width: 200px; */
+}
 .player-avatar {
   position: relative;
   width: 50px;
   height: 50px;
+  margin-right: 20px;
 
   img {
     width: 50px;
@@ -115,9 +134,18 @@
   }
 }
 .player-name {
-  margin-top: 6px;
-}
+  margin-top: 10px;
+  font-size: 12px;
 
+  h3 {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline;
+  }
+}
+span.delete a {
+  color: #ccc;
+}
 .main-content {
   background-color: $dark-green;
   border-radius: $base-border-radius;

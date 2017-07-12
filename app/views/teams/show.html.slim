@@ -1,21 +1,21 @@
 = render 'components/secondary-header'
 
 section.main-content__body.main-content__body--flush
-  .players.row
+  .players.row.columns
     - @team.players.each do |player|
       .player
-        .player-info
-          .player-avatar
+        .player-info.small-12.medium-3
+          .player-avatar.left
             = image_tag player.avatar.url, class: 'player-avatar'
             span.status-badge.active
 
-          .player-name
-            = player.full_name
+          .player-name.left
+            h3 = player.full_name
             br
             = "#{player.phase_attempts.count} Lifetime Attempts"
 
         - level = player.highest_pyramid_level_achieved
-        .pyramid-modules
+        .pyramid-modules.small-12.medium-9
           - PyramidModule.by_level(level).each do |pyramid_module|
             .pyramid-module
               .circle(data-value="#{pyramid_module.percent_complete_for_user(player)}")
@@ -36,6 +36,6 @@ section.main-content__body.main-content__body--flush
                 / = pyramid_module.percent_complete_for_user(player, debug: true)
 
           div(style='position: absolute; right: 0px; top: 20px;')
-            span(data-tooltip aria-haspopup='true' class='has-tip' data-disable-hover='false' tabindex='1' title="Delete #{player.full_name}?" style='cursor:pointer; border-bottom: none;')
+            span.delete(data-tooltip aria-haspopup='true' class='has-tip' data-disable-hover='false' tabindex='1' title="Delete #{player.full_name}?" style='cursor:pointer; border-bottom: none;')
               - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
               = link_to '&cross;'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }

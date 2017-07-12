@@ -2,7 +2,7 @@ header.main-content__header[role='banner']
   .row.columns
     .group.small-6.medium-4.left
       = image_tag(@team.logo_image_url, class: 'team-logo')
-      h1= @team.name
+      h1.hide-for-small-only = @team.name
     .small-6.medium-4.left.text-center.padding-t-5
       span.team-code-label Team Code
       span.team-code= @team.display_code
