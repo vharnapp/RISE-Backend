@@ -1,7 +1,8 @@
-<% if flash.any? %>
+<% if flash.any? || local_assigns.has_key?(:user_facing_flashes) %>
   <div class="flashes">
     <% user_facing_flashes.each do |key, value| -%>
       <div class="flash-<%= key %>"><%= value %></div>
+      <%= link_to '&times;'.html_safe, '#', class: 'remove-flash' %>
     <% end -%>
   </div>
 <% end %>

@@ -17,6 +17,7 @@
 // ... your other scripts here ...
 //
 //= require foundation
+//= require flash
 //= require athletefit
 //
 // ... Turbolinks needs to be last

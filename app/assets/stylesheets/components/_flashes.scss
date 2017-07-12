@@ -25,3 +25,30 @@ $flashes: (
     }
   }
 }
+
+.flash-mini{
+  height: 30px;
+  display: inline-block;
+  padding: 0;
+  font-size: 12px;
+  // margin-top: 2px;
+  padding: 9px 15px;
+  z-index: 10;
+  border-radius: 2px;
+  // display: block;
+  // width: 180px;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  width: 180px;
+  margin-left: -90px;
+}
+
+.remove-flash{
+  float: right;
+  top: -12px;
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  right: 5px;
+}
