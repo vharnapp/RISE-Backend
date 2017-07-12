@@ -97,6 +97,7 @@ class User < ApplicationRecord
   end
   # rubocop:enable Metrics/MethodLength
 
+  # TODO: (2017-07-12) jon => move this to pyramid module? or move percent_complete_for_user to here.
   def days_since_last_confidence_rating_for_pyramid_module(pyramid_module)
     workout_ids = pyramid_module.phases.includes(:workouts).flat_map(&:workouts).map(&:id)
 
@@ -105,10 +106,10 @@ class User < ApplicationRecord
       if crs.present?
         ((Time.current - crs.first.updated_at) / 1.day).round
       else
-        'X'
+        'x'
       end
     else
-      'X'
+      'x'
     end
   end
 

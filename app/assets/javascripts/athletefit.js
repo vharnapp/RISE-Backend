@@ -12,9 +12,11 @@ $(document).on('turbolinks:load', function() {
     if (unlocked_pyramid_module_id == undefined){
       var method = 'POST'
       var url = ''
+      var locked_unlocked_text = 'Unlocked'
     } else {
       var method = 'DELETE'
       var url = unlocked_pyramid_module_id;
+      var locked_unlocked_text = 'Locked'
     }
 
     $.ajax({
@@ -27,6 +29,7 @@ $(document).on('turbolinks:load', function() {
       success: function(data){
         // console.log('success');
         $that.data('unlocked-pyramid-module-id', data.unlocked_pyramid_module_id);
+        flashMini('Pyramid Module ' + locked_unlocked_text, 'body');
       }
     });
   });

@@ -12,53 +12,68 @@
 }
 
 // put this somewhere that makes sense
-.pyramid-modules{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: relative;
-  left: -100px;
-}
 .player{
   clear: both;
   height: 150px;
   padding: 25px 0;
   border-bottom: 1px solid;
   vertical-align: center;
+  display: flex;
+  flex-direction: row;
 }
-.circle-container{
+.player-info {
+  width: 200px;
+}
+
+.pyramid-modules{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+.pyramid-modules label{
+  margin: 0;
+}
+.pyramid-module{
   text-align: center;
   flex-basis: 200px;
 }
 .circle{
-  width: 200px;
-  height: 60px;
+  // background: red;
+  height: 76px;
 }
 .logo-container{
-  width: 52px;
-  height: 52px;
+  width: 66px;
+  height: 66px;
   background: black;
   border-radius: 50%;
   position: relative;
-  top: -62px;
-  left: 74px;
+  top: -77px;
+  left: 67px;
+  color: white;
 }
 .logo-container img{
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   position: relative;
-  top: 10px;
-}
-.player-info {
-  width: 400px;
-  float: left;
+  top: 17px;
 }
 
+.days-since-active{
+  position: relative;
+  top: 14px;
+  font-size: 11px;
+}
+.checkbox-container{
+  // position: relative;
+  // top: 16px;
+}
 .unlock-pyramid-module-checkbox {
-  margin: 0 4px 0 0;
+  margin: 0 5px 0 0;
   padding: 0;
   position: relative;
-  top: 4px;
+  top: 5px;
 }
 
 .player-avatar {

@@ -17,22 +17,25 @@ section.main-content__body.main-content__body--flush
         - level = player.highest_pyramid_level_achieved
         .pyramid-modules
           - PyramidModule.by_level(level).each do |pyramid_module|
-            .circle-container
-              .circle data-value="#{pyramid_module.percent_complete_for_user(player)}"
+            .pyramid-module
+              .circle(data-value="#{pyramid_module.percent_complete_for_user(player)}")
                 .logo-container
                   = image_tag pyramid_module.icon.url
-              - unlocked_pyramid_module = player.unlocked_pyramid_modules.find_by(pyramid_module_id: pyramid_module.id)
-              = check_box_tag "unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}",
-                              pyramid_module.id,
-                              player.unlocked_pyramid_modules.includes(:pyramid_module).flat_map(&:pyramid_module).include?(pyramid_module),
-                              class: 'unlock-pyramid-module-checkbox',
-                              data: { user_id: player.id, pyramid_module_id: pyramid_module.id, unlocked_pyramid_module_id: unlocked_pyramid_module.try(:id) }
-              = pyramid_module.name
-              / = pyramid_module.percent_complete_for_user(player, debug: true)
+                  .days-since-active
+                    = player.days_since_last_confidence_rating_for_pyramid_module(pyramid_module).to_s + ' days'
+              .checkbox-container
+                - unlocked_pyramid_module = player.unlocked_pyramid_modules.find_by(pyramid_module_id: pyramid_module.id)
+                = check_box_tag "unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}",
+                                pyramid_module.id,
+                                player.unlocked_pyramid_modules.includes(:pyramid_module).flat_map(&:pyramid_module).include?(pyramid_module),
+                                class: 'unlock-pyramid-module-checkbox',
+                                data: { user_id: player.id, pyramid_module_id: pyramid_module.id, unlocked_pyramid_module_id: unlocked_pyramid_module.try(:id) },
+                                style: "display: #{level > 1 ? 'none' : ''}",
+                                disabled: level > 1
+                = label_tag "unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}", pyramid_module.name
+                / = pyramid_module.percent_complete_for_user(player, debug: true)
 
-          .circle-container
-            - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
-
-            div(style='position: absolute; right: -100px; top: 20px;')
-              span(data-tooltip aria-haspopup='true' class='has-tip' data-disable-hover='false' tabindex='1' title="Delete #{player.full_name}?" style='cursor:pointer; border-bottom: none;')
-                = link_to '...', affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }
+          div(style='position: absolute; right: 0px; top: 20px;')
+            span(data-tooltip aria-haspopup='true' class='has-tip' data-disable-hover='false' tabindex='1' title="Delete #{player.full_name}?" style='cursor:pointer; border-bottom: none;')
+              - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
+              = link_to '&cross;'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }

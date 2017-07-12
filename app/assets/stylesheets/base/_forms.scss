@@ -13,13 +13,10 @@ legend {
 
 label, span.toggle-label {
   display: block;
-  font-weight: 600;
   margin-bottom: $small-spacing / 2;
   font-family: "Source Sans Pro";
   font-size: 14px;
   color: $dark-gray;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 input, select {
