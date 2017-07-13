@@ -2,6 +2,15 @@ $(document).on('turbolinks:load', function() {
   console.log('(document).turbolinks:load')
   $(document).foundation();
 
+  $('.circle').circleProgress({
+    startAngle: -Math.PI / 2,
+    size: '76',
+    thickness: '5',
+    animationStartValue: '0',
+    fill: { color: "#5dff64" },
+    emptyFill: '#94989E',
+  });
+
   // Coach dashboard
   $('.unlock-pyramid-module-checkbox').on('change', function(){
     var user_id = $(this).data('user-id');

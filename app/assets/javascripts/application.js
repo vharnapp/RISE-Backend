@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require jquery/circle-progress.min
 //
 // ... your other scripts here ...
 //
