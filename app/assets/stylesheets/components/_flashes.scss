@@ -13,6 +13,7 @@ $flashes: (
     display: block;
     padding: $base-spacing / 2;
     text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
 
     a {
       color: shade($color, 70%);
@@ -23,7 +24,27 @@ $flashes: (
         color: shade($color, 90%);
       }
     }
+
+    a.remove-flash{
+      color: #ccc !important;
+      float: right;
+      font-size: 24px;
+      text-decoration: none;
+      position: relative;
+      right: -12px;
+      top: -12px;
+      width: 25px;
+      height: 25px;
+      line-height: 0.9;
+      outline: 0;
+    }
   }
+}
+
+.flashes{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .flash-mini{
@@ -43,13 +64,4 @@ $flashes: (
   width: 180px;
   margin-left: -90px;
   box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.26);
-}
-
-.remove-flash{
-  float: right;
-  top: -12px;
-  position: relative;
-  text-decoration: none;
-  font-size: 12px;
-  right: 5px;
 }
