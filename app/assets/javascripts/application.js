@@ -13,10 +13,12 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require jquery/circle-progress.min
 //
 // ... your other scripts here ...
 //
 //= require foundation
+//= require flash
 //= require athletefit
 //
 // ... Turbolinks needs to be last

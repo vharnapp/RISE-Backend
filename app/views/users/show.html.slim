@@ -1,10 +1,13 @@
-h2
-  | Player:&nbsp;
-  = @user.full_name
+.row.columns.padding-t-25
+  .small-12.medium-6.left.padding-t-25
+    h3 = @user.full_name
+    = image_tag(@user.avatar.url, class: 'coach-avatar')
+    = link_to (@user.email), "mailto:#{@user.email}"
 
-h3
-  | Teams:&nbsp;
+  .small-12.medium-6.left.padding-t-25
+    h3
+      | Teams
 
-ul
-- @user.affiliations.each do |affiliation|
-  li= link_to "#{affiliation.team.name} (#{affiliation.title})", club_team_path(affiliation.team.club, affiliation.team)
+    ul
+    - @user.affiliations.each do |affiliation|
+      li = link_to "#{affiliation.team.name} (#{affiliation.title})", club_team_path(affiliation.team.club, affiliation.team)

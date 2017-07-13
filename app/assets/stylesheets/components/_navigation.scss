@@ -1,0 +1,220 @@
+// Top Bar Styling
+.logo {
+  width: 32px;
+}
+.top-bar {
+    background: none;
+    padding: 1.8em 0em;
+}
+.top-bar, .top-bar ul {
+    background-color: #000;
+}
+.top-bar-section ul li {
+    background: none;
+    font-weight: bold;
+}
+.top-bar-section ul li > a {
+    color: $light-gray;
+    background: none;
+    font-weight: bold;
+}
+.top-bar a:hover {
+      color: white !important;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: none;
+    font-weight: bold;
+    }
+    .top-bar-section li:not(.has-form) a:not(.button):hover {
+        background: none;
+        color: white;
+    }
+.top-bar .toggle-topbar.menu-icon a {
+    color: white;
+    /*height: 34px; */
+    line-height: 33px;
+    padding: 0 2.5rem 0 0.9375rem;
+    position: relative;
+}
+.top-bar .toggle-topbar.menu-icon a:hover {
+    color: white;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    margin-top: -8px;
+    top: 50%;
+    right: 0.9375rem;
+    box-shadow: 0 0 0 1px $primary, 0 7px 0 1px $primary, 0 14px 0 1px $primary;
+    width: 16px;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: $primary transparent transparent;
+  }
+.top-bar-left ul.menu li.menu-text {
+  color: white;
+}
+.is-dropdown-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    min-width: 200px;
+    border: none;
+    background: white;
+    color: $dark-gray;
+}
+.menu-text {
+  margin: 0px 1rem 0px 0px;
+  padding: 0px;
+}
+.menu > li > a {
+    display: block;
+    padding: 0rem 2rem 0rem 0rem;
+    line-height: 1;
+    color: white;
+    font-weight: bold;
+}
+.top-bar-right {
+  color: white;
+  padding-top: 5px;
+
+  a {
+    color: white;
+    font-weight: bold;
+  }
+}
+// Page Headers
+#page-header {
+  height: auto;
+  background: #000;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+  top: 0px;
+  font-size: 16px;
+
+  .title {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    color: white;
+    line-height: 26px;
+  }
+  .date {
+    color: white;
+    margin-top: -5px;
+  }
+  .user-status {
+    font-size: 14px;
+    color: white;
+    line-height: 26px;
+    float: right;
+    padding-top: 8px;
+  }
+}
+#clinic-header, #organization-header {
+  background: $dark-green;
+  height: 88px;
+  width: 100%;
+  padding: 15px 0px;
+
+  .group {
+    float: left;
+    margin-right: 45px;
+  }
+  span.group-label {
+    opacity: 0.8;
+    font-family: "Source Sans Pro";
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+  h1 {
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 51px;
+    margin-top: -10px;
+  }
+  h1 a {
+    color: #ffffff;
+  }
+  h1 a:hover {
+    text-decoration: underline;
+  }
+}
+#clinic-stats {
+  background: #F6F6F6;
+  padding: 30px 0px 20px 0px;
+
+  .graph {
+    background: #FFFFFF;
+    border-radius: 4px;
+    min-width: 310px;
+    max-width: 894px;
+    height: 360px;
+  }
+  .highcharts-grid-line{
+    stroke-dasharray: 1, 8;
+  }
+  .stats{
+    padding-right: 0;
+  }
+  .stat-block {
+    height: 169px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 22px;
+    padding-top: 20px;
+  }
+  .stat {
+  	color: $dark-blue;
+  	font-size: 68px;
+  	font-weight: 300;
+  	line-height: 89px;
+  	text-align: center;
+  }
+  .stat-label {
+  	color: $dark-blue;
+  	font-size: 24px;
+  	font-weight: 300;
+  	line-height: 32px;
+  }
+  .stat-descriptor {
+  	color: $dark-gray;
+  	font-size: 16px;
+  	line-height: 21px;
+  	text-align: center;
+  }
+}
+
+// SETTINGS MENU
+
+ul.settings-menu li.clickable {
+  padding-left: 20px;
+}
+.menu.vertical > li {
+    display: block;
+    color: white;
+    padding: .5em;
+    z-index: 9;
+}
+.dropdown.menu > li.opens-left > .is-dropdown-submenu {
+    background: $dark-gray;
+    color: black;
+    text-align: left;
+    width: 150px;
+    font-family: Helvetica, Arial;
+    top: 100%;
+    left: 0;
+}
+
+li.settings-menu .menu > li > a {
+    display: block;
+    padding: 0rem 2rem 0rem 0rem;
+    line-height: 1;
+    color: white;
+    font-weight: bold;
+    color: black;
+    background: $dark-gray;
+}

@@ -4,7 +4,7 @@ class Team < ApplicationRecord
   extend FriendlyId
   friendly_id :name
 
-  mount_uploader :logo, ImageUploader
+  mount_uploader :logo, LogoUploader
 
   before_create :generate_code
 
@@ -31,6 +31,16 @@ class Team < ApplicationRecord
   def display_code
     # chunk into groups of 3 separated by dashes
     code.chars.to_a.each_slice(3).to_a.map(&:join).join('-')
+  rescue
+    'n/a'
+  end
+
+  def logo_image_url
+    if logo.url.present? && !logo.url.match?(/\/assets\/fallback\/default.*/)
+      logo.url
+    else
+      club.logo.url
+    end
   end
 
   before_save do

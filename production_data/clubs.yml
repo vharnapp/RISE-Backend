@@ -1,0 +1,327 @@
+---
+club_1:
+  id: 1
+  name: Wisconsin
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:40:00.891674000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-04-06 10:40:00.891674000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 18:17:22.819276000 Z
+    zone: *1
+    time: 2017-04-06 13:17:22.819276000 Z
+  slug: wisconsin
+  deleted_at: 
+  position: 
+  logo: 
+  contact_first_name: 
+  contact_last_name: 
+  contact_email: 
+  contact_phone: 
+  address_line1: 
+  address_line2: 
+  address_city: 
+  address_state: 
+  address_zip: 
+  teams_csv: 
+club_2:
+  id: 2
+  name: Michigan
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:48:08.320914000 Z
+    zone: *1
+    time: 2017-04-06 10:48:08.320914000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:48:08.320914000 Z
+    zone: *1
+    time: 2017-04-06 10:48:08.320914000 Z
+  slug: michigan
+  deleted_at: 
+  position: 
+  logo: 
+  contact_first_name: 
+  contact_last_name: 
+  contact_email: 
+  contact_phone: 
+  address_line1: 
+  address_line2: 
+  address_city: 
+  address_state: 
+  address_zip: 
+  teams_csv: 
+club_4:
+  id: 4
+  name: Awesome Club
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 18:20:24.639367000 Z
+    zone: *1
+    time: 2017-04-06 13:20:24.639367000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 18:20:24.639367000 Z
+    zone: *1
+    time: 2017-04-06 13:20:24.639367000 Z
+  slug: awesome-club
+  deleted_at: 
+  position: 
+  logo: 
+  contact_first_name: 
+  contact_last_name: 
+  contact_email: 
+  contact_phone: 
+  address_line1: 
+  address_line2: 
+  address_city: 
+  address_state: 
+  address_zip: 
+  teams_csv: 
+club_5:
+  id: 5
+  name: JonTestManual
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:45:35.116181000 Z
+    zone: *1
+    time: 2017-07-01 09:45:35.116181000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:45:35.116181000 Z
+    zone: *1
+    time: 2017-07-01 09:45:35.116181000 Z
+  slug: jontestmanual
+  deleted_at: 
+  position: 
+  logo: 
+  contact_first_name: Jon
+  contact_last_name: Kinney
+  contact_email: jon@headway.io
+  contact_phone: '6083388880'
+  address_line1: 435 N Broadway St, STE C, C
+  address_line2: STE C
+  address_city: De Pere
+  address_state: WI
+  address_zip: '54115'
+  teams_csv: 
+club_6:
+  id: 6
+  name: JonTestCSV
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:09.829230000 Z
+    zone: *1
+    time: 2017-07-01 09:46:09.829230000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:09.829230000 Z
+    zone: *1
+    time: 2017-07-01 09:46:09.829230000 Z
+  slug: jontestcsv
+  deleted_at: 
+  position: 
+  logo: 
+  contact_first_name: Jon
+  contact_last_name: Kinney
+  contact_email: jon@headway.io
+  contact_phone: '6083388880'
+  address_line1: 435 N Broadway St, STE C, C
+  address_line2: STE C
+  address_city: De Pere
+  address_state: WI
+  address_zip: '54115'
+  teams_csv: New_Rise_Club.csv
+club_7:
+  id: 7
+  name: AthleteFIT Elite Players
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:04:58.619620000 Z
+    zone: *1
+    time: 2017-07-01 18:04:58.619620000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:04:58.619620000 Z
+    zone: *1
+    time: 2017-07-01 18:04:58.619620000 Z
+  slug: athletefit-elite-players
+  deleted_at: 
+  position: 
+  logo: 
+  contact_first_name: Scott
+  contact_last_name: Moody
+  contact_email: smoody@athletefit.com
+  contact_phone: '9132690770'
+  address_line1: 5216 W. 166th Street
+  address_line2: ''
+  address_city: ''
+  address_state: Kansas
+  address_zip: '66085'
+  teams_csv: 
+club_8:
+  id: 8
+  name: Ohio State FC
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:48:34.856688000 Z
+    zone: *1
+    time: 2017-07-02 15:48:34.856688000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:48:34.856688000 Z
+    zone: *1
+    time: 2017-07-02 15:48:34.856688000 Z
+  slug: ohio-state-fc
+  deleted_at: 
+  position: 
+  logo: OhioState_Logo.jpg
+  contact_first_name: Urban
+  contact_last_name: Meyer
+  contact_email: umeyer@buckeyes.com
+  contact_phone: 888.555.1212
+  address_line1: The Horseshoe
+  address_line2: 10 Champion Drive
+  address_city: Columbus
+  address_state: OH
+  address_zip: '44221'
+  teams_csv: 
+club_9:
+  id: 9
+  name: JonTeam
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:52.278872000 Z
+    zone: *1
+    time: 2017-07-02 16:13:52.278872000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:52.278872000 Z
+    zone: *1
+    time: 2017-07-02 16:13:52.278872000 Z
+  slug: jonteam
+  deleted_at: 
+  position: 
+  logo: jon-kinney.jpg
+  contact_first_name: Jon
+  contact_last_name: Team
+  contact_email: jon@team.com
+  contact_phone: 123-123-1234
+  address_line1: 123 Street St
+  address_line2: STE C
+  address_city: De Pere
+  address_state: WI
+  address_zip: '54115'
+  teams_csv: 
+club_10:
+  id: 10
+  name: Auburn FC
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:29:09.897685000 Z
+    zone: *1
+    time: 2017-07-02 16:29:09.897685000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:29:09.897685000 Z
+    zone: *1
+    time: 2017-07-02 16:29:09.897685000 Z
+  slug: auburn-fc
+  deleted_at: 
+  position: 
+  logo: Auburn_University_Logo.png
+  contact_first_name: Bo
+  contact_last_name: Jackson
+  contact_email: bjackson@auburn.edu
+  contact_phone: 888.555.1212
+  address_line1: 10 War Eagle Drive
+  address_line2: ''
+  address_city: Auburn
+  address_state: AL
+  address_zip: '12345'
+  teams_csv: 
+club_11:
+  id: 11
+  name: TestClubGood
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:28.865165000 Z
+    zone: *1
+    time: 2017-07-02 18:45:28.865165000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:28.865165000 Z
+    zone: *1
+    time: 2017-07-02 18:45:28.865165000 Z
+  slug: testclubgood
+  deleted_at: 
+  position: 
+  logo: 
+  contact_first_name: Jon
+  contact_last_name: Kinney
+  contact_email: jonkinney@gmail.com
+  contact_phone: '6083388880'
+  address_line1: 2029 East Higgins Hill
+  address_line2: STE C
+  address_city: De Pere
+  address_state: WI
+  address_zip: '54115'
+  teams_csv: 
+club_12:
+  id: 12
+  name: Bowling Green FC
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:29.906430000 Z
+    zone: *1
+    time: 2017-07-03 07:38:29.906430000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:29.906430000 Z
+    zone: *1
+    time: 2017-07-03 07:38:29.906430000 Z
+  slug: bowling-green-fc
+  deleted_at: 
+  position: 
+  logo: BowlingGreen_Logo_2.jpg
+  contact_first_name: Mike
+  contact_last_name: Dorn
+  contact_email: mdorn@gmail.com
+  contact_phone: 888.123.4567
+  address_line1: 10 Falcon Drive
+  address_line2: ''
+  address_city: Bowling Green
+  address_state: OH
+  address_zip: '44221'
+  teams_csv: 
+club_13:
+  id: 13
+  name: Columbus Crew FC
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:36.047112000 Z
+    zone: *1
+    time: 2017-07-03 08:00:36.047112000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:36.047112000 Z
+    zone: *1
+    time: 2017-07-03 08:00:36.047112000 Z
+  slug: columbus-crew-fc
+  deleted_at: 
+  position: 
+  logo: Columbus-Crew-Logo.jpg
+  contact_first_name: Susan
+  contact_last_name: Dougherty
+  contact_email: sued@crew.com
+  contact_phone: 888.123.4567
+  address_line1: 10 Crew Drive
+  address_line2: ''
+  address_city: Columbus
+  address_state: OH
+  address_zip: '44221'
+  teams_csv: 
+club_14:
+  id: 14
+  name: AthleteFIT Elite Players
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:30.735677000 Z
+    zone: *1
+    time: 2017-07-03 20:10:30.735677000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:30.735677000 Z
+    zone: *1
+    time: 2017-07-03 20:10:30.735677000 Z
+  slug: athletefit-elite-players-3d40438f-ac53-481e-aafb-6b0843afb0ab
+  deleted_at: 
+  position: 
+  logo: Image_7-3-17_at_8.08_PM.jpg
+  contact_first_name: Scott
+  contact_last_name: Moody
+  contact_email: smoody@athletefit.com
+  contact_phone: 913-269-0770
+  address_line1: 5216 W. 166th Street
+  address_line2: ''
+  address_city: Stilwell
+  address_state: Kansas
+  address_zip: '66085'
+  teams_csv: 

@@ -3,6 +3,8 @@ class PyramidModule < ApplicationRecord
   acts_as_list scope: [:level]
 
   include HasAttachedVideo
+  mount_uploader :icon_white, PyramidModuleIconUploader
+  mount_uploader :icon_black, PyramidModuleIconUploader
 
   enum display_track: {
     speed: 0,
@@ -10,12 +12,16 @@ class PyramidModule < ApplicationRecord
     strength: 2,
   }
 
-  # FIXME: (2017-05-30) jon => Having the order on the association caused AR to
-  # trip a validation in the context of accepts_nested_attributes_for :phases
-  #
-  # has_many :phases, -> { order(position: :asc) }, dependent: :destroy
-  has_many :phases, dependent: :destroy
+  scope :by_level, (->(level) { where(level: level).order(:position) })
+
+  has_many :phases,
+           -> { order(position: :asc) },
+           inverse_of: :pyramid_module,
+           dependent: :destroy
+
   accepts_nested_attributes_for :phases, allow_destroy: true
+
+  has_many :workouts, through: :phases
 
   has_many :unlocked_pyramid_modules, dependent: :destroy
 
@@ -27,8 +33,48 @@ class PyramidModule < ApplicationRecord
     model.tracks&.reject!(&:blank?)
   end
 
+  def self.default_unlocked
+    find_by(position: 3)
+  end
+
   def prerequisites
     PyramidModule.where(id: prereq).map(&:name).join(', ')
+  end
+
+  def percent_complete_for_user(user, debug: false)
+    num_skills_mastered =
+      user
+        .confidence_ratings
+        .joins(workout: :phase)
+        .where(confidence_ratings: { rating: 4 })
+        .where(workout: workouts)
+        .where(phases: { supplemental: false })
+        .count
+
+    num_exercises =
+      workouts
+        .joins(:exercises)
+        .where(phases: { supplemental: false })
+        .uniq
+        .flat_map(&:exercises)
+        .count
+
+    percent = (num_skills_mastered.to_d / num_exercises.to_d).round(2)
+
+    if debug
+      return %(
+        <br>mastered: #{num_skills_mastered}
+        <br>num: #{num_exercises}
+        <br>percent: #{percent}
+      ).html_safe
+    end
+
+    if num_exercises.to_i.positive?
+      return 1.0 if percent > 1.0 # in case a user has more confidence ratings than exercises accidentally somhow
+      percent
+    else
+      0.0
+    end
   end
 end
 
@@ -40,6 +86,8 @@ end
 #  deleted_at            :datetime
 #  description           :text
 #  display_track         :integer
+#  icon_black            :string
+#  icon_white            :string
 #  id                    :integer          not null, primary key
 #  keyframe_content_type :string
 #  keyframe_file_name    :string

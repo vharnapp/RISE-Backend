@@ -1,0 +1,158 @@
+---
+enrollment_1:
+  id: 1
+  team_id: 12
+  subscription_id: 5
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.022727000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-07-02 16:13:53.022727000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.022727000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.022727000 Z
+enrollment_2:
+  id: 2
+  team_id: 13
+  subscription_id: 5
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.361554000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.361554000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.361554000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.361554000 Z
+enrollment_3:
+  id: 3
+  team_id: 14
+  subscription_id: 7
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.004797000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.004797000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.004797000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.004797000 Z
+enrollment_4:
+  id: 4
+  team_id: 15
+  subscription_id: 7
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.358100000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.358100000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.358100000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.358100000 Z
+enrollment_5:
+  id: 5
+  team_id: 16
+  subscription_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.509128000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.509128000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.509128000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.509128000 Z
+enrollment_6:
+  id: 6
+  team_id: 17
+  subscription_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.785518000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.785518000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.785518000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.785518000 Z
+enrollment_7:
+  id: 7
+  team_id: 18
+  subscription_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:31.032315000 Z
+    zone: *1
+    time: 2017-07-03 07:38:31.032315000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:31.032315000 Z
+    zone: *1
+    time: 2017-07-03 07:38:31.032315000 Z
+enrollment_8:
+  id: 8
+  team_id: 19
+  subscription_id: 9
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.418923000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.418923000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.418923000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.418923000 Z
+enrollment_9:
+  id: 9
+  team_id: 20
+  subscription_id: 9
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.661888000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.661888000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.661888000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.661888000 Z
+enrollment_10:
+  id: 10
+  team_id: 21
+  subscription_id: 9
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.893927000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.893927000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.893927000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.893927000 Z
+enrollment_11:
+  id: 11
+  team_id: 22
+  subscription_id: 9
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.957754000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.957754000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.957754000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.957754000 Z
+enrollment_12:
+  id: 12
+  team_id: 23
+  subscription_id: 10
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.305378000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.305378000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.305378000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.305378000 Z
+enrollment_13:
+  id: 13
+  team_id: 24
+  subscription_id: 10
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.394790000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.394790000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.394790000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.394790000 Z

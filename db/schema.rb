@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170701141442) do
+ActiveRecord::Schema.define(version: 20170713175715) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -38,6 +38,15 @@ ActiveRecord::Schema.define(version: 20170701141442) do
     t.string "user_agent"
     t.bigint "user_id"
     t.index ["user_id"], name: "index_authentication_tokens_on_user_id"
+  end
+
+  create_table "club_affiliations", force: :cascade do |t|
+    t.bigint "club_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["club_id"], name: "index_club_affiliations_on_club_id"
+    t.index ["user_id"], name: "index_club_affiliations_on_user_id"
   end
 
   create_table "clubs", force: :cascade do |t|
@@ -182,6 +191,8 @@ ActiveRecord::Schema.define(version: 20170701141442) do
     t.datetime "deleted_at"
     t.text "description"
     t.integer "display_track"
+    t.string "icon_black"
+    t.string "icon_white"
     t.string "keyframe_content_type"
     t.string "keyframe_file_name"
     t.integer "keyframe_file_size"
@@ -288,6 +299,8 @@ ActiveRecord::Schema.define(version: 20170701141442) do
   add_foreign_key "affiliations", "teams"
   add_foreign_key "affiliations", "users"
   add_foreign_key "authentication_tokens", "users"
+  add_foreign_key "club_affiliations", "clubs"
+  add_foreign_key "club_affiliations", "users"
   add_foreign_key "confidence_ratings", "exercises"
   add_foreign_key "confidence_ratings", "users"
   add_foreign_key "confidence_ratings", "workouts"

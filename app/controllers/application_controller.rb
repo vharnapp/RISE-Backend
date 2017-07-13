@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!, unless: -> { is_a?(HighVoltage::PagesController) }
   before_action :add_layout_name_to_gon
   before_action :detect_device_type
+  before_action :set_clubs
 
   respond_to :json, :html, if: :devise_controller? # for devise reset password
 
@@ -29,6 +30,20 @@ class ApplicationController < ActionController::Base
   end
 
   protected
+
+  def set_clubs
+    @clubs = [] and return unless current_user
+
+    @clubs =
+      if current_user.admin?
+        Club.all.order(:name)
+      else
+        affiliated_club_ids = current_user.clubs.map(&:id) # player/coach
+        administered_club_ids = current_user.administered_clubs.map(&:id)
+        ids = (affiliated_club_ids + administered_club_ids).uniq
+        Club.where(id: ids).order(:name)
+      end
+  end
 
   def devise_or_pages_controller?
     devise_controller? == true || is_a?(HighVoltage::PagesController)

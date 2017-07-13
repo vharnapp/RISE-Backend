@@ -1,0 +1,242 @@
+---
+tempteam_2:
+  id: 2
+  name: Local Players
+  num_players: 50
+  coach_first_name: Scott
+  coach_last_name: Moody
+  coach_email: smoody@athletefit.com
+  club_id: 7
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:08:07.294945000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-07-01 18:08:07.294945000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:08:07.294945000 Z
+    zone: *1
+    time: 2017-07-01 18:08:07.294945000 Z
+tempteam_3:
+  id: 3
+  name: Non-Local Players
+  num_players: 50
+  coach_first_name: Scott
+  coach_last_name: Moody
+  coach_email: smoody@athletefit.com
+  club_id: 7
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:08:07.298070000 Z
+    zone: *1
+    time: 2017-07-01 18:08:07.298070000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:08:07.298070000 Z
+    zone: *1
+    time: 2017-07-01 18:08:07.298070000 Z
+tempteam_4:
+  id: 4
+  name: Girls U8
+  num_players: 15
+  coach_first_name: Steve
+  coach_last_name: Bannon
+  coach_email: sbannon@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.859086000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.859086000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.859086000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.859086000 Z
+tempteam_5:
+  id: 5
+  name: Boys U8
+  num_players: 15
+  coach_first_name: Tom
+  coach_last_name: Richards
+  coach_email: trichards@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.863084000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.863084000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.863084000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.863084000 Z
+tempteam_6:
+  id: 6
+  name: Girls U9
+  num_players: 15
+  coach_first_name: Steve
+  coach_last_name: Bannon
+  coach_email: " sbannon@osu.edu"
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.865021000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.865021000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.865021000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.865021000 Z
+tempteam_7:
+  id: 7
+  name: Boys U9
+  num_players: 15
+  coach_first_name: Tom
+  coach_last_name: Richards
+  coach_email: trichards@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.866914000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.866914000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.866914000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.866914000 Z
+tempteam_8:
+  id: 8
+  name: Girls U10
+  num_players: 15
+  coach_first_name: Chris
+  coach_last_name: Hamilton
+  coach_email: chamilton@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.870639000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.870639000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.870639000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.870639000 Z
+tempteam_9:
+  id: 9
+  name: Boys U10
+  num_players: 15
+  coach_first_name: James
+  coach_last_name: Howe
+  coach_email: jhowe@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.872974000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.872974000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.872974000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.872974000 Z
+tempteam_10:
+  id: 10
+  name: Girls U11
+  num_players: 15
+  coach_first_name: Chris
+  coach_last_name: Hamilton
+  coach_email: chamilton@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.875192000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.875192000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.875192000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.875192000 Z
+tempteam_11:
+  id: 11
+  name: Boys U11
+  num_players: 15
+  coach_first_name: James
+  coach_last_name: Howe
+  coach_email: jhowe@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.877330000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.877330000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.877330000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.877330000 Z
+tempteam_12:
+  id: 12
+  name: Girls U12
+  num_players: 15
+  coach_first_name: Susie
+  coach_last_name: Quinn
+  coach_email: squinn@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.879652000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.879652000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.879652000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.879652000 Z
+tempteam_13:
+  id: 13
+  name: Boys U12
+  num_players: 15
+  coach_first_name: Tim
+  coach_last_name: Hayes
+  coach_email: thayes@osu.edu
+  club_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.881988000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.881988000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.881988000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.881988000 Z
+tempteam_16:
+  id: 16
+  name: Girls U8
+  num_players: 15
+  coach_first_name: Steve
+  coach_last_name: Bannon
+  coach_email: sbannon@auburn.edu
+  club_id: 10
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:31:04.485529000 Z
+    zone: *1
+    time: 2017-07-02 16:31:04.485529000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:31:04.485529000 Z
+    zone: *1
+    time: 2017-07-02 16:31:04.485529000 Z
+tempteam_17:
+  id: 17
+  name: Boys U8
+  num_players: 15
+  coach_first_name: Tom
+  coach_last_name: Richards
+  coach_email: trichards@auburn.edu
+  club_id: 10
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:31:04.490882000 Z
+    zone: *1
+    time: 2017-07-02 16:31:04.490882000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:31:04.490882000 Z
+    zone: *1
+    time: 2017-07-02 16:31:04.490882000 Z
+tempteam_18:
+  id: 18
+  name: Girls U9
+  num_players: 15
+  coach_first_name: Steve
+  coach_last_name: Bannon
+  coach_email: sbannon@auburn.edu
+  club_id: 10
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:31:04.493738000 Z
+    zone: *1
+    time: 2017-07-02 16:31:04.493738000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:31:04.493738000 Z
+    zone: *1
+    time: 2017-07-02 16:31:04.493738000 Z

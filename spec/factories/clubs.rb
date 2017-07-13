@@ -1,6 +1,19 @@
 FactoryGirl.define do
   factory :club do
-    name 'Webdev'
+    name                 { Faker::Name.unique.club_name }
+    address_city         { Faker::Address.city }
+    address_line1        { Faker::Address.street_address }
+    address_line2        { Faker::Address.secondary_address }
+    address_state        { Faker::Address.state_abbr }
+    address_zip          { Faker::Address.zip_code }
+    contact_email        { Faker::Internet.email }
+    contact_first_name   { Faker::Name.first_name }
+    contact_last_name    { Faker::Name.last_name }
+    contact_phone        { Faker::PhoneNumber.phone_number }
+
+    after(:create) do |club, evaluator|
+      create_list(:subscription, evaluator.try(:subscription_count) || 1, club: club)
+    end
   end
 end
 

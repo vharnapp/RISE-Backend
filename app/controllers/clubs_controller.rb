@@ -1,7 +1,12 @@
 class ClubsController < ApplicationController
   load_and_authorize_resource
 
-  def show; end
+  def index
+    redirect_to club_path(@clubs.first) if @clubs.length == 1
+  end
+
+  def show
+  end
 
   def edit; end
 

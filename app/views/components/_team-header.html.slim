@@ -1,0 +1,10 @@
+.gray-block
+  .row.columns
+    .small-6.left
+      .padding-t-10
+        span.team-code-label Team Code
+        span.team-code = @team.display_code
+    .small-6.left.text-right
+      span.coach-label Coaches
+      - @team.coaches.each do |coach|
+        = link_to image_tag(coach.avatar.url, class: 'coach-avatar'), user_path(coach)

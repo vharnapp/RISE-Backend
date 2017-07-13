@@ -40,3 +40,5 @@ en:
       phase_name: ['Phase 1', 'Phase 2', 'Phase 3']
       workout_name: ['One Touch', 'Two Touch', '1 & 2 Touch', 'Weighted Touches', 'Short & Long Touches', 'Opening Up Touches', 'Foundational Touches', 'Reset Touches', 'Behind Body Touches', '4 Cone-Lateral Targeting']
       exercise_name: ['Quick Feet Forward Step', 'Lateral Moving Quick Feet Chops', 'Forward & Back Quick Feet Chops', 'Hip Flip Chops', 'Stationary Quick Feet Chops', 'Body Control Vertical Hop', 'Side to Side Hops - Rhythmic to Quick', 'Forward & Back Hops - Rhythmic to Quick', 'Crossover to Shuffle Back - Controlled Footwork', 'Crossover to Crossover Back']
+      team_name: ['Hornets', 'Bears', 'Lions', 'Tigers', 'Monkeys', 'Beatles', 'Birds', 'Dinosaurs']
+      club_name: ['East Side Sliders', 'West Side Warriors', 'North Side Northerners', 'South Side Southerners']

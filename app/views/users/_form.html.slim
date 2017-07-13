@@ -10,5 +10,3 @@
   = f.input :password_confirmation, required: false
   - if !user.new_record?
     = f.input :current_password, hint: "#{user.new_record? ? '' : 'we need your current password to confirm your changes'}", required: true
-
-= f.association :teams

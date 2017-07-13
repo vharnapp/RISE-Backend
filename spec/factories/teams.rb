@@ -1,11 +1,18 @@
 FactoryGirl.define do
   factory :team do
-    name 'Headway'
+    name { Faker::Name.team_name }
     code { Faker::Crypto.unique.md5.upcase[1..6] }
+    num_players 11
 
     callback(:after_create) do |model|
-      a_players = create_list(:user, 5)
+      a_players = create_list(:user, 10, :player)
       model.players << a_players
+
+      a_coaches = create_list(:user, 2, :coach)
+      model.coaches << a_coaches
+
+      model.subscriptions << model.club.subscriptions
+
       # FIXME: (2017-06-29) jon => I forget why the association is invalid.
       # Investigate.
       model.save(validate: false)

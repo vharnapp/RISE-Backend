@@ -26,6 +26,7 @@ html[lang="en"]
       = render 'flashes'
       = render 'components/navigation'
       .main
-        = yield
+        .container
+          = yield
       = render 'components/footer'
       = render 'css_overrides'

@@ -31,6 +31,7 @@ gem 'webpacker', github: 'rails/webpacker'
 gem 'font-awesome-rails'
 gem 'foundation-rails', '~> 6.3.1'
 gem 'slim-rails'
+gem 'font-awesome-rails'
 
 gem 'acts_as_list'
 gem 'administrate', github: 'thoughtbot/administrate'
@@ -40,6 +41,7 @@ gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-
 gem 'administrate-field-paperclip'
 gem 'administrate-field-select_essential'
 gem 'administrate-field-carrierwave', '~> 0.2.0'
+gem 'administrate-field-password'
 
 gem 'validates_overlap', github: 'robinbortlik/validates_overlap'
 

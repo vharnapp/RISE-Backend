@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  resources :clubs, only: [:show, :edit, :update] do
-    resources :teams, only: [:show, :edit, :update]
+  resources :teams, only: [:index]
+  resources :clubs, only: [:index, :show] do
+    resources :teams, only: [:index, :show, :edit, :update]
   end
+
+  resources :unlocked_pyramid_modules, only: [:create, :destroy]
+  resources :affiliations, only: [:destroy]
 
   devise_for :users, controllers: {
     registrations: 'devise_customizations/registrations',
@@ -19,6 +23,7 @@ Rails.application.routes.draw do
     put 'sort' => 'application#sort'
 
     resources :pyramid_modules
+    resources :unlocked_pyramid_modules
     resources :phases
     resources :workouts
     resources :exercises
@@ -42,9 +47,11 @@ Rails.application.routes.draw do
     root to: "users#index"
   end
 
+  get '/pages/*id' => 'pages#show', as: :page, format: false
+
   authenticated :user do
-    # root to: 'dashboard#show', as: :authenticated_root
-    root to: 'high_voltage/pages#show', id: 'welcome', as: :authenticated_root
+    root to: 'clubs#index', as: :authenticated_root
+    # root to: 'pages#show', id: 'welcome', as: :authenticated_root
   end
 
   devise_scope :user do
@@ -55,7 +62,7 @@ Rails.application.routes.draw do
     post 'api/v1/sign_in', to: 'devise_customizations/sessions#create'
     get 'api/v1/sign_out', to: 'devise_customizations/sessions#destroy'
   end
-  root 'high_voltage/pages#show', id: 'welcome'
+  root 'pages#show', id: 'welcome'
 
   namespace 'api' do
     namespace 'v1' do

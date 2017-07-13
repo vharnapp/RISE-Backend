@@ -1,0 +1,128 @@
+---
+subscription_1:
+  id: 1
+  start_date: 2017-07-01
+  end_date: 2018-07-01
+  club_id: 5
+  price: !ruby/object:BigDecimal 18:0.1e2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:45:35.125867000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-07-01 09:45:35.125867000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:45:35.125867000 Z
+    zone: *1
+    time: 2017-07-01 09:45:35.125867000 Z
+subscription_2:
+  id: 2
+  start_date: 2017-07-01
+  end_date: 2018-07-01
+  club_id: 6
+  price: !ruby/object:BigDecimal 18:0.1e2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:09.832855000 Z
+    zone: *1
+    time: 2017-07-01 09:46:09.832855000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:09.832855000 Z
+    zone: *1
+    time: 2017-07-01 09:46:09.832855000 Z
+subscription_4:
+  id: 4
+  start_date: 2017-07-04
+  end_date: 2018-07-04
+  club_id: 8
+  price: !ruby/object:BigDecimal 18:0.12e2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:48:34.860194000 Z
+    zone: *1
+    time: 2017-07-02 15:48:34.860194000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 20:55:02.884547000 Z
+    zone: *1
+    time: 2017-07-02 15:55:02.884547000 Z
+subscription_5:
+  id: 5
+  start_date: 2017-07-02
+  end_date: 2018-07-02
+  club_id: 9
+  price: !ruby/object:BigDecimal 18:0.12e2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:52.286806000 Z
+    zone: *1
+    time: 2017-07-02 16:13:52.286806000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:52.286806000 Z
+    zone: *1
+    time: 2017-07-02 16:13:52.286806000 Z
+subscription_6:
+  id: 6
+  start_date: 2017-07-02
+  end_date: 2018-07-02
+  club_id: 10
+  price: !ruby/object:BigDecimal 18:0.12e2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:29:09.900532000 Z
+    zone: *1
+    time: 2017-07-02 16:29:09.900532000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:29:09.900532000 Z
+    zone: *1
+    time: 2017-07-02 16:29:09.900532000 Z
+subscription_7:
+  id: 7
+  start_date: 2017-07-02
+  end_date: 2018-07-02
+  club_id: 11
+  price: !ruby/object:BigDecimal 18:0.12e2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:28.877032000 Z
+    zone: *1
+    time: 2017-07-02 18:45:28.877032000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:28.877032000 Z
+    zone: *1
+    time: 2017-07-02 18:45:28.877032000 Z
+subscription_8:
+  id: 8
+  start_date: 2017-07-03
+  end_date: 2018-07-03
+  club_id: 12
+  price: !ruby/object:BigDecimal 18:0.12e2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:29.924192000 Z
+    zone: *1
+    time: 2017-07-03 07:38:29.924192000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:29.924192000 Z
+    zone: *1
+    time: 2017-07-03 07:38:29.924192000 Z
+subscription_9:
+  id: 9
+  start_date: 2017-07-03
+  end_date: 2018-07-03
+  club_id: 13
+  price: !ruby/object:BigDecimal 18:0.1e2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:36.062104000 Z
+    zone: *1
+    time: 2017-07-03 08:00:36.062104000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:36.062104000 Z
+    zone: *1
+    time: 2017-07-03 08:00:36.062104000 Z
+subscription_10:
+  id: 10
+  start_date: 2017-07-03
+  end_date: 2018-07-03
+  club_id: 14
+  price: !ruby/object:BigDecimal 18:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:30.744078000 Z
+    zone: *1
+    time: 2017-07-03 20:10:30.744078000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:30.744078000 Z
+    zone: *1
+    time: 2017-07-03 20:10:30.744078000 Z

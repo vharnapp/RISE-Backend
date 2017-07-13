@@ -1,0 +1,367 @@
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+  padding: 0;
+}
+
+label, span.toggle-label {
+  display: block;
+  margin-bottom: $small-spacing / 2;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  color: $dark-gray;
+}
+
+input, select {
+  height: 54px;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $dark-gray;
+  border-radius: 2px;
+  border: none;
+  padding-left: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  }
+input:focus, select:focus, textarea:focus {
+  border: 3px solid $primary;
+  outline: none;
+}
+[type='submit']:focus {
+  border: none;
+}
+
+span.toggle-label {
+  display: inline;
+  top: -16px;
+  position: relative;
+  margin-left: 15px;
+}
+input {
+  appearance: none;
+  background-color: $base-background-color;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  margin-bottom: $small-spacing;
+  padding: $base-spacing / 3;
+  transition: border-color $base-duration $base-timing;
+  width: 100%;
+
+  &:hover {
+    border-color: shade($base-border-color, 20%);
+  }
+
+  &:focus {
+    border-color: $action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($base-background-color, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $base-border;
+    }
+  }
+
+  &::placeholder {
+    color: tint($base-font-color, 40%);
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+}
+
+[type="file"] {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+
+button, [type='submit'] {
+  background: $primary;
+  height: 54px;
+}
+
+select {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+[type="checkbox"] {
+	-webkit-appearance: none;
+	border: 1px solid #96E17D;
+	padding: 9px;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  margin-right: 0px;
+}
+[type="checkbox"]:active, [type="checkbox"]:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+[type="checkbox"]:focus {
+  border: 1px;
+}
+[type="checkbox"]:checked {
+	background-color: #94989E;
+	border: 1px solid #96E17D;
+}
+
+[type="checkbox"]:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: white;
+}
+
+// Radio
+[type="radio"] {
+	-webkit-appearance: none;
+	border: 1px solid #51BFA0;
+	padding: 9px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  margin-right: 0px;
+}
+[type="radio"]:active, [type="radio"]:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+[type="radio"]:focus {
+  border: 1px;
+}
+[type="radio"]:checked {
+	background-color: #399866;
+	border: 1px solid #51BFA0;
+}
+[type="radio"]:checked:after {
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: white;
+}
+// END Radio
+
+.big-checkbox {
+	padding: 18px;
+}
+
+.big-checkbox:checked:after {
+	font-size: 28px;
+	left: 6px;
+}
+
+
+
+// SELECTIZE FIXES
+.selectize-input .item{
+  // Keeps the un-selected version of a single-drop-down select the same height
+  // and prevents the page from jumping when the select is opened and closed
+  padding: 12px 0px 10px 0px;
+}
+.selectize-control.single .selectize-input{
+  // makes a single-select drop down the right height on initial page load
+  padding: 0px 8px 0px;
+}
+.selectize-control.multi .selectize-input,
+.selectize-control.multi .selectize-input.has-items{
+  // Keeps the multi-select the right height on page load when empty or full
+  padding: 0px 0px 0px 8px;
+}
+// Keeps margin/space for two lines tall when adding items to the multi-select
+.selectize-control.multi .selectize-input > div{
+  margin: 9px 3px 3px 0;
+}
+
+.selectize.full-width .selectize-input{
+  border: none;
+  box-shadow: none;
+}
+
+.selectize.full-width .selectize-input .item{
+  width: 97%;
+}
+
+.form-inputs-right .left{
+  label{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-bottom: 0px;
+  }
+  border: $base-border;
+  box-shadow: $form-box-shadow;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+}
+
+.manage-administrators{
+  width: 320px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.manage-clinics{
+  width: 320px;
+  float: left;
+}
+
+.form-inputs-right{
+  a.button{
+    float: right;
+    margin: 10px 0 0 0;
+  }
+}
+
+
+
+
+.field-unit__label {
+  float: none!important;
+  margin-left: 0rem!important;
+  text-align: left!important;
+  width: auto!important;
+}
+.field-unit__field {
+  float: left;
+  margin-left: 0rem !important;
+  width: 100%!important;
+}
+.field-unit {
+  display: inline !important;
+  position: inherit !important;
+}
+
+
+label.required abbr {
+  color: #ce0000;
+  text-decoration: none;
+}
+
+// Form Errors
+.error_notification{
+  background: #ce0000;
+  color: white;
+  padding: 10px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+span.error{
+  color: #ce0000;
+  position: relative;
+  top: -12px;
+}
+
+.hint{
+  color: $hint-grey;
+  position: relative;
+  top: -12px;
+  margin-right: 10px;
+}
+
+
+
+.organization-form-inputs{
+  width: 550px;
+  float: left;
+}
+.form-inputs-right{
+  .left{
+    width: 300px;
+    margin-left: 20px;
+  }
+  label{
+    background: $green;
+    padding: 15px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+select.subheader {
+  color: white;
+  padding-left: 0px;
+  padding-top: 0px !important;
+  height: 50px;
+  background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%);
+  background-position:
+    calc(100% + 15px) calc(18px),
+    calc(100% + 20px) calc(18px);
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $dark-green;
+  }
+  option {
+    padding-left: 10px;
+  }
+}

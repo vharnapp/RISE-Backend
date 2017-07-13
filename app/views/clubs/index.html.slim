@@ -1,0 +1,33 @@
+= render 'components/secondary-header'
+
+.gray-block
+  .row.columns
+    ul.team-list.team-header.small-12.left
+      li.small-3
+        h4 Club Name
+      li.small-2
+        h4 Teams
+      li.small-2
+        h4 Admins
+      li.small-2
+        h4 Phone
+      li.small-3
+        h4 Address
+
+.row.columns
+  - @clubs.each do |club|
+    ul.team-list.small-12.left
+      li.small-3
+        = link_to club_path(club) do
+          = image_tag club.logo.url
+          = club.name
+      li.small-2
+        = club.teams.count
+      li.small-2
+        span.coach-label
+          - club.administrators.each do |admin|
+            = link_to image_tag(admin.avatar.url, class: 'coach-avatar'), user_path(admin)
+      li.small-2
+        = club.contact_phone
+      li.small-3
+        = club.display_address

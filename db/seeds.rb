@@ -15,6 +15,7 @@ puts
 dev_tables_to_seed =
   %w(
     all_users
+    two_clubs_with_teams_and_coaches_and_players
   )
 
 production_tables_to_seed =

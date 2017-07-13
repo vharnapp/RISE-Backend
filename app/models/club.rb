@@ -4,12 +4,18 @@ class Club < ApplicationRecord
   extend FriendlyId
   friendly_id :name
 
-  mount_uploader :logo, ImageUploader
-  mount_uploader :teams_csv, ImageUploader # prob make a file uploader
+  mount_uploader :logo, LogoUploader
+  mount_uploader :teams_csv, FileUploader
 
-  has_many :temp_teams
+  has_many :temp_teams, dependent: :destroy
   has_many :teams, -> { order(position: :asc) }, dependent: :destroy
   has_many :players, through: :teams
+
+  has_many :club_affiliations
+  has_many :administrators,
+           through: :club_affiliations,
+           class_name: 'User',
+           source: :user
 
   has_many :subscriptions, -> { order(end_date: :desc) }, inverse_of: :club, dependent: :destroy
 
@@ -17,6 +23,22 @@ class Club < ApplicationRecord
   accepts_nested_attributes_for :temp_teams
 
   validates :name, presence: true
+
+  def my_teams(user)
+    if user.admin? || user.club_admin?
+      teams
+    else
+      user.teams
+    end
+  end
+
+  def display_address
+    output = ''
+    output << "#{address_line1}<br>"
+    output << "#{address_line2}<br>" if address_line2.present?
+    output << "#{address_city}, #{address_state} #{address_zip}"
+    output.html_safe
+  end
 
   def fee
     subscriptions.current.first.price * subscriptions.current.first.players.count

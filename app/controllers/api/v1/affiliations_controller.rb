@@ -41,6 +41,32 @@ module Api
         end
       end
       # rubocop:enable Metrics/MethodLength
+
+      def destroy
+        team = Team.find_by(id: params[:team_id])
+
+        if team.present?
+          affiliation =
+            Affiliation.find_by(team_id: team.id, user_id: params[:user_id])
+
+          if affiliation.destroy
+            jsonapi_render status: :ok
+          else
+            jsonapi_render_errors json: affiliation,
+                                  status: :unprocessable_entity
+          end
+        else
+          render json: {
+            errors: [
+              {
+                status: '422',
+                title: 'Unprocessable entity',
+                detail: 'Team not found.',
+              },
+            ],
+          }, status: :unprocessable_entity
+        end
+      end
     end
   end
 end

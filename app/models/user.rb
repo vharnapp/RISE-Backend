@@ -22,17 +22,25 @@ class User < ApplicationRecord
 
   has_many :affiliations, dependent: :destroy
   has_many :teams, through: :affiliations
+  has_many :clubs, through: :teams
+
+  has_many :club_affiliations
+  has_many :administered_clubs,
+           through: :club_affiliations,
+           source: :club
 
   has_many :confidence_ratings, dependent: :destroy
   has_many :exercises, through: :confidence_ratings
   has_many :workouts, through: :confidence_ratings
+  has_many :phases, through: :workouts
+  has_many :pyramid_modules, -> { distinct }, through: :phases
 
-  has_many :unlocked_pyramid_modules
+  has_many :unlocked_pyramid_modules, dependent: :destroy
 
-  has_many :phase_attempts
-  has_many :phases, through: :phase_attempts
+  has_many :phase_attempts, dependent: :destroy
+  has_many :attempted_phases, through: :phase_attempts, source: :phase
 
-  mount_uploader :avatar, ImageUploader
+  mount_uploader :avatar, AvatarUploader
 
   validates :email,
             presence: true,
@@ -60,6 +68,15 @@ class User < ApplicationRecord
 
   def role_list
     roles.map(&:to_s).map(&:titleize).sort.join(', ')
+  end
+
+  def active_today?
+    count =
+      confidence_ratings
+        .where('updated_at >= ?', Time.current.beginning_of_day)
+        .count
+
+    count.positive?
   end
 
   # rubocop:disable Metrics/MethodLength
@@ -94,18 +111,19 @@ class User < ApplicationRecord
   end
   # rubocop:enable Metrics/MethodLength
 
+  # TODO: (2017-07-12) jon => move this to pyramid module? or move percent_complete_for_user to here.
   def days_since_last_confidence_rating_for_pyramid_module(pyramid_module)
-    workout_ids = pyramid_module.phases.flat_map(&:workouts).map(&:id)
+    workout_ids = pyramid_module.phases.includes(:workouts).flat_map(&:workouts).map(&:id)
 
     if confidence_ratings
       crs = confidence_ratings.where(workout: workout_ids).order(:updated_at)
       if crs.present?
         ((Time.current - crs.first.updated_at) / 1.day).round
       else
-        'X'
+        'x'
       end
     else
-      'X'
+      'x'
     end
   end
 
@@ -130,6 +148,18 @@ class User < ApplicationRecord
       .includes(:workout)
       .where(rating: 4, workouts: { supplemental: false })
       .count
+  end
+
+  def highest_pyramid_level_achieved
+    pyramid_modules.select(:level).order(level: :desc).limit(1).first.level
+  rescue
+    1
+  end
+
+  def unlock_starting_pyramid_module
+    pm = PyramidModule.default_unlocked
+    unlocked_pyramid_modules.create(pyramid_module: pm)
+    unlocked_pyramid_modules
   end
 
   private

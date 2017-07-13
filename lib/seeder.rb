@@ -15,13 +15,24 @@ module Seeder
     puts '-----> Resetting to a clean user list with all Users'
 
     # Remove all users
-    User.destroy_all
-
-    create(:user)
+    User.unscoped.find_each(&:really_destroy!)
 
     # list user traits from factory_girl here
     %w[admin].each do |name|
       create(:user, name.to_sym)
+    end
+  end
+
+  def two_clubs_with_teams_and_coaches_and_players
+    puts '-----> Creating two clubs, and 5 teams with 10 players each'
+
+    Club.unscoped.find_each(&:really_destroy!)
+
+    2.times do
+      club = create(:club)
+      5.times do
+        create(:team, club: club)
+      end
     end
   end
 end
