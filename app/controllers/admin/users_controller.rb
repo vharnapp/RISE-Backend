@@ -39,6 +39,12 @@ module Admin
     # end
     # rubocop:enable Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/LineLength
 
+    def update
+      params[:user].delete(:password) if params[:user][:password].blank?
+      params[:user].delete(:password_confirmation) if params[:user][:password_confirmation].blank?
+      super
+    end
+
     def impersonate
       user = User.find(params[:id])
       track_impersonation(user, 'Start')

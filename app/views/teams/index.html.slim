@@ -1,9 +1,13 @@
-h1 My Teams
+h1 Teams
 
-hr
-- current_user.clubs.each do |club|
-  h3= link_to club.name, club_path(club)
-  ul
-  - club.teams.each do |team|
-    li= link_to team.name, club_team_path(club, team)
-  hr
+- if @teams
+  - @teams.each do |team|
+    = link_to club_team_path(team.club, team) do
+      = image_tag team.logo.url
+      = team.name
+
+    ul
+    - team.coaches.each do |coach|
+      li
+        = image_tag coach.avatar.url
+        = coach.full_name

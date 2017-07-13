@@ -158,6 +158,8 @@ GEM
     administrate-field-paperclip (0.0.3)
       administrate (~> 0.4)
       rails (~> 5.0)
+    administrate-field-password (0.0.4)
+      administrate
     administrate-field-select_essential (0.1.0)
       administrate (~> 0.7)
       rails (~> 5.0)
@@ -785,6 +787,7 @@ DEPENDENCIES
   administrate-field-enum!
   administrate-field-nested_has_many!
   administrate-field-paperclip
+  administrate-field-password
   administrate-field-select_essential
   airborne
   analytics-ruby (~> 2.2.2)

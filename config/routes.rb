@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :teams, only: [:index]
-  resources :clubs, only: [:index, :show, :edit, :update] do
+  resources :clubs, only: [] do
     resources :teams, only: [:show, :edit, :update]
   end
 
