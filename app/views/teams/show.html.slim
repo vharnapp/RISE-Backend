@@ -10,12 +10,15 @@ section.main-content__body.main-content__body--flush
         .player-info.small-12.medium-3
           .player-avatar.left
             = image_tag player.avatar.url, class: 'player-avatar'
-            span.status-badge.active
+            - if player.active_today?
+              span.status-badge.active
 
           .player-name.left
             h3 = player.full_name
             br
-            = "#{player.phase_attempts.count} Lifetime Attempts"
+            = pluralize(player.phase_attempts.count, 'Lifetime Attempt')
+            br
+            = "#{player.day_streak} Day Streak"
 
         - level = player.highest_pyramid_level_achieved
         .pyramid-modules.small-12.medium-9

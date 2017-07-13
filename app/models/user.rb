@@ -70,6 +70,15 @@ class User < ApplicationRecord
     roles.map(&:to_s).map(&:titleize).sort.join(', ')
   end
 
+  def active_today?
+    count =
+      confidence_ratings
+        .where('updated_at >= ?', Time.current.beginning_of_day)
+        .count
+
+    count.positive?
+  end
+
   # rubocop:disable Metrics/MethodLength
   def day_streak
     sql = %(
