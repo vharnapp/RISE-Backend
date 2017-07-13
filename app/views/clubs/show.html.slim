@@ -18,6 +18,11 @@
       li.small-3 = link_to club_team_path(team.club, team) do
           = image_tag team.logo.url
           = team.name
-      li.small-3 Coach Avatars / Names
-      li.small-3 # of Players / Seats
-      li.small-3 Expires 8/21/17
+      li.small-3
+        span.coach-label
+          - team.coaches.each do |coach|
+            = link_to image_tag(coach.avatar.url, class: 'coach-avatar'), user_path(coach)
+      li.small-3(style='padding-left: 26px;')
+        = team.players.count
+      li.small-3
+        = team.display_code
