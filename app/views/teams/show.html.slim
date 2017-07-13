@@ -4,6 +4,9 @@ section.main-content__body.main-content__body--flush
   .players.row.columns
     - @team.players.each do |player|
       .player
+        .delete(data-tooltip aria-haspopup='true' class='has-tip' data-disable-hover='false' tabindex='1' title="Delete #{player.full_name}?" style='cursor:pointer; border-bottom: none;')
+          - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
+          = link_to '&cross;'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }
         .player-info.small-12.medium-3
           .player-avatar.left
             = image_tag player.avatar.url, class: 'player-avatar'
@@ -35,7 +38,3 @@ section.main-content__body.main-content__body--flush
                 = label_tag "unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}", pyramid_module.name
                 / = pyramid_module.percent_complete_for_user(player, debug: true)
 
-          div(style='position: absolute; right: 0px; top: 20px;')
-            span.delete(data-tooltip aria-haspopup='true' class='has-tip' data-disable-hover='false' tabindex='1' title="Delete #{player.full_name}?" style='cursor:pointer; border-bottom: none;')
-              - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
-              = link_to '&cross;'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }
