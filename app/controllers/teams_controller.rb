@@ -3,11 +3,7 @@ class TeamsController < ApplicationController
   load_and_authorize_resource :team, through: :club, shallow: true
 
   def index
-    @teams = if current_user.coach? || current_user.club_admin?
-               current_user.teams
-             else
-               @club.try(:teams)
-             end
+    redirect_to club_team_path(@club, @club.teams.first)
   end
 
   def show; end

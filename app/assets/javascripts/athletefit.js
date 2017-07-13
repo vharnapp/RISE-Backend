@@ -11,6 +11,21 @@ $(document).on('turbolinks:load', function() {
     emptyFill: '#94989E',
   });
 
+  $(document).on('change', "select[name='clubs']", function(){
+    var club_id = $(this).val();
+    var location = '/clubs/' + club_id;
+    // window.location = '/clubs/' + club_id;
+    Turbolinks.visit(location)
+  });
+
+  $(document).on('change', "select[name='teams']", function(){
+    var club_id = $("select[name='clubs']").val();
+    var team_id = $(this).val();
+    var location = '/clubs/' + club_id + '/teams/' + team_id;
+    // window.location = location
+    Turbolinks.visit(location)
+  });
+
   // Coach dashboard
   $('.unlock-pyramid-module-checkbox').on('change', function(){
     var user_id = $(this).data('user-id');

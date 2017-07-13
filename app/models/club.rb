@@ -11,12 +11,26 @@ class Club < ApplicationRecord
   has_many :teams, -> { order(position: :asc) }, dependent: :destroy
   has_many :players, through: :teams
 
+  has_many :club_affiliations
+  has_many :administrators,
+           through: :club_affiliations,
+           class_name: 'User',
+           source: :user
+
   has_many :subscriptions, -> { order(end_date: :desc) }, inverse_of: :club, dependent: :destroy
 
   accepts_nested_attributes_for :subscriptions, allow_destroy: true
   accepts_nested_attributes_for :temp_teams
 
   validates :name, presence: true
+
+  def my_teams(user)
+    if user.admin? || user.club_admin?
+      teams
+    else
+      user.teams
+    end
+  end
 
   def fee
     subscriptions.current.first.price * subscriptions.current.first.players.count

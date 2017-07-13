@@ -24,6 +24,11 @@ class User < ApplicationRecord
   has_many :teams, through: :affiliations
   has_many :clubs, through: :teams
 
+  has_many :club_affiliations
+  has_many :administered_clubs,
+           through: :club_affiliations,
+           source: :club
+
   has_many :confidence_ratings, dependent: :destroy
   has_many :exercises, through: :confidence_ratings
   has_many :workouts, through: :confidence_ratings

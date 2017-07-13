@@ -8,6 +8,8 @@ class ClubDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
+    club_affiliations: Field::HasMany,
+    administrators: Field::HasMany.with_options(class_name: 'User'),
     subscriptions: Field::NestedHasMany.with_options(
       skip: [:club, :teams],
       limit: 30,
@@ -57,6 +59,7 @@ class ClubDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :logo,
     :name,
+    :administrators,
     :contact_first_name,
     :contact_last_name,
     :contact_email,
@@ -76,6 +79,7 @@ class ClubDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :logo,
     :name,
+    :administrators,
     :contact_first_name,
     :contact_last_name,
     :contact_email,

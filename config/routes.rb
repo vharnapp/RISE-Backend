@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :teams, only: [:index]
-  resources :clubs, only: [] do
-    resources :teams, only: [:show, :edit, :update]
+  resources :clubs, only: [:index, :show] do
+    resources :teams, only: [:index, :show, :edit, :update]
   end
 
   resources :unlocked_pyramid_modules, only: [:create, :destroy]
