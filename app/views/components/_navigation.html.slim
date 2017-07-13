@@ -9,7 +9,7 @@
           li.org-selector
             = link_to 'Clubs', clubs_path
           li.org-selector
-            - if @clubs
+            - if @clubs.present?
               = link_to 'Teams', club_path(@clubs.first)
           - if true_user && true_user.admin?
             - if current_user != true_user
