@@ -1,4 +1,5 @@
 = render 'components/secondary-header'
+= render 'components/team-header'
 
 section.main-content__body.main-content__body--flush
   .players.row.columns
@@ -40,4 +41,3 @@ section.main-content__body.main-content__body--flush
                                 disabled: level > 1
                 = label_tag "unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}", pyramid_module.name
                 / = pyramid_module.percent_complete_for_user(player, debug: true)
-

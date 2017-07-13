@@ -48,3 +48,9 @@ body {
   display: inline;
   margin: 0px;
 }
+.gray-block {
+  background: $light-gray;
+  padding: 10px 0px;
+  font-size: 14px;
+  color: $dark-gray;
+}

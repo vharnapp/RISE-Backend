@@ -8,12 +8,13 @@
   background: black;
   font-size: 12px;
   text-align: center;
+  font-weight: normal;
   height: 70px;
-  color: $primary;
+  color: white;
   margin-bottom: -24px;
 }
-.footer credits a {
-  color: white;
+.footer a {
+  color: $primary;
   line-height: 26px;
 }
 .footer ul li {

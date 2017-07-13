@@ -1,13 +1,23 @@
-h1 Teams
+= render 'components/secondary-header'
 
-- if @teams
-  - @teams.each do |team|
-    = link_to club_team_path(team.club, team) do
-      = image_tag team.logo.url
-      = team.name
+.gray-block
+  .row.columns
+    ul.team-list.team-header.small-12.left
+      li.small-3
+        h4 Team Name
+      li.small-3
+        h4 Coaches
+      li.small-3
+        h4 Players
+      li.small-3
+        h4 Team Code
 
-    ul
-    - team.coaches.each do |coach|
-      li
-        = image_tag coach.avatar.url
-        = coach.full_name
+.row.columns
+  - @club.teams.each do |team|
+    ul.team-list.small-12.left
+      li.small-3 = link_to club_team_path(team.club, team) do
+          = image_tag team.logo.url
+          = team.name
+      li.small-3 Coach Avatars / Names
+      li.small-3 # of Players / Seats
+      li.small-3 Expires 8/21/17

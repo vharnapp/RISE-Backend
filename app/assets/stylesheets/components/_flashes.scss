@@ -41,27 +41,25 @@ $flashes: (
   }
 }
 
-.flashes{
+/*.flashes{
   position: absolute;
   width: 100%;
   z-index: 1;
+} */
+
+.flashes, .flash-mini{
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 5px;
+  top: 30px;
+  width: 500px;
+  left: 50%;
+  margin-left: -250px;
+  position: fixed;
 }
 
-.flash-mini{
-  height: 30px;
-  display: inline-block;
-  padding: 0;
-  font-size: 12px;
-  // margin-top: 2px;
-  padding: 9px 15px;
-  z-index: 10;
-  border-radius: 2px;
-  // display: block;
-  // width: 180px;
-  position: fixed;
-  left: 50%;
-  top: 30px;
-  width: 180px;
-  margin-left: -90px;
+.flash-mini {
   box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.26);
 }

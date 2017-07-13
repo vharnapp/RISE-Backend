@@ -185,23 +185,26 @@
     text-transform: uppercase;
     letter-spacing: 0px;
   }
-  span.team-code-label, span.coach-label {
-  	height: 19px;
-  	width: 178px;
-  	color: #B3B3B3;
-  	font-family: Roboto;
-  	font-size: 14px;
-    padding-right: 10px;
-  }
-  span.team-code {
-  	height: 24px;
-  	width: 96px;
-  	color: #FFFFFF;
-  	font-family: Roboto;
-  	font-size: 18px;
-  	line-height: 24px;
-  }
 }
+
+span.team-code-label, span.coach-label {
+	height: 19px;
+	width: 178px;
+	color: $dark-gray;
+	font-family: $base-font-family;
+	font-size: 14px;
+  padding-right: 10px;
+}
+span.team-code {
+	height: 24px;
+	width: 96px;
+	color: $primary;
+	font-family: $base-font-family;
+	font-size: 18px;
+  font-weight: bold;
+	line-height: 24px;
+}
+
 .main-content__header-top {
   align-items: center;
   display: flex;
