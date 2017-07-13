@@ -190,16 +190,17 @@
 
 // SETTINGS MENU
 
-li.settings-menu {
+ul.settings-menu li ul.menu li {
   margin-left: 20px;
 }
 .menu.vertical > li {
     display: block;
-    color: black;
+    color: white;
     padding: .5em;
+    z-index: 9;
 }
 .dropdown.menu > li.opens-left > .is-dropdown-submenu {
-    background: white;
+    background: $dark-gray;
     color: black;
     text-align: left;
     width: 150px;
@@ -215,5 +216,5 @@ li.settings-menu .menu > li > a {
     color: white;
     font-weight: bold;
     color: black;
-    background: none;
+    background: $dark-gray;
 }
