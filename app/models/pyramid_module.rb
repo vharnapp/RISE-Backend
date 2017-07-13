@@ -44,16 +44,17 @@ class PyramidModule < ApplicationRecord
     num_skills_mastered =
       user
         .confidence_ratings
-        .joins(:workout)
-        .where(rating: 4)
+        .joins(workout: :phase)
+        .where(confidence_ratings: { rating: 4 })
         .where(workout: workouts)
-        .where(workouts: { supplemental: false })
+        .where(phases: { supplemental: false })
         .count
 
     num_exercises =
       workouts
-        .includes(:exercises)
-        .where(workouts: { supplemental: false })
+        .joins(:exercises)
+        .where(phases: { supplemental: false })
+        .uniq
         .flat_map(&:exercises)
         .count
 
