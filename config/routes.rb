@@ -47,9 +47,11 @@ Rails.application.routes.draw do
     root to: "users#index"
   end
 
+  get '/pages/*id' => 'pages#show', as: :page, format: false
+
   authenticated :user do
-    # root to: 'dashboard#show', as: :authenticated_root
-    root to: 'high_voltage/pages#show', id: 'welcome', as: :authenticated_root
+    root to: 'clubs#index', as: :authenticated_root
+    # root to: 'pages#show', id: 'welcome', as: :authenticated_root
   end
 
   devise_scope :user do
@@ -60,7 +62,7 @@ Rails.application.routes.draw do
     post 'api/v1/sign_in', to: 'devise_customizations/sessions#create'
     get 'api/v1/sign_out', to: 'devise_customizations/sessions#destroy'
   end
-  root 'high_voltage/pages#show', id: 'welcome'
+  root 'pages#show', id: 'welcome'
 
   namespace 'api' do
     namespace 'v1' do

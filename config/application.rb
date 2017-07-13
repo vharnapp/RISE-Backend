@@ -48,5 +48,13 @@ module AthletefitBackend
     }
 
     config.time_zone = 'Central Time (US & Canada)'
+
+    config.to_prepare do
+      Devise::SessionsController.layout 'no_header_or_footer'
+      # Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "devise" }
+      # Devise::ConfirmationsController.layout "devise"
+      # Devise::UnlocksController.layout "devise"
+      # Devise::PasswordsController.layout "devise"
+    end
   end
 end

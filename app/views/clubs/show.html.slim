@@ -1,15 +1,5 @@
-h2
-  | Club:&nbsp;
-  = @club.name
-
-h3
-  | Teams:&nbsp;
-
-ul
 - @club.teams.each do |team|
-  li= link_to team.name, club_team_path(team.club, team)
-
-br
-br
-
-= link_to 'Edit', edit_club_path(@club)
+  = link_to club_team_path(team.club, team) do
+    = image_tag team.logo.url
+    = team.name
+  br
