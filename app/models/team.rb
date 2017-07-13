@@ -4,7 +4,7 @@ class Team < ApplicationRecord
   extend FriendlyId
   friendly_id :name
 
-  mount_uploader :logo, ImageUploader
+  mount_uploader :logo, LogoUploader
 
   before_create :generate_code
 

@@ -18,7 +18,8 @@ end
 #  deleted_at            :datetime
 #  description           :text
 #  display_track         :integer
-#  icon                  :string
+#  icon_black            :string
+#  icon_white            :string
 #  id                    :integer          not null, primary key
 #  keyframe_content_type :string
 #  keyframe_file_name    :string

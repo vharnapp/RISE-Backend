@@ -44,7 +44,10 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     ),
     position: Field::Number,
     prerequisites: Field::String,
-    icon: Field::Carrierwave.with_options(
+    icon_white: Field::Carrierwave.with_options(
+      image_on_index: true,
+    ),
+    icon_black: Field::Carrierwave.with_options(
       image_on_index: true,
     ),
   }.freeze
@@ -55,7 +58,7 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :icon,
+    :icon_white,
     :name,
     :description,
     :display_track,
@@ -72,7 +75,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     :tracks,
     :level,
     :prerequisites,
-    :icon,
+    :icon_white,
+    :icon_black,
     :keyframe,
     :video,
     :phases,
@@ -88,7 +92,8 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
     :tracks,
     :level,
     :prereq,
-    :icon,
+    :icon_white,
+    :icon_black,
     :keyframe,
     :video,
     :phases,

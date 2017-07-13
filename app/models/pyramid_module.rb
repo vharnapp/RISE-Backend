@@ -3,7 +3,8 @@ class PyramidModule < ApplicationRecord
   acts_as_list scope: [:level]
 
   include HasAttachedVideo
-  mount_uploader :icon, ImageUploader
+  mount_uploader :icon_white, PyramidModuleIconUploader
+  mount_uploader :icon_black, PyramidModuleIconUploader
 
   enum display_track: {
     speed: 0,
@@ -85,7 +86,8 @@ end
 #  deleted_at            :datetime
 #  description           :text
 #  display_track         :integer
-#  icon                  :string
+#  icon_black            :string
+#  icon_white            :string
 #  id                    :integer          not null, primary key
 #  keyframe_content_type :string
 #  keyframe_file_name    :string

@@ -40,7 +40,7 @@ class User < ApplicationRecord
   has_many :phase_attempts, dependent: :destroy
   has_many :attempted_phases, through: :phase_attempts, source: :phase
 
-  mount_uploader :avatar, ImageUploader
+  mount_uploader :avatar, AvatarUploader
 
   validates :email,
             presence: true,

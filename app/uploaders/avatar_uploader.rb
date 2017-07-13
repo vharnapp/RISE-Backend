@@ -1,4 +1,4 @@
-class ImageUploader < CarrierWave::Uploader::Base
+class AvatarUploader < CarrierWave::Uploader::Base
   include ::CarrierWaveBase64Uploader
 
   # Store uploaded images in S3
@@ -11,7 +11,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def default_url
-    ActionController::Base.helpers.asset_path('fallback/' + [version_name, 'default.png'].compact.join('_'))
+    ActionController::Base.helpers.asset_path('fallback/' + [version_name, 'default-avatar.png'].compact.join('_'))
   end
 
   # Override the directory where uploaded files will be stored.

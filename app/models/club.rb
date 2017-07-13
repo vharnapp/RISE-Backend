@@ -4,8 +4,8 @@ class Club < ApplicationRecord
   extend FriendlyId
   friendly_id :name
 
-  mount_uploader :logo, ImageUploader
-  mount_uploader :teams_csv, ImageUploader # prob make a file uploader
+  mount_uploader :logo, LogoUploader
+  mount_uploader :teams_csv, FileUploader
 
   has_many :temp_teams, dependent: :destroy
   has_many :teams, -> { order(position: :asc) }, dependent: :destroy

@@ -27,7 +27,7 @@ section.main-content__body.main-content__body--flush
             .pyramid-module
               .circle(data-value="#{pyramid_module.percent_complete_for_user(player)}")
                 .logo-container
-                  = image_tag pyramid_module.icon.url
+                  = image_tag pyramid_module.icon_white.url
                   .days-since-active
                     = player.days_since_last_confidence_rating_for_pyramid_module(pyramid_module).to_s + ' days'
               .checkbox-container
