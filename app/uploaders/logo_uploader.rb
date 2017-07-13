@@ -9,7 +9,7 @@ class LogoUploader < CarrierWave::Uploader::Base
   end
 
   def default_url
-    ActionController::Base.helpers.asset_path('fallback/' + [version_name, 'default-logo.jpg'].compact.join('_'))
+    ActionController::Base.helpers.asset_path('fallback/' + [version_name, 'default-logo.png'].compact.join('_'))
   end
 
   # Override the directory where uploaded files will be stored.

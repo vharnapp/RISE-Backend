@@ -190,8 +190,8 @@
 
 // SETTINGS MENU
 
-ul.settings-menu li ul.menu li {
-  margin-left: 20px;
+ul.settings-menu li.clickable {
+  padding-left: 20px;
 }
 .menu.vertical > li {
     display: block;

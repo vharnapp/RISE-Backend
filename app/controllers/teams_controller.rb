@@ -3,7 +3,7 @@ class TeamsController < ApplicationController
   load_and_authorize_resource :team, through: :club, shallow: true
 
   def index
-    redirect_to club_team_path(@club, @club.teams.first)
+    redirect_to club_path(@club)
   end
 
   def show; end

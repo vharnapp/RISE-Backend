@@ -7,9 +7,9 @@
             = link_to root_path do
               = image_tag 'rise-logo-green.png', class:'logo'
           li.org-selector
-            = link_to 'Clubs', @club_path
+            = link_to 'Clubs', clubs_path
           li.org-selector
-            = link_to 'Teams'
+            = link_to 'Teams', club_path(@clubs.first)
           - if true_user && true_user.admin?
             - if current_user != true_user
               li = link_to '<span>Stop</span>'.html_safe, stop_impersonating_admin_users_path

@@ -32,6 +32,14 @@ class Club < ApplicationRecord
     end
   end
 
+  def display_address
+    output = ''
+    output << "#{address_line1}<br>"
+    output << "#{address_line2}<br>" if address_line2.present?
+    output << "#{address_city}, #{address_state} #{address_zip}"
+    output.html_safe
+  end
+
   def fee
     subscriptions.current.first.price * subscriptions.current.first.players.count
   end

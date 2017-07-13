@@ -16,7 +16,9 @@
   - @club.teams.each do |team|
     ul.team-list.small-12.left
       li.small-3 = link_to club_team_path(team.club, team) do
+        span.club-logo
           = image_tag team.logo.url
+        span(style='margin: 0 0 0 10px;position: relative; top: 10px;')
           = team.name
       li.small-3
         span.coach-label
