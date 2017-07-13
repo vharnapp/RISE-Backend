@@ -21,7 +21,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$primary: #94E644;
+$primary: #3adb76;
 $secondary: #2F705D;
 $dark-gray: #232323;
 $gray: #999999;
@@ -136,7 +136,7 @@ $hint-grey: #7b808c;
 
 // Font Colors
 $base-font-color: $grey-7;
-$action-color: $blue;
+$action-color: $primary;
 
 // Background Colors
 $base-background-color: $grey-0;
@@ -162,3 +162,8 @@ $base-border: 1px solid $base-border-color;
 // Transitions
 $base-duration: 250ms;
 $base-timing: ease-in-out;
+
+// Interactive
+.clickable {
+  cursor: pointer;
+}

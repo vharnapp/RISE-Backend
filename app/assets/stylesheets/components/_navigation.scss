@@ -187,3 +187,33 @@
   	text-align: center;
   }
 }
+
+// SETTINGS MENU
+
+li.settings-menu {
+  margin-left: 20px;
+}
+.menu.vertical > li {
+    display: block;
+    color: black;
+    padding: .5em;
+}
+.dropdown.menu > li.opens-left > .is-dropdown-submenu {
+    background: white;
+    color: black;
+    text-align: left;
+    width: 150px;
+    font-family: Helvetica, Arial;
+    top: 100%;
+    left: 0;
+}
+
+li.settings-menu .menu > li > a {
+    display: block;
+    padding: 0rem 2rem 0rem 0rem;
+    line-height: 1;
+    color: white;
+    font-weight: bold;
+    color: black;
+    background: none;
+}
