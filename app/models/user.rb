@@ -113,7 +113,7 @@ class User < ApplicationRecord
 
   # TODO: (2017-07-12) jon => move this to pyramid module? or move percent_complete_for_user to here.
   def days_since_last_confidence_rating_for_pyramid_module(pyramid_module)
-    workout_ids = pyramid_module.phases.includes(:workouts).flat_map(&:workouts).map(&:id)
+    workout_ids = pyramid_module.phases.includes(:workouts).uniq.flat_map(&:workouts).map(&:id)
 
     if confidence_ratings
       crs = confidence_ratings.where(workout: workout_ids).order(:updated_at)
