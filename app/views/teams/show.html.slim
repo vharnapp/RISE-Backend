@@ -1,3 +1,7 @@
+- content_for :head do
+  / Fixes the back button by making turbolinks re-render from the server instead of cache
+  meta name='turbolinks-cache-control' content='no-cache'
+
 = render 'components/secondary-header'
 = render 'components/team-header'
 
@@ -5,12 +9,12 @@ section.main-content__body.main-content__body--flush
   .players.row.columns
     - @team.players.each do |player|
       .player
-        .delete(data-tooltip aria-haspopup='true' class='has-tip right' data-disable-hover='false' tabindex='1' title="Delete #{player.full_name}?" style='cursor:pointer; border-bottom: none;')
+        .delete(data-tooltip aria-haspopup='true' class='has-tip right' data-disable-hover='false' tabindex='1' title="Remove #{player.full_name} from the team?")
           - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
           = link_to 'x'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }
         .player-info.small-12.medium-3(data-user-id="#{player.slug}")
           .player-avatar.left
-            = image_tag player.avatar.url, class: 'player-avatar'
+            = image_tag player.avatar.url
             - if player.active_today?
               span.status-badge.active
 

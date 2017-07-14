@@ -37,9 +37,9 @@ class Team < ApplicationRecord
 
   def logo_image_url
     if logo.url.present? && !logo.url.match?(/\/assets\/fallback\/default.*/)
-      logo.url
+      logo.thumb.url
     else
-      club.logo.url
+      club.logo.thumb.url
     end
   end
 

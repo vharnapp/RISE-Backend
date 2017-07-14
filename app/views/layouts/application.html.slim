@@ -19,6 +19,8 @@ html[lang="en"]
     = favicon_link_tag 'favicon.ico'
     - # Add gon here for gon use inside the compiled js before the page is fully loaded
     = Gon::Base.render_data
+    - if content_for?(:head)
+      = yield(:head)
   body class="#{devise_controller? ? 'devise' : 'application'} #{body_class}"
     .outer-wrapper
       - # Add gon here for turbolinks benefit

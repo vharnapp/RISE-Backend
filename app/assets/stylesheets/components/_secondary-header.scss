@@ -76,10 +76,6 @@
   top: 14px;
   font-size: 11px;
 }
-.checkbox-container{
-  // position: relative;
-  // top: 16px;
-}
 .unlock-pyramid-module-checkbox {
   margin: 0 5px 0 0;
   padding: 0;
@@ -87,7 +83,7 @@
   top: 5px;
 }
 
-// put this somewhere that makes sense
+// TODO: (2017-07-14) jon => put this somewhere that makes sense
 .player{
   position: relative;
   clear: both;
@@ -100,13 +96,15 @@
 }
 .player-info {
   min-width: 140px;
-  padding-top: 15px;
-  // background: red;
+  padding: 25px 25px 0 25px;
   cursor: pointer;
   &:hover{
-    background: $primary;
+    background: $light-gray;
     border-radius: 2px;
   }
+}
+.tooltip {
+  max-width: rem-calc(400px) !important;
 }
 .player-avatar {
   position: relative;
@@ -116,8 +114,8 @@
 
   img {
     width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin: 0px 5px;
   }
 
   span.status-badge {
@@ -158,6 +156,8 @@
   z-index: 1;
   top: 0;
   text-align: center;
+  cursor: pointer;
+  border-bottom: none;
 }
 .delete a{
   color: #ccc;
