@@ -53,7 +53,7 @@ class PyramidModule < ApplicationRecord
 
     num_exercises =
       workouts
-        .joins(:exercises)
+        .includes(:exercises)
         .where(phases: { supplemental: false })
         .uniq
         .flat_map(&:exercises)

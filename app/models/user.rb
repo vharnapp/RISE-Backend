@@ -116,7 +116,7 @@ class User < ApplicationRecord
     workout_ids = pyramid_module.phases.includes(:workouts).uniq.flat_map(&:workouts).map(&:id)
 
     if confidence_ratings
-      crs = confidence_ratings.where(workout: workout_ids).order(updated_at: :desc)
+      crs = confidence_ratings.where(workout: workout_ids).order(updated_at: :desc).limit(1)
       if crs.present?
         ((Time.current - crs.first.updated_at) / 1.day).round
       else

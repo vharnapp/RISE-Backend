@@ -32,6 +32,7 @@ Rails.application.configure do
     Bullet.enable = true if defined?(Bullet)
     Bullet.bullet_logger = true if defined?(Bullet)
     Bullet.rails_logger = true if defined?(Bullet)
+    Bullet.add_footer = true if defined?(Bullet)
   end
 
   config.action_mailer.delivery_method = :file
