@@ -11,3 +11,12 @@
     ul
     - @user.affiliations.each do |affiliation|
       li = link_to "#{affiliation.team.name} (#{affiliation.title})", club_team_path(affiliation.team.club, affiliation.team)
+
+- if @user.player?
+  .row
+    hr(style='margin-top:90px;')
+    .player-pyramid-modules
+      - 5.downto(1).each do |level|
+        .pyramid-modules.small-12.medium-7
+          = render 'teams/pyramid_module_progress', { level: level, player: @user }
+      .medium-5

@@ -26,6 +26,17 @@ $(document).on('turbolinks:load', function() {
     Turbolinks.visit(location)
   });
 
+  $(document).on('click', '.player-info', function(){
+    var club_id = $("select[name='clubs']").val();
+    var team_id = $("select[name='teams']").val();
+    var user_id = $(this).data('user-id');
+
+    // var location = '/clubs/' + club_id + '/teams/' + team_id + '/users/' + user_id;
+    var location = '/users/' + user_id;
+
+    Turbolinks.visit(location)
+  });
+
   // Coach dashboard
   $('.unlock-pyramid-module-checkbox').on('change', function(){
     var user_id = $(this).data('user-id');
