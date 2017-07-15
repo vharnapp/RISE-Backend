@@ -9,10 +9,14 @@ section.main-content__body.main-content__body--flush
   .players.row.columns
     - @team.players.each do |player|
       .player
-        - has_tip = request.variant.blank? ? 'has-tip' : ''
-        .delete(data-tooltip aria-haspopup='true' class="#{has_tip} right" data-disable-hover='false' tabindex='1' title="Remove #{player.full_name} from the team?")
-          - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
-          = link_to 'x'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }
+        - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
+        - delete_link = link_to 'x'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }
+        - if request.variant.blank?
+          .delete(data-tooltip aria-haspopup='true' class="has-tip right" data-disable-hover='false' tabindex='1' title="Remove #{player.full_name} from the team?")
+            = delete_link
+        - else
+          .delete
+            = delete_link
         .player-info.small-12.medium-3(data-user-id="#{player.slug}")
           .player-avatar.left
             = image_tag player.avatar.url
