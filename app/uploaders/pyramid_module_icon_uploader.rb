@@ -1,4 +1,6 @@
 class PyramidModuleIconUploader < CarrierWave::Uploader::Base
+  include CarrierWave::MiniMagick
+
   # Store uploaded images in S3
   if Rails.env.development? || Rails.env.test?
     storage :file
