@@ -1,3 +1,7 @@
+- content_for :head do
+  / Fixes the back button by making turbolinks re-render from the server instead of cache
+  meta name='turbolinks-cache-control' content='no-cache'
+
 .row.columns.padding-t-25
   .small-12.medium-6.left.padding-t-25
     h3 = @user.full_name
