@@ -136,7 +136,7 @@ select {
 }
 
 [type="checkbox"]:checked:after {
-	content: '\2714';
+  content: '\2714';
 	font-size: 14px;
 	position: absolute;
 	top: 0px;
@@ -333,6 +333,7 @@ select.subheader {
     5px 5px;
   background-repeat: no-repeat;
   background-color: transparent;
+  width: auto;
 
   &:focus {
     border: none;
@@ -365,3 +366,13 @@ select.subheader {
     padding-left: 10px;
   }
 }
+/* select.club-selector {
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  height: 45px;
+  padding: 10px 0px;
+  margin-top: -11px;
+  cursor: pointer;
+} */

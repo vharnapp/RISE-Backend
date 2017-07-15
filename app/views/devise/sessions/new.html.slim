@@ -1,15 +1,16 @@
-header.main-content__header[role='banner']
+.black-page
   .row.columns.text-center
-    h1 Sign Into Your Account
+    div.margin-t-35
+      = image_tag 'rise-logo-green.png', width:"150", class:'margin-t-35'
 
-.row.columns.margin-t-35
-  .small-12.medium-6.medium-offset-3.margin-t-35
-    = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      .form-inputs
-        = f.input :email, required: false, autofocus: true
-        = f.input :password, required: false
-        = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
-      .form-actions
-        = f.button :submit, "Log in"
-    .text-center
-      = render "devise/shared/links"
+  .row.columns.margin-t-35
+    .small-10.small-offset-2.medium-4.medium-offset-4.margin-t-35
+      = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .form-inputs
+          = f.input :email, required: false, autofocus: true
+          = f.input :password, required: false
+
+        .form-actions
+          = f.button :submit, "Log in"
+      .text-center
+        = render "devise/shared/links"

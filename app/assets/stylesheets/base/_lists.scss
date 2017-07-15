@@ -43,16 +43,6 @@ body {
   letter-spacing: 1;
   text-transform: uppercase;
 }
-select.club-selector {
-  background: transparent;
-  color: white;
-  font-weight: bold;
-  margin: 0;
-  height: 45px;
-  padding: 10px 0px;
-  margin-top: -11px;
-  cursor: pointer;
-}
 ul.team-list {
   display: inline-block;
   border-bottom: 1px solid $light-gray;
@@ -60,7 +50,6 @@ ul.team-list {
   li {
     float: left;
     padding: 45px 0px;
-    height: 115px;
 
     img {
       width: 30px;

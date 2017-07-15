@@ -190,31 +190,62 @@
 
 // SETTINGS MENU
 
-ul.settings-menu li.clickable {
+li.clickable {
   padding-left: 20px;
 }
 .menu.vertical > li {
-    display: block;
-    color: white;
-    padding: .5em;
-    z-index: 9;
+  display: block;
+  color: white;
+  padding: .5em;
+  z-index: 9;
 }
 .dropdown.menu > li.opens-left > .is-dropdown-submenu {
-    background: $dark-gray;
-    color: black;
-    text-align: left;
-    width: 150px;
-    font-family: Helvetica, Arial;
-    top: 100%;
-    left: 0;
+  background: $dark-gray;
+  color: black;
+  text-align: left;
+  top: 100%;
+  left: 0;
 }
 
-li.settings-menu .menu > li > a {
+li.settings-menu {
+  padding: 0px 10px;
+}
+
+li.settings-menu > li > a {
+  display: block;
+  padding: 0rem 2rem 0rem 0rem;
+  line-height: 1;
+  font-weight: bold;
+  background: $dark-gray;
+  position: relative;
+  color: $dark-gray;
+}
+li.settings-menu ul.menu {
+  visibility: hidden;
+  position: absolute;
+  background: white;
+  color: $dark-gray;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  z-index: 9;
+  margin-top: 5px;
+  margin-left: -78px;
+
+  li {
     display: block;
-    padding: 0rem 2rem 0rem 0rem;
-    line-height: 1;
-    color: white;
-    font-weight: bold;
-    color: black;
-    background: $dark-gray;
+
+    a {
+      color: $dark-gray;
+      background: transparent;
+      padding: 10px 20px;
+      font-size: 14px;
+
+      &:hover {
+        color: $dark-gray !important;
+        background: $light-gray;
+      }
+    }
+  }
+}
+li.settings-menu:hover ul.menu {
+  visibility: visible;
 }
