@@ -4,6 +4,7 @@ module Api
       include KeyframeFields
 
       attributes :name,
+                 :icon, # legacy, remove this after Jason fixed the back end
                  :icon_white,
                  :icon_black,
                  :description,
@@ -20,6 +21,10 @@ module Api
       # def self.default_sort
       #   [{ field: :position, direction: :asc }]
       # end
+
+      def icon
+        icon_white
+      end
     end
   end
 end
