@@ -7,12 +7,12 @@
           = player.days_since_last_confidence_rating_for_pyramid_module(pyramid_module).to_s + ' days'
     .checkbox-container
       - unlocked_pyramid_module = player.unlocked_pyramid_modules.find_by(pyramid_module_id: pyramid_module.id)
-      = check_box_tag "unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}",
+      = check_box_tag("unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}",
                       pyramid_module.id,
                       player.unlocked_pyramid_modules.includes(:pyramid_module).flat_map(&:pyramid_module).include?(pyramid_module),
                       class: 'unlock-pyramid-module-checkbox',
                       data: { user_id: player.id, pyramid_module_id: pyramid_module.id, unlocked_pyramid_module_id: unlocked_pyramid_module.try(:id) },
                       style: "display: #{level > 1 ? 'none' : ''}",
-                      disabled: level > 1
+                      disabled: level > 1).html_safe
       = label_tag "unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}", pyramid_module.name
       / = pyramid_module.percent_complete_for_user(player, debug: true)

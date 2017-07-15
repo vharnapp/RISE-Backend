@@ -17,7 +17,7 @@
             - else
               li = link_to 'Admin', admin_users_path, data: { turbolinks: false }
       .top-bar-right.hide-for-small-only
-        ul.dropdown.menu.settings-menu(data-dropdown-menu)
+        ul.menu
           - if current_user
             li
               ' Hello,
@@ -27,7 +27,7 @@
                 '  -
                 i
                   = current_user.role_list
-            li.fa.fa-caret-down.clickable
+            li.fa.fa-caret-down.settings-menu.clickable
               - if current_user
                 ul.menu
                   li= link_to 'Settings', edit_user_registration_path
