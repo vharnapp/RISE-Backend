@@ -1,14 +1,14 @@
 header.main-content__header[role='banner']
   .row.columns
-    .group.small-6.medium-8.left
+    .group.small-12.medium-8.left
       - if current_user
       ul
-        li.small-4.medium.5.left
+        li.small-6.medium-4.left
           span.group-label Club
           -# club_options = @clubs.length > 1 ? { include_blank: 'Select Club' } : {}
           = select_tag 'clubs', options_from_collection_for_select(@clubs, 'slug', 'name', @club.try(:slug)), include_blank: 'All', class: 'club-selector subheader'
         - if @club
-          li.small-4.medium-5.left
+          li.small-5.small-offset-1.medium-4.left
             span.group-label Team
             -# team_options = @club.my_teams(current_user).length > 1 ? { include_blank: 'Select Team' } : {}
             = select_tag 'teams', options_from_collection_for_select(@club.my_teams(current_user), 'slug', 'name', @team.try(:slug)), class: 'club-selector subheader', include_blank: 'All'
