@@ -1,0 +1,17 @@
+p= @player.full_name + ','
+
+p
+  | You have been removed from the following team: #{@team.name}.
+
+p
+  | If you feel this removal was in error, please contact the club admin at:
+
+p
+  | Email: #{link_to @team.club.contact_email, "mailto:#{@team.club.contact_email}"}
+  br
+  | Phone: #{@team.club.contact_phone}
+
+p
+  | Thank you,
+  br
+    | &dash; Rise

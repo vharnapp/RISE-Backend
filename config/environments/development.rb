@@ -35,7 +35,7 @@ Rails.application.configure do
     Bullet.add_footer = true if defined?(Bullet)
   end
 
-  config.action_mailer.delivery_method = :file
+  config.action_mailer.delivery_method = :letter_opener
 
   config.action_mailer.perform_caching = false
 
