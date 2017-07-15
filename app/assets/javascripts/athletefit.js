@@ -2,6 +2,18 @@ $(document).on('turbolinks:load', function() {
   console.log('(document).turbolinks:load')
   $(document).foundation();
 
+  $('.selectize').selectize({
+    plugins: ['remove_button'],
+    delimiter: ',',
+    persist: false,
+    create: function(input) {
+      return {
+        value: input,
+        text: input,
+      }
+    }
+  });
+
   $('.circle').circleProgress({
     startAngle: -Math.PI / 2,
     size: '76',

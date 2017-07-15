@@ -1,6 +1,6 @@
 require 'administrate/base_dashboard'
 
-class PhaseDashboard < Administrate::BaseDashboard
+class ExerciseWorkoutDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,21 +8,13 @@ class PhaseDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    pyramid_module: Field::BelongsTo,
+    exercise: Field::BelongsTo,
+    workout: Field::BelongsTo,
     id: Field::Number,
-    name: Field::String,
-    supplemental: Field::Boolean,
-    video: PaperclipVideoField,
-    keyframe: Field::Paperclip.with_options(
-      big_style: :medium,
-    ),
-    workouts: Field::NestedHasMany.with_options(
-      skip: [:phase_id, :pyramid_module_name, :exercises_multi_select],
-      limit: 30,
-    ),
-    position: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    deleted_at: Field::DateTime,
+    position: Field::Number,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -31,39 +23,36 @@ class PhaseDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
+    :exercise,
     :position,
-    :name,
-    :pyramid_module,
-    :supplemental,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :name,
-    :pyramid_module,
-    :supplemental,
-    :keyframe,
-    :video,
-    :workouts,
+    :exercise,
+    :workout,
+    :id,
+    :created_at,
+    :updated_at,
+    :deleted_at,
+    :position,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :pyramid_module,
-    :name,
-    :supplemental,
-    :keyframe,
-    :video,
-    :workouts,
+    :exercise,
+    :workout,
+    :deleted_at,
+    :position,
   ].freeze
 
-  # Overwrite this method to customize how phases are displayed
+  # Overwrite this method to customize how exercise workouts are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(phase)
-    phase.name
+  def display_resource(exercise_workout)
+    exercise_workout.exercise.name
   end
 end

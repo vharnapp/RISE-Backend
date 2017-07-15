@@ -71,7 +71,7 @@ class ExerciseDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how exercises are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(exercise)
-  #   "Exercise ##{exercise.id}"
-  # end
+  def display_resource(exercise)
+    exercise.name
+  end
 end

@@ -17,6 +17,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
     name: Field::String,
     supplemental: Field::Boolean,
     pyramid_module_name: PyramidModuleNameField,
+    exercise_workouts: Field::HasMany,
     exercises: Field::NestedHasMany.with_options(
       skip: [:workout],
       limit: 30,
@@ -35,6 +36,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
     ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    position: Field::Number,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -43,6 +45,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
+    :position,
     :name,
     :pyramid_module_name,
     :phase,
@@ -56,6 +59,7 @@ class WorkoutDashboard < Administrate::BaseDashboard
     :name,
     :supplemental,
     :exercises,
+    :exercise_workouts,
   ].freeze
 
   # FORM_ATTRIBUTES

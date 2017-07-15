@@ -20,6 +20,7 @@
 //= require foundation
 //= require flash
 //= require athletefit
+//= require selectize
 //
 // ... Turbolinks needs to be last
 //= require turbolinks

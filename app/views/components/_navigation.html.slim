@@ -6,9 +6,9 @@
           li.menu-text
             = link_to root_path do
               = image_tag 'rise-logo-green.png', class:'logo'
-          li.org-selector
+          li.club-selector
             = link_to 'Clubs', clubs_path
-          li.org-selector
+          li.club-selector
             - if @clubs.present?
               = link_to 'Teams', club_path(@clubs.first)
           - if true_user && true_user.admin?

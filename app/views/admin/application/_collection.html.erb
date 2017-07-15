@@ -59,9 +59,13 @@ to display a collection of resources in an HTML table.
           <% end %>
         </th>
       <% end %>
-      <% [valid_action?(:edit, collection_presenter.resource_name),
-          valid_action?(:destroy, collection_presenter.resource_name)].count(true).times do %>
-        <th scope="col"></th>
+
+      <% # override for the hmt join model, so we can display the position without edit or destroy %>
+      <% unless resources.first.class.name == 'ExerciseWorkout' %>
+        <% [valid_action?(:edit, collection_presenter.resource_name),
+            valid_action?(:destroy, collection_presenter.resource_name)].count(true).times do %>
+          <th scope="col"></th>
+        <% end %>
       <% end %>
     </tr>
   </thead>
@@ -85,22 +89,25 @@ to display a collection of resources in an HTML table.
           </td>
         <% end %>
 
-        <% if valid_action? :edit, collection_presenter.resource_name %>
-          <td><%= link_to(
-            t("administrate.actions.edit"),
-            [:edit, namespace, resource],
-            class: "action-edit",
-          ) %></td>
-        <% end %>
+        <% # override for the hmt join model, so we can display the position without edit or destroy %>
+        <% unless resource.class.name == 'ExerciseWorkout' %>
+          <% if valid_action? :edit, collection_presenter.resource_name %>
+            <td><%= link_to(
+              t("administrate.actions.edit"),
+              [:edit, namespace, resource],
+              class: "action-edit",
+            ) %></td>
+          <% end %>
 
-        <% if valid_action? :destroy, collection_presenter.resource_name %>
-          <td><%= link_to(
-            t("administrate.actions.destroy"),
-            [namespace, resource],
-            class: "text-color-red",
-            method: :delete,
-            data: { confirm: t("administrate.actions.confirm") }
-          ) %></td>
+          <% if valid_action? :destroy, collection_presenter.resource_name %>
+            <td><%= link_to(
+              t("administrate.actions.destroy"),
+              [namespace, resource],
+              class: "text-color-red",
+              method: :delete,
+              data: { confirm: t("administrate.actions.confirm") }
+            ) %></td>
+          <% end %>
         <% end %>
       </tr>
     <% end %>
