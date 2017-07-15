@@ -24,8 +24,12 @@ class UserDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     email: Field::String,
-    encrypted_password: Field::String,
-    password: Field::String,
+    encrypted_password: Field::String.with_options(
+      searchable: false,
+    ),
+    password: Field::String.with_options(
+      searchable: false,
+    ),
     password_confirmation: Field::Password,
     reset_password_token: Field::Password,
     reset_password_sent_at: Field::DateTime,
@@ -36,7 +40,9 @@ class UserDashboard < Administrate::BaseDashboard
     current_sign_in_ip: Field::String.with_options(searchable: false),
     last_sign_in_ip: Field::String.with_options(searchable: false),
     roles_mask: Field::Number,
-    role_list: Field::String,
+    role_list: Field::String.with_options(
+      searchable: false,
+    ),
     slug: Field::String,
     deleted_at: Field::DateTime,
     nickname: Field::String,

@@ -24,8 +24,20 @@ class User < ApplicationRecord
   has_many :teams, through: :affiliations
   has_many :clubs, through: :teams
 
+  has_many :coach_affiliations, -> { coaches }, class_name: 'Affiliation'
+  has_many :player_affiliations, -> { players }, class_name: 'Affiliation'
+
+  has_many :teams_coached,
+           through: :coach_affiliations,
+           class_name: 'Team',
+           source: :team
+  has_many :teams_played,
+           through: :player_affiliations,
+           class_name: 'Team',
+           source: :team
+
   has_many :club_affiliations
-  has_many :administered_clubs,
+  has_many :clubs_administered,
            through: :club_affiliations,
            source: :club
 

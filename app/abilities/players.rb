@@ -1,4 +1,4 @@
-Canard::Abilities.for(:user) do
+Canard::Abilities.for(:player) do
   can [:show, :edit, :update, :analytics_alias], User do |u|
     u == user
   end
@@ -18,15 +18,15 @@ Canard::Abilities.for(:user) do
   can :manage, UnlockedPyramidModule do |upm|
     upm.user == user
   end
-  can [:create, :destroy], UnlockedPyramidModule
+  can :create, UnlockedPyramidModule
 
   can :manage, PhaseAttempt do |pa|
     pa.user == user
   end
   can :create, PhaseAttempt
 
-  can [:create, :update, :destroy], Affiliation
-
-  can [:read], Club
-  can [:read], Team
+  can [:update, :destroy], Affiliation do |affiliation|
+    affiliation.user == user
+  end
+  can [:create], Affiliation
 end

@@ -9,6 +9,7 @@ class Club < ApplicationRecord
 
   has_many :temp_teams, dependent: :destroy
   has_many :teams, -> { order(position: :asc) }, dependent: :destroy
+  has_many :coaches, through: :teams
   has_many :players, through: :teams
 
   has_many :club_affiliations

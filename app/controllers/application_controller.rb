@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
         }, status: :forbidden
       end
 
-      format.html { redirect_to root_path, alert: exception.message }
+      format.html { redirect_to '/unauthorized', alert: exception.message }
     end
   end
 
@@ -39,8 +39,8 @@ class ApplicationController < ActionController::Base
         Club.all.order(:name)
       else
         affiliated_club_ids = current_user.clubs.map(&:id) # player/coach
-        administered_club_ids = current_user.administered_clubs.map(&:id)
-        ids = (affiliated_club_ids + administered_club_ids).uniq
+        clubs_administered_ids = current_user.clubs_administered.map(&:id)
+        ids = (affiliated_club_ids + clubs_administered_ids).uniq
         Club.where(id: ids).order(:name)
       end
   end
