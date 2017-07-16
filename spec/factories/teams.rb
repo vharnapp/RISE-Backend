@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :team do
     name { Faker::Name.team_name }
-    code { Faker::Crypto.unique.md5.upcase[1..6] }
+    code { Faker::Crypto.unique.md5.downcase[1..6] }
     num_players 11
 
     callback(:after_create) do |model|

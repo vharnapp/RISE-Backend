@@ -29,8 +29,11 @@ class Team < ApplicationRecord
   validates :name, presence: true
 
   def display_code
+    # Return the normal code if we detect that the code was customized
+    return code if code.match?(/\s/) || code.length > 6 || !code.match?(/[0-9]/)
+
     # chunk into groups of 3 separated by dashes
-    code.chars.to_a.each_slice(3).to_a.map(&:join).join('-')
+    code.chars.to_a.each_slice(3).to_a.map(&:join).join('-').upcase
   rescue
     'n/a'
   end
@@ -53,8 +56,8 @@ class Team < ApplicationRecord
     return if self[:code].present?
 
     loop do
-      code = SecureRandom.hex.upcase[1..6]
-      next unless code.match?(/[A-Z]/) && code.match?(/[0-9]/) # letters & num
+      code = SecureRandom.hex.downcase[1..6]
+      next unless code.match?(/[a-z]/) && code.match?(/[0-9]/) # letters & num
       self.code = code
       break unless Team.exists?(code: code)
     end
