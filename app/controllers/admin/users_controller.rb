@@ -2,6 +2,8 @@ module Admin
   class UsersController < Admin::ApplicationController
     skip_before_action :authenticate_admin, only: [:stop_impersonating]
 
+    before_action :default_params
+
     # TODO: (2017-04-08) jon => extract this to a service object or form object
     # after looking at the wireframes and figuring out how the UI will handle
     # these user additions.
@@ -78,6 +80,11 @@ module Admin
         impersonated_user_email: user.email,
         impersonated_by_email: true_user.email,
       )
+    end
+
+    def default_params
+      params[:order] ||= 'created_at'
+      params[:direction] ||= 'desc'
     end
   end
 end

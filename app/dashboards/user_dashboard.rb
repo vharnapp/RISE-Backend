@@ -64,6 +64,7 @@ class UserDashboard < Administrate::BaseDashboard
     :nickname,
     :role_list,
     :teams,
+    :created_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
