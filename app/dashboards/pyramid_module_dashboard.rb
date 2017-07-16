@@ -10,7 +10,9 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     name: Field::String,
-    description: Field::Text,
+    description: Field::Text.with_options(
+      searchable: true,
+    ),
     display_track: Field::Enum,
     tracks: Field::SelectEssential.with_options(
       choices: %w[Speed Skill Strength],
@@ -43,7 +45,9 @@ class PyramidModuleDashboard < Administrate::BaseDashboard
       limit: 10,
     ),
     position: Field::Number,
-    prerequisites: Field::String,
+    prerequisites: Field::String.with_options(
+      searchable: false,
+    ),
     icon_white: Field::Carrierwave.with_options(
       image_on_index: true,
     ),

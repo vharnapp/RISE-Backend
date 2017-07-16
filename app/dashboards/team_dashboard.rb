@@ -25,7 +25,9 @@ class TeamDashboard < Administrate::BaseDashboard
     deleted_at: Field::DateTime,
     position: Field::Number,
     code: Field::String,
-    display_code: Field::String,
+    display_code: Field::String.with_options(
+      searchable: false,
+    ),
     logo: Field::Carrierwave.with_options(
       image_on_index: true,
     ),
