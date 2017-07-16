@@ -20,7 +20,7 @@ module Api
         @user.roles << :player
 
         if @user.save
-          @user.unlock_starting_pyramid_module
+          @user.unlock_starting_pyramid_modules
 
           # On successful creation, generate token and return in response
           render_json_user_with_token(@user)

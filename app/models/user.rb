@@ -168,9 +168,11 @@ class User < ApplicationRecord
     1
   end
 
-  def unlock_starting_pyramid_module
-    pm = PyramidModule.default_unlocked
-    unlocked_pyramid_modules.create(pyramid_module: pm)
+  def unlock_starting_pyramid_modules
+    PyramidModule.default_unlocked.each do |pm|
+      unlocked_pyramid_modules.create!(pyramid_module: pm)
+    end
+
     unlocked_pyramid_modules
   end
 

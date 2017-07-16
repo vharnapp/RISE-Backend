@@ -34,7 +34,7 @@ class PyramidModule < ApplicationRecord
   end
 
   def self.default_unlocked
-    find_by(position: 3)
+    where(position: [3,15])
   end
 
   def prerequisites
