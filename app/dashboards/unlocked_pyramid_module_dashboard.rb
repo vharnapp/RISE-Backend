@@ -14,6 +14,7 @@ class UnlockedPyramidModuleDashboard < Administrate::BaseDashboard
     completed_phases: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    display_completed_phases: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -24,7 +25,7 @@ class UnlockedPyramidModuleDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :user,
     :pyramid_module,
-    :completed_phases,
+    :display_completed_phases,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -32,7 +33,7 @@ class UnlockedPyramidModuleDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :user,
     :pyramid_module,
-    :completed_phases,
+    :display_completed_phases,
   ].freeze
 
   # FORM_ATTRIBUTES

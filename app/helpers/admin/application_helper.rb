@@ -7,7 +7,7 @@ module Admin
         Administrate::Namespace.new(:admin).
           resources.
           map(&:resource).
-          map(&:to_sym) + [:players, :coaches]
+          map(&:to_sym) + [:players, :coaches, :available_pyramid_modules]
 
       params.permit(
         *resources,

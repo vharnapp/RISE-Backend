@@ -24,6 +24,7 @@ class PyramidModule < ApplicationRecord
   has_many :workouts, through: :phases
 
   has_many :unlocked_pyramid_modules, dependent: :destroy
+  has_many :users, through: :unlocked_pyramid_modules
 
   validates :name, :description, :display_track, presence: true
 

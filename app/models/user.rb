@@ -49,6 +49,10 @@ class User < ApplicationRecord
   has_many :pyramid_modules, -> { distinct }, through: :phases
 
   has_many :unlocked_pyramid_modules, dependent: :destroy
+  has_many :available_pyramid_modules,
+           through: :unlocked_pyramid_modules,
+           class_name: 'PyramidModule',
+           source: :pyramid_module
 
   has_many :phase_attempts, dependent: :destroy
   has_many :attempted_phases, through: :phase_attempts, source: :phase

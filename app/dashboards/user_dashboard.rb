@@ -15,6 +15,9 @@ class UserDashboard < Administrate::BaseDashboard
     exercises: Field::HasMany,
     workouts: Field::HasMany,
     unlocked_pyramid_modules: Field::HasMany,
+    available_pyramid_modules: Field::HasMany.with_options(
+      class_name: 'PyramidModule',
+    ),
     phase_attempts: Field::HasMany,
     phases: Field::HasMany,
     id: Field::Number,
@@ -75,8 +78,8 @@ class UserDashboard < Administrate::BaseDashboard
     :last_name,
     :email,
     :nickname,
-    :unlocked_pyramid_modules,
     :role_list,
+    :unlocked_pyramid_modules,
     :teams,
   ].freeze
 
@@ -92,7 +95,7 @@ class UserDashboard < Administrate::BaseDashboard
     :password,
     :password_confirmation,
     :teams,
-    :unlocked_pyramid_modules,
+    :available_pyramid_modules,
   ].freeze
 
   # Overwrite this method to customize how users are displayed

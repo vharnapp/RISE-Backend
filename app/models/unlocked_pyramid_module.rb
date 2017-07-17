@@ -1,6 +1,10 @@
 class UnlockedPyramidModule < ApplicationRecord
   belongs_to :user
   belongs_to :pyramid_module
+
+  def display_completed_phases
+    completed_phases.join(', ')
+  end
 end
 
 # == Schema Information

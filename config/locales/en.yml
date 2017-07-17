@@ -31,6 +31,7 @@ en:
       user:
         teams: Teams
         unlocked_pyramid_modules: Unlocked Modules
+        display_completed_phases: Completed Phases
       team:
         display_code: Code
 
