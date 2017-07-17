@@ -6,7 +6,7 @@ module Api
       # rubocop:disable Metrics/MethodLength
       def create
         code = params[:data][:attributes][:team_code].delete('-')
-        team = Team.find_by('LOWER(code) = ?', code.downcase).first
+        team = Team.find_by('LOWER(code) = ?', code.downcase)
 
         if team.present? && team.players.count.to_i >= team.num_players.to_i
           render json: {
