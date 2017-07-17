@@ -20,7 +20,7 @@ gem 'recipient_interceptor'
 # gem 'sass-rails', '~> 5.0'
 gem 'sassc-rails'
 gem 'simple_form'
-gem 'skylight'
+# gem 'skylight'
 gem 'sprockets', '>= 3.0.0'
 gem 'title'
 gem 'uglifier'
@@ -151,6 +151,7 @@ end
 
 group :staging, :production do
   # gem 'rack-timeout'
+  gem 'new_relic'
 end
 
 group :production do
