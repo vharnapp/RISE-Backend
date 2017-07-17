@@ -96,37 +96,18 @@ class User < ApplicationRecord
     count.positive?
   end
 
-  # rubocop:disable Metrics/MethodLength
   def day_streak
-    sql = %(
-      WITH RECURSIVE CTE(updated_at)
-      AS (
-        SELECT MAX(date(updated_at))
-        FROM confidence_ratings
-        WHERE user_id = #{id}
+    conf_ratings = confidence_ratings.order(updated_at: :desc)
 
-        UNION ALL
+    streak = 0
+    conf_ratings.map.with_index do |cr, index|
+      index += 1 if conf_ratings.first.updated_at.to_date == 1.day.ago.to_date
 
-        SELECT date(a.updated_at)
-        FROM confidence_ratings a
-        INNER JOIN CTE c
-        ON date(a.updated_at) = date(c.updated_at) - INTERVAL '1 day'
-        WHERE a.user_id = #{id}
-      )
-      SELECT DISTINCT * FROM CTE ORDER BY updated_at DESC;
-    ).squish
-
-    streak_days = ActiveRecord::Base.connection.execute(sql).values.flatten
-
-    if streak_days.count == 1 && streak_days.first.nil?
-      0
-    elsif Date.parse(streak_days.first) < 1.day.ago.to_date
-      0
-    else
-      streak_days.count
+      break unless cr.updated_at.to_date == index.days.ago.to_date
+      streak += 1
     end
+    streak
   end
-  # rubocop:enable Metrics/MethodLength
 
   # TODO: (2017-07-12) jon => move this to pyramid module? or move percent_complete_for_user to here.
   def days_since_last_confidence_rating_for_pyramid_module(pyramid_module)
