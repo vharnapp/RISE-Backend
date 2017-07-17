@@ -2,10 +2,12 @@ class ClubsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    redirect_to club_path(@clubs.first) if @clubs.length == 1
+    clubs = @clubs.includes(:club_affiliations, :administrators)
+    redirect_to club_path(clubs.first) if clubs.length == 1
   end
 
   def show
+    @teams = @club.teams.includes(:club, :coaches)
   end
 
   def edit; end

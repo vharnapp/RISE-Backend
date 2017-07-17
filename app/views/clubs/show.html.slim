@@ -13,7 +13,7 @@
         h4 Team Code
 
 .row.columns
-  - @club.teams.each do |team|
+  - @teams.each do |team|
     ul.team-list.small-12.left
       li.small-3 = link_to club_team_path(team.club, team) do
         span.club-logo
