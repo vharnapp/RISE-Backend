@@ -22,6 +22,7 @@ class User < ApplicationRecord
 
   has_many :affiliations, dependent: :destroy
   has_many :teams, through: :affiliations
+  has_many :subscriptions, through: :teams
   has_many :clubs, through: :teams
 
   has_many :coach_affiliations, -> { coaches }, class_name: 'Affiliation'
@@ -174,6 +175,15 @@ class User < ApplicationRecord
     end
 
     unlocked_pyramid_modules
+  end
+
+  def active_subscription?
+    subscriptions.merge(Subscription.current).present?
+  end
+
+  def subscription_expires_on
+    return nil if subscriptions.blank?
+    subscriptions.select(:end_date).order(end_date: :desc).limit(1).first.end_date
   end
 
   private

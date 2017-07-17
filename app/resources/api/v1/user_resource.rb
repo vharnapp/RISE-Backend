@@ -6,14 +6,16 @@ module Api
                  :full_name,
                  :nickname,
                  :email,
+                 :avatar,
                  :password,
                  :password_confirmation,
+                 :active_subscription,
+                 :subscription_expires_on,
                  :skills_mastered,
                  :day_streak,
                  :week_view,
                  :phase_attempts,
-                 :teams,
-                 :avatar
+                 :teams
 
       has_many :confidence_ratings
       has_many :exercises, through: :confidence_ratings
@@ -39,6 +41,10 @@ module Api
             logo: determine_logo(team),
           }
         end
+      end
+
+      def active_subscription
+        @model.active_subscription?
       end
 
       private
