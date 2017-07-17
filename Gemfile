@@ -151,7 +151,7 @@ end
 
 group :staging, :production do
   # gem 'rack-timeout'
-  gem 'new_relic'
+  gem 'newrelic_rpm'
 end
 
 group :production do
