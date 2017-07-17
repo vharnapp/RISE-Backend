@@ -28,7 +28,7 @@ section.main-content__body.main-content__body--flush
             br
             = pluralize(player.phase_attempts.count, 'Lifetime Attempt')
             br
-            -# "#{player.day_streak} Day Streak"
+            = "#{player.day_streak} Day Streak"
 
         - level = player.highest_pyramid_level_achieved
         .pyramid-modules.small-12.medium-9
