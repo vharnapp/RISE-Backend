@@ -7,9 +7,9 @@
 
 section.main-content__body.main-content__body--flush
   .players.row.columns
-    - @team.players.each do |player|
+    - @players.each do |player|
       .player
-        - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
+        - affiliation = player.affiliations.find_by(team_id: @team.id)
         - delete_link = link_to 'x'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }
         - if request.variant.blank?
           .delete(data-tooltip aria-haspopup='true' class="has-tip right" data-disable-hover='false' tabindex='1' title="Remove #{player.full_name} from the team?")
@@ -32,4 +32,4 @@ section.main-content__body.main-content__body--flush
 
         - level = player.highest_pyramid_level_achieved
         .pyramid-modules.small-12.medium-9
-          = render 'teams/pyramid_module_progress', { level: level, player: player }
+          = render 'teams/pyramid_module_progress', { level: level, player: player, pyramid_modules: @pyramid_modules }
