@@ -150,7 +150,7 @@ group :development, :test, :staging do
 end
 
 group :staging, :production do
-  gem 'rack-timeout'
+  # gem 'rack-timeout'
 end
 
 group :production do
