@@ -119,4 +119,4 @@ Rails.application.configure do
   }
 end
 
-Rack::Timeout.timeout = (ENV["RACK_TIMEOUT"] || 10).to_i
+# Rack::Timeout.timeout = (ENV["RACK_TIMEOUT"] || 10).to_i
