@@ -1,4 +1,4 @@
-- PyramidModule.by_level(level).each do |pyramid_module|
+- pyramid_modules.select{ |a| a.level == level }.each do |pyramid_module|
   .pyramid-module
     .circle(data-value="#{pyramid_module.percent_complete_for_user(player)}")
       .logo-container

@@ -6,7 +6,12 @@ class TeamsController < ApplicationController
     redirect_to club_path(@club)
   end
 
-  def show; end
+  def show
+    @players = @team.players
+
+    @pyramid_modules =
+      PyramidModule.where('level < ?', 5)
+  end
 
   def edit; end
 
