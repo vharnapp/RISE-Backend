@@ -8,10 +8,12 @@ module RenderJsonUserWithToken
         .new(Api::V1::UserResource)
         .serialize_to_hash(Api::V1::UserResource.new(user, nil))
 
-    render json: json.merge(
+    token_json = {
       meta: {
         authentication_token: token,
       },
-    ), status: :ok
+    }
+
+    render json: token_json.merge(json), status: :ok
   end
 end
