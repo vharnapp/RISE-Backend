@@ -17,7 +17,8 @@ module Api
         confidence_rating.user = current_user
 
         if confidence_rating.save
-          jsonapi_render json: confidence_rating, status: :created
+          # jsonapi_render json: confidence_rating, status: :created
+          head :ok
         else
           jsonapi_render_errors json: confidence_rating,
                                 status: :unprocessable_entity
