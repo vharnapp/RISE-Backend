@@ -5,7 +5,9 @@ module Api
 
       def index
         unlocked_pyramid_modules =
-          current_user.unlocked_pyramid_modules.includes(:pyramid_module)
+          current_user
+            .unlocked_pyramid_modules
+            .includes(:pyramid_module)
 
         if unlocked_pyramid_modules.blank?
           unlocked_pyramid_modules =
@@ -17,6 +19,7 @@ module Api
 
       def create
         unlocked_pyramid_module = UnlockedPyramidModule.new(resource_params)
+        unlocked_pyramid_module.user = current_user
 
         if unlocked_pyramid_module.save
           jsonapi_render json: unlocked_pyramid_module, status: :created

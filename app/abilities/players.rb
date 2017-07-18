@@ -1,7 +1,5 @@
 Canard::Abilities.for(:player) do
-  can [:show, :edit, :update, :analytics_alias], User do |u|
-    u == user
-  end
+  can [:show, :edit, :update, :analytics_alias], User, id: user.id
   cannot [:destroy], User
   cannot [:index], User
 
@@ -10,23 +8,15 @@ Canard::Abilities.for(:player) do
   can :read, Workout
   can :read, Exercise
 
-  can :manage, ConfidenceRating do |cr|
-    cr.user == user
-  end
+  can :manage, ConfidenceRating, user_id: user.id
   can :create, ConfidenceRating
 
-  can :manage, UnlockedPyramidModule do |upm|
-    upm.user == user
-  end
+  can :manage, UnlockedPyramidModule, user_id: user.id
   can :create, UnlockedPyramidModule
 
-  can :manage, PhaseAttempt do |pa|
-    pa.user == user
-  end
+  can :manage, PhaseAttempt, user_id: user.id
   can :create, PhaseAttempt
 
-  can [:update, :destroy], Affiliation do |affiliation|
-    affiliation.user == user
-  end
+  can [:update, :destroy], Affiliation, user_id: user.id
   can [:create], Affiliation
 end
