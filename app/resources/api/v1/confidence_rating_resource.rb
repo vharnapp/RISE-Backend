@@ -8,9 +8,9 @@ module Api
                  :workout_id,
                  :pyramid_module_id
 
-      belongs_to :user
-      belongs_to :exercise
-      belongs_to :workout
+      has_one :user
+      has_one :exercise
+      has_one :workout
 
       def pyramid_module_id
         workout.phase.pyramid_module.id

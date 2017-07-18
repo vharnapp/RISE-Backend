@@ -5,7 +5,7 @@ module Api
                  :supplemental,
                  :exercises
 
-      belongs_to :phase
+      has_one :phase
 
       has_many :exercise_workouts
       has_many :exercises, through: :exercise_workouts

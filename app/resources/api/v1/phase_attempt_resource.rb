@@ -5,8 +5,8 @@ module Api
                  :phase_id,
                  :count
 
-      belongs_to :user
-      belongs_to :phase
+      has_one :user
+      has_one :phase
     end
   end
 end

@@ -6,8 +6,8 @@ module Api
                  :team_code,
                  :coach
 
-      belongs_to :user
-      belongs_to :team
+      has_one :user
+      has_one :team
 
       filters :user_id, :team_id, :coach
 

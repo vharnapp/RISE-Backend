@@ -6,7 +6,7 @@ module Api
                  :logo,
                  :logo_image_url
 
-      belongs_to :club
+      has_one :club
       has_many :affiliations, dependent: :destroy
       has_many :coach_affiliations,  class_name: 'Affiliation'
       has_many :player_affiliations, class_name: 'Affiliation'

@@ -1,8 +1,8 @@
 module Api
   module V1
     class ExerciseWorkoutResource < JSONAPI::Resource
-      belongs_to :exercise
-      belongs_to :workout
+      has_one :exercise
+      has_one :workout
     end
   end
 end

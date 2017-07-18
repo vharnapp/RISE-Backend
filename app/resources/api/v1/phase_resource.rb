@@ -8,7 +8,7 @@ module Api
                  :supplemental,
                  :video
 
-      belongs_to :pyramid_module
+      has_one :pyramid_module
       has_many :workouts
 
       has_many :phase_attempts

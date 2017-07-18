@@ -7,8 +7,8 @@ module Api
                  :days_since_last_confidence_rating,
                  :percent_complete
 
-      belongs_to :user
-      belongs_to :pyramid_module
+      has_one :user
+      has_one :pyramid_module
 
       def days_since_last_confidence_rating
         @model
