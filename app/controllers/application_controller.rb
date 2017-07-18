@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!, unless: -> { is_a?(HighVoltage::PagesController) }
   before_action :add_layout_name_to_gon
   before_action :detect_device_type
-  before_action :set_clubs
+  before_action :set_clubs, unless: -> { request.format.json? }
 
   respond_to :json, :html, if: :devise_controller? # for devise reset password
 
@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
   def set_clubs
     @clubs = [] and return unless current_user
 
-    @clubs =
+    @clubs ||=
       if current_user.admin?
         Club.all.order(:name)
       else

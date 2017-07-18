@@ -10,7 +10,7 @@ module DeviseCustomizations
       super and return unless json_request?
 
       user = warden.authenticate!(auth_options)
-      render_json_user_with_token(user)
+      render_json_user_with_token(user, return_user: false)
     end
 
     def destroy

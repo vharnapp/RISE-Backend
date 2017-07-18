@@ -23,7 +23,7 @@ module Api
           @user.unlock_starting_pyramid_modules
 
           # On successful creation, generate token and return in response
-          render_json_user_with_token(@user)
+          render_json_user_with_token(@user, return_user: false)
         else
           jsonapi_render_errors json: @user, status: :unprocessable_entity
         end
