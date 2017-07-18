@@ -10,7 +10,7 @@ class TeamsController < ApplicationController
     @players = @team.players
 
     @pyramid_modules =
-      PyramidModule.where('level < ?', 5)
+      PyramidModule.where('level < ?', 5).order(:position)
   end
 
   def edit; end

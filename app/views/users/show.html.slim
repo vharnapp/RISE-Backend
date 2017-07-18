@@ -22,5 +22,5 @@
     .player-pyramid-modules
       - 5.downto(1).each do |level|
         .pyramid-modules.small-12.medium-7
-          = render 'teams/pyramid_module_progress', { level: level, player: @user, pyramid_modules: PyramidModule.all }
+          = render 'teams/pyramid_module_progress', { level: level, player: @user, pyramid_modules: PyramidModule.all.order(:position) }
       .medium-5
