@@ -7,7 +7,7 @@ module Api
         unlocked_pyramid_modules =
           current_user
             .unlocked_pyramid_modules
-            .includes(:pyramid_module)
+              .includes(:pyramid_module)
 
         if unlocked_pyramid_modules.blank?
           unlocked_pyramid_modules =

@@ -159,7 +159,7 @@ class User < ApplicationRecord
       unlocked_pyramid_modules.create!(pyramid_module: pm)
     end
 
-    unlocked_pyramid_modules
+    unlocked_pyramid_modules.includes(:pyramid_module)
   end
 
   def active_subscription?

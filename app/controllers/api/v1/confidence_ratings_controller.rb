@@ -7,7 +7,7 @@ module Api
         json =
           current_user
             .confidence_ratings
-            .includes(workout: { phase: :pyramid_module })
+            .joins(:workout)
 
         jsonapi_render json: json
       end
