@@ -3,28 +3,29 @@
 .gray-block
   .row.columns
     ul.team-list.team-header.small-12.left
-      li.small-3
+      li.small-8.medium-3
         h4 Team Name
-      li.small-3
+      li.small-3.hide-for-small-only
         h4 Coaches
-      li.small-3
+      li.small-3.hide-for-small-only
         h4 Players
-      li.small-3
+      li.small-4.medium-3
         h4 Team Code
 
 .row.columns
   - @teams.each do |team|
     ul.team-list.small-12.left
-      li.small-3 = link_to club_team_path(team.club, team) do
-        span.club-logo
-          = image_tag team.logo.url
-        span(style='margin: 0 0 0 10px;position: relative; top: 10px;')
-          = team.name
-      li.small-3
+      li.small-8.medium-3 = link_to club_team_path(team.club, team), class: 'first-col' do
+        .club-logo-container
+          span.club-logo
+            = image_tag team.logo.url
+            span
+              = team.name
+      li.small-3.hide-for-small-only
         span.coach-label
           - team.coaches.each do |coach|
             = link_to image_tag(coach.avatar.url, class: 'coach-avatar'), user_path(coach)
-      li.small-3(style='padding-left: 26px;')
-        = team.players.count
-      li.small-3
-        = team.display_code
+      li.small-3.hide-for-small-only(style='padding-left: 26px;')
+        span.valign-middle= team.players.count
+      li.small-4.medium-3
+        span.valign-middle= team.display_code

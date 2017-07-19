@@ -1,16 +1,3 @@
-.team-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-.coach-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0px 5px;
-}
-
 .pyramid-modules{
   display: flex;
   flex: 1;
@@ -96,9 +83,17 @@
 }
 .player-info {
   min-width: 140px;
-  padding: 25px 25px 0 25px;
-  cursor: pointer;
+
+  @media screen and (min-width: 500px) {
+    padding: 25px 25px 0 25px;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-top: 15px;
+  }
+
   &:hover{
+    cursor: pointer;
     background: $light-gray;
     border-radius: 2px;
   }
@@ -154,6 +149,11 @@
   width: 22px;
   position: absolute;
   z-index: 1;
+
+  @media screen and (max-width: 500px) {
+    top: 18px;
+  }
+
   top: 62px;
   text-align: center;
   cursor: pointer;
@@ -198,12 +198,15 @@
   }
 }
 
-span.team-code-label, span.coach-label {
+span.team-code-label, span.team-coach-label {
 	height: 19px;
 	width: 178px;
 	color: $dark-gray;
 	font-family: $base-font-family;
 	font-size: 14px;
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
   padding-right: 10px;
 }
 span.team-code {
@@ -212,6 +215,9 @@ span.team-code {
 	color: $primary;
 	font-family: $base-font-family;
 	font-size: 18px;
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
   font-weight: bold;
 	line-height: 24px;
 }
@@ -229,19 +235,4 @@ span.team-code {
 .main-content__page-title {
   font-size: 1.5em;
   margin-right: auto;
-}
-
-
-span.club-logo{
-  background: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.club-logo img{
-  position: relative;
-  top: 20%;
-  left: 20%;
 }

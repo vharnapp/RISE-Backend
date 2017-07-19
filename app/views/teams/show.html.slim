@@ -6,7 +6,7 @@
 = render 'components/team-header'
 
 section.main-content__body.main-content__body--flush
-  .players.row.columns
+  .players.row
     - @players.each do |player|
       .player
         - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
@@ -17,7 +17,7 @@ section.main-content__body.main-content__body--flush
         - else
           .delete
             = delete_link
-        .player-info.small-12.medium-3(data-user-id="#{player.slug}")
+        .player-info.columns.small-12.medium-3(data-user-id="#{player.slug}")
           .player-avatar.left
             = image_tag player.avatar.url
             - if player.active_today?

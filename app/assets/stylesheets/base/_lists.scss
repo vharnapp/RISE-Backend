@@ -43,21 +43,89 @@ body {
   letter-spacing: 1;
   text-transform: uppercase;
 }
+
+
 ul.team-list {
   display: inline-block;
   border-bottom: 1px solid $light-gray;
 
   li {
     float: left;
-    padding: 45px 0px;
 
-    img {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
+    @media screen and (min-width: 500px) {
+      padding: 25px 15px 25px 0;
+      height: 150px;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    a.first-col{
+      width: 100%;
+    }
+
+    span.valign-middle{
+      height: 100px;
+      display: table-cell;
+      vertical-align: middle;
     }
   }
 }
+
+.coach-label{
+  height: 100px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.coach-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.club-logo-container{
+  @media screen and (min-width: 500px) {
+    height: 100px;
+    width: inherit;
+  }
+
+  &:hover{
+    cursor: pointer;
+    background: $light-gray;
+    border-radius: 2px;
+  }
+}
+
+
+.club-logo{
+  display: table-cell;
+  vertical-align: middle;
+
+  @media screen and (min-width: 500px) {
+    height: 100px;
+    padding: 20px;
+  }
+
+  img{
+    // height: 80px;
+    width: 60px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 100px;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+
 ul.team-header {
   border-bottom: none;
 
