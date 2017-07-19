@@ -28,7 +28,19 @@ select,
 textarea {
   display: block;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+
+  @media screen and (min-width: 320px) {
+    font-size: $mobile-font-size;
+  }
+
+  @media screen and (min-width: 375px) {
+    font-size: $mobile-font-size + .1;
+  }
+
+  @media screen and (min-width: 500px) {
+    font-size: $base-font-size;
+  }
+
   color: $dark-gray;
   border-radius: 2px;
   border: none;

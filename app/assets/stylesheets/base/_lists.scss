@@ -90,12 +90,12 @@ ul.team-list {
   @media screen and (min-width: 500px) {
     height: 100px;
     width: inherit;
-  }
 
-  &:hover{
-    cursor: pointer;
-    background: $light-gray;
-    border-radius: 2px;
+    &:hover{
+      cursor: pointer;
+      background: $light-gray;
+      border-radius: 2px;
+    }
   }
 }
 

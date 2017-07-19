@@ -1,7 +1,7 @@
 (function() {
   this.flashMini = function(text, appendTo){
     if($('.mini-flash').length == 0) {
-      $(appendTo).after("<span class='flash-mini flash-notice'>" + text + "</span>");
+      $('.flash-wrapper').html("<div class='flashes'><span class='flash-mini flash-notice'>" + text + '</span></div>');
       fadeFlash('.flash-mini', 1000);
     };
   };
@@ -23,7 +23,9 @@
   };
 }).call(this);
 
-fadeFlash('.flashes', 8000);
+$(document).on('turbolinks:load', function() {
+  fadeFlash('.flashes', 3000);
+});
 
 $(document).on('click', '.remove-flash', function(e){
   e.preventDefault();

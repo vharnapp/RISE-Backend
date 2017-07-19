@@ -51,10 +51,10 @@ module AthletefitBackend
 
     config.to_prepare do
       Devise::SessionsController.layout 'no_header_or_footer'
-      # Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "devise" }
+      Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? 'application' : 'no_header_or_footer' }
       # Devise::ConfirmationsController.layout "devise"
       # Devise::UnlocksController.layout "devise"
-      # Devise::PasswordsController.layout "devise"
+      Devise::PasswordsController.layout 'no_header_or_footer'
     end
   end
 end

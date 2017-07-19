@@ -86,16 +86,16 @@
 
   @media screen and (min-width: 500px) {
     padding: 25px 25px 0 25px;
+
+    &:hover{
+      cursor: pointer;
+      background: $light-gray;
+      border-radius: 2px;
+    }
   }
 
   @media screen and (max-width: 500px) {
     margin-top: 15px;
-  }
-
-  &:hover{
-    cursor: pointer;
-    background: $light-gray;
-    border-radius: 2px;
   }
 }
 .tooltip {
