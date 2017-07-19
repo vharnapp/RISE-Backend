@@ -29,7 +29,7 @@ class Club < ApplicationRecord
     if user.admin? || user.club_admin?
       teams
     else
-      user.teams
+      user.teams_coached
     end
   end
 

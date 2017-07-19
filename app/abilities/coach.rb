@@ -2,7 +2,7 @@ Canard::Abilities.for(:coach) do
   includes_abilities_of :player
 
   can [:read], Club do |club|
-    user.teams_coached.flat_map(&:club).include?(club)
+    user.clubs_coached.include?(club)
   end
 
   can [:read], Team do |team|

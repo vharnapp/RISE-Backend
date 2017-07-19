@@ -37,6 +37,15 @@ class User < ApplicationRecord
            class_name: 'Team',
            source: :team
 
+  has_many :clubs_coached,
+           through: :teams_coached,
+           class_name: 'Club',
+           source: :club
+  has_many :clubs_played,
+           through: :teams_played,
+           class_name: 'Club',
+           source: :club
+
   has_many :club_affiliations
   has_many :clubs_administered,
            through: :club_affiliations,

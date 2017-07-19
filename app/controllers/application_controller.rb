@@ -38,7 +38,7 @@ class ApplicationController < ActionController::Base
       if current_user.admin?
         Club.all.order(:name)
       else
-        affiliated_club_ids = current_user.clubs.map(&:id) # player/coach
+        affiliated_club_ids = current_user.clubs_coached.map(&:id) # coach
         clubs_administered_ids = current_user.clubs_administered.map(&:id)
         ids = (affiliated_club_ids + clubs_administered_ids).uniq
         Club.where(id: ids).order(:name)
