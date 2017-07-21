@@ -13,7 +13,7 @@
       | Teams
 
     ul
-    - @user.affiliations.each do |affiliation|
+    - @user.affiliations.includes(team: :club).each do |affiliation|
       - if can?(:show, affiliation.team.club)
         li = link_to "#{affiliation.team.name} (#{affiliation.title})", club_team_path(affiliation.team.club, affiliation.team)
 
