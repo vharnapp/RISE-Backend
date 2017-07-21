@@ -9,7 +9,7 @@ module Api
             .unlocked_pyramid_modules
               .includes(:pyramid_module)
 
-        if unlocked_pyramid_modules.blank?
+        if unlocked_pyramid_modules.blank? || unlocked_pyramid_modules.pyramid_module_id == PyramidModule.find_by(level: 5).id
           unlocked_pyramid_modules =
             current_user.unlock_starting_pyramid_modules
         end
