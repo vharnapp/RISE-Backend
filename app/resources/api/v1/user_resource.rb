@@ -38,23 +38,13 @@ module Api
           {
             id: team.id,
             name: team.name,
-            logo: determine_logo(team),
+            logo_image_url: team.logo_image_url,
           }
         end
       end
 
       def active_subscription
         @model.active_subscription?
-      end
-
-      private
-
-      def determine_logo(team)
-        if team.logo.present?
-          team.logo.url
-        elsif team.club.logo.present?
-          team.club.logo.url
-        end
       end
     end
   end
