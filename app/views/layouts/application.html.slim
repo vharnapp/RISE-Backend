@@ -27,8 +27,7 @@ html[lang="en"]
       = Gon::Base.render_data
       = render 'flashes'
       = render 'components/navigation'
-      .main
-        .container
-          = yield
+      .container
+        = yield
       = render 'components/footer'
       = render 'css_overrides'

@@ -41,12 +41,7 @@ body {
 .container {
   padding-bottom: 130px;
   min-height: 100%;
-  /* position: relative; */
-  margin: -24px 0px;
-}
-.main {
-  display: inline;
-  margin: 0px;
+  margin-bottom: 0 0 -70px 0;
 }
 .gray-block {
   background: $light-gray;

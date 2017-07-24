@@ -24,7 +24,6 @@ html[lang="en"]
       - # Add gon here for turbolinks benefit
       = Gon::Base.render_data
       = render 'flashes'
-      .main
-        .container
-          = yield
+      .container
+        = yield
       = render 'css_overrides'
