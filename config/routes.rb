@@ -28,7 +28,11 @@ Rails.application.routes.draw do
     resources :workouts
     resources :exercises
     resources :exercise_workouts
-    resources :clubs
+    resources :clubs do
+      member do
+        get 'team_codes'
+      end
+    end
     resources :teams
     resources :affiliations
     resources :enrollments

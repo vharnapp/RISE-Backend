@@ -34,6 +34,15 @@ module Admin
       end
     end
 
+    def team_codes
+      @club = resource_class.find(params[:id])
+
+      @codes =
+        @club.teams.map do |team|
+          [team.name,team.code]
+        end
+    end
+
     # Override DefaultSort module from ApplicationController
     def default_params
       params[:order] ||= 'name'
