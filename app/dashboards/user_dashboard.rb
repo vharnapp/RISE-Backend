@@ -10,7 +10,9 @@ class UserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     authentication_tokens: Field::HasMany,
     affiliations: Field::HasMany,
-    teams: Field::HasMany,
+    teams: Field::HasMany.with_options(
+      sortable: false,
+    ),
     confidence_ratings: Field::HasMany,
     exercises: Field::HasMany,
     workouts: Field::HasMany,
@@ -45,12 +47,14 @@ class UserDashboard < Administrate::BaseDashboard
     roles_mask: Field::Number,
     role_list: Field::String.with_options(
       searchable: false,
+      sortable: false,
     ),
     slug: Field::String,
     deleted_at: Field::DateTime,
     nickname: Field::String,
     avatar: Field::Carrierwave.with_options(
       image_on_index: true,
+      sortable: false,
     ),
   }.freeze
 

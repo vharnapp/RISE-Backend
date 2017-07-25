@@ -31,17 +31,18 @@ gem 'webpacker', github: 'rails/webpacker'
 gem 'font-awesome-rails'
 gem 'foundation-rails', '~> 6.3.1'
 gem 'slim-rails'
-gem 'font-awesome-rails'
+gem 'bootsnap', require: false
 
 gem 'acts_as_list'
-gem 'administrate', github: 'thoughtbot/administrate'
+gem 'administrate', github: 'headwayio/administrate', branch: 'feature/custom_sorting_via_options', path: '/rails/headway/administrate_gems/administrate'
+gem 'administrate-field-carrierwave', '~> 0.2.0'
 gem 'administrate-field-collection_select'
 gem 'administrate-field-enum', github: 'headwayio/administrate-field-enum'
 gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-nested_has_many', branch: 'rails_5'
 gem 'administrate-field-paperclip'
-gem 'administrate-field-select_essential'
-gem 'administrate-field-carrierwave', '~> 0.2.0'
 gem 'administrate-field-password'
+gem 'administrate-field-select_essential'
+# gem 'require_reloader', github: 'teohm/require_reloader' # Doesn't work well with the administrate dependent gems :/
 
 gem 'validates_overlap', github: 'robinbortlik/validates_overlap'
 

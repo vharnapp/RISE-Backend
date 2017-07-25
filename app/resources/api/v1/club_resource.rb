@@ -2,6 +2,7 @@ module Api
   module V1
     class ClubResource < JSONAPI::Resource
       attributes :name,
+                 :welcome_message,
                  :logo,
                  :logo_thumb
 

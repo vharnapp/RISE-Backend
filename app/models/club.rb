@@ -27,9 +27,9 @@ class Club < ApplicationRecord
 
   def my_teams(user)
     if user.admin? || user.club_admin?
-      teams
+      teams.order(:name)
     else
-      user.teams_coached
+      teams.merge(user.teams_coached).order(:name)
     end
   end
 
@@ -68,6 +68,7 @@ end
 #  slug               :string
 #  teams_csv          :string
 #  updated_at         :datetime         not null
+#  welcome_message    :text
 #
 # Indexes
 #

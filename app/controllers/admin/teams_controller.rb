@@ -17,5 +17,10 @@ module Admin
 
     # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
     # for more information
+
+    def default_params
+      params[:order] ||= 'club.name'
+      params[:direction] ||= 'asc'
+    end
   end
 end

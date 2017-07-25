@@ -8,14 +8,25 @@ class TeamDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    club: Field::BelongsTo,
+    club: Field::BelongsTo.with_options(
+      order: 'club.name',
+    ),
     subscriptions: Field::HasMany,
     enrollments: Field::HasMany,
     affiliations: Field::HasMany,
     coach_affiliations: Field::HasMany.with_options(class_name: 'Affiliation'),
     player_affiliations: Field::HasMany.with_options(class_name: 'Affiliation'),
-    coaches: Field::HasMany.with_options(class_name: 'User'),
-    players: Field::HasMany.with_options(class_name: 'User'),
+    coaches: Field::HasMany.with_options(
+      class_name: 'User',
+      sortable: false,
+      limit: 10,
+    ),
+    players: Field::HasMany.with_options(
+      class_name: 'User',
+      sortable: false,
+      limit: 50,
+      sort_by: 'last_name',
+    ),
     id: Field::Number,
     num_players: Field::Number,
     name: Field::String,
@@ -27,9 +38,11 @@ class TeamDashboard < Administrate::BaseDashboard
     code: Field::String,
     display_code: Field::String.with_options(
       searchable: false,
+      order: 'code',
     ),
     logo: Field::Carrierwave.with_options(
       image_on_index: true,
+      sortable: false,
     ),
   }.freeze
 

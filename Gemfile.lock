@@ -34,6 +34,12 @@ GIT
       rails (~> 5.1)
 
 GIT
+  remote: git://github.com/headwayio/administrate.git
+  revision: 1098a09adad949a6a16e4e6a153ea14e1a23629d
+  branch: feature/custom_sorting_via_options
+  specs:
+
+GIT
   remote: git://github.com/rails/webpacker.git
   revision: 158987a82b605b534bcdc9468efca2602313c791
   specs:
@@ -48,22 +54,6 @@ GIT
   specs:
     validates_overlap (0.8.4)
       rails (>= 3.0.0)
-
-GIT
-  remote: git://github.com/thoughtbot/administrate.git
-  revision: 6c9d30cf58be2bb9d403ac47ba53f25228dcd6e4
-  specs:
-    administrate (0.7.0)
-      actionpack (>= 4.2, < 5.2)
-      actionview (>= 4.2, < 5.2)
-      activerecord (>= 4.2, < 5.2)
-      autoprefixer-rails (>= 6.0)
-      datetime_picker_rails (~> 0.0.7)
-      jquery-rails (>= 4.0)
-      kaminari (>= 1.0)
-      momentjs-rails (~> 2.8)
-      sass-rails (~> 5.0)
-      selectize-rails (~> 0.6)
 
 GIT
   remote: https://github.com/headwayio/carrier_wave_base64_uploader
@@ -98,6 +88,21 @@ GIT
       httparty (~> 0.13.0)
       terminal-table (~> 1.4.5)
       thor (~> 0.19.0)
+
+PATH
+  remote: /rails/headway/administrate_gems/administrate
+  specs:
+    administrate (0.7.0)
+      actionpack (>= 4.2, < 5.2)
+      actionview (>= 4.2, < 5.2)
+      activerecord (>= 4.2, < 5.2)
+      autoprefixer-rails (>= 6.0)
+      datetime_picker_rails (~> 0.0.7)
+      jquery-rails (>= 4.0)
+      kaminari (>= 1.0)
+      momentjs-rails (~> 2.8)
+      sass-rails (~> 5.0)
+      selectize-rails (~> 0.6)
 
 GEM
   remote: https://rubygems.org/
@@ -176,7 +181,7 @@ GEM
       rake (>= 10.4, < 12.0)
     arel (8.0.0)
     ast (2.3.0)
-    autoprefixer-rails (7.1.1.2)
+    autoprefixer-rails (7.1.2.3)
       execjs
     av (0.9.0)
       cocaine (~> 0.5.3)
@@ -199,6 +204,8 @@ GEM
       bourbon (~> 5.0.0.beta.7)
       sass (~> 3.4)
       thor (~> 0.19)
+    bootsnap (1.1.2)
+      msgpack (~> 1.0)
     bourbon (5.0.0.beta.7)
       sass (~> 3.4.22)
       thor (~> 0.19.1)
@@ -451,7 +458,7 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    i18n (0.8.5)
+    i18n (0.8.6)
     inflecto (0.0.2)
     ipaddress (0.8.3)
     jmespath (1.3.1)
@@ -509,9 +516,10 @@ GEM
     mimemagic (0.3.2)
     mini_magick (4.7.0)
     mini_portile2 (2.2.0)
-    minitest (5.10.2)
+    minitest (5.10.3)
     momentjs-rails (2.17.1)
       railties (>= 3.1)
+    msgpack (1.1.0)
     multi_json (1.12.1)
     multi_xml (0.6.0)
     nested_form_fields (0.8)
@@ -726,7 +734,7 @@ GEM
     tiddle (1.0.1)
       activerecord (>= 4.2.0)
       devise (>= 4.0.0.rc1, < 4.4)
-    tilt (2.0.7)
+    tilt (2.0.8)
     timecop (0.8.1)
     title (0.0.7)
       i18n
@@ -793,6 +801,7 @@ DEPENDENCIES
   autoprefixer-rails
   awesome_print
   aws-sdk (~> 2.9)
+  bootsnap
   bullet
   bundler-audit (>= 0.5.0)
   cadre
@@ -884,4 +893,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.15.1
+   1.15.3

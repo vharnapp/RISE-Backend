@@ -39,6 +39,7 @@ end
 #  slug               :string
 #  teams_csv          :string
 #  updated_at         :datetime         not null
+#  welcome_message    :text
 #
 # Indexes
 #

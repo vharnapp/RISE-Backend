@@ -34,6 +34,12 @@ module Admin
       end
     end
 
+    # Override DefaultSort module from ApplicationController
+    def default_params
+      params[:order] ||= 'name'
+      params[:direction] ||= 'asc'
+    end
+
     private
 
     def create_teams_and_coaches_via_csv(resource)

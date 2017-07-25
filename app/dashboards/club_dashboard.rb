@@ -8,13 +8,24 @@ class ClubDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
+    welcome_message: Field::Text,
     club_affiliations: Field::HasMany,
-    administrators: Field::HasMany.with_options(class_name: 'User'),
+    administrators: Field::HasMany.with_options(
+      class_name: 'User',
+      limit: 30,
+    ),
     subscriptions: Field::NestedHasMany.with_options(
       skip: [:club, :teams],
       limit: 30,
+      sortable: false,
+      sort_by: 'end_date', # TODO: (2017-07-24) jon => implement me, copy from Field::HasMany
+      direction: 'desc',   # TODO: (2017-07-24) jon => implement me, copy from Field::HasMany
     ),
-    teams: Field::HasMany,
+    teams: Field::HasMany.with_options(
+      sortable: false,
+      limit: 50,
+      sort_by: 'name',
+    ),
     temp_teams: Field::NestedHasMany.with_options(
       skip: [:club],
       limit: 30,
@@ -28,6 +39,7 @@ class ClubDashboard < Administrate::BaseDashboard
     position: Field::Number,
     logo: Field::Carrierwave.with_options(
       image_on_index: true,
+      sortable: false,
     ),
     contact_first_name: Field::String,
     contact_last_name: Field::String,
@@ -59,7 +71,7 @@ class ClubDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :logo,
     :name,
-    :administrators,
+    :welcome_message,
     :contact_first_name,
     :contact_last_name,
     :contact_email,
@@ -69,6 +81,7 @@ class ClubDashboard < Administrate::BaseDashboard
     :address_city,
     :address_state,
     :address_zip,
+    :administrators,
     :subscriptions,
     :teams,
   ].freeze
@@ -79,6 +92,7 @@ class ClubDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :logo,
     :name,
+    :welcome_message,
     :administrators,
     :contact_first_name,
     :contact_last_name,

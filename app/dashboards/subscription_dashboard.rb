@@ -8,14 +8,21 @@ class SubscriptionDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    club: Field::BelongsTo,
-    teams: Field::HasMany,
+    club: Field::BelongsTo.with_options(
+      order: 'club.name',
+    ),
+    teams: Field::HasMany.with_options(
+      sortable: false,
+    ),
     enrollments: Field::HasMany,
     id: Field::Number,
     start_date: Field::DateTime,
     end_date: Field::DateTime,
     price: Field::String.with_options(searchable: false),
-    club_fee: Field::String.with_options(searchable: false),
+    club_fee: Field::String.with_options(
+      searchable: false,
+      sortable: false,
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze

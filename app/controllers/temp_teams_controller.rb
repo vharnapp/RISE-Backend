@@ -1,2 +1,0 @@
-class TempTeamsController < ApplicationController
-end
