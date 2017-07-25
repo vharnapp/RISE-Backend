@@ -24,6 +24,10 @@ as well as a link to its edit page.
   </h1>
 
   <div>
+    <% if page.resource.invitation_not_accepted? %>
+      <%= button_to 'Invite', invite_admin_user_path(page.resource), method: :post, class: 'button', form_class: 'invite-coach-button', data: { confirm: 'Are you sure you want to send out an invite for this user?' } %>
+    <% end %>
+
     <%= link_to(
       "#{t("administrate.actions.edit")} #{page.page_title}",
       [:edit, namespace, page.resource],

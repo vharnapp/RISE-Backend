@@ -88,6 +88,10 @@ class User < ApplicationRecord
     (email =~ /(example.com|headway.io)$/).present?
   end
 
+  def invitation_not_accepted?
+    invitation_token != nil && invitation_accepted_at == nil
+  end
+
   def full_name
     "#{first_name} #{last_name}"
   end

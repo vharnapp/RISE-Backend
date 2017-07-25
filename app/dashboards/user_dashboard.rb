@@ -96,8 +96,6 @@ class UserDashboard < Administrate::BaseDashboard
     :last_name,
     :nickname,
     :email,
-    :password,
-    :password_confirmation,
     :teams,
     :available_pyramid_modules,
   ].freeze

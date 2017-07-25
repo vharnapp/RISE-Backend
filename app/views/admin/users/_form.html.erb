@@ -36,8 +36,6 @@ and renders all form fields for a resource's editable attributes.
     </div>
   <% end -%>
 
-  <%= render 'admin/users/password_fields', { f: f, user: page.resource } %>
-
   <%= render 'admin/users/role_edit', { f: f, user: page.resource, roles: User::ROLES } %>
 
   <div class="form-actions">
