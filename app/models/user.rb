@@ -110,13 +110,19 @@ class User < ApplicationRecord
   end
 
   def day_streak
-    conf_ratings = confidence_ratings.order(updated_at: :desc)
+    conf_ratings =
+      confidence_ratings
+        .order(updated_at: :desc)
+        .select(:updated_at)
+        .map(&:updated_at)
+        .map(&:to_date)
+        .uniq
 
     streak = 0
     conf_ratings.map.with_index do |cr, index|
-      index += 1 if conf_ratings.first.updated_at.to_date == 1.day.ago.to_date
+      index += 1 if conf_ratings.first == 1.day.ago.to_date
 
-      break unless cr.updated_at.to_date == index.days.ago.to_date
+      break unless cr == index.days.ago.to_date
       streak += 1
     end
     streak

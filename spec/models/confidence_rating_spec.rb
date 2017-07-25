@@ -9,15 +9,22 @@ RSpec.describe ConfidenceRating, type: :model do
 
         # TODAY
         create(:confidence_rating, user: first_user)
+        create(:confidence_rating, user: first_user)
+        create(:confidence_rating, user: first_user)
+        create(:confidence_rating, user: second_user)
+        create(:confidence_rating, user: second_user)
         create(:confidence_rating, user: second_user)
 
         # YESTERDAY
         travel_to 1.day.ago do
           create(:confidence_rating, user: first_user)
+          create(:confidence_rating, user: first_user)
+          create(:confidence_rating, user: second_user)
           create(:confidence_rating, user: second_user)
         end
 
         travel_to 2.days.ago do
+          create(:confidence_rating, user: first_user)
           create(:confidence_rating, user: first_user)
           # Streak ends for second_user
         end
