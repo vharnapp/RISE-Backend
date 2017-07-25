@@ -1,21 +1,4 @@
 GIT
-  remote: git://github.com/collectiveidea/delayed_job_active_record.git
-  revision: dae11cae2f5bf5bead63ffac0c3d274f8c882679
-  branch: gogovan-rails-5-1
-  specs:
-    delayed_job_active_record (4.1.1)
-      activerecord (>= 3.0, < 5.2)
-      delayed_job (>= 3.0, < 5)
-
-GIT
-  remote: git://github.com/dsander/delayed_job.git
-  revision: ec16c569ff0af1a71272b87ab8e070f113653c2d
-  branch: rails51
-  specs:
-    delayed_job (4.1.2)
-      activesupport (>= 3.0, < 5.2)
-
-GIT
   remote: git://github.com/headwayio/administrate-field-enum.git
   revision: a9b51992df4753f2651d78ff210d9d2f3c14233e
   specs:
@@ -38,6 +21,17 @@ GIT
   revision: 1098a09adad949a6a16e4e6a153ea14e1a23629d
   branch: feature/custom_sorting_via_options
   specs:
+    administrate (0.7.0)
+      actionpack (>= 4.2, < 5.2)
+      actionview (>= 4.2, < 5.2)
+      activerecord (>= 4.2, < 5.2)
+      autoprefixer-rails (>= 6.0)
+      datetime_picker_rails (~> 0.0.7)
+      jquery-rails (>= 4.0)
+      kaminari (>= 1.0)
+      momentjs-rails (~> 2.8)
+      sass-rails (~> 5.0)
+      selectize-rails (~> 0.6)
 
 GIT
   remote: git://github.com/rails/webpacker.git
@@ -88,21 +82,6 @@ GIT
       httparty (~> 0.13.0)
       terminal-table (~> 1.4.5)
       thor (~> 0.19.0)
-
-PATH
-  remote: /rails/headway/administrate_gems/administrate
-  specs:
-    administrate (0.7.0)
-      actionpack (>= 4.2, < 5.2)
-      actionview (>= 4.2, < 5.2)
-      activerecord (>= 4.2, < 5.2)
-      autoprefixer-rails (>= 6.0)
-      datetime_picker_rails (~> 0.0.7)
-      jquery-rails (>= 4.0)
-      kaminari (>= 1.0)
-      momentjs-rails (~> 2.8)
-      sass-rails (~> 5.0)
-      selectize-rails (~> 0.6)
 
 GEM
   remote: https://rubygems.org/
@@ -811,8 +790,6 @@ DEPENDENCIES
   carrier_wave_base64_uploader!
   carrierwave
   database_cleaner
-  delayed_job!
-  delayed_job_active_record!
   devise
   dotenv-rails
   dynamic_form

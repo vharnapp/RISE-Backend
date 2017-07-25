@@ -6,9 +6,6 @@ ruby '2.4.0'
 
 gem 'autoprefixer-rails'
 
-gem 'delayed_job_active_record', github: 'collectiveidea/delayed_job_active_record', branch: 'gogovan-rails-5-1'
-gem 'delayed_job', github: 'dsander/delayed_job', branch: 'rails51'
-
 gem 'flutie'
 gem 'honeybadger'
 gem 'jquery-rails'
@@ -34,7 +31,7 @@ gem 'slim-rails'
 gem 'bootsnap', require: false
 
 gem 'acts_as_list'
-gem 'administrate', github: 'headwayio/administrate', branch: 'feature/custom_sorting_via_options', path: '/rails/headway/administrate_gems/administrate'
+gem 'administrate', github: 'headwayio/administrate', branch: 'feature/custom_sorting_via_options'#, path: '/rails/headway/administrate_gems/administrate'
 gem 'administrate-field-carrierwave', '~> 0.2.0'
 gem 'administrate-field-collection_select'
 gem 'administrate-field-enum', github: 'headwayio/administrate-field-enum'
