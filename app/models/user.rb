@@ -156,8 +156,11 @@ class User < ApplicationRecord
 
   def skills_mastered
     confidence_ratings
-      .includes(:workout)
-      .where(rating: 4, workouts: { supplemental: false })
+      .joins(workout: :phase)
+      .where(
+        rating: 4,
+        workouts: { supplemental: false, phases: { supplemental: false } },
+      )
       .count
   end
 
