@@ -1,6 +1,6 @@
 class AvatarUploader < CarrierWave::Uploader::Base
   include ::CarrierWaveBase64Uploader
-  # include CarrierWave::MiniMagick
+  include CarrierWave::MiniMagick
 
   # Store uploaded images in S3
   if Rails.env.development? || Rails.env.test?
@@ -15,9 +15,9 @@ class AvatarUploader < CarrierWave::Uploader::Base
     ActionController::Base.helpers.asset_path('fallback/' + [version_name, 'default-avatar.png'].compact.join('_'))
   end
 
-  # version :thumb do
-  #   process resize_to_fill: [200,200]
-  # end
+  version :thumb do
+    process resize_to_fill: [200,200]
+  end
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:

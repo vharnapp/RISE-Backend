@@ -51,10 +51,12 @@ GIT
 
 GIT
   remote: https://github.com/headwayio/carrier_wave_base64_uploader
-  revision: 0b786e34729ee095c97a8e75c07531122ec48fc6
+  revision: 70eac37d6cf7eb270e663a71266e29934b3b81af
   specs:
     carrier_wave_base64_uploader (0.1.0)
       carrierwave (~> 1.1)
+      fog (~> 1.4)
+      rails (~> 5)
 
 GIT
   remote: https://github.com/jondkinney/canard.git

@@ -4,7 +4,11 @@ header.main-content__header[role='banner']
 
 .row.columns.padding-t-25
   .small-12.medium-6.medium-offset-3
-    h3 Edit Account Details
+    .left
+      h3 Edit Account Details
+    .right
+      = image_tag current_user.avatar.thumb, width: '75px'
+    .clear
     = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
       = errors_for(resource)
       .form-inputs
