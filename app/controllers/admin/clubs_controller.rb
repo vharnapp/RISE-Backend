@@ -39,8 +39,20 @@ module Admin
 
       @codes =
         @club.teams.map do |team|
-          [team.name,team.code]
+          [team.name,team.display_code]
         end
+    end
+
+    def send_coach_invites
+      @club = resource_class.find(params[:id])
+      @club.coaches.merge(User.invitation_not_accepted).each do |coach|
+        coach.invite!(current_user)
+      end
+
+      redirect_to(
+        [namespace, @club],
+        notice: 'Coach invitations sent!',
+      )
     end
 
     # Override DefaultSort module from ApplicationController
@@ -67,17 +79,17 @@ module Admin
         coach = User.find_by(email: row['coach_email'])
 
         if coach.blank?
-          coach = team.coaches.create!(
+          attrs = {
             first_name: row['coach_first_name'],
             last_name: row['coach_last_name'],
-            password: 'asdfjkl123',
-            password_confirmation: 'asdfjkl123',
             email: row['coach_email'],
-          )
-        else
-          team.coaches << coach
+          }
+          coach = User.invite!(attrs) do |u|
+            u.skip_invitation = true
+          end
         end
 
+        team.coaches << coach
         coach.roles << [:coach]
         coach.save
       end
@@ -95,17 +107,17 @@ module Admin
         coach = User.find_by(email: temp_team.coach_email)
 
         if coach.blank?
-          coach = team.coaches.create!(
+          attrs = {
             first_name: temp_team.coach_first_name,
             last_name: temp_team.coach_last_name,
-            password: 'asdfjkl123',
-            password_confirmation: 'asdfjkl123',
             email: temp_team.coach_email,
-          )
-        else
-          team.coaches << coach
+          }
+          coach = User.invite!(attrs) do |u|
+            u.skip_invitation = true
+          end
         end
 
+        team.coaches << coach
         coach.roles << [:coach]
         coach.save
       end

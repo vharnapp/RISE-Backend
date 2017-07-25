@@ -7,8 +7,8 @@ class User < ApplicationRecord
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable, :recoverable, :rememberable,
-         :trackable, :validatable, :token_authenticatable
+  devise :invitable, :database_authenticatable, :registerable, :recoverable,
+         :rememberable, :trackable, :validatable, :token_authenticatable
 
   before_create :generate_uuid
 
@@ -204,6 +204,14 @@ end
 #  encrypted_password     :string           default(""), not null
 #  first_name             :string
 #  id                     :integer          not null, primary key
+#  invitation_accepted_at :datetime
+#  invitation_created_at  :datetime
+#  invitation_limit       :integer
+#  invitation_sent_at     :datetime
+#  invitation_token       :string
+#  invitations_count      :integer          default(0)
+#  invited_by_id          :integer
+#  invited_by_type        :string
 #  last_name              :string
 #  last_sign_in_at        :datetime
 #  last_sign_in_ip        :inet
@@ -219,8 +227,12 @@ end
 #
 # Indexes
 #
-#  index_users_on_deleted_at            (deleted_at)
-#  index_users_on_email                 (email) UNIQUE
-#  index_users_on_reset_password_token  (reset_password_token) UNIQUE
-#  index_users_on_slug                  (slug) UNIQUE
+#  index_users_on_deleted_at                         (deleted_at)
+#  index_users_on_email                              (email) UNIQUE
+#  index_users_on_invitation_token                   (invitation_token) UNIQUE
+#  index_users_on_invitations_count                  (invitations_count)
+#  index_users_on_invited_by_id                      (invited_by_id)
+#  index_users_on_invited_by_type_and_invited_by_id  (invited_by_type,invited_by_id)
+#  index_users_on_reset_password_token               (reset_password_token) UNIQUE
+#  index_users_on_slug                               (slug) UNIQUE
 #

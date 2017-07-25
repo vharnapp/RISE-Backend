@@ -31,6 +31,7 @@ Rails.application.routes.draw do
     resources :clubs do
       member do
         get 'team_codes'
+        post 'send_coach_invites'
       end
     end
     resources :teams

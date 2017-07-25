@@ -59,6 +59,7 @@ gem 'turbolinks'
 gem 'canard', git: 'https://github.com/jondkinney/canard.git', branch: 'feature/fixed-generators-and-rails-5' # ties into cancancan, adds roles for the user
 gem 'cancancan' # authorization library
 gem 'devise'
+gem 'devise_invitable'
 gem 'jsonapi-utils', '~> 0.6.0.beta'
 gem 'pretender' # impersonate users as an admin
 gem 'tiddle' # token based authentication
