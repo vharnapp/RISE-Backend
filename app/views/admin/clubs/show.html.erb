@@ -24,7 +24,7 @@ as well as a link to its edit page.
   </h1>
 
   <div>
-    <%= button_to 'Invite Coaches', send_coach_invites_admin_club_path(page.resource), method: :post, class: 'button', form_class: 'invite-coach-button', data: { confirm: 'Are you sure you want to send out ALL coach invites for this club?' } %>
+    <%= button_to 'Invite Coaches', send_coach_invites_admin_club_path(page.resource), method: :post, class: 'button', form_class: 'invite-coach-button', data: { confirm: "Are you sure you want to send out ALL pending coach invites for this club?\n\n#{page.resource.display_invited_coaches}".html_safe } %>
     <%= link_to 'Team Codes', team_codes_admin_club_path(page.resource), class: 'button' %>
 
     <%= link_to(

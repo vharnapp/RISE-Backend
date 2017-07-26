@@ -69,6 +69,8 @@ module Admin
       csv = CSV.parse(csv_data, headers: true)
 
       csv.each do |row|
+        row = row.map { |k, v| [k.strip, v.strip] }.to_h
+
         team = resource.teams.where(
           name: row['name'],
           num_players: row['num_players'],

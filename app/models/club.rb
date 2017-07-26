@@ -44,6 +44,16 @@ class Club < ApplicationRecord
   def fee
     subscriptions.current.first.price * subscriptions.current.first.players.count
   end
+
+  def invited_coaches
+    coaches.merge(User.invitation_not_accepted)
+  end
+
+  def display_invited_coaches
+    invited_coaches.map do |coach|
+      "#{coach.full_name.ljust(30)} - #{coach.email}"
+    end.join("\n").html_safe
+  end
 end
 
 # == Schema Information
