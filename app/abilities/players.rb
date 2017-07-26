@@ -3,6 +3,7 @@ Canard::Abilities.for(:player) do
   cannot [:destroy], User
   cannot [:index], User
 
+  can :read, Snippet
   can :read, PyramidModule
   can :read, Phase
   can :read, Workout
@@ -13,7 +14,6 @@ Canard::Abilities.for(:player) do
   can :read, Team do |team|
     team.players.include?(user)
   end
-
 
   can :manage, ConfidenceRating, user_id: user.id
   can :create, ConfidenceRating

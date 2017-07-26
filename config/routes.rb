@@ -39,6 +39,7 @@ Rails.application.routes.draw do
     resources :enrollments
     resources :subscriptions
     resources :temp_teams
+    resources :snippets
 
     resources :users do
       member do
@@ -92,6 +93,7 @@ Rails.application.routes.draw do
       jsonapi_resources :affiliations
       jsonapi_resources :teams
       jsonapi_resources :clubs
+      jsonapi_resources :snippets
     end
   end
 end
