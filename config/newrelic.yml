@@ -12,7 +12,7 @@
 
 common: &default_settings
   # Required license key associated with your New Relic account.
-  license_key: 47d82bdb2ee7f3899fa4393e5364c29ee5352623
+license_key: <%= ENV['NEWRELIC_KEY'] %>
 
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
@@ -43,3 +43,4 @@ staging:
 
 production:
   <<: *default_settings
+  app_name: Rise Backend (Production)
