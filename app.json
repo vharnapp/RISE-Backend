@@ -1,6 +1,8 @@
 {
   "name":"athletefit-backend",
-  "scripts":{},
+  "scripts": {
+    "test": "bundle exec rspec"
+  },
   "env":{
     "APPLICATION_HOST":{
       "required":true
