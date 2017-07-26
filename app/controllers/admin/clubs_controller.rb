@@ -38,8 +38,8 @@ module Admin
       @club = resource_class.find(params[:id])
 
       @codes =
-        @club.teams.map do |team|
-          [team.name,team.display_code]
+        @club.teams.order(:name).map do |team|
+          [team.name, team.display_code]
         end
     end
 
