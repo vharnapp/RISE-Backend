@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'Retrieve user list from browser' do
   scenario 'without admin privileges' do
-    user = create(:user)
+    user = create(:user, :player)
 
     sign_in(user.email, user.password)
     visit admin_users_path

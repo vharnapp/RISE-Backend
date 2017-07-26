@@ -1,5 +1,5 @@
 Canard::Abilities.for(:player) do
-  can [:show, :edit, :update, :analytics_alias], User, id: user.id
+  can [:show, :edit, :update], User, id: user.id
   cannot [:destroy], User
   cannot [:index], User
 

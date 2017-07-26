@@ -17,10 +17,10 @@ describe ApplicationMailer do
     expect(mail.body).to eq(body)
   end
 
-  it 'sends from no-reply@athletefit_backend.com' do
+  it 'sends from no-reply@athletefit.com' do
     mail = described_class.email('test@example.com',
                                  'Test email subject', 'Test email body')
 
-    expect(mail.from).to include('no-reply@athletefit_backend.com')
+    expect(mail.from).to include('no-reply@athletefit.com')
   end
 end
