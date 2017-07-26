@@ -2,12 +2,8 @@
 require 'rails_helper'
 
 RSpec.describe Subscription, type: :model do
-  let(:club) { create(:club) }
-
   context 'validations' do
-    before do
-      create(:subscription, club: club, start_date: Time.zone.today, end_date: 1.year.from_now.to_date)
-    end
+    let(:club) { create(:club) }
 
     it 'does not allow overlapping subscriptions for the same club' do
       sub = build(:subscription, club: club, start_date: Time.zone.today, end_date: 1.year.from_now.to_date)
@@ -27,12 +23,14 @@ RSpec.describe Subscription, type: :model do
     end
 
     it 'allows overlapping subscriptions for different clubs' do
-      sub = build(:subscription, club: create(:club), start_date: Time.zone.today, end_date: 1.year.from_now.to_date)
+      sub = build(:subscription, club: create(:club, skip_subscription: true), start_date: Time.zone.today, end_date: 1.year.from_now.to_date)
       expect(sub).to be_valid
     end
   end
 
   context 'scopes' do
+    let(:club) { create(:club, skip_subscription: true) }
+
     context 'present time' do
       context 'subscription ended yesterday' do
         let(:subscription) do

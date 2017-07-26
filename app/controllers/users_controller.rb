@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  load_and_authorize_resource
+  load_resource
+  authorize_resource except: [:analytics_alias]
   skip_authorization_check only: [:analytics_alias]
 
   def analytics_alias

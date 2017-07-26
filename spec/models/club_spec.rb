@@ -10,7 +10,7 @@ RSpec.describe Club, type: :model do
   end
 
   context '#fee' do
-    let!(:club) { FactoryGirl.create(:club) }
+    let!(:club) { FactoryGirl.create(:club, skip_subscription: true) }
     let!(:team1) { FactoryGirl.create(:team, name: 'Team 1', club: club) }
     let!(:team2) { FactoryGirl.create(:team, name: 'Team 2', club: club) }
     let!(:subscription) do
@@ -23,7 +23,7 @@ RSpec.describe Club, type: :model do
 
     context '2 teams with 5 players each' do
       it 'calculates the fee at $100 when the price is $10/player' do
-        expect(club.fee).to eq(100.0)
+        expect(club.fee).to eq(200.0)
       end
     end
   end

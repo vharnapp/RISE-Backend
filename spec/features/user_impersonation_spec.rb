@@ -2,14 +2,14 @@ require 'rails_helper'
 
 feature 'Impersonate user' do
   given(:admin_user) { create(:user, :admin) }
-  given(:regular_user) { create(:user) }
+  given(:regular_user) { create(:user, :player) }
 
   scenario 'With admin privileges' do
     sign_in(admin_user.email, admin_user.password)
 
     visit impersonate_admin_user_path(id: regular_user.id)
 
-    expect(page).to have_content('Stop Impersonating')
+    expect(page).to have_content('Stop')
   end
 
   scenario 'With admin privileges: End Impersonation' do

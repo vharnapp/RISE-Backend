@@ -47,9 +47,9 @@ RSpec.describe Api::V1::UsersController, type: :request, order: :defined do
           },
         }
 
-        authed_post api_v1_users_path, params
+        authed_post(api_v1_users_path, params)
 
-        expect_attributes(first_last_email)
+        expect_status :ok
       end
     end
 
@@ -65,7 +65,7 @@ RSpec.describe Api::V1::UsersController, type: :request, order: :defined do
           },
         }
 
-        authed_post api_v1_users_path, params
+        authed_post(api_v1_users_path, params)
 
         expect_status :unprocessable_entity
         expect_error_text("Password confirmation doesn't match Password")
