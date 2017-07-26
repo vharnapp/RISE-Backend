@@ -12,8 +12,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170725161343) do
+ActiveRecord::Schema.define(version: 20170726014908) do
   # These are extensions that must be enabled in order to support this database
+  enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
 
   create_table "affiliations", force: :cascade do |t|
@@ -74,15 +75,14 @@ ActiveRecord::Schema.define(version: 20170725161343) do
 
   create_table "confidence_ratings", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.bigint "exercise_id"
-    t.bigint "pyramid_module_id"
     t.integer "rating", default: 0
     t.boolean "skipped", default: false, null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
     t.bigint "workout_id"
     t.index ["exercise_id"], name: "index_confidence_ratings_on_exercise_id"
-    t.index ["pyramid_module_id"], name: "index_confidence_ratings_on_pyramid_module_id"
     t.index ["user_id"], name: "index_confidence_ratings_on_user_id"
     t.index ["workout_id"], name: "index_confidence_ratings_on_workout_id"
   end
@@ -147,6 +147,7 @@ ActiveRecord::Schema.define(version: 20170725161343) do
   create_table "phase_attempts", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.bigint "phase_id"
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -238,6 +239,7 @@ ActiveRecord::Schema.define(version: 20170725161343) do
   create_table "unlocked_pyramid_modules", force: :cascade do |t|
     t.text "completed_phases", default: [], array: true
     t.datetime "created_at", null: false
+    t.datetime "deleted_at"
     t.bigint "pyramid_module_id"
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -302,7 +304,6 @@ ActiveRecord::Schema.define(version: 20170725161343) do
   add_foreign_key "club_affiliations", "clubs"
   add_foreign_key "club_affiliations", "users"
   add_foreign_key "confidence_ratings", "exercises"
-  add_foreign_key "confidence_ratings", "pyramid_modules"
   add_foreign_key "confidence_ratings", "users"
   add_foreign_key "confidence_ratings", "workouts"
   add_foreign_key "enrollments", "subscriptions"

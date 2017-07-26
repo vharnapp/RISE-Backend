@@ -12,6 +12,7 @@ end
 #
 #  count      :integer
 #  created_at :datetime         not null
+#  deleted_at :datetime
 #  id         :integer          not null, primary key
 #  phase_id   :integer
 #  updated_at :datetime         not null

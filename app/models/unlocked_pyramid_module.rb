@@ -1,4 +1,6 @@
 class UnlockedPyramidModule < ApplicationRecord
+  acts_as_paranoid
+
   belongs_to :user
   belongs_to :pyramid_module
 
@@ -13,6 +15,7 @@ end
 #
 #  completed_phases  :text             default([]), is an Array
 #  created_at        :datetime         not null
+#  deleted_at        :datetime
 #  id                :integer          not null, primary key
 #  pyramid_module_id :integer
 #  updated_at        :datetime         not null

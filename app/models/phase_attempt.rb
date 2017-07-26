@@ -1,4 +1,6 @@
 class PhaseAttempt < ApplicationRecord
+  acts_as_paranoid
+
   belongs_to :user
   belongs_to :phase
 end
@@ -9,6 +11,7 @@ end
 #
 #  count      :integer
 #  created_at :datetime         not null
+#  deleted_at :datetime
 #  id         :integer          not null, primary key
 #  phase_id   :integer
 #  updated_at :datetime         not null
