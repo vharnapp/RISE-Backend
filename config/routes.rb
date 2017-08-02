@@ -72,6 +72,7 @@ Rails.application.routes.draw do
     post 'api/v1/sign_in', to: 'devise_customizations/sessions#create'
     get 'api/v1/sign_out', to: 'devise_customizations/sessions#destroy'
   end
+
   root 'pages#show', id: 'welcome'
 
   namespace 'api' do
