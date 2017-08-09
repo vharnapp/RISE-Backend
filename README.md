@@ -49,3 +49,11 @@ you can deploy to staging and production with:
     heroku config:set SMTP_PASSWORD=''
     heroku config:set SMTP_USERNAME=''
     heroku config:set APPLICATION_HOST='athletefit.headway.io'
+
+# Backing up s3
+
+If you have more than one profile in your ~/.aws/credentials file you can specify the `--profile` flag with the name.
+
+```bash
+aws s3 cp s3://rise-media2 ./ --recursive --profile rise
+```
