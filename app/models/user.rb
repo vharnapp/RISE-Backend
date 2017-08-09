@@ -46,7 +46,7 @@ class User < ApplicationRecord
            class_name: 'Club',
            source: :club
 
-  has_many :club_affiliations
+  has_many :club_affiliations, dependent: :destroy
   has_many :clubs_administered,
            through: :club_affiliations,
            source: :club
