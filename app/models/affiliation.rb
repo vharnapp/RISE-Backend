@@ -9,7 +9,7 @@ class Affiliation < ApplicationRecord
 
   validates :user_id,
             uniqueness: {
-              scope: :team_id,
+              scope: [:team_id, :coach],
               message: 'can only belong to a team once',
             }
 
