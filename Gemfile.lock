@@ -725,6 +725,8 @@ GEM
     title (0.0.7)
       i18n
       rails (>= 3.1)
+    trix (0.11.0)
+      rails (> 4.1, < 5.2)
     trollop (2.1.2)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
@@ -864,6 +866,7 @@ DEPENDENCIES
   tiddle
   timecop
   title
+  trix
   turbolinks
   uglifier
   validates_overlap!

@@ -10,7 +10,7 @@ class SnippetDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     name: Field::String,
-    content: Field::Text,
+    content: Field::TrixField,
     deleted_at: Field::DateTime,
     position: Field::Number,
     created_at: Field::DateTime,

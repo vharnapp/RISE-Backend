@@ -30,6 +30,7 @@ gem 'font-awesome-rails'
 gem 'foundation-rails', '~> 6.3.1'
 gem 'slim-rails'
 gem 'bootsnap', require: false
+gem 'trix'
 
 gem 'acts_as_list'
 gem 'administrate', github: 'headwayio/administrate', branch: 'feature/custom_sorting_via_options'#, path: '/rails/headway/administrate_gems/administrate'
