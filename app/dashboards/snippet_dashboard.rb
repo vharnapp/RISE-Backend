@@ -24,7 +24,6 @@ class SnippetDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :name,
-    :content,
     :position,
   ].freeze
 
