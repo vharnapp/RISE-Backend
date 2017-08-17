@@ -56,8 +56,8 @@ Rails.application.routes.draw do
   end
 
   get '/pages/*id' => 'pages#show', as: :page, format: false
-  get '/help' => 'high_voltage/pages#show', id: 'help'
-  get '/unauthorized' => 'high_voltage/pages#show', id: 'unauthorized'
+  get '/help' => 'pages#show', id: 'help'
+  get '/unauthorized' => 'pages#show', id: 'unauthorized'
 
   authenticated :user do
     root to: 'clubs#index', as: :authenticated_root

@@ -24,7 +24,9 @@
 }).call(this);
 
 $(document).on('turbolinks:load', function() {
-  fadeFlash('.flashes', 3000);
+  if (gon.persist_flash !== true){
+    fadeFlash('.flashes', 3000);
+  }
 });
 
 $(document).on('click', '.remove-flash', function(e){

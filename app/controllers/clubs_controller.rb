@@ -3,7 +3,19 @@ class ClubsController < ApplicationController
 
   def index
     @clubs = @clubs.includes(:administrators)
-    redirect_to club_path(@clubs.first) if @clubs.length == 1 || current_user.coach?
+
+    if @clubs.blank?
+      flash[:notice] = %(
+        Your account is not associated to a club. Please contact
+        <a href='mailto:info@risefutbol.com'>info@risefutbol.com</a> for
+        support.
+      ).html_safe.squish # rubocop:disable Rails/OutputSafety
+
+      redirect_to '/help' and return
+    end
+
+    first_club_path = club_path(@clubs.first)
+    redirect_to first_club_path if @clubs.length == 1 || current_user.coach?
   end
 
   def show

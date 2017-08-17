@@ -6,7 +6,15 @@ class PagesController < ApplicationController
 
   layout :layout_for_page
 
+  before_action :persist_flash
+
   private
+
+  def persist_flash
+    this_page = params[:id]
+    pages_to_persist_flash = %(help)
+    gon.persist_flash = true if pages_to_persist_flash.include?(this_page)
+  end
 
   def layout_for_page
     case params[:id]
