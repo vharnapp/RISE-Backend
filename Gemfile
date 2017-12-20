@@ -1,7 +1,7 @@
 # rubocop:disable Metrics/LineLength
 source 'https://rubygems.org'
 
-ruby '2.4.0'
+ruby '2.4.2'
 # ruby-gemset=athletefit_backend
 
 gem 'autoprefixer-rails'
