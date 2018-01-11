@@ -5,26 +5,18 @@ class SubscriptionsController < ApplicationController
   end
 
   def create
-    case params[:plan_type]
-    when 'monthly'
+    plan_type = params[:plan_type].upcase
+
+    plan = "Stripe::Plans::#{plan_type}".constantize
+    price = plan.amount / 100
+
+    if plan_type.match?('MONTHLY')
       end_date = 1.month.from_now
-      plan = Stripe::Plans::MONTHLY
-      price = plan.amount / 100
-    when 'monthly_with_training'
-      end_date = 1.month.from_now
-      plan = Stripe::Plans::MONTHLY_WITH_TRAINING
-      price = plan.amount / 100
-    when 'annually'
+    elsif plan_type.match?('ANNUALLY')
       end_date = 1.year.from_now
-      plan = Stripe::Plans::ANNUALLY
-      price = plan.amount / 100
-    when 'annually_with_training'
-      end_date = 1.year.from_now
-      plan = Stripe::Plans::ANNUALLY_WITH_TRAINING
-      price = plan.amount / 100
-    when 'forever'
+    elsif plan_type.match?('FOREVER')
       end_date = 100.years.from_now
-      price = 280
+      price = 280 # override price
     end
 
     customer = Stripe::Customer.create(
