@@ -1,0 +1,21 @@
+header.main-content__header[role='banner']
+  .row.columns
+    .group.small-12.medium-8.left
+      | Choose Subscription
+
+.row.columns
+  .left
+    = render 'plan_button', { plan_type: 'monthly' }
+  h3 Monthly Subscription
+
+  .left
+    = render 'plan_button', { plan_type: 'annually' }
+  h3 Annual Subscription
+
+  .left
+    = render 'plan_button', { plan_type: 'monthly_with_training' }
+  h3 Monthly Subscription with Personal Coaching
+
+  .left
+    = render 'plan_button', { plan_type: 'annually_with_training' }
+  h3 Annual Subscription with Personal Coaching

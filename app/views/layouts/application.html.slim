@@ -14,6 +14,7 @@ html[lang="en"]
       = title
     = stylesheet_link_tag :application, media: "all"
     = render 'javascript'
+    = stripe_javascript_tag
     = csrf_meta_tags
     = favicon_link_tag 'favicon.ico'
     - # Add gon here for gon use inside the compiled js before the page is fully loaded

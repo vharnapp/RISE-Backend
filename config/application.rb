@@ -49,6 +49,8 @@ module AthletefitBackend
 
     config.time_zone = 'Central Time (US & Canada)'
 
+    config.stripe.publishable_key = ENV['STRIPE_PUBLISHABLE_KEY']
+
     config.to_prepare do
       Devise::SessionsController.layout 'no_header_or_footer'
       Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? 'application' : 'no_header_or_footer' }

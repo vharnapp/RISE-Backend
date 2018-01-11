@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :teams, only: [:index, :show, :edit, :update]
   end
 
+  resources :subscriptions
+
   resources :unlocked_pyramid_modules, only: [:create, :destroy]
   resources :affiliations, only: [:destroy]
 

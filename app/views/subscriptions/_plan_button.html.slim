@@ -1,0 +1,23 @@
+- plan_type = plan_type || 'monthly'
+
+= form_tag subscriptions_path do
+  script{
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="#{ENV['STRIPE_PUBLISHABLE_KEY']}"
+    data-locale="auto"
+  }
+  = hidden_field_tag 'plan_type', plan_type
+
+sass:
+  button.stripe-button-el
+    background-color: white
+    background-image: none
+    border: none
+    border-radius: none
+    box-shadow: none
+    height: 32px
+
+  button.stripe-button-el span
+    background-color: #3adb76
+    background-image: none

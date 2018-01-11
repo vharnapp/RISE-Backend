@@ -86,6 +86,9 @@ gem 'mini_magick'
 gem 'whenever', require: false # provides a clear syntax for writing and deploying cron jobs
 gem 'whenever-web'
 
+# Payment
+gem 'stripe-rails'
+
 # Debugging (need at top level if we want pry-remote to work on a deployed prod server)
 gem 'pry-awesome_print' # make pry output legible
 gem 'pry-byebug' # stepwise debugging inside pry
