@@ -34,7 +34,16 @@ module Api
       end
 
       def teams
-        @model.teams.map do |team|
+        if @model.teams.present?
+          teams = @model.teams
+        else
+          # TODO: (2018-01-10) jon => add this team somewhere as seed data for
+          # the environments. This is on production as of 1/10/2018. I manually
+          # created it.
+          teams = Team.where(name: 'RISE')
+        end
+
+        teams.map do |team|
           {
             id: team.id,
             name: team.name,

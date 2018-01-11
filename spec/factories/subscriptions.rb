@@ -17,8 +17,10 @@ end
 #  price      :decimal(, )
 #  start_date :date
 #  updated_at :datetime         not null
+#  user_id    :integer
 #
 # Indexes
 #
 #  index_subscriptions_on_club_id  (club_id)
+#  index_subscriptions_on_user_id  (user_id)
 #

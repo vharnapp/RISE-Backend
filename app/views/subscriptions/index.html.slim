@@ -9,13 +9,17 @@ header.main-content__header[role='banner']
   h3 Monthly Subscription
 
   .left
-    = render 'plan_button', { plan_type: 'annually' }
-  h3 Annual Subscription
-
-  .left
     = render 'plan_button', { plan_type: 'monthly_with_training' }
   h3 Monthly Subscription with Personal Coaching
 
   .left
+    = render 'plan_button', { plan_type: 'annually' }
+  h3 Annual Subscription
+
+  .left
     = render 'plan_button', { plan_type: 'annually_with_training' }
   h3 Annual Subscription with Personal Coaching
+
+  .left
+    = render 'plan_button', { plan_type: 'forever' }
+  h3 Own The Whole Thing

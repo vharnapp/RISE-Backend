@@ -1,5 +1,6 @@
 class Subscription < ApplicationRecord
-  belongs_to :club, inverse_of: :subscriptions
+  belongs_to :club, optional: true, inverse_of: :subscriptions
+  belongs_to :user, optional: true, inverse_of: :subscription
 
   has_many :enrollments, dependent: :destroy
   has_many :teams, through: :enrollments
@@ -12,8 +13,9 @@ class Subscription < ApplicationRecord
     .order(end_date: :desc)
   })
 
-  validates :start_date, :end_date, :club, :price, presence: true
-  validates :start_date, :end_date, overlap: { scope: 'club_id' }
+  validates :start_date, :end_date, :price, presence: true
+  validates :start_date, :end_date, overlap: { scope: 'club_id' }, if: proc { |s| s.club.present? }
+  validates :start_date, :end_date, overlap: { scope: 'user_id' }, if: proc { |s| s.user.present? }
 
   validates :start_date, inclusion: {
     in: ->(_subscription) { Time.zone.today..Time.zone.today + 50.years },
@@ -46,8 +48,10 @@ end
 #  price      :decimal(, )
 #  start_date :date
 #  updated_at :datetime         not null
+#  user_id    :integer
 #
 # Indexes
 #
 #  index_subscriptions_on_club_id  (club_id)
+#  index_subscriptions_on_user_id  (user_id)
 #
