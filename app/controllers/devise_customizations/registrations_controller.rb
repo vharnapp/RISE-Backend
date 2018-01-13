@@ -22,6 +22,11 @@ module DeviseCustomizations
       end
     end
 
+    def edit
+      gon.persist_flash = true
+      super
+    end
+
     protected
 
     def after_sign_up_path_for(resource)

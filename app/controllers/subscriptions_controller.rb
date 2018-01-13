@@ -30,8 +30,6 @@ class SubscriptionsController < ApplicationController
       price: price,
     )
 
-    raise 'error here yo'
-
     customer =
       begin
         Stripe::Customer.retrieve(current_user.stripe_customer_id)
@@ -72,7 +70,6 @@ class SubscriptionsController < ApplicationController
 
     redirect_to edit_user_registration_path
   rescue => e
-    gon.persist_flash = true
     flash[:error] = "Sorry, something went wrong. Please forward these error details to info@risefutbol.com.<br><br>Error: #{e}".html_safe
     redirect_to '/help'
   end
