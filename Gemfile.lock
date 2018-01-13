@@ -34,15 +34,6 @@ GIT
       selectize-rails (~> 0.6)
 
 GIT
-  remote: git://github.com/rails/webpacker.git
-  revision: 158987a82b605b534bcdc9468efca2602313c791
-  specs:
-    webpacker (1.2)
-      activesupport (>= 4.2)
-      multi_json (~> 1.2)
-      railties (>= 4.2)
-
-GIT
   remote: git://github.com/robinbortlik/validates_overlap.git
   revision: 3b6e38bae20c6c692287dba85dd7d56ca5741cec
   specs:
@@ -883,7 +874,6 @@ DEPENDENCIES
   voyage
   web-console
   webmock
-  webpacker!
   whenever
   whenever-web
   zenflow!

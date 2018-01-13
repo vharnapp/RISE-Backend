@@ -23,7 +23,7 @@ gem 'sprockets', '>= 3.0.0'
 gem 'title'
 gem 'uglifier'
 gem 'voyage'
-gem 'webpacker', github: 'rails/webpacker'
+# gem 'webpacker', github: 'rails/webpacker'
 
 # Customizations
 gem 'font-awesome-rails'
