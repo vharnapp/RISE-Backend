@@ -16,14 +16,14 @@ Stripe.plan :annually do |plan|
   plan.interval = 'year' # 'day', 'week', 'month', 'year'
 end
 
-Stripe.plan :monthly_with_training do |plan|
-  plan.name = 'RISE Monthly Subscription with Personal Training' # to appear on cc statements
+Stripe.plan :monthly_with_coaching do |plan|
+  plan.name = 'RISE Monthly Subscription with Personal Coaching' # to appear on cc statements
   plan.amount = 3_500 # cents
   plan.interval = 'month' # 'day', 'week', 'month', 'year'
 end
 
-Stripe.plan :annually_with_training do |plan|
-  plan.name = 'RISE Annual Subscription with Personal Training' # to appear on cc statements
+Stripe.plan :annually_with_coaching do |plan|
+  plan.name = 'RISE Annual Subscription with Personal Coaching' # to appear on cc statements
   plan.amount = 28_000 # cents
   plan.interval = 'year' # 'day', 'week', 'month', 'year'
 end

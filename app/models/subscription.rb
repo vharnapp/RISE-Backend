@@ -26,6 +26,10 @@ class Subscription < ApplicationRecord
 
   delegate :fee, to: :club, prefix: true
 
+  def current?
+    end_date >= Time.current.to_date && start_date <= Time.current.to_date
+  end
+
   private
 
   def end_date_is_after_start_date

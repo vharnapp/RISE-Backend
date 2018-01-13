@@ -4,22 +4,29 @@ header.main-content__header[role='banner']
       | Choose Subscription
 
 .row.columns
-  .left
-    = render 'plan_button', { plan_type: 'monthly' }
-  h3 Monthly Subscription
+  br
+  h3 Please choose a subscription level before continuing.
 
   .left
-    = render 'plan_button', { plan_type: 'monthly_with_training' }
-  h3 Monthly Subscription with Personal Coaching
+    = render 'plan_button', { plan_type: 'monthly' }
+  p &nbsp; Monthly Subscription
+
+  .left
+    = render 'plan_button', { plan_type: 'monthly_with_coaching' }
+  p &nbsp; Monthly Subscription with Personal Coaching
 
   .left
     = render 'plan_button', { plan_type: 'annually' }
-  h3 Annual Subscription
+  p &nbsp; Annual Subscription
 
   .left
-    = render 'plan_button', { plan_type: 'annually_with_training' }
-  h3 Annual Subscription with Personal Coaching
+    = render 'plan_button', { plan_type: 'annually_with_coaching' }
+  p &nbsp; Annual Subscription with Personal Coaching
 
   .left
     = render 'plan_button', { plan_type: 'forever' }
-  h3 Own The Whole Thing
+  p &nbsp; Own The Whole Thing
+
+sass:
+  p
+    padding-top: 4px

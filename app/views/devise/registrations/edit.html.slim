@@ -4,6 +4,31 @@ header.main-content__header[role='banner']
 
 .row.columns.padding-t-25
   .small-12.medium-6.medium-offset-3
+
+
+    -# TODO: (2018-01-13) jon => this whole subscription check should be
+    -# somewhere better than the registration edit. However, right now players
+    -# can't do anything on the site itself. So we'll have to build out
+    -# a dashboard screen for them or a subscription management screen at some
+    -# point down the road.
+    - if current_user.active_subscription?
+      .flash-notice(style='text-align: left;')
+        | You have an active subscription. You may log in to the mobile app using the email and password provided here.
+        -# TODO: (2018-01-13) jon => This should be a presenter or helper
+        - if current_user.subscription_expires_on < 2.years.from_now
+          br
+          br
+          | Your subscription will renew on: #{current_user.subscription_expires_on}.
+          br
+          br
+          | Please contact <a href='mailto:info@risefutbol.com'>info@risefutbol.com</a> if you need to adjust your subscription.
+      br
+    - else
+      .flash-notice(style='text-align: left;')
+        | You do not have an active subscription. Please contact <a href='mailto:info@risefutbol.com'>info@risefutbol.com</a> for help.
+      br
+
+
     .left
       h3 Edit Account Details
     .right

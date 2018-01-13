@@ -1,4 +1,20 @@
-- plan_type = plan_type || 'monthly'
+- # TODO: (2018-01-13) jon => wrap the plan price finders in an object. Rescues are not good.
+- plan = "Stripe::Plans::#{plan_type.upcase}".constantize rescue nil
+- price = plan.amount / 100 rescue 350
+ruby:
+  plan_checkout_title =
+    case plan_type
+    when 'monthly'
+      'Rise Monthly Subscription'
+    when 'monthly_with_coaching'
+      'Rise Monthly w/ Coaching'
+    when 'annually'
+      'Rise Annual Subscription'
+    when 'annually_with_coaching'
+      'Rise Annual w/ Coaching'
+    when 'forever'
+      'Own It Forever'
+    end
 
 = form_tag subscriptions_path do
   script{
@@ -6,6 +22,9 @@
     class="stripe-button"
     data-key="#{ENV['STRIPE_PUBLISHABLE_KEY']}"
     data-locale="auto"
+    data-label=plan_type.titleize
+    data-name="#{plan_checkout_title}"
+    data-description="$#{price}"
   }
   = hidden_field_tag 'plan_type', plan_type
 
@@ -17,6 +36,7 @@ sass:
     border-radius: none
     box-shadow: none
     height: 32px
+    width: 215px
 
   button.stripe-button-el span
     background-color: #3adb76

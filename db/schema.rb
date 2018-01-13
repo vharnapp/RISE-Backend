@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180111041719) do
+ActiveRecord::Schema.define(version: 20180113214712) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -285,6 +285,7 @@ ActiveRecord::Schema.define(version: 20180111041719) do
     t.integer "roles_mask"
     t.integer "sign_in_count", default: 0, null: false
     t.string "slug"
+    t.string "stripe_customer_id"
     t.datetime "updated_at", null: false
     t.string "uuid"
     t.index ["deleted_at"], name: "index_users_on_deleted_at"

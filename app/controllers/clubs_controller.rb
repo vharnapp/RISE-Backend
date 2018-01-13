@@ -4,6 +4,7 @@ class ClubsController < ApplicationController
   def index
     @clubs = @clubs.includes(:administrators)
 
+    # TODO: (2018-01-13) jon => remove this if the subscriptions_controller#check_subscription method covers the same use case
     if @clubs.blank?
       flash[:notice] = %(
         Your account is not associated to a club. Please contact
