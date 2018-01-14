@@ -12,10 +12,11 @@ header.main-content__header[role='banner']
     -# a dashboard screen for them or a subscription management screen at some
     -# point down the road.
     - if current_user.active_subscription?
+      - lifetime_subscription = current_user.subscription_expires_on > 2.years.from_now
       .flash-notice(style='text-align: left;')
-        | You have an active subscription. You may log in to the mobile app using the email and password provided here.
+        | You have an active #{lifetime_subscription == true ? 'lifetime ' : ''}subscription. You may log in to the mobile app using the email and password provided here.
         -# TODO: (2018-01-13) jon => This should be a presenter or helper
-        - if current_user.subscription_expires_on < 2.years.from_now
+        - unless lifetime_subscription
           br
           br
           | Your subscription will renew on: #{current_user.subscription_expires_on}.

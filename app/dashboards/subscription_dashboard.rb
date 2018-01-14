@@ -11,6 +11,7 @@ class SubscriptionDashboard < Administrate::BaseDashboard
     club: Field::BelongsTo.with_options(
       order: 'club.name',
     ),
+    user: Field::BelongsTo,
     teams: Field::HasMany.with_options(
       sortable: false,
     ),
@@ -34,6 +35,7 @@ class SubscriptionDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :club,
+    :user,
     :teams,
     :start_date,
     :end_date,
@@ -45,6 +47,7 @@ class SubscriptionDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :club,
+    :user,
     :start_date,
     :end_date,
     :price,
@@ -57,6 +60,7 @@ class SubscriptionDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :club,
+    :user,
     :start_date,
     :end_date,
     :price,

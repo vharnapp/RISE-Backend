@@ -7,26 +7,39 @@ header.main-content__header[role='banner']
   br
   h3 Please choose a subscription level before continuing.
 
-  .left
-    = render 'plan_button', { plan_type: 'monthly' }
-  p &nbsp; Monthly Subscription
+  div(class='#{params[:plan_type] == 'monthly' ? 'highlight' : ''}')
+    .left
+      = render 'plan_button', { plan_type: 'monthly' }
+    p &nbsp; Monthly Subscription
 
-  .left
-    = render 'plan_button', { plan_type: 'monthly_with_coaching' }
-  p &nbsp; Monthly Subscription with Personal Coaching
+  div(class='#{params[:plan_type] == 'monthly_with_coaching' ? 'highlight' : ''}')
+    .left
+      = render 'plan_button', { plan_type: 'monthly_with_coaching' }
+    p &nbsp; Monthly Subscription with Personal Coaching
 
-  .left
-    = render 'plan_button', { plan_type: 'annually' }
-  p &nbsp; Annual Subscription
+  div(class='#{params[:plan_type] == 'annually' ? 'highlight' : ''}')
+    .left
+      = render 'plan_button', { plan_type: 'annually' }
+    p &nbsp; Annual Subscription
 
-  .left
-    = render 'plan_button', { plan_type: 'annually_with_coaching' }
-  p &nbsp; Annual Subscription with Personal Coaching
+  div(class='#{params[:plan_type] == 'annually_with_coaching' ? 'highlight' : ''}')
+    .left
+      = render 'plan_button', { plan_type: 'annually_with_coaching' }
+    p &nbsp; Annual Subscription with Personal Coaching
 
-  .left
-    = render 'plan_button', { plan_type: 'forever' }
-  p &nbsp; Own The Whole Thing
+  div(class='#{params[:plan_type] == 'forever' ? 'highlight' : ''}')
+    .left
+      = render 'plan_button', { plan_type: 'forever' }
+    p &nbsp; Own The Whole Thing
 
 sass:
   p
     padding-top: 4px
+  .left
+    margin-left: 20px
+  .highlight
+    padding: 25px 20px 15px 20px
+    margin: 20px 0 20px 0
+    border: 2px solid #3adb76
+    .left
+      margin-left: 0

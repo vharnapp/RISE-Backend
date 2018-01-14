@@ -30,7 +30,7 @@ module DeviseCustomizations
     protected
 
     def after_sign_up_path_for(resource)
-      analytics_alias_user_path(resource)
+      analytics_alias_user_path(resource, plan_type: params[:plan_type])
     end
 
     def update_resource(resource, params)
