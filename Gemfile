@@ -24,6 +24,7 @@ gem 'title'
 gem 'uglifier'
 gem 'voyage'
 # gem 'webpacker', github: 'rails/webpacker'
+gem 'rack-cors', require: 'rack/cors'
 
 # Customizations
 gem 'font-awesome-rails'

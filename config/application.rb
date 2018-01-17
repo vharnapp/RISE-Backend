@@ -51,6 +51,13 @@ module AthletefitBackend
 
     config.stripe.publishable_key = ENV['STRIPE_PUBLISHABLE_KEY']
 
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :options]
+      end
+    end
+
     config.to_prepare do
       Devise::SessionsController.layout 'no_header_or_footer'
       Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? 'application' : 'no_header_or_footer' }
