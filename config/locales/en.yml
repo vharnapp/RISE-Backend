@@ -22,7 +22,7 @@ en:
         '%m/%d/%Y - %-l:%M %p'
 
   titles:
-    application: Athletefit backend
+    application: RISE - Dashboard
 
   helpers:
     label:

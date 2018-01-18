@@ -23,7 +23,8 @@ gem 'sprockets', '>= 3.0.0'
 gem 'title'
 gem 'uglifier'
 gem 'voyage'
-gem 'webpacker', github: 'rails/webpacker'
+# gem 'webpacker', github: 'rails/webpacker'
+gem 'rack-cors', require: 'rack/cors'
 
 # Customizations
 gem 'font-awesome-rails'
@@ -85,6 +86,9 @@ gem 'mini_magick'
 # Cron Jobs
 gem 'whenever', require: false # provides a clear syntax for writing and deploying cron jobs
 gem 'whenever-web'
+
+# Payment
+gem 'stripe-rails'
 
 # Debugging (need at top level if we want pry-remote to work on a deployed prod server)
 gem 'pry-awesome_print' # make pry output legible

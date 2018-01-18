@@ -3,6 +3,7 @@ Canard::Abilities.for(:player) do
   cannot [:destroy], User
   cannot [:index], User
 
+  can :index, :create, Subscription
   can :read, Snippet
   can :read, PyramidModule
   can :read, Phase

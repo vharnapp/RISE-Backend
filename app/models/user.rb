@@ -23,6 +23,7 @@ class User < ApplicationRecord
   has_many :affiliations, dependent: :destroy
   has_many :teams, through: :affiliations
   has_many :subscriptions, through: :teams
+  has_one :subscription, dependent: :destroy # individual sign up
   has_many :clubs, through: :teams
 
   has_many :coach_affiliations, -> { coaches }, class_name: 'Affiliation'
@@ -185,12 +186,14 @@ class User < ApplicationRecord
   end
 
   def active_subscription?
-    subscriptions.merge(Subscription.current).present?
+    subscriptions.merge(Subscription.current).present? || subscription&.current?
   end
 
   def subscription_expires_on
-    return nil if subscriptions.blank?
-    subscriptions.select(:end_date).order(end_date: :desc).limit(1).first.end_date
+    return nil if subscriptions.blank? && subscription.blank?
+    subscription_ids = subscriptions.pluck(:id)
+    subscription_ids = subscription_ids + [subscription.id] if subscription.present?
+    Subscription.where(id: subscription_ids).select(:end_date).order(end_date: :desc).limit(1).first.end_date
   end
 
   private
@@ -235,6 +238,7 @@ end
 #  roles_mask             :integer
 #  sign_in_count          :integer          default(0), not null
 #  slug                   :string
+#  stripe_customer_id     :string
 #  updated_at             :datetime         not null
 #  uuid                   :string
 #

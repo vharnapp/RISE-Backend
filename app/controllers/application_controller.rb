@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   before_action :add_layout_name_to_gon
   before_action :detect_device_type
   before_action :set_clubs, unless: -> { request.format.json? }
+  before_action :check_subscription, unless: -> { request.format.json? || devise_or_pages_controller? }
 
   respond_to :json, :html, if: :devise_controller? # for devise reset password
 
@@ -43,6 +44,16 @@ class ApplicationController < ActionController::Base
         ids = (affiliated_club_ids + clubs_administered_ids).uniq
         Club.where(id: ids).order(:name)
       end
+  end
+
+  def check_subscription
+    return if @clubs.present? # club admin or coach
+
+    # Player
+    if current_user
+      redirect_to subscriptions_path(plan_type: params[:plan_type]) and return unless current_user.active_subscription?
+      redirect_to edit_user_registration_path and return
+    end
   end
 
   def devise_or_pages_controller?

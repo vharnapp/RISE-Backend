@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726153200) do
+ActiveRecord::Schema.define(version: 20180113214712) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -215,7 +215,9 @@ ActiveRecord::Schema.define(version: 20170726153200) do
     t.decimal "price"
     t.date "start_date"
     t.datetime "updated_at", null: false
+    t.bigint "user_id"
     t.index ["club_id"], name: "index_subscriptions_on_club_id"
+    t.index ["user_id"], name: "index_subscriptions_on_user_id"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -283,6 +285,7 @@ ActiveRecord::Schema.define(version: 20170726153200) do
     t.integer "roles_mask"
     t.integer "sign_in_count", default: 0, null: false
     t.string "slug"
+    t.string "stripe_customer_id"
     t.datetime "updated_at", null: false
     t.string "uuid"
     t.index ["deleted_at"], name: "index_users_on_deleted_at"
@@ -323,6 +326,7 @@ ActiveRecord::Schema.define(version: 20170726153200) do
   add_foreign_key "phase_attempts", "users"
   add_foreign_key "phases", "pyramid_modules"
   add_foreign_key "subscriptions", "clubs"
+  add_foreign_key "subscriptions", "users"
   add_foreign_key "teams", "clubs"
   add_foreign_key "temp_teams", "clubs"
   add_foreign_key "unlocked_pyramid_modules", "pyramid_modules"

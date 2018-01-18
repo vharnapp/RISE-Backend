@@ -170,6 +170,7 @@ end
 #  roles_mask             :integer
 #  sign_in_count          :integer          default(0), not null
 #  slug                   :string
+#  stripe_customer_id     :string
 #  updated_at             :datetime         not null
 #  uuid                   :string
 #
