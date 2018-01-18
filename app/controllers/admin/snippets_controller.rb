@@ -14,6 +14,12 @@ module Admin
       }
     end
 
+    def destroy
+      requested_resource.really_destroy!
+      flash[:notice] = translate_with_resource("destroy.success")
+      redirect_to action: :index
+    end
+
     def update
       requested_resource.update_column(:slug, nil)
       super
