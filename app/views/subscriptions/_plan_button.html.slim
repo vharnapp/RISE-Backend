@@ -2,19 +2,23 @@
 - plan = "Stripe::Plans::#{plan_type.upcase}".constantize rescue nil
 - price = plan.amount / 100 rescue 350
 ruby:
-  plan_checkout_title =
-    case plan_type
-    when 'monthly'
-      'Rise Monthly Subscription'
-    when 'monthly_with_coaching'
-      'Rise Monthly w/ Coaching'
-    when 'annually'
-      'Rise Annual Subscription'
-    when 'annually_with_coaching'
-      'Rise Annual w/ Coaching'
-    when 'forever'
-      'Own It Forever'
-    end
+  case plan_type
+  when 'monthly'
+    plan_checkout_title = 'Rise Monthly Subscription'
+    plan_frequency = 'per month'
+  when 'monthly_with_coaching'
+    plan_checkout_title = 'Rise Monthly w/ Coaching'
+    plan_frequency = 'per month'
+  when 'annually'
+    plan_checkout_title = 'Rise Annual Subscription'
+    plan_frequency = 'per year'
+  when 'annually_with_coaching'
+    plan_checkout_title = 'Rise Annual w/ Coaching'
+    plan_frequency = 'per year'
+  when 'forever'
+    plan_checkout_title = 'Own It Forever'
+    plan_frequency = 'Own It Forever'
+  end
 
 = form_tag subscriptions_path do
   script{
@@ -22,7 +26,7 @@ ruby:
     class="stripe-button"
     data-key="#{ENV['STRIPE_PUBLISHABLE_KEY']}"
     data-locale="auto"
-    data-label=plan_type.titleize
+    data-label="$#{price} #{plan_frequency}"
     data-name="#{plan_checkout_title}"
     data-description="$#{price}"
   }

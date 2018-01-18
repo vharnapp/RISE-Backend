@@ -23,6 +23,13 @@ header.main-content__header[role='banner']
           br
           br
           | Please contact <a href='mailto:info@risefutbol.com'>info@risefutbol.com</a> if you need to adjust your subscription.
+          br
+          br
+          | Download the RISE App here:
+          = link_to 'https://itunes.apple.com/us/app/rise-elite-soccer/id1233828122?mt=8', target:'_blank'
+            = image_tag 'apple-badge.svg', style: 'margin-left: 12px;'
+          = link_to 'https://play.google.com/store/apps/details?id=com.athletefitapp&hl=en', target:'_blank'
+            = image_tag 'google-play-badge.svg', style: 'margin-left: 12px;'
       br
     - else
       .flash-notice(style='text-align: left;')
