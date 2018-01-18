@@ -186,7 +186,7 @@ class User < ApplicationRecord
   end
 
   def active_subscription?
-    subscriptions.merge(Subscription.current).present? || subscription&.current?
+    subscriptions.merge(Subscription.current).present? || (subscription&.current? == true)
   end
 
   def subscription_expires_on
