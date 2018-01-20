@@ -7,6 +7,7 @@ module DeviseCustomizations
                        if: -> { json_request? }
 
     def create
+      analytics_track(current_user, 'Sign In')
       super and return unless json_request?
 
       user = warden.authenticate!(auth_options)
@@ -14,6 +15,7 @@ module DeviseCustomizations
     end
 
     def destroy
+      analytics_track(current_user, 'Sign Out')
       super and return unless json_request?
 
       Tiddle.expire_token(current_user, request) if current_user

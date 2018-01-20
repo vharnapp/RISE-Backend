@@ -15,32 +15,8 @@ module AnalyticsTrack
       user_id: user.uuid,
       event: event_name,
       properties: {
-        browser:         (begin
-                        browser.name
-                      rescue
-                        'unknown'
-                      end).to_s,
-        browser_id:      (begin
-                        browser.id
-                      rescue
-                        'unknown'
-                      end).to_s,
-        browser_version: (begin
-                        browser.version
-                      rescue
-                        'unknown'
-                      end).to_s,
-        platform:        (begin
-                        browser.platform
-                      rescue
-                        'unknown'
-                      end).to_s,
-        roles:           (begin
-                        user.roles.map(&:to_s).join(',')
-                      rescue
-                        ''
-                      end).to_s,
-        rails_env:       Rails.env.to_s,
+        roles: "#{user.roles.map(&:to_s).join(',') rescue ''}",
+        rails_env: Rails.env.to_s,
       }.merge(sanitized_options),
     }
 

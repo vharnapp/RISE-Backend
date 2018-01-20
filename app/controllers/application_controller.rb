@@ -50,7 +50,7 @@ class ApplicationController < ActionController::Base
     return if @clubs.present? # club admin or coach
 
     # Player
-    if current_user
+    if current_user && !request.path.match?('analytics_alias')
       redirect_to subscriptions_path(plan_type: params[:plan_type]) and return unless current_user.active_subscription?
       redirect_to edit_user_registration_path and return
     end
