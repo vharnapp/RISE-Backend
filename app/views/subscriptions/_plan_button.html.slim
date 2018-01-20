@@ -1,6 +1,6 @@
-- # TODO: (2018-01-13) jon => wrap the plan price finders in an object. Rescues are not good.
+- # TODO: (2018-01-13) jon => wrap the plan price finders in an object. Rescues are not good for control flow
 - plan = "Stripe::Plans::#{plan_type.upcase}".constantize rescue nil
-- price = plan.amount / 100 rescue 350
+- price = plan.amount / 100 rescue 250
 ruby:
   case plan_type
   when 'monthly'
@@ -29,6 +29,7 @@ ruby:
     data-label="$#{price} #{plan_frequency}"
     data-name="#{plan_checkout_title}"
     data-description="$#{price}"
+    data-email="#{current_user.email}"
   }
   = hidden_field_tag 'plan_type', plan_type
 
