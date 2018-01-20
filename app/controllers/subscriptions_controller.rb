@@ -36,8 +36,9 @@ class SubscriptionsController < ApplicationController
       rescue Stripe::InvalidRequestError
         # TODO: (2018-01-13) jon => log the Customer retrieve failure if current_user.stripe_customer_id.present?
         Stripe::Customer.create(
-          description: "Customer for #{current_user.email}",
-          source: params[:stripeToken] # obtained with Stripe.js
+          description: current_user.full_name,
+          email: current_user.email,
+          source: params[:stripeToken], # obtained with Stripe.js
         )
       end
 
