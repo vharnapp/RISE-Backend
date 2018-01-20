@@ -6,7 +6,7 @@
       console.log('Aliased: 1st');
 
       if (typeof analytics != 'undefined') {
-        analytics.alias('<%= current_user.uuid %>', '<%= params[:anon_user_id] %>');
+        analytics.alias('<%= current_user.uuid %>', '<%= params[:anon_id] %>');
       }
 
       console.log("Redirect to '<%= goto %>' after alias & identify");
