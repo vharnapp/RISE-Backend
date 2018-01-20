@@ -21,6 +21,8 @@
         created_at:  "<%= current_user.created_at.iso8601 %>",
         roles:       "<%= current_user.roles.map(&:to_s).join(',') %>",
         rails_env:   "<%= Rails.env.to_s %>",
+        active_sub:  "<%= current_user.active_subscription?.to_s %>",
+        sub_exp_on:  "<%= current_user.subscription_expires_on.to_s %>",
       }
 
       console.log(analytics_attrs);
