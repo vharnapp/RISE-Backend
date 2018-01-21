@@ -219,13 +219,14 @@ class User < ApplicationRecord
         last_sign_in_at: (last_sign_in_at.iso8601 rescue ''),
         roles: role_list,
         active_sub: active_subscription?.to_s,
-        sub_exp_on: subscription_expires_on.to_s,
+        sub_exp_on: (subscription_expires_on.iso8601 rescue ''),
         day_streak: day_streak.to_s,
         skills_mastered: skills_mastered.to_s,
         highest_pyramid_level: highest_pyramid_level_achieved.to_s,
         teams: teams.map(&:name).join(', '),
         clubs: clubs.map(&:name).join(', '),
       },
+      timestamp: (last_sign_in_at.iso8601 rescue ''),
     )
   end
 

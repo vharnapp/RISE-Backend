@@ -22,7 +22,7 @@
         roles:       "<%= current_user.role_list %>",
         rails_env:   "<%= Rails.env.to_s %>",
         active_sub:  "<%= current_user.active_subscription?.to_s %>",
-        sub_exp_on:  "<%= current_user.subscription_expires_on.to_s %>",
+        sub_exp_on:  "<%= current_user.subscription_expires_on.iso8601 rescue '' %>",
         day_streak:  "<%= current_user.day_streak.to_s %>",
         skills_mastered: "<%= current_user.skills_mastered.to_s %>",
         highest_pyramid_level: "<%= current_user.highest_pyramid_level_achieved.to_s %>",
