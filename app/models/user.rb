@@ -226,7 +226,7 @@ class User < ApplicationRecord
         teams: teams.map(&:name).join(', '),
         clubs: clubs.map(&:name).join(', '),
       },
-      timestamp: (last_sign_in_at.iso8601 rescue Time.zone.now.iso8601),
+      timestamp: (last_sign_in_at rescue Time.zone.now),
     )
   end
 
