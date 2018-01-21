@@ -31,5 +31,11 @@ module DeviseCustomizations
     def json_request?
       %i[api_json json].include?(request.format.to_sym)
     end
+
+    protected
+
+    def after_sign_in_path_for(resource)
+      stored_location_for(resource) || root_path(plan_type: params[:plan_type])
+    end
   end
 end

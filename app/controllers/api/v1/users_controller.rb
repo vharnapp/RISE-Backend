@@ -12,6 +12,7 @@ module Api
       end
 
       def show
+        analytics_track(current_user, 'Show User', { user_db_id: @user.id, showing_self: current_user.id == @user.id })
         jsonapi_render json: @user
       end
 
@@ -21,6 +22,7 @@ module Api
 
         if @user.save
           @user.unlock_starting_pyramid_modules
+          @user.analytics_identify
 
           # On successful creation, generate token and return in response
           render_json_user_with_token(@user, return_user: false)

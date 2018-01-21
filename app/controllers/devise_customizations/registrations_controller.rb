@@ -18,13 +18,28 @@ module DeviseCustomizations
       else
         clean_up_passwords resource
         set_minimum_password_length
-        respond_with resource
+
+        respond_with resource if json_request?
+
+        redirect_to new_user_registration_path(
+          plan: params[:plan_type],
+          anon_id: params[:anon_id],
+          first_name: resource.first_name,
+          last_name: resource.last_name,
+          email: resource.email,
+        )
       end
     end
 
     def edit
       gon.persist_flash = true
       super
+    end
+
+    private
+
+    def json_request?
+      %i[api_json json].include?(request.format.to_sym)
     end
 
     protected

@@ -7,8 +7,9 @@
         .form-inputs
           = f.input :email, required: false, autofocus: true
           = f.input :password, required: false
+          = hidden_field_tag :plan_type, params[:plan]
 
         .form-actions
-          = f.button :submit, "Log in"
+          = f.button :submit, 'Sign in'
 
-      = render "devise/shared/links"
+      = render 'devise/shared/links'

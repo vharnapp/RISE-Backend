@@ -7,6 +7,7 @@ module AnalyticsTrack
   # NOTE: setup some defaults that we want to track on every event mixpanel_track
   # NOTE: the identify step happens on every page load to keep intercom.io and mixpanel people up to date
   def analytics_track(user, event_name, options = {})
+    return unless user.present?
     return if user.tester?
 
     sanitized_options = sanitize_hash_javascript(options)

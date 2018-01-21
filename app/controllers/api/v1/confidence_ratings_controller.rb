@@ -17,6 +17,7 @@ module Api
         confidence_rating.user = current_user
 
         if confidence_rating.save
+          analytics_track(current_user, 'Created Confidence Rating', { exercise_name: confidence_rating.exercise.name })
           jsonapi_render json: confidence_rating, status: :created
         else
           jsonapi_render_errors json: confidence_rating,
@@ -26,6 +27,7 @@ module Api
 
       def update
         if @confidence_rating.update(resource_params)
+          analytics_track(current_user, 'Updated Confidence Rating', { exercise_name: confidence_rating.exercise.name })
           jsonapi_render json: @confidence_rating, status: :ok
         else
           jsonapi_render_errors json: @confidence_rating,
