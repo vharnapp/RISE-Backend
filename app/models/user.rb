@@ -223,6 +223,8 @@ class User < ApplicationRecord
         day_streak: day_streak.to_s,
         skills_mastered: skills_mastered.to_s,
         highest_pyramid_level: highest_pyramid_level_achieved.to_s,
+        teams: teams.map(&:name).join(', '),
+        clubs: clubs.map(&:name).join(', '),
       },
     )
   end

@@ -26,6 +26,8 @@
         day_streak:  "<%= current_user.day_streak.to_s %>",
         skills_mastered: "<%= current_user.skills_mastered.to_s %>",
         highest_pyramid_level: "<%= current_user.highest_pyramid_level_achieved.to_s %>",
+        teams: "<%= current_user.teams.map(&:name).join(', ') %>",
+        clubs: "<%= current_user.clubs.map(&:name).join(', ') %>",
       }
 
       console.log(analytics_attrs);
