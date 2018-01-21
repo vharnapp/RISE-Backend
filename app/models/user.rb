@@ -196,6 +196,36 @@ class User < ApplicationRecord
     Subscription.where(id: subscription_ids).select(:end_date).order(end_date: :desc).limit(1).first.end_date
   end
 
+  def analytics_identify
+    return if tester?
+
+    address = try(:address)
+    address_attrs = {}
+    address_attrs.merge!(
+      city: (address.city rescue 'unknown'),
+      postal_code: (address.zip rescue 'unknown'),
+      state: (address.state.name rescue 'unknown'),
+      street: ("#{address.line1} #{address.line2}" rescue 'unknown'),
+    ) if address.present?
+
+    Analytics.identify(
+      user_id: uuid,
+      traits: {
+        email: email,
+        first_name: first_name,
+        last_name: last_name,
+        address: address_attrs.to_json,
+        created_at: created_at.iso8601,
+        roles: role_list,
+        active_sub: active_subscription?.to_s,
+        sub_exp_on: subscription_expires_on.to_s,
+        day_streak: day_streak.to_s,
+        skills_mastered: skills_mastered.to_s,
+        highest_pyramid_level: highest_pyramid_level_achieved.to_s,
+      },
+    )
+  end
+
   private
 
   def generate_uuid

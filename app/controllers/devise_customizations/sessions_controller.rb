@@ -15,6 +15,7 @@ module DeviseCustomizations
     end
 
     def destroy
+      # NOTE: (2018-01-20) jon => we're apparently not actually hitting this from the mobile app
       analytics_track(current_user, 'Sign Out')
       super and return unless json_request?
 
