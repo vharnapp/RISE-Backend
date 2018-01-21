@@ -27,7 +27,7 @@ module Api
 
       def update
         if @confidence_rating.update(resource_params)
-          analytics_track(current_user, 'Updated Confidence Rating', { exercise_name: confidence_rating.exercise.name })
+          analytics_track(current_user, 'Updated Confidence Rating', { exercise_name: @confidence_rating.exercise.name })
           jsonapi_render json: @confidence_rating, status: :ok
         else
           jsonapi_render_errors json: @confidence_rating,
