@@ -15,6 +15,7 @@ module AnalyticsTrack
     segment_attributes = {
       user_id: user.uuid,
       event: event_name,
+      last_request_at: Time.zone.now,
       properties: {
         roles: "#{user.roles.map(&:to_s).join(',') rescue ''}",
         rails_env: Rails.env.to_s,
