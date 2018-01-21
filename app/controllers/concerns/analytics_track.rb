@@ -10,17 +10,19 @@ module AnalyticsTrack
     return unless user.present?
     return if user.tester?
 
+    user.analytics_identify # need to identify here to update "last seen" when working server side
+
     sanitized_options = sanitize_hash_javascript(options)
 
     segment_attributes = {
       user_id: user.uuid,
       event: event_name,
-      last_request_at: Time.zone.now,
       properties: {
         roles: "#{user.roles.map(&:to_s).join(',') rescue ''}",
         rails_env: Rails.env.to_s,
       }.merge(sanitized_options),
     }
+
 
     Analytics.track(segment_attributes)
   end

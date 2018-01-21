@@ -217,6 +217,7 @@ class User < ApplicationRecord
         address: address_attrs.to_json,
         created_at: created_at.iso8601,
         last_sign_in_at: (last_sign_in_at.iso8601 rescue ''),
+        current_sign_in_at: (current_sign_in_at.iso8601 rescue ''),
         roles: role_list,
         active_sub: active_subscription?.to_s,
         sub_exp_on: (subscription_expires_on.iso8601 rescue ''),
@@ -226,7 +227,7 @@ class User < ApplicationRecord
         teams: teams.map(&:name).join(', '),
         clubs: clubs.map(&:name).join(', '),
       },
-      timestamp: (last_sign_in_at rescue Time.zone.now),
+      # timestamp: (last_sign_in_at rescue Time.zone.now), # used initially to load data
     )
   end
 
