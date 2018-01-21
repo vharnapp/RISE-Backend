@@ -216,7 +216,7 @@ class User < ApplicationRecord
         last_name: last_name,
         address: address_attrs.to_json,
         created_at: created_at.iso8601,
-        last_sign_in_at: last_sign_in_at.iso8601,
+        last_sign_in_at: (last_sign_in_at.iso8601 rescue ''),
         roles: role_list,
         active_sub: active_subscription?.to_s,
         sub_exp_on: subscription_expires_on.to_s,
