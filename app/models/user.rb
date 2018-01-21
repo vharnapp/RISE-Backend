@@ -196,7 +196,7 @@ class User < ApplicationRecord
     Subscription.where(id: subscription_ids).select(:end_date).order(end_date: :desc).limit(1).first.end_date
   end
 
-  def analytics_identify
+  def analytics_identify(timestamp: nil, traits: {})
     return if tester?
 
     address = try(:address)
@@ -208,7 +208,7 @@ class User < ApplicationRecord
       street: ("#{address.line1} #{address.line2}" rescue 'unknown'),
     ) if address.present?
 
-    Analytics.identify(
+    identify_hash = {
       user_id: uuid,
       traits: {
         email: email,
@@ -220,15 +220,26 @@ class User < ApplicationRecord
         current_sign_in_at: (current_sign_in_at.iso8601 rescue ''),
         roles: role_list,
         active_sub: active_subscription?.to_s,
-        sub_exp_on: (subscription_expires_on.iso8601 rescue ''),
+        sub_exp_at: (subscription_expires_on.iso8601 rescue ''),
         day_streak: day_streak.to_s,
         skills_mastered: skills_mastered.to_s,
         highest_pyramid_level: highest_pyramid_level_achieved.to_s,
         teams: teams.map(&:name).join(', '),
         clubs: clubs.map(&:name).join(', '),
-      },
-      # timestamp: (last_sign_in_at rescue Time.zone.now), # used initially to load data
-    )
+      }.merge(traits),
+    }
+
+    if timestamp.present?
+      if timestamp == 'import'
+        timestamp = (last_sign_in_at rescue Time.zone.now)
+      end
+
+      identify_hash.merge!(
+        timestamp: timestamp,
+      )
+    end
+
+    Analytics.identify(identify_hash)
   end
 
   private

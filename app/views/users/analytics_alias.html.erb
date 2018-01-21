@@ -7,6 +7,23 @@
 
       if (typeof analytics != 'undefined') {
         analytics.alias('<%= current_user.uuid %>', '<%= params[:anon_id] %>');
+
+        var analytics_attrs = {
+          sign_up_source: 'Web',
+        }
+
+        if (typeof analytics != 'undefined') {
+          analytics.identify(
+            "<%= current_user.uuid %>",
+            analytics_attrs, {
+            integrations: {
+                Intercom : {
+                  user_hash: "<%= OpenSSL::HMAC.hexdigest('sha256', ENV['INTERCOM_SECURE_MODE_SECRET_KEY'].to_s, current_user.uuid.to_s) %>",
+                }
+              }
+            }
+          );
+        }
       }
 
       console.log("Redirect to '<%= goto %>' after alias & identify");

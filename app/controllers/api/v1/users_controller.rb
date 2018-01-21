@@ -22,7 +22,7 @@ module Api
 
         if @user.save
           @user.unlock_starting_pyramid_modules
-          @user.analytics_identify
+          @user.analytics_identify(traits: { sign_up_source: 'App' })
 
           # On successful creation, generate token and return in response
           render_json_user_with_token(@user, return_user: false)
