@@ -20,7 +20,7 @@ class SubscriptionsController < ApplicationController
       end_date = 1.year.from_now
     elsif plan_type.match?('forever')
       end_date = 100.years.from_now
-      price = 280 # override price to fixed amount that Verek and Scott wanted
+      price = 250 # override price to fixed amount that Verek and Scott wanted
     end
 
     Subscription.create!(
