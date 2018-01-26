@@ -20,8 +20,8 @@ class Club < ApplicationRecord
 
   has_many :subscriptions, -> { order(end_date: :desc) }, inverse_of: :club, dependent: :destroy
 
-  accepts_nested_attributes_for :subscriptions, allow_destroy: true
-  accepts_nested_attributes_for :temp_teams
+  accepts_nested_attributes_for :subscriptions, allow_destroy: true, reject_if: :all_blank
+  accepts_nested_attributes_for :temp_teams, reject_if: :all_blank
 
   validates :name, presence: true
 

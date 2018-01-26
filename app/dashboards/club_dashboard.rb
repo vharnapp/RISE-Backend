@@ -15,7 +15,7 @@ class ClubDashboard < Administrate::BaseDashboard
       limit: 30,
     ),
     subscriptions: Field::NestedHasMany.with_options(
-      skip: [:club, :teams],
+      skip: [:club, :teams, :user],
       limit: 30,
       sortable: false,
       sort_by: 'end_date', # TODO: (2017-07-24) jon => implement me, copy from Field::HasMany

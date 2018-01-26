@@ -14,8 +14,8 @@ class Subscription < ApplicationRecord
   })
 
   validates :start_date, :end_date, :price, presence: true
-  validates :start_date, :end_date, overlap: { scope: 'club_id' }, if: proc { |s| s.club.present? }
-  validates :start_date, :end_date, overlap: { scope: 'user_id' }, if: proc { |s| s.user.present? }
+  validates :start_date, :end_date, overlap: { scope: 'club_id' }, if: proc { |a| a.club_id.present? }, on: :update
+  validates :start_date, :end_date, overlap: { scope: 'user_id' }, if: proc { |a| a.user_id.present? }, on: :update
 
   validates :start_date, inclusion: {
     in: ->(_subscription) { Time.zone.today..Time.zone.today + 50.years },
