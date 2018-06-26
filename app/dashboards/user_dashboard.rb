@@ -56,6 +56,7 @@ class UserDashboard < Administrate::BaseDashboard
       image_on_index: true,
       sortable: false,
     ),
+    stripe_customer_id: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -81,6 +82,7 @@ class UserDashboard < Administrate::BaseDashboard
     :first_name,
     :last_name,
     :email,
+    :stripe_customer_id,
     :nickname,
     :role_list,
     :unlocked_pyramid_modules,
