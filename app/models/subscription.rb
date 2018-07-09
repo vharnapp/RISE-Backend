@@ -39,6 +39,7 @@ class Subscription < ApplicationRecord
   private
 
   after_charge_succeeded! do |charge|
+    logger.info charge.inspect
     stripe_customer_id = charge.customer
     stripe_invoice_id = charge.invoice
     stripe_invoice = Stripe::Invoice.retrieve(stripe_invoice_id)
