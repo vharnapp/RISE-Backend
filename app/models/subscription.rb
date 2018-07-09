@@ -41,12 +41,6 @@ class Subscription < ApplicationRecord
     update(metadata: metadata)
   end
 
-  def date_and_time_with_period
-    # NOTE: (2018-07-08) jon => assumes "Central Time (US & Canada)" remains set
-    dst_or_not = Time.current.dst? ? 'CDT' : 'CST'
-    "#{Time.current.strftime('%m/%d/%Y - %-l:%M %p')} #{dst_or_not}"
-  end
-
   private
 
   after_charge_succeeded! do |charge|
@@ -66,6 +60,11 @@ class Subscription < ApplicationRecord
 
     user = User.find_by(stripe_customer_id: stripe_customer_id)
     subscription = Subscription.find_by(user_id: user.id)
+
+    # NOTE: (2018-07-08) jon => assumes "Central Time (US & Canada)" remains set
+    dst_or_not = Time.current.dst? ? 'CDT' : 'CST'
+    date_and_time_with_period =
+      "#{Time.current.strftime('%m/%d/%Y - %-l:%M %p')} #{dst_or_not}"
 
     metadata = {
       date_and_time_with_period => { stripe_invoice_id: stripe_invoice_id }
