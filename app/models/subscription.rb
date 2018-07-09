@@ -33,7 +33,12 @@ class Subscription < ApplicationRecord
   end
 
   def extend_until(new_date, metadata={})
-    update(end_date: new_date, metadata: metadata)
+    if created_at.to_date < 1.day.ago
+      # we didn't just create the subscription
+      update(end_date: new_date)
+    end
+
+    update(metadata: metadata)
   end
 
   private
@@ -53,7 +58,7 @@ class Subscription < ApplicationRecord
         1.year.from_now
       end
 
-    user = User.where(stripe_customer_id: stripe_customer_id)
+    user = User.find_by(stripe_customer_id: stripe_customer_id)
     subscription = Subscription.find_by(user_id: user.id)
 
     metadata = {
