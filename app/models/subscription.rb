@@ -41,6 +41,12 @@ class Subscription < ApplicationRecord
     update(metadata: metadata)
   end
 
+  def date_and_time_with_period
+    # NOTE: (2018-07-08) jon => assumes "Central Time (US & Canada)" remains set
+    dst_or_not = Time.current.dst? ? 'CDT' : 'CST'
+    "#{Time.current.strftime('%m/%d/%Y - %-l:%M %p')} #{dst_or_not}"
+  end
+
   private
 
   after_charge_succeeded! do |charge|
@@ -74,14 +80,6 @@ class Subscription < ApplicationRecord
     if end_date <= start_date
       errors.add(:end_date, 'must be at least 1 day after the start date')
     end
-  end
-
-  private
-
-  def date_and_time_with_period
-    # NOTE: (2018-07-08) jon => assumes "Central Time (US & Canada)" remains set
-    dst_or_not = Time.current.dst? ? 'CDT' : 'CST'
-    "#{Time.current.strftime('%m/%d/%Y - %-l:%M %p')} #{dst_or_not}"
   end
 end
 
