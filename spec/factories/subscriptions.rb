@@ -14,6 +14,7 @@ end
 #  created_at :datetime         not null
 #  end_date   :date
 #  id         :integer          not null, primary key
+#  metadata   :json
 #  price      :decimal(, )
 #  start_date :date
 #  updated_at :datetime         not null

@@ -1,4 +1,6 @@
 class Subscription < ApplicationRecord
+  include Stripe::Callbacks
+
   belongs_to :club, optional: true, inverse_of: :subscriptions
   belongs_to :user, optional: true, inverse_of: :subscription
 
@@ -30,7 +32,35 @@ class Subscription < ApplicationRecord
     end_date >= Time.current.to_date && start_date <= Time.current.to_date
   end
 
+  def extend_until(new_date, metadata={})
+    update(end_date: new_date, metadata: metadata)
+  end
+
   private
+
+  after_charge_succeeded! do |charge|
+    stripe_customer_id = charge.customer
+    stripe_invoice_id = charge.invoice
+    stripe_invoice = Stripe::Invoice.retrieve(stripe_invoice_id)
+    stripe_plan_id = stripe_invoice.lines.data.first.plan.id
+
+    new_end_date =
+      case stripe_plan_id
+      when /monthly.*/
+        1.month.from_now
+      when /annually.*/
+        1.year.from_now
+      end
+
+    user = User.where(stripe_customer_id: stripe_customer_id)
+    subscription = Subscription.find_by(user_id: user.id)
+
+    metadata = {
+      date_and_time_with_period => { stripe_invoice_id: stripe_invoice_id }
+    }
+
+    subscription.extend_until(new_end_date, metadata)
+  end
 
   def end_date_is_after_start_date
     return if end_date.blank? || start_date.blank?
@@ -38,6 +68,14 @@ class Subscription < ApplicationRecord
     if end_date <= start_date
       errors.add(:end_date, 'must be at least 1 day after the start date')
     end
+  end
+
+  private
+
+  def date_and_time_with_period
+    # NOTE: (2018-07-08) jon => assumes "Central Time (US & Canada)" remains set
+    dst_or_not = Time.current.dst? ? 'CDT' : 'CST'
+    "#{Time.current.strftime('%m/%d/%Y - %-l:%M %p')} #{dst_or_not}"
   end
 end
 
@@ -49,6 +87,7 @@ end
 #  created_at :datetime         not null
 #  end_date   :date
 #  id         :integer          not null, primary key
+#  metadata   :json
 #  price      :decimal(, )
 #  start_date :date
 #  updated_at :datetime         not null
