@@ -4,6 +4,7 @@ module Api
       attributes :first_name,
                  :last_name,
                  :full_name,
+                 :created_at,
                  :nickname,
                  :email,
                  :avatar,
