@@ -39,6 +39,7 @@ Rails.application.routes.draw do
     resources :teams
     resources :affiliations
     resources :enrollments
+    resources :single_payments
     resources :subscriptions
     resources :temp_teams
     resources :snippets

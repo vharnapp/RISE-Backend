@@ -14,6 +14,8 @@ class PyramidModule < ApplicationRecord
 
   scope :by_level, (->(level) { where(level: level).order(:position) })
 
+  has_and_belongs_to_many :single_payment
+
   has_many :phases,
            -> { order(position: :asc) },
            inverse_of: :pyramid_module,
