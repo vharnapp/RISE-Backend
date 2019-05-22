@@ -12,14 +12,31 @@ header.main-content__header[role='banner']
     -# a dashboard screen for them or a subscription management screen at some
     -# point down the road.
     - if current_user.active_subscription?
-      - lifetime_subscription = current_user.subscription_expires_on > 2.years.from_now
-      .flash-notice(style='text-align: left;')
-        | You have an active #{lifetime_subscription == true ? 'lifetime ' : ''}subscription. You may log in to the mobile app using the email and password provided here.
-        -# TODO: (2018-01-13) jon => This should be a presenter or helper
-        - unless lifetime_subscription
+      - if current_user.single_payment_id.nil?
+        - lifetime_subscription = current_user.subscription_expires_on > 2.years.from_now
+        .flash-notice(style='text-align: left;')
+          | You have an active #{lifetime_subscription == true ? 'lifetime ' : ''}subscription. You may log in to the mobile app using the email and password provided here.
+          -# TODO: (2018-01-13) jon => This should be a presenter or helper
+          - unless lifetime_subscription
+            br
+            br
+            | Your subscription will renew on: #{current_user.subscription_expires_on}.
+            br
+            br
+            | Please contact <a href='mailto:info@risefutbol.com'>info@risefutbol.com</a> if you need to adjust your subscription.
+            br
+            br
+            | Download the RISE App here:
+            = link_to 'https://itunes.apple.com/us/app/rise-elite-soccer/id1233828122?mt=8', target:'_blank'
+              = image_tag 'apple-badge.svg', style: 'margin-left: 12px;'
+            = link_to 'https://play.google.com/store/apps/details?id=com.athletefitapp&hl=en', target:'_blank'
+              = image_tag 'google-play-badge.svg', style: 'margin-left: 12px;'
+        br
+      - else
+        .flash-notice(style='text-align: left;')
+          | You have purchased our <b>#{current_user.get_single_payment.name}</b> package.
           br
-          br
-          | Your subscription will renew on: #{current_user.subscription_expires_on}.
+          | You may log in to the mobile app using the email and password provided here.
           br
           br
           | Please contact <a href='mailto:info@risefutbol.com'>info@risefutbol.com</a> if you need to adjust your subscription.
@@ -30,7 +47,7 @@ header.main-content__header[role='banner']
             = image_tag 'apple-badge.svg', style: 'margin-left: 12px;'
           = link_to 'https://play.google.com/store/apps/details?id=com.athletefitapp&hl=en', target:'_blank'
             = image_tag 'google-play-badge.svg', style: 'margin-left: 12px;'
-      br
+        br
     - else
       .flash-notice(style='text-align: left;')
         | You do not have an active subscription. Please contact <a href='mailto:info@risefutbol.com'>info@risefutbol.com</a> for help.

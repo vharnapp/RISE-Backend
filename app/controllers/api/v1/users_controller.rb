@@ -17,8 +17,10 @@ module Api
       end
 
       def create
+        free_payment = SinglePayment.where(price: 0).first
         @user = User.new(user_params)
         @user.roles << :player
+        @user.single_payment_id << free_payment.id
 
         if @user.save
           @user.unlock_starting_pyramid_modules

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
 
   resources :subscriptions
+  resources :single_payments
 
   resources :unlocked_pyramid_modules, only: [:create, :destroy]
   resources :affiliations, only: [:destroy]

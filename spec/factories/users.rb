@@ -56,8 +56,10 @@ end
 #  reset_password_token   :string
 #  roles_mask             :integer
 #  sign_in_count          :integer          default(0), not null
+#  single_payment_id      :integer
 #  slug                   :string
 #  stripe_customer_id     :string
+#  stripe_payment_id      :string
 #  updated_at             :datetime         not null
 #  uuid                   :string
 #

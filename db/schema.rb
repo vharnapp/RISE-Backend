@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190513060859) do
+ActiveRecord::Schema.define(version: 20190522091230) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -204,15 +204,6 @@ ActiveRecord::Schema.define(version: 20190513060859) do
     t.bigint "single_payment_id", null: false
   end
 
-  create_table "single_payment_pyramid_modules", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.bigint "pyramid_module_id"
-    t.bigint "single_payment_id"
-    t.datetime "updated_at", null: false
-    t.index ["pyramid_module_id"], name: "index_single_payment_pyramid_modules_on_pyramid_module_id"
-    t.index ["single_payment_id"], name: "index_single_payment_pyramid_modules_on_single_payment_id"
-  end
-
   create_table "single_payments", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "name"
@@ -307,8 +298,10 @@ ActiveRecord::Schema.define(version: 20190513060859) do
     t.string "reset_password_token"
     t.integer "roles_mask"
     t.integer "sign_in_count", default: 0, null: false
+    t.integer "single_payment_id"
     t.string "slug"
     t.string "stripe_customer_id"
+    t.string "stripe_payment_id"
     t.datetime "updated_at", null: false
     t.string "uuid"
     t.index ["deleted_at"], name: "index_users_on_deleted_at"
@@ -348,8 +341,6 @@ ActiveRecord::Schema.define(version: 20190513060859) do
   add_foreign_key "phase_attempts", "phases"
   add_foreign_key "phase_attempts", "users"
   add_foreign_key "phases", "pyramid_modules"
-  add_foreign_key "single_payment_pyramid_modules", "pyramid_modules"
-  add_foreign_key "single_payment_pyramid_modules", "single_payments"
   add_foreign_key "subscriptions", "clubs"
   add_foreign_key "subscriptions", "users"
   add_foreign_key "teams", "clubs"

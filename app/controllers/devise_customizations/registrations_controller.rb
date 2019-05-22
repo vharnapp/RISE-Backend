@@ -1,8 +1,10 @@
 module DeviseCustomizations
   class RegistrationsController < Devise::RegistrationsController
     def create
+      free_payment = SinglePayment.where(price: 0).first
       build_resource(sign_up_params)
       resource.roles << :player
+      resource.single_payment_id = free_payment.id
       resource.save
       yield resource if block_given?
       if resource.persisted?
