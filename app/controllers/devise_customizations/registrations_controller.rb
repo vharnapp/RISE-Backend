@@ -11,7 +11,7 @@ module DeviseCustomizations
 
         free_payment.pyramid_modules.each do |pyramid_module|
           if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: resource.id).empty? 
-            UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: resource.id)
+            UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: resource.id, has_restriction: 1)
           end
         end
         

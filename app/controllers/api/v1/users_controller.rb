@@ -26,7 +26,7 @@ module Api
 
           free_payment.pyramid_modules.each do |pyramid_module|
             if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: @user.id).empty? 
-              UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: @user.id)
+              UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: @user.id, has_restriction: 1)
             end
           end
 
