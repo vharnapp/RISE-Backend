@@ -28,7 +28,9 @@ class SinglePaymentsController < ApplicationController
 
     single_payment.pyramid_modules.each do |pyramid_module|
       if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).empty? 
-        UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: current_user.id)
+        UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: current_user.id, has_restriction: 0)
+      else
+        UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).update(has_restriction: 0)
       end
     end
 
