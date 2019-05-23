@@ -8,6 +8,13 @@ module DeviseCustomizations
       resource.save
       yield resource if block_given?
       if resource.persisted?
+
+        free_payment.pyramid_modules.each do |pyramid_module|
+          if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: resource.id).empty? 
+            UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: resource.id)
+          end
+        end
+        
         if resource.active_for_authentication?
           set_flash_message! :notice, :signed_up
           sign_up(resource_name, resource)
