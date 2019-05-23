@@ -14,7 +14,7 @@ class PyramidModule < ApplicationRecord
 
   scope :by_level, (->(level) { where(level: level).order(:position) })
 
-  has_and_belongs_to_many :single_payment
+  has_and_belongs_to_many :single_payments
 
   has_many :phases,
            -> { order(position: :asc) },
@@ -37,7 +37,7 @@ class PyramidModule < ApplicationRecord
   end
 
   def self.default_unlocked
-    where(position: [1, 2, 3, 4, 5, 15])
+    where(position: [1, 2, 3, 4, 5])
   end
 
   def prerequisites
