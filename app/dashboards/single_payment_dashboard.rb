@@ -13,7 +13,7 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
     price: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    pyramid_module: Field::HasMany.with_options(
+    pyramid_modules: Field::HasMany.with_options(
       sort_by: 'position',
       direction: 'asc',
       label: 'Pista',
@@ -29,7 +29,7 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :name,
     :price,
-    :pyramid_module,
+    :pyramid_modules,
     :created_at,
   ].freeze
 
@@ -38,7 +38,7 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :name,
     :price,
-    :pyramid_module,
+    :pyramid_modules,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -47,7 +47,7 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :name,
     :price,
-    :pyramid_module,
+    :pyramid_modules,
   ].freeze
 
   # Overwrite this method to customize how users are displayed
