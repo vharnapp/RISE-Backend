@@ -27,9 +27,9 @@ class SinglePaymentsController < ApplicationController
     current_user.update_column(:single_payment_id, payment_id)
 
     single_payment.pyramid_modules.each do |pyramid_module|
-      #.create
-      puts "Check if exist unlocked module #{pyramid_module.name}"
-      puts UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).empty? 
+      if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).empty? 
+        UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: current_user.id)
+      end
     end
 
     flash[:notice] = ' successfully created.'
