@@ -63,6 +63,8 @@ Rails.application.routes.draw do
   get '/help' => 'pages#show', id: 'help'
   get '/unauthorized' => 'pages#show', id: 'unauthorized'
 
+  get '/replace-existing-active-subsciptions' => 'single_payments#replace_existing'
+
   authenticated :user do
     root to: 'clubs#index', as: :authenticated_root
     # root to: 'pages#show', id: 'welcome', as: :authenticated_root
