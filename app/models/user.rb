@@ -25,6 +25,7 @@ class User < ApplicationRecord
   has_many :subscriptions, through: :teams
   has_one :subscription, dependent: :destroy # individual sign up
   has_one :single_payment 
+  has_many :archieved_user_payment, dependent: :destroy
   has_many :clubs, through: :teams
 
   has_many :coach_affiliations, -> { coaches }, class_name: 'Affiliation'
@@ -197,6 +198,10 @@ class User < ApplicationRecord
 
   def get_single_payment
     SinglePayment.where(id: self.single_payment_id).first
+  end
+
+  def has_archieved_user_payment(single_payment_id)
+    ArchievedUserPayment.where(user_id: self.id).where(single_payment_id: single_payment_id).exists?
   end
 
   def subscription_expires_on

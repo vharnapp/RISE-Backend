@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190523140026) do
+ActiveRecord::Schema.define(version: 20190527112744) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -28,6 +28,18 @@ ActiveRecord::Schema.define(version: 20190523140026) do
     t.index ["deleted_at"], name: "index_affiliations_on_deleted_at"
     t.index ["team_id"], name: "index_affiliations_on_team_id"
     t.index ["user_id"], name: "index_affiliations_on_user_id"
+  end
+
+  create_table "archieved_user_payments", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "payment_name"
+    t.float "payment_price"
+    t.string "payment_stripe_id"
+    t.bigint "single_payment_id"
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["single_payment_id"], name: "index_archieved_user_payments_on_single_payment_id"
+    t.index ["user_id"], name: "index_archieved_user_payments_on_user_id"
   end
 
   create_table "authentication_tokens", force: :cascade do |t|
@@ -329,6 +341,7 @@ ActiveRecord::Schema.define(version: 20190523140026) do
 
   add_foreign_key "affiliations", "teams"
   add_foreign_key "affiliations", "users"
+  add_foreign_key "archieved_user_payments", "users"
   add_foreign_key "authentication_tokens", "users"
   add_foreign_key "club_affiliations", "clubs"
   add_foreign_key "club_affiliations", "users"

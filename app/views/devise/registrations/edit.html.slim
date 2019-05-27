@@ -1,11 +1,12 @@
 header.main-content__header[role='banner']
-  .row.columns.text-center
-    h1 Edit Your Account
+  .row.columns
+    .group.small-12.medium-8.left
+      = link_to("Purchased Packages", single_payments_path)
 
 .row.columns.padding-t-25
   .small-12.medium-6.medium-offset-3
-
-
+    h1.text-center Edit Your Account
+    br
     -# TODO: (2018-01-13) jon => this whole subscription check should be
     -# somewhere better than the registration edit. However, right now players
     -# can't do anything on the site itself. So we'll have to build out
@@ -34,8 +35,8 @@ header.main-content__header[role='banner']
         br
       - else
         .flash-notice(style='text-align: left;')
-          | You have purchased our <b>#{current_user.get_single_payment.name}</b> package.
-          br
+          /| You have purchased our <b>#{current_user.get_single_payment.name}</b> package.
+          /br
           | You may log in to the mobile app using the email and password provided here.
           br
           br
