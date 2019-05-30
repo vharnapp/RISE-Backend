@@ -78,7 +78,6 @@ Rails.application.routes.draw do
     post 'api/v1/sign_in', to: 'devise_customizations/sessions#create'
     get 'api/v1/sign_out', to: 'devise_customizations/sessions#destroy'
 
-    show_user_payments
   end
 
   root 'pages#show', id: 'welcome'
