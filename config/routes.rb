@@ -96,7 +96,7 @@ Rails.application.routes.draw do
       end
       jsonapi_resources :users do
         jsonapi_resources :teams
-        jsonapi_resources :archieved_user_payments
+        #jsonapi_resources :archieved_user_payments
       end
 
       jsonapi_resources :confidence_ratings
