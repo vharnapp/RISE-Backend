@@ -55,14 +55,13 @@ class SinglePaymentsController < ApplicationController
   def replace_existing
     subs = Subscription.where(club_id: nil)
     render_text = ''
-    count = 0
+    count_subscribed_users = 0
 
     complete_traning_program_package = SinglePayment.where(name: "COMPLETE TRAINING PROGRAM").first
     puts complete_traning_program_package.to_json
 
     if complete_traning_program_package.id.nil?
       render_text = 'Complete training program was deleted or renamed. Aborting Process'
-      render plain: render_text
     else
       subs.each do |subscription|
         # Check if subscription's user exists
@@ -92,12 +91,45 @@ class SinglePaymentsController < ApplicationController
                 end
               end
 
-              count = count + 1
+              count_subscribed_users = count_subscribed_users + 1
             end
           end
         end
       end
-      render_text += "\n\n Total number of subscribers updated to Complete Training Program: #{count}"
+
+      render_text += "\n\n Total number of subscribers were updated to Complete Training Program: #{count_subscribed_users}"
+      render_text += "\n Note: if the number if 0, that means that all subcribers were updated to Complete Training Program"
+
+      count_unsubscribed_users = 0
+      free_package = SinglePayment.where(name: "10 Day Development Guide").first
+      puts free_package.to_json
+
+      if free_package.id.nil?
+        render_text += "\n\nFree program was deleted or renamed. Aborting Process"
+        render plain: render_text
+      else
+        users = User.where(single_payment_id: nil).order(:id)
+
+        users.each do |user|
+          if user.teams.count == 0
+            user.update_column(:single_payment_id, free_package.id)
+            # Unlock all pyramid modules of the new package which hasn't been unlocked yet
+            free_package.pyramid_modules.each do |pyramid_module|
+              if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).empty? 
+                UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: user.id, has_restriction: 1)
+              else
+                UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).update(has_restriction: 1)
+              end
+            end
+
+            count_unsubscribed_users = count_unsubscribed_users + 1
+          end
+        end
+      end
+
+      render_text += "\n\n Total number of unsubscribed users recieved \"10 Day Development Guide\" program: #{count_unsubscribed_users}"
+      render_text += "\n Note: if the number if 0, that means that there is no unsubscribed user who does not recieved \"10 Day Development Guide\" program"
+
       render plain: render_text
     end
   end
