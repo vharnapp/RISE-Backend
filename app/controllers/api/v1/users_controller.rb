@@ -19,7 +19,7 @@ module Api
       def show_user_payments
         archieved_user_payments = ArchievedUserPayment.where(user_id: current_user.id)
 
-        jsonapi_render json: archieved_user_payment
+        jsonapi_render json: archieved_user_payments
       end
 
       def create
