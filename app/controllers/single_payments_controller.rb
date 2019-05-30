@@ -82,6 +82,7 @@ class SinglePaymentsController < ApplicationController
               # Update users table set stripe_paymetn_id as old stripe subscription id and single_payment_id 
               this_user.update_column(:stripe_payment_id, stripe_sub.id)
               this_user.update_column(:single_payment_id, complete_traning_program_package.id)
+              ArchievedUserPayment.create(single_payment_id: complete_traning_program_package.id, user_id: current_user.id, payment_name: complete_traning_program_package.name, payment_price: complete_traning_program_package.price, payment_stripe_id: stripe_sub.id)
               # Unlock all pyramid modules of the new package which hasn't been unlocked yet
               complete_traning_program_package.pyramid_modules.each do |pyramid_module|
                 if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).empty? 

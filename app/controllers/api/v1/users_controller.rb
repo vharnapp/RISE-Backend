@@ -16,6 +16,12 @@ module Api
         jsonapi_render json: @user
       end
 
+      def show_user_payments
+        archieved_user_payments = ArchievedUserPayment.where(user_id: current_user.id)
+
+        jsonapi_render json: archieved_user_payment
+      end
+
       def create
         free_payment = SinglePayment.where(price: 0).first
         @user = User.new(user_params)

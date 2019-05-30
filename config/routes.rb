@@ -77,9 +77,14 @@ Rails.application.routes.draw do
     # API-token creation aliases
     post 'api/v1/sign_in', to: 'devise_customizations/sessions#create'
     get 'api/v1/sign_out', to: 'devise_customizations/sessions#destroy'
+
+    show_user_payments
   end
 
   root 'pages#show', id: 'welcome'
+
+
+  post 'api/v1/show_user_payments', to: 'api/v1/users#show_user_payments'
 
   namespace 'api' do
     namespace 'v1' do
