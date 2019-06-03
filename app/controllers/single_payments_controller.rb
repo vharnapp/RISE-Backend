@@ -59,6 +59,10 @@ class SinglePaymentsController < ApplicationController
         @current_single_payment = current
       end
     end
+
+    if @current_single_payment.nil?
+      redirect_to edit_user_registration_path
+    end
   end
 
   def replace_existing
