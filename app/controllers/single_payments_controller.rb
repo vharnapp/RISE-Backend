@@ -44,12 +44,21 @@ class SinglePaymentsController < ApplicationController
     end
 
     flash[:notice] = ' successfully created.'
-    redirect_to edit_user_registration_path
+    redirect_to "/purchase_confirmation/#{single_payment.name.parameterize}"
 
     rescue => e
       flash[:error] = "Sorry, something went wrong. Please forward these error details to info@risefutbol.com.<br><br>Error: #{e}".html_safe
       redirect_to '/help'
 
+  end
+
+  def purchase_confirmation
+    current_single_payment = []
+    SinglePayment.find_each do |current|
+      if current.name.parameterize == params[:slug]
+        @current_single_payment = current
+      end
+    end
   end
 
   def replace_existing

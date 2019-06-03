@@ -63,6 +63,8 @@ Rails.application.routes.draw do
   get '/help' => 'pages#show', id: 'help'
   get '/unauthorized' => 'pages#show', id: 'unauthorized'
 
+  get '/purchase_confirmation/:slug', to: 'single_payments#purchase_confirmation'
+
   get '/replace-existing-active-subsciptions' => 'single_payments#replace_existing'
 
   authenticated :user do

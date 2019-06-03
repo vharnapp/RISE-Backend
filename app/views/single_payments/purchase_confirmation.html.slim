@@ -1,0 +1,49 @@
+header.main-content__header[role='banner']
+    .row.columns
+        .group.small-12.medium-8.left
+        | Purchased Packages
+
+.row.columns
+    div.large-8.large-offset-2.medium-10.medium-offset-1.small-12.small-offset-0.text-center
+        h3.text-center Thank you for purchasing<br>#{@current_single_payment.name} package
+    div.large-8.large-offset-2.medium-10.medium-offset-1.small-12.small-offset-0
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate lectus et fringilla pellentesque. Integer elementum luctus libero, non ornare arcu consequat quis. Nullam posuere non quam vel facilisis. Nunc eu nibh non justo auctor pretium ac a mi. Vestibulum et nunc in ante pellentesque dignissim. Nunc suscipit arcu quis ligula vulputate, et porttitor libero vulputate. 
+        p Nam eu placerat urna. Curabitur mattis justo eu bibendum placerat. In ut tortor a diam ultricies malesuada. Nulla malesuada in erat ac imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla odio erat, aliquam vitae ornare eget, feugiat eu augue.
+        br
+        h4 Modules included in this package:
+
+        ul.row.modules
+            -@current_single_payment.pyramid_modules.each do |pyramid_module|
+                li.small-12.medium-6 #{pyramid_module.name}
+
+        br
+        br
+        div
+            b Download the RISE App here:
+            = link_to 'https://itunes.apple.com/us/app/rise-elite-soccer/id1233828122?mt=8', target:'_blank'
+                = image_tag 'apple-badge.svg', style: 'margin-left: 12px;'
+            = link_to 'https://play.google.com/store/apps/details?id=com.athletefitapp&hl=en', target:'_blank'
+                = image_tag 'google-play-badge.svg', style: 'margin-left: 12px;'
+        br
+        div
+            = link_to 'javascript:void(0)'
+                | Link to external product page (it's needed from client, curently the link is blank)
+
+
+sass:
+    h3
+        font-size: 1.5em
+        font-weight: bold
+        margin-top: 1em
+    h4
+        font-size: 1.25em
+        font-weight: bold
+        text-transform: none
+        margin-bottom: 0.5em
+    ul.modules
+        li
+            float: left
+            font-size: 1.125em
+            margin-left: 20px
+            margin-right: -20px
+            margin-bottom: 0.25em
