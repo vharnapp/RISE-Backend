@@ -25,7 +25,7 @@ class User < ApplicationRecord
   has_many :subscriptions, through: :teams
   has_one :subscription, dependent: :destroy # individual sign up
   has_one :single_payment 
-  has_many :archieved_user_payment, dependent: :destroy
+  has_many :archieved_user_payments, dependent: :destroy
   has_many :clubs, through: :teams
 
   has_many :coach_affiliations, -> { coaches }, class_name: 'Affiliation'

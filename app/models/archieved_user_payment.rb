@@ -2,6 +2,9 @@ class ArchievedUserPayment < ApplicationRecord
 
   belongs_to :user
 
+  def string_id
+    self.string_id = self.name.parameterize
+  end
 end
 
 # == Schema Information

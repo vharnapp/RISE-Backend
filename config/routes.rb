@@ -84,9 +84,6 @@ Rails.application.routes.draw do
 
   root 'pages#show', id: 'welcome'
 
-
-  post 'api/v1/show_user_payments', to: 'api/v1/users#show_user_payments'
-
   namespace 'api' do
     namespace 'v1' do
       jsonapi_resources :pyramid_modules do
@@ -98,10 +95,10 @@ Rails.application.routes.draw do
       end
       jsonapi_resources :users do
         jsonapi_resources :teams
-        #jsonapi_resources :archieved_user_payments
       end
 
       jsonapi_resources :confidence_ratings
+      jsonapi_resources :archieved_user_payments
       jsonapi_resources :unlocked_pyramid_modules
       jsonapi_resources :phase_attempts
       jsonapi_resources :affiliations
