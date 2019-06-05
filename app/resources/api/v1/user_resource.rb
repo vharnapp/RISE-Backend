@@ -58,17 +58,26 @@ module Api
       def archieved_user_payments
         if @model.archieved_user_payments.present?
           archieved_user_payments = @model.archieved_user_payments
+
+          archieved_user_payments.map do |archieved_user_payment|
+            {
+              id: archieved_user_payment.id,
+              payment_name: archieved_user_payment.payment_name,
+              payment_price: archieved_user_payment.payment_price,
+              string_id: archieved_user_payment.payment_name.parameterize,
+            }
+          end
         else
           archieved_user_payments = SinglePayment.where(price: 0).limit(1)
-        end
 
-        archieved_user_payments.map do |archieved_user_payment|
-          {
-            id: archieved_user_payment.id,
-            payment_name: archieved_user_payment.payment_name,
-            payment_price: archieved_user_payment.payment_price,
-            string_id: archieved_user_payment.payment_name.parameterize,
-          }
+          archieved_user_payments.map do |archieved_user_payment|
+            {
+              id: archieved_user_payment.id,
+              payment_name: archieved_user_payment.name,
+              payment_price: archieved_user_payment.price,
+              string_id: archieved_user_payment.name.parameterize,
+            }
+          end
         end
       end
 
