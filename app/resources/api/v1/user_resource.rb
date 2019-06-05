@@ -59,10 +59,8 @@ module Api
         if @model.archieved_user_payments.present?
           archieved_user_payments = @model.archieved_user_payments
         else
-          archieved_user_payments = SinglePayment.where(price: 0).first
+          archieved_user_payments = SinglePayment.where(price: 0).limit(1)
         end
-
-        puts archieved_user_payments.to_json
 
         archieved_user_payments.map do |archieved_user_payment|
           {
