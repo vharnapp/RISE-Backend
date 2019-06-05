@@ -62,6 +62,8 @@ module Api
           archieved_user_payments = SinglePayment.where(price: 0).first
         end
 
+        puts archieved_user_payments.to_json
+
         archieved_user_payments.map do |archieved_user_payment|
           {
             id: archieved_user_payment.id,
