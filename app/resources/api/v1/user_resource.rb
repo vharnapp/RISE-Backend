@@ -18,6 +18,7 @@ module Api
                  :phase_attempts,
                  :teams
 
+      has_many :archieved_user_payments
       has_many :confidence_ratings
       has_many :exercises, through: :confidence_ratings
       has_many :workouts, through: :confidence_ratings
