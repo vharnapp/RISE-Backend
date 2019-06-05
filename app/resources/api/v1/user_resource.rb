@@ -16,7 +16,8 @@ module Api
                  :day_streak,
                  :week_view,
                  :phase_attempts,
-                 :teams
+                 :teams,
+                 :archieved_user_payments
 
       has_many :archieved_user_payments
       has_many :confidence_ratings
