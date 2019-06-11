@@ -20,7 +20,7 @@ header.main-content__header[role='banner']
             div 1. To access the App, visit the iTunes or Google Play App Stores and download the Rise Elite Soccer App.
             div 2. At sign-in, just use the same e-mail address and password you provided at purchase.
             div.mb-15 3. Make sure to view the tutorials and introductory videos throughout.
-            div For more information on the features inside the RISE app, visit us at #{link_to 'https://risefutbol.com/app'}
+            div For more information on the features inside the RISE app, visit us at #{link_to 'https://risefutbol.com/app', target:'_blank'}
 
         div.thank-you-section
             h4.text-uppercase.text-center What to do next
@@ -43,11 +43,11 @@ header.main-content__header[role='banner']
                         div <b>GUIDED SPEED & STRENGTH</b>
                         div <b>GUIDED SKILL & QUICKNESS</b>
                         div <b>GUIDED PASSING & FIRST TOUCH</b>
-            div To access these complementary programs, visit us at #{link_to 'https://risefutbol.com/programs'}
+            div To access these complementary programs, visit us at #{link_to 'https://risefutbol.com/programs', target:'_blank'}
 
         div.thank-you-section.text-center
             h4.text-uppercase Want to learn more?
-            | For training tips, educational tools, feedback from other users<br>and ideas on how to get the most out of the RISE app,<br>visit us at #{link_to 'https://risefutbol.com/'} or<br>follow us on #{link_to 'Instagram', 'https://www.instagram.com/risefutbol/', target:'_blank'}, #{link_to 'Twitter', 'https://twitter.com/risefutbol', target:'_blank'} and Facebook<br>@risefutbol
+            | For training tips, educational tools, feedback from other users<br>and ideas on how to get the most out of the RISE app,<br>visit us at #{link_to 'https://risefutbol.com/', target:'_blank'} or<br>follow us on #{link_to 'Instagram', 'https://www.instagram.com/risefutbol/', target:'_blank'}, #{link_to 'Twitter', 'https://twitter.com/risefutbol', target:'_blank'} and Facebook<br>@risefutbol
 
         div.thank-you-section
             b Download the RISE App here:
@@ -55,11 +55,6 @@ header.main-content__header[role='banner']
                 = image_tag 'apple-badge.svg', style: 'margin-left: 12px;'
             = link_to 'https://play.google.com/store/apps/details?id=com.athletefitapp&hl=en', target:'_blank'
                 = image_tag 'google-play-badge.svg', style: 'margin-left: 12px;'
-
-        div.thank-you-section
-            = link_to 'javascript:void(0)'
-                | Link to external product page (it's needed from client, curently the link is blank)
-
 
 sass:
     h3
