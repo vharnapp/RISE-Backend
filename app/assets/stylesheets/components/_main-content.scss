@@ -1,0 +1,40 @@
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.thank-you-section {
+    margin-bottom: 2em;
+
+    h4 {
+        font-size: 1.125em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+
+    .thank-you-modules {
+        list-style-type: disc;
+
+        li {
+            font-size: 1.125em;
+            list-style-type: initial;
+            list-style-position: inside;
+        }
+
+        &.two-columns {
+            column-count: 2;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &.three-columns {
+            column-count: 3;
+        }
+    }
+}

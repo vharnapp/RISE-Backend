@@ -54,6 +54,7 @@ class SinglePaymentsController < ApplicationController
 
   def purchase_confirmation
     current_single_payment = []
+
     SinglePayment.find_each do |current|
       if current.name.parameterize == params[:slug]
         @current_single_payment = current
