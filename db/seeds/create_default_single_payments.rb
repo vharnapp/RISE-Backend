@@ -47,7 +47,15 @@ puts "Level 2 Workout Power Endurance is missing!!" if pyramid_module_power_endu
 pyramid_module_soccer_conditioning   = PyramidModule.where({level: 3, name: "Soccer Conditioning"}).first
 pyramid_module_speed                 = PyramidModule.where({level: 3, name: "Speed"}).first
 pyramid_module_athletic_power        = PyramidModule.where({level: 3, name: "Athletic Power"}).first
-puts "Level 3 Workout Soccer Conditioning is missing!!" if pyramid_module_soccer_conditioning.nil?
+if pyramid_module_soccer_conditioning.nil?
+  pyramid_module_soccer_conditioning   = PyramidModule.where({level: 3, name: "Soccer Fitness"}).first
+
+  if pyramid_module_soccer_conditioning.nil?
+    puts "Level 3 Workout Soccer Conditioning / Soccer Fitness is missing!!"
+  else
+    puts "Level 3 Workout Soccer Conditioning was renamed to Soccer Fitness!!"
+  end
+end
 puts "Level 3 Workout Speed is missing!!" if pyramid_module_speed.nil?
 puts "Level 3 Workout Athletic Power is missing!!" if pyramid_module_athletic_power.nil?
 
@@ -61,7 +69,10 @@ puts "Level 5 Workout Team Sessions is missing!!" if pyramid_module_team_session
 
 single_payment_attributes.each do |attributes|
   @single_payment = SinglePayment.where(attributes).first_or_create
-  
+  puts "GERAPPA"
+  single_payment = SinglePayment.find(@single_payment.id)
+  puts single_payment.to_json
+
   case @single_payment.name
 
     when "SKILL & SPEED"
@@ -139,5 +150,4 @@ single_payment_attributes.each do |attributes|
       puts "#{count} / 15 Workouts added to FULL PROGRAM - COACHES EDITION Single Payment"
     # end when "FULL PROGRAM - COACHES EDITION"
   end
-
 end

@@ -277,7 +277,7 @@ ActiveRecord::Schema.define(version: 20190527112744) do
     t.text "completed_phases", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
-    t.integer "has_restriction", default: 1
+    t.integer "has_restriction", default: 0
     t.bigint "pyramid_module_id"
     t.datetime "updated_at", null: false
     t.bigint "user_id"

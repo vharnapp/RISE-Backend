@@ -11,7 +11,7 @@ end
 #  completed_phases  :text             default([]), is an Array
 #  created_at        :datetime         not null
 #  deleted_at        :datetime
-#  has_restriction   :integer          default(1)
+#  has_restriction   :integer          default(0)
 #  id                :integer          not null, primary key
 #  pyramid_module_id :integer
 #  updated_at        :datetime         not null
