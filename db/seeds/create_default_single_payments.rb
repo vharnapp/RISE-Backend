@@ -17,11 +17,11 @@ def self.include_pyramid_module(single_payment, pyramid_module)
 end
 
 single_payment_attributes = [
-  { name: "10 Day Development Guide", price: 0 },
-  { name: "SKILL & SPEED", price: 49.95 },
-  { name: "SPEED & STRENGTH", price: 49.95 },
-  { name: "COMPLETE TRAINING PROGRAM", price: 99.95 },
-  { name: "FULL PROGRAM - COACHES EDITION", price: 149.95 },
+  { name: "10 Day Development Guide", price: 0, thank_you_link: "", string_id: "" },
+  { name: "SKILL & SPEED", price: 49.95, thank_you_link: "https://risefutbol.com/THANKYOU-SKILL" },
+  { name: "SPEED & STRENGTH", price: 49.95, thank_you_link: "https://risefutbol.com/THANKYOU-STRENGTH" },
+  { name: "COMPLETE TRAINING PROGRAM", price: 89.95, thank_you_link: "https://risefutbol.com/THANKYOU-FULLACCESS" },
+  { name: "FULL PROGRAM - COACHES EDITION", price: 99.95, thank_you_link: "http://risefutbol.com/THANKYOU-COACHES" },
 ]
 
 pyramid_module_passing               = PyramidModule.where({level: 1, name: "Passing"}).first

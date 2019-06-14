@@ -11,6 +11,7 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     price: Field::String,
+    thank_you_link: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     pyramid_modules: Field::HasMany.with_options(
@@ -29,6 +30,7 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :name,
     :price,
+    :thank_you_link,
     :pyramid_modules,
     :created_at,
   ].freeze
@@ -38,6 +40,7 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :name,
     :price,
+    :thank_you_link,
     :pyramid_modules,
   ].freeze
 
@@ -47,6 +50,7 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :name,
     :price,
+    :thank_you_link,
     :pyramid_modules,
   ].freeze
 
