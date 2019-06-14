@@ -43,8 +43,12 @@ class SinglePaymentsController < ApplicationController
       end
     end
 
-    flash[:notice] = ' successfully created.'
-    redirect_to "/purchase_confirmation/#{single_payment.name.parameterize}"
+    if single_payment.thank_you_link.blank?
+      flash[:notice] = ' successfully created.'
+      redirect_to "/purchase_confirmation/#{single_payment.name.parameterize}"
+    else
+      redirect_to "#{single_payment.thank_you_link}"
+    end
 
     rescue => e
       flash[:error] = "Sorry, something went wrong. Please forward these error details to info@risefutbol.com.<br><br>Error: #{e}".html_safe
