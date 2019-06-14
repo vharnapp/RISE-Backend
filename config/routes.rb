@@ -65,8 +65,8 @@ Rails.application.routes.draw do
 
   get '/purchase_confirmation/:slug', to: 'single_payments#purchase_confirmation'
 
-  get '/replace-existing-active-subsciptions' => 'single_payments#replace_existing'
-
+  get '/replace-existing-to-complete' => 'single_payments#replace_existing_to_complete'
+  get '/replace-existing-to-free' => 'single_payments#replace_existing_to_free'
   get '/generate-single-payments' => 'single_payments#generate_default_single_payments'
 
   authenticated :user do

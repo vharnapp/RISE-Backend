@@ -70,27 +70,24 @@ class SinglePaymentsController < ApplicationController
     end
   end
 
-  def replace_existing
+  def replace_existing_to_complete
     subs = Subscription.where(club_id: nil)
     render_text = ''
     count_subscribed_users = 0
 
+    user_ids_to_complete_program = Array.new
+
     complete_traning_program_package = SinglePayment.where(name: "COMPLETE TRAINING PROGRAM").first
-    puts complete_traning_program_package.to_json
-abc = 0
+
     if complete_traning_program_package.id.nil?
-      render_text = 'Complete training program was deleted or renamed. Aborting Process'
+      render_text += 'Complete training program was deleted or renamed. Aborting Process\n'
     else
+      render_text += "Users with an active Stripe subscription\n"
+
       subs.each do |subscription|
-        abc = abc + 1
-        puts "nr. #{abc}, Subscriptionid: #{subscription.id}, subscription user_id: #{subscription.user_id}"
-        puts " "
         # Check if subscription's user exists
         if !subscription.user.nil? && !subscription.user.stripe_customer_id.nil?
           this_user = subscription.user
-          puts "User stripe_customer_id: #{this_user.stripe_customer_id}"
-          puts " "
-          puts " "
           stripe = Stripe::Customer.retrieve(this_user.stripe_customer_id)
           if stripe.subscriptions.count > 0
             stripe_sub = stripe.subscriptions.first
@@ -103,10 +100,13 @@ abc = 0
               # Delete Stripe Subscription
               #stripe_sub.delete()
 
-              # Update users table set stripe_paymetn_id as old stripe subscription id and single_payment_id 
-              this_user.update_column(:stripe_payment_id, stripe_sub.id)
-              this_user.update_column(:single_payment_id, complete_traning_program_package.id)
-              ArchievedUserPayment.create(single_payment_id: complete_traning_program_package.id, user_id: current_user.id, payment_name: complete_traning_program_package.name, payment_price: complete_traning_program_package.price, payment_stripe_id: stripe_sub.id)
+              user_ids_to_complete_program << this_user.id
+
+
+              set_restriction_for_complete_program = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{current_user.id}"
+              ActiveRecord::Base.connection.execute(set_restriction_for_complete_program)
+
+              #ArchievedUserPayment.create(single_payment_id: complete_traning_program_package.id, user_id: current_user.id, payment_name: complete_traning_program_package.name, payment_price: complete_traning_program_package.price, payment_stripe_id: stripe_sub.id)
               # Unlock all pyramid modules of the new package which hasn't been unlocked yet
               complete_traning_program_package.pyramid_modules.each do |pyramid_module|
                 if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).empty? 
@@ -120,45 +120,66 @@ abc = 0
             end
           end
         end
-
-        abc = abc+1
       end
+
+      inser_complete_training_programs_sql = "UPDATE users SET single_payment_id=#{complete_traning_program_package.id} WHERE id IN(#{user_ids_to_complete_program.join(',')}) "
+      ActiveRecord::Base.connection.execute(inser_complete_training_programs_sql)
 
       render_text += "\n\n Total number of subscribers were updated to Complete Training Program: #{count_subscribed_users}"
       render_text += "\n Note: if the number if 0, that means that all subcribers were updated to Complete Training Program"
 
-      count_unsubscribed_users = 0
-      free_package = SinglePayment.where(name: "10 Day Development Guide").first
-      puts free_package.to_json
-
-      if free_package.id.nil?
-        render_text += "\n\nFree program was deleted or renamed. Aborting Process"
-        render plain: render_text
-      else
-        users = User.where(single_payment_id: nil).order(:id)
-
-        users.each do |user|
-          if user.teams.count == 0
-            user.update_column(:single_payment_id, free_package.id)
-            # Unlock all pyramid modules of the new package which hasn't been unlocked yet
-            free_package.pyramid_modules.each do |pyramid_module|
-              if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).empty? 
-                UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: user.id, has_restriction: 1)
-              else
-                UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).update(has_restriction: 1)
-              end
-            end
-
-            count_unsubscribed_users = count_unsubscribed_users + 1
-          end
-        end
-      end
-
-      render_text += "\n\n Total number of unsubscribed users recieved \"10 Day Development Guide\" program: #{count_unsubscribed_users}"
-      render_text += "\n Note: if the number if 0, that means that there is no unsubscribed user who does not recieved \"10 Day Development Guide\" program"
-
       render plain: render_text
     end
+  end
+
+  def replace_existing_to_free
+    subs = Subscription.where(club_id: nil)
+    render_text = ''
+    count_subscribed_users = 0
+
+    user_ids_to_complete_program = Array.new
+
+    count_unsubscribed_users = 0
+    free_package = SinglePayment.where(name: "10 Day Development Guide").first
+
+    user_ids_to_free_package = Array.new
+
+    if free_package.id.nil?
+      render_text += "\n\nFree program was deleted or renamed. Aborting Process"
+      render plain: render_text
+    else
+      users = User.where(single_payment_id: nil).order(:id).limit(2000)
+
+      users.each do |user|
+        if user.teams.count == 0
+
+          user_ids_to_free_package << user.id
+
+          set_restriction_for_free_package = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{user.id}"
+          ActiveRecord::Base.connection.execute(set_restriction_for_free_package)
+
+          #user.update_column(:single_payment_id, free_package.id)
+          # Unlock all pyramid modules of the new package which hasn't been unlocked yet
+          free_package.pyramid_modules.each do |pyramid_module|
+            if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).empty? 
+              UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: user.id, has_restriction: 1)
+            else
+              UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).update(has_restriction: 1)
+            end
+          end
+
+          count_unsubscribed_users = count_unsubscribed_users + 1
+        end
+      end
+    end
+
+    insert_free_package_sql = "UPDATE users SET single_payment_id=#{free_package.id} WHERE id IN(#{user_ids_to_free_package.join(',')}) "
+    ActiveRecord::Base.connection.execute(insert_free_package_sql)
+
+    render_text += "\n\n Total number of unsubscribed users recieved \"10 Day Development Guide\" program: #{count_unsubscribed_users}"
+    render_text += "\n Note: if the number if 0, that means that there is no unsubscribed user who does not recieved \"10 Day Development Guide\" program"
+
+    render plain: render_text
   end
 
   def generate_default_single_payments
