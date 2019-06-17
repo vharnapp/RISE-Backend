@@ -143,7 +143,7 @@ class SinglePaymentsController < ApplicationController
     if free_package.nil?
       render_text += "\n\nFree program was deleted or renamed. Aborting Process"
     else
-      users = User.where(single_payment_id: nil).order(:id).limit(500)
+      users = User.where(single_payment_id: nil).order(:id).limit(3000)
 
       users.each do |user|
         if user.teams.count == 0
