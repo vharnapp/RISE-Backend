@@ -133,15 +133,9 @@ class SinglePaymentsController < ApplicationController
   end
 
   def replace_existing_to_free
-    subs = Subscription.where(club_id: nil)
     render_text = ''
-    count_subscribed_users = 0
-
-    user_ids_to_complete_program = Array.new
-
     count_unsubscribed_users = 0
     free_package = SinglePayment.where(name: "10 Day Development Guide").first
-
     user_ids_to_free_package = Array.new
     unlock_pyramid_module_values = Array.new
     today = Date.today
@@ -165,7 +159,7 @@ class SinglePaymentsController < ApplicationController
           free_package.pyramid_modules.each do |pyramid_module|
             if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).empty? 
               #UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: user.id, has_restriction: 1)
-              unlock_pyramid_module_values << "(#{user.id},#{pyramid_module.id},\"{}\",\"#{today}\",\"#{today}\",1)"
+              unlock_pyramid_module_values << "(#{user.id},#{pyramid_module.id},\"#{today}\",\"#{today}\",1)"
               #else
               #UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).update(has_restriction: 1)
             end
@@ -177,7 +171,7 @@ class SinglePaymentsController < ApplicationController
     end
     
     if (unlock_pyramid_module_values.count > 0)
-      unlock_free_package_modules_sql = "INSERT INTO unlocked_pyramid_modules (user_id,pyramid_module_id,completed_phases,created_at,updated_at,has_restriction) VALUES #{unlock_pyramid_module_values.join(',')};"
+      unlock_free_package_modules_sql = "INSERT INTO unlocked_pyramid_modules (user_id,pyramid_module_id,created_at,updated_at,has_restriction) VALUES #{unlock_pyramid_module_values.join(',')};"
       ActiveRecord::Base.connection.execute(unlock_free_package_modules_sql)
     end
 
