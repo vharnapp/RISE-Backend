@@ -140,11 +140,10 @@ class SinglePaymentsController < ApplicationController
     unlock_pyramid_module_values = Array.new
     today = Date.today
 
-    if free_package.id.nil?
+    if free_package.nil?
       render_text += "\n\nFree program was deleted or renamed. Aborting Process"
-      render plain: render_text
     else
-      users = User.where(single_payment_id: nil).order(:id).limit(2000)
+      users = User.where(single_payment_id: nil).order(:id).limit(500)
 
       users.each do |user|
         if user.teams.count == 0
@@ -159,19 +158,18 @@ class SinglePaymentsController < ApplicationController
           free_package.pyramid_modules.each do |pyramid_module|
             if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).empty? 
               #UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: user.id, has_restriction: 1)
-              unlock_pyramid_module_values << "(#{user.id},#{pyramid_module.id},\"#{today}\",\"#{today}\",1)"
+              unlock_pyramid_module_values << "(#{user.id},#{pyramid_module.id},'{}','#{today} 00:00:00','#{today} 00:00:00',1)"
               #else
               #UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).update(has_restriction: 1)
             end
           end
-
           count_unsubscribed_users = count_unsubscribed_users + 1
         end
       end
     end
     
     if (unlock_pyramid_module_values.count > 0)
-      unlock_free_package_modules_sql = "INSERT INTO unlocked_pyramid_modules (user_id,pyramid_module_id,created_at,updated_at,has_restriction) VALUES #{unlock_pyramid_module_values.join(',')};"
+      unlock_free_package_modules_sql = "INSERT INTO unlocked_pyramid_modules (user_id, pyramid_module_id, completed_phases, created_at, updated_at, has_restriction) VALUES #{unlock_pyramid_module_values.join(',')};"
       ActiveRecord::Base.connection.execute(unlock_free_package_modules_sql)
     end
 
