@@ -143,6 +143,8 @@ class SinglePaymentsController < ApplicationController
     free_package = SinglePayment.where(name: "10 Day Development Guide").first
 
     user_ids_to_free_package = Array.new
+    unlock_pyramid_module_values = Array.new
+    today = Date.today
 
     if free_package.id.nil?
       render_text += "\n\nFree program was deleted or renamed. Aborting Process"
@@ -155,16 +157,17 @@ class SinglePaymentsController < ApplicationController
 
           user_ids_to_free_package << user.id
 
-          set_restriction_for_free_package = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{user.id}"
-          ActiveRecord::Base.connection.execute(set_restriction_for_free_package)
+          set_restriction_for_free_package_pyramid_modules_sql = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{user.id}"
+          ActiveRecord::Base.connection.execute(set_restriction_for_free_package_pyramid_modules_sql)
 
           #user.update_column(:single_payment_id, free_package.id)
           # Unlock all pyramid modules of the new package which hasn't been unlocked yet
           free_package.pyramid_modules.each do |pyramid_module|
             if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).empty? 
-              UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: user.id, has_restriction: 1)
-            else
-              UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).update(has_restriction: 1)
+              #UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: user.id, has_restriction: 1)
+              unlock_pyramid_module_values << "(#{user.id},#{pyramid_module.id},\"{}\",\"#{today}\",\"#{today}\",1)"
+              #else
+              #UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).update(has_restriction: 1)
             end
           end
 
@@ -172,9 +175,16 @@ class SinglePaymentsController < ApplicationController
         end
       end
     end
+    
+    if (unlock_pyramid_module_values.count > 0)
+      unlock_free_package_modules_sql = "INSERT INTO unlocked_pyramid_modules (user_id,pyramid_module_id,completed_phases,created_at,updated_at,has_restriction) VALUES #{unlock_pyramid_module_values.join(',')};"
+      ActiveRecord::Base.connection.execute(unlock_free_package_modules_sql)
+    end
 
-    insert_free_package_sql = "UPDATE users SET single_payment_id=#{free_package.id} WHERE id IN(#{user_ids_to_free_package.join(',')}) "
-    ActiveRecord::Base.connection.execute(insert_free_package_sql)
+    if (user_ids_to_free_package.count > 0)
+      update_users_to_free_package_sql = "UPDATE users SET single_payment_id=#{free_package.id} WHERE id IN(#{user_ids_to_free_package.join(',')}) "
+      ActiveRecord::Base.connection.execute(update_users_to_free_package_sql)
+    end
 
     render_text += "\n\n Total number of unsubscribed users recieved \"10 Day Development Guide\" program: #{count_unsubscribed_users}"
     render_text += "\n Note: if the number if 0, that means that there is no unsubscribed user who does not recieved \"10 Day Development Guide\" program"
