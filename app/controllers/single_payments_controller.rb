@@ -14,7 +14,7 @@ class SinglePaymentsController < ApplicationController
     @single_payments = SinglePayment.where("price > 0")
     @pyramid_modules = Array.new
 
-    @single_payment.pyramid_modules.each do |pyramid_module|
+    @single_payments.pyramid_modules.each do |pyramid_module|
       @pyramid_modules << pyramid_module.name
     end
   end
