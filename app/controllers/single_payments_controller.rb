@@ -12,11 +12,6 @@ class SinglePaymentsController < ApplicationController
     #end
 
     @single_payments = SinglePayment.where("price > 0")
-    @pyramid_modules = Array.new
-
-    @single_payments.pyramid_modules.each do |pyramid_module|
-      @pyramid_modules << pyramid_module.name
-    end
   end
 
   def create

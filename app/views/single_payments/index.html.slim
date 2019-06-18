@@ -24,11 +24,7 @@ header.main-content__header[role='banner']
         div
           <b>Included modules:</b>
           div
-            | @pyramid_modules.join(',')
-
-
-      
-
+            | #{single_payment.pyramid_modules.pluck(:name).join(', ')}
 
 sass:
   p
