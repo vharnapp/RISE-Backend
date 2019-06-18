@@ -51,8 +51,11 @@ class ApplicationController < ActionController::Base
 
     # Player
     if current_user && !request.path.match?('analytics_alias')
-      redirect_to subscriptions_path(plan_type: params[:plan_type]) and return unless current_user.active_subscription?
-      redirect_to edit_user_registration_path and return
+      if current_user.active_subscription?
+        redirect_to edit_user_registration_path and return
+      else
+        redirect_to single_payments_path and return
+      end
     end
   end
 

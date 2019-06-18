@@ -1,7 +1,7 @@
 class SubscriptionsController < ApplicationController
   skip_authorization_check
 
-  skip_before_action :check_subscription
+  #skip_before_action :check_subscription
 
   def index
   end

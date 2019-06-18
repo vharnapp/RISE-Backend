@@ -1,0 +1,63 @@
+header.main-content__header[role='banner']
+    .row.columns
+        .group.small-12.medium-8.left
+        | Purchased Packages
+
+.row.columns
+    div.large-8.large-offset-2.medium-8.medium-offset-2.small-12.small-offset-0.text-center
+        h3.text-center.text-uppercase Welcome to Rise & thank you for your purchase of the #{@current_single_payment.name} #{ @current_single_payment.name.include?("PROGRAM") ? "" : "PROGRAM" } 
+    div.large-8.large-offset-2.medium-10.medium-offset-1.small-12.small-offset-0
+        div.thank-you-section
+            h4.text-uppercase.text-center Modules included in this program:
+
+            ul class=(["row", "thank-you-modules", @current_single_payment.pyramid_modules.count >= 12 ? "three-columns" : "two-columns"].compact.join(' '))
+                -@current_single_payment.pyramid_modules.order("position asc").each do |pyramid_module|
+                    li
+                        b #{pyramid_module.name}
+
+        div.thank-you-section
+            h4.text-uppercase.text-center Getting started
+            div 1. To access the App, visit the iTunes or Google Play App Stores and download the Rise Elite Soccer App.
+            div 2. At sign-in, just use the same e-mail address and password you provided at purchase.
+            div.mb-15 3. Make sure to view the tutorials and introductory videos throughout.
+            div For more information on the features inside the RISE app, visit us at #{link_to 'https://risefutbol.com/app', 'https://risefutbol.com/app', target:'_blank'}
+
+        div.thank-you-section
+            h4.text-uppercase.text-center What to do next
+            div.mb-15
+                b Once you’ve downloaded the app, you can use it in two different ways.
+            div.mb-15 <b>OPTION 1:</b> Just click on one of the unlocked modules and we’ll take you through a guided workout. Every workout includes instructional videos for each exercise so you’ll know what to do and how to do it. Watch the video, perform the exercise, rate yourself from 1-4 stars and follow the prompt to the next exercise. It’s that easy.
+            div.mb-15 <b>OPTION 2:</b> With this purchase, you will also receive access to a number of specialized programs to further complement your training needs. These programs currently include:
+            div.mb-15
+                - case @current_single_payment.name
+                - when "SKILL & SPEED"
+                    div.text-center
+                        div <b>GUIDED SKILL & QUICKNESS</b>
+                        div <b>GUIDED PASSING & FIRST TOUCH</b>
+                - when "SPEED & STRENGTH"
+                    div.text-center
+                        div <b>GUIDED SPEED & STRENGTH</b>
+                - else
+                    div.text-center
+                        div <b>OFF-SEASON PROGRAM</b>
+                        div <b>GUIDED SPEED & STRENGTH</b>
+                        div <b>GUIDED SKILL & QUICKNESS</b>
+                        div <b>GUIDED PASSING & FIRST TOUCH</b>
+            div To access these complementary programs, visit us at #{link_to 'https://risefutbol.com/programs', 'https://risefutbol.com/programs', target:'_blank'}
+
+        div.thank-you-section.text-center
+            h4.text-uppercase Want to learn more?
+            | For training tips, educational tools, feedback from other users<br>and ideas on how to get the most out of the RISE app,<br>visit us at #{link_to 'https://risefutbol.com/', 'https://risefutbol.com/', target:'_blank'} or<br>follow us on #{link_to 'Instagram', 'https://www.instagram.com/risefutbol/', target:'_blank'}, #{link_to 'Twitter', 'https://twitter.com/risefutbol', target:'_blank'} and Facebook<br>@risefutbol
+
+        div.thank-you-section
+            b Download the RISE App here:
+            = link_to 'https://itunes.apple.com/us/app/rise-elite-soccer/id1233828122?mt=8', target:'_blank'
+                = image_tag 'apple-badge.svg', style: 'margin-left: 12px;'
+            = link_to 'https://play.google.com/store/apps/details?id=com.athletefitapp&hl=en', target:'_blank'
+                = image_tag 'google-play-badge.svg', style: 'margin-left: 12px;'
+
+sass:
+    h3
+        font-size: 1.5em
+        font-weight: bold
+        margin-top: 1em

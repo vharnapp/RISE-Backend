@@ -17,11 +17,21 @@ module Api
       end
 
       def create
+        free_payment = SinglePayment.where(price: 0).first
         @user = User.new(user_params)
         @user.roles << :player
+        @user.single_payment_id = free_payment.id
 
         if @user.save
-          @user.unlock_starting_pyramid_modules
+
+          free_payment.pyramid_modules.each do |pyramid_module|
+            if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: @user.id).empty? 
+              UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: @user.id, has_restriction: 1)
+            else
+              UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: @user.id).update(has_restriction: 1)
+            end
+          end
+
           @user.analytics_identify(traits: { sign_up_source: 'App' })
 
           # On successful creation, generate token and return in response

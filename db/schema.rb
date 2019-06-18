@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180709043239) do
+ActiveRecord::Schema.define(version: 20190614144533) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -28,6 +28,18 @@ ActiveRecord::Schema.define(version: 20180709043239) do
     t.index ["deleted_at"], name: "index_affiliations_on_deleted_at"
     t.index ["team_id"], name: "index_affiliations_on_team_id"
     t.index ["user_id"], name: "index_affiliations_on_user_id"
+  end
+
+  create_table "archieved_user_payments", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "payment_name"
+    t.float "payment_price"
+    t.string "payment_stripe_id"
+    t.bigint "single_payment_id"
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["single_payment_id"], name: "index_archieved_user_payments_on_single_payment_id"
+    t.index ["user_id"], name: "index_archieved_user_payments_on_user_id"
   end
 
   create_table "authentication_tokens", force: :cascade do |t|
@@ -199,6 +211,20 @@ ActiveRecord::Schema.define(version: 20180709043239) do
     t.index ["deleted_at"], name: "index_pyramid_modules_on_deleted_at"
   end
 
+  create_table "pyramid_modules_single_payments", id: false, force: :cascade do |t|
+    t.bigint "pyramid_module_id", null: false
+    t.bigint "single_payment_id", null: false
+  end
+
+  create_table "single_payments", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.float "price"
+    t.string "string_id"
+    t.string "thank_you_link"
+    t.datetime "updated_at", null: false
+  end
+
   create_table "snippets", force: :cascade do |t|
     t.text "content"
     t.datetime "created_at", null: false
@@ -253,6 +279,7 @@ ActiveRecord::Schema.define(version: 20180709043239) do
     t.text "completed_phases", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "deleted_at"
+    t.integer "has_restriction", default: 1
     t.bigint "pyramid_module_id"
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -286,8 +313,10 @@ ActiveRecord::Schema.define(version: 20180709043239) do
     t.string "reset_password_token"
     t.integer "roles_mask"
     t.integer "sign_in_count", default: 0, null: false
+    t.integer "single_payment_id"
     t.string "slug"
     t.string "stripe_customer_id"
+    t.string "stripe_payment_id"
     t.datetime "updated_at", null: false
     t.string "uuid"
     t.index ["deleted_at"], name: "index_users_on_deleted_at"
@@ -314,6 +343,7 @@ ActiveRecord::Schema.define(version: 20180709043239) do
 
   add_foreign_key "affiliations", "teams"
   add_foreign_key "affiliations", "users"
+  add_foreign_key "archieved_user_payments", "users"
   add_foreign_key "authentication_tokens", "users"
   add_foreign_key "club_affiliations", "clubs"
   add_foreign_key "club_affiliations", "users"

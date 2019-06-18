@@ -34,6 +34,8 @@ en:
         display_completed_phases: Completed Phases
       team:
         display_code: Code
+      single_payment:
+        pyramid_module: "Pyramid Modules"
 
   faker:
     name:

@@ -21,6 +21,8 @@ module Api
         elsif team.present?
           affiliation =
             Affiliation.new(team_id: team.id, user_id: current_user.id)
+            current_user.update_column(:single_payment_id, nil)
+            UnlockedPyramidModule.where(user_id: current_user.id).update(has_restriction: 0)
 
           if affiliation.save
             jsonapi_render json: affiliation, status: :created

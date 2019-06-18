@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
 
   resources :subscriptions
+  resources :single_payments
 
   resources :unlocked_pyramid_modules, only: [:create, :destroy]
   resources :affiliations, only: [:destroy]
@@ -39,6 +40,7 @@ Rails.application.routes.draw do
     resources :teams
     resources :affiliations
     resources :enrollments
+    resources :single_payments
     resources :subscriptions
     resources :temp_teams
     resources :snippets
@@ -61,6 +63,12 @@ Rails.application.routes.draw do
   get '/help' => 'pages#show', id: 'help'
   get '/unauthorized' => 'pages#show', id: 'unauthorized'
 
+  get '/purchase_confirmation/:slug', to: 'single_payments#purchase_confirmation'
+
+  get '/replace-existing-to-complete' => 'single_payments#replace_existing_to_complete'
+  get '/replace-existing-to-free' => 'single_payments#replace_existing_to_free'
+  get '/generate-single-payments' => 'single_payments#generate_default_single_payments'
+
   authenticated :user do
     root to: 'clubs#index', as: :authenticated_root
     # root to: 'pages#show', id: 'welcome', as: :authenticated_root
@@ -73,6 +81,7 @@ Rails.application.routes.draw do
     # API-token creation aliases
     post 'api/v1/sign_in', to: 'devise_customizations/sessions#create'
     get 'api/v1/sign_out', to: 'devise_customizations/sessions#destroy'
+
   end
 
   root 'pages#show', id: 'welcome'
@@ -91,6 +100,7 @@ Rails.application.routes.draw do
       end
 
       jsonapi_resources :confidence_ratings
+      jsonapi_resources :archieved_user_payments
       jsonapi_resources :unlocked_pyramid_modules
       jsonapi_resources :phase_attempts
       jsonapi_resources :affiliations

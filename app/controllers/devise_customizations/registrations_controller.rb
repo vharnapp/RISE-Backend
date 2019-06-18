@@ -1,11 +1,20 @@
 module DeviseCustomizations
   class RegistrationsController < Devise::RegistrationsController
     def create
+      free_payment = SinglePayment.where(price: 0).first
       build_resource(sign_up_params)
       resource.roles << :player
+      resource.single_payment_id = free_payment.id
       resource.save
       yield resource if block_given?
       if resource.persisted?
+
+        free_payment.pyramid_modules.each do |pyramid_module|
+          if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: resource.id).empty? 
+            UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: resource.id, has_restriction: 1)
+          end
+        end
+        
         if resource.active_for_authentication?
           set_flash_message! :notice, :signed_up
           sign_up(resource_name, resource)

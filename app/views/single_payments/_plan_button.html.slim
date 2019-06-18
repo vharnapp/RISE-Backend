@@ -1,0 +1,28 @@
+- # TODO: (2018-01-13) jon => wrap the plan price finders in an object. Rescues are not good for control flow
+
+= form_tag single_payments_path do
+  script{
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="#{ENV['STRIPE_PUBLISHABLE_KEY']}"
+    data-locale="auto"
+    data-label="#{price}"
+    data-name="#{name}"
+    data-description="#{price}"
+    data-email="#{current_user.email}"
+  }
+  = hidden_field_tag 'payment_id', payment_id
+
+sass:
+  button.stripe-button-el
+    background-color: white
+    background-image: none
+    border: none
+    border-radius: none
+    box-shadow: none
+    height: 32px
+    width: 215px
+
+  button.stripe-button-el span
+    background-color: #3adb76
+    background-image: none

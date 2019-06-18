@@ -24,6 +24,8 @@ class User < ApplicationRecord
   has_many :teams, through: :affiliations
   has_many :subscriptions, through: :teams
   has_one :subscription, dependent: :destroy # individual sign up
+  has_one :single_payment 
+  has_many :archieved_user_payments, dependent: :destroy
   has_many :clubs, through: :teams
 
   has_many :coach_affiliations, -> { coaches }, class_name: 'Affiliation'
@@ -186,7 +188,20 @@ class User < ApplicationRecord
   end
 
   def active_subscription?
-    subscriptions.merge(Subscription.current).present? || (subscription&.current? == true)
+    if self.single_payment_id.nil?
+      subscriptions.merge(Subscription.current).present? || (subscription&.current? == true)
+    else
+      payment = SinglePayment.where(id: self.single_payment_id).first
+      payment.price > 0
+    end
+  end
+
+  def get_single_payment
+    SinglePayment.where(id: self.single_payment_id).first
+  end
+
+  def has_archieved_user_payment(single_payment_id)
+    ArchievedUserPayment.where(user_id: self.id).where(single_payment_id: single_payment_id).exists?
   end
 
   def subscription_expires_on
@@ -283,8 +298,10 @@ end
 #  reset_password_token   :string
 #  roles_mask             :integer
 #  sign_in_count          :integer          default(0), not null
+#  single_payment_id      :integer
 #  slug                   :string
 #  stripe_customer_id     :string
+#  stripe_payment_id      :string
 #  updated_at             :datetime         not null
 #  uuid                   :string
 #
