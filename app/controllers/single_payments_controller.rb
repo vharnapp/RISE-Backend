@@ -106,7 +106,7 @@ class SinglePaymentsController < ApplicationController
               set_restriction_for_complete_program = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{current_user.id}"
               ActiveRecord::Base.connection.execute(set_restriction_for_complete_program)
 
-              #ArchievedUserPayment.create(single_payment_id: complete_traning_program_package.id, user_id: current_user.id, payment_name: complete_traning_program_package.name, payment_price: complete_traning_program_package.price, payment_stripe_id: stripe_sub.id)
+              ArchievedUserPayment.create(single_payment_id: complete_traning_program_package.id, user_id: current_user.id, payment_name: complete_traning_program_package.name, payment_price: complete_traning_program_package.price, payment_stripe_id: stripe_sub.id)
               # Unlock all pyramid modules of the new package which hasn't been unlocked yet
               complete_traning_program_package.pyramid_modules.each do |pyramid_module|
                 if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).empty? 
@@ -143,7 +143,7 @@ class SinglePaymentsController < ApplicationController
     if free_package.nil?
       render_text += "\n\nFree program was deleted or renamed. Aborting Process"
     else
-      users = User.where(single_payment_id: nil).order(:id).limit(3000)
+      users = User.where(single_payment_id: nil).order(:id)
 
       users.each do |user|
         if user.teams.count == 0
@@ -153,14 +153,11 @@ class SinglePaymentsController < ApplicationController
           set_restriction_for_free_package_pyramid_modules_sql = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{user.id}"
           ActiveRecord::Base.connection.execute(set_restriction_for_free_package_pyramid_modules_sql)
 
-          #user.update_column(:single_payment_id, free_package.id)
           # Unlock all pyramid modules of the new package which hasn't been unlocked yet
           free_package.pyramid_modules.each do |pyramid_module|
             if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).empty? 
               #UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: user.id, has_restriction: 1)
               unlock_pyramid_module_values << "(#{user.id},#{pyramid_module.id},'{}','#{today} 00:00:00','#{today} 00:00:00',1)"
-              #else
-              #UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: user.id).update(has_restriction: 1)
             end
           end
           count_unsubscribed_users = count_unsubscribed_users + 1
