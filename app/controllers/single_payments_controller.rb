@@ -103,16 +103,16 @@ class SinglePaymentsController < ApplicationController
               user_ids_to_complete_program << this_user.id
 
 
-              set_restriction_for_complete_program = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{current_user.id}"
+              set_restriction_for_complete_program = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{this_user.id}"
               ActiveRecord::Base.connection.execute(set_restriction_for_complete_program)
 
-              ArchievedUserPayment.create(single_payment_id: complete_traning_program_package.id, user_id: current_user.id, payment_name: complete_traning_program_package.name, payment_price: complete_traning_program_package.price, payment_stripe_id: stripe_sub.id)
+              ArchievedUserPayment.create(single_payment_id: complete_traning_program_package.id, user_id: this_user.id, payment_name: complete_traning_program_package.name, payment_price: complete_traning_program_package.price, payment_stripe_id: stripe_sub.id)
               # Unlock all pyramid modules of the new package which hasn't been unlocked yet
               complete_traning_program_package.pyramid_modules.each do |pyramid_module|
-                if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).empty? 
-                  UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: current_user.id, has_restriction: 0)
+                if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: this_user.id).empty? 
+                  UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: this_user.id, has_restriction: 0)
                 else
-                  UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).update(has_restriction: 0)
+                  UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: this_user.id).update(has_restriction: 0)
                 end
               end
 
