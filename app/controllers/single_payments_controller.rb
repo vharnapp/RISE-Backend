@@ -98,13 +98,12 @@ class SinglePaymentsController < ApplicationController
             if(stripe_sub_end_date > today) 
               render_text += "#{this_user.first_name} #{this_user.last_name}, ends at #{stripe_sub_end_date}\n"
               # Delete Stripe Subscription
-              #stripe_sub.delete()
+              stripe_sub.delete()
 
               user_ids_to_complete_program << this_user.id
 
-
-              set_restriction_for_complete_program = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{this_user.id}"
-              ActiveRecord::Base.connection.execute(set_restriction_for_complete_program)
+              #set_restriction_for_complete_program = "UPDATE unlocked_pyramid_modules SET has_restriction=1 WHERE user_id=#{this_user.id}"
+              #ActiveRecord::Base.connection.execute(set_restriction_for_complete_program)
 
               ArchievedUserPayment.create(single_payment_id: complete_traning_program_package.id, user_id: this_user.id, payment_name: complete_traning_program_package.name, payment_price: complete_traning_program_package.price, payment_stripe_id: stripe_sub.id)
               # Unlock all pyramid modules of the new package which hasn't been unlocked yet
