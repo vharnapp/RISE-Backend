@@ -5,11 +5,12 @@ module Api
                  :pyramid_module_id,
                  :completed_phases,
                  :days_since_last_confidence_rating,
-                 :percent_complete
+                 :percent_complete,
+		 :has_restriction
 
       has_one :user
       has_one :pyramid_module
-
+      
       def days_since_last_confidence_rating
         @model
           .user
