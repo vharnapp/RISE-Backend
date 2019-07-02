@@ -47,30 +47,33 @@ class Subscription < ApplicationRecord
     logger.info charge.inspect
     stripe_customer_id = charge.customer
     stripe_invoice_id = charge.invoice
-    stripe_invoice = Stripe::Invoice.retrieve(stripe_invoice_id)
-    stripe_plan_id = stripe_invoice.lines.data.first.plan.id
 
-    new_end_date =
-      case stripe_plan_id
-      when /monthly.*/
-        1.month.from_now
-      when /annually.*/
-        1.year.from_now
-      end
+    if !stripe_customer_id.nil? && !stripe_invoice_id.nil?
+      stripe_invoice = Stripe::Invoice.retrieve(stripe_invoice_id)
+      stripe_plan_id = stripe_invoice.lines.data.first.plan.id
 
-    user = User.find_by(stripe_customer_id: stripe_customer_id)
-    subscription = Subscription.find_by(user_id: user.id)
+      new_end_date =
+        case stripe_plan_id
+        when /monthly.*/
+          1.month.from_now
+        when /annually.*/
+          1.year.from_now
+        end
 
-    # NOTE: (2018-07-08) jon => assumes "Central Time (US & Canada)" remains set
-    dst_or_not = Time.current.dst? ? 'CDT' : 'CST'
-    date_and_time_with_period =
-      "#{Time.current.strftime('%m/%d/%Y - %-l:%M %p')} #{dst_or_not}"
+      user = User.find_by(stripe_customer_id: stripe_customer_id)
+      subscription = Subscription.find_by(user_id: user.id)
 
-    metadata = {
-      date_and_time_with_period => { stripe_invoice_id: stripe_invoice_id }
-    }
+      # NOTE: (2018-07-08) jon => assumes "Central Time (US & Canada)" remains set
+      dst_or_not = Time.current.dst? ? 'CDT' : 'CST'
+      date_and_time_with_period =
+        "#{Time.current.strftime('%m/%d/%Y - %-l:%M %p')} #{dst_or_not}"
 
-    subscription.extend_until(new_end_date, metadata)
+      metadata = {
+        date_and_time_with_period => { stripe_invoice_id: stripe_invoice_id }
+      }
+
+      subscription.extend_until(new_end_date, metadata)
+    end
   end
 
   def end_date_is_after_start_date
