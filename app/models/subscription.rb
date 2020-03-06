@@ -50,9 +50,9 @@ class Subscription < ApplicationRecord
 
     if !stripe_customer_id.nil? && !stripe_invoice_id.nil?
       stripe_invoice = Stripe::Invoice.retrieve(stripe_invoice_id)
-      stripe_plan_id = stripe_invoice.lines.data.first.plan.id
 
-      if !stripe_plan_id.nil?
+      if !stripe_invoice.lines.data.first.plan.nil?
+        stripe_plan_id = stripe_invoice.lines.data.first.plan.id
 
         new_end_date =
           case stripe_plan_id
