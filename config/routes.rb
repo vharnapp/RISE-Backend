@@ -69,6 +69,11 @@ Rails.application.routes.draw do
   get '/replace-existing-to-free' => 'single_payments#replace_existing_to_free'
   get '/generate-single-payments' => 'single_payments#generate_default_single_payments'
 
+  get '/unlock-modules-for-club-players' => 'users#unlock_modules_for_club_players'
+  get '/unlock-modules-for-club-players/:page' => 'users#unlock_modules_for_club_players'
+
+  
+
   authenticated :user do
     root to: 'clubs#index', as: :authenticated_root
     # root to: 'pages#show', id: 'welcome', as: :authenticated_root
