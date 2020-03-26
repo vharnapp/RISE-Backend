@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 	  today = Date.today
 
 	  page = params[:page].nil? ? 0 : params[:page].to_i
-	  limit = 300
+	  limit = 150
 	  offset = page * limit
 
 		render_text = ""
