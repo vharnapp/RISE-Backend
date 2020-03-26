@@ -5,7 +5,7 @@
         = image_tag pyramid_module.icon_white.url
         .days-since-active
           = player.days_since_last_confidence_rating_for_pyramid_module(pyramid_module).to_s + ' days'
-    .checkbox-container
+    /.checkbox-container
       - unlocked_pyramid_module = player.unlocked_pyramid_modules.find_by(pyramid_module_id: pyramid_module.id)
       = check_box_tag("unlocked_pyramid_module_#{player.id}_#{pyramid_module.id}",
                       pyramid_module.id,
