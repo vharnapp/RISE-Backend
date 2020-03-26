@@ -14,14 +14,14 @@ class UsersController < ApplicationController
 	  today = Date.today
 
 	  page = params[:page].nil? ? 0 : params[:page].to_i
-	  limit = 500
+	  limit = 300
 	  offset = page * limit
 
 		render_text = ""
 
 	  pyramid_modules = PyramidModule.select("id,name").where(id: [3,5,7,8,9,10,11,12,13,15,16,17]).order(:id)
 
-	  affiliations = Affiliation.joins(:user).select("affiliations.id, affiliations.user_id, users.email as user_email").where(deleted_at: nil).where(team_id: 149).offset(offset).limit(limit)
+	  affiliations = Affiliation.joins(:user).select("affiliations.id, affiliations.user_id, users.email as user_email").where(deleted_at: nil).offset(offset).limit(limit)
 	  aux = 0
 	  affiliations.each do |affiliation|
 	  	aux = 0

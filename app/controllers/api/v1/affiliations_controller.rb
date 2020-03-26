@@ -33,7 +33,7 @@ module Api
               end
             end
 
-            if (unlock_pyramid_module_values.count > 0 && team.id == 149)
+            if (unlock_pyramid_module_values.count > 0)
               unlock_complete_training_modules_sql = "INSERT INTO unlocked_pyramid_modules (user_id, pyramid_module_id, completed_phases, created_at, updated_at) VALUES #{unlock_pyramid_module_values.join(',')};"
               ActiveRecord::Base.connection.execute(unlock_complete_training_modules_sql)
             end
