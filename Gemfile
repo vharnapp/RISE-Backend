@@ -165,3 +165,4 @@ group :production do
 end
 
 gem 'high_voltage'
+gem 'newrelic_rpm'
