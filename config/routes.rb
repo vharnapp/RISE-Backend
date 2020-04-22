@@ -72,6 +72,7 @@ Rails.application.routes.draw do
   get '/unlock-modules-for-club-players' => 'users#unlock_modules_for_club_players'
   get '/unlock-modules-for-club-players/:page' => 'users#unlock_modules_for_club_players'
 
+  get '/clubs/:club_id/teams/:id/:page' => 'teams#show'
   
 
   authenticated :user do

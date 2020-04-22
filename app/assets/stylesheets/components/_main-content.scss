@@ -38,3 +38,15 @@
         }
     }
 }
+
+.pagination.team-pagination {
+    a {
+        color: #3adb76;
+        margin: 0.25em;
+
+        &.active {
+            font-weight: bold;
+            color: black;
+        }
+    }
+}

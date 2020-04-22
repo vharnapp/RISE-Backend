@@ -37,3 +37,20 @@ section.main-content__body.main-content__body--flush
           - level = player.highest_pyramid_level_achieved
           .pyramid-modules.small-12.medium-9
             = render 'teams/pyramid_module_progress', { level: level, player: player, pyramid_modules: @pyramid_modules }
+      nav.pagination.team-pagination
+        - if @page > 1 
+          = link_to "« First", "#{@base_page_url}", class: "page"
+          = link_to "‹ Prev", "#{@base_page_url}#{@page == 2 ? "" : "/#{@page - 1}"}", class: "page"
+
+        - if @max_page > 9 && @page >= 7
+          span.page.gap = "..."
+
+        - for item in (@page_start..@page_end)
+          = link_to item, "#{@base_page_url}/#{item}", class: "#{@page == item ? "page active" : "page"}"
+
+        - if @max_page > 9 && (@page < 7 || (@page >= 7 && @page <= @max_page - 7) )
+          span.page.gap = "..."
+
+        - if @page < @max_page
+          = link_to "Next ›", "#{@base_page_url}/#{@page + 1}", class: "page"
+          = link_to "Last »", "#{@base_page_url}/#{@max_page}", class: "page"
