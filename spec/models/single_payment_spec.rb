@@ -12,6 +12,9 @@ end
 #  id             :integer          not null, primary key
 #  name           :string
 #  price          :float
+#  sort           :integer          default(1)
+#  special_label  :string
+#  specifications :text
 #  string_id      :string
 #  thank_you_link :string
 #  updated_at     :datetime         not null

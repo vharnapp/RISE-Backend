@@ -9,42 +9,30 @@ header.main-content__header[role='banner']
   br
   h3 Please choose a package before continuing.
 
-  -@single_payments.each do |single_payment|
-    .d-flex.payment-button-row
-      - if current_user.has_archieved_user_payment(single_payment.id)
-        div.disabled-button-container
-          button.stripe-button-el disabled=true
-            span $#{single_payment.price}
-      - else
-        = render 'plan_button', { price: "$#{single_payment.price}", name: single_payment.name, payment_id: single_payment.id }
-      div.row-right
-        b #{single_payment.name}
-        - if current_user.has_archieved_user_payment(single_payment.id)
-          span &nbsp;-&nbsp;Package already purchased
-        div
-          <b>Included modules:</b>
+  .single-payment-section
+    -@single_payments.each do |single_payment|
+      div.single-payment-container.small-12.medium-6.large-3
+        .single-payment
+          - if single_payment.special_label != ""
+            .green-label #{single_payment.special_label}
+
+          .price $#{single_payment.price}
+          .name #{single_payment.name}
+
           div
-            | #{single_payment.pyramid_modules.pluck(:name).join(', ')}
+            - if current_user.has_archieved_user_payment(single_payment.id)
+              div.disabled-button-container
+                button.stripe-button-el disabled=true
+                  span Purchased
+            - else
+              = render 'plan_button', { price: "Buy Now", name: single_payment.name, payment_id: single_payment.id }
 
-sass:
-  p
-    padding-top: 4px
-  .left
-    margin-left: 20px
-  .highlight
-    padding: 25px 20px 15px 20px
-    margin: 20px 0 20px 0
-    border: 2px solid #3adb76
-    .left
-      margin-left: 0
-  .disabled-button-container
-    width: 215px
-  form, .d-flex
-    display: flex
-  .payment-button-row
-    margin-bottom: 20px
-    .row-right
-      padding-left: 10px
-
-    span, b, .stripe-button-el
-      margin: auto 0
+          .specifications 
+            ul 
+              -@specifications[single_payment.id].each do |item|
+                li 
+                  - if item != "" && item != " "
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg>
+                    span #{item}
+                  - else
+                    span &nbsp;<br>

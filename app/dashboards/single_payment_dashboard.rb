@@ -12,6 +12,9 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
     name: Field::String,
     price: Field::String,
     thank_you_link: Field::String,
+    specifications: Field::Text,
+    special_label: Field::String,
+    sort: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     pyramid_modules: Field::HasMany.with_options(
@@ -41,6 +44,9 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
     :name,
     :price,
     :thank_you_link,
+    :special_label,
+    :specifications,
+    :sort,
     :pyramid_modules,
   ].freeze
 
@@ -51,6 +57,9 @@ class SinglePaymentDashboard < Administrate::BaseDashboard
     :name,
     :price,
     :thank_you_link,
+    :special_label,
+    :specifications,
+    :sort,
     :pyramid_modules,
   ].freeze
 

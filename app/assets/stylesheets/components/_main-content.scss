@@ -1,3 +1,5 @@
+$single_payment_green: #92d050;
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -47,6 +49,102 @@
         &.active {
             font-weight: bold;
             color: black;
+        }
+    }
+}
+
+.welcome-section {
+    margin-top: 1.5em;
+
+    .welcome-heading {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+}
+
+.margin-left-0 {
+    margin-left: 0!important;
+}
+
+
+.green-label {
+    background-color: $single_payment_green;
+}
+
+.single-payment-section {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-payment-container {
+    padding: 0 15px;
+    margin-bottom: 30px;
+
+    .single-payment {
+        border: solid 2px $single_payment_green;
+        padding: 50px 12px 30px;
+        position: relative;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .green-label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.25em;
+            line-height: 30px;
+        }
+
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px auto;
+            text-transform: uppercase;
+        }
+
+        button.stripe-button-el {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+
+            span {
+                background-color: $single_payment_green;
+                font-size: 1.25em;
+                color: #fff;
+                padding: 4px 30px;
+                height: auto;
+            }
+        }
+
+        .specifications {
+            margin-top: 20px;
+
+            ul li {
+                display: flex;
+                margin-bottom: 8px;
+
+                svg {
+                    margin: auto 10px auto 0;
+                }
+                span {
+                    font-size: 1.1em;
+                }
+            }
         }
     }
 }

@@ -7,11 +7,15 @@ class SinglePaymentsController < ApplicationController
 
 
   def index
-    #if current_user.active_subscription?
-    #  redirect_to edit_user_registration_path
-    #end
-
     @single_payments = SinglePayment.where("price > 0")
+    @specifications = {}
+
+    @single_payments.each do |single_payment|
+      @specifications[single_payment.id] = single_payment.specifications.split("\r\n")
+    end
+    puts " "
+    puts @specifications.to_json
+    puts " "
   end
 
   def create
@@ -337,11 +341,6 @@ class SinglePaymentsController < ApplicationController
     if pyramid_module.nil?
       return 0
     end
-    puts " "
-    puts " "
-    puts @single_payment.to_json
-    puts " "
-    puts " "
 
     if !(single_payment.pyramid_modules.include? pyramid_module)
       # if does not includes pyramid module
