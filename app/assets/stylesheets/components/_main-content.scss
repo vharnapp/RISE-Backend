@@ -67,9 +67,38 @@ $single_payment_green: #92d050;
     margin-left: 0!important;
 }
 
+.mb-30 {
+    margin-bottom: 30px!important;
+}
 
 .green-label {
     background-color: $single_payment_green;
+}
+
+.badge-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    max-width: 450px;
+}
+
+.social-image-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 300px;
+    margin: 0 auto;
+
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+.thank-you-bigger {
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
 }
 
 .single-payment-section {
@@ -153,5 +182,11 @@ $single_payment_green: #92d050;
                 }
             }
         }
+    }
+}
+
+select.subheader {
+    &#clubs option, &#teams option {
+        color: initial;
     }
 }

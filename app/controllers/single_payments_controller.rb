@@ -1,4 +1,5 @@
 class SinglePaymentsController < ApplicationController
+  helper :all
 
   skip_before_action :verify_authenticity_token, only: [:replace_existing]
 
@@ -13,9 +14,6 @@ class SinglePaymentsController < ApplicationController
     @single_payments.each do |single_payment|
       @specifications[single_payment.id] = single_payment.specifications.split("\r\n")
     end
-    puts " "
-    puts @specifications.to_json
-    puts " "
   end
 
   def create
@@ -49,7 +47,7 @@ class SinglePaymentsController < ApplicationController
 
     if single_payment.thank_you_link.blank?
       flash[:notice] = ' successfully created.'
-      redirect_to "/purchase_confirmation/#{single_payment.name.parameterize}"
+      redirect_to "/thank-you"
     else
       redirect_to "#{single_payment.thank_you_link}"
     end
@@ -72,6 +70,9 @@ class SinglePaymentsController < ApplicationController
     if @current_single_payment.nil?
       redirect_to edit_user_registration_path
     end
+  end
+
+  def thank_you
   end
 
   def replace_existing_to_complete

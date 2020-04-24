@@ -64,6 +64,7 @@ Rails.application.routes.draw do
   get '/unauthorized' => 'pages#show', id: 'unauthorized'
 
   get '/purchase_confirmation/:slug', to: 'single_payments#purchase_confirmation'
+  get '/thank-you', to: 'single_payments#thank_you'
 
   get '/replace-existing-to-complete' => 'single_payments#replace_existing_to_complete'
   get '/replace-existing-to-free' => 'single_payments#replace_existing_to_free'
