@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   before_action :persist_flash
 
   def show
-    redirect_to "/sign-in"
+    redirect_to "/users/sign_up"
   end
 
   private

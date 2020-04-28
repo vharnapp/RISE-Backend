@@ -1,15 +1,10 @@
-header.main-content__header[role='banner']
-  .row.columns
-    .group.small-12.medium-8.left
-      | Purchased Packages
-
 .row.columns
   br
   h3.single-payment-heading Choose The Training Plan That’s Right For You
 
   .single-payment-section
     -@single_payments.each do |single_payment|
-      div.single-payment-container.small-12.medium-6.large-3
+      div.single-payment-container class=( (single_payment.name.downcase.include? "coach") ? "coach" : "")
         .single-payment
           - if single_payment.special_label != ""
             .green-label #{single_payment.special_label}

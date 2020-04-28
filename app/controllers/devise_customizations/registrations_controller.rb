@@ -3,12 +3,28 @@ module DeviseCustomizations
     def create
       free_payment = SinglePayment.where(price: 0).first
       build_resource(sign_up_params)
+      
+      if resource.email.present?
+        aux_user = ActiveRecord::Base.connection.execute("SELECT COUNT(*) FROM users where email='#{resource.email}'")
+
+        if aux_user.count > 0
+          session[:reg_plan] = params[:plan_type]
+          session[:reg_anon_id] = params[:anon_id]
+          session[:reg_first_name] = sign_up_params[:first_name]
+          session[:reg_last_name] = sign_up_params[:last_name]
+          session[:reg_email] = sign_up_params[:email]
+          session[:reg_email_error] = "User with this email already exists"
+
+          return redirect_to new_user_registration_path
+        end
+      end
+
       resource.roles << :player
       resource.single_payment_id = free_payment.id
       resource.save
       yield resource if block_given?
-      if resource.persisted?
 
+      if resource.persisted?
         free_payment.pyramid_modules.each do |pyramid_module|
           if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: resource.id).empty? 
             UnlockedPyramidModule.create(pyramid_module_id: pyramid_module.id, user_id: resource.id, has_restriction: 1)
@@ -30,13 +46,29 @@ module DeviseCustomizations
 
         respond_with resource if json_request?
 
-        redirect_to new_user_registration_path(
-          plan: params[:plan_type],
-          anon_id: params[:anon_id],
-          first_name: resource.first_name,
-          last_name: resource.last_name,
-          email: resource.email,
-        )
+        session[:reg_plan] = params[:plan_type]
+        session[:reg_anon_id] = params[:anon_id]
+        session[:reg_first_name] = resource.first_name
+        session[:reg_last_name] = resource.last_name
+        session[:reg_email] = resource.email
+
+        if resource.errors[:first_name].present?
+          session[:reg_first_name_error] = "First name #{resource.errors[:first_name][0]}"
+        end
+        if resource.errors[:last_name].present?
+          session[:reg_last_name_error] = "Last name #{resource.errors[:last_name][0]}"
+        end
+        if resource.errors[:email].present?
+          session[:reg_email_error] = "Email #{resource.errors[:email][0]}"
+        end
+        if resource.errors[:password].present?
+          session[:reg_password_error] = "Password #{resource.errors[:password][0]}"
+        end
+        if resource.errors[:password_confirmation].present?
+          session[:reg_password_confirmation_error] = "Password confirmation #{resource.errors[:password_confirmation][0]}"
+        end
+
+        redirect_to new_user_registration_path
       end
     end
 

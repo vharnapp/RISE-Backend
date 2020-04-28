@@ -54,7 +54,11 @@ class ApplicationController < ActionController::Base
       if current_user.active_subscription?
         redirect_to edit_user_registration_path and return
       else
-        redirect_to single_payments_path and return
+        if current_user.team_player?
+          redirect_to edit_user_registration_path and return
+        else
+          redirect_to single_payments_path and return
+        end
       end
     end
   end

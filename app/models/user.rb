@@ -196,6 +196,15 @@ class User < ApplicationRecord
     end
   end
 
+  def team_player?
+    aux = 1
+    if self.player?
+      self.affiliations.count > 0
+    else
+      aux > 0
+    end
+  end
+
   def get_single_payment
     SinglePayment.where(id: self.single_payment_id).first
   end
