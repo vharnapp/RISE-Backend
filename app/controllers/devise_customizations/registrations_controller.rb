@@ -5,7 +5,7 @@ module DeviseCustomizations
       build_resource(sign_up_params)
       
       if resource.email.present?
-        aux_user = ActiveRecord::Base.connection.execute("SELECT COUNT(*) FROM users where email='#{resource.email}'")
+        aux_user = ActiveRecord::Base.connection.execute("SELECT * FROM users where email='#{resource.email}'")
 
         if aux_user.count > 0
           session[:reg_plan] = params[:plan_type]
