@@ -10,7 +10,7 @@
             - if current_user.team_player?
               = link_to 'Clubs', clubs_path
             - else
-              = link_to 'Training Modules', '/single_payments'
+              = link_to 'Training Programs', '/single_payments'
           li
             - if @clubs.present?
               = link_to 'Teams', club_path(@clubs.first)
