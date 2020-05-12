@@ -16,8 +16,8 @@ end
 #  name           :string
 #  price          :float
 #  sort           :integer          default(1)
-#  special_label  :string
-#  specifications :text
+#  special_label  :string           default("")
+#  specifications :text             default("")
 #  string_id      :string
 #  thank_you_link :string
 #  updated_at     :datetime         not null

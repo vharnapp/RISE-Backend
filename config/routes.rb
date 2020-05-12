@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :subscriptions
   resources :single_payments
+  resources :affiliate_discount_codes
 
   resources :unlocked_pyramid_modules, only: [:create, :destroy]
   resources :affiliations, only: [:destroy]
@@ -41,6 +42,7 @@ Rails.application.routes.draw do
     resources :affiliations
     resources :enrollments
     resources :single_payments
+    resources :affiliate_discount_codes
     resources :subscriptions
     resources :temp_teams
     resources :snippets
