@@ -76,7 +76,7 @@ Rails.application.routes.draw do
   get '/unlock-modules-for-club-players/:page' => 'users#unlock_modules_for_club_players'
 
   get '/clubs/:club_id/teams/:id/:page' => 'teams#show'
-  
+  get '/get-teams/:club_id', to: 'teams#get_teams'
 
   authenticated :user do
     root to: 'clubs#index', as: :authenticated_root
@@ -116,6 +116,7 @@ Rails.application.routes.draw do
       jsonapi_resources :teams
       jsonapi_resources :clubs
       jsonapi_resources :snippets
+
     end
   end
 end

@@ -4,5 +4,7 @@
 </header>
 
 <section class="main-content__body">
-	<%= render "form", clubs: @clubs %>
+	<%= form_with(model:@code, scope: :affiliate_discount_code, url: admin_affiliate_discount_codes_path, local: true) do |form| %>	
+		<%= render "form", form: form, clubs: @clubs, teams: @teams %>
+	<% end %>
 </section>

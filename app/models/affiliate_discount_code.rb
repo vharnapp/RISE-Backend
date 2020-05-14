@@ -3,6 +3,10 @@ class AffiliateDiscountCode < ApplicationRecord
 	validates :affiliation_rate, numericality: true
 	validates :discount, numericality: true
 	validates :max_users, numericality: true
+
+  	belongs_to :club 
+  	belongs_to :team
+
 end
 
 # == Schema Information

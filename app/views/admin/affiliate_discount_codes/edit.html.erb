@@ -1,4 +1,10 @@
 <header class="main-content__header">
 	<h1 class="main-content__page-title">Edit Affiliate/Discount Code</h1>
-  <%= link_to "Show Details", "/admin/affiliate_discount_codes/", class: "button" %>
+  <%= link_to "Show Details", "/admin/affiliate_discount_codes/#{ @code[:id] }", class: "button" %>
 </header>
+
+<section class="main-content__body">
+	<%= form_with(model:@code, url: admin_affiliate_discount_code_path, local: true) do |form| %>
+		<%= render "form", form: form, clubs: @clubs, teams: @teams %>
+	<% end %>
+</section>
