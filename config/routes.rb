@@ -65,6 +65,8 @@ Rails.application.routes.draw do
   get '/help' => 'pages#show', id: 'help'
   get '/unauthorized' => 'pages#show', id: 'unauthorized'
 
+  get '/single_payments/:code', to: 'single_payments#index'
+  post '/single_payments/verify_code', to: 'single_payments#verify_code', as: "verify_code"
   get '/purchase_confirmation/:slug', to: 'single_payments#purchase_confirmation'
   get '/thank-you', to: 'single_payments#thank_you'
 

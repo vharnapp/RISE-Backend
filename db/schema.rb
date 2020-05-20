@@ -10,11 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200512121452) do
+ActiveRecord::Schema.define(version: 20200519182158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
+
+  create_table "affiliate_code_purchases", force: :cascade do |t|
+    t.bigint "affiliate_discount_code_id"
+    t.float "affiliate_revenue", default: 0.0, null: false
+    t.bigint "club_id"
+    t.datetime "created_at", null: false
+    t.float "discount", default: 0.0, null: false
+    t.float "discounted_price", default: 0.0, null: false
+    t.float "full_price", default: 0.0, null: false
+    t.string "program_name", default: "", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["affiliate_discount_code_id"], name: "index_affiliate_code_purchases_on_affiliate_discount_code_id"
+    t.index ["club_id"], name: "index_affiliate_code_purchases_on_club_id"
+    t.index ["user_id"], name: "index_affiliate_code_purchases_on_user_id"
+  end
 
   create_table "affiliate_discount_codes", force: :cascade do |t|
     t.integer "affiliation_rate", default: 0, null: false
@@ -362,6 +378,9 @@ ActiveRecord::Schema.define(version: 20200512121452) do
     t.index ["phase_id"], name: "index_workouts_on_phase_id"
   end
 
+  add_foreign_key "affiliate_code_purchases", "affiliate_discount_codes"
+  add_foreign_key "affiliate_code_purchases", "clubs"
+  add_foreign_key "affiliate_code_purchases", "users"
   add_foreign_key "affiliate_discount_codes", "clubs"
   add_foreign_key "affiliate_discount_codes", "teams"
   add_foreign_key "affiliations", "teams"

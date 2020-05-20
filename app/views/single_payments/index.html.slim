@@ -2,6 +2,13 @@
   br
   h3.single-payment-heading Choose The Training Plan That’s Right For You
 
+  = form_tag verify_code_url, class: "verify-code-form"
+    = text_field_tag :affiliate_code, "#{(@affiliateCode.nil? ? "" : @affiliateCode.code)}", placeholder: "Affiliate / Discount code"
+    - if !@affiliateCode.nil?
+      span <strong>Note: </strong> Code #{@affiliateCode.code} is currently applied
+
+    = submit_tag "Redeem code"
+
   .single-payment-section
     -@single_payments.each do |single_payment|
       div.single-payment-container class=( (single_payment.name.downcase.include? "coach") ? "coach" : "")
@@ -9,7 +16,12 @@
           - if single_payment.special_label != ""
             .green-label #{single_payment.special_label}
 
-          .price $#{single_payment.price}
+          - if @affiliateCode.nil? || @affiliateCode.discount == 0
+            .price $#{@prices[single_payment.id]}
+          -else
+            .price.old-price $#{@oldPrices[single_payment.id]}
+            .price.price-discount $#{@prices[single_payment.id]}
+
           .name #{single_payment.name}
 
           div
@@ -18,7 +30,7 @@
                 button.stripe-button-el disabled=true
                   span Purchased
             - else
-              = render 'plan_button', { price: "Buy Now", name: single_payment.name, payment_id: single_payment.id }
+              = render 'plan_button', { button_label: "Buy Now", name: single_payment.name, payment_id: single_payment.id, price: @prices[single_payment.id], affiliate_code_id: (@affiliateCode.nil? ? "" : @affiliateCode.id) }
 
           .specifications 
             ul 

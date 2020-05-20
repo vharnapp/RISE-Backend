@@ -60,6 +60,8 @@ module Admin
 
     def show
       @code = AffiliateDiscountCode.find(params[:id])
+      @code_purchases = AffiliateCodePurchase.where(affiliate_discount_code_id: params[:id])
+      puts @code_purchases.to_json
     end
 
     def destroy

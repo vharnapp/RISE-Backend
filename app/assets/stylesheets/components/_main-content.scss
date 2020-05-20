@@ -157,6 +157,15 @@ $single_payment_green: #92d050;
             font-size: 2em;
             font-weight: bold;
             text-align: center;
+
+            &.old-price {
+                font-size: 1.7em;
+                text-decoration: line-through;
+            }
+
+            &.price-discount {
+                color: $single_payment_green;
+            }
         }
 
         .name {
@@ -211,5 +220,14 @@ $single_payment_green: #92d050;
 select.subheader {
     &#clubs option, &#teams option {
         color: initial;
+    }
+}
+
+.verify-code-form {
+    width: 100%;
+    max-width: 400px;
+
+    .field-section {
+        display: flex;
     }
 }

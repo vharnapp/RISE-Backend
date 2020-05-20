@@ -4,48 +4,97 @@
 </header>
 
 <section class="main-content__body">
-  <dl>
-      <dt class="attribute-label">Code:</dt>
-      <dd class="attribute-data"><%= @code[:code] %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Club:</dt>
-      <dd class="attribute-data"><%= @code.club ? @code.club[:name] : "-" %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Team:</dt>
-      <dd class="attribute-data"><%= @code.team ? @code.team[:name] : "-" %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Contact Name:</dt>
-      <dd class="attribute-data"><%= @code[:contact_name] %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Contact Email:</dt>
-      <dd class="attribute-data"><%= @code[:contact_email] %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Account / Billing Info:</dt>
-      <dd class="attribute-data"><%= @code[:payment_info] %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Affiliation rate:</dt>
-      <dd class="attribute-data"><%= @code[:affiliation_rate] %> %</dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Discount:</dt>
-      <dd class="attribute-data"><%= @code[:discount_type] == "percent" ? "#{@code[:discount]}%" : "$#{@code[:discount]}" %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Max num. of users:</dt>
-      <dd class="attribute-data"><%= @code[:max_users] %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Starts at:</dt>
-      <dd class="attribute-data"><%= @code[:start_date] %></dd>
-  </dl>
-  <dl>
-      <dt class="attribute-label">Ends at:</dt>
-      <dd class="attribute-data"><%= @code[:end_date] %></dd>
-  </dl>
+  <div class="attribute-container">
+    <div class="attribute-label">Code:</div>
+    <div class="attribute-data"><%= @code[:code] %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Club:</div>
+    <div class="attribute-data"><%= @code.club ? @code.club[:name] : "-" %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Team:</div>
+    <div class="attribute-data"><%= @code.team ? @code.team[:name] : "-" %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Contact Name:</div>
+    <div class="attribute-data"><%= @code[:contact_name] %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Contact Email:</div>
+    <div class="attribute-data"><%= @code[:contact_email] %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Account / Billing Info:</div>
+    <div class="attribute-data"><%= @code[:payment_info] %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Affiliation rate:</div>
+    <div class="attribute-data"><%= @code[:affiliation_rate] %> %</div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Discount:</div>
+    <div class="attribute-data"><%= @code[:discount_type] == "percent" ? "#{@code[:discount]}%" : "$#{@code[:discount]}" %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Max num. of users:</div>
+    <div class="attribute-data"><%= @code[:max_users] %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Starts at:</div>
+    <div class="attribute-data"><%= @code[:start_date] %></div>
+  </div>
+  <div class="attribute-container">
+    <div class="attribute-label">Ends at:</div>
+    <div class="attribute-data"><%= @code[:end_date] %></div>
+  </div>
+
+  <table>
+    <tr>
+      <th>User</th>
+      <th>Purchased Program</th>
+      <th>Full Price</th>
+      <th>Discounted Price</th>
+      <th>Discount</th>
+      <th>Affiliate Revenue</th>
+    </tr>
+    <% total_revenue = 0 %>
+    <% @code_purchases.each do |item| %>
+      <% total_revenue += item.affiliate_revenue %>
+      <tr>
+        <td><%= item.user.first_name %> <%= item.user.last_name %></td>
+        <td><%= item.program_name %></td>
+        <td>$<%= item.full_price %></td>
+        <td>$<%= item.discounted_price %></td>
+        <td>$<%= item.discount %></td>
+        <td>$<%= item.affiliate_revenue %></td>
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="5"></td>
+      <td>
+        <strong>Total Revenue</strong><br>
+        <span>$<%= total_revenue %></span>
+      </td>
+    </tr>
+  </table>
 </section>
+
+
+<style>
+  
+.attribute-container {
+    display: flex;
+}
+.attribute-container .attribute-label {
+  float: none;
+  width: auto;
+  flex-basis: 15%;
+}
+
+.attribute-container .attribute-data {
+  float: none;
+  width: auto;
+  flex-basis: 85%;
+}
+</style>
