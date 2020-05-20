@@ -16,7 +16,10 @@ class SinglePaymentsController < ApplicationController
         user_ids = AffiliateCodePurchase.where(affiliate_discount_code_id: aux[0].id).distinct.pluck(:user_id)
       end
 
-      if aux.count > 0 && (user_ids.count < aux[0].max_users || user_ids.include?(current_user.id))
+      if aux.count > 0 && 
+      (user_ids.count < aux[0].max_users || user_ids.include?(current_user.id)) && 
+      (aux[0].start_date.blank? || (!aux[0].start_date.blank? && Date.today >= aux[0].start_date)) &&
+      (aux[0].end_date.blank? || (!aux[0].end_date.blank? && Date.today <= aux[0].end_date))
         @affiliateCode = aux[0]
       else
         flash[:error] = "Code #{params[:code]} is invalid, expired or it was already used by the maximum number of users!"
@@ -53,7 +56,10 @@ class SinglePaymentsController < ApplicationController
         user_ids = AffiliateCodePurchase.where(affiliate_discount_code_id: auxAffiliateCode[0].id).distinct.pluck(:user_id)
       end
 
-      if auxAffiliateCode.count > 0 && (user_ids.count < auxAffiliateCode[0].max_users || user_ids.include?(current_user.id))
+      if auxAffiliateCode.count > 0 &&
+      (user_ids.count < auxAffiliateCode[0].max_users || user_ids.include?(current_user.id)) && 
+      (auxAffiliateCode[0].start_date.blank? || (!auxAffiliateCode[0].start_date.blank? && Date.today >= auxAffiliateCode[0].start_date)) &&
+      (auxAffiliateCode[0].end_date.blank? || (!auxAffiliateCode[0].end_date.blank? && Date.today <= auxAffiliateCode[0].end_date))
         redirect_to "/single_payments?code=#{affiliate_code}"
       else 
         flash[:error] = "Code #{params[:affiliate_code]} is invalid, expired or it was already used by the maximum number of users!"
@@ -77,7 +83,10 @@ class SinglePaymentsController < ApplicationController
       flash[:error] = "You already purchased this package!"
     end
 
-    if auxAffiliateCode.count > 0 && (user_ids.count < auxAffiliateCode[0].max_users || user_ids.include?(current_user.id))
+    if auxAffiliateCode.count > 0 &&
+    (user_ids.count < auxAffiliateCode[0].max_users || user_ids.include?(current_user.id)) &&
+    (auxAffiliateCode[0].start_date.blank? || (!auxAffiliateCode[0].start_date.blank? && Date.today >= auxAffiliateCode[0].start_date)) &&
+    (auxAffiliateCode[0].end_date.blank? || (!auxAffiliateCode[0].end_date.blank? && Date.today <= auxAffiliateCode[0].end_date))
       affiliateCode = auxAffiliateCode[0]
       oldPrice = single_payment.price
       price = (affiliateCode[:discount_type] == "percent" ? (single_payment.price / 100 * (100 - affiliateCode.discount)) : (single_payment.price - affiliateCode.discount)).round(2)
