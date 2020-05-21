@@ -126,4 +126,9 @@ class ApplicationController < ActionController::Base
         :phone
       end
   end
+
+  def handle_unverified_request
+    flash[:error] = 'You have been signed out of your current session'
+    redirect_to "/"
+  end
 end

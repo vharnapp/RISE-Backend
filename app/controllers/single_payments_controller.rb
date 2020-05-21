@@ -44,6 +44,7 @@ class SinglePaymentsController < ApplicationController
   end
 
   def verify_code
+    puts "\n\nGERAPPAAAA\n\n"
     if params[:affiliate_code].blank?
       flash[:error] = "Code can't be blank!"
       redirect_to "/single_payments"

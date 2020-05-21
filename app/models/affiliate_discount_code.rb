@@ -4,6 +4,8 @@ class AffiliateDiscountCode < ApplicationRecord
 	validates :discount, numericality: true
 	validates :max_users, numericality: true
 
+	has_many :affiliate_code_purchase, dependent: :destroy
+
 	belongs_to :club 
 	belongs_to :team
 
