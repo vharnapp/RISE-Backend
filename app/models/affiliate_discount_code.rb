@@ -6,8 +6,8 @@ class AffiliateDiscountCode < ApplicationRecord
 
 	has_many :affiliate_code_purchase, dependent: :destroy
 
-	belongs_to :club 
-	belongs_to :team
+	belongs_to :club, optional: true
+	belongs_to :team, optional: true
 
 end
 

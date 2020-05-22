@@ -1,6 +1,6 @@
 class AffiliateCodePurchase < ApplicationRecord
 	belongs_to :affiliate_discount_code 
-	belongs_to :club 
+	belongs_to :club, optional: true
 	belongs_to :user 
 end
 
