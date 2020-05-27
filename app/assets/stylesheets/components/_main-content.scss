@@ -226,8 +226,15 @@ select.subheader {
 .verify-code-form {
     width: 100%;
     max-width: 400px;
+    margin: 0 auto 20px;
 
     .field-section {
         display: flex;
+    }
+
+    input[type="submit"] {
+        background-color: $single_payment_green;
+        line-height: initial;
+        height: auto;
     }
 }

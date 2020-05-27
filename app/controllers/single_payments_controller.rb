@@ -22,7 +22,7 @@ class SinglePaymentsController < ApplicationController
       (aux[0].end_date.blank? || (!aux[0].end_date.blank? && Date.today <= aux[0].end_date))
         @affiliateCode = aux[0]
       else
-        flash[:error] = "Code #{params[:code]} is invalid, expired or it was already used by the maximum number of users!"
+        flash[:error] = "Code #{params[:code]} is invalid, expired or it was already used by the maximum number of users"
         redirect_to "/single_payments"
       end
     end
@@ -62,7 +62,7 @@ class SinglePaymentsController < ApplicationController
       (auxAffiliateCode[0].end_date.blank? || (!auxAffiliateCode[0].end_date.blank? && Date.today <= auxAffiliateCode[0].end_date))
         redirect_to "/single_payments?code=#{affiliate_code}"
       else 
-        flash[:error] = "Code #{params[:affiliate_code]} is invalid, expired or it was already used by the maximum number of users!"
+        flash[:error] = "Code #{params[:affiliate_code]} is invalid, expired or it was already used by the maximum number of users"
         redirect_to "/single_payments"
       end
     end

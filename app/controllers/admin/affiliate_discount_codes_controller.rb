@@ -60,7 +60,7 @@ module Admin
 
     def show
       @code = AffiliateDiscountCode.find(params[:id])
-      @code_purchases = AffiliateCodePurchase.where(affiliate_discount_code_id: params[:id])
+      @code_purchases = AffiliateCodePurchase.where(affiliate_discount_code_id: params[:id]).order(created_at: :desc)
       puts @code_purchases.to_json
     end
 

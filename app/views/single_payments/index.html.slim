@@ -3,7 +3,7 @@
   h3.single-payment-heading Choose The Training Plan That’s Right For You
 
   = form_tag verify_code_url, class: "verify-code-form"
-    = text_field_tag :affiliate_code, "#{(@affiliateCode.nil? ? "" : @affiliateCode.code)}", placeholder: "Affiliate / Discount code"
+    = text_field_tag :affiliate_code, "#{(@affiliateCode.nil? ? "" : @affiliateCode.code)}", placeholder: "Promo / Discount code"
     - if !@affiliateCode.nil?
       span <strong>Note: </strong> Code #{@affiliateCode.code} is currently applied
 

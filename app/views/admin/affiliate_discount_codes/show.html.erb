@@ -51,6 +51,7 @@
 
   <table>
     <tr>
+      <th>Purchase Date</th>
       <th>User</th>
       <th>Purchased Program</th>
       <th>Full Price</th>
@@ -62,6 +63,7 @@
     <% @code_purchases.each do |item| %>
       <% total_revenue += item.affiliate_revenue %>
       <tr>
+        <td><%= item.created_at.strftime("%F") %></td>
         <td><%= item.user.first_name %> <%= item.user.last_name %></td>
         <td><%= item.program_name %></td>
         <td>$<%= item.full_price %></td>
@@ -71,7 +73,7 @@
       </tr>
     <% end %>
     <tr>
-      <td colspan="5"></td>
+      <td colspan="6"></td>
       <td>
         <strong>Total Revenue</strong><br>
         <span>$<%= total_revenue %></span>
