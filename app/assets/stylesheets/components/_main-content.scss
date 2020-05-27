@@ -237,4 +237,8 @@ select.subheader {
         line-height: initial;
         height: auto;
     }
+
+    input[type="submit"]:focus {
+        outline: 3px solid rgba($single_payment_green);
+    }
 }
