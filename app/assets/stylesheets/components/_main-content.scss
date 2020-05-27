@@ -233,6 +233,7 @@ select.subheader {
     }
 
     input[type="submit"] {
+        background: $single_payment_green;
         background-color: $single_payment_green;
         line-height: initial;
         height: auto;
