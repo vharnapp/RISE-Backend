@@ -10,7 +10,7 @@ as defined by the routes in the `admin/` namespace
 <nav class="navigation" role="navigation">
   <% resources_for_sidebar_nav.each do |resource| %>
     <%= link_to(
-      display_resource_name(resource),
+      ( display_resource_name(resource) == "Affiliate Discount Codes" ? "Affiliate/Discount Codes" : display_resource_name(resource) ),
       [namespace, resource.path],
       class: "navigation__link navigation__link--#{nav_link_state(resource)}"
     ) %>

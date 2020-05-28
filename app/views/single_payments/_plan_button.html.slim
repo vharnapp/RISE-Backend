@@ -6,12 +6,13 @@
     class="stripe-button"
     data-key="#{ENV['STRIPE_PUBLISHABLE_KEY']}"
     data-locale="auto"
-    data-label="#{price}"
+    data-label="#{button_label}"
     data-name="#{name}"
-    data-description="#{price}"
+    data-description="$#{price}"
     data-email="#{current_user.email}"
   }
   = hidden_field_tag 'payment_id', payment_id
+  = hidden_field_tag 'affiliate_code_id', affiliate_code_id
 
 sass:
   button.stripe-button-el

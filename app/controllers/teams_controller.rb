@@ -42,4 +42,17 @@ class TeamsController < ApplicationController
     @players = @team.players.order('LOWER(first_name) asc').order('LOWER(last_name) asc').limit(player_per_page).offset(offset)
     @pyramid_modules = PyramidModule.where('level < ?', 5).order(:position)
   end
+
+  def get_teams
+    @team = Team.select(:id, :name).where(club_id: params[:club_id])
+    
+    #json_request json: @team.to_json.to_json
+
+    #respond_to do |format|
+    #  format.html { render html: "Hello World!" }
+    #  format.json { render json: @team.to_json }
+    #end
+
+    render json: @team.to_json
+  end
 end

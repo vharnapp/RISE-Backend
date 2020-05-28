@@ -1,0 +1,203 @@
+
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Code:</label></div>
+  <div class="field-unit__field">
+    <%= form.text_field :code %>
+    <% if @code.errors && @code.errors[:code] && @code.errors[:code][0] %>
+    <div style="color: red">Code <%= @code.errors[:code][0] %> </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Club:</label></div>
+  <div class="field-unit__field">
+      <%= form.select :club_id, options_for_select(@clubs.map{|s|[s.name, s.id]}, @code[:club_id]), {prompt: "Select a club", include_blank: true}, {id: "codes_club_select"} %>
+  </div> 
+</div>
+
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Team:</label></div>
+  <div class="field-unit__field">
+    <%= form.select :team_id, options_for_select(@teams.map{|s|[s.name, s.id]}, @code[:team_id]), {prompt: "Select a team", include_blank: true}, {id: "codes_team_select"} %>
+  </div>
+</div>
+
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Contact Name:</label></div>
+  <div class="field-unit__field">
+    <%= form.text_field :contact_name %>
+    <% if @code.errors[:contact_name][0] %>
+    <div style="color: red"><%= @code.errors[:contact_name][0] %> </div>
+    <% end %>
+  </div>
+</div>
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Contact Email:</label></div>
+  <div class="field-unit__field">
+    <%= form.text_field :contact_email, type: "email" %>
+    <% if @code.errors[:contact_email][0] %>
+    <div style="color: red"><%= @code.errors[:contact_email][0] %> </div>
+    <% end %>
+  </div>
+</div>
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Account / Billing Info:</label></div>
+  <div class="field-unit__field">
+    <%= form.text_field :payment_info %>
+    <% if @code.errors[:payment_info][0] %>
+    <div style="color: red"><%= @code.errors[:payment_info][0] %> </div>
+    <% end %>
+  </div>
+</div>
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Affiliation rate:</label></div>
+  <div class="field-unit__field code-affiliation-rate">
+    <%= form.text_field :affiliation_rate, {id: "codeAffiliationRate"} %> %
+    <% if @code.errors[:affiliation_rate][0] %>
+    <div style="color: red"><%= @code.errors[:affiliation_rate][0] %> </div>
+    <% end %>
+  </div>
+</div>
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Discount type:</label></div>
+  <div class="field-unit__field">
+    <div style="min-width: 160px; float: left;"><label><%= form.radio_button :discount_type, "amount", checked: (@code.discount_type != "percent") %> $ Amount</label></div>
+    <div style="min-width: 160px; float: left;"><label><%= form.radio_button :discount_type, "percent", checked: (@code.discount_type == "percent") %> % Percent</label></div>
+  </div>
+</div>
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Discount:</label></div>
+  <div class="field-unit__field code-discount <%= @code.discount_type == 'percent' ? ' percent' : ' amount' %>">
+    <%= form.text_field :discount %>
+    <% if @code.errors[:discount][0] %>
+    <div style="color: red"><%= @code.errors[:discount][0] %> </div>
+    <% end %>
+  </div>
+</div>
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Max num. of users:</label></div>
+  <div class="field-unit__field">
+    <%= form.text_field :max_users %>
+    <% if @code.errors[:max_users][0] %>
+    <div style="color: red"><%= @code.errors[:max_users][0] %> </div>
+    <% end %>
+  </div>
+</div> 
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Starts at:</label></div>
+  <div class="field-unit__field">
+    <%= form.text_field :start_date, type: "date" %>
+    <% if @code.errors[:start_date][0] %>
+    <div style="color: red"><%= @code.errors[:start_date][0] %> </div>
+    <% end %>
+  </div>
+</div> 
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label"><label>Ends at:</label></div>
+  <div class="field-unit__field">
+    <%= form.text_field :end_date, type: "date" %>
+    <% if @code.errors[:end_date][0] %>
+    <div style="color: red"><%= @code.errors[:end_date][0] %> </div>
+    <% end %>
+  </div>
+</div> 
+<div class="field-unit field-unit--string">
+  <label class="field-unit__label"></label>
+  <div class="field-unit__field"><%= form.submit %></div>
+</div>
+
+<style>
+  #codeAffiliationRate {
+    max-width: 50px;
+    display: inline;
+    text-align: center;
+  }
+
+  .code-affiliation-rate .field_with_errors {
+    display: inline;
+  }
+
+  .code-discount {
+    position: relative;
+  }
+
+  .code-discount.percent:after, .code-discount.amount:before {
+    position: absolute;
+    width: 36px;
+    text-align: center;
+    height: 36px;
+    padding: 0.5em 0;
+    font-size: 1.1em;
+    line-height: 100%;
+    top: 0;
+  }
+
+  .code-discount.percent:after {
+    content: "%";
+    left: 60px;
+    border-left: solid 1px #b2b3b4;
+  }
+
+  .code-discount.percent input {
+    padding-right: 50px;
+    text-align: right;
+    max-width: 100px;
+    height: 36px;
+    line-height: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .code-discount.amount:before {
+    content: "$";
+    left: 0;
+    border-right: solid 1px #b2b3b4;
+  }
+
+  .code-discount.amount input {
+    padding-left: 50px;
+    max-width: 100px;
+    height: 36px;
+    line-height: 36px;
+  }
+</style>
+
+<script type="text/javascript">
+
+  var codeRadio = document.querySelectorAll("input[name=\"affiliate_discount_code[discount_type]\"]")
+  for (var i = 0; i < codeRadio.length; i++) {
+    codeRadio[i].addEventListener("change", function() {
+      if (this.value === "percent") {
+        document.querySelector('.code-discount').classList.remove('amount');
+        document.querySelector('.code-discount').classList.add('percent');
+      } else {
+        document.querySelector('.code-discount').classList.remove('percent');
+        document.querySelector('.code-discount').classList.add('amount');
+      }
+    });
+  }
+
+  var $club = $('#codes_club_select').selectize({
+    onChange: function(club_id) {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        teamSelectize.clearOptions();
+        if (this.readyState == 4 && this.status == 200) {
+          var responseArray = JSON.parse(this.response);
+          responseArray.forEach(function(item){
+            teamSelectize.addOption({value: item.id, text: item.name});
+          });
+          teamSelectize.refreshOptions();
+        }
+      };
+      xhttp.open("GET", "/get-teams/" + club_id, true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send("fname=Henry&lname=Ford");
+    },
+  });
+  var $team = $('#codes_team_select').selectize();
+  var clubSelectize = $club[0].selectize;
+  var teamSelectize = $team[0].selectize;
+
+</script>

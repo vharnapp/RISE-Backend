@@ -1,0 +1,51 @@
+<header class="main-content__header">
+  <h1 class="main-content__page-title" id="page-title">Affiliate/Discount Codes</h1>
+  <form class="search">
+  	<label class="search__label">
+    	<svg class="search__eyeglass-icon" role="img"><title>Search Single Payments</title><use xlink:href="#icon-eyeglass"></use></svg>
+    </label>
+  	<input class="search__input" id="search" type="search" name="search" placeholder="Search Codes" value="">
+  	<a class="search__clear-link" href="/admin/affiliate_discount_codes?direction=asc&amp;order=position"><svg class="search__clear-icon" role="img"><title>Clear search</title><use xlink:href="#icon-cancel"></use></svg></a>
+	</form>
+  <%= link_to "New Affiliate/Discount Code", "/admin/affiliate_discount_codes/new", class: "button" %>
+</header>
+
+
+<table class="table table-responsive" aria-labelledby="page-title" data-sortable-parent-model-id="" data-sortable-model="SinglePayment" data-resource-model="SinglePayment" data-sortable-update-endpoint="/admin/sort">
+	<thead>
+    <tr>
+			<th class="cell-label cell-label--string cell-label--false" scope="col" role="columnheader" aria-sort="none">
+        <a href="/admin/affiliate_discount_codes?direction=<%= params[:order] == "name" && params[:direction] == "asc" ? "desc" : "asc" %>&amp;order=name">Code</a>
+      </th>
+      <th class="cell-label cell-label--string cell-label--false" scope="col" role="columnheader" aria-sort="none">Club</th>
+      <th class="cell-label cell-label--string cell-label--false" scope="col" role="columnheader" aria-sort="none">Team</th>
+      <th class="cell-label cell-label--string cell-label--false" scope="col" role="columnheader" aria-sort="none">Discount</th>
+      <!--
+      <th class="cell-label cell-label--string cell-label--false" scope="col" role="columnheader" aria-sort="none">
+      	<a href="/admin/affiliate_discount_codes?direction=asc&amp;order=thank_you_link">Thank You Link</a>
+      </th>
+      <th class="cell-label cell-label--has-many cell-label--false" scope="col" role="columnheader" aria-sort="none">
+      	<a href="/admin/affiliate_discount_codes?direction=asc&amp;order=pyramid_modules">Pyramid Modules</a>
+      </th>
+      <th class="cell-label cell-label--date-time cell-label--false" scope="col" role="columnheader" aria-sort="none">
+      	<a href="/admin/affiliate_discount_codes?direction=asc&amp;order=created_at">Created At</a>
+      </th>-->
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  	<% @resources.each do |resource| %>
+    <tr class="js-table-row ui-sortable-handle">
+      <td class="cell-data cell-data--string"><%= resource.code %></td>
+      <td class="cell-data cell-data--string"><%= resource.club ? resource.club[:name] : "-" %></td>
+      <td class="cell-data cell-data--string"><%= resource.team ? resource.team[:name] : "-" %></td>
+      <td class="cell-data cell-data--string"><%= resource.discount_type == "percent" ? "#{resource.discount}%" : "$#{resource.discount}" %></td>
+      <td><a class="action-edit" href="/admin/affiliate_discount_codes/<%= resource.id %>">Show</a></td>
+      <td><a class="action-edit" href="/admin/affiliate_discount_codes/<%= resource.id %>/edit">Edit</a></td>
+      <td><a class="text-color-red" data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/admin/affiliate_discount_codes/<%= resource.id %>">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

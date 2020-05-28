@@ -111,7 +111,7 @@ $single_payment_green: #92d050;
 .single-payment-heading {
     text-align: center;
     font-weight: bold;
-    margin: 1em auto 2em;
+    margin: 0.8em auto 1.6em;
     padding: 0;
 }
 
@@ -157,6 +157,15 @@ $single_payment_green: #92d050;
             font-size: 2em;
             font-weight: bold;
             text-align: center;
+
+            &.old-price {
+                font-size: 1.7em;
+                text-decoration: line-through;
+            }
+
+            &.price-discount {
+                color: $single_payment_green;
+            }
         }
 
         .name {
@@ -211,5 +220,26 @@ $single_payment_green: #92d050;
 select.subheader {
     &#clubs option, &#teams option {
         color: initial;
+    }
+}
+
+.verify-code-form {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+
+    .field-section {
+        display: flex;
+    }
+
+    input[type="submit"] {
+        background: $single_payment_green;
+        background-color: $single_payment_green;
+        line-height: initial;
+        height: auto;
+    }
+
+    input[type="submit"]:focus {
+        outline: 3px solid rgba(146, 208, 80, 0.6)
     }
 }

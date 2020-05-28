@@ -10,11 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200423123234) do
+ActiveRecord::Schema.define(version: 20200519182158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
+
+  create_table "affiliate_code_purchases", force: :cascade do |t|
+    t.bigint "affiliate_discount_code_id"
+    t.float "affiliate_revenue", default: 0.0, null: false
+    t.bigint "club_id"
+    t.datetime "created_at", null: false
+    t.float "discount", default: 0.0, null: false
+    t.float "discounted_price", default: 0.0, null: false
+    t.float "full_price", default: 0.0, null: false
+    t.string "program_name", default: "", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["affiliate_discount_code_id"], name: "index_affiliate_code_purchases_on_affiliate_discount_code_id"
+    t.index ["club_id"], name: "index_affiliate_code_purchases_on_club_id"
+    t.index ["user_id"], name: "index_affiliate_code_purchases_on_user_id"
+  end
+
+  create_table "affiliate_discount_codes", force: :cascade do |t|
+    t.integer "affiliation_rate", default: 0, null: false
+    t.bigint "club_id"
+    t.string "code", default: "code123", null: false
+    t.string "contact_email", default: "", null: false
+    t.string "contact_name", default: "", null: false
+    t.datetime "created_at", null: false
+    t.integer "discount", default: 0, null: false
+    t.string "discount_type", default: "amount", null: false, comment: "accepted values: value or percent"
+    t.date "end_date"
+    t.integer "max_users", default: 1, null: false
+    t.string "payment_info", default: "", null: false
+    t.date "start_date"
+    t.bigint "team_id"
+    t.datetime "updated_at", null: false
+    t.index ["club_id"], name: "index_affiliate_discount_codes_on_club_id"
+    t.index ["team_id"], name: "index_affiliate_discount_codes_on_team_id"
+  end
 
   create_table "affiliations", force: :cascade do |t|
     t.boolean "coach", default: false, null: false
@@ -220,8 +255,8 @@ ActiveRecord::Schema.define(version: 20200423123234) do
     t.string "name"
     t.float "price"
     t.integer "sort", default: 1
-    t.string "special_label"
-    t.text "specifications"
+    t.string "special_label", default: ""
+    t.text "specifications", default: ""
     t.string "string_id"
     t.string "thank_you_link"
     t.datetime "updated_at", null: false
@@ -343,6 +378,11 @@ ActiveRecord::Schema.define(version: 20200423123234) do
     t.index ["phase_id"], name: "index_workouts_on_phase_id"
   end
 
+  add_foreign_key "affiliate_code_purchases", "affiliate_discount_codes"
+  add_foreign_key "affiliate_code_purchases", "clubs"
+  add_foreign_key "affiliate_code_purchases", "users"
+  add_foreign_key "affiliate_discount_codes", "clubs"
+  add_foreign_key "affiliate_discount_codes", "teams"
   add_foreign_key "affiliations", "teams"
   add_foreign_key "affiliations", "users"
   add_foreign_key "archieved_user_payments", "users"

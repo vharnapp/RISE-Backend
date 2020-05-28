@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :subscriptions
   resources :single_payments
+  resources :affiliate_discount_codes
 
   resources :unlocked_pyramid_modules, only: [:create, :destroy]
   resources :affiliations, only: [:destroy]
@@ -41,6 +42,7 @@ Rails.application.routes.draw do
     resources :affiliations
     resources :enrollments
     resources :single_payments
+    resources :affiliate_discount_codes
     resources :subscriptions
     resources :temp_teams
     resources :snippets
@@ -63,6 +65,8 @@ Rails.application.routes.draw do
   get '/help' => 'pages#show', id: 'help'
   get '/unauthorized' => 'pages#show', id: 'unauthorized'
 
+  get '/single_payments/:code', to: 'single_payments#index'
+  post '/single_payments/verify_code', to: 'single_payments#verify_code', as: "verify_code"
   get '/purchase_confirmation/:slug', to: 'single_payments#purchase_confirmation'
   get '/thank-you', to: 'single_payments#thank_you'
 
@@ -74,7 +78,7 @@ Rails.application.routes.draw do
   get '/unlock-modules-for-club-players/:page' => 'users#unlock_modules_for_club_players'
 
   get '/clubs/:club_id/teams/:id/:page' => 'teams#show'
-  
+  get '/get-teams/:club_id', to: 'teams#get_teams'
 
   authenticated :user do
     root to: 'clubs#index', as: :authenticated_root
@@ -114,6 +118,7 @@ Rails.application.routes.draw do
       jsonapi_resources :teams
       jsonapi_resources :clubs
       jsonapi_resources :snippets
+
     end
   end
 end

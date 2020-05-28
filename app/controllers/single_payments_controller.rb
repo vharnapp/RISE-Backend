@@ -8,27 +8,95 @@ class SinglePaymentsController < ApplicationController
 
 
   def index
+    @affiliateCode = nil
+    if (!params[:code].blank? && params[:code] != "code123")
+      aux = AffiliateDiscountCode.where(code: params[:code])
+      user_ids = []
+      if aux.count > 0
+        user_ids = AffiliateCodePurchase.where(affiliate_discount_code_id: aux[0].id).distinct.pluck(:user_id)
+      end
+
+      if aux.count > 0 && 
+      (user_ids.count < aux[0].max_users || user_ids.include?(current_user.id)) && 
+      (aux[0].start_date.blank? || (!aux[0].start_date.blank? && Date.today >= aux[0].start_date)) &&
+      (aux[0].end_date.blank? || (!aux[0].end_date.blank? && Date.today <= aux[0].end_date))
+        @affiliateCode = aux[0]
+      else
+        flash[:error] = "Code #{params[:code]} is invalid, expired or it was already used by the maximum number of users"
+        redirect_to "/single_payments"
+      end
+    end
+
     @single_payments = SinglePayment.where("price > 0")
     @specifications = {}
+    @prices = {}
+    @oldPrices = {}
 
     @single_payments.each do |single_payment|
       @specifications[single_payment.id] = single_payment.specifications.split("\r\n")
+      @oldPrices[single_payment.id] = single_payment.price
+      if @affiliateCode.nil? || @affiliateCode.discount == 0
+        @prices[single_payment.id] = single_payment.price
+      else
+        @prices[single_payment.id] = (@affiliateCode.discount_type == "percent" ? (single_payment.price / 100 * (100 - @affiliateCode.discount)) : (single_payment.price - @affiliateCode.discount)).round(2)
+      end
+    end
+  end
+
+  def verify_code
+    if params[:affiliate_code].blank?
+      flash[:error] = "Code can't be blank!"
+      redirect_to "/single_payments"
+    else
+      affiliate_code = params[:affiliate_code]
+      auxAffiliateCode = AffiliateDiscountCode.where(code: affiliate_code)
+      user_ids = []
+
+      if auxAffiliateCode.count > 0
+        user_ids = AffiliateCodePurchase.where(affiliate_discount_code_id: auxAffiliateCode[0].id).distinct.pluck(:user_id)
+      end
+
+      if auxAffiliateCode.count > 0 &&
+      (user_ids.count < auxAffiliateCode[0].max_users || user_ids.include?(current_user.id)) && 
+      (auxAffiliateCode[0].start_date.blank? || (!auxAffiliateCode[0].start_date.blank? && Date.today >= auxAffiliateCode[0].start_date)) &&
+      (auxAffiliateCode[0].end_date.blank? || (!auxAffiliateCode[0].end_date.blank? && Date.today <= auxAffiliateCode[0].end_date))
+        redirect_to "/single_payments?code=#{affiliate_code}"
+      else 
+        flash[:error] = "Code #{params[:affiliate_code]} is invalid, expired or it was already used by the maximum number of users"
+        redirect_to "/single_payments"
+      end
     end
   end
 
   def create
     payment_id = params[:payment_id]
+    affiliate_code_id = params[:affiliate_code_id]
     token = params[:stripeToken]
     single_payment = SinglePayment.find(payment_id)
+    price = single_payment.price
+    auxAffiliateCode = AffiliateDiscountCode.where(id: affiliate_code_id)
+    affiliateCode = {}
+    stripe_description = "#{single_payment.name} - Charge for #{current_user.email}"
+    user_ids = AffiliateCodePurchase.where(affiliate_discount_code_id: affiliate_code_id).distinct.pluck(:user_id)
 
     if current_user.has_archieved_user_payment(single_payment.id)
       flash[:error] = "You already purchased this package!"
     end
 
+    if auxAffiliateCode.count > 0 &&
+    (user_ids.count < auxAffiliateCode[0].max_users || user_ids.include?(current_user.id)) &&
+    (auxAffiliateCode[0].start_date.blank? || (!auxAffiliateCode[0].start_date.blank? && Date.today >= auxAffiliateCode[0].start_date)) &&
+    (auxAffiliateCode[0].end_date.blank? || (!auxAffiliateCode[0].end_date.blank? && Date.today <= auxAffiliateCode[0].end_date))
+      affiliateCode = auxAffiliateCode[0]
+      oldPrice = single_payment.price
+      price = (affiliateCode[:discount_type] == "percent" ? (single_payment.price / 100 * (100 - affiliateCode.discount)) : (single_payment.price - affiliateCode.discount)).round(2)
+      stripe_description = "#{single_payment.name} - Charge for #{current_user.email} with affiliate/discount code #{affiliateCode.code}"
+    end
+
     stripe_response = Stripe::Charge.create(
-      amount: Integer(single_payment.price * 100),
+      amount: Integer(price * 100),
       currency: 'usd',
-      description: "#{single_payment.name} - Charge for #{current_user.email}",
+      description: stripe_description,
       receipt_email: current_user.email,
       source: token,
     )
@@ -36,6 +104,18 @@ class SinglePaymentsController < ApplicationController
     current_user.update_column(:stripe_payment_id, stripe_response.id)
     current_user.update_column(:single_payment_id, payment_id)
     ArchievedUserPayment.create(single_payment_id: single_payment.id, user_id: current_user.id, payment_name: single_payment.name, payment_price: single_payment.price, payment_stripe_id: stripe_response.id)
+
+    if auxAffiliateCode.count > 0 && (user_ids.count < auxAffiliateCode[0].max_users || user_ids.include?(current_user.id))
+      affiliate_discount_code_id = affiliate_code_id
+      club_id = affiliateCode.club_id
+      user_id = current_user.id
+      program_name = single_payment.name
+      full_price = oldPrice
+      discount = oldPrice - price
+      discounted_price = price
+      affiliate_revenue = (price / 100 * affiliateCode.affiliation_rate).round(2)
+      AffiliateCodePurchase.create(affiliate_discount_code_id: affiliate_discount_code_id, club_id: club_id, user_id: user_id, program_name: program_name, full_price: full_price, discount: discount, discounted_price: discounted_price, affiliate_revenue: affiliate_revenue)
+    end
 
     single_payment.pyramid_modules.each do |pyramid_module|
       if UnlockedPyramidModule.where(pyramid_module_id: pyramid_module.id).where(user_id: current_user.id).empty? 
