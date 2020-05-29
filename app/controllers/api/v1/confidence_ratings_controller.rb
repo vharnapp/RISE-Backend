@@ -2,6 +2,7 @@ module Api
   module V1
     class ConfidenceRatingsController < BaseApiController
       load_and_authorize_resource
+      skip_before_action :verify_authenticity_token, only: [:update, :create]
 
       def index
         json =

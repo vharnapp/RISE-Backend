@@ -2,6 +2,7 @@ module Api
   module V1
     class UnlockedPyramidModulesController < BaseApiController
       load_and_authorize_resource
+      skip_before_action :verify_authenticity_token, only: [:update, :create]
 
       def index
         
@@ -22,6 +23,14 @@ module Api
           end
 
           unlocked_pyramid_modules = current_user.unlocked_pyramid_modules.where(pyramid_module_id: pyramid_module_ids).includes(:pyramid_module)
+
+          # The player didn't bought any programs and he isn't member of a team
+          # the restrictions to the starting modules must have applied to him
+          if single_payment_ids.count == 0
+            unlocked_pyramid_modules.each do |item|
+              item.has_restriction = 1
+            end
+          end
         end
 
         #if unlocked_pyramid_modules.blank? || (unlocked_pyramid_modules.present? && unlocked_pyramid_modules.map(&:pyramid_module_id) == [PyramidModule.find_by(level: 5).id])

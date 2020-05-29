@@ -6,7 +6,7 @@ module Api
       load_and_authorize_resource(except: :create)
       skip_authorization_check(only: :create)
       skip_before_action :authenticate_user!, only: :create
-      skip_before_action :verify_authenticity_token, only: :create
+      skip_before_action :verify_authenticity_token, only: [:create, :update]
 
       def index
         jsonapi_render json: User.all
@@ -18,12 +18,10 @@ module Api
       end
 
       def create
-        puts "GERAPPAAA 0"
         free_payment = SinglePayment.where(price: 0).first
         @user = User.new(user_params)
         @user.roles << :player
         @user.single_payment_id = free_payment.id
-        puts "GERAPPAAA"
         if @user.save
 
           free_payment.pyramid_modules.each do |pyramid_module|

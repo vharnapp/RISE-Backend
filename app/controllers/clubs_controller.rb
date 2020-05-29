@@ -2,7 +2,6 @@ class ClubsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @clubs = @clubs.includes(:administrators)
 
     # TODO: (2018-01-13) jon => remove this if the subscriptions_controller#check_subscription method covers the same use case
     if @clubs.blank?
@@ -14,6 +13,8 @@ class ClubsController < ApplicationController
 
       redirect_to '/help' and return
     end
+    
+    @clubs = @clubs.includes(:administrators)
 
     first_club_path = club_path(@clubs.first)
     redirect_to first_club_path if @clubs.length == 1 || current_user.coach?

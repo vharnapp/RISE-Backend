@@ -2,6 +2,7 @@ module Api
   module V1
     class AffiliationsController < BaseApiController
       authorize_resource
+      skip_before_action :verify_authenticity_token, only: :create
 
       # rubocop:disable Metrics/MethodLength
       def create
