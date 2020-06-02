@@ -6,11 +6,14 @@
           li.menu-text
             = link_to root_path do
               = image_tag 'rise-logo-green.png', class:'logo'
-          li
-            - if current_user.team_player?
+          - if current_user.team_player?
+            li
               = link_to 'Clubs', clubs_path
-            - else
+
+          - if !(current_user.subscriptions.merge(Subscription.current).present? || (current_user.subscription&.current? == true))
+            li
               = link_to 'Training Programs', '/single_payments'
+
           li
             - if @clubs.present?
               = link_to 'Teams', club_path(@clubs.first)
