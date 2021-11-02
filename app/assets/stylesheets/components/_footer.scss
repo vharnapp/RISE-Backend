@@ -1,0 +1,25 @@
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px 0 0 0;
+  margin-top: 2em;
+  background: black;
+  font-size: 12px;
+  text-align: center;
+  font-weight: normal;
+  height: 70px;
+  color: white;
+}
+.footer a {
+  color: $primary;
+  line-height: 26px;
+}
+.footer ul li {
+  float: right;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  line-height: 26px;
+}

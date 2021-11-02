@@ -1,0 +1,15 @@
+.black-page
+  = render 'devise/shared/top_logo'
+
+  .row.columns.margin-t-15
+    .small-10.small-offset-1.medium-4.medium-offset-4.margin-t-35
+      = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .form-inputs
+          = f.input :email, required: false, autofocus: true
+          = f.input :password, required: false
+          = hidden_field_tag :plan_type, params[:plan]
+
+        .form-actions
+          = f.button :submit, 'Sign in'
+
+      = render 'devise/shared/links'

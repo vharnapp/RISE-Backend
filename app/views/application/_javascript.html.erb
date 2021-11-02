@@ -1,0 +1,16 @@
+<%= render 'application/rollbar_js' %>
+
+<%= javascript_include_tag :application, 'data-turbolinks-eval' => false %>
+
+<%= yield :javascript %>
+
+<%= render "analytics" %>
+<%= render "analytics_identify" %>
+
+
+<% if Rails.env.test? %>
+  <%= javascript_tag do %>
+    $.fx.off = true;
+    $.ajaxSetup({ async: false });
+  <% end %>
+<% end %>

@@ -1,0 +1,245 @@
+$single_payment_green: #92d050;
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.thank-you-section {
+    margin-bottom: 2em;
+
+    h4 {
+        font-size: 1.125em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+
+    .thank-you-modules {
+        list-style-type: disc;
+
+        li {
+            font-size: 1.125em;
+            list-style-type: initial;
+            list-style-position: inside;
+        }
+
+        &.two-columns {
+            column-count: 2;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &.three-columns {
+            column-count: 3;
+        }
+    }
+}
+
+.pagination.team-pagination {
+    a {
+        color: #3adb76;
+        margin: 0.25em;
+
+        &.active {
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
+
+.welcome-section {
+    margin-top: 1.5em;
+
+    .welcome-heading {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+}
+
+.margin-left-0 {
+    margin-left: 0!important;
+}
+
+.mb-30 {
+    margin-bottom: 30px!important;
+}
+
+.green-label {
+    background-color: $single_payment_green;
+}
+
+.badge-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    max-width: 450px;
+}
+
+.social-image-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 300px;
+    margin: 0 auto;
+
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+.thank-you-bigger {
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+}
+
+.single-payment-section {
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-payment-heading {
+    text-align: center;
+    font-weight: bold;
+    margin: 0.8em auto 1.6em;
+    padding: 0;
+}
+
+.single-payment-container {
+    padding: 0 10px;
+    margin-bottom: 30px;
+    width: 100%;
+
+
+    @media(min-width: 40em) {
+        width: 50%
+    }
+
+    @media(min-width: 64em) {
+        width: 24.2%;
+    }
+
+    &.coach {
+        margin-left: auto;
+    }
+
+    .single-payment {
+        border: solid 2px $single_payment_green;
+        padding: 70px 12px 30px;
+        position: relative;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .green-label {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            width: 100%;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.25em;
+            line-height: 30px;
+            padding: 5px 0;
+        }
+
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+
+            &.old-price {
+                font-size: 1.7em;
+                text-decoration: line-through;
+            }
+
+            &.price-discount {
+                color: $single_payment_green;
+            }
+        }
+
+        .name {
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px auto;
+            text-transform: uppercase;
+        }
+
+        button.stripe-button-el {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+
+            span {
+                background-color: $single_payment_green;
+                font-size: 1.25em;
+                color: #fff;
+                padding: 4px 30px;
+                height: auto;
+            }
+        }
+
+        .specifications {
+            margin-top: 20px;
+
+            ul li {
+                display: flex;
+                margin-bottom: 8px;
+
+                svg {
+                    margin: auto 10px auto 0;
+                }
+                span {
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+
+.reg-error {
+    color: red;
+    font-size: 0.75rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+select.subheader {
+    &#clubs option, &#teams option {
+        color: initial;
+    }
+}
+
+.verify-code-form {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+
+    .field-section {
+        display: flex;
+    }
+
+    input[type="submit"] {
+        background: $single_payment_green;
+        background-color: $single_payment_green;
+        line-height: initial;
+        height: auto;
+    }
+
+    input[type="submit"]:focus {
+        outline: 3px solid rgba(146, 208, 80, 0.6)
+    }
+}

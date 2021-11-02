@@ -1,0 +1,42 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    meta[name="ROBOTS" content="NOODP"]
+    meta[name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"]
+    meta[name="apple-mobile-web-app-capable" content="yes"]
+    meta[name="mobile-web-app-capable" content="yes"]
+    meta[name="apple-mobile-web-app-status-bar-style" content="black-translucent"]
+    - # Configure default and controller-, and view-specific titles in
+    - # config/locales/en.yml. For more see:
+    - # https://github.com/calebthompson/title#usage
+    title
+      = title
+    = stylesheet_link_tag :application, media: "all"
+    = render 'javascript'
+    = stripe_javascript_tag
+    = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
+    - # Add gon here for gon use inside the compiled js before the page is fully loaded
+    = Gon::Base.render_data
+    - if content_for?(:head)
+      = yield(:head)
+  body class="#{devise_controller? ? 'devise' : 'application'} #{body_class}"
+    .outer-wrapper
+      - # Add gon here for turbolinks benefit
+      = Gon::Base.render_data
+      = render 'flashes'
+      = render 'components/navigation'
+      .container
+        = yield
+      = render 'components/footer'
+      = render 'css_overrides'
+
+  - if Rails.env.production?
+    |
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3NZQGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T3NZQGM');</script>
+      <!-- End Google Tag Manager -->

@@ -1,0 +1,27 @@
+- content_for :head do
+  / Fixes the back button by making turbolinks re-render from the server instead of cache
+  meta name='turbolinks-cache-control' content='no-cache'
+
+.row.columns.padding-t-25
+  .small-12.medium-6.left.padding-t-25
+    h3 = @user.full_name
+    = image_tag(@user.avatar.url, class: 'coach-avatar')
+    = link_to (@user.email), "mailto:#{@user.email}"
+
+  .small-12.medium-6.left.padding-t-25
+    h3
+      | Teams
+
+    ul
+    - @user.affiliations.includes(team: :club).each do |affiliation|
+      - if can?(:show, affiliation.team.club)
+        li = link_to "#{affiliation.team.name} (#{affiliation.title})", club_team_path(affiliation.team.club, affiliation.team)
+
+- if @user.player?
+  .row
+    hr(style='margin-top:90px;')
+    .player-pyramid-modules
+      - 5.downto(1).each do |level|
+        .pyramid-modules.small-12.medium-7
+          = render 'teams/pyramid_module_progress', { level: level, player: @user, pyramid_modules: PyramidModule.all.order(:position) }
+      .medium-5

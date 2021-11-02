@@ -1,0 +1,24 @@
+- content_for(:title) { 'Team Codes' }
+
+header class='main-content__header' role='banner'
+  h1 class='main-content__page-title'
+    = content_for(:title)
+
+  div
+    = link_to("#{t("administrate.actions.show")} #{@club.name}",
+      [namespace, @club],
+      class: "button",
+    ) if valid_action? :show
+
+section class='main-content__body'
+
+  table
+    th Team
+    th Code
+    - @codes.each do |code|
+      tr
+        td
+          = code.first
+        td
+          = code.last
+

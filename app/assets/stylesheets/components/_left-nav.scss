@@ -1,0 +1,173 @@
+#left-nav {
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  max-width: 64px;
+  background: $green;
+  text-align: center;
+  z-index: 2;
+}
+ul.left-navigation {
+  width: 100%;
+}
+ul.left-navigation li {
+  float: left;
+  display: inline-block;
+  padding: 14px;
+
+  span {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    visibility: hidden;
+    text-align: center;
+    left: 50px;
+    position: relative;
+    padding: 15px;
+    top: 2px;
+    background: $green;
+    border-radius: 0px 4px 4px 0px;
+    white-space: nowrap;
+  }
+}
+ul.left-navigation li:hover, ul.left-navigation li a:hover {
+  span {
+    visibility: visible;
+  }
+}
+li.dosis {
+  background: $dark-green;
+  height: 64px;
+  width: 64px;
+}
+li.dosis a {
+  background: image-url("dosis-logo.svg") no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 32px;
+  display: inline-block;
+}
+li.clinics a {
+  background: image-url("clinic.svg") no-repeat;
+  background-position: center center;
+  width: 33px;
+  height: 32px;
+  display: inline-block;
+
+  &:hover,
+  &:active,
+  &.active {
+    background: image-url("clinic-white.svg") no-repeat;
+    // span {
+    //   color: white;
+    // }
+  }
+}
+
+li.organization a {
+  background: image-url("organization.svg") no-repeat;
+  background-position: center center;
+  width: 33px;
+  height: 32px;
+  display: inline-block;
+
+  &:hover,
+  &:active,
+  &.active {
+    background: image-url("organization-white.svg") no-repeat;
+    // span {
+    //   color: white;
+    // }
+  }
+}
+
+li.users a {
+  background: image-url("user.svg") no-repeat;
+  background-position: center center;
+  width: 33px;
+  height: 32px;
+  display: inline-block;
+
+  &:hover,
+  &:active,
+  &.active {
+    background: image-url("user-white.svg") no-repeat;
+    // span {
+    //   color: white;
+    // }
+  }
+}
+
+li.patients a {
+  background: image-url("patients.svg") no-repeat;
+  background-position: center center;
+  width: 33px;
+  height: 32px;
+  display: inline-block;
+
+  &:hover,
+  &:active,
+  &.active {
+    background: image-url("patients-white.svg") no-repeat;
+    // span {
+    //   color: white;
+    // }
+  }
+}
+
+li.impersonating a {
+  background: image-url("impersonating.svg") no-repeat;
+  background-position: center center;
+  width: 33px;
+  height: 32px;
+  display: inline-block;
+
+  &:hover,
+  &:active {
+    background: image-url("impersonating-white.svg") no-repeat;
+    // span {
+    //   color: white;
+    // }
+  }
+}
+li.doses a {
+  background: image-url("dose.svg") no-repeat;
+  background-position: center center;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+
+  &:hover,
+  &:active,
+  &.active {
+    background: image-url("dose-white.svg") no-repeat;
+  }
+}
+li.saa a {
+  background: image-url("saa.svg") no-repeat;
+  background-position: center center;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+
+  &:hover,
+  &.active,
+  &:active, li.saa:hover {
+    background: image-url("saa-white.svg") no-repeat;
+  }
+}
+li.rec a {
+  background: image-url("rec.svg") no-repeat;
+  background-position: center center;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+
+  &:hover,
+  &:active,
+  &.active {
+    background: image-url("rec-white.svg") no-repeat;
+  }
+}

@@ -1,0 +1,92 @@
+$base-spacing: 1.5em !default;
+$flashes: (
+  "alert": #fff6bf,
+  "error": #fbe3e4,
+  "notice": #e5edf8,
+  "success": #e6efc2,
+  "mini": #e5edf8,
+) !default;
+
+@each $flash-type, $color in $flashes {
+  .flash-#{$flash-type} {
+    background-color: $color;
+    color: shade($color, 60%);
+    display: block;
+    padding: $base-spacing / 2;
+    text-align: center;
+    width: 100%;
+
+    a {
+      color: shade($color, 70%);
+      text-decoration: underline;
+
+      &:focus,
+      &:hover {
+        color: shade($color, 90%);
+      }
+    }
+  }
+}
+
+.flashes{
+  text-align: center;
+  display: inline-block;
+  padding: 0px;
+  z-index: 10;
+  font-size: 14px;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    margin-left: (-320px / 2);
+  }
+
+  @media screen and (min-width: 375px) {
+    width: 375px;
+    margin-left: (-375px / 2);
+  }
+
+  @media screen and (min-width: 414px) {
+    width: 414px;
+    margin-left: (-414px / 2);
+  }
+
+  @media screen and (min-width: 500px) {
+    font-size: 18px;
+    top: 30px;
+    // padding: 0px 40px;
+    width: 390px;
+    margin-left: (-390px / 2);
+  }
+
+  left: 50%;
+  position: fixed;
+}
+
+.flash-mini {
+  top: 0px;
+
+  @media screen and (min-width: 500px) {
+    top: 30px;
+  }
+
+  // padding: $base-spacing / 2;
+  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.26);
+}
+
+
+a.remove-flash{
+  color: #ccc !important;
+  float: right;
+  font-size: 18px;
+  @media screen and (min-width: 500px) {
+    font-size: 24px;
+  }
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 0.9;
+  outline: 0;
+}

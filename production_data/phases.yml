@@ -1,0 +1,1379 @@
+---
+phase_8:
+  id: 8
+  name: Phase 1
+  pyramid_module_id: 3
+  supplemental: false
+  video_file_name: Quickness_Overview.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3663284
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:54:19.165913000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-05-25 10:54:19.165913000 Z
+  keyframe_file_name: Screen_Shot_2017-06-08_at_5.50.05_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 440241
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 12:51:22.453657000 Z
+    zone: *1
+    time: 2017-06-29 07:51:22.453657000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:38:58.923788000 Z
+    zone: *1
+    time: 2017-05-25 10:38:58.923788000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 12:51:22.937004000 Z
+    zone: *1
+    time: 2017-06-29 07:51:22.937004000 Z
+  deleted_at: 
+  position: 1
+phase_9:
+  id: 9
+  name: Phase 2
+  pyramid_module_id: 3
+  supplemental: false
+  video_file_name: Quickness_Overview.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3663284
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 18:05:00.584651000 Z
+    zone: *1
+    time: 2017-05-25 13:05:00.584651000 Z
+  keyframe_file_name: Screen_Shot_2017-06-10_at_6.55.49_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 3878635
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-10 11:57:20.146006000 Z
+    zone: *1
+    time: 2017-06-10 06:57:20.146006000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:39:03.539233000 Z
+    zone: *1
+    time: 2017-05-25 10:39:03.539233000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-10 11:57:22.481720000 Z
+    zone: *1
+    time: 2017-06-10 06:57:22.481720000 Z
+  deleted_at: 
+  position: 2
+phase_10:
+  id: 10
+  name: Phase 3
+  pyramid_module_id: 3
+  supplemental: false
+  video_file_name: Quickness_Overview.mov
+  video_content_type: video/quicktime
+  video_file_size: 3663284
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:38:58.858572000 Z
+    zone: *1
+    time: 2017-05-25 10:38:58.858572000 Z
+  keyframe_file_name: Screen_Shot_2017-06-10_at_7.02.04_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 3750454
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-10 12:02:58.819553000 Z
+    zone: *1
+    time: 2017-06-10 07:02:58.819553000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 15:39:05.114289000 Z
+    zone: *1
+    time: 2017-05-25 10:39:05.114289000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-10 12:03:00.854503000 Z
+    zone: *1
+    time: 2017-06-10 07:03:00.854503000 Z
+  deleted_at: 
+  position: 3
+phase_15:
+  id: 15
+  name: Phase 1
+  pyramid_module_id: 5
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 23:57:55.987391000 Z
+    zone: *1
+    time: 2017-05-25 18:57:55.987391000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 16:17:53.129186000 Z
+    zone: *1
+    time: 2017-05-31 11:17:53.129186000 Z
+  deleted_at: 
+  position: 1
+phase_16:
+  id: 16
+  name: Phase 2
+  pyramid_module_id: 5
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 23:57:55.989434000 Z
+    zone: *1
+    time: 2017-05-25 18:57:55.989434000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 16:17:53.145962000 Z
+    zone: *1
+    time: 2017-05-31 11:17:53.145962000 Z
+  deleted_at: 
+  position: 2
+phase_17:
+  id: 17
+  name: Phase 3
+  pyramid_module_id: 5
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 23:57:55.991364000 Z
+    zone: *1
+    time: 2017-05-25 18:57:55.991364000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 16:17:49.089586000 Z
+    zone: *1
+    time: 2017-05-31 11:17:49.089586000 Z
+  deleted_at: 
+  position: 3
+phase_21:
+  id: 21
+  name: Phase 1
+  pyramid_module_id: 7
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:40:59.234685000 Z
+    zone: *1
+    time: 2017-05-26 07:40:59.234685000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 20:56:16.497336000 Z
+    zone: *1
+    time: 2017-06-07 15:56:16.497336000 Z
+  deleted_at: 
+  position: 1
+phase_22:
+  id: 22
+  name: Phase 2
+  pyramid_module_id: 7
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:40:59.238694000 Z
+    zone: *1
+    time: 2017-05-26 07:40:59.238694000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 20:56:16.549969000 Z
+    zone: *1
+    time: 2017-06-07 15:56:16.549969000 Z
+  deleted_at: 
+  position: 2
+phase_23:
+  id: 23
+  name: Phase 3
+  pyramid_module_id: 7
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:40:59.242402000 Z
+    zone: *1
+    time: 2017-05-26 07:40:59.242402000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 20:56:14.906933000 Z
+    zone: *1
+    time: 2017-06-07 15:56:14.906933000 Z
+  deleted_at: 
+  position: 3
+phase_24:
+  id: 24
+  name: Phase 1
+  pyramid_module_id: 8
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:25:17.856785000 Z
+    zone: *1
+    time: 2017-05-26 11:25:17.856785000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:17:24.723228000 Z
+    zone: *1
+    time: 2017-06-01 17:17:24.723228000 Z
+  deleted_at: 
+  position: 1
+phase_25:
+  id: 25
+  name: Phase 2
+  pyramid_module_id: 8
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:25:17.861014000 Z
+    zone: *1
+    time: 2017-05-26 11:25:17.861014000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:17:24.738422000 Z
+    zone: *1
+    time: 2017-06-01 17:17:24.738422000 Z
+  deleted_at: 
+  position: 2
+phase_26:
+  id: 26
+  name: Phase 3
+  pyramid_module_id: 8
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:25:17.864825000 Z
+    zone: *1
+    time: 2017-05-26 11:25:17.864825000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:17:21.291365000 Z
+    zone: *1
+    time: 2017-06-01 17:17:21.291365000 Z
+  deleted_at: 
+  position: 3
+phase_27:
+  id: 27
+  name: Phase 1
+  pyramid_module_id: 9
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 18:00:00.788036000 Z
+    zone: *1
+    time: 2017-05-26 13:00:00.788036000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:28:14.355892000 Z
+    zone: *1
+    time: 2017-06-29 15:28:14.355892000 Z
+  deleted_at: 
+  position: 1
+phase_28:
+  id: 28
+  name: Phase 2
+  pyramid_module_id: 9
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 18:00:00.792991000 Z
+    zone: *1
+    time: 2017-05-26 13:00:00.792991000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:28:14.492518000 Z
+    zone: *1
+    time: 2017-06-29 15:28:14.492518000 Z
+  deleted_at: 
+  position: 2
+phase_29:
+  id: 29
+  name: Phase 3
+  pyramid_module_id: 9
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 18:00:00.797151000 Z
+    zone: *1
+    time: 2017-05-26 13:00:00.797151000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:28:16.094366000 Z
+    zone: *1
+    time: 2017-06-29 15:28:16.094366000 Z
+  deleted_at: 
+  position: 3
+phase_30:
+  id: 30
+  name: Phase 1
+  pyramid_module_id: 10
+  supplemental: false
+  video_file_name: EAP2-Agility-Jockey_to_Run_L_Pattern_Combo.mp4
+  video_content_type: video/quicktime
+  video_file_size: 1871694
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 02:47:38.491607000 Z
+    zone: *1
+    time: 2017-06-02 21:47:38.491607000 Z
+  keyframe_file_name: Screen_Shot_2017-06-02_at_9.30.55_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 663184
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 02:47:35.620698000 Z
+    zone: *1
+    time: 2017-06-02 21:47:35.620698000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:31:24.755775000 Z
+    zone: *1
+    time: 2017-05-27 08:31:24.755775000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 02:47:38.511798000 Z
+    zone: *1
+    time: 2017-06-02 21:47:38.511798000 Z
+  deleted_at: 
+  position: 
+phase_31:
+  id: 31
+  name: Phase 2
+  pyramid_module_id: 10
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:31:24.769817000 Z
+    zone: *1
+    time: 2017-05-27 08:31:24.769817000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:31:24.769817000 Z
+    zone: *1
+    time: 2017-05-27 08:31:24.769817000 Z
+  deleted_at: 
+  position: 
+phase_32:
+  id: 32
+  name: Phase 3
+  pyramid_module_id: 10
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:31:24.788225000 Z
+    zone: *1
+    time: 2017-05-27 08:31:24.788225000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:31:24.788225000 Z
+    zone: *1
+    time: 2017-05-27 08:31:24.788225000 Z
+  deleted_at: 
+  position: 
+phase_33:
+  id: 33
+  name: Advanced Agility Combos
+  pyramid_module_id: 10
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:54:15.629826000 Z
+    zone: *1
+    time: 2017-05-27 10:54:15.629826000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:54:15.629826000 Z
+    zone: *1
+    time: 2017-05-27 10:54:15.629826000 Z
+  deleted_at: 
+  position: 
+phase_34:
+  id: 34
+  name: Phase 1
+  pyramid_module_id: 11
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:21:34.739582000 Z
+    zone: *1
+    time: 2017-05-27 17:21:34.739582000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:21:34.739582000 Z
+    zone: *1
+    time: 2017-05-27 17:21:34.739582000 Z
+  deleted_at: 
+  position: 
+phase_35:
+  id: 35
+  name: Phase 2
+  pyramid_module_id: 11
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:21:34.741625000 Z
+    zone: *1
+    time: 2017-05-27 17:21:34.741625000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:21:34.741625000 Z
+    zone: *1
+    time: 2017-05-27 17:21:34.741625000 Z
+  deleted_at: 
+  position: 
+phase_36:
+  id: 36
+  name: Phase 3
+  pyramid_module_id: 11
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:21:34.743363000 Z
+    zone: *1
+    time: 2017-05-27 17:21:34.743363000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:21:34.743363000 Z
+    zone: *1
+    time: 2017-05-27 17:21:34.743363000 Z
+  deleted_at: 
+  position: 
+phase_37:
+  id: 37
+  name: Phase 1
+  pyramid_module_id: 12
+  supplemental: false
+  video_file_name: QSP1-Scissors_Outside_Touch_Cruyff_Back.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3422378
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 02:02:40.942457000 Z
+    zone: *1
+    time: 2017-06-02 21:02:40.942457000 Z
+  keyframe_file_name: Screen_Shot_2017-06-17_at_11.44.13_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 5944750
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 16:44:56.884947000 Z
+    zone: *1
+    time: 2017-06-17 11:44:56.884947000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:26:13.303796000 Z
+    zone: *1
+    time: 2017-05-28 10:26:13.303796000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 16:44:58.491158000 Z
+    zone: *1
+    time: 2017-06-17 11:44:58.491158000 Z
+  deleted_at: 
+  position: 1
+phase_38:
+  id: 38
+  name: Phase 2
+  pyramid_module_id: 12
+  supplemental: false
+  video_file_name: QSP1-Scissors_Outside_Touch_Cruyff_Back.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3422378
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 01:58:49.265787000 Z
+    zone: *1
+    time: 2017-06-02 20:58:49.265787000 Z
+  keyframe_file_name: Screen_Shot_2017-06-17_at_11.47.23_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 5796419
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 16:47:58.161048000 Z
+    zone: *1
+    time: 2017-06-17 11:47:58.161048000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:26:13.307764000 Z
+    zone: *1
+    time: 2017-05-28 10:26:13.307764000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 16:47:59.213947000 Z
+    zone: *1
+    time: 2017-06-17 11:47:59.213947000 Z
+  deleted_at: 
+  position: 2
+phase_39:
+  id: 39
+  name: Phase 3
+  pyramid_module_id: 12
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:26:13.310582000 Z
+    zone: *1
+    time: 2017-05-28 10:26:13.310582000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-03 02:00:00.463559000 Z
+    zone: *1
+    time: 2017-06-02 21:00:00.463559000 Z
+  deleted_at: 
+  position: 3
+phase_40:
+  id: 40
+  name: Phase 1
+  pyramid_module_id: 13
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:41:13.931889000 Z
+    zone: *1
+    time: 2017-05-30 05:41:13.931889000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:12:29.060256000 Z
+    zone: *1
+    time: 2017-06-01 18:12:29.060256000 Z
+  deleted_at: 
+  position: 1
+phase_41:
+  id: 41
+  name: Phase 2
+  pyramid_module_id: 13
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:41:13.936700000 Z
+    zone: *1
+    time: 2017-05-30 05:41:13.936700000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:12:29.080493000 Z
+    zone: *1
+    time: 2017-06-01 18:12:29.080493000 Z
+  deleted_at: 
+  position: 2
+phase_42:
+  id: 42
+  name: Phase 3
+  pyramid_module_id: 13
+  supplemental: false
+  video_file_name: PCP3-Creative_Open_Up_180s_Forward___Back.mp4
+  video_content_type: video/quicktime
+  video_file_size: 3268933
+  video_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:47:51.545367000 Z
+    zone: *1
+    time: 2017-06-04 07:47:51.545367000 Z
+  keyframe_file_name: Screen_Shot_2017-06-04_at_7.56.44_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 333848
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:57:37.953422000 Z
+    zone: *1
+    time: 2017-06-04 07:57:37.953422000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:41:13.940661000 Z
+    zone: *1
+    time: 2017-05-30 05:41:13.940661000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:57:38.515896000 Z
+    zone: *1
+    time: 2017-06-04 07:57:38.515896000 Z
+  deleted_at: 
+  position: 3
+phase_46:
+  id: 46
+  name: Phase 1
+  pyramid_module_id: 15
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 12:57:56.144877000 Z
+    zone: *1
+    time: 2017-05-31 07:57:56.144877000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 12:57:56.144877000 Z
+    zone: *1
+    time: 2017-05-31 07:57:56.144877000 Z
+  deleted_at: 
+  position: 1
+phase_47:
+  id: 47
+  name: Phase 2
+  pyramid_module_id: 15
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 12:57:56.163413000 Z
+    zone: *1
+    time: 2017-05-31 07:57:56.163413000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 12:57:56.163413000 Z
+    zone: *1
+    time: 2017-05-31 07:57:56.163413000 Z
+  deleted_at: 
+  position: 2
+phase_48:
+  id: 48
+  name: Phase 3
+  pyramid_module_id: 15
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 12:57:56.171817000 Z
+    zone: *1
+    time: 2017-05-31 07:57:56.171817000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 12:57:56.171817000 Z
+    zone: *1
+    time: 2017-05-31 07:57:56.171817000 Z
+  deleted_at: 
+  position: 3
+phase_49:
+  id: 49
+  name: 2 Wall Passing Foundations
+  pyramid_module_id: 5
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-13_at_5.29.12_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 3433837
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 10:40:26.327788000 Z
+    zone: *1
+    time: 2017-06-13 05:40:26.327788000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:29:12.567443000 Z
+    zone: *1
+    time: 2017-06-01 05:29:12.567443000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 10:40:29.909133000 Z
+    zone: *1
+    time: 2017-06-13 05:40:29.909133000 Z
+  deleted_at: 
+  position: 4
+phase_50:
+  id: 50
+  name: Phase 1
+  pyramid_module_id: 16
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:52:31.997552000 Z
+    zone: *1
+    time: 2017-06-02 05:52:31.997552000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:52:31.997552000 Z
+    zone: *1
+    time: 2017-06-02 05:52:31.997552000 Z
+  deleted_at: 
+  position: 1
+phase_51:
+  id: 51
+  name: Phase 2
+  pyramid_module_id: 16
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:52:32.008359000 Z
+    zone: *1
+    time: 2017-06-02 05:52:32.008359000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:52:32.008359000 Z
+    zone: *1
+    time: 2017-06-02 05:52:32.008359000 Z
+  deleted_at: 
+  position: 2
+phase_52:
+  id: 52
+  name: Phase 3
+  pyramid_module_id: 16
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:52:32.016692000 Z
+    zone: *1
+    time: 2017-06-02 05:52:32.016692000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:52:32.016692000 Z
+    zone: *1
+    time: 2017-06-02 05:52:32.016692000 Z
+  deleted_at: 
+  position: 3
+phase_53:
+  id: 53
+  name: Phase 1
+  pyramid_module_id: 17
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:55:56.702459000 Z
+    zone: *1
+    time: 2017-06-02 05:55:56.702459000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:55:56.702459000 Z
+    zone: *1
+    time: 2017-06-02 05:55:56.702459000 Z
+  deleted_at: 
+  position: 1
+phase_54:
+  id: 54
+  name: Phase 2
+  pyramid_module_id: 17
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:55:56.707127000 Z
+    zone: *1
+    time: 2017-06-02 05:55:56.707127000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:55:56.707127000 Z
+    zone: *1
+    time: 2017-06-02 05:55:56.707127000 Z
+  deleted_at: 
+  position: 2
+phase_55:
+  id: 55
+  name: Phase 3
+  pyramid_module_id: 17
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:55:56.712215000 Z
+    zone: *1
+    time: 2017-06-02 05:55:56.712215000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:55:56.712215000 Z
+    zone: *1
+    time: 2017-06-02 05:55:56.712215000 Z
+  deleted_at: 
+  position: 3
+phase_56:
+  id: 56
+  name: Phase 1 - Off Season
+  pyramid_module_id: 18
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:01:13.940018000 Z
+    zone: *1
+    time: 2017-06-02 06:01:13.940018000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:34:53.661204000 Z
+    zone: *1
+    time: 2017-06-28 19:34:53.661204000 Z
+  deleted_at: 
+  position: 1
+phase_57:
+  id: 57
+  name: Phase 2 - Pre Season
+  pyramid_module_id: 18
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:01:13.944991000 Z
+    zone: *1
+    time: 2017-06-02 06:01:13.944991000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:34:53.674887000 Z
+    zone: *1
+    time: 2017-06-28 19:34:53.674887000 Z
+  deleted_at: 
+  position: 2
+phase_58:
+  id: 58
+  name: Phase 3 - In Season
+  pyramid_module_id: 18
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:01:13.950291000 Z
+    zone: *1
+    time: 2017-06-02 06:01:13.950291000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:34:53.682953000 Z
+    zone: *1
+    time: 2017-06-28 19:34:53.682953000 Z
+  deleted_at: 
+  position: 3
+phase_59:
+  id: 59
+  name: Off-Season
+  pyramid_module_id: 19
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:05:25.877407000 Z
+    zone: *1
+    time: 2017-06-02 06:05:25.877407000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:05:25.877407000 Z
+    zone: *1
+    time: 2017-06-02 06:05:25.877407000 Z
+  deleted_at: 
+  position: 1
+phase_60:
+  id: 60
+  name: Pre-Season
+  pyramid_module_id: 19
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:05:25.970862000 Z
+    zone: *1
+    time: 2017-06-02 06:05:25.970862000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:05:25.970862000 Z
+    zone: *1
+    time: 2017-06-02 06:05:25.970862000 Z
+  deleted_at: 
+  position: 2
+phase_61:
+  id: 61
+  name: In-Season
+  pyramid_module_id: 19
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:05:26.032160000 Z
+    zone: *1
+    time: 2017-06-02 06:05:26.032160000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:05:26.032160000 Z
+    zone: *1
+    time: 2017-06-02 06:05:26.032160000 Z
+  deleted_at: 
+  position: 3
+phase_62:
+  id: 62
+  name: Off-Season
+  pyramid_module_id: 20
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:31:41.041519000 Z
+    zone: *1
+    time: 2017-06-02 06:31:41.041519000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:31:41.041519000 Z
+    zone: *1
+    time: 2017-06-02 06:31:41.041519000 Z
+  deleted_at: 
+  position: 1
+phase_63:
+  id: 63
+  name: Pre-Season
+  pyramid_module_id: 20
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:31:41.048345000 Z
+    zone: *1
+    time: 2017-06-02 06:31:41.048345000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:31:41.048345000 Z
+    zone: *1
+    time: 2017-06-02 06:31:41.048345000 Z
+  deleted_at: 
+  position: 2
+phase_64:
+  id: 64
+  name: In-Season
+  pyramid_module_id: 20
+  supplemental: false
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:31:41.052526000 Z
+    zone: *1
+    time: 2017-06-02 06:31:41.052526000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 11:31:41.052526000 Z
+    zone: *1
+    time: 2017-06-02 06:31:41.052526000 Z
+  deleted_at: 
+  position: 3
+phase_65:
+  id: 65
+  name: Quickness Warm Up Options
+  pyramid_module_id: 3
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-13_at_5.59.06_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 3831479
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 10:59:55.892237000 Z
+    zone: *1
+    time: 2017-06-13 05:59:55.892237000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 10:59:58.159843000 Z
+    zone: *1
+    time: 2017-06-13 05:59:58.159843000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 10:59:58.159843000 Z
+    zone: *1
+    time: 2017-06-13 05:59:58.159843000 Z
+  deleted_at: 
+  position: 5
+phase_66:
+  id: 66
+  name: Juggling & Volleys
+  pyramid_module_id: 5
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-24_at_5.06.06_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 3761936
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:07:11.383292000 Z
+    zone: *1
+    time: 2017-06-24 17:07:11.383292000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 23:33:49.927556000 Z
+    zone: *1
+    time: 2017-06-17 18:33:49.927556000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:07:13.547352000 Z
+    zone: *1
+    time: 2017-06-24 17:07:13.547352000 Z
+  deleted_at: 
+  position: 5
+phase_68:
+  id: 68
+  name: Hopping Patterns for Quicker Feet
+  pyramid_module_id: 3
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-26_at_6.10.03_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 4326917
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:10:43.566309000 Z
+    zone: *1
+    time: 2017-06-26 06:10:43.566309000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:10:44.570591000 Z
+    zone: *1
+    time: 2017-06-26 06:10:44.570591000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:10:44.570591000 Z
+    zone: *1
+    time: 2017-06-26 06:10:44.570591000 Z
+  deleted_at: 
+  position: 6
+phase_69:
+  id: 69
+  name: Crossover Patterns for Explosive First Step
+  pyramid_module_id: 3
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-26_at_7.31.20_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 3856095
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:31:56.167322000 Z
+    zone: *1
+    time: 2017-06-26 07:31:56.167322000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:39:20.825018000 Z
+    zone: *1
+    time: 2017-06-26 06:39:20.825018000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:31:58.522209000 Z
+    zone: *1
+    time: 2017-06-26 07:31:58.522209000 Z
+  deleted_at: 
+  position: 7
+phase_70:
+  id: 70
+  name: Quick Feet Around The Ball
+  pyramid_module_id: 3
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-26_at_7.53.54_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 5998122
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:55:30.341231000 Z
+    zone: *1
+    time: 2017-06-26 07:55:30.341231000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:52:52.073077000 Z
+    zone: *1
+    time: 2017-06-26 07:52:52.073077000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:08.649429000 Z
+    zone: *1
+    time: 2017-06-26 10:55:08.649429000 Z
+  deleted_at: 
+  position: 8
+phase_71:
+  id: 71
+  name: Perfecting Agility Footwork
+  pyramid_module_id: 3
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-26_at_11.10.34_AM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 5587557
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:11:14.914967000 Z
+    zone: *1
+    time: 2017-06-26 11:11:14.914967000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:08.658267000 Z
+    zone: *1
+    time: 2017-06-26 10:55:08.658267000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:11:17.219841000 Z
+    zone: *1
+    time: 2017-06-26 11:11:17.219841000 Z
+  deleted_at: 
+  position: 9
+phase_72:
+  id: 72
+  name: Agility Based Fitness
+  pyramid_module_id: 3
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:58:26.039735000 Z
+    zone: *1
+    time: 2017-06-26 11:58:26.039735000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:58:26.039735000 Z
+    zone: *1
+    time: 2017-06-26 11:58:26.039735000 Z
+  deleted_at: 
+  position: 10
+phase_73:
+  id: 73
+  name: 6 Cone Lateral Patterns - Foundations
+  pyramid_module_id: 7
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: Screen_Shot_2017-06-26_at_8.41.11_PM.png
+  keyframe_content_type: image/png
+  keyframe_file_size: 3502534
+  keyframe_updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:43:38.235984000 Z
+    zone: *1
+    time: 2017-06-26 20:43:38.235984000 Z
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:36:33.653391000 Z
+    zone: *1
+    time: 2017-06-26 20:36:33.653391000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:43:40.275246000 Z
+    zone: *1
+    time: 2017-06-26 20:43:40.275246000 Z
+  deleted_at: 
+  position: 4
+phase_74:
+  id: 74
+  name: Body Position, Angles & Targets
+  pyramid_module_id: 5
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 14:15:00.690173000 Z
+    zone: *1
+    time: 2017-06-27 09:15:00.690173000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 14:15:00.690173000 Z
+    zone: *1
+    time: 2017-06-27 09:15:00.690173000 Z
+  deleted_at: 
+  position: 7
+phase_75:
+  id: 75
+  name: Complexes
+  pyramid_module_id: 9
+  supplemental: true
+  video_file_name: 
+  video_content_type: 
+  video_file_size: 
+  video_updated_at: 
+  keyframe_file_name: 
+  keyframe_content_type: 
+  keyframe_file_size: 
+  keyframe_updated_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:27:53.199351000 Z
+    zone: *1
+    time: 2017-06-29 15:27:53.199351000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:28:16.139335000 Z
+    zone: *1
+    time: 2017-06-29 15:28:16.139335000 Z
+  deleted_at: 
+  position: 4

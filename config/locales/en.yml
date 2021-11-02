@@ -1,0 +1,47 @@
+en:
+  date:
+    formats:
+      default:
+        '%m/%d/%Y'
+      short:
+        '%m/%d/%y'
+      with_weekday:
+        '%a %m/%d/%y'
+
+  time:
+    formats:
+      default:
+        '%a, %b %-d, %Y at %r'
+      date:
+        '%b %-d, %Y'
+      short:
+        '%B %d'
+      time_with_period:
+        '%-l:%M %p'
+      date_and_time_with_period:
+        '%m/%d/%Y - %-l:%M %p'
+
+  titles:
+    application: RISE - Dashboard
+
+  helpers:
+    label:
+      workout:
+        pyramid_module_name: Pyramid Module
+      user:
+        teams: Teams
+        unlocked_pyramid_modules: Unlocked Modules
+        display_completed_phases: Completed Phases
+      team:
+        display_code: Code
+      single_payment:
+        pyramid_module: "Pyramid Modules"
+
+  faker:
+    name:
+      pyramid_module_name: ['Quickness', 'Ball Control', 'Soccer Strength', 'Soccer Power', 'Explosive Agility', 'Creative Skill', 'GameSPEED: Skill', 'First Touch', 'GameSPEED: Power', 'Soccer Speed', 'General Strength', 'Quick Skills', 'Complete Programs', 'Passing Combos', 'Powerful Bursts']
+      phase_name: ['Phase 1', 'Phase 2', 'Phase 3']
+      workout_name: ['One Touch', 'Two Touch', '1 & 2 Touch', 'Weighted Touches', 'Short & Long Touches', 'Opening Up Touches', 'Foundational Touches', 'Reset Touches', 'Behind Body Touches', '4 Cone-Lateral Targeting']
+      exercise_name: ['Quick Feet Forward Step', 'Lateral Moving Quick Feet Chops', 'Forward & Back Quick Feet Chops', 'Hip Flip Chops', 'Stationary Quick Feet Chops', 'Body Control Vertical Hop', 'Side to Side Hops - Rhythmic to Quick', 'Forward & Back Hops - Rhythmic to Quick', 'Crossover to Shuffle Back - Controlled Footwork', 'Crossover to Crossover Back']
+      team_name: ['Hornets', 'Bears', 'Lions', 'Tigers', 'Monkeys', 'Beatles', 'Birds', 'Dinosaurs']
+      club_name: ['East Side Sliders', 'West Side Warriors', 'North Side Northerners', 'South Side Southerners']

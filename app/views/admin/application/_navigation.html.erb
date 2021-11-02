@@ -1,0 +1,23 @@
+<%#
+# Navigation
+
+This partial is used to display the navigation in Administrate.
+By default, the navigation contains navigation links
+for all resources in the admin dashboard,
+as defined by the routes in the `admin/` namespace
+%>
+
+<nav class="navigation" role="navigation">
+  <% resources_for_sidebar_nav.each do |resource| %>
+    <%= link_to(
+      ( display_resource_name(resource) == "Affiliate Discount Codes" ? "Affiliate/Discount Codes" : display_resource_name(resource) ),
+      [namespace, resource.path],
+      class: "navigation__link navigation__link--#{nav_link_state(resource)}"
+    ) %>
+  <% end %>
+
+  <div style='width: 130px; background: #c0c0c0; height: 1px; margin: 25px 0 20px 0;'>&nbsp;</div>
+
+  <%= link_to 'Non-Admin-View', root_path, class: 'navigation__link' %>
+  <%= link_to 'Sign Out', sign_out_path, class: 'navigation__link' %>
+</nav>

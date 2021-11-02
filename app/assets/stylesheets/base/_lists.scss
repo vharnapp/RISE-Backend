@@ -1,0 +1,132 @@
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: $bold-font-weight;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  background: #fff;
+}
+
+.group-label {
+  font-size: 13px;
+  color: $gray;
+  letter-spacing: 1;
+  text-transform: uppercase;
+}
+
+
+ul.team-list {
+  display: inline-block;
+  border-bottom: 1px solid $light-gray;
+
+  li {
+    float: left;
+
+    @media screen and (min-width: 500px) {
+      padding: 25px 15px 25px 0;
+      height: 150px;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    a.first-col{
+      width: 100%;
+    }
+
+    span.valign-middle{
+      height: 100px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+.coach-label{
+  height: 100px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.coach-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.club-logo-container{
+  @media screen and (min-width: 500px) {
+    height: 100px;
+    width: inherit;
+
+    &:hover{
+      cursor: pointer;
+      background: $light-gray;
+      border-radius: 2px;
+    }
+  }
+}
+
+
+.club-logo{
+  display: table-cell;
+  vertical-align: middle;
+
+  @media screen and (min-width: 500px) {
+    height: 100px;
+    padding: 20px;
+  }
+
+  img{
+    // height: 80px;
+    width: 60px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 100px;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+
+ul.team-header {
+  border-bottom: none;
+
+  li {
+    padding: 20px 0px;
+    height: 54px;
+  }
+}

@@ -1,0 +1,3868 @@
+---
+unlockedpyramidmodule_1:
+  id: 1
+  user_id: 34
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-20 20:30:22.424646000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-06-20 15:30:22.424646000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-20 20:30:22.424646000 Z
+    zone: *1
+    time: 2017-06-20 15:30:22.424646000 Z
+unlockedpyramidmodule_2:
+  id: 2
+  user_id: 34
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-20 20:34:06.994327000 Z
+    zone: *1
+    time: 2017-06-20 15:34:06.994327000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-20 20:34:06.994327000 Z
+    zone: *1
+    time: 2017-06-20 15:34:06.994327000 Z
+unlockedpyramidmodule_3:
+  id: 3
+  user_id: 36
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:01:41.103396000 Z
+    zone: *1
+    time: 2017-06-20 20:01:41.103396000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:01:41.103396000 Z
+    zone: *1
+    time: 2017-06-20 20:01:41.103396000 Z
+unlockedpyramidmodule_4:
+  id: 4
+  user_id: 36
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:11:12.861801000 Z
+    zone: *1
+    time: 2017-06-20 20:11:12.861801000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:11:12.861801000 Z
+    zone: *1
+    time: 2017-06-20 20:11:12.861801000 Z
+unlockedpyramidmodule_5:
+  id: 5
+  user_id: 36
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:22:34.349089000 Z
+    zone: *1
+    time: 2017-06-20 20:22:34.349089000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:22:34.349089000 Z
+    zone: *1
+    time: 2017-06-20 20:22:34.349089000 Z
+unlockedpyramidmodule_6:
+  id: 6
+  user_id: 37
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:33:25.563918000 Z
+    zone: *1
+    time: 2017-06-20 20:33:25.563918000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:33:25.563918000 Z
+    zone: *1
+    time: 2017-06-20 20:33:25.563918000 Z
+unlockedpyramidmodule_7:
+  id: 7
+  user_id: 37
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:57:02.689622000 Z
+    zone: *1
+    time: 2017-06-20 20:57:02.689622000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:57:02.689622000 Z
+    zone: *1
+    time: 2017-06-20 20:57:02.689622000 Z
+unlockedpyramidmodule_8:
+  id: 8
+  user_id: 37
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:58:18.821951000 Z
+    zone: *1
+    time: 2017-06-20 20:58:18.821951000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:58:18.821951000 Z
+    zone: *1
+    time: 2017-06-20 20:58:18.821951000 Z
+unlockedpyramidmodule_9:
+  id: 9
+  user_id: 37
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 02:12:06.483271000 Z
+    zone: *1
+    time: 2017-06-20 21:12:06.483271000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 02:12:06.483271000 Z
+    zone: *1
+    time: 2017-06-20 21:12:06.483271000 Z
+unlockedpyramidmodule_10:
+  id: 10
+  user_id: 37
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 12:29:41.303708000 Z
+    zone: *1
+    time: 2017-06-21 07:29:41.303708000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 12:29:41.303708000 Z
+    zone: *1
+    time: 2017-06-21 07:29:41.303708000 Z
+unlockedpyramidmodule_11:
+  id: 11
+  user_id: 37
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 12:30:54.858997000 Z
+    zone: *1
+    time: 2017-06-21 07:30:54.858997000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 12:30:54.858997000 Z
+    zone: *1
+    time: 2017-06-21 07:30:54.858997000 Z
+unlockedpyramidmodule_12:
+  id: 12
+  user_id: 38
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 13:59:20.425459000 Z
+    zone: *1
+    time: 2017-06-21 08:59:20.425459000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 13:59:20.425459000 Z
+    zone: *1
+    time: 2017-06-21 08:59:20.425459000 Z
+unlockedpyramidmodule_13:
+  id: 13
+  user_id: 38
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 15:51:06.688152000 Z
+    zone: *1
+    time: 2017-06-21 10:51:06.688152000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 20:20:37.321445000 Z
+    zone: *1
+    time: 2017-06-21 15:20:37.321445000 Z
+unlockedpyramidmodule_14:
+  id: 14
+  user_id: 38
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 17:26:47.692202000 Z
+    zone: *1
+    time: 2017-06-21 12:26:47.692202000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 17:26:47.692202000 Z
+    zone: *1
+    time: 2017-06-21 12:26:47.692202000 Z
+unlockedpyramidmodule_15:
+  id: 15
+  user_id: 38
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 20:20:37.098638000 Z
+    zone: *1
+    time: 2017-06-21 15:20:37.098638000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 20:20:37.098638000 Z
+    zone: *1
+    time: 2017-06-21 15:20:37.098638000 Z
+unlockedpyramidmodule_16:
+  id: 16
+  user_id: 38
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 20:20:37.599394000 Z
+    zone: *1
+    time: 2017-06-21 15:20:37.599394000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 20:20:37.599394000 Z
+    zone: *1
+    time: 2017-06-21 15:20:37.599394000 Z
+unlockedpyramidmodule_17:
+  id: 17
+  user_id: 38
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 20:20:37.615850000 Z
+    zone: *1
+    time: 2017-06-21 15:20:37.615850000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 20:20:37.615850000 Z
+    zone: *1
+    time: 2017-06-21 15:20:37.615850000 Z
+unlockedpyramidmodule_18:
+  id: 18
+  user_id: 41
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:07:08.580008000 Z
+    zone: *1
+    time: 2017-06-21 16:07:08.580008000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:07:08.580008000 Z
+    zone: *1
+    time: 2017-06-21 16:07:08.580008000 Z
+unlockedpyramidmodule_19:
+  id: 19
+  user_id: 41
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:07:08.783943000 Z
+    zone: *1
+    time: 2017-06-21 16:07:08.783943000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:07:08.783943000 Z
+    zone: *1
+    time: 2017-06-21 16:07:08.783943000 Z
+unlockedpyramidmodule_20:
+  id: 20
+  user_id: 41
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:07:08.786023000 Z
+    zone: *1
+    time: 2017-06-21 16:07:08.786023000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:07:08.786023000 Z
+    zone: *1
+    time: 2017-06-21 16:07:08.786023000 Z
+unlockedpyramidmodule_21:
+  id: 21
+  user_id: 41
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:11:58.182656000 Z
+    zone: *1
+    time: 2017-06-21 16:11:58.182656000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:11:58.182656000 Z
+    zone: *1
+    time: 2017-06-21 16:11:58.182656000 Z
+unlockedpyramidmodule_22:
+  id: 22
+  user_id: 41
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:11:58.399975000 Z
+    zone: *1
+    time: 2017-06-21 16:11:58.399975000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 21:11:58.399975000 Z
+    zone: *1
+    time: 2017-06-21 16:11:58.399975000 Z
+unlockedpyramidmodule_23:
+  id: 23
+  user_id: 41
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:41:40.071200000 Z
+    zone: *1
+    time: 2017-06-21 20:41:40.071200000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:41:40.071200000 Z
+    zone: *1
+    time: 2017-06-21 20:41:40.071200000 Z
+unlockedpyramidmodule_24:
+  id: 24
+  user_id: 41
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:41:40.712806000 Z
+    zone: *1
+    time: 2017-06-21 20:41:40.712806000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:41:40.712806000 Z
+    zone: *1
+    time: 2017-06-21 20:41:40.712806000 Z
+unlockedpyramidmodule_25:
+  id: 25
+  user_id: 42
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:54:50.456321000 Z
+    zone: *1
+    time: 2017-06-21 20:54:50.456321000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:54:50.456321000 Z
+    zone: *1
+    time: 2017-06-21 20:54:50.456321000 Z
+unlockedpyramidmodule_26:
+  id: 26
+  user_id: 42
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:54:50.632530000 Z
+    zone: *1
+    time: 2017-06-21 20:54:50.632530000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:54:50.632530000 Z
+    zone: *1
+    time: 2017-06-21 20:54:50.632530000 Z
+unlockedpyramidmodule_27:
+  id: 27
+  user_id: 42
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:54:50.634367000 Z
+    zone: *1
+    time: 2017-06-21 20:54:50.634367000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:54:50.634367000 Z
+    zone: *1
+    time: 2017-06-21 20:54:50.634367000 Z
+unlockedpyramidmodule_28:
+  id: 28
+  user_id: 42
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:58:07.481489000 Z
+    zone: *1
+    time: 2017-06-21 20:58:07.481489000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:58:07.481489000 Z
+    zone: *1
+    time: 2017-06-21 20:58:07.481489000 Z
+unlockedpyramidmodule_29:
+  id: 29
+  user_id: 42
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:58:07.805459000 Z
+    zone: *1
+    time: 2017-06-21 20:58:07.805459000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 01:58:07.805459000 Z
+    zone: *1
+    time: 2017-06-21 20:58:07.805459000 Z
+unlockedpyramidmodule_30:
+  id: 30
+  user_id: 42
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:00:33.307760000 Z
+    zone: *1
+    time: 2017-06-21 21:00:33.307760000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:00:33.307760000 Z
+    zone: *1
+    time: 2017-06-21 21:00:33.307760000 Z
+unlockedpyramidmodule_31:
+  id: 31
+  user_id: 42
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:00:34.020558000 Z
+    zone: *1
+    time: 2017-06-21 21:00:34.020558000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:00:34.020558000 Z
+    zone: *1
+    time: 2017-06-21 21:00:34.020558000 Z
+unlockedpyramidmodule_32:
+  id: 32
+  user_id: 42
+  pyramid_module_id: 16
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:05:24.450225000 Z
+    zone: *1
+    time: 2017-06-21 21:05:24.450225000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:05:24.450225000 Z
+    zone: *1
+    time: 2017-06-21 21:05:24.450225000 Z
+unlockedpyramidmodule_33:
+  id: 33
+  user_id: 42
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:10:06.160954000 Z
+    zone: *1
+    time: 2017-06-21 21:10:06.160954000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:10:06.160954000 Z
+    zone: *1
+    time: 2017-06-21 21:10:06.160954000 Z
+unlockedpyramidmodule_34:
+  id: 34
+  user_id: 42
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:13:43.931156000 Z
+    zone: *1
+    time: 2017-06-21 21:13:43.931156000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:13:43.931156000 Z
+    zone: *1
+    time: 2017-06-21 21:13:43.931156000 Z
+unlockedpyramidmodule_35:
+  id: 35
+  user_id: 42
+  pyramid_module_id: 15
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:16:20.841635000 Z
+    zone: *1
+    time: 2017-06-21 21:16:20.841635000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:16:20.841635000 Z
+    zone: *1
+    time: 2017-06-21 21:16:20.841635000 Z
+unlockedpyramidmodule_36:
+  id: 36
+  user_id: 42
+  pyramid_module_id: 17
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:20:20.921562000 Z
+    zone: *1
+    time: 2017-06-21 21:20:20.921562000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:20:20.921562000 Z
+    zone: *1
+    time: 2017-06-21 21:20:20.921562000 Z
+unlockedpyramidmodule_37:
+  id: 37
+  user_id: 42
+  pyramid_module_id: 19
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:31:42.458418000 Z
+    zone: *1
+    time: 2017-06-21 21:31:42.458418000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 02:31:42.458418000 Z
+    zone: *1
+    time: 2017-06-21 21:31:42.458418000 Z
+unlockedpyramidmodule_38:
+  id: 38
+  user_id: 44
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 14:07:51.093714000 Z
+    zone: *1
+    time: 2017-06-22 09:07:51.093714000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 14:07:51.093714000 Z
+    zone: *1
+    time: 2017-06-22 09:07:51.093714000 Z
+unlockedpyramidmodule_39:
+  id: 39
+  user_id: 44
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:07:13.262155000 Z
+    zone: *1
+    time: 2017-06-22 10:07:13.262155000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:07:13.262155000 Z
+    zone: *1
+    time: 2017-06-22 10:07:13.262155000 Z
+unlockedpyramidmodule_40:
+  id: 40
+  user_id: 44
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:07:13.390587000 Z
+    zone: *1
+    time: 2017-06-22 10:07:13.390587000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:07:13.390587000 Z
+    zone: *1
+    time: 2017-06-22 10:07:13.390587000 Z
+unlockedpyramidmodule_41:
+  id: 41
+  user_id: 45
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:17:13.650069000 Z
+    zone: *1
+    time: 2017-06-22 10:17:13.650069000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:22:48.785780000 Z
+    zone: *1
+    time: 2017-06-22 10:22:48.785780000 Z
+unlockedpyramidmodule_42:
+  id: 42
+  user_id: 45
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:24:12.043037000 Z
+    zone: *1
+    time: 2017-06-22 10:24:12.043037000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:24:12.043037000 Z
+    zone: *1
+    time: 2017-06-22 10:24:12.043037000 Z
+unlockedpyramidmodule_43:
+  id: 43
+  user_id: 45
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:24:12.195092000 Z
+    zone: *1
+    time: 2017-06-22 10:24:12.195092000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 15:25:15.801857000 Z
+    zone: *1
+    time: 2017-06-22 10:25:15.801857000 Z
+unlockedpyramidmodule_44:
+  id: 44
+  user_id: 55
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:05:33.850347000 Z
+    zone: *1
+    time: 2017-06-22 12:05:33.850347000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:07:59.620085000 Z
+    zone: *1
+    time: 2017-06-22 12:07:59.620085000 Z
+unlockedpyramidmodule_45:
+  id: 45
+  user_id: 56
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:06:09.536579000 Z
+    zone: *1
+    time: 2017-06-22 12:06:09.536579000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:06:09.536579000 Z
+    zone: *1
+    time: 2017-06-22 12:06:09.536579000 Z
+unlockedpyramidmodule_46:
+  id: 46
+  user_id: 55
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:08:37.032402000 Z
+    zone: *1
+    time: 2017-06-22 12:08:37.032402000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 21:15:41.639775000 Z
+    zone: *1
+    time: 2017-06-22 16:15:41.639775000 Z
+unlockedpyramidmodule_47:
+  id: 47
+  user_id: 55
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:08:37.476253000 Z
+    zone: *1
+    time: 2017-06-22 12:08:37.476253000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 16:01:35.843668000 Z
+    zone: *1
+    time: 2017-06-25 11:01:35.843668000 Z
+unlockedpyramidmodule_48:
+  id: 48
+  user_id: 57
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:17:25.267212000 Z
+    zone: *1
+    time: 2017-06-22 12:17:25.267212000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:19:11.200653000 Z
+    zone: *1
+    time: 2017-06-22 12:19:11.200653000 Z
+unlockedpyramidmodule_49:
+  id: 49
+  user_id: 57
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:19:39.467635000 Z
+    zone: *1
+    time: 2017-06-22 12:19:39.467635000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:20:30.859844000 Z
+    zone: *1
+    time: 2017-06-22 12:20:30.859844000 Z
+unlockedpyramidmodule_50:
+  id: 50
+  user_id: 57
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:19:39.474474000 Z
+    zone: *1
+    time: 2017-06-22 12:19:39.474474000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:20:51.984839000 Z
+    zone: *1
+    time: 2017-06-22 12:20:51.984839000 Z
+unlockedpyramidmodule_51:
+  id: 51
+  user_id: 57
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:20:51.444889000 Z
+    zone: *1
+    time: 2017-06-22 12:20:51.444889000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:20:51.444889000 Z
+    zone: *1
+    time: 2017-06-22 12:20:51.444889000 Z
+unlockedpyramidmodule_52:
+  id: 52
+  user_id: 57
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:20:51.965761000 Z
+    zone: *1
+    time: 2017-06-22 12:20:51.965761000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 17:21:25.721736000 Z
+    zone: *1
+    time: 2017-06-22 12:21:25.721736000 Z
+unlockedpyramidmodule_53:
+  id: 53
+  user_id: 28
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 01:59:13.184615000 Z
+    zone: *1
+    time: 2017-06-22 20:59:13.184615000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 12:44:59.540480000 Z
+    zone: *1
+    time: 2017-06-28 07:44:59.540480000 Z
+unlockedpyramidmodule_54:
+  id: 54
+  user_id: 28
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:01:24.913920000 Z
+    zone: *1
+    time: 2017-06-22 21:01:24.913920000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:50:55.515971000 Z
+    zone: *1
+    time: 2017-06-29 13:50:55.515971000 Z
+unlockedpyramidmodule_55:
+  id: 55
+  user_id: 28
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:01:25.215505000 Z
+    zone: *1
+    time: 2017-06-22 21:01:25.215505000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:12:19.692162000 Z
+    zone: *1
+    time: 2017-06-28 14:12:19.692162000 Z
+unlockedpyramidmodule_56:
+  id: 56
+  user_id: 28
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:10:23.345022000 Z
+    zone: *1
+    time: 2017-06-22 21:10:23.345022000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 12:44:59.596750000 Z
+    zone: *1
+    time: 2017-06-28 07:44:59.596750000 Z
+unlockedpyramidmodule_57:
+  id: 57
+  user_id: 28
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:10:23.441573000 Z
+    zone: *1
+    time: 2017-06-22 21:10:23.441573000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 10:34:26.822807000 Z
+    zone: *1
+    time: 2017-06-27 05:34:26.822807000 Z
+unlockedpyramidmodule_58:
+  id: 58
+  user_id: 28
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:12:38.722801000 Z
+    zone: *1
+    time: 2017-06-22 21:12:38.722801000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:37:56.961089000 Z
+    zone: *1
+    time: 2017-06-29 13:37:56.961089000 Z
+unlockedpyramidmodule_59:
+  id: 59
+  user_id: 28
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:12:39.017815000 Z
+    zone: *1
+    time: 2017-06-22 21:12:39.017815000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:47:05.389585000 Z
+    zone: *1
+    time: 2017-06-29 13:47:05.389585000 Z
+unlockedpyramidmodule_60:
+  id: 60
+  user_id: 28
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:21:11.360790000 Z
+    zone: *1
+    time: 2017-06-22 21:21:11.360790000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 10:34:26.654331000 Z
+    zone: *1
+    time: 2017-06-27 05:34:26.654331000 Z
+unlockedpyramidmodule_61:
+  id: 61
+  user_id: 28
+  pyramid_module_id: 15
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:22:36.893218000 Z
+    zone: *1
+    time: 2017-06-22 21:22:36.893218000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 00:48:28.989049000 Z
+    zone: *1
+    time: 2017-06-28 19:48:28.989049000 Z
+unlockedpyramidmodule_62:
+  id: 62
+  user_id: 28
+  pyramid_module_id: 16
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:45:34.044398000 Z
+    zone: *1
+    time: 2017-06-22 21:45:34.044398000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:47:05.963599000 Z
+    zone: *1
+    time: 2017-06-29 13:47:05.963599000 Z
+unlockedpyramidmodule_63:
+  id: 63
+  user_id: 28
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 12:03:51.854411000 Z
+    zone: *1
+    time: 2017-06-25 07:03:51.854411000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 10:34:27.183251000 Z
+    zone: *1
+    time: 2017-06-27 05:34:27.183251000 Z
+unlockedpyramidmodule_64:
+  id: 64
+  user_id: 55
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 16:21:02.775472000 Z
+    zone: *1
+    time: 2017-06-25 11:21:02.775472000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 18:25:44.026799000 Z
+    zone: *1
+    time: 2017-06-25 13:25:44.026799000 Z
+unlockedpyramidmodule_65:
+  id: 65
+  user_id: 55
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 16:21:02.847891000 Z
+    zone: *1
+    time: 2017-06-25 11:21:02.847891000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 18:25:44.053005000 Z
+    zone: *1
+    time: 2017-06-25 13:25:44.053005000 Z
+unlockedpyramidmodule_66:
+  id: 66
+  user_id: 55
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 18:25:43.447574000 Z
+    zone: *1
+    time: 2017-06-25 13:25:43.447574000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 18:25:43.447574000 Z
+    zone: *1
+    time: 2017-06-25 13:25:43.447574000 Z
+unlockedpyramidmodule_67:
+  id: 67
+  user_id: 55
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 18:25:44.041868000 Z
+    zone: *1
+    time: 2017-06-25 13:25:44.041868000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 18:25:44.041868000 Z
+    zone: *1
+    time: 2017-06-25 13:25:44.041868000 Z
+unlockedpyramidmodule_68:
+  id: 68
+  user_id: 61
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 21:52:07.954792000 Z
+    zone: *1
+    time: 2017-06-25 16:52:07.954792000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 12:48:13.276120000 Z
+    zone: *1
+    time: 2017-06-28 07:48:13.276120000 Z
+unlockedpyramidmodule_69:
+  id: 69
+  user_id: 62
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:48:41.595928000 Z
+    zone: *1
+    time: 2017-06-26 07:48:41.595928000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:49:07.788585000 Z
+    zone: *1
+    time: 2017-06-26 07:49:07.788585000 Z
+unlockedpyramidmodule_70:
+  id: 70
+  user_id: 62
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:49:38.595918000 Z
+    zone: *1
+    time: 2017-06-26 07:49:38.595918000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:53:05.952990000 Z
+    zone: *1
+    time: 2017-06-26 07:53:05.952990000 Z
+unlockedpyramidmodule_71:
+  id: 71
+  user_id: 62
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:49:38.754831000 Z
+    zone: *1
+    time: 2017-06-26 07:49:38.754831000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:51:53.302317000 Z
+    zone: *1
+    time: 2017-06-26 07:51:53.302317000 Z
+unlockedpyramidmodule_72:
+  id: 72
+  user_id: 62
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:53:05.938984000 Z
+    zone: *1
+    time: 2017-06-26 07:53:05.938984000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:55:38.872750000 Z
+    zone: *1
+    time: 2017-06-26 07:55:38.872750000 Z
+unlockedpyramidmodule_73:
+  id: 73
+  user_id: 62
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:53:06.252161000 Z
+    zone: *1
+    time: 2017-06-26 07:53:06.252161000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:56:58.846841000 Z
+    zone: *1
+    time: 2017-06-26 07:56:58.846841000 Z
+unlockedpyramidmodule_74:
+  id: 74
+  user_id: 62
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:56:59.016738000 Z
+    zone: *1
+    time: 2017-06-26 07:56:59.016738000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:58:35.958553000 Z
+    zone: *1
+    time: 2017-06-26 07:58:35.958553000 Z
+unlockedpyramidmodule_75:
+  id: 75
+  user_id: 62
+  pyramid_module_id: 17
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:11:06.908097000 Z
+    zone: *1
+    time: 2017-06-26 08:11:06.908097000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:24:23.087283000 Z
+    zone: *1
+    time: 2017-06-26 08:24:23.087283000 Z
+unlockedpyramidmodule_76:
+  id: 76
+  user_id: 62
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:24:22.493993000 Z
+    zone: *1
+    time: 2017-06-26 08:24:22.493993000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:27:05.194024000 Z
+    zone: *1
+    time: 2017-06-26 08:27:05.194024000 Z
+unlockedpyramidmodule_77:
+  id: 77
+  user_id: 62
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:24:22.758736000 Z
+    zone: *1
+    time: 2017-06-26 08:24:22.758736000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:28:12.760675000 Z
+    zone: *1
+    time: 2017-06-26 08:28:12.760675000 Z
+unlockedpyramidmodule_78:
+  id: 78
+  user_id: 62
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:28:12.571063000 Z
+    zone: *1
+    time: 2017-06-26 08:28:12.571063000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:28:12.571063000 Z
+    zone: *1
+    time: 2017-06-26 08:28:12.571063000 Z
+unlockedpyramidmodule_79:
+  id: 79
+  user_id: 64
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:34:47.439113000 Z
+    zone: *1
+    time: 2017-06-26 08:34:47.439113000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:35:20.263376000 Z
+    zone: *1
+    time: 2017-06-26 08:35:20.263376000 Z
+unlockedpyramidmodule_80:
+  id: 80
+  user_id: 64
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:35:53.962282000 Z
+    zone: *1
+    time: 2017-06-26 08:35:53.962282000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:38:45.469030000 Z
+    zone: *1
+    time: 2017-06-26 08:38:45.469030000 Z
+unlockedpyramidmodule_81:
+  id: 81
+  user_id: 64
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:35:54.000689000 Z
+    zone: *1
+    time: 2017-06-26 08:35:54.000689000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:40:20.671188000 Z
+    zone: *1
+    time: 2017-06-26 08:40:20.671188000 Z
+unlockedpyramidmodule_82:
+  id: 82
+  user_id: 64
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:40:21.432436000 Z
+    zone: *1
+    time: 2017-06-26 08:40:21.432436000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:46:23.603202000 Z
+    zone: *1
+    time: 2017-06-26 08:46:23.603202000 Z
+unlockedpyramidmodule_83:
+  id: 83
+  user_id: 64
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:40:21.483072000 Z
+    zone: *1
+    time: 2017-06-26 08:40:21.483072000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:47:31.996064000 Z
+    zone: *1
+    time: 2017-06-26 08:47:31.996064000 Z
+unlockedpyramidmodule_84:
+  id: 84
+  user_id: 64
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:47:32.615099000 Z
+    zone: *1
+    time: 2017-06-26 08:47:32.615099000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 14:02:49.663104000 Z
+    zone: *1
+    time: 2017-06-26 09:02:49.663104000 Z
+unlockedpyramidmodule_85:
+  id: 85
+  user_id: 64
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 14:02:47.938749000 Z
+    zone: *1
+    time: 2017-06-26 09:02:47.938749000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 14:02:47.938749000 Z
+    zone: *1
+    time: 2017-06-26 09:02:47.938749000 Z
+unlockedpyramidmodule_86:
+  id: 86
+  user_id: 64
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 14:02:49.222514000 Z
+    zone: *1
+    time: 2017-06-26 09:02:49.222514000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 14:02:49.222514000 Z
+    zone: *1
+    time: 2017-06-26 09:02:49.222514000 Z
+unlockedpyramidmodule_87:
+  id: 87
+  user_id: 65
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:48:48.240147000 Z
+    zone: *1
+    time: 2017-06-26 10:48:48.240147000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:00.765913000 Z
+    zone: *1
+    time: 2017-06-26 10:55:00.765913000 Z
+unlockedpyramidmodule_88:
+  id: 88
+  user_id: 65
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:49:47.277891000 Z
+    zone: *1
+    time: 2017-06-26 10:49:47.277891000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:49:47.277891000 Z
+    zone: *1
+    time: 2017-06-26 10:49:47.277891000 Z
+unlockedpyramidmodule_89:
+  id: 89
+  user_id: 65
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:49:47.394245000 Z
+    zone: *1
+    time: 2017-06-26 10:49:47.394245000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:59:04.358889000 Z
+    zone: *1
+    time: 2017-06-26 10:59:04.358889000 Z
+unlockedpyramidmodule_90:
+  id: 90
+  user_id: 65
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:00.967796000 Z
+    zone: *1
+    time: 2017-06-26 10:55:00.967796000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:57:53.531214000 Z
+    zone: *1
+    time: 2017-06-26 10:57:53.531214000 Z
+unlockedpyramidmodule_91:
+  id: 91
+  user_id: 65
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:00.970481000 Z
+    zone: *1
+    time: 2017-06-26 10:55:00.970481000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:55:00.970481000 Z
+    zone: *1
+    time: 2017-06-26 10:55:00.970481000 Z
+unlockedpyramidmodule_92:
+  id: 92
+  user_id: 65
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:59:04.660738000 Z
+    zone: *1
+    time: 2017-06-26 10:59:04.660738000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:59:04.660738000 Z
+    zone: *1
+    time: 2017-06-26 10:59:04.660738000 Z
+unlockedpyramidmodule_93:
+  id: 93
+  user_id: 37
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 18:15:49.361943000 Z
+    zone: *1
+    time: 2017-06-26 13:15:49.361943000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 18:15:49.361943000 Z
+    zone: *1
+    time: 2017-06-26 13:15:49.361943000 Z
+unlockedpyramidmodule_94:
+  id: 94
+  user_id: 66
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 18:55:00.380747000 Z
+    zone: *1
+    time: 2017-06-26 13:55:00.380747000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 19:44:22.815513000 Z
+    zone: *1
+    time: 2017-06-26 14:44:22.815513000 Z
+unlockedpyramidmodule_95:
+  id: 95
+  user_id: 67
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 19:35:56.251265000 Z
+    zone: *1
+    time: 2017-06-26 14:35:56.251265000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 19:38:58.791999000 Z
+    zone: *1
+    time: 2017-06-26 14:38:58.791999000 Z
+unlockedpyramidmodule_96:
+  id: 96
+  user_id: 25
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:42:01.212126000 Z
+    zone: *1
+    time: 2017-06-26 15:42:01.212126000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:51:53.051565000 Z
+    zone: *1
+    time: 2017-06-26 15:51:53.051565000 Z
+unlockedpyramidmodule_97:
+  id: 97
+  user_id: 25
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:44:59.202813000 Z
+    zone: *1
+    time: 2017-06-26 15:44:59.202813000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:48:53.345558000 Z
+    zone: *1
+    time: 2017-06-27 08:48:53.345558000 Z
+unlockedpyramidmodule_98:
+  id: 98
+  user_id: 25
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:44:59.210226000 Z
+    zone: *1
+    time: 2017-06-26 15:44:59.210226000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:47:19.149101000 Z
+    zone: *1
+    time: 2017-06-27 08:47:19.149101000 Z
+unlockedpyramidmodule_99:
+  id: 99
+  user_id: 25
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:51:52.810357000 Z
+    zone: *1
+    time: 2017-06-26 15:51:52.810357000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:51:52.810357000 Z
+    zone: *1
+    time: 2017-06-26 15:51:52.810357000 Z
+unlockedpyramidmodule_100:
+  id: 100
+  user_id: 25
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:51:53.237359000 Z
+    zone: *1
+    time: 2017-06-26 15:51:53.237359000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:51:53.237359000 Z
+    zone: *1
+    time: 2017-06-26 15:51:53.237359000 Z
+unlockedpyramidmodule_101:
+  id: 101
+  user_id: 61
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:56:31.942031000 Z
+    zone: *1
+    time: 2017-06-26 15:56:31.942031000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:01:15.816110000 Z
+    zone: *1
+    time: 2017-06-28 14:01:15.816110000 Z
+unlockedpyramidmodule_102:
+  id: 102
+  user_id: 61
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:56:32.118828000 Z
+    zone: *1
+    time: 2017-06-26 15:56:32.118828000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 21:37:36.339564000 Z
+    zone: *1
+    time: 2017-06-30 16:37:36.339564000 Z
+unlockedpyramidmodule_103:
+  id: 103
+  user_id: 61
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:58:08.787164000 Z
+    zone: *1
+    time: 2017-06-26 15:58:08.787164000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:01:15.937672000 Z
+    zone: *1
+    time: 2017-06-28 14:01:15.937672000 Z
+unlockedpyramidmodule_104:
+  id: 104
+  user_id: 61
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 20:58:08.986602000 Z
+    zone: *1
+    time: 2017-06-26 15:58:08.986602000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 18:57:00.007294000 Z
+    zone: *1
+    time: 2017-06-28 13:57:00.007294000 Z
+unlockedpyramidmodule_105:
+  id: 105
+  user_id: 61
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 21:03:16.068295000 Z
+    zone: *1
+    time: 2017-06-26 16:03:16.068295000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 12:48:13.440475000 Z
+    zone: *1
+    time: 2017-06-28 07:48:13.440475000 Z
+unlockedpyramidmodule_106:
+  id: 106
+  user_id: 28
+  pyramid_module_id: 17
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 10:34:27.547700000 Z
+    zone: *1
+    time: 2017-06-27 05:34:27.547700000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 11:15:54.754166000 Z
+    zone: *1
+    time: 2017-06-27 06:15:54.754166000 Z
+unlockedpyramidmodule_107:
+  id: 107
+  user_id: 28
+  pyramid_module_id: 19
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 11:15:54.843622000 Z
+    zone: *1
+    time: 2017-06-27 06:15:54.843622000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 11:15:54.843622000 Z
+    zone: *1
+    time: 2017-06-27 06:15:54.843622000 Z
+unlockedpyramidmodule_108:
+  id: 108
+  user_id: 25
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:48:53.710112000 Z
+    zone: *1
+    time: 2017-06-27 08:48:53.710112000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:48:53.710112000 Z
+    zone: *1
+    time: 2017-06-27 08:48:53.710112000 Z
+unlockedpyramidmodule_109:
+  id: 109
+  user_id: 25
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:48:53.765986000 Z
+    zone: *1
+    time: 2017-06-27 08:48:53.765986000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:48:53.765986000 Z
+    zone: *1
+    time: 2017-06-27 08:48:53.765986000 Z
+unlockedpyramidmodule_110:
+  id: 110
+  user_id: 68
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:56:08.002390000 Z
+    zone: *1
+    time: 2017-06-27 08:56:08.002390000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:44:49.300625000 Z
+    zone: *1
+    time: 2017-06-28 15:44:49.300625000 Z
+unlockedpyramidmodule_111:
+  id: 111
+  user_id: 68
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:59:52.465984000 Z
+    zone: *1
+    time: 2017-06-27 08:59:52.465984000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 15:46:16.492417000 Z
+    zone: *1
+    time: 2017-06-28 10:46:16.492417000 Z
+unlockedpyramidmodule_112:
+  id: 112
+  user_id: 68
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:59:52.935646000 Z
+    zone: *1
+    time: 2017-06-27 08:59:52.935646000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:45:38.984188000 Z
+    zone: *1
+    time: 2017-06-28 15:45:38.984188000 Z
+unlockedpyramidmodule_113:
+  id: 113
+  user_id: 28
+  pyramid_module_id: 18
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 14:31:19.090980000 Z
+    zone: *1
+    time: 2017-06-27 09:31:19.090980000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:47:06.092769000 Z
+    zone: *1
+    time: 2017-06-29 13:47:06.092769000 Z
+unlockedpyramidmodule_114:
+  id: 114
+  user_id: 68
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 15:17:59.851431000 Z
+    zone: *1
+    time: 2017-06-27 10:17:59.851431000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 15:46:16.265325000 Z
+    zone: *1
+    time: 2017-06-28 10:46:16.265325000 Z
+unlockedpyramidmodule_115:
+  id: 115
+  user_id: 68
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 15:17:59.916995000 Z
+    zone: *1
+    time: 2017-06-27 10:17:59.916995000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 15:17:59.916995000 Z
+    zone: *1
+    time: 2017-06-27 10:17:59.916995000 Z
+unlockedpyramidmodule_116:
+  id: 116
+  user_id: 69
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:09:39.771310000 Z
+    zone: *1
+    time: 2017-06-27 14:09:39.771310000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:13:13.187223000 Z
+    zone: *1
+    time: 2017-06-27 14:13:13.187223000 Z
+unlockedpyramidmodule_117:
+  id: 117
+  user_id: 69
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:12:12.764386000 Z
+    zone: *1
+    time: 2017-06-27 14:12:12.764386000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:18:50.430003000 Z
+    zone: *1
+    time: 2017-06-27 14:18:50.430003000 Z
+unlockedpyramidmodule_118:
+  id: 118
+  user_id: 69
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:12:12.788254000 Z
+    zone: *1
+    time: 2017-06-27 14:12:12.788254000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:14:30.779296000 Z
+    zone: *1
+    time: 2017-06-27 14:14:30.779296000 Z
+unlockedpyramidmodule_119:
+  id: 119
+  user_id: 69
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:13:13.376972000 Z
+    zone: *1
+    time: 2017-06-27 14:13:13.376972000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:16:57.156810000 Z
+    zone: *1
+    time: 2017-06-27 14:16:57.156810000 Z
+unlockedpyramidmodule_120:
+  id: 120
+  user_id: 69
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:13:13.494080000 Z
+    zone: *1
+    time: 2017-06-27 14:13:13.494080000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:29:47.627139000 Z
+    zone: *1
+    time: 2017-06-27 14:29:47.627139000 Z
+unlockedpyramidmodule_121:
+  id: 121
+  user_id: 69
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:14:30.809074000 Z
+    zone: *1
+    time: 2017-06-27 14:14:30.809074000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:31:53.756784000 Z
+    zone: *1
+    time: 2017-06-27 14:31:53.756784000 Z
+unlockedpyramidmodule_122:
+  id: 122
+  user_id: 69
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:16:56.761193000 Z
+    zone: *1
+    time: 2017-06-27 14:16:56.761193000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:21:17.109632000 Z
+    zone: *1
+    time: 2017-06-27 14:21:17.109632000 Z
+unlockedpyramidmodule_123:
+  id: 123
+  user_id: 69
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:16:56.893829000 Z
+    zone: *1
+    time: 2017-06-27 14:16:56.893829000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:25:34.074016000 Z
+    zone: *1
+    time: 2017-06-27 14:25:34.074016000 Z
+unlockedpyramidmodule_124:
+  id: 124
+  user_id: 69
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:18:50.569969000 Z
+    zone: *1
+    time: 2017-06-27 14:18:50.569969000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:23:34.699811000 Z
+    zone: *1
+    time: 2017-06-27 14:23:34.699811000 Z
+unlockedpyramidmodule_125:
+  id: 125
+  user_id: 69
+  pyramid_module_id: 15
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:23:34.966411000 Z
+    zone: *1
+    time: 2017-06-27 14:23:34.966411000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:37:18.978312000 Z
+    zone: *1
+    time: 2017-06-27 14:37:18.978312000 Z
+unlockedpyramidmodule_126:
+  id: 126
+  user_id: 69
+  pyramid_module_id: 16
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:25:33.868904000 Z
+    zone: *1
+    time: 2017-06-27 14:25:33.868904000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:37:18.820845000 Z
+    zone: *1
+    time: 2017-06-27 14:37:18.820845000 Z
+unlockedpyramidmodule_127:
+  id: 127
+  user_id: 69
+  pyramid_module_id: 17
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:29:47.797568000 Z
+    zone: *1
+    time: 2017-06-27 14:29:47.797568000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:36:26.766607000 Z
+    zone: *1
+    time: 2017-06-27 14:36:26.766607000 Z
+unlockedpyramidmodule_128:
+  id: 128
+  user_id: 69
+  pyramid_module_id: 18
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:37:18.875067000 Z
+    zone: *1
+    time: 2017-06-27 14:37:18.875067000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:37:18.875067000 Z
+    zone: *1
+    time: 2017-06-27 14:37:18.875067000 Z
+unlockedpyramidmodule_129:
+  id: 129
+  user_id: 69
+  pyramid_module_id: 19
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:37:19.026639000 Z
+    zone: *1
+    time: 2017-06-27 14:37:19.026639000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 19:37:19.026639000 Z
+    zone: *1
+    time: 2017-06-27 14:37:19.026639000 Z
+unlockedpyramidmodule_130:
+  id: 130
+  user_id: 68
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 15:46:16.334862000 Z
+    zone: *1
+    time: 2017-06-28 10:46:16.334862000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 21:13:26.734284000 Z
+    zone: *1
+    time: 2017-06-28 16:13:26.734284000 Z
+unlockedpyramidmodule_131:
+  id: 131
+  user_id: 68
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 15:46:16.702269000 Z
+    zone: *1
+    time: 2017-06-28 10:46:16.702269000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 15:46:16.702269000 Z
+    zone: *1
+    time: 2017-06-28 10:46:16.702269000 Z
+unlockedpyramidmodule_132:
+  id: 132
+  user_id: 75
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 18:39:00.231363000 Z
+    zone: *1
+    time: 2017-06-28 13:39:00.231363000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 18:39:00.231363000 Z
+    zone: *1
+    time: 2017-06-28 13:39:00.231363000 Z
+unlockedpyramidmodule_133:
+  id: 133
+  user_id: 78
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:05:52.221217000 Z
+    zone: *1
+    time: 2017-06-28 14:05:52.221217000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:05:52.221217000 Z
+    zone: *1
+    time: 2017-06-28 14:05:52.221217000 Z
+unlockedpyramidmodule_134:
+  id: 134
+  user_id: 87
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:54:27.421650000 Z
+    zone: *1
+    time: 2017-06-28 14:54:27.421650000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:58:20.914152000 Z
+    zone: *1
+    time: 2017-06-28 14:58:20.914152000 Z
+unlockedpyramidmodule_135:
+  id: 135
+  user_id: 88
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:55:30.477715000 Z
+    zone: *1
+    time: 2017-06-28 14:55:30.477715000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:58:14.229072000 Z
+    zone: *1
+    time: 2017-06-28 14:58:14.229072000 Z
+unlockedpyramidmodule_136:
+  id: 136
+  user_id: 87
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:59:50.726467000 Z
+    zone: *1
+    time: 2017-06-28 14:59:50.726467000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:59:50.726467000 Z
+    zone: *1
+    time: 2017-06-28 14:59:50.726467000 Z
+unlockedpyramidmodule_137:
+  id: 137
+  user_id: 87
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:59:50.913986000 Z
+    zone: *1
+    time: 2017-06-28 14:59:50.913986000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:02:01.440234000 Z
+    zone: *1
+    time: 2017-06-28 15:02:01.440234000 Z
+unlockedpyramidmodule_138:
+  id: 138
+  user_id: 88
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:59:55.189027000 Z
+    zone: *1
+    time: 2017-06-28 14:59:55.189027000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:59:55.189027000 Z
+    zone: *1
+    time: 2017-06-28 14:59:55.189027000 Z
+unlockedpyramidmodule_139:
+  id: 139
+  user_id: 88
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 19:59:55.200019000 Z
+    zone: *1
+    time: 2017-06-28 14:59:55.200019000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:02:50.552540000 Z
+    zone: *1
+    time: 2017-06-28 15:02:50.552540000 Z
+unlockedpyramidmodule_140:
+  id: 140
+  user_id: 89
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:54:00.076821000 Z
+    zone: *1
+    time: 2017-06-28 15:54:00.076821000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:54:42.206576000 Z
+    zone: *1
+    time: 2017-06-28 15:54:42.206576000 Z
+unlockedpyramidmodule_141:
+  id: 141
+  user_id: 89
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:55:13.284033000 Z
+    zone: *1
+    time: 2017-06-28 15:55:13.284033000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:55:13.284033000 Z
+    zone: *1
+    time: 2017-06-28 15:55:13.284033000 Z
+unlockedpyramidmodule_142:
+  id: 142
+  user_id: 89
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:55:13.371835000 Z
+    zone: *1
+    time: 2017-06-28 15:55:13.371835000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 20:55:13.371835000 Z
+    zone: *1
+    time: 2017-06-28 15:55:13.371835000 Z
+unlockedpyramidmodule_143:
+  id: 143
+  user_id: 90
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 21:07:07.755379000 Z
+    zone: *1
+    time: 2017-06-28 16:07:07.755379000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 21:07:07.755379000 Z
+    zone: *1
+    time: 2017-06-28 16:07:07.755379000 Z
+unlockedpyramidmodule_144:
+  id: 144
+  user_id: 92
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:48:50.831837000 Z
+    zone: *1
+    time: 2017-06-29 05:48:50.831837000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:16:12.184388000 Z
+    zone: *1
+    time: 2017-07-03 17:16:12.184388000 Z
+unlockedpyramidmodule_145:
+  id: 145
+  user_id: 93
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 13:01:41.683711000 Z
+    zone: *1
+    time: 2017-06-29 08:01:41.683711000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 13:01:41.683711000 Z
+    zone: *1
+    time: 2017-06-29 08:01:41.683711000 Z
+unlockedpyramidmodule_146:
+  id: 146
+  user_id: 92
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 13:06:22.588161000 Z
+    zone: *1
+    time: 2017-06-29 08:06:22.588161000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:16:12.265332000 Z
+    zone: *1
+    time: 2017-07-03 17:16:12.265332000 Z
+unlockedpyramidmodule_147:
+  id: 147
+  user_id: 92
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 13:06:22.604308000 Z
+    zone: *1
+    time: 2017-06-29 08:06:22.604308000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:15:05.734614000 Z
+    zone: *1
+    time: 2017-07-03 17:15:05.734614000 Z
+unlockedpyramidmodule_148:
+  id: 148
+  user_id: 94
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 13:46:55.595698000 Z
+    zone: *1
+    time: 2017-06-29 08:46:55.595698000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 13:53:17.091516000 Z
+    zone: *1
+    time: 2017-06-29 08:53:17.091516000 Z
+unlockedpyramidmodule_149:
+  id: 149
+  user_id: 98
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 17:20:05.907731000 Z
+    zone: *1
+    time: 2017-06-29 12:20:05.907731000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 03:52:51.347264000 Z
+    zone: *1
+    time: 2017-06-29 22:52:51.347264000 Z
+unlockedpyramidmodule_150:
+  id: 150
+  user_id: 99
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:09:44.766244000 Z
+    zone: *1
+    time: 2017-06-29 13:09:44.766244000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:10:04.451642000 Z
+    zone: *1
+    time: 2017-06-29 13:10:04.451642000 Z
+unlockedpyramidmodule_151:
+  id: 151
+  user_id: 99
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:10:25.031786000 Z
+    zone: *1
+    time: 2017-06-29 13:10:25.031786000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:10:25.031786000 Z
+    zone: *1
+    time: 2017-06-29 13:10:25.031786000 Z
+unlockedpyramidmodule_152:
+  id: 152
+  user_id: 99
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:10:25.370312000 Z
+    zone: *1
+    time: 2017-06-29 13:10:25.370312000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 18:10:49.049135000 Z
+    zone: *1
+    time: 2017-06-29 13:10:49.049135000 Z
+unlockedpyramidmodule_153:
+  id: 153
+  user_id: 102
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 19:15:37.781364000 Z
+    zone: *1
+    time: 2017-06-29 14:15:37.781364000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 19:15:37.781364000 Z
+    zone: *1
+    time: 2017-06-29 14:15:37.781364000 Z
+unlockedpyramidmodule_154:
+  id: 154
+  user_id: 103
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 02:17:33.581575000 Z
+    zone: *1
+    time: 2017-06-29 21:17:33.581575000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 02:26:44.093506000 Z
+    zone: *1
+    time: 2017-06-29 21:26:44.093506000 Z
+unlockedpyramidmodule_155:
+  id: 155
+  user_id: 119
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 14:44:26.237382000 Z
+    zone: *1
+    time: 2017-06-30 09:44:26.237382000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 14:44:26.237382000 Z
+    zone: *1
+    time: 2017-06-30 09:44:26.237382000 Z
+unlockedpyramidmodule_156:
+  id: 156
+  user_id: 157
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:47:34.995382000 Z
+    zone: *1
+    time: 2017-06-30 13:47:34.995382000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:50:14.349600000 Z
+    zone: *1
+    time: 2017-06-30 13:50:14.349600000 Z
+unlockedpyramidmodule_157:
+  id: 157
+  user_id: 157
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:48:06.413125000 Z
+    zone: *1
+    time: 2017-06-30 13:48:06.413125000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:13:05.153802000 Z
+    zone: *1
+    time: 2017-06-30 14:13:05.153802000 Z
+unlockedpyramidmodule_158:
+  id: 158
+  user_id: 157
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:48:06.477744000 Z
+    zone: *1
+    time: 2017-06-30 13:48:06.477744000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:52:02.002671000 Z
+    zone: *1
+    time: 2017-06-30 13:52:02.002671000 Z
+unlockedpyramidmodule_159:
+  id: 159
+  user_id: 157
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:50:14.337999000 Z
+    zone: *1
+    time: 2017-06-30 13:50:14.337999000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:55:06.936132000 Z
+    zone: *1
+    time: 2017-06-30 13:55:06.936132000 Z
+unlockedpyramidmodule_160:
+  id: 160
+  user_id: 157
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:50:14.645998000 Z
+    zone: *1
+    time: 2017-06-30 13:50:14.645998000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:00:14.852953000 Z
+    zone: *1
+    time: 2017-06-30 14:00:14.852953000 Z
+unlockedpyramidmodule_161:
+  id: 161
+  user_id: 157
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:52:02.176604000 Z
+    zone: *1
+    time: 2017-06-30 13:52:02.176604000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:58:22.570858000 Z
+    zone: *1
+    time: 2017-06-30 13:58:22.570858000 Z
+unlockedpyramidmodule_162:
+  id: 162
+  user_id: 157
+  pyramid_module_id: 17
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 18:58:22.644384000 Z
+    zone: *1
+    time: 2017-06-30 13:58:22.644384000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:11:33.800943000 Z
+    zone: *1
+    time: 2017-06-30 14:11:33.800943000 Z
+unlockedpyramidmodule_163:
+  id: 163
+  user_id: 157
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:11:32.764731000 Z
+    zone: *1
+    time: 2017-06-30 14:11:32.764731000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:11:32.764731000 Z
+    zone: *1
+    time: 2017-06-30 14:11:32.764731000 Z
+unlockedpyramidmodule_164:
+  id: 164
+  user_id: 157
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:11:33.474127000 Z
+    zone: *1
+    time: 2017-06-30 14:11:33.474127000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:14:38.871232000 Z
+    zone: *1
+    time: 2017-06-30 14:14:38.871232000 Z
+unlockedpyramidmodule_165:
+  id: 165
+  user_id: 157
+  pyramid_module_id: 16
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:13:05.806331000 Z
+    zone: *1
+    time: 2017-06-30 14:13:05.806331000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:14:20.099532000 Z
+    zone: *1
+    time: 2017-06-30 14:14:20.099532000 Z
+unlockedpyramidmodule_166:
+  id: 166
+  user_id: 157
+  pyramid_module_id: 19
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:14:39.325434000 Z
+    zone: *1
+    time: 2017-06-30 14:14:39.325434000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:14:39.325434000 Z
+    zone: *1
+    time: 2017-06-30 14:14:39.325434000 Z
+unlockedpyramidmodule_167:
+  id: 167
+  user_id: 158
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:41:48.674165000 Z
+    zone: *1
+    time: 2017-06-30 14:41:48.674165000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:42:57.097133000 Z
+    zone: *1
+    time: 2017-06-30 14:42:57.097133000 Z
+unlockedpyramidmodule_168:
+  id: 168
+  user_id: 158
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:42:20.331244000 Z
+    zone: *1
+    time: 2017-06-30 14:42:20.331244000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:42:20.331244000 Z
+    zone: *1
+    time: 2017-06-30 14:42:20.331244000 Z
+unlockedpyramidmodule_169:
+  id: 169
+  user_id: 158
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:42:20.408166000 Z
+    zone: *1
+    time: 2017-06-30 14:42:20.408166000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:42:43.844623000 Z
+    zone: *1
+    time: 2017-06-30 14:42:43.844623000 Z
+unlockedpyramidmodule_170:
+  id: 170
+  user_id: 158
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:42:56.844243000 Z
+    zone: *1
+    time: 2017-06-30 14:42:56.844243000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:42:56.844243000 Z
+    zone: *1
+    time: 2017-06-30 14:42:56.844243000 Z
+unlockedpyramidmodule_171:
+  id: 171
+  user_id: 158
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:42:57.014798000 Z
+    zone: *1
+    time: 2017-06-30 14:42:57.014798000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 19:43:26.673282000 Z
+    zone: *1
+    time: 2017-06-30 14:43:26.673282000 Z
+unlockedpyramidmodule_172:
+  id: 172
+  user_id: 31
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 22:02:13.269426000 Z
+    zone: *1
+    time: 2017-07-01 17:02:13.269426000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 22:02:26.050068000 Z
+    zone: *1
+    time: 2017-07-01 17:02:26.050068000 Z
+unlockedpyramidmodule_173:
+  id: 173
+  user_id: 31
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 22:02:37.674032000 Z
+    zone: *1
+    time: 2017-07-01 17:02:37.674032000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 22:02:37.674032000 Z
+    zone: *1
+    time: 2017-07-01 17:02:37.674032000 Z
+unlockedpyramidmodule_174:
+  id: 174
+  user_id: 31
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 22:02:37.748951000 Z
+    zone: *1
+    time: 2017-07-01 17:02:37.748951000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:17:04.403071000 Z
+    zone: *1
+    time: 2017-07-06 14:17:04.403071000 Z
+unlockedpyramidmodule_175:
+  id: 175
+  user_id: 156
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:49:47.774979000 Z
+    zone: *1
+    time: 2017-07-03 07:49:47.774979000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 15:18:37.567896000 Z
+    zone: *1
+    time: 2017-07-03 10:18:37.567896000 Z
+unlockedpyramidmodule_176:
+  id: 176
+  user_id: 156
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:39:24.894544000 Z
+    zone: *1
+    time: 2017-07-03 08:39:24.894544000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 17:10:34.175183000 Z
+    zone: *1
+    time: 2017-07-03 12:10:34.175183000 Z
+unlockedpyramidmodule_177:
+  id: 177
+  user_id: 156
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:39:25.576835000 Z
+    zone: *1
+    time: 2017-07-03 08:39:25.576835000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 15:19:17.038360000 Z
+    zone: *1
+    time: 2017-07-03 10:19:17.038360000 Z
+unlockedpyramidmodule_178:
+  id: 178
+  user_id: 156
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:47:17.515005000 Z
+    zone: *1
+    time: 2017-07-03 08:47:17.515005000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:47:17.515005000 Z
+    zone: *1
+    time: 2017-07-03 08:47:17.515005000 Z
+unlockedpyramidmodule_179:
+  id: 179
+  user_id: 156
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:47:17.595773000 Z
+    zone: *1
+    time: 2017-07-03 08:47:17.595773000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 15:19:17.203229000 Z
+    zone: *1
+    time: 2017-07-03 10:19:17.203229000 Z
+unlockedpyramidmodule_180:
+  id: 180
+  user_id: 171
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 14:10:30.648470000 Z
+    zone: *1
+    time: 2017-07-03 09:10:30.648470000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:31:20.160529000 Z
+    zone: *1
+    time: 2017-07-05 08:31:20.160529000 Z
+unlockedpyramidmodule_181:
+  id: 181
+  user_id: 171
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 14:12:16.028030000 Z
+    zone: *1
+    time: 2017-07-03 09:12:16.028030000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:40:03.928143000 Z
+    zone: *1
+    time: 2017-07-05 08:40:03.928143000 Z
+unlockedpyramidmodule_182:
+  id: 182
+  user_id: 171
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 14:12:16.954428000 Z
+    zone: *1
+    time: 2017-07-03 09:12:16.954428000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 16:24:45.128971000 Z
+    zone: *1
+    time: 2017-07-03 11:24:45.128971000 Z
+unlockedpyramidmodule_183:
+  id: 183
+  user_id: 171
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 16:23:53.441861000 Z
+    zone: *1
+    time: 2017-07-03 11:23:53.441861000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:06:50.389826000 Z
+    zone: *1
+    time: 2017-07-05 08:06:50.389826000 Z
+unlockedpyramidmodule_184:
+  id: 184
+  user_id: 171
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 16:23:53.450672000 Z
+    zone: *1
+    time: 2017-07-03 11:23:53.450672000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:02:39.234093000 Z
+    zone: *1
+    time: 2017-07-05 08:02:39.234093000 Z
+unlockedpyramidmodule_185:
+  id: 185
+  user_id: 171
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 16:24:44.716295000 Z
+    zone: *1
+    time: 2017-07-03 11:24:44.716295000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:08:01.622445000 Z
+    zone: *1
+    time: 2017-07-05 08:08:01.622445000 Z
+unlockedpyramidmodule_186:
+  id: 186
+  user_id: 171
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 16:24:45.368011000 Z
+    zone: *1
+    time: 2017-07-03 11:24:45.368011000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:00:44.718974000 Z
+    zone: *1
+    time: 2017-07-05 08:00:44.718974000 Z
+unlockedpyramidmodule_187:
+  id: 187
+  user_id: 95
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:39:11.351579000 Z
+    zone: *1
+    time: 2017-07-03 15:39:11.351579000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:49:12.403073000 Z
+    zone: *1
+    time: 2017-07-03 15:49:12.403073000 Z
+unlockedpyramidmodule_188:
+  id: 188
+  user_id: 95
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:39:40.333391000 Z
+    zone: *1
+    time: 2017-07-03 15:39:40.333391000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:48:53.436837000 Z
+    zone: *1
+    time: 2017-07-03 15:48:53.436837000 Z
+unlockedpyramidmodule_189:
+  id: 189
+  user_id: 95
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:39:40.349221000 Z
+    zone: *1
+    time: 2017-07-03 15:39:40.349221000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:49:25.987262000 Z
+    zone: *1
+    time: 2017-07-03 15:49:25.987262000 Z
+unlockedpyramidmodule_190:
+  id: 190
+  user_id: 95
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:49:12.497392000 Z
+    zone: *1
+    time: 2017-07-03 15:49:12.497392000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:49:12.497392000 Z
+    zone: *1
+    time: 2017-07-03 15:49:12.497392000 Z
+unlockedpyramidmodule_191:
+  id: 191
+  user_id: 95
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:49:12.608715000 Z
+    zone: *1
+    time: 2017-07-03 15:49:12.608715000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 20:49:12.608715000 Z
+    zone: *1
+    time: 2017-07-03 15:49:12.608715000 Z
+unlockedpyramidmodule_192:
+  id: 192
+  user_id: 92
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:16:12.535129000 Z
+    zone: *1
+    time: 2017-07-03 17:16:12.535129000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:16:12.535129000 Z
+    zone: *1
+    time: 2017-07-03 17:16:12.535129000 Z
+unlockedpyramidmodule_193:
+  id: 193
+  user_id: 92
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:16:12.598528000 Z
+    zone: *1
+    time: 2017-07-03 17:16:12.598528000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 22:16:12.598528000 Z
+    zone: *1
+    time: 2017-07-03 17:16:12.598528000 Z
+unlockedpyramidmodule_194:
+  id: 194
+  user_id: 172
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:17:47.669502000 Z
+    zone: *1
+    time: 2017-07-03 20:17:47.669502000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 02:49:15.827346000 Z
+    zone: *1
+    time: 2017-07-09 21:49:15.827346000 Z
+unlockedpyramidmodule_195:
+  id: 195
+  user_id: 171
+  pyramid_module_id: 16
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:00:44.886986000 Z
+    zone: *1
+    time: 2017-07-05 08:00:44.886986000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:24:53.951320000 Z
+    zone: *1
+    time: 2017-07-05 08:24:53.951320000 Z
+unlockedpyramidmodule_196:
+  id: 196
+  user_id: 171
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:05:49.957426000 Z
+    zone: *1
+    time: 2017-07-05 08:05:49.957426000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:26:22.524837000 Z
+    zone: *1
+    time: 2017-07-05 08:26:22.524837000 Z
+unlockedpyramidmodule_197:
+  id: 197
+  user_id: 171
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:06:50.466546000 Z
+    zone: *1
+    time: 2017-07-05 08:06:50.466546000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:09:40.127738000 Z
+    zone: *1
+    time: 2017-07-05 08:09:40.127738000 Z
+unlockedpyramidmodule_198:
+  id: 198
+  user_id: 171
+  pyramid_module_id: 15
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:08:02.819517000 Z
+    zone: *1
+    time: 2017-07-05 08:08:02.819517000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:13:19.905619000 Z
+    zone: *1
+    time: 2017-07-05 08:13:19.905619000 Z
+unlockedpyramidmodule_199:
+  id: 199
+  user_id: 171
+  pyramid_module_id: 17
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:09:40.412682000 Z
+    zone: *1
+    time: 2017-07-05 08:09:40.412682000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:12:37.404439000 Z
+    zone: *1
+    time: 2017-07-05 08:12:37.404439000 Z
+unlockedpyramidmodule_200:
+  id: 200
+  user_id: 171
+  pyramid_module_id: 18
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:11:50.511757000 Z
+    zone: *1
+    time: 2017-07-05 08:11:50.511757000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:24:43.055004000 Z
+    zone: *1
+    time: 2017-07-05 08:24:43.055004000 Z
+unlockedpyramidmodule_201:
+  id: 201
+  user_id: 171
+  pyramid_module_id: 19
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:13:20.943887000 Z
+    zone: *1
+    time: 2017-07-05 08:13:20.943887000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:13:20.943887000 Z
+    zone: *1
+    time: 2017-07-05 08:13:20.943887000 Z
+unlockedpyramidmodule_202:
+  id: 202
+  user_id: 173
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 13:45:19.839666000 Z
+    zone: *1
+    time: 2017-07-05 08:45:19.839666000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 20:04:40.397332000 Z
+    zone: *1
+    time: 2017-07-05 15:04:40.397332000 Z
+unlockedpyramidmodule_203:
+  id: 203
+  user_id: 173
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 14:01:42.766759000 Z
+    zone: *1
+    time: 2017-07-05 09:01:42.766759000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 20:34:20.775471000 Z
+    zone: *1
+    time: 2017-07-05 15:34:20.775471000 Z
+unlockedpyramidmodule_204:
+  id: 204
+  user_id: 173
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 14:01:43.053911000 Z
+    zone: *1
+    time: 2017-07-05 09:01:43.053911000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 20:35:03.277035000 Z
+    zone: *1
+    time: 2017-07-05 15:35:03.277035000 Z
+unlockedpyramidmodule_205:
+  id: 205
+  user_id: 173
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 15:32:21.144770000 Z
+    zone: *1
+    time: 2017-07-05 10:32:21.144770000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 20:35:50.997601000 Z
+    zone: *1
+    time: 2017-07-05 15:35:50.997601000 Z
+unlockedpyramidmodule_206:
+  id: 206
+  user_id: 173
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 15:32:21.283151000 Z
+    zone: *1
+    time: 2017-07-05 10:32:21.283151000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 20:39:15.135720000 Z
+    zone: *1
+    time: 2017-07-05 15:39:15.135720000 Z
+unlockedpyramidmodule_207:
+  id: 207
+  user_id: 173
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 16:15:42.444778000 Z
+    zone: *1
+    time: 2017-07-05 11:15:42.444778000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 20:33:35.727056000 Z
+    zone: *1
+    time: 2017-07-05 15:33:35.727056000 Z
+unlockedpyramidmodule_208:
+  id: 208
+  user_id: 173
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 16:15:42.657891000 Z
+    zone: *1
+    time: 2017-07-05 11:15:42.657891000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 20:44:19.734768000 Z
+    zone: *1
+    time: 2017-07-05 15:44:19.734768000 Z
+unlockedpyramidmodule_209:
+  id: 209
+  user_id: 173
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 19:06:28.564772000 Z
+    zone: *1
+    time: 2017-07-05 14:06:28.564772000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 19:06:28.564772000 Z
+    zone: *1
+    time: 2017-07-05 14:06:28.564772000 Z
+unlockedpyramidmodule_210:
+  id: 210
+  user_id: 173
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 19:56:33.777505000 Z
+    zone: *1
+    time: 2017-07-05 14:56:33.777505000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 19:56:33.777505000 Z
+    zone: *1
+    time: 2017-07-05 14:56:33.777505000 Z
+unlockedpyramidmodule_211:
+  id: 211
+  user_id: 173
+  pyramid_module_id: 16
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 20:44:50.505722000 Z
+    zone: *1
+    time: 2017-07-05 15:44:50.505722000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 15:34:47.348528000 Z
+    zone: *1
+    time: 2017-07-06 10:34:47.348528000 Z
+unlockedpyramidmodule_212:
+  id: 212
+  user_id: 174
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 15:57:20.135830000 Z
+    zone: *1
+    time: 2017-07-06 10:57:20.135830000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:02:59.856552000 Z
+    zone: *1
+    time: 2017-07-06 11:02:59.856552000 Z
+unlockedpyramidmodule_213:
+  id: 213
+  user_id: 174
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:03:16.101249000 Z
+    zone: *1
+    time: 2017-07-06 11:03:16.101249000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:12:33.344778000 Z
+    zone: *1
+    time: 2017-07-06 11:12:33.344778000 Z
+unlockedpyramidmodule_214:
+  id: 214
+  user_id: 174
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:03:16.269883000 Z
+    zone: *1
+    time: 2017-07-06 11:03:16.269883000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:17:09.835723000 Z
+    zone: *1
+    time: 2017-07-06 11:17:09.835723000 Z
+unlockedpyramidmodule_215:
+  id: 215
+  user_id: 174
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:16:35.016775000 Z
+    zone: *1
+    time: 2017-07-06 11:16:35.016775000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:28:12.719895000 Z
+    zone: *1
+    time: 2017-07-06 11:28:12.719895000 Z
+unlockedpyramidmodule_216:
+  id: 216
+  user_id: 174
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:16:35.018470000 Z
+    zone: *1
+    time: 2017-07-06 11:16:35.018470000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:19:34.145025000 Z
+    zone: *1
+    time: 2017-07-06 12:19:34.145025000 Z
+unlockedpyramidmodule_217:
+  id: 217
+  user_id: 174
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:18:01.787523000 Z
+    zone: *1
+    time: 2017-07-06 11:18:01.787523000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:22:14.601710000 Z
+    zone: *1
+    time: 2017-07-06 11:22:14.601710000 Z
+unlockedpyramidmodule_218:
+  id: 218
+  user_id: 174
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:18:01.954912000 Z
+    zone: *1
+    time: 2017-07-06 11:18:01.954912000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:18:23.814542000 Z
+    zone: *1
+    time: 2017-07-06 12:18:23.814542000 Z
+unlockedpyramidmodule_219:
+  id: 219
+  user_id: 174
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:22:29.773050000 Z
+    zone: *1
+    time: 2017-07-06 11:22:29.773050000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:17:16.761371000 Z
+    zone: *1
+    time: 2017-07-06 12:17:16.761371000 Z
+unlockedpyramidmodule_220:
+  id: 220
+  user_id: 174
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:28:32.491048000 Z
+    zone: *1
+    time: 2017-07-06 11:28:32.491048000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:22:36.654560000 Z
+    zone: *1
+    time: 2017-07-06 12:22:36.654560000 Z
+unlockedpyramidmodule_221:
+  id: 221
+  user_id: 175
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:55:26.151521000 Z
+    zone: *1
+    time: 2017-07-06 11:55:26.151521000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:55:42.052758000 Z
+    zone: *1
+    time: 2017-07-06 11:55:42.052758000 Z
+unlockedpyramidmodule_222:
+  id: 222
+  user_id: 175
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:56:00.010992000 Z
+    zone: *1
+    time: 2017-07-06 11:56:00.010992000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 18:03:21.633637000 Z
+    zone: *1
+    time: 2017-07-06 13:03:21.633637000 Z
+unlockedpyramidmodule_223:
+  id: 223
+  user_id: 175
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:56:00.196932000 Z
+    zone: *1
+    time: 2017-07-06 11:56:00.196932000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:56:31.490937000 Z
+    zone: *1
+    time: 2017-07-06 11:56:31.490937000 Z
+unlockedpyramidmodule_224:
+  id: 224
+  user_id: 175
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:56:51.263714000 Z
+    zone: *1
+    time: 2017-07-06 11:56:51.263714000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:01:05.240452000 Z
+    zone: *1
+    time: 2017-07-06 12:01:05.240452000 Z
+unlockedpyramidmodule_225:
+  id: 225
+  user_id: 175
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:56:51.355230000 Z
+    zone: *1
+    time: 2017-07-06 11:56:51.355230000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 16:56:51.355230000 Z
+    zone: *1
+    time: 2017-07-06 11:56:51.355230000 Z
+unlockedpyramidmodule_226:
+  id: 226
+  user_id: 174
+  pyramid_module_id: 15
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:18:47.832449000 Z
+    zone: *1
+    time: 2017-07-06 12:18:47.832449000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:23:16.882682000 Z
+    zone: *1
+    time: 2017-07-06 12:23:16.882682000 Z
+unlockedpyramidmodule_227:
+  id: 227
+  user_id: 174
+  pyramid_module_id: 16
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:21:07.602383000 Z
+    zone: *1
+    time: 2017-07-06 12:21:07.602383000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:23:53.987602000 Z
+    zone: *1
+    time: 2017-07-06 12:23:53.987602000 Z
+unlockedpyramidmodule_228:
+  id: 228
+  user_id: 174
+  pyramid_module_id: 17
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:22:58.224164000 Z
+    zone: *1
+    time: 2017-07-06 12:22:58.224164000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:24:46.400324000 Z
+    zone: *1
+    time: 2017-07-06 12:24:46.400324000 Z
+unlockedpyramidmodule_229:
+  id: 229
+  user_id: 174
+  pyramid_module_id: 18
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:24:06.243493000 Z
+    zone: *1
+    time: 2017-07-06 12:24:06.243493000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:25:24.622396000 Z
+    zone: *1
+    time: 2017-07-06 12:25:24.622396000 Z
+unlockedpyramidmodule_230:
+  id: 230
+  user_id: 174
+  pyramid_module_id: 19
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:25:13.352944000 Z
+    zone: *1
+    time: 2017-07-06 12:25:13.352944000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 17:25:13.352944000 Z
+    zone: *1
+    time: 2017-07-06 12:25:13.352944000 Z
+unlockedpyramidmodule_231:
+  id: 231
+  user_id: 176
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:45:13.211337000 Z
+    zone: *1
+    time: 2017-07-06 14:45:13.211337000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:45:26.857796000 Z
+    zone: *1
+    time: 2017-07-06 14:45:26.857796000 Z
+unlockedpyramidmodule_232:
+  id: 232
+  user_id: 176
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:45:37.658713000 Z
+    zone: *1
+    time: 2017-07-06 14:45:37.658713000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:50:11.598100000 Z
+    zone: *1
+    time: 2017-07-06 14:50:11.598100000 Z
+unlockedpyramidmodule_233:
+  id: 233
+  user_id: 176
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:45:37.914202000 Z
+    zone: *1
+    time: 2017-07-06 14:45:37.914202000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:49:29.932669000 Z
+    zone: *1
+    time: 2017-07-06 14:49:29.932669000 Z
+unlockedpyramidmodule_234:
+  id: 234
+  user_id: 176
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:49:45.238954000 Z
+    zone: *1
+    time: 2017-07-06 14:49:45.238954000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:51:04.978033000 Z
+    zone: *1
+    time: 2017-07-06 14:51:04.978033000 Z
+unlockedpyramidmodule_235:
+  id: 235
+  user_id: 176
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:49:45.319587000 Z
+    zone: *1
+    time: 2017-07-06 14:49:45.319587000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:55:41.933225000 Z
+    zone: *1
+    time: 2017-07-06 14:55:41.933225000 Z
+unlockedpyramidmodule_236:
+  id: 236
+  user_id: 176
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:50:28.419070000 Z
+    zone: *1
+    time: 2017-07-06 14:50:28.419070000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:53:01.058490000 Z
+    zone: *1
+    time: 2017-07-06 14:53:01.058490000 Z
+unlockedpyramidmodule_237:
+  id: 237
+  user_id: 176
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:50:28.542303000 Z
+    zone: *1
+    time: 2017-07-06 14:50:28.542303000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:56:37.017157000 Z
+    zone: *1
+    time: 2017-07-06 14:56:37.017157000 Z
+unlockedpyramidmodule_238:
+  id: 238
+  user_id: 176
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:51:20.165308000 Z
+    zone: *1
+    time: 2017-07-06 14:51:20.165308000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:54:48.779500000 Z
+    zone: *1
+    time: 2017-07-06 14:54:48.779500000 Z
+unlockedpyramidmodule_239:
+  id: 239
+  user_id: 176
+  pyramid_module_id: 11
+  completed_phases:
+  - '1'
+  - '2'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:53:35.476597000 Z
+    zone: *1
+    time: 2017-07-06 14:53:35.476597000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:57:16.452762000 Z
+    zone: *1
+    time: 2017-07-06 14:57:16.452762000 Z
+unlockedpyramidmodule_240:
+  id: 240
+  user_id: 176
+  pyramid_module_id: 15
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:56:02.958905000 Z
+    zone: *1
+    time: 2017-07-06 14:56:02.958905000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:56:02.958905000 Z
+    zone: *1
+    time: 2017-07-06 14:56:02.958905000 Z
+unlockedpyramidmodule_241:
+  id: 241
+  user_id: 176
+  pyramid_module_id: 16
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:57:00.414681000 Z
+    zone: *1
+    time: 2017-07-06 14:57:00.414681000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:57:00.414681000 Z
+    zone: *1
+    time: 2017-07-06 14:57:00.414681000 Z
+unlockedpyramidmodule_242:
+  id: 242
+  user_id: 177
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:58:37.451857000 Z
+    zone: *1
+    time: 2017-07-06 14:58:37.451857000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 19:58:58.438970000 Z
+    zone: *1
+    time: 2017-07-06 14:58:58.438970000 Z
+unlockedpyramidmodule_243:
+  id: 243
+  user_id: 177
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:02:33.355217000 Z
+    zone: *1
+    time: 2017-07-06 15:02:33.355217000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:04:02.705266000 Z
+    zone: *1
+    time: 2017-07-06 15:04:02.705266000 Z
+unlockedpyramidmodule_244:
+  id: 244
+  user_id: 177
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:02:33.418747000 Z
+    zone: *1
+    time: 2017-07-06 15:02:33.418747000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:07:55.467079000 Z
+    zone: *1
+    time: 2017-07-06 15:07:55.467079000 Z
+unlockedpyramidmodule_245:
+  id: 245
+  user_id: 177
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:04:42.144927000 Z
+    zone: *1
+    time: 2017-07-06 15:04:42.144927000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:06:20.609339000 Z
+    zone: *1
+    time: 2017-07-06 15:06:20.609339000 Z
+unlockedpyramidmodule_246:
+  id: 246
+  user_id: 177
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:04:42.625262000 Z
+    zone: *1
+    time: 2017-07-06 15:04:42.625262000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:15:21.624605000 Z
+    zone: *1
+    time: 2017-07-06 15:15:21.624605000 Z
+unlockedpyramidmodule_247:
+  id: 247
+  user_id: 177
+  pyramid_module_id: 13
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:06:56.886888000 Z
+    zone: *1
+    time: 2017-07-06 15:06:56.886888000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:13:19.185622000 Z
+    zone: *1
+    time: 2017-07-06 15:13:19.185622000 Z
+unlockedpyramidmodule_248:
+  id: 248
+  user_id: 177
+  pyramid_module_id: 9
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:08:47.312255000 Z
+    zone: *1
+    time: 2017-07-06 15:08:47.312255000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:10:24.345281000 Z
+    zone: *1
+    time: 2017-07-06 15:10:24.345281000 Z
+unlockedpyramidmodule_249:
+  id: 249
+  user_id: 177
+  pyramid_module_id: 10
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:08:47.541997000 Z
+    zone: *1
+    time: 2017-07-06 15:08:47.541997000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-06 20:08:47.541997000 Z
+    zone: *1
+    time: 2017-07-06 15:08:47.541997000 Z
+unlockedpyramidmodule_250:
+  id: 250
+  user_id: 172
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 03:35:11.159592000 Z
+    zone: *1
+    time: 2017-07-06 22:35:11.159592000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 02:48:58.664694000 Z
+    zone: *1
+    time: 2017-07-09 21:48:58.664694000 Z
+unlockedpyramidmodule_251:
+  id: 251
+  user_id: 172
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 03:35:11.383301000 Z
+    zone: *1
+    time: 2017-07-06 22:35:11.383301000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 03:35:11.383301000 Z
+    zone: *1
+    time: 2017-07-06 22:35:11.383301000 Z
+unlockedpyramidmodule_252:
+  id: 252
+  user_id: 181
+  pyramid_module_id: 3
+  completed_phases:
+  - '1'
+  - '2'
+  - '3'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 14:38:44.233834000 Z
+    zone: *1
+    time: 2017-07-07 09:38:44.233834000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 16:41:33.528812000 Z
+    zone: *1
+    time: 2017-07-07 11:41:33.528812000 Z
+unlockedpyramidmodule_253:
+  id: 253
+  user_id: 181
+  pyramid_module_id: 7
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 17:30:50.382885000 Z
+    zone: *1
+    time: 2017-07-07 12:30:50.382885000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 17:30:50.382885000 Z
+    zone: *1
+    time: 2017-07-07 12:30:50.382885000 Z
+unlockedpyramidmodule_254:
+  id: 254
+  user_id: 181
+  pyramid_module_id: 8
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 17:30:50.515134000 Z
+    zone: *1
+    time: 2017-07-07 12:30:50.515134000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 17:30:50.515134000 Z
+    zone: *1
+    time: 2017-07-07 12:30:50.515134000 Z
+unlockedpyramidmodule_255:
+  id: 255
+  user_id: 172
+  pyramid_module_id: 5
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 02:49:16.036894000 Z
+    zone: *1
+    time: 2017-07-09 21:49:16.036894000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 02:49:16.036894000 Z
+    zone: *1
+    time: 2017-07-09 21:49:16.036894000 Z
+unlockedpyramidmodule_256:
+  id: 256
+  user_id: 172
+  pyramid_module_id: 12
+  completed_phases:
+  - '1'
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 02:49:16.153287000 Z
+    zone: *1
+    time: 2017-07-09 21:49:16.153287000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-10 02:49:16.153287000 Z
+    zone: *1
+    time: 2017-07-09 21:49:16.153287000 Z
+unlockedpyramidmodule_257:
+  id: 257
+  user_id: 184
+  pyramid_module_id: 3
+  completed_phases: []
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 17:30:42.993057000 Z
+    zone: *1
+    time: 2017-07-11 12:30:42.993057000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-11 17:30:42.993057000 Z
+    zone: *1
+    time: 2017-07-11 12:30:42.993057000 Z

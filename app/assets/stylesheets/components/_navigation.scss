@@ -1,0 +1,194 @@
+// Top Bar Styling
+.logo {
+  width: 32px;
+}
+.top-bar {
+    background: none;
+    padding: 1.8em 0em;
+}
+.top-bar, .top-bar ul {
+    background-color: #000;
+}
+.top-bar-section ul li {
+    background: none;
+    font-weight: bold;
+}
+.top-bar-section ul li > a {
+    color: $light-gray;
+    background: none;
+    font-weight: bold;
+}
+.top-bar a:hover {
+      color: white !important;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: none;
+    font-weight: bold;
+    }
+    .top-bar-section li:not(.has-form) a:not(.button):hover {
+        background: none;
+        color: white;
+    }
+.top-bar .toggle-topbar.menu-icon a {
+    color: white;
+    /*height: 34px; */
+    line-height: 33px;
+    padding: 0 2.5rem 0 0.9375rem;
+    position: relative;
+}
+.top-bar .toggle-topbar.menu-icon a:hover {
+    color: white;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    margin-top: -8px;
+    top: 50%;
+    right: 0.9375rem;
+    box-shadow: 0 0 0 1px $primary, 0 7px 0 1px $primary, 0 14px 0 1px $primary;
+    width: 16px;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: $primary transparent transparent;
+  }
+.top-bar-left ul.menu li.menu-text {
+  color: white;
+}
+.is-dropdown-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    min-width: 200px;
+    border: none;
+    background: white;
+    color: $dark-gray;
+}
+.menu-text {
+  margin: 0px 1rem 0px 0px;
+  padding: 0px;
+}
+.menu > li > a {
+    display: block;
+    padding: 0rem 2rem 0rem 0rem;
+    line-height: 1;
+    color: white;
+    font-weight: bold;
+}
+.top-bar-right {
+  color: white;
+  padding-top: 5px;
+
+  a {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.top-bar-right.show-for-small-only{
+  width: 35px;
+
+  @media screen and (min-width: 320px) {
+    top: 30px;
+  }
+
+  @media screen and (min-width: 414px) {
+    top: 32px;
+  }
+
+
+  position: fixed;
+  right: 0;
+}
+
+
+// Page Headers
+#page-header {
+  height: auto;
+  background: #000;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+  top: 0px;
+  font-size: 16px;
+
+  .title {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    color: white;
+    line-height: 26px;
+  }
+  .date {
+    color: white;
+    margin-top: -5px;
+  }
+  .user-status {
+    font-size: 14px;
+    color: white;
+    line-height: 26px;
+    float: right;
+    padding-top: 8px;
+  }
+}
+
+// SETTINGS MENU
+
+li.clickable {
+  padding-left: 20px;
+}
+.menu.vertical > li {
+  display: block;
+  color: white;
+  padding: .5em;
+  z-index: 9;
+}
+.dropdown.menu > li.opens-left > .is-dropdown-submenu {
+  background: $dark-gray;
+  color: black;
+  text-align: left;
+  top: 100%;
+  left: 0;
+}
+
+li.settings-menu {
+  padding: 0px 10px;
+}
+
+li.settings-menu > li > a {
+  display: block;
+  padding: 0rem 2rem 0rem 0rem;
+  line-height: 1;
+  font-weight: bold;
+  background: $dark-gray;
+  position: relative;
+  color: $dark-gray;
+}
+li.settings-menu ul.menu {
+  visibility: hidden;
+  position: absolute;
+  background: white;
+  color: $dark-gray;
+  font-family: Montserrat, 'Roboto', Helvetica, Arial, sans-serif;
+  z-index: 9;
+  margin-top: 5px;
+  margin-left: -78px;
+
+  li {
+    display: block;
+
+    a {
+      color: $dark-gray;
+      background: transparent;
+      padding: 10px 20px;
+      font-size: 14px;
+
+      &:hover {
+        color: $dark-gray !important;
+        background: $light-gray;
+      }
+    }
+  }
+}
+li.settings-menu:hover ul.menu {
+  visibility: visible;
+}

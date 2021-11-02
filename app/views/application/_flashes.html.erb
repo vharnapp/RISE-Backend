@@ -1,0 +1,12 @@
+<div class='flash-wrapper'>
+  <div class='flashes'>
+    <% if flash.any? || local_assigns.has_key?(:user_facing_flashes) %>
+      <% user_facing_flashes.each do |key, value| -%>
+        <div class="flash-<%= key %>">
+          <%= value.html_safe %>
+        </div>
+        <%= link_to '&times;'.html_safe, '#', class: 'remove-flash' %>
+      <% end -%>
+    <% end %>
+  </div>
+</div>

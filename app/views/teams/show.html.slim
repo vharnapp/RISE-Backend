@@ -1,0 +1,56 @@
+- content_for :head do
+  / Fixes the back button by making turbolinks re-render from the server instead of cache
+  meta name='turbolinks-cache-control' content='no-cache'
+
+= render 'components/secondary-header'
+= render 'components/team-header'
+
+section.main-content__body.main-content__body--flush
+  .players.row
+    - if @players.blank?
+      .columns.margin-t-35(style='text-align: center;')
+        | Waiting for players to join the team...
+    - else
+      - @players.each do |player|
+        .player
+          - affiliation = Affiliation.find_by(user_id: player.id, team_id: @team.id)
+          - delete_link = link_to 'x'.html_safe, affiliation_path(affiliation), method: :delete, data: { confirm: 'Really remove this player from the team?' }
+          - if request.variant.blank?
+            .delete(data-tooltip aria-haspopup='true' class="has-tip right" data-disable-hover='false' tabindex='1' title="Remove #{player.full_name} from the team?")
+              = delete_link
+          - else
+            .delete
+              = delete_link
+          .player-info.columns.small-12.medium-3(data-user-id="#{player.slug}")
+            .player-avatar.left
+              = image_tag player.avatar.url
+              - if player.active_today?
+                span.status-badge.active
+
+            .player-name.left
+              h3 = player.full_name
+              br
+              = pluralize(player.phase_attempts.count, 'Lifetime Attempt')
+              br
+              = "#{player.day_streak} Day Streak"
+
+          - level = player.highest_pyramid_level_achieved
+          .pyramid-modules.small-12.medium-9
+            = render 'teams/pyramid_module_progress', { level: level, player: player, pyramid_modules: @pyramid_modules }
+      nav.pagination.team-pagination
+        - if @page > 1 
+          = link_to "« First", "#{@base_page_url}", class: "page"
+          = link_to "‹ Prev", "#{@base_page_url}#{@page == 2 ? "" : "/#{@page - 1}"}", class: "page"
+
+        - if @max_page > 9 && @page >= 7
+          span.page.gap = "..."
+
+        - for item in (@page_start..@page_end)
+          = link_to item, "#{@base_page_url}/#{item}", class: "#{@page == item ? "page active" : "page"}"
+
+        - if @max_page > 9 && (@page < 7 || (@page >= 7 && @page <= @max_page - 7) )
+          span.page.gap = "..."
+
+        - if @page < @max_page
+          = link_to "Next ›", "#{@base_page_url}/#{@page + 1}", class: "page"
+          = link_to "Last »", "#{@base_page_url}/#{@max_page}", class: "page"

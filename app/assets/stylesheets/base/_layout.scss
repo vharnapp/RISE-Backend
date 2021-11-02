@@ -1,0 +1,55 @@
+html {
+  background-color: $base-background-color;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+.sign-in {
+  padding: 100px 0px 200px 0px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 0px;
+  height: 100% !important;
+}
+
+.field-unit--nested {
+  width: 100%;
+
+  legend {
+    // display:none;
+  }
+}
+.container {
+  padding-bottom: 130px;
+  min-height: 100%;
+  margin-bottom: 0 0 -70px 0;
+}
+.gray-block {
+  background: $light-gray;
+  padding: 10px 0px;
+  font-size: 14px;
+  color: $dark-gray;
+}
+
+.footer ul{
+  margin-top: -5px;
+}

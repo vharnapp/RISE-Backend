@@ -1,0 +1,6 @@
+.row.columns.margin-t-35
+  - snippet = Snippet.where("slug ilike '%help%'").first
+  - if snippet.present?
+    = snippet.content.html_safe
+  - else
+    | For help, please contact <a href='mailto:info@risefutbol.com'>info@risefutbol.com</a>

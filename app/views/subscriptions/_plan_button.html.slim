@@ -1,0 +1,49 @@
+- # TODO: (2018-01-13) jon => wrap the plan price finders in an object. Rescues are not good for control flow
+- plan = "Stripe::Plans::#{plan_type.upcase}".constantize rescue nil
+- price = plan.amount / 100 rescue 250
+ruby:
+  case plan_type
+  when 'monthly'
+    plan_checkout_title = 'Rise Monthly Subscription'
+    plan_frequency = 'per month'
+    price = 30
+  when 'monthly_with_coaching'
+    plan_checkout_title = 'Rise Monthly w/ Coaching'
+    plan_frequency = 'per month'
+  when 'annually'
+    plan_checkout_title = 'Rise Annual Subscription'
+    plan_frequency = 'per year'
+  when 'annually_with_coaching'
+    plan_checkout_title = 'Rise Annual w/ Coaching'
+    plan_frequency = 'per year'
+  when 'forever'
+    plan_checkout_title = 'Own It Forever'
+    plan_frequency = 'Own It Forever'
+  end
+
+= form_tag subscriptions_path do
+  script{
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="#{ENV['STRIPE_PUBLISHABLE_KEY']}"
+    data-locale="auto"
+    data-label="$#{price} #{plan_frequency}"
+    data-name="#{plan_checkout_title}"
+    data-description="$#{price}"
+    data-email="#{current_user.email}"
+  }
+  = hidden_field_tag 'plan_type', plan_type
+
+sass:
+  button.stripe-button-el
+    background-color: white
+    background-image: none
+    border: none
+    border-radius: none
+    box-shadow: none
+    height: 32px
+    width: 215px
+
+  button.stripe-button-el span
+    background-color: #3adb76
+    background-image: none

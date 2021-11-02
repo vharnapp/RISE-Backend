@@ -1,0 +1,6400 @@
+---
+exerciseworkout_3:
+  id: 3
+  exercise_id: 3
+  workout_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 16:01:54.264959000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-05-25 11:01:54.264959000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 14:17:35.229210000 Z
+    zone: *1
+    time: 2017-06-01 09:17:35.229210000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_18:
+  id: 18
+  exercise_id: 6
+  workout_id: 12
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 19:14:42.512947000 Z
+    zone: *1
+    time: 2017-05-25 14:14:42.512947000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:54:34.426392000 Z
+    zone: *1
+    time: 2017-06-25 17:54:34.426392000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_31:
+  id: 31
+  exercise_id: 22
+  workout_id: 16
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-25 20:00:44.602971000 Z
+    zone: *1
+    time: 2017-05-25 15:00:44.602971000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 23:12:13.216698000 Z
+    zone: *1
+    time: 2017-06-25 18:12:13.216698000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_51:
+  id: 51
+  exercise_id: 39
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 00:23:53.730964000 Z
+    zone: *1
+    time: 2017-05-25 19:23:53.730964000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:07.636388000 Z
+    zone: *1
+    time: 2017-06-18 13:44:07.636388000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_52:
+  id: 52
+  exercise_id: 40
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 00:25:21.335981000 Z
+    zone: *1
+    time: 2017-05-25 19:25:21.335981000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:07.636388000 Z
+    zone: *1
+    time: 2017-06-18 13:44:07.636388000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_53:
+  id: 53
+  exercise_id: 41
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 00:29:59.645226000 Z
+    zone: *1
+    time: 2017-05-25 19:29:59.645226000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:07.636388000 Z
+    zone: *1
+    time: 2017-06-18 13:44:07.636388000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_54:
+  id: 54
+  exercise_id: 42
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 00:33:22.616891000 Z
+    zone: *1
+    time: 2017-05-25 19:33:22.616891000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:07.636388000 Z
+    zone: *1
+    time: 2017-06-18 13:44:07.636388000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_55:
+  id: 55
+  exercise_id: 43
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 00:37:12.797367000 Z
+    zone: *1
+    time: 2017-05-25 19:37:12.797367000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:07.636388000 Z
+    zone: *1
+    time: 2017-06-18 13:44:07.636388000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_56:
+  id: 56
+  exercise_id: 44
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 00:39:44.362231000 Z
+    zone: *1
+    time: 2017-05-25 19:39:44.362231000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:07.636388000 Z
+    zone: *1
+    time: 2017-06-18 13:44:07.636388000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_57:
+  id: 57
+  exercise_id: 45
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 00:41:47.000419000 Z
+    zone: *1
+    time: 2017-05-25 19:41:47.000419000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:07.636388000 Z
+    zone: *1
+    time: 2017-06-18 13:44:07.636388000 Z
+  deleted_at: 
+  position: 9
+exerciseworkout_64:
+  id: 64
+  exercise_id: 47
+  workout_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 01:14:17.265650000 Z
+    zone: *1
+    time: 2017-05-25 20:14:17.265650000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 21:46:39.236425000 Z
+    zone: *1
+    time: 2017-06-24 16:46:39.236425000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_65:
+  id: 65
+  exercise_id: 48
+  workout_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 01:14:17.280846000 Z
+    zone: *1
+    time: 2017-05-25 20:14:17.280846000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 21:46:39.236425000 Z
+    zone: *1
+    time: 2017-06-24 16:46:39.236425000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_66:
+  id: 66
+  exercise_id: 49
+  workout_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 01:14:20.026650000 Z
+    zone: *1
+    time: 2017-05-25 20:14:20.026650000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 21:46:39.236425000 Z
+    zone: *1
+    time: 2017-06-24 16:46:39.236425000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_67:
+  id: 67
+  exercise_id: 50
+  workout_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 01:17:09.408940000 Z
+    zone: *1
+    time: 2017-05-25 20:17:09.408940000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 21:46:39.236425000 Z
+    zone: *1
+    time: 2017-06-24 16:46:39.236425000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_68:
+  id: 68
+  exercise_id: 51
+  workout_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 01:19:48.444703000 Z
+    zone: *1
+    time: 2017-05-25 20:19:48.444703000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 21:46:39.236425000 Z
+    zone: *1
+    time: 2017-06-24 16:46:39.236425000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_70:
+  id: 70
+  exercise_id: 53
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:06:44.035582000 Z
+    zone: *1
+    time: 2017-05-26 07:06:44.035582000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:38:10.870456000 Z
+    zone: *1
+    time: 2017-06-18 13:38:10.870456000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_71:
+  id: 71
+  exercise_id: 54
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:07:51.450477000 Z
+    zone: *1
+    time: 2017-05-26 07:07:51.450477000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:38:10.848784000 Z
+    zone: *1
+    time: 2017-06-18 13:38:10.848784000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_72:
+  id: 72
+  exercise_id: 55
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:09:15.929026000 Z
+    zone: *1
+    time: 2017-05-26 07:09:15.929026000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:38:10.896588000 Z
+    zone: *1
+    time: 2017-06-18 13:38:10.896588000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_73:
+  id: 73
+  exercise_id: 56
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:12:54.913863000 Z
+    zone: *1
+    time: 2017-05-26 07:12:54.913863000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:38:10.825874000 Z
+    zone: *1
+    time: 2017-06-18 13:38:10.825874000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_79:
+  id: 79
+  exercise_id: 62
+  workout_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:55:41.385358000 Z
+    zone: *1
+    time: 2017-05-26 07:55:41.385358000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 13:03:38.798878000 Z
+    zone: *1
+    time: 2017-05-31 08:03:38.798878000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_80:
+  id: 80
+  exercise_id: 63
+  workout_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 12:57:18.016518000 Z
+    zone: *1
+    time: 2017-05-26 07:57:18.016518000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 13:03:42.738277000 Z
+    zone: *1
+    time: 2017-05-31 08:03:42.738277000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_82:
+  id: 82
+  exercise_id: 65
+  workout_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 13:19:57.154019000 Z
+    zone: *1
+    time: 2017-05-26 08:19:57.154019000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 13:03:50.671749000 Z
+    zone: *1
+    time: 2017-05-31 08:03:50.671749000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_83:
+  id: 83
+  exercise_id: 66
+  workout_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 13:24:25.347602000 Z
+    zone: *1
+    time: 2017-05-26 08:24:25.347602000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-31 13:03:50.699609000 Z
+    zone: *1
+    time: 2017-05-31 08:03:50.699609000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_92:
+  id: 92
+  exercise_id: 75
+  workout_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 13:58:27.912812000 Z
+    zone: *1
+    time: 2017-05-26 08:58:27.912812000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:08:23.145127000 Z
+    zone: *1
+    time: 2017-06-26 20:08:23.145127000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_93:
+  id: 93
+  exercise_id: 76
+  workout_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 14:00:06.610675000 Z
+    zone: *1
+    time: 2017-05-26 09:00:06.610675000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:08:23.145127000 Z
+    zone: *1
+    time: 2017-06-26 20:08:23.145127000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_117:
+  id: 117
+  exercise_id: 99
+  workout_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:43:02.253536000 Z
+    zone: *1
+    time: 2017-05-26 11:43:02.253536000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:47:47.049771000 Z
+    zone: *1
+    time: 2017-06-27 07:47:47.049771000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_118:
+  id: 118
+  exercise_id: 100
+  workout_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:45:26.307971000 Z
+    zone: *1
+    time: 2017-05-26 11:45:26.307971000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:48:03.675123000 Z
+    zone: *1
+    time: 2017-06-27 07:48:03.675123000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_119:
+  id: 119
+  exercise_id: 101
+  workout_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:47:26.405715000 Z
+    zone: *1
+    time: 2017-05-26 11:47:26.405715000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:47:58.728121000 Z
+    zone: *1
+    time: 2017-06-27 07:47:58.728121000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_120:
+  id: 120
+  exercise_id: 102
+  workout_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:51:02.342030000 Z
+    zone: *1
+    time: 2017-05-26 11:51:02.342030000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:48:07.558363000 Z
+    zone: *1
+    time: 2017-06-27 07:48:07.558363000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_121:
+  id: 121
+  exercise_id: 103
+  workout_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 16:52:57.071184000 Z
+    zone: *1
+    time: 2017-05-26 11:52:57.071184000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:48:11.967682000 Z
+    zone: *1
+    time: 2017-06-27 07:48:11.967682000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_128:
+  id: 128
+  exercise_id: 110
+  workout_id: 45
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 17:16:31.243755000 Z
+    zone: *1
+    time: 2017-05-26 12:16:31.243755000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:36:07.726265000 Z
+    zone: *1
+    time: 2017-06-01 17:36:07.726265000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_129:
+  id: 129
+  exercise_id: 111
+  workout_id: 45
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 17:19:07.769652000 Z
+    zone: *1
+    time: 2017-05-26 12:19:07.769652000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:57:40.617604000 Z
+    zone: *1
+    time: 2017-06-27 07:57:40.617604000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_130:
+  id: 130
+  exercise_id: 112
+  workout_id: 45
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 17:21:50.586993000 Z
+    zone: *1
+    time: 2017-05-26 12:21:50.586993000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:57:40.556049000 Z
+    zone: *1
+    time: 2017-06-27 07:57:40.556049000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_131:
+  id: 131
+  exercise_id: 113
+  workout_id: 45
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 17:24:39.241087000 Z
+    zone: *1
+    time: 2017-05-26 12:24:39.241087000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:36:05.910991000 Z
+    zone: *1
+    time: 2017-06-01 17:36:05.910991000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_145:
+  id: 145
+  exercise_id: 126
+  workout_id: 50
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:25:48.841173000 Z
+    zone: *1
+    time: 2017-05-26 15:25:48.841173000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:25:48.841173000 Z
+    zone: *1
+    time: 2017-05-26 15:25:48.841173000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_146:
+  id: 146
+  exercise_id: 127
+  workout_id: 50
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:27:01.549630000 Z
+    zone: *1
+    time: 2017-05-26 15:27:01.549630000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:27:01.549630000 Z
+    zone: *1
+    time: 2017-05-26 15:27:01.549630000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_147:
+  id: 147
+  exercise_id: 128
+  workout_id: 50
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:28:17.623919000 Z
+    zone: *1
+    time: 2017-05-26 15:28:17.623919000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:28:17.623919000 Z
+    zone: *1
+    time: 2017-05-26 15:28:17.623919000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_148:
+  id: 148
+  exercise_id: 129
+  workout_id: 50
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:29:05.339227000 Z
+    zone: *1
+    time: 2017-05-26 15:29:05.339227000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:29:05.339227000 Z
+    zone: *1
+    time: 2017-05-26 15:29:05.339227000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_149:
+  id: 149
+  exercise_id: 130
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:33:18.266818000 Z
+    zone: *1
+    time: 2017-05-26 15:33:18.266818000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:48.701340000 Z
+    zone: *1
+    time: 2017-06-01 17:52:48.701340000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_150:
+  id: 150
+  exercise_id: 131
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:35:10.892609000 Z
+    zone: *1
+    time: 2017-05-26 15:35:10.892609000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:48.715291000 Z
+    zone: *1
+    time: 2017-06-01 17:52:48.715291000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_151:
+  id: 151
+  exercise_id: 132
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:36:12.325449000 Z
+    zone: *1
+    time: 2017-05-26 15:36:12.325449000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:33.446504000 Z
+    zone: *1
+    time: 2017-06-01 17:52:33.446504000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_152:
+  id: 152
+  exercise_id: 133
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:37:15.515806000 Z
+    zone: *1
+    time: 2017-05-26 15:37:15.515806000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:33.477403000 Z
+    zone: *1
+    time: 2017-06-01 17:52:33.477403000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_153:
+  id: 153
+  exercise_id: 134
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 20:38:12.749847000 Z
+    zone: *1
+    time: 2017-05-26 15:38:12.749847000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:33.498368000 Z
+    zone: *1
+    time: 2017-06-01 17:52:33.498368000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_154:
+  id: 154
+  exercise_id: 135
+  workout_id: 52
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:33:53.545588000 Z
+    zone: *1
+    time: 2017-05-26 17:33:53.545588000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:54:53.638201000 Z
+    zone: *1
+    time: 2017-06-01 17:54:53.638201000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_155:
+  id: 155
+  exercise_id: 136
+  workout_id: 52
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:35:10.072964000 Z
+    zone: *1
+    time: 2017-05-26 17:35:10.072964000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:54:53.650104000 Z
+    zone: *1
+    time: 2017-06-01 17:54:53.650104000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_156:
+  id: 156
+  exercise_id: 137
+  workout_id: 52
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:38:12.332729000 Z
+    zone: *1
+    time: 2017-05-26 17:38:12.332729000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:54:51.980524000 Z
+    zone: *1
+    time: 2017-06-01 17:54:51.980524000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_157:
+  id: 157
+  exercise_id: 138
+  workout_id: 53
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:46:15.595369000 Z
+    zone: *1
+    time: 2017-05-26 17:46:15.595369000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:30.715191000 Z
+    zone: *1
+    time: 2017-06-01 17:56:30.715191000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_158:
+  id: 158
+  exercise_id: 139
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:54:24.737755000 Z
+    zone: *1
+    time: 2017-05-26 17:54:24.737755000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:33.525053000 Z
+    zone: *1
+    time: 2017-06-01 17:52:33.525053000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_159:
+  id: 159
+  exercise_id: 140
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:55:46.767697000 Z
+    zone: *1
+    time: 2017-05-26 17:55:46.767697000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:33.549659000 Z
+    zone: *1
+    time: 2017-06-01 17:52:33.549659000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_160:
+  id: 160
+  exercise_id: 141
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:56:57.281131000 Z
+    zone: *1
+    time: 2017-05-26 17:56:57.281131000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:33.573832000 Z
+    zone: *1
+    time: 2017-06-01 17:52:33.573832000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_161:
+  id: 161
+  exercise_id: 142
+  workout_id: 51
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 22:58:17.017617000 Z
+    zone: *1
+    time: 2017-05-26 17:58:17.017617000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:52:33.597904000 Z
+    zone: *1
+    time: 2017-06-01 17:52:33.597904000 Z
+  deleted_at: 
+  position: 9
+exerciseworkout_162:
+  id: 162
+  exercise_id: 143
+  workout_id: 53
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:02:00.736739000 Z
+    zone: *1
+    time: 2017-05-26 18:02:00.736739000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:30.727216000 Z
+    zone: *1
+    time: 2017-06-01 17:56:30.727216000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_163:
+  id: 163
+  exercise_id: 109
+  workout_id: 53
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:02:30.325325000 Z
+    zone: *1
+    time: 2017-05-26 18:02:30.325325000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:29.071296000 Z
+    zone: *1
+    time: 2017-06-01 17:56:29.071296000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_164:
+  id: 164
+  exercise_id: 144
+  workout_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:05:46.963165000 Z
+    zone: *1
+    time: 2017-05-26 18:05:46.963165000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:51.852561000 Z
+    zone: *1
+    time: 2017-06-01 17:56:51.852561000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_165:
+  id: 165
+  exercise_id: 131
+  workout_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:08:22.291184000 Z
+    zone: *1
+    time: 2017-05-26 18:08:22.291184000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:51.867182000 Z
+    zone: *1
+    time: 2017-06-01 17:56:51.867182000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_166:
+  id: 166
+  exercise_id: 145
+  workout_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:08:24.709506000 Z
+    zone: *1
+    time: 2017-05-26 18:08:24.709506000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:49.777351000 Z
+    zone: *1
+    time: 2017-06-01 17:56:49.777351000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_167:
+  id: 167
+  exercise_id: 146
+  workout_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:09:57.011893000 Z
+    zone: *1
+    time: 2017-05-26 18:09:57.011893000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:49.796515000 Z
+    zone: *1
+    time: 2017-06-01 17:56:49.796515000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_168:
+  id: 168
+  exercise_id: 147
+  workout_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:11:42.231845000 Z
+    zone: *1
+    time: 2017-05-26 18:11:42.231845000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:49.814801000 Z
+    zone: *1
+    time: 2017-06-01 17:56:49.814801000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_169:
+  id: 169
+  exercise_id: 148
+  workout_id: 54
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:13:49.924489000 Z
+    zone: *1
+    time: 2017-05-26 18:13:49.924489000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:56:49.837340000 Z
+    zone: *1
+    time: 2017-06-01 17:56:49.837340000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_170:
+  id: 170
+  exercise_id: 149
+  workout_id: 55
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:18:56.720318000 Z
+    zone: *1
+    time: 2017-05-26 18:18:56.720318000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:58:36.727157000 Z
+    zone: *1
+    time: 2017-06-01 17:58:36.727157000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_171:
+  id: 171
+  exercise_id: 150
+  workout_id: 55
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:20:53.588252000 Z
+    zone: *1
+    time: 2017-05-26 18:20:53.588252000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 22:58:36.741910000 Z
+    zone: *1
+    time: 2017-06-01 17:58:36.741910000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_172:
+  id: 172
+  exercise_id: 138
+  workout_id: 56
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:25:12.708533000 Z
+    zone: *1
+    time: 2017-05-26 18:25:12.708533000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:25:12.708533000 Z
+    zone: *1
+    time: 2017-05-26 18:25:12.708533000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_173:
+  id: 173
+  exercise_id: 130
+  workout_id: 56
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:25:12.720209000 Z
+    zone: *1
+    time: 2017-05-26 18:25:12.720209000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:25:12.720209000 Z
+    zone: *1
+    time: 2017-05-26 18:25:12.720209000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_174:
+  id: 174
+  exercise_id: 151
+  workout_id: 56
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:25:14.332059000 Z
+    zone: *1
+    time: 2017-05-26 18:25:14.332059000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:25:14.332059000 Z
+    zone: *1
+    time: 2017-05-26 18:25:14.332059000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_175:
+  id: 175
+  exercise_id: 152
+  workout_id: 56
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:25:44.877175000 Z
+    zone: *1
+    time: 2017-05-26 18:25:44.877175000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-26 23:25:44.877175000 Z
+    zone: *1
+    time: 2017-05-26 18:25:44.877175000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_176:
+  id: 176
+  exercise_id: 153
+  workout_id: 57
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 12:58:05.914721000 Z
+    zone: *1
+    time: 2017-05-27 07:58:05.914721000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:00:17.997423000 Z
+    zone: *1
+    time: 2017-06-01 18:00:17.997423000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_177:
+  id: 177
+  exercise_id: 131
+  workout_id: 57
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:01:01.669832000 Z
+    zone: *1
+    time: 2017-05-27 08:01:01.669832000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:00:18.019010000 Z
+    zone: *1
+    time: 2017-06-01 18:00:18.019010000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_178:
+  id: 178
+  exercise_id: 154
+  workout_id: 57
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:01:03.921511000 Z
+    zone: *1
+    time: 2017-05-27 08:01:03.921511000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:00:16.341071000 Z
+    zone: *1
+    time: 2017-06-01 18:00:16.341071000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_179:
+  id: 179
+  exercise_id: 155
+  workout_id: 57
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:04:14.489736000 Z
+    zone: *1
+    time: 2017-05-27 08:04:14.489736000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:00:16.372893000 Z
+    zone: *1
+    time: 2017-06-01 18:00:16.372893000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_180:
+  id: 180
+  exercise_id: 156
+  workout_id: 57
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:06:25.485172000 Z
+    zone: *1
+    time: 2017-05-27 08:06:25.485172000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:00:16.414175000 Z
+    zone: *1
+    time: 2017-06-01 18:00:16.414175000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_181:
+  id: 181
+  exercise_id: 157
+  workout_id: 57
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:09:27.437324000 Z
+    zone: *1
+    time: 2017-05-27 08:09:27.437324000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:00:16.445571000 Z
+    zone: *1
+    time: 2017-06-01 18:00:16.445571000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_182:
+  id: 182
+  exercise_id: 158
+  workout_id: 58
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:12:07.786954000 Z
+    zone: *1
+    time: 2017-05-27 08:12:07.786954000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:01:03.968385000 Z
+    zone: *1
+    time: 2017-06-01 18:01:03.968385000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_183:
+  id: 183
+  exercise_id: 159
+  workout_id: 58
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:14:48.419126000 Z
+    zone: *1
+    time: 2017-05-27 08:14:48.419126000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:01:03.982845000 Z
+    zone: *1
+    time: 2017-06-01 18:01:03.982845000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_184:
+  id: 184
+  exercise_id: 160
+  workout_id: 59
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:43:08.216521000 Z
+    zone: *1
+    time: 2017-05-27 08:43:08.216521000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:43:08.216521000 Z
+    zone: *1
+    time: 2017-05-27 08:43:08.216521000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_185:
+  id: 185
+  exercise_id: 161
+  workout_id: 59
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:45:45.113880000 Z
+    zone: *1
+    time: 2017-05-27 08:45:45.113880000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:45:45.113880000 Z
+    zone: *1
+    time: 2017-05-27 08:45:45.113880000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_186:
+  id: 186
+  exercise_id: 162
+  workout_id: 59
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:47:24.323057000 Z
+    zone: *1
+    time: 2017-05-27 08:47:24.323057000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:47:24.323057000 Z
+    zone: *1
+    time: 2017-05-27 08:47:24.323057000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_187:
+  id: 187
+  exercise_id: 163
+  workout_id: 59
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:48:51.706646000 Z
+    zone: *1
+    time: 2017-05-27 08:48:51.706646000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:48:51.706646000 Z
+    zone: *1
+    time: 2017-05-27 08:48:51.706646000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_188:
+  id: 188
+  exercise_id: 164
+  workout_id: 59
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:51:42.892235000 Z
+    zone: *1
+    time: 2017-05-27 08:51:42.892235000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:51:42.892235000 Z
+    zone: *1
+    time: 2017-05-27 08:51:42.892235000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_189:
+  id: 189
+  exercise_id: 165
+  workout_id: 59
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:53:12.899639000 Z
+    zone: *1
+    time: 2017-05-27 08:53:12.899639000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 13:53:12.899639000 Z
+    zone: *1
+    time: 2017-05-27 08:53:12.899639000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_190:
+  id: 190
+  exercise_id: 166
+  workout_id: 60
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:13:14.322653000 Z
+    zone: *1
+    time: 2017-05-27 09:13:14.322653000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:59:53.034302000 Z
+    zone: *1
+    time: 2017-06-01 18:59:53.034302000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_191:
+  id: 191
+  exercise_id: 167
+  workout_id: 60
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:14:18.069347000 Z
+    zone: *1
+    time: 2017-05-27 09:14:18.069347000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:59:53.046673000 Z
+    zone: *1
+    time: 2017-06-01 18:59:53.046673000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_192:
+  id: 192
+  exercise_id: 168
+  workout_id: 60
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:17:40.702889000 Z
+    zone: *1
+    time: 2017-05-27 09:17:40.702889000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:58:55.918999000 Z
+    zone: *1
+    time: 2017-06-01 18:58:55.918999000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_193:
+  id: 193
+  exercise_id: 169
+  workout_id: 60
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:20:32.905531000 Z
+    zone: *1
+    time: 2017-05-27 09:20:32.905531000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:58:55.938252000 Z
+    zone: *1
+    time: 2017-06-01 18:58:55.938252000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_194:
+  id: 194
+  exercise_id: 170
+  workout_id: 61
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:24:02.660852000 Z
+    zone: *1
+    time: 2017-05-27 09:24:02.660852000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:24:02.660852000 Z
+    zone: *1
+    time: 2017-05-27 09:24:02.660852000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_195:
+  id: 195
+  exercise_id: 171
+  workout_id: 61
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:26:18.363123000 Z
+    zone: *1
+    time: 2017-05-27 09:26:18.363123000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:26:18.363123000 Z
+    zone: *1
+    time: 2017-05-27 09:26:18.363123000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_196:
+  id: 196
+  exercise_id: 172
+  workout_id: 61
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:29:10.293334000 Z
+    zone: *1
+    time: 2017-05-27 09:29:10.293334000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:29:10.293334000 Z
+    zone: *1
+    time: 2017-05-27 09:29:10.293334000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_197:
+  id: 197
+  exercise_id: 173
+  workout_id: 61
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:31:07.753430000 Z
+    zone: *1
+    time: 2017-05-27 09:31:07.753430000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:31:07.753430000 Z
+    zone: *1
+    time: 2017-05-27 09:31:07.753430000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_198:
+  id: 198
+  exercise_id: 160
+  workout_id: 62
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:35:12.694681000 Z
+    zone: *1
+    time: 2017-05-27 09:35:12.694681000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:04:08.141332000 Z
+    zone: *1
+    time: 2017-06-01 19:04:08.141332000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_199:
+  id: 199
+  exercise_id: 161
+  workout_id: 62
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:35:12.699887000 Z
+    zone: *1
+    time: 2017-05-27 09:35:12.699887000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:04:08.153359000 Z
+    zone: *1
+    time: 2017-06-01 19:04:08.153359000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_200:
+  id: 200
+  exercise_id: 162
+  workout_id: 62
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:35:12.704283000 Z
+    zone: *1
+    time: 2017-05-27 09:35:12.704283000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:04:05.958565000 Z
+    zone: *1
+    time: 2017-06-01 19:04:05.958565000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_201:
+  id: 201
+  exercise_id: 163
+  workout_id: 62
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:35:12.709170000 Z
+    zone: *1
+    time: 2017-05-27 09:35:12.709170000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:04:05.977246000 Z
+    zone: *1
+    time: 2017-06-01 19:04:05.977246000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_202:
+  id: 202
+  exercise_id: 174
+  workout_id: 62
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:35:14.356873000 Z
+    zone: *1
+    time: 2017-05-27 09:35:14.356873000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:04:06.000479000 Z
+    zone: *1
+    time: 2017-06-01 19:04:06.000479000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_203:
+  id: 203
+  exercise_id: 164
+  workout_id: 62
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:37:20.634481000 Z
+    zone: *1
+    time: 2017-05-27 09:37:20.634481000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:04:06.039111000 Z
+    zone: *1
+    time: 2017-06-01 19:04:06.039111000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_204:
+  id: 204
+  exercise_id: 165
+  workout_id: 62
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 14:37:20.650873000 Z
+    zone: *1
+    time: 2017-05-27 09:37:20.650873000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:04:06.071073000 Z
+    zone: *1
+    time: 2017-06-01 19:04:06.071073000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_205:
+  id: 205
+  exercise_id: 175
+  workout_id: 63
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:18:08.308993000 Z
+    zone: *1
+    time: 2017-05-27 10:18:08.308993000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:18:08.308993000 Z
+    zone: *1
+    time: 2017-05-27 10:18:08.308993000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_206:
+  id: 206
+  exercise_id: 176
+  workout_id: 63
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:20:55.425443000 Z
+    zone: *1
+    time: 2017-05-27 10:20:55.425443000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:20:55.425443000 Z
+    zone: *1
+    time: 2017-05-27 10:20:55.425443000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_207:
+  id: 207
+  exercise_id: 177
+  workout_id: 63
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:29:14.084359000 Z
+    zone: *1
+    time: 2017-05-27 10:29:14.084359000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:29:14.084359000 Z
+    zone: *1
+    time: 2017-05-27 10:29:14.084359000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_208:
+  id: 208
+  exercise_id: 178
+  workout_id: 63
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:32:48.386894000 Z
+    zone: *1
+    time: 2017-05-27 10:32:48.386894000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:32:48.386894000 Z
+    zone: *1
+    time: 2017-05-27 10:32:48.386894000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_209:
+  id: 209
+  exercise_id: 179
+  workout_id: 64
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:41:20.946265000 Z
+    zone: *1
+    time: 2017-05-27 10:41:20.946265000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:41:20.946265000 Z
+    zone: *1
+    time: 2017-05-27 10:41:20.946265000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_210:
+  id: 210
+  exercise_id: 180
+  workout_id: 64
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:47:05.430190000 Z
+    zone: *1
+    time: 2017-05-27 10:47:05.430190000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:47:05.430190000 Z
+    zone: *1
+    time: 2017-05-27 10:47:05.430190000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_211:
+  id: 211
+  exercise_id: 181
+  workout_id: 64
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:48:48.815417000 Z
+    zone: *1
+    time: 2017-05-27 10:48:48.815417000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:48:48.815417000 Z
+    zone: *1
+    time: 2017-05-27 10:48:48.815417000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_212:
+  id: 212
+  exercise_id: 182
+  workout_id: 64
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:51:26.844943000 Z
+    zone: *1
+    time: 2017-05-27 10:51:26.844943000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:51:26.844943000 Z
+    zone: *1
+    time: 2017-05-27 10:51:26.844943000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_213:
+  id: 213
+  exercise_id: 161
+  workout_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.347978000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.347978000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.347978000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.347978000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_214:
+  id: 214
+  exercise_id: 160
+  workout_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.353782000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.353782000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.353782000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.353782000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_215:
+  id: 215
+  exercise_id: 162
+  workout_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.359201000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.359201000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.359201000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.359201000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_216:
+  id: 216
+  exercise_id: 163
+  workout_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.364537000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.364537000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.364537000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.364537000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_217:
+  id: 217
+  exercise_id: 174
+  workout_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.370169000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.370169000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.370169000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.370169000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_218:
+  id: 218
+  exercise_id: 164
+  workout_id: 68
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.375580000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.375580000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 15:56:06.375580000 Z
+    zone: *1
+    time: 2017-05-27 10:56:06.375580000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_219:
+  id: 219
+  exercise_id: 175
+  workout_id: 69
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:00:38.943302000 Z
+    zone: *1
+    time: 2017-05-27 11:00:38.943302000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:16:18.194959000 Z
+    zone: *1
+    time: 2017-06-01 19:16:18.194959000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_220:
+  id: 220
+  exercise_id: 176
+  workout_id: 69
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:00:38.949299000 Z
+    zone: *1
+    time: 2017-05-27 11:00:38.949299000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:16:18.210352000 Z
+    zone: *1
+    time: 2017-06-01 19:16:18.210352000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_221:
+  id: 221
+  exercise_id: 183
+  workout_id: 69
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:00:41.605679000 Z
+    zone: *1
+    time: 2017-05-27 11:00:41.605679000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:16:15.578897000 Z
+    zone: *1
+    time: 2017-06-01 19:16:15.578897000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_222:
+  id: 222
+  exercise_id: 177
+  workout_id: 69
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:02:58.476341000 Z
+    zone: *1
+    time: 2017-05-27 11:02:58.476341000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:16:15.612160000 Z
+    zone: *1
+    time: 2017-06-01 19:16:15.612160000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_223:
+  id: 223
+  exercise_id: 184
+  workout_id: 69
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:03:00.094582000 Z
+    zone: *1
+    time: 2017-05-27 11:03:00.094582000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:16:15.645762000 Z
+    zone: *1
+    time: 2017-06-01 19:16:15.645762000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_224:
+  id: 224
+  exercise_id: 185
+  workout_id: 65
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:05:22.469088000 Z
+    zone: *1
+    time: 2017-05-27 11:05:22.469088000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:05:22.469088000 Z
+    zone: *1
+    time: 2017-05-27 11:05:22.469088000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_225:
+  id: 225
+  exercise_id: 186
+  workout_id: 65
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:07:19.183811000 Z
+    zone: *1
+    time: 2017-05-27 11:07:19.183811000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:07:19.183811000 Z
+    zone: *1
+    time: 2017-05-27 11:07:19.183811000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_226:
+  id: 226
+  exercise_id: 187
+  workout_id: 65
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:08:45.178069000 Z
+    zone: *1
+    time: 2017-05-27 11:08:45.178069000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:08:45.178069000 Z
+    zone: *1
+    time: 2017-05-27 11:08:45.178069000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_227:
+  id: 227
+  exercise_id: 188
+  workout_id: 65
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:10:12.329156000 Z
+    zone: *1
+    time: 2017-05-27 11:10:12.329156000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 16:10:12.329156000 Z
+    zone: *1
+    time: 2017-05-27 11:10:12.329156000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_229:
+  id: 229
+  exercise_id: 189
+  workout_id: 66
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:17:18.672242000 Z
+    zone: *1
+    time: 2017-05-27 14:17:18.672242000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:17:18.672242000 Z
+    zone: *1
+    time: 2017-05-27 14:17:18.672242000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_230:
+  id: 230
+  exercise_id: 190
+  workout_id: 66
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:17:23.335969000 Z
+    zone: *1
+    time: 2017-05-27 14:17:23.335969000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:17:23.335969000 Z
+    zone: *1
+    time: 2017-05-27 14:17:23.335969000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_231:
+  id: 231
+  exercise_id: 191
+  workout_id: 66
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:22:52.584687000 Z
+    zone: *1
+    time: 2017-05-27 14:22:52.584687000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 19:22:52.584687000 Z
+    zone: *1
+    time: 2017-05-27 14:22:52.584687000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_232:
+  id: 232
+  exercise_id: 192
+  workout_id: 66
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 21:57:07.616630000 Z
+    zone: *1
+    time: 2017-05-27 16:57:07.616630000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 21:57:07.616630000 Z
+    zone: *1
+    time: 2017-05-27 16:57:07.616630000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_233:
+  id: 233
+  exercise_id: 193
+  workout_id: 67
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:03:27.097908000 Z
+    zone: *1
+    time: 2017-05-27 17:03:27.097908000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:10:43.105172000 Z
+    zone: *1
+    time: 2017-06-01 19:10:43.105172000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_234:
+  id: 234
+  exercise_id: 194
+  workout_id: 67
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:06:34.511597000 Z
+    zone: *1
+    time: 2017-05-27 17:06:34.511597000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:10:43.117235000 Z
+    zone: *1
+    time: 2017-06-01 19:10:43.117235000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_235:
+  id: 235
+  exercise_id: 195
+  workout_id: 67
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:08:35.054231000 Z
+    zone: *1
+    time: 2017-05-27 17:08:35.054231000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 00:10:41.177961000 Z
+    zone: *1
+    time: 2017-06-01 19:10:41.177961000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_236:
+  id: 236
+  exercise_id: 196
+  workout_id: 70
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:12:49.378839000 Z
+    zone: *1
+    time: 2017-05-27 17:12:49.378839000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:12:49.378839000 Z
+    zone: *1
+    time: 2017-05-27 17:12:49.378839000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_237:
+  id: 237
+  exercise_id: 197
+  workout_id: 70
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:16:12.457606000 Z
+    zone: *1
+    time: 2017-05-27 17:16:12.457606000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:16:12.457606000 Z
+    zone: *1
+    time: 2017-05-27 17:16:12.457606000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_238:
+  id: 238
+  exercise_id: 198
+  workout_id: 70
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:18:37.058104000 Z
+    zone: *1
+    time: 2017-05-27 17:18:37.058104000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-27 22:18:37.058104000 Z
+    zone: *1
+    time: 2017-05-27 17:18:37.058104000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_239:
+  id: 239
+  exercise_id: 199
+  workout_id: 71
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:34:30.573571000 Z
+    zone: *1
+    time: 2017-05-28 07:34:30.573571000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:29:24.450951000 Z
+    zone: *1
+    time: 2017-06-02 05:29:24.450951000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_240:
+  id: 240
+  exercise_id: 200
+  workout_id: 71
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:36:34.635871000 Z
+    zone: *1
+    time: 2017-05-28 07:36:34.635871000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:29:27.015665000 Z
+    zone: *1
+    time: 2017-06-02 05:29:27.015665000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_241:
+  id: 241
+  exercise_id: 201
+  workout_id: 71
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:38:44.145325000 Z
+    zone: *1
+    time: 2017-05-28 07:38:44.145325000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:29:27.032633000 Z
+    zone: *1
+    time: 2017-06-02 05:29:27.032633000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_242:
+  id: 242
+  exercise_id: 202
+  workout_id: 71
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:40:31.250599000 Z
+    zone: *1
+    time: 2017-05-28 07:40:31.250599000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:29:24.567597000 Z
+    zone: *1
+    time: 2017-06-02 05:29:24.567597000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_243:
+  id: 243
+  exercise_id: 203
+  workout_id: 72
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:45:58.153554000 Z
+    zone: *1
+    time: 2017-05-28 07:45:58.153554000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:30:00.129769000 Z
+    zone: *1
+    time: 2017-06-02 05:30:00.129769000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_244:
+  id: 244
+  exercise_id: 204
+  workout_id: 72
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:48:26.032997000 Z
+    zone: *1
+    time: 2017-05-28 07:48:26.032997000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:30:03.321220000 Z
+    zone: *1
+    time: 2017-06-02 05:30:03.321220000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_245:
+  id: 245
+  exercise_id: 205
+  workout_id: 72
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:51:27.208020000 Z
+    zone: *1
+    time: 2017-05-28 07:51:27.208020000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:30:03.339789000 Z
+    zone: *1
+    time: 2017-06-02 05:30:03.339789000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_246:
+  id: 246
+  exercise_id: 206
+  workout_id: 73
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:56:05.597881000 Z
+    zone: *1
+    time: 2017-05-28 07:56:05.597881000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 12:56:05.597881000 Z
+    zone: *1
+    time: 2017-05-28 07:56:05.597881000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_247:
+  id: 247
+  exercise_id: 207
+  workout_id: 73
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:01:11.373091000 Z
+    zone: *1
+    time: 2017-05-28 08:01:11.373091000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:01:11.373091000 Z
+    zone: *1
+    time: 2017-05-28 08:01:11.373091000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_248:
+  id: 248
+  exercise_id: 208
+  workout_id: 73
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:05:20.334417000 Z
+    zone: *1
+    time: 2017-05-28 08:05:20.334417000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:05:20.334417000 Z
+    zone: *1
+    time: 2017-05-28 08:05:20.334417000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_249:
+  id: 249
+  exercise_id: 209
+  workout_id: 74
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:09:17.848069000 Z
+    zone: *1
+    time: 2017-05-28 08:09:17.848069000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:30:46.833984000 Z
+    zone: *1
+    time: 2017-06-02 05:30:46.833984000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_250:
+  id: 250
+  exercise_id: 210
+  workout_id: 74
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:11:43.235482000 Z
+    zone: *1
+    time: 2017-05-28 08:11:43.235482000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:30:46.862054000 Z
+    zone: *1
+    time: 2017-06-02 05:30:46.862054000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_251:
+  id: 251
+  exercise_id: 211
+  workout_id: 74
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:14:05.508817000 Z
+    zone: *1
+    time: 2017-05-28 08:14:05.508817000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:30:49.500603000 Z
+    zone: *1
+    time: 2017-06-02 05:30:49.500603000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_252:
+  id: 252
+  exercise_id: 212
+  workout_id: 74
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:17:21.723259000 Z
+    zone: *1
+    time: 2017-05-28 08:17:21.723259000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:30:49.514838000 Z
+    zone: *1
+    time: 2017-06-02 05:30:49.514838000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_253:
+  id: 253
+  exercise_id: 199
+  workout_id: 75
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:22:56.845253000 Z
+    zone: *1
+    time: 2017-05-28 08:22:56.845253000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:32:12.624493000 Z
+    zone: *1
+    time: 2017-06-02 05:32:12.624493000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_254:
+  id: 254
+  exercise_id: 213
+  workout_id: 75
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:22:58.830769000 Z
+    zone: *1
+    time: 2017-05-28 08:22:58.830769000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:32:12.654833000 Z
+    zone: *1
+    time: 2017-06-02 05:32:12.654833000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_255:
+  id: 255
+  exercise_id: 138
+  workout_id: 75
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:23:56.530095000 Z
+    zone: *1
+    time: 2017-05-28 08:23:56.530095000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:32:12.592047000 Z
+    zone: *1
+    time: 2017-06-02 05:32:12.592047000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_256:
+  id: 256
+  exercise_id: 214
+  workout_id: 76
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:28:49.525795000 Z
+    zone: *1
+    time: 2017-05-28 08:28:49.525795000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:33:03.051123000 Z
+    zone: *1
+    time: 2017-06-02 05:33:03.051123000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_257:
+  id: 257
+  exercise_id: 215
+  workout_id: 76
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:38:03.835758000 Z
+    zone: *1
+    time: 2017-05-28 08:38:03.835758000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:33:03.071630000 Z
+    zone: *1
+    time: 2017-06-02 05:33:03.071630000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_258:
+  id: 258
+  exercise_id: 216
+  workout_id: 76
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:41:40.660408000 Z
+    zone: *1
+    time: 2017-05-28 08:41:40.660408000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:33:03.100352000 Z
+    zone: *1
+    time: 2017-06-02 05:33:03.100352000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_259:
+  id: 259
+  exercise_id: 217
+  workout_id: 77
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:46:10.373735000 Z
+    zone: *1
+    time: 2017-05-28 08:46:10.373735000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:34:29.180277000 Z
+    zone: *1
+    time: 2017-06-02 05:34:29.180277000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_260:
+  id: 260
+  exercise_id: 218
+  workout_id: 77
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:48:55.695927000 Z
+    zone: *1
+    time: 2017-05-28 08:48:55.695927000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:34:29.205770000 Z
+    zone: *1
+    time: 2017-06-02 05:34:29.205770000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_261:
+  id: 261
+  exercise_id: 219
+  workout_id: 77
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:52:43.837464000 Z
+    zone: *1
+    time: 2017-05-28 08:52:43.837464000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:34:29.241808000 Z
+    zone: *1
+    time: 2017-06-02 05:34:29.241808000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_262:
+  id: 262
+  exercise_id: 220
+  workout_id: 78
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:55:39.822602000 Z
+    zone: *1
+    time: 2017-05-28 08:55:39.822602000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:35:38.619704000 Z
+    zone: *1
+    time: 2017-06-02 05:35:38.619704000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_263:
+  id: 263
+  exercise_id: 221
+  workout_id: 78
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 13:58:55.953495000 Z
+    zone: *1
+    time: 2017-05-28 08:58:55.953495000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:35:38.634218000 Z
+    zone: *1
+    time: 2017-06-02 05:35:38.634218000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_264:
+  id: 264
+  exercise_id: 222
+  workout_id: 78
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:01:43.538500000 Z
+    zone: *1
+    time: 2017-05-28 09:01:43.538500000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:35:36.928390000 Z
+    zone: *1
+    time: 2017-06-02 05:35:36.928390000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_265:
+  id: 265
+  exercise_id: 223
+  workout_id: 78
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:04:11.147873000 Z
+    zone: *1
+    time: 2017-05-28 09:04:11.147873000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:35:37.071675000 Z
+    zone: *1
+    time: 2017-06-02 05:35:37.071675000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_266:
+  id: 266
+  exercise_id: 200
+  workout_id: 79
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:08:27.258979000 Z
+    zone: *1
+    time: 2017-05-28 09:08:27.258979000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:37:24.808456000 Z
+    zone: *1
+    time: 2017-06-02 05:37:24.808456000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_267:
+  id: 267
+  exercise_id: 201
+  workout_id: 79
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:08:27.267302000 Z
+    zone: *1
+    time: 2017-05-28 09:08:27.267302000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:37:24.827390000 Z
+    zone: *1
+    time: 2017-06-02 05:37:24.827390000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_268:
+  id: 268
+  exercise_id: 151
+  workout_id: 79
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:09:50.565351000 Z
+    zone: *1
+    time: 2017-05-28 09:09:50.565351000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:37:23.474710000 Z
+    zone: *1
+    time: 2017-06-02 05:37:23.474710000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_269:
+  id: 269
+  exercise_id: 152
+  workout_id: 79
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:09:50.571412000 Z
+    zone: *1
+    time: 2017-05-28 09:09:50.571412000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:37:23.499973000 Z
+    zone: *1
+    time: 2017-06-02 05:37:23.499973000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_270:
+  id: 270
+  exercise_id: 138
+  workout_id: 79
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:09:50.577294000 Z
+    zone: *1
+    time: 2017-05-28 09:09:50.577294000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:37:23.526826000 Z
+    zone: *1
+    time: 2017-06-02 05:37:23.526826000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_271:
+  id: 271
+  exercise_id: 224
+  workout_id: 80
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:56:21.177678000 Z
+    zone: *1
+    time: 2017-05-28 09:56:21.177678000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:37:38.415242000 Z
+    zone: *1
+    time: 2017-06-02 05:37:38.415242000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_272:
+  id: 272
+  exercise_id: 225
+  workout_id: 80
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 14:58:32.788121000 Z
+    zone: *1
+    time: 2017-05-28 09:58:32.788121000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:37:39.785185000 Z
+    zone: *1
+    time: 2017-06-02 05:37:39.785185000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_273:
+  id: 273
+  exercise_id: 226
+  workout_id: 80
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:00:58.345007000 Z
+    zone: *1
+    time: 2017-05-28 10:00:58.345007000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:37:39.810385000 Z
+    zone: *1
+    time: 2017-06-02 05:37:39.810385000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_274:
+  id: 274
+  exercise_id: 227
+  workout_id: 81
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:03:15.598231000 Z
+    zone: *1
+    time: 2017-05-28 10:03:15.598231000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:03:15.598231000 Z
+    zone: *1
+    time: 2017-05-28 10:03:15.598231000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_275:
+  id: 275
+  exercise_id: 228
+  workout_id: 81
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:05:28.298201000 Z
+    zone: *1
+    time: 2017-05-28 10:05:28.298201000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:05:28.298201000 Z
+    zone: *1
+    time: 2017-05-28 10:05:28.298201000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_276:
+  id: 276
+  exercise_id: 229
+  workout_id: 81
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:09:54.826742000 Z
+    zone: *1
+    time: 2017-05-28 10:09:54.826742000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:09:54.826742000 Z
+    zone: *1
+    time: 2017-05-28 10:09:54.826742000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_277:
+  id: 277
+  exercise_id: 230
+  workout_id: 82
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:15:51.643167000 Z
+    zone: *1
+    time: 2017-05-28 10:15:51.643167000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:39:48.068577000 Z
+    zone: *1
+    time: 2017-06-02 05:39:48.068577000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_278:
+  id: 278
+  exercise_id: 231
+  workout_id: 82
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:18:09.174871000 Z
+    zone: *1
+    time: 2017-05-28 10:18:09.174871000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:39:48.090678000 Z
+    zone: *1
+    time: 2017-06-02 05:39:48.090678000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_279:
+  id: 279
+  exercise_id: 232
+  workout_id: 82
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:20:16.458938000 Z
+    zone: *1
+    time: 2017-05-28 10:20:16.458938000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:39:46.570371000 Z
+    zone: *1
+    time: 2017-06-02 05:39:46.570371000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_280:
+  id: 280
+  exercise_id: 233
+  workout_id: 82
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 15:22:21.519759000 Z
+    zone: *1
+    time: 2017-05-28 10:22:21.519759000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-02 10:39:46.595055000 Z
+    zone: *1
+    time: 2017-06-02 05:39:46.595055000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_281:
+  id: 281
+  exercise_id: 234
+  workout_id: 83
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:46:20.467682000 Z
+    zone: *1
+    time: 2017-05-28 18:46:20.467682000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:27:54.834638000 Z
+    zone: *1
+    time: 2017-06-01 18:27:54.834638000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_282:
+  id: 282
+  exercise_id: 235
+  workout_id: 83
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:47:04.237669000 Z
+    zone: *1
+    time: 2017-05-28 18:47:04.237669000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:27:54.856724000 Z
+    zone: *1
+    time: 2017-06-01 18:27:54.856724000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_283:
+  id: 283
+  exercise_id: 236
+  workout_id: 83
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:47:53.698702000 Z
+    zone: *1
+    time: 2017-05-28 18:47:53.698702000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:27:52.591424000 Z
+    zone: *1
+    time: 2017-06-01 18:27:52.591424000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_284:
+  id: 284
+  exercise_id: 237
+  workout_id: 83
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:49:22.083640000 Z
+    zone: *1
+    time: 2017-05-28 18:49:22.083640000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:27:52.610499000 Z
+    zone: *1
+    time: 2017-06-01 18:27:52.610499000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_285:
+  id: 285
+  exercise_id: 238
+  workout_id: 83
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:50:30.053176000 Z
+    zone: *1
+    time: 2017-05-28 18:50:30.053176000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:27:52.628750000 Z
+    zone: *1
+    time: 2017-06-01 18:27:52.628750000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_286:
+  id: 286
+  exercise_id: 236
+  workout_id: 84
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:53:59.678968000 Z
+    zone: *1
+    time: 2017-05-28 18:53:59.678968000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:53:59.678968000 Z
+    zone: *1
+    time: 2017-05-28 18:53:59.678968000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_287:
+  id: 287
+  exercise_id: 239
+  workout_id: 84
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:54:01.547677000 Z
+    zone: *1
+    time: 2017-05-28 18:54:01.547677000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:54:01.547677000 Z
+    zone: *1
+    time: 2017-05-28 18:54:01.547677000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_288:
+  id: 288
+  exercise_id: 240
+  workout_id: 84
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:54:57.843916000 Z
+    zone: *1
+    time: 2017-05-28 18:54:57.843916000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:54:57.843916000 Z
+    zone: *1
+    time: 2017-05-28 18:54:57.843916000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_289:
+  id: 289
+  exercise_id: 241
+  workout_id: 84
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:55:52.084436000 Z
+    zone: *1
+    time: 2017-05-28 18:55:52.084436000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-28 23:55:52.084436000 Z
+    zone: *1
+    time: 2017-05-28 18:55:52.084436000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_298:
+  id: 298
+  exercise_id: 247
+  workout_id: 86
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:19:01.458503000 Z
+    zone: *1
+    time: 2017-05-29 17:19:01.458503000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:14:31.092561000 Z
+    zone: *1
+    time: 2017-07-01 18:14:31.092561000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_299:
+  id: 299
+  exercise_id: 248
+  workout_id: 86
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:23:20.904909000 Z
+    zone: *1
+    time: 2017-05-29 17:23:20.904909000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:14:31.123283000 Z
+    zone: *1
+    time: 2017-07-01 18:14:31.123283000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_300:
+  id: 300
+  exercise_id: 249
+  workout_id: 86
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:28:00.038635000 Z
+    zone: *1
+    time: 2017-05-29 17:28:00.038635000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:29:09.058651000 Z
+    zone: *1
+    time: 2017-06-01 18:29:09.058651000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_301:
+  id: 301
+  exercise_id: 250
+  workout_id: 87
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:30:50.854863000 Z
+    zone: *1
+    time: 2017-05-29 17:30:50.854863000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 16:50:29.595512000 Z
+    zone: *1
+    time: 2017-06-17 11:50:29.595512000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_302:
+  id: 302
+  exercise_id: 251
+  workout_id: 87
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:33:41.065264000 Z
+    zone: *1
+    time: 2017-05-29 17:33:41.065264000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 16:50:32.345306000 Z
+    zone: *1
+    time: 2017-06-17 11:50:32.345306000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_303:
+  id: 303
+  exercise_id: 252
+  workout_id: 87
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:36:33.531337000 Z
+    zone: *1
+    time: 2017-05-29 17:36:33.531337000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-17 16:50:32.362550000 Z
+    zone: *1
+    time: 2017-06-17 11:50:32.362550000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_304:
+  id: 304
+  exercise_id: 253
+  workout_id: 88
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:40:39.215293000 Z
+    zone: *1
+    time: 2017-05-29 17:40:39.215293000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:40:39.215293000 Z
+    zone: *1
+    time: 2017-05-29 17:40:39.215293000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_305:
+  id: 305
+  exercise_id: 254
+  workout_id: 88
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:43:08.282867000 Z
+    zone: *1
+    time: 2017-05-29 17:43:08.282867000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:43:08.282867000 Z
+    zone: *1
+    time: 2017-05-29 17:43:08.282867000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_306:
+  id: 306
+  exercise_id: 255
+  workout_id: 88
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:44:25.540800000 Z
+    zone: *1
+    time: 2017-05-29 17:44:25.540800000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:44:25.540800000 Z
+    zone: *1
+    time: 2017-05-29 17:44:25.540800000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_307:
+  id: 307
+  exercise_id: 256
+  workout_id: 89
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:50:02.786138000 Z
+    zone: *1
+    time: 2017-05-29 17:50:02.786138000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:50:47.351344000 Z
+    zone: *1
+    time: 2017-06-01 18:50:47.351344000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_308:
+  id: 308
+  exercise_id: 257
+  workout_id: 89
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:53:25.043817000 Z
+    zone: *1
+    time: 2017-05-29 17:53:25.043817000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:50:47.365601000 Z
+    zone: *1
+    time: 2017-06-01 18:50:47.365601000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_309:
+  id: 309
+  exercise_id: 258
+  workout_id: 89
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:55:50.447751000 Z
+    zone: *1
+    time: 2017-05-29 17:55:50.447751000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:50:45.336939000 Z
+    zone: *1
+    time: 2017-06-01 18:50:45.336939000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_310:
+  id: 310
+  exercise_id: 259
+  workout_id: 90
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:57:56.461469000 Z
+    zone: *1
+    time: 2017-05-29 17:57:56.461469000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 22:57:56.461469000 Z
+    zone: *1
+    time: 2017-05-29 17:57:56.461469000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_311:
+  id: 311
+  exercise_id: 260
+  workout_id: 90
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 23:00:22.760099000 Z
+    zone: *1
+    time: 2017-05-29 18:00:22.760099000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 23:00:22.760099000 Z
+    zone: *1
+    time: 2017-05-29 18:00:22.760099000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_312:
+  id: 312
+  exercise_id: 261
+  workout_id: 90
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 23:03:57.093165000 Z
+    zone: *1
+    time: 2017-05-29 18:03:57.093165000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 23:03:57.093165000 Z
+    zone: *1
+    time: 2017-05-29 18:03:57.093165000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_313:
+  id: 313
+  exercise_id: 262
+  workout_id: 90
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 23:08:34.668987000 Z
+    zone: *1
+    time: 2017-05-29 18:08:34.668987000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-29 23:08:34.668987000 Z
+    zone: *1
+    time: 2017-05-29 18:08:34.668987000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_314:
+  id: 314
+  exercise_id: 263
+  workout_id: 91
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:50:56.839989000 Z
+    zone: *1
+    time: 2017-05-30 05:50:56.839989000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:05:44.049078000 Z
+    zone: *1
+    time: 2017-06-01 18:05:44.049078000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_315:
+  id: 315
+  exercise_id: 264
+  workout_id: 91
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:53:51.492835000 Z
+    zone: *1
+    time: 2017-05-30 05:53:51.492835000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:05:44.063935000 Z
+    zone: *1
+    time: 2017-06-01 18:05:44.063935000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_316:
+  id: 316
+  exercise_id: 265
+  workout_id: 91
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 10:56:10.939983000 Z
+    zone: *1
+    time: 2017-05-30 05:56:10.939983000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:05:42.367205000 Z
+    zone: *1
+    time: 2017-06-01 18:05:42.367205000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_317:
+  id: 317
+  exercise_id: 266
+  workout_id: 92
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 11:28:22.299205000 Z
+    zone: *1
+    time: 2017-05-30 06:28:22.299205000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:08:57.205128000 Z
+    zone: *1
+    time: 2017-06-01 18:08:57.205128000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_318:
+  id: 318
+  exercise_id: 267
+  workout_id: 92
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 11:30:26.365782000 Z
+    zone: *1
+    time: 2017-05-30 06:30:26.365782000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:08:57.218203000 Z
+    zone: *1
+    time: 2017-06-01 18:08:57.218203000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_319:
+  id: 319
+  exercise_id: 268
+  workout_id: 92
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 12:49:21.608546000 Z
+    zone: *1
+    time: 2017-05-30 07:49:21.608546000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:08:55.482709000 Z
+    zone: *1
+    time: 2017-06-01 18:08:55.482709000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_320:
+  id: 320
+  exercise_id: 269
+  workout_id: 93
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 12:57:46.189959000 Z
+    zone: *1
+    time: 2017-05-30 07:57:46.189959000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 12:57:46.189959000 Z
+    zone: *1
+    time: 2017-05-30 07:57:46.189959000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_321:
+  id: 321
+  exercise_id: 270
+  workout_id: 93
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 12:58:49.179725000 Z
+    zone: *1
+    time: 2017-05-30 07:58:49.179725000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 12:58:49.179725000 Z
+    zone: *1
+    time: 2017-05-30 07:58:49.179725000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_322:
+  id: 322
+  exercise_id: 271
+  workout_id: 93
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 13:00:12.291280000 Z
+    zone: *1
+    time: 2017-05-30 08:00:12.291280000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 13:00:12.291280000 Z
+    zone: *1
+    time: 2017-05-30 08:00:12.291280000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_323:
+  id: 323
+  exercise_id: 272
+  workout_id: 97
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:14:07.220539000 Z
+    zone: *1
+    time: 2017-05-30 09:14:07.220539000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:14:07.220539000 Z
+    zone: *1
+    time: 2017-05-30 09:14:07.220539000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_324:
+  id: 324
+  exercise_id: 273
+  workout_id: 97
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:15:15.443300000 Z
+    zone: *1
+    time: 2017-05-30 09:15:15.443300000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:15:15.443300000 Z
+    zone: *1
+    time: 2017-05-30 09:15:15.443300000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_325:
+  id: 325
+  exercise_id: 274
+  workout_id: 97
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:29:17.878281000 Z
+    zone: *1
+    time: 2017-05-30 09:29:17.878281000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:29:17.878281000 Z
+    zone: *1
+    time: 2017-05-30 09:29:17.878281000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_326:
+  id: 326
+  exercise_id: 275
+  workout_id: 98
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:35:02.262283000 Z
+    zone: *1
+    time: 2017-05-30 09:35:02.262283000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:35:02.262283000 Z
+    zone: *1
+    time: 2017-05-30 09:35:02.262283000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_327:
+  id: 327
+  exercise_id: 276
+  workout_id: 98
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:39:08.167123000 Z
+    zone: *1
+    time: 2017-05-30 09:39:08.167123000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:39:08.167123000 Z
+    zone: *1
+    time: 2017-05-30 09:39:08.167123000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_328:
+  id: 328
+  exercise_id: 277
+  workout_id: 98
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:41:59.732134000 Z
+    zone: *1
+    time: 2017-05-30 09:41:59.732134000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 14:41:59.732134000 Z
+    zone: *1
+    time: 2017-05-30 09:41:59.732134000 Z
+  deleted_at: 
+  position: 
+exerciseworkout_329:
+  id: 329
+  exercise_id: 278
+  workout_id: 99
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 22:20:44.728804000 Z
+    zone: *1
+    time: 2017-05-30 17:20:44.728804000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:17:08.877500000 Z
+    zone: *1
+    time: 2017-06-01 18:17:08.877500000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_330:
+  id: 330
+  exercise_id: 279
+  workout_id: 99
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 22:21:59.780884000 Z
+    zone: *1
+    time: 2017-05-30 17:21:59.780884000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 23:17:08.890001000 Z
+    zone: *1
+    time: 2017-06-01 18:17:08.890001000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_331:
+  id: 331
+  exercise_id: 280
+  workout_id: 99
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 22:23:25.493357000 Z
+    zone: *1
+    time: 2017-05-30 17:23:25.493357000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-05-30 22:23:25.493357000 Z
+    zone: *1
+    time: 2017-05-30 17:23:25.493357000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_332:
+  id: 332
+  exercise_id: 281
+  workout_id: 100
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:35:13.292853000 Z
+    zone: *1
+    time: 2017-06-01 05:35:13.292853000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:35:13.292853000 Z
+    zone: *1
+    time: 2017-06-01 05:35:13.292853000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_333:
+  id: 333
+  exercise_id: 282
+  workout_id: 100
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:36:08.931229000 Z
+    zone: *1
+    time: 2017-06-01 05:36:08.931229000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:36:08.931229000 Z
+    zone: *1
+    time: 2017-06-01 05:36:08.931229000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_334:
+  id: 334
+  exercise_id: 283
+  workout_id: 100
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:37:30.538995000 Z
+    zone: *1
+    time: 2017-06-01 05:37:30.538995000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:37:30.538995000 Z
+    zone: *1
+    time: 2017-06-01 05:37:30.538995000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_335:
+  id: 335
+  exercise_id: 284
+  workout_id: 101
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:40:09.897718000 Z
+    zone: *1
+    time: 2017-06-01 05:40:09.897718000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:40:09.897718000 Z
+    zone: *1
+    time: 2017-06-01 05:40:09.897718000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_336:
+  id: 336
+  exercise_id: 285
+  workout_id: 101
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:41:02.528803000 Z
+    zone: *1
+    time: 2017-06-01 05:41:02.528803000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:41:02.528803000 Z
+    zone: *1
+    time: 2017-06-01 05:41:02.528803000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_337:
+  id: 337
+  exercise_id: 286
+  workout_id: 101
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:44:07.808482000 Z
+    zone: *1
+    time: 2017-06-01 05:44:07.808482000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:44:07.808482000 Z
+    zone: *1
+    time: 2017-06-01 05:44:07.808482000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_338:
+  id: 338
+  exercise_id: 287
+  workout_id: 102
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:47:04.897027000 Z
+    zone: *1
+    time: 2017-06-01 05:47:04.897027000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:47:04.897027000 Z
+    zone: *1
+    time: 2017-06-01 05:47:04.897027000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_339:
+  id: 339
+  exercise_id: 288
+  workout_id: 102
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:49:21.160556000 Z
+    zone: *1
+    time: 2017-06-01 05:49:21.160556000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-01 10:49:21.160556000 Z
+    zone: *1
+    time: 2017-06-01 05:49:21.160556000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_340:
+  id: 340
+  exercise_id: 289
+  workout_id: 106
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:42:44.764606000 Z
+    zone: *1
+    time: 2017-06-03 19:42:44.764606000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 13:04:14.348532000 Z
+    zone: *1
+    time: 2017-06-04 08:04:14.348532000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_341:
+  id: 341
+  exercise_id: 290
+  workout_id: 106
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:48:03.730944000 Z
+    zone: *1
+    time: 2017-06-03 19:48:03.730944000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 13:04:14.360702000 Z
+    zone: *1
+    time: 2017-06-04 08:04:14.360702000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_342:
+  id: 342
+  exercise_id: 291
+  workout_id: 106
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:51:45.253375000 Z
+    zone: *1
+    time: 2017-06-03 19:51:45.253375000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:51:45.253375000 Z
+    zone: *1
+    time: 2017-06-03 19:51:45.253375000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_343:
+  id: 343
+  exercise_id: 292
+  workout_id: 106
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:55:15.332652000 Z
+    zone: *1
+    time: 2017-06-03 19:55:15.332652000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 00:55:15.332652000 Z
+    zone: *1
+    time: 2017-06-03 19:55:15.332652000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_344:
+  id: 344
+  exercise_id: 293
+  workout_id: 107
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:16:53.128307000 Z
+    zone: *1
+    time: 2017-06-04 07:16:53.128307000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:16:53.128307000 Z
+    zone: *1
+    time: 2017-06-04 07:16:53.128307000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_345:
+  id: 345
+  exercise_id: 294
+  workout_id: 107
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:23:04.396155000 Z
+    zone: *1
+    time: 2017-06-04 07:23:04.396155000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:23:04.396155000 Z
+    zone: *1
+    time: 2017-06-04 07:23:04.396155000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_346:
+  id: 346
+  exercise_id: 295
+  workout_id: 107
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:26:27.732078000 Z
+    zone: *1
+    time: 2017-06-04 07:26:27.732078000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:26:27.732078000 Z
+    zone: *1
+    time: 2017-06-04 07:26:27.732078000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_347:
+  id: 347
+  exercise_id: 296
+  workout_id: 108
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:29:57.455420000 Z
+    zone: *1
+    time: 2017-06-04 07:29:57.455420000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:29:57.455420000 Z
+    zone: *1
+    time: 2017-06-04 07:29:57.455420000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_348:
+  id: 348
+  exercise_id: 297
+  workout_id: 108
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:32:15.147567000 Z
+    zone: *1
+    time: 2017-06-04 07:32:15.147567000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:32:15.147567000 Z
+    zone: *1
+    time: 2017-06-04 07:32:15.147567000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_349:
+  id: 349
+  exercise_id: 298
+  workout_id: 108
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:35:47.063979000 Z
+    zone: *1
+    time: 2017-06-04 07:35:47.063979000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:35:47.063979000 Z
+    zone: *1
+    time: 2017-06-04 07:35:47.063979000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_350:
+  id: 350
+  exercise_id: 299
+  workout_id: 108
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:37:22.234831000 Z
+    zone: *1
+    time: 2017-06-04 07:37:22.234831000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:37:22.234831000 Z
+    zone: *1
+    time: 2017-06-04 07:37:22.234831000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_351:
+  id: 351
+  exercise_id: 300
+  workout_id: 109
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:41:21.391044000 Z
+    zone: *1
+    time: 2017-06-04 07:41:21.391044000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:41:21.391044000 Z
+    zone: *1
+    time: 2017-06-04 07:41:21.391044000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_352:
+  id: 352
+  exercise_id: 301
+  workout_id: 109
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:46:20.181568000 Z
+    zone: *1
+    time: 2017-06-04 07:46:20.181568000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 12:46:20.181568000 Z
+    zone: *1
+    time: 2017-06-04 07:46:20.181568000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_353:
+  id: 353
+  exercise_id: 302
+  workout_id: 103
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:46:29.717004000 Z
+    zone: *1
+    time: 2017-06-04 12:46:29.717004000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:46:29.717004000 Z
+    zone: *1
+    time: 2017-06-04 12:46:29.717004000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_354:
+  id: 354
+  exercise_id: 303
+  workout_id: 103
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:49:11.293206000 Z
+    zone: *1
+    time: 2017-06-04 12:49:11.293206000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:49:11.293206000 Z
+    zone: *1
+    time: 2017-06-04 12:49:11.293206000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_355:
+  id: 355
+  exercise_id: 304
+  workout_id: 103
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:51:36.420338000 Z
+    zone: *1
+    time: 2017-06-04 12:51:36.420338000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:51:36.420338000 Z
+    zone: *1
+    time: 2017-06-04 12:51:36.420338000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_356:
+  id: 356
+  exercise_id: 305
+  workout_id: 103
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:54:37.636367000 Z
+    zone: *1
+    time: 2017-06-04 12:54:37.636367000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:54:37.636367000 Z
+    zone: *1
+    time: 2017-06-04 12:54:37.636367000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_357:
+  id: 357
+  exercise_id: 306
+  workout_id: 103
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:55:44.287592000 Z
+    zone: *1
+    time: 2017-06-04 12:55:44.287592000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:55:44.287592000 Z
+    zone: *1
+    time: 2017-06-04 12:55:44.287592000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_358:
+  id: 358
+  exercise_id: 307
+  workout_id: 103
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:56:34.320538000 Z
+    zone: *1
+    time: 2017-06-04 12:56:34.320538000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:56:34.320538000 Z
+    zone: *1
+    time: 2017-06-04 12:56:34.320538000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_359:
+  id: 359
+  exercise_id: 308
+  workout_id: 104
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:58:53.948735000 Z
+    zone: *1
+    time: 2017-06-04 12:58:53.948735000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-04 17:58:53.948735000 Z
+    zone: *1
+    time: 2017-06-04 12:58:53.948735000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_360:
+  id: 360
+  exercise_id: 309
+  workout_id: 104
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:01:34.646592000 Z
+    zone: *1
+    time: 2017-06-04 19:01:34.646592000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:01:34.646592000 Z
+    zone: *1
+    time: 2017-06-04 19:01:34.646592000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_361:
+  id: 361
+  exercise_id: 310
+  workout_id: 104
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:04:45.584514000 Z
+    zone: *1
+    time: 2017-06-04 19:04:45.584514000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:04:45.584514000 Z
+    zone: *1
+    time: 2017-06-04 19:04:45.584514000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_362:
+  id: 362
+  exercise_id: 311
+  workout_id: 104
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:06:45.067716000 Z
+    zone: *1
+    time: 2017-06-04 19:06:45.067716000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:06:45.067716000 Z
+    zone: *1
+    time: 2017-06-04 19:06:45.067716000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_363:
+  id: 363
+  exercise_id: 312
+  workout_id: 105
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:11:56.429195000 Z
+    zone: *1
+    time: 2017-06-04 19:11:56.429195000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:11:56.429195000 Z
+    zone: *1
+    time: 2017-06-04 19:11:56.429195000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_364:
+  id: 364
+  exercise_id: 313
+  workout_id: 105
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:23:32.143269000 Z
+    zone: *1
+    time: 2017-06-04 19:23:32.143269000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:23:32.143269000 Z
+    zone: *1
+    time: 2017-06-04 19:23:32.143269000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_365:
+  id: 365
+  exercise_id: 314
+  workout_id: 105
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:25:50.402831000 Z
+    zone: *1
+    time: 2017-06-04 19:25:50.402831000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:25:50.402831000 Z
+    zone: *1
+    time: 2017-06-04 19:25:50.402831000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_366:
+  id: 366
+  exercise_id: 315
+  workout_id: 105
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:28:56.234279000 Z
+    zone: *1
+    time: 2017-06-04 19:28:56.234279000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:28:56.234279000 Z
+    zone: *1
+    time: 2017-06-04 19:28:56.234279000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_367:
+  id: 367
+  exercise_id: 316
+  workout_id: 105
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:32:20.568345000 Z
+    zone: *1
+    time: 2017-06-04 19:32:20.568345000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:32:20.568345000 Z
+    zone: *1
+    time: 2017-06-04 19:32:20.568345000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_368:
+  id: 368
+  exercise_id: 317
+  workout_id: 105
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:33:55.608708000 Z
+    zone: *1
+    time: 2017-06-04 19:33:55.608708000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:33:55.608708000 Z
+    zone: *1
+    time: 2017-06-04 19:33:55.608708000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_369:
+  id: 369
+  exercise_id: 318
+  workout_id: 105
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:35:24.081963000 Z
+    zone: *1
+    time: 2017-06-04 19:35:24.081963000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 00:35:24.081963000 Z
+    zone: *1
+    time: 2017-06-04 19:35:24.081963000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_370:
+  id: 370
+  exercise_id: 319
+  workout_id: 110
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:47:43.694825000 Z
+    zone: *1
+    time: 2017-06-05 05:47:43.694825000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:47:43.694825000 Z
+    zone: *1
+    time: 2017-06-05 05:47:43.694825000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_371:
+  id: 371
+  exercise_id: 320
+  workout_id: 110
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:50:09.698669000 Z
+    zone: *1
+    time: 2017-06-05 05:50:09.698669000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:50:09.698669000 Z
+    zone: *1
+    time: 2017-06-05 05:50:09.698669000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_372:
+  id: 372
+  exercise_id: 321
+  workout_id: 110
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:50:57.942149000 Z
+    zone: *1
+    time: 2017-06-05 05:50:57.942149000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:50:57.942149000 Z
+    zone: *1
+    time: 2017-06-05 05:50:57.942149000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_373:
+  id: 373
+  exercise_id: 322
+  workout_id: 110
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:52:42.580801000 Z
+    zone: *1
+    time: 2017-06-05 05:52:42.580801000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:52:42.580801000 Z
+    zone: *1
+    time: 2017-06-05 05:52:42.580801000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_374:
+  id: 374
+  exercise_id: 323
+  workout_id: 110
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:54:47.695976000 Z
+    zone: *1
+    time: 2017-06-05 05:54:47.695976000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:54:47.695976000 Z
+    zone: *1
+    time: 2017-06-05 05:54:47.695976000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_375:
+  id: 375
+  exercise_id: 324
+  workout_id: 110
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:57:52.144932000 Z
+    zone: *1
+    time: 2017-06-05 05:57:52.144932000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 10:57:52.144932000 Z
+    zone: *1
+    time: 2017-06-05 05:57:52.144932000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_376:
+  id: 376
+  exercise_id: 325
+  workout_id: 111
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:00:25.125390000 Z
+    zone: *1
+    time: 2017-06-05 06:00:25.125390000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:00:25.125390000 Z
+    zone: *1
+    time: 2017-06-05 06:00:25.125390000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_377:
+  id: 377
+  exercise_id: 326
+  workout_id: 111
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:04:05.768876000 Z
+    zone: *1
+    time: 2017-06-05 06:04:05.768876000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:04:05.768876000 Z
+    zone: *1
+    time: 2017-06-05 06:04:05.768876000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_378:
+  id: 378
+  exercise_id: 327
+  workout_id: 111
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:08:03.697057000 Z
+    zone: *1
+    time: 2017-06-05 06:08:03.697057000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:08:03.697057000 Z
+    zone: *1
+    time: 2017-06-05 06:08:03.697057000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_379:
+  id: 379
+  exercise_id: 312
+  workout_id: 112
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:23:45.872043000 Z
+    zone: *1
+    time: 2017-06-05 06:23:45.872043000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:23:45.872043000 Z
+    zone: *1
+    time: 2017-06-05 06:23:45.872043000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_380:
+  id: 380
+  exercise_id: 328
+  workout_id: 112
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:23:48.044412000 Z
+    zone: *1
+    time: 2017-06-05 06:23:48.044412000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:23:48.044412000 Z
+    zone: *1
+    time: 2017-06-05 06:23:48.044412000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_381:
+  id: 381
+  exercise_id: 329
+  workout_id: 112
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:27:48.733523000 Z
+    zone: *1
+    time: 2017-06-05 06:27:48.733523000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:27:48.733523000 Z
+    zone: *1
+    time: 2017-06-05 06:27:48.733523000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_382:
+  id: 382
+  exercise_id: 330
+  workout_id: 112
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:56:00.532815000 Z
+    zone: *1
+    time: 2017-06-05 06:56:00.532815000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:56:00.532815000 Z
+    zone: *1
+    time: 2017-06-05 06:56:00.532815000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_383:
+  id: 383
+  exercise_id: 331
+  workout_id: 112
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:57:50.356909000 Z
+    zone: *1
+    time: 2017-06-05 06:57:50.356909000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 11:57:50.356909000 Z
+    zone: *1
+    time: 2017-06-05 06:57:50.356909000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_384:
+  id: 384
+  exercise_id: 332
+  workout_id: 112
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 12:00:04.745427000 Z
+    zone: *1
+    time: 2017-06-05 07:00:04.745427000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 12:00:04.745427000 Z
+    zone: *1
+    time: 2017-06-05 07:00:04.745427000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_385:
+  id: 385
+  exercise_id: 333
+  workout_id: 112
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 12:02:43.864693000 Z
+    zone: *1
+    time: 2017-06-05 07:02:43.864693000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 12:02:43.864693000 Z
+    zone: *1
+    time: 2017-06-05 07:02:43.864693000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_386:
+  id: 386
+  exercise_id: 334
+  workout_id: 113
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:26:11.572017000 Z
+    zone: *1
+    time: 2017-06-05 10:26:11.572017000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:26:11.572017000 Z
+    zone: *1
+    time: 2017-06-05 10:26:11.572017000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_387:
+  id: 387
+  exercise_id: 335
+  workout_id: 113
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:28:36.098262000 Z
+    zone: *1
+    time: 2017-06-05 10:28:36.098262000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:28:36.098262000 Z
+    zone: *1
+    time: 2017-06-05 10:28:36.098262000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_388:
+  id: 388
+  exercise_id: 336
+  workout_id: 113
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:30:40.978463000 Z
+    zone: *1
+    time: 2017-06-05 10:30:40.978463000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:30:40.978463000 Z
+    zone: *1
+    time: 2017-06-05 10:30:40.978463000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_389:
+  id: 389
+  exercise_id: 337
+  workout_id: 114
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:34:18.503321000 Z
+    zone: *1
+    time: 2017-06-05 10:34:18.503321000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:34:18.503321000 Z
+    zone: *1
+    time: 2017-06-05 10:34:18.503321000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_390:
+  id: 390
+  exercise_id: 338
+  workout_id: 114
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:37:09.726537000 Z
+    zone: *1
+    time: 2017-06-05 10:37:09.726537000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:37:09.726537000 Z
+    zone: *1
+    time: 2017-06-05 10:37:09.726537000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_391:
+  id: 391
+  exercise_id: 339
+  workout_id: 114
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:38:48.207891000 Z
+    zone: *1
+    time: 2017-06-05 10:38:48.207891000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:38:48.207891000 Z
+    zone: *1
+    time: 2017-06-05 10:38:48.207891000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_392:
+  id: 392
+  exercise_id: 340
+  workout_id: 114
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:40:26.126202000 Z
+    zone: *1
+    time: 2017-06-05 10:40:26.126202000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:40:26.126202000 Z
+    zone: *1
+    time: 2017-06-05 10:40:26.126202000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_393:
+  id: 393
+  exercise_id: 341
+  workout_id: 114
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:42:20.891058000 Z
+    zone: *1
+    time: 2017-06-05 10:42:20.891058000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:42:20.891058000 Z
+    zone: *1
+    time: 2017-06-05 10:42:20.891058000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_394:
+  id: 394
+  exercise_id: 342
+  workout_id: 115
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:48:39.199429000 Z
+    zone: *1
+    time: 2017-06-05 10:48:39.199429000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:48:39.199429000 Z
+    zone: *1
+    time: 2017-06-05 10:48:39.199429000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_395:
+  id: 395
+  exercise_id: 343
+  workout_id: 115
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:51:29.008531000 Z
+    zone: *1
+    time: 2017-06-05 10:51:29.008531000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:51:29.008531000 Z
+    zone: *1
+    time: 2017-06-05 10:51:29.008531000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_396:
+  id: 396
+  exercise_id: 344
+  workout_id: 115
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:55:15.220633000 Z
+    zone: *1
+    time: 2017-06-05 10:55:15.220633000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:55:15.220633000 Z
+    zone: *1
+    time: 2017-06-05 10:55:15.220633000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_397:
+  id: 397
+  exercise_id: 345
+  workout_id: 115
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:57:35.370768000 Z
+    zone: *1
+    time: 2017-06-05 10:57:35.370768000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:57:35.370768000 Z
+    zone: *1
+    time: 2017-06-05 10:57:35.370768000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_398:
+  id: 398
+  exercise_id: 346
+  workout_id: 115
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:59:41.460729000 Z
+    zone: *1
+    time: 2017-06-05 10:59:41.460729000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 15:59:41.460729000 Z
+    zone: *1
+    time: 2017-06-05 10:59:41.460729000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_399:
+  id: 399
+  exercise_id: 347
+  workout_id: 115
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 16:02:14.894391000 Z
+    zone: *1
+    time: 2017-06-05 11:02:14.894391000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 16:02:14.894391000 Z
+    zone: *1
+    time: 2017-06-05 11:02:14.894391000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_400:
+  id: 400
+  exercise_id: 348
+  workout_id: 115
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 16:04:09.036703000 Z
+    zone: *1
+    time: 2017-06-05 11:04:09.036703000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 16:04:09.036703000 Z
+    zone: *1
+    time: 2017-06-05 11:04:09.036703000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_401:
+  id: 401
+  exercise_id: 349
+  workout_id: 115
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 16:06:16.333197000 Z
+    zone: *1
+    time: 2017-06-05 11:06:16.333197000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-05 16:06:16.333197000 Z
+    zone: *1
+    time: 2017-06-05 11:06:16.333197000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_407:
+  id: 407
+  exercise_id: 352
+  workout_id: 116
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:49:35.174783000 Z
+    zone: *1
+    time: 2017-06-07 05:49:35.174783000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:16:41.506430000 Z
+    zone: *1
+    time: 2017-07-01 18:16:41.506430000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_408:
+  id: 408
+  exercise_id: 353
+  workout_id: 85
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:51:35.865553000 Z
+    zone: *1
+    time: 2017-06-07 05:51:35.865553000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:51:35.865553000 Z
+    zone: *1
+    time: 2017-06-07 05:51:35.865553000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_409:
+  id: 409
+  exercise_id: 354
+  workout_id: 85
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:52:50.800754000 Z
+    zone: *1
+    time: 2017-06-07 05:52:50.800754000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:52:50.800754000 Z
+    zone: *1
+    time: 2017-06-07 05:52:50.800754000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_410:
+  id: 410
+  exercise_id: 355
+  workout_id: 116
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:54:22.626983000 Z
+    zone: *1
+    time: 2017-06-07 05:54:22.626983000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:16:44.633447000 Z
+    zone: *1
+    time: 2017-07-01 18:16:44.633447000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_411:
+  id: 411
+  exercise_id: 356
+  workout_id: 116
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:55:55.691604000 Z
+    zone: *1
+    time: 2017-06-07 05:55:55.691604000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:16:41.506430000 Z
+    zone: *1
+    time: 2017-07-01 18:16:41.506430000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_412:
+  id: 412
+  exercise_id: 357
+  workout_id: 116
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 10:58:58.954213000 Z
+    zone: *1
+    time: 2017-06-07 05:58:58.954213000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:16:41.506430000 Z
+    zone: *1
+    time: 2017-07-01 18:16:41.506430000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_413:
+  id: 413
+  exercise_id: 358
+  workout_id: 116
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:00:46.324588000 Z
+    zone: *1
+    time: 2017-06-07 06:00:46.324588000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:16:41.506430000 Z
+    zone: *1
+    time: 2017-07-01 18:16:41.506430000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_414:
+  id: 414
+  exercise_id: 359
+  workout_id: 116
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:04:42.733076000 Z
+    zone: *1
+    time: 2017-06-07 06:04:42.733076000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 23:16:44.618448000 Z
+    zone: *1
+    time: 2017-07-01 18:16:44.618448000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_415:
+  id: 415
+  exercise_id: 360
+  workout_id: 117
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:06:31.390122000 Z
+    zone: *1
+    time: 2017-06-07 06:06:31.390122000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:06:31.390122000 Z
+    zone: *1
+    time: 2017-06-07 06:06:31.390122000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_416:
+  id: 416
+  exercise_id: 361
+  workout_id: 117
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:08:18.573325000 Z
+    zone: *1
+    time: 2017-06-07 06:08:18.573325000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:08:18.573325000 Z
+    zone: *1
+    time: 2017-06-07 06:08:18.573325000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_417:
+  id: 417
+  exercise_id: 362
+  workout_id: 117
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:09:37.927367000 Z
+    zone: *1
+    time: 2017-06-07 06:09:37.927367000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:09:37.927367000 Z
+    zone: *1
+    time: 2017-06-07 06:09:37.927367000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_418:
+  id: 418
+  exercise_id: 363
+  workout_id: 117
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:10:57.966998000 Z
+    zone: *1
+    time: 2017-06-07 06:10:57.966998000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:10:57.966998000 Z
+    zone: *1
+    time: 2017-06-07 06:10:57.966998000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_419:
+  id: 419
+  exercise_id: 364
+  workout_id: 117
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:12:43.538701000 Z
+    zone: *1
+    time: 2017-06-07 06:12:43.538701000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-07 11:12:43.538701000 Z
+    zone: *1
+    time: 2017-06-07 06:12:43.538701000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_426:
+  id: 426
+  exercise_id: 24
+  workout_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:04:50.866754000 Z
+    zone: *1
+    time: 2017-06-09 16:04:50.866754000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:04:50.866754000 Z
+    zone: *1
+    time: 2017-06-09 16:04:50.866754000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_427:
+  id: 427
+  exercise_id: 10
+  workout_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:04:50.889070000 Z
+    zone: *1
+    time: 2017-06-09 16:04:50.889070000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:04:50.889070000 Z
+    zone: *1
+    time: 2017-06-09 16:04:50.889070000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_428:
+  id: 428
+  exercise_id: 13
+  workout_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:04:50.910237000 Z
+    zone: *1
+    time: 2017-06-09 16:04:50.910237000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:04:50.910237000 Z
+    zone: *1
+    time: 2017-06-09 16:04:50.910237000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_429:
+  id: 429
+  exercise_id: 8
+  workout_id: 8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:13:32.600888000 Z
+    zone: *1
+    time: 2017-06-09 16:13:32.600888000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:13:46.159970000 Z
+    zone: *1
+    time: 2017-06-09 16:13:46.159970000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_434:
+  id: 434
+  exercise_id: 12
+  workout_id: 12
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:18:24.453987000 Z
+    zone: *1
+    time: 2017-06-09 16:18:24.453987000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:54:34.462386000 Z
+    zone: *1
+    time: 2017-06-25 17:54:34.462386000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_435:
+  id: 435
+  exercise_id: 20
+  workout_id: 12
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-09 21:18:24.486091000 Z
+    zone: *1
+    time: 2017-06-09 16:18:24.486091000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:54:48.072519000 Z
+    zone: *1
+    time: 2017-06-25 17:54:48.072519000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_454:
+  id: 454
+  exercise_id: 108
+  workout_id: 120
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:40:54.243135000 Z
+    zone: *1
+    time: 2017-06-13 06:40:54.243135000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:40:54.243135000 Z
+    zone: *1
+    time: 2017-06-13 06:40:54.243135000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_455:
+  id: 455
+  exercise_id: 96
+  workout_id: 120
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:40:54.299312000 Z
+    zone: *1
+    time: 2017-06-13 06:40:54.299312000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:40:54.299312000 Z
+    zone: *1
+    time: 2017-06-13 06:40:54.299312000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_456:
+  id: 456
+  exercise_id: 107
+  workout_id: 120
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:40:54.327721000 Z
+    zone: *1
+    time: 2017-06-13 06:40:54.327721000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:40:54.327721000 Z
+    zone: *1
+    time: 2017-06-13 06:40:54.327721000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_457:
+  id: 457
+  exercise_id: 109
+  workout_id: 121
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:41.885931000 Z
+    zone: *1
+    time: 2017-06-13 06:41:41.885931000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:41.885931000 Z
+    zone: *1
+    time: 2017-06-13 06:41:41.885931000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_458:
+  id: 458
+  exercise_id: 201
+  workout_id: 121
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:41.958146000 Z
+    zone: *1
+    time: 2017-06-13 06:41:41.958146000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:41.958146000 Z
+    zone: *1
+    time: 2017-06-13 06:41:41.958146000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_459:
+  id: 459
+  exercise_id: 202
+  workout_id: 121
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:42.043069000 Z
+    zone: *1
+    time: 2017-06-13 06:41:42.043069000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:42.043069000 Z
+    zone: *1
+    time: 2017-06-13 06:41:42.043069000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_460:
+  id: 460
+  exercise_id: 152
+  workout_id: 121
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:42.093102000 Z
+    zone: *1
+    time: 2017-06-13 06:41:42.093102000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:42.093102000 Z
+    zone: *1
+    time: 2017-06-13 06:41:42.093102000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_461:
+  id: 461
+  exercise_id: 151
+  workout_id: 121
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:42.143202000 Z
+    zone: *1
+    time: 2017-06-13 06:41:42.143202000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:41:42.143202000 Z
+    zone: *1
+    time: 2017-06-13 06:41:42.143202000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_462:
+  id: 462
+  exercise_id: 162
+  workout_id: 122
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:43:32.618016000 Z
+    zone: *1
+    time: 2017-06-13 06:43:32.618016000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:43:32.618016000 Z
+    zone: *1
+    time: 2017-06-13 06:43:32.618016000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_463:
+  id: 463
+  exercise_id: 163
+  workout_id: 122
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:43:32.697144000 Z
+    zone: *1
+    time: 2017-06-13 06:43:32.697144000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:43:32.697144000 Z
+    zone: *1
+    time: 2017-06-13 06:43:32.697144000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_464:
+  id: 464
+  exercise_id: 174
+  workout_id: 122
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:43:32.717943000 Z
+    zone: *1
+    time: 2017-06-13 06:43:32.717943000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:43:32.717943000 Z
+    zone: *1
+    time: 2017-06-13 06:43:32.717943000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_465:
+  id: 465
+  exercise_id: 164
+  workout_id: 122
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:43:32.747306000 Z
+    zone: *1
+    time: 2017-06-13 06:43:32.747306000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-13 11:43:32.747306000 Z
+    zone: *1
+    time: 2017-06-13 06:43:32.747306000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_470:
+  id: 470
+  exercise_id: 57
+  workout_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:16:30.884426000 Z
+    zone: *1
+    time: 2017-06-18 13:16:30.884426000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 21:46:27.486128000 Z
+    zone: *1
+    time: 2017-06-24 16:46:27.486128000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_471:
+  id: 471
+  exercise_id: 58
+  workout_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:16:30.902534000 Z
+    zone: *1
+    time: 2017-06-18 13:16:30.902534000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 21:46:32.947363000 Z
+    zone: *1
+    time: 2017-06-24 16:46:32.947363000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_472:
+  id: 472
+  exercise_id: 59
+  workout_id: 26
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:16:30.914378000 Z
+    zone: *1
+    time: 2017-06-18 13:16:30.914378000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 21:46:39.191933000 Z
+    zone: *1
+    time: 2017-06-24 16:46:39.191933000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_477:
+  id: 477
+  exercise_id: 365
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:28:42.624964000 Z
+    zone: *1
+    time: 2017-06-18 13:28:42.624964000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:38:10.907646000 Z
+    zone: *1
+    time: 2017-06-18 13:38:10.907646000 Z
+  deleted_at: 
+  position: 9
+exerciseworkout_478:
+  id: 478
+  exercise_id: 366
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:33:20.892727000 Z
+    zone: *1
+    time: 2017-06-18 13:33:20.892727000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:38:05.985595000 Z
+    zone: *1
+    time: 2017-06-18 13:38:05.985595000 Z
+  deleted_at: 
+  position: 10
+exerciseworkout_479:
+  id: 479
+  exercise_id: 367
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:33:58.014088000 Z
+    zone: *1
+    time: 2017-06-18 13:33:58.014088000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:37:59.795683000 Z
+    zone: *1
+    time: 2017-06-18 13:37:59.795683000 Z
+  deleted_at: 
+  position: 11
+exerciseworkout_480:
+  id: 480
+  exercise_id: 368
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:35:25.048093000 Z
+    zone: *1
+    time: 2017-06-18 13:35:25.048093000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:37:59.807768000 Z
+    zone: *1
+    time: 2017-06-18 13:37:59.807768000 Z
+  deleted_at: 
+  position: 12
+exerciseworkout_481:
+  id: 481
+  exercise_id: 369
+  workout_id: 27
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:37:30.539075000 Z
+    zone: *1
+    time: 2017-06-18 13:37:30.539075000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:37:42.851264000 Z
+    zone: *1
+    time: 2017-06-18 13:37:42.851264000 Z
+  deleted_at: 
+  position: 13
+exerciseworkout_485:
+  id: 485
+  exercise_id: 37
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:43:53.444588000 Z
+    zone: *1
+    time: 2017-06-18 13:43:53.444588000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:02.227398000 Z
+    zone: *1
+    time: 2017-06-18 13:44:02.227398000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_486:
+  id: 486
+  exercise_id: 36
+  workout_id: 24
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:43:53.451478000 Z
+    zone: *1
+    time: 2017-06-18 13:43:53.451478000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-18 18:44:07.621812000 Z
+    zone: *1
+    time: 2017-06-18 13:44:07.621812000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_487:
+  id: 487
+  exercise_id: 370
+  workout_id: 124
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:45:55.213650000 Z
+    zone: *1
+    time: 2017-06-20 19:45:55.213650000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:45:55.213650000 Z
+    zone: *1
+    time: 2017-06-20 19:45:55.213650000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_488:
+  id: 488
+  exercise_id: 371
+  workout_id: 124
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:48:25.278098000 Z
+    zone: *1
+    time: 2017-06-20 19:48:25.278098000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:48:25.278098000 Z
+    zone: *1
+    time: 2017-06-20 19:48:25.278098000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_489:
+  id: 489
+  exercise_id: 372
+  workout_id: 124
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:51:43.763648000 Z
+    zone: *1
+    time: 2017-06-20 19:51:43.763648000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:51:43.763648000 Z
+    zone: *1
+    time: 2017-06-20 19:51:43.763648000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_490:
+  id: 490
+  exercise_id: 373
+  workout_id: 124
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:55:06.246350000 Z
+    zone: *1
+    time: 2017-06-20 19:55:06.246350000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:55:06.246350000 Z
+    zone: *1
+    time: 2017-06-20 19:55:06.246350000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_491:
+  id: 491
+  exercise_id: 374
+  workout_id: 124
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:58:09.999220000 Z
+    zone: *1
+    time: 2017-06-20 19:58:09.999220000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:58:09.999220000 Z
+    zone: *1
+    time: 2017-06-20 19:58:09.999220000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_492:
+  id: 492
+  exercise_id: 375
+  workout_id: 124
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:59:49.601366000 Z
+    zone: *1
+    time: 2017-06-20 19:59:49.601366000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 00:59:49.601366000 Z
+    zone: *1
+    time: 2017-06-20 19:59:49.601366000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_493:
+  id: 493
+  exercise_id: 376
+  workout_id: 124
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:03:23.246041000 Z
+    zone: *1
+    time: 2017-06-20 20:03:23.246041000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-21 01:03:23.246041000 Z
+    zone: *1
+    time: 2017-06-20 20:03:23.246041000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_494:
+  id: 494
+  exercise_id: 377
+  workout_id: 125
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:40:16.323672000 Z
+    zone: *1
+    time: 2017-06-22 05:40:16.323672000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:40:16.323672000 Z
+    zone: *1
+    time: 2017-06-22 05:40:16.323672000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_495:
+  id: 495
+  exercise_id: 378
+  workout_id: 125
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:42:10.682943000 Z
+    zone: *1
+    time: 2017-06-22 05:42:10.682943000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:42:10.682943000 Z
+    zone: *1
+    time: 2017-06-22 05:42:10.682943000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_496:
+  id: 496
+  exercise_id: 379
+  workout_id: 125
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:45:58.625755000 Z
+    zone: *1
+    time: 2017-06-22 05:45:58.625755000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:45:58.625755000 Z
+    zone: *1
+    time: 2017-06-22 05:45:58.625755000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_497:
+  id: 497
+  exercise_id: 380
+  workout_id: 125
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:49:32.184516000 Z
+    zone: *1
+    time: 2017-06-22 05:49:32.184516000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:49:32.184516000 Z
+    zone: *1
+    time: 2017-06-22 05:49:32.184516000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_498:
+  id: 498
+  exercise_id: 381
+  workout_id: 125
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:51:33.829776000 Z
+    zone: *1
+    time: 2017-06-22 05:51:33.829776000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:51:33.829776000 Z
+    zone: *1
+    time: 2017-06-22 05:51:33.829776000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_499:
+  id: 499
+  exercise_id: 382
+  workout_id: 125
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:54:23.577420000 Z
+    zone: *1
+    time: 2017-06-22 05:54:23.577420000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:54:23.577420000 Z
+    zone: *1
+    time: 2017-06-22 05:54:23.577420000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_500:
+  id: 500
+  exercise_id: 383
+  workout_id: 125
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:57:29.705625000 Z
+    zone: *1
+    time: 2017-06-22 05:57:29.705625000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 10:57:29.705625000 Z
+    zone: *1
+    time: 2017-06-22 05:57:29.705625000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_501:
+  id: 501
+  exercise_id: 384
+  workout_id: 125
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 11:05:00.949705000 Z
+    zone: *1
+    time: 2017-06-22 06:05:00.949705000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-22 11:05:00.949705000 Z
+    zone: *1
+    time: 2017-06-22 06:05:00.949705000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_502:
+  id: 502
+  exercise_id: 385
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 01:57:01.861864000 Z
+    zone: *1
+    time: 2017-06-22 20:57:01.861864000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 01:57:01.861864000 Z
+    zone: *1
+    time: 2017-06-22 20:57:01.861864000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_503:
+  id: 503
+  exercise_id: 386
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 01:57:50.779945000 Z
+    zone: *1
+    time: 2017-06-22 20:57:50.779945000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 01:57:50.779945000 Z
+    zone: *1
+    time: 2017-06-22 20:57:50.779945000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_504:
+  id: 504
+  exercise_id: 387
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:01:02.467806000 Z
+    zone: *1
+    time: 2017-06-22 21:01:02.467806000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:01:02.467806000 Z
+    zone: *1
+    time: 2017-06-22 21:01:02.467806000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_505:
+  id: 505
+  exercise_id: 388
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:05:18.311097000 Z
+    zone: *1
+    time: 2017-06-22 21:05:18.311097000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:05:18.311097000 Z
+    zone: *1
+    time: 2017-06-22 21:05:18.311097000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_506:
+  id: 506
+  exercise_id: 389
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:08:48.571780000 Z
+    zone: *1
+    time: 2017-06-22 21:08:48.571780000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:08:48.571780000 Z
+    zone: *1
+    time: 2017-06-22 21:08:48.571780000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_507:
+  id: 507
+  exercise_id: 390
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:16:46.209333000 Z
+    zone: *1
+    time: 2017-06-22 21:16:46.209333000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:16:46.209333000 Z
+    zone: *1
+    time: 2017-06-22 21:16:46.209333000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_508:
+  id: 508
+  exercise_id: 391
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:20:20.273032000 Z
+    zone: *1
+    time: 2017-06-22 21:20:20.273032000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:20:20.273032000 Z
+    zone: *1
+    time: 2017-06-22 21:20:20.273032000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_509:
+  id: 509
+  exercise_id: 392
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:27:18.247978000 Z
+    zone: *1
+    time: 2017-06-22 21:27:18.247978000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:27:18.247978000 Z
+    zone: *1
+    time: 2017-06-22 21:27:18.247978000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_510:
+  id: 510
+  exercise_id: 393
+  workout_id: 126
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:33:30.179790000 Z
+    zone: *1
+    time: 2017-06-22 21:33:30.179790000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-23 02:33:30.179790000 Z
+    zone: *1
+    time: 2017-06-22 21:33:30.179790000 Z
+  deleted_at: 
+  position: 9
+exerciseworkout_511:
+  id: 511
+  exercise_id: 394
+  workout_id: 127
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:14:49.668940000 Z
+    zone: *1
+    time: 2017-06-24 11:14:49.668940000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:14:49.668940000 Z
+    zone: *1
+    time: 2017-06-24 11:14:49.668940000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_512:
+  id: 512
+  exercise_id: 395
+  workout_id: 127
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:19:06.846880000 Z
+    zone: *1
+    time: 2017-06-24 11:19:06.846880000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:19:06.846880000 Z
+    zone: *1
+    time: 2017-06-24 11:19:06.846880000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_513:
+  id: 513
+  exercise_id: 396
+  workout_id: 127
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:22:10.427044000 Z
+    zone: *1
+    time: 2017-06-24 11:22:10.427044000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:22:10.427044000 Z
+    zone: *1
+    time: 2017-06-24 11:22:10.427044000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_514:
+  id: 514
+  exercise_id: 397
+  workout_id: 127
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:25:09.530171000 Z
+    zone: *1
+    time: 2017-06-24 11:25:09.530171000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:25:09.530171000 Z
+    zone: *1
+    time: 2017-06-24 11:25:09.530171000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_515:
+  id: 515
+  exercise_id: 398
+  workout_id: 127
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:27:51.395827000 Z
+    zone: *1
+    time: 2017-06-24 11:27:51.395827000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:27:51.395827000 Z
+    zone: *1
+    time: 2017-06-24 11:27:51.395827000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_516:
+  id: 516
+  exercise_id: 399
+  workout_id: 127
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:30:10.494439000 Z
+    zone: *1
+    time: 2017-06-24 11:30:10.494439000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 16:30:10.494439000 Z
+    zone: *1
+    time: 2017-06-24 11:30:10.494439000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_517:
+  id: 517
+  exercise_id: 400
+  workout_id: 123
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:11:24.301975000 Z
+    zone: *1
+    time: 2017-06-24 17:11:24.301975000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:11:24.301975000 Z
+    zone: *1
+    time: 2017-06-24 17:11:24.301975000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_518:
+  id: 518
+  exercise_id: 401
+  workout_id: 123
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:14:32.244548000 Z
+    zone: *1
+    time: 2017-06-24 17:14:32.244548000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:14:32.244548000 Z
+    zone: *1
+    time: 2017-06-24 17:14:32.244548000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_519:
+  id: 519
+  exercise_id: 402
+  workout_id: 123
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:17:12.264163000 Z
+    zone: *1
+    time: 2017-06-24 17:17:12.264163000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:17:12.264163000 Z
+    zone: *1
+    time: 2017-06-24 17:17:12.264163000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_520:
+  id: 520
+  exercise_id: 403
+  workout_id: 123
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:20:01.583193000 Z
+    zone: *1
+    time: 2017-06-24 17:20:01.583193000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:20:01.583193000 Z
+    zone: *1
+    time: 2017-06-24 17:20:01.583193000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_521:
+  id: 521
+  exercise_id: 404
+  workout_id: 123
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:20:52.181830000 Z
+    zone: *1
+    time: 2017-06-24 17:20:52.181830000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:20:52.181830000 Z
+    zone: *1
+    time: 2017-06-24 17:20:52.181830000 Z
+  deleted_at: 
+  position: 9
+exerciseworkout_522:
+  id: 522
+  exercise_id: 405
+  workout_id: 128
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:23:42.082450000 Z
+    zone: *1
+    time: 2017-06-24 17:23:42.082450000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 21:59:43.145681000 Z
+    zone: *1
+    time: 2017-06-26 16:59:43.145681000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_523:
+  id: 523
+  exercise_id: 406
+  workout_id: 128
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:25:35.935828000 Z
+    zone: *1
+    time: 2017-06-24 17:25:35.935828000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 21:59:43.145681000 Z
+    zone: *1
+    time: 2017-06-26 16:59:43.145681000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_524:
+  id: 524
+  exercise_id: 407
+  workout_id: 128
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:26:33.748452000 Z
+    zone: *1
+    time: 2017-06-24 17:26:33.748452000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 21:59:43.124860000 Z
+    zone: *1
+    time: 2017-06-26 16:59:43.124860000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_525:
+  id: 525
+  exercise_id: 408
+  workout_id: 128
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:27:40.098803000 Z
+    zone: *1
+    time: 2017-06-24 17:27:40.098803000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 21:59:24.157114000 Z
+    zone: *1
+    time: 2017-06-26 16:59:24.157114000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_526:
+  id: 526
+  exercise_id: 409
+  workout_id: 128
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-24 22:29:22.920758000 Z
+    zone: *1
+    time: 2017-06-24 17:29:22.920758000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 21:59:27.370933000 Z
+    zone: *1
+    time: 2017-06-26 16:59:27.370933000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_527:
+  id: 527
+  exercise_id: 259
+  workout_id: 12
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:52:33.554661000 Z
+    zone: *1
+    time: 2017-06-25 17:52:33.554661000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:54:34.447001000 Z
+    zone: *1
+    time: 2017-06-25 17:54:34.447001000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_529:
+  id: 529
+  exercise_id: 378
+  workout_id: 12
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:53:22.549263000 Z
+    zone: *1
+    time: 2017-06-25 17:53:22.549263000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 22:54:48.058043000 Z
+    zone: *1
+    time: 2017-06-25 17:54:48.058043000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_530:
+  id: 530
+  exercise_id: 25
+  workout_id: 16
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 23:01:50.177486000 Z
+    zone: *1
+    time: 2017-06-25 18:01:50.177486000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 10:46:30.359782000 Z
+    zone: *1
+    time: 2017-06-26 05:46:30.359782000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_531:
+  id: 531
+  exercise_id: 28
+  workout_id: 16
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 23:01:50.184257000 Z
+    zone: *1
+    time: 2017-06-25 18:01:50.184257000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 10:46:30.403757000 Z
+    zone: *1
+    time: 2017-06-26 05:46:30.403757000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_537:
+  id: 537
+  exercise_id: 29
+  workout_id: 16
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-25 23:15:57.894552000 Z
+    zone: *1
+    time: 2017-06-25 18:15:57.894552000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 10:46:30.429194000 Z
+    zone: *1
+    time: 2017-06-26 05:46:30.429194000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_540:
+  id: 540
+  exercise_id: 23
+  workout_id: 16
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 10:48:51.374343000 Z
+    zone: *1
+    time: 2017-06-26 05:48:51.374343000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 10:48:57.626705000 Z
+    zone: *1
+    time: 2017-06-26 05:48:57.626705000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_541:
+  id: 541
+  exercise_id: 99
+  workout_id: 130
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:12:19.992182000 Z
+    zone: *1
+    time: 2017-06-26 06:12:19.992182000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:12:19.992182000 Z
+    zone: *1
+    time: 2017-06-26 06:12:19.992182000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_542:
+  id: 542
+  exercise_id: 7
+  workout_id: 130
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:12:20.003022000 Z
+    zone: *1
+    time: 2017-06-26 06:12:20.003022000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:12:20.003022000 Z
+    zone: *1
+    time: 2017-06-26 06:12:20.003022000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_543:
+  id: 543
+  exercise_id: 8
+  workout_id: 130
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:12:20.012867000 Z
+    zone: *1
+    time: 2017-06-26 06:12:20.012867000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:12:20.012867000 Z
+    zone: *1
+    time: 2017-06-26 06:12:20.012867000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_545:
+  id: 545
+  exercise_id: 9
+  workout_id: 131
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:15:48.851603000 Z
+    zone: *1
+    time: 2017-06-26 06:15:48.851603000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:15:48.851603000 Z
+    zone: *1
+    time: 2017-06-26 06:15:48.851603000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_546:
+  id: 546
+  exercise_id: 16
+  workout_id: 131
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:15:48.860311000 Z
+    zone: *1
+    time: 2017-06-26 06:15:48.860311000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:15:48.860311000 Z
+    zone: *1
+    time: 2017-06-26 06:15:48.860311000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_547:
+  id: 547
+  exercise_id: 17
+  workout_id: 131
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:16:38.951894000 Z
+    zone: *1
+    time: 2017-06-26 06:16:38.951894000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:16:38.951894000 Z
+    zone: *1
+    time: 2017-06-26 06:16:38.951894000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_548:
+  id: 548
+  exercise_id: 338
+  workout_id: 132
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:33:19.953793000 Z
+    zone: *1
+    time: 2017-06-26 06:33:19.953793000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:33:19.953793000 Z
+    zone: *1
+    time: 2017-06-26 06:33:19.953793000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_549:
+  id: 549
+  exercise_id: 339
+  workout_id: 132
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:33:19.962546000 Z
+    zone: *1
+    time: 2017-06-26 06:33:19.962546000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:33:19.962546000 Z
+    zone: *1
+    time: 2017-06-26 06:33:19.962546000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_550:
+  id: 550
+  exercise_id: 259
+  workout_id: 132
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:33:19.970975000 Z
+    zone: *1
+    time: 2017-06-26 06:33:19.970975000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:33:19.970975000 Z
+    zone: *1
+    time: 2017-06-26 06:33:19.970975000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_551:
+  id: 551
+  exercise_id: 12
+  workout_id: 134
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:41:05.776025000 Z
+    zone: *1
+    time: 2017-06-26 06:41:05.776025000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:41:05.776025000 Z
+    zone: *1
+    time: 2017-06-26 06:41:05.776025000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_552:
+  id: 552
+  exercise_id: 177
+  workout_id: 134
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:41:05.784637000 Z
+    zone: *1
+    time: 2017-06-26 06:41:05.784637000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:41:05.784637000 Z
+    zone: *1
+    time: 2017-06-26 06:41:05.784637000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_553:
+  id: 553
+  exercise_id: 19
+  workout_id: 134
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:41:05.792999000 Z
+    zone: *1
+    time: 2017-06-26 06:41:05.792999000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 11:41:05.792999000 Z
+    zone: *1
+    time: 2017-06-26 06:41:05.792999000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_554:
+  id: 554
+  exercise_id: 28
+  workout_id: 135
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:27:03.830493000 Z
+    zone: *1
+    time: 2017-06-26 07:27:03.830493000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:27:03.830493000 Z
+    zone: *1
+    time: 2017-06-26 07:27:03.830493000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_555:
+  id: 555
+  exercise_id: 29
+  workout_id: 135
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:27:03.841369000 Z
+    zone: *1
+    time: 2017-06-26 07:27:03.841369000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:27:03.841369000 Z
+    zone: *1
+    time: 2017-06-26 07:27:03.841369000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_556:
+  id: 556
+  exercise_id: 10
+  workout_id: 133
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:33:27.666939000 Z
+    zone: *1
+    time: 2017-06-26 07:33:27.666939000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:33:27.666939000 Z
+    zone: *1
+    time: 2017-06-26 07:33:27.666939000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_557:
+  id: 557
+  exercise_id: 238
+  workout_id: 133
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:33:27.678640000 Z
+    zone: *1
+    time: 2017-06-26 07:33:27.678640000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:33:27.678640000 Z
+    zone: *1
+    time: 2017-06-26 07:33:27.678640000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_558:
+  id: 558
+  exercise_id: 309
+  workout_id: 133
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:33:27.713608000 Z
+    zone: *1
+    time: 2017-06-26 07:33:27.713608000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 12:33:27.713608000 Z
+    zone: *1
+    time: 2017-06-26 07:33:27.713608000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_559:
+  id: 559
+  exercise_id: 410
+  workout_id: 136
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:03:24.378519000 Z
+    zone: *1
+    time: 2017-06-26 08:03:24.378519000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:03:24.378519000 Z
+    zone: *1
+    time: 2017-06-26 08:03:24.378519000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_560:
+  id: 560
+  exercise_id: 411
+  workout_id: 136
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:04:40.870939000 Z
+    zone: *1
+    time: 2017-06-26 08:04:40.870939000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:04:40.870939000 Z
+    zone: *1
+    time: 2017-06-26 08:04:40.870939000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_561:
+  id: 561
+  exercise_id: 412
+  workout_id: 136
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:08:29.938718000 Z
+    zone: *1
+    time: 2017-06-26 08:08:29.938718000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:08:29.938718000 Z
+    zone: *1
+    time: 2017-06-26 08:08:29.938718000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_562:
+  id: 562
+  exercise_id: 413
+  workout_id: 137
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:10:00.972007000 Z
+    zone: *1
+    time: 2017-06-26 08:10:00.972007000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:10:00.972007000 Z
+    zone: *1
+    time: 2017-06-26 08:10:00.972007000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_563:
+  id: 563
+  exercise_id: 414
+  workout_id: 137
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:11:48.207722000 Z
+    zone: *1
+    time: 2017-06-26 08:11:48.207722000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:11:48.207722000 Z
+    zone: *1
+    time: 2017-06-26 08:11:48.207722000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_564:
+  id: 564
+  exercise_id: 415
+  workout_id: 137
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:12:56.124772000 Z
+    zone: *1
+    time: 2017-06-26 08:12:56.124772000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:12:56.124772000 Z
+    zone: *1
+    time: 2017-06-26 08:12:56.124772000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_565:
+  id: 565
+  exercise_id: 234
+  workout_id: 138
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:13:56.290860000 Z
+    zone: *1
+    time: 2017-06-26 08:13:56.290860000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:13:56.290860000 Z
+    zone: *1
+    time: 2017-06-26 08:13:56.290860000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_566:
+  id: 566
+  exercise_id: 237
+  workout_id: 138
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:13:56.304692000 Z
+    zone: *1
+    time: 2017-06-26 08:13:56.304692000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:13:56.304692000 Z
+    zone: *1
+    time: 2017-06-26 08:13:56.304692000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_567:
+  id: 567
+  exercise_id: 238
+  workout_id: 138
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:13:56.317248000 Z
+    zone: *1
+    time: 2017-06-26 08:13:56.317248000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 13:13:56.317248000 Z
+    zone: *1
+    time: 2017-06-26 08:13:56.317248000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_569:
+  id: 569
+  exercise_id: 25
+  workout_id: 139
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:57:12.753549000 Z
+    zone: *1
+    time: 2017-06-26 10:57:12.753549000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:57:12.753549000 Z
+    zone: *1
+    time: 2017-06-26 10:57:12.753549000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_570:
+  id: 570
+  exercise_id: 26
+  workout_id: 139
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:57:12.773544000 Z
+    zone: *1
+    time: 2017-06-26 10:57:12.773544000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:57:12.773544000 Z
+    zone: *1
+    time: 2017-06-26 10:57:12.773544000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_571:
+  id: 571
+  exercise_id: 24
+  workout_id: 139
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 15:58:32.374360000 Z
+    zone: *1
+    time: 2017-06-26 10:58:32.374360000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-07 04:12:47.302695000 Z
+    zone: *1
+    time: 2017-07-06 23:12:47.302695000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_572:
+  id: 572
+  exercise_id: 175
+  workout_id: 140
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:00:48.849504000 Z
+    zone: *1
+    time: 2017-06-26 11:00:48.849504000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:00:48.849504000 Z
+    zone: *1
+    time: 2017-06-26 11:00:48.849504000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_573:
+  id: 573
+  exercise_id: 176
+  workout_id: 140
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:00:48.886637000 Z
+    zone: *1
+    time: 2017-06-26 11:00:48.886637000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:00:48.886637000 Z
+    zone: *1
+    time: 2017-06-26 11:00:48.886637000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_574:
+  id: 574
+  exercise_id: 168
+  workout_id: 140
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:00:48.916694000 Z
+    zone: *1
+    time: 2017-06-26 11:00:48.916694000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:00:48.916694000 Z
+    zone: *1
+    time: 2017-06-26 11:00:48.916694000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_575:
+  id: 575
+  exercise_id: 28
+  workout_id: 141
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:06:01.966379000 Z
+    zone: *1
+    time: 2017-06-26 11:06:01.966379000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:06:01.966379000 Z
+    zone: *1
+    time: 2017-06-26 11:06:01.966379000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_576:
+  id: 576
+  exercise_id: 29
+  workout_id: 141
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:06:01.979616000 Z
+    zone: *1
+    time: 2017-06-26 11:06:01.979616000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:06:01.979616000 Z
+    zone: *1
+    time: 2017-06-26 11:06:01.979616000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_577:
+  id: 577
+  exercise_id: 195
+  workout_id: 141
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:06:01.991525000 Z
+    zone: *1
+    time: 2017-06-26 11:06:01.991525000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-26 16:06:01.991525000 Z
+    zone: *1
+    time: 2017-06-26 11:06:01.991525000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_578:
+  id: 578
+  exercise_id: 67
+  workout_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 00:50:32.121409000 Z
+    zone: *1
+    time: 2017-06-26 19:50:32.121409000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 00:50:32.121409000 Z
+    zone: *1
+    time: 2017-06-26 19:50:32.121409000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_579:
+  id: 579
+  exercise_id: 71
+  workout_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 00:50:32.141755000 Z
+    zone: *1
+    time: 2017-06-26 19:50:32.141755000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 00:50:32.141755000 Z
+    zone: *1
+    time: 2017-06-26 19:50:32.141755000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_580:
+  id: 580
+  exercise_id: 70
+  workout_id: 32
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 00:50:32.162198000 Z
+    zone: *1
+    time: 2017-06-26 19:50:32.162198000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 00:50:32.162198000 Z
+    zone: *1
+    time: 2017-06-26 19:50:32.162198000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_581:
+  id: 581
+  exercise_id: 89
+  workout_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:04:48.575014000 Z
+    zone: *1
+    time: 2017-06-26 20:04:48.575014000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:08:05.198224000 Z
+    zone: *1
+    time: 2017-06-26 20:08:05.198224000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_582:
+  id: 582
+  exercise_id: 88
+  workout_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:04:48.606383000 Z
+    zone: *1
+    time: 2017-06-26 20:04:48.606383000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:08:08.266858000 Z
+    zone: *1
+    time: 2017-06-26 20:08:08.266858000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_583:
+  id: 583
+  exercise_id: 90
+  workout_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:04:48.624603000 Z
+    zone: *1
+    time: 2017-06-26 20:04:48.624603000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:08:10.600174000 Z
+    zone: *1
+    time: 2017-06-26 20:08:10.600174000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_584:
+  id: 584
+  exercise_id: 416
+  workout_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:04:48.856561000 Z
+    zone: *1
+    time: 2017-06-26 20:04:48.856561000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:08:19.294678000 Z
+    zone: *1
+    time: 2017-06-26 20:08:19.294678000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_585:
+  id: 585
+  exercise_id: 417
+  workout_id: 35
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:07:55.668236000 Z
+    zone: *1
+    time: 2017-06-26 20:07:55.668236000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:08:23.127653000 Z
+    zone: *1
+    time: 2017-06-26 20:08:23.127653000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_586:
+  id: 586
+  exercise_id: 418
+  workout_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:13:16.423329000 Z
+    zone: *1
+    time: 2017-06-26 20:13:16.423329000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:13:16.423329000 Z
+    zone: *1
+    time: 2017-06-26 20:13:16.423329000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_587:
+  id: 587
+  exercise_id: 419
+  workout_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:18:00.994055000 Z
+    zone: *1
+    time: 2017-06-26 20:18:00.994055000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:18:00.994055000 Z
+    zone: *1
+    time: 2017-06-26 20:18:00.994055000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_588:
+  id: 588
+  exercise_id: 420
+  workout_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:19:19.358169000 Z
+    zone: *1
+    time: 2017-06-26 20:19:19.358169000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:19:19.358169000 Z
+    zone: *1
+    time: 2017-06-26 20:19:19.358169000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_589:
+  id: 589
+  exercise_id: 421
+  workout_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:26:07.169371000 Z
+    zone: *1
+    time: 2017-06-26 20:26:07.169371000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:26:07.169371000 Z
+    zone: *1
+    time: 2017-06-26 20:26:07.169371000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_590:
+  id: 590
+  exercise_id: 83
+  workout_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:26:57.403275000 Z
+    zone: *1
+    time: 2017-06-26 20:26:57.403275000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:26:57.403275000 Z
+    zone: *1
+    time: 2017-06-26 20:26:57.403275000 Z
+  deleted_at: 
+  position: 9
+exerciseworkout_591:
+  id: 591
+  exercise_id: 422
+  workout_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:32:29.332567000 Z
+    zone: *1
+    time: 2017-06-26 20:32:29.332567000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:32:29.332567000 Z
+    zone: *1
+    time: 2017-06-26 20:32:29.332567000 Z
+  deleted_at: 
+  position: 10
+exerciseworkout_592:
+  id: 592
+  exercise_id: 423
+  workout_id: 38
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:35:13.470339000 Z
+    zone: *1
+    time: 2017-06-26 20:35:13.470339000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:35:13.470339000 Z
+    zone: *1
+    time: 2017-06-26 20:35:13.470339000 Z
+  deleted_at: 
+  position: 11
+exerciseworkout_593:
+  id: 593
+  exercise_id: 77
+  workout_id: 143
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:39:06.152654000 Z
+    zone: *1
+    time: 2017-06-26 20:39:06.152654000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:39:06.152654000 Z
+    zone: *1
+    time: 2017-06-26 20:39:06.152654000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_594:
+  id: 594
+  exercise_id: 78
+  workout_id: 143
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:39:06.186593000 Z
+    zone: *1
+    time: 2017-06-26 20:39:06.186593000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:39:06.186593000 Z
+    zone: *1
+    time: 2017-06-26 20:39:06.186593000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_595:
+  id: 595
+  exercise_id: 79
+  workout_id: 143
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:39:06.202084000 Z
+    zone: *1
+    time: 2017-06-26 20:39:06.202084000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:39:06.202084000 Z
+    zone: *1
+    time: 2017-06-26 20:39:06.202084000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_596:
+  id: 596
+  exercise_id: 80
+  workout_id: 143
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:39:06.222698000 Z
+    zone: *1
+    time: 2017-06-26 20:39:06.222698000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:39:06.222698000 Z
+    zone: *1
+    time: 2017-06-26 20:39:06.222698000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_597:
+  id: 597
+  exercise_id: 81
+  workout_id: 144
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:48:27.285000000 Z
+    zone: *1
+    time: 2017-06-26 20:48:27.285000000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:48:27.285000000 Z
+    zone: *1
+    time: 2017-06-26 20:48:27.285000000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_598:
+  id: 598
+  exercise_id: 85
+  workout_id: 144
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:48:27.304737000 Z
+    zone: *1
+    time: 2017-06-26 20:48:27.304737000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:48:27.304737000 Z
+    zone: *1
+    time: 2017-06-26 20:48:27.304737000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_599:
+  id: 599
+  exercise_id: 86
+  workout_id: 144
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:48:27.323415000 Z
+    zone: *1
+    time: 2017-06-26 20:48:27.323415000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:48:27.323415000 Z
+    zone: *1
+    time: 2017-06-26 20:48:27.323415000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_600:
+  id: 600
+  exercise_id: 87
+  workout_id: 144
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:48:27.360186000 Z
+    zone: *1
+    time: 2017-06-26 20:48:27.360186000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:48:27.360186000 Z
+    zone: *1
+    time: 2017-06-26 20:48:27.360186000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_601:
+  id: 601
+  exercise_id: 424
+  workout_id: 145
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:54:27.205079000 Z
+    zone: *1
+    time: 2017-06-26 20:54:27.205079000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 01:54:27.205079000 Z
+    zone: *1
+    time: 2017-06-26 20:54:27.205079000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_602:
+  id: 602
+  exercise_id: 104
+  workout_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:46:09.871417000 Z
+    zone: *1
+    time: 2017-06-27 07:46:09.871417000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:48:11.986169000 Z
+    zone: *1
+    time: 2017-06-27 07:48:11.986169000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_603:
+  id: 603
+  exercise_id: 105
+  workout_id: 42
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:46:09.884272000 Z
+    zone: *1
+    time: 2017-06-27 07:46:09.884272000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 12:48:11.986169000 Z
+    zone: *1
+    time: 2017-06-27 07:48:11.986169000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_604:
+  id: 604
+  exercise_id: 226
+  workout_id: 45
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:01:16.694375000 Z
+    zone: *1
+    time: 2017-06-27 08:01:16.694375000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:01:16.694375000 Z
+    zone: *1
+    time: 2017-06-27 08:01:16.694375000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_605:
+  id: 605
+  exercise_id: 115
+  workout_id: 45
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:01:16.716175000 Z
+    zone: *1
+    time: 2017-06-27 08:01:16.716175000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:01:16.716175000 Z
+    zone: *1
+    time: 2017-06-27 08:01:16.716175000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_606:
+  id: 606
+  exercise_id: 116
+  workout_id: 45
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:01:16.742522000 Z
+    zone: *1
+    time: 2017-06-27 08:01:16.742522000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:01:16.742522000 Z
+    zone: *1
+    time: 2017-06-27 08:01:16.742522000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_607:
+  id: 607
+  exercise_id: 217
+  workout_id: 48
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:12:09.905294000 Z
+    zone: *1
+    time: 2017-06-27 08:12:09.905294000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:12:09.905294000 Z
+    zone: *1
+    time: 2017-06-27 08:12:09.905294000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_609:
+  id: 609
+  exercise_id: 198
+  workout_id: 48
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:12:09.945789000 Z
+    zone: *1
+    time: 2017-06-27 08:12:09.945789000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:12:09.945789000 Z
+    zone: *1
+    time: 2017-06-27 08:12:09.945789000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_610:
+  id: 610
+  exercise_id: 425
+  workout_id: 48
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:12:10.014815000 Z
+    zone: *1
+    time: 2017-06-27 08:12:10.014815000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:12:10.014815000 Z
+    zone: *1
+    time: 2017-06-27 08:12:10.014815000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_611:
+  id: 611
+  exercise_id: 426
+  workout_id: 48
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:15:15.880056000 Z
+    zone: *1
+    time: 2017-06-27 08:15:15.880056000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:15:15.880056000 Z
+    zone: *1
+    time: 2017-06-27 08:15:15.880056000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_612:
+  id: 612
+  exercise_id: 427
+  workout_id: 48
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:27:27.886194000 Z
+    zone: *1
+    time: 2017-06-27 08:27:27.886194000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:27:27.886194000 Z
+    zone: *1
+    time: 2017-06-27 08:27:27.886194000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_613:
+  id: 613
+  exercise_id: 428
+  workout_id: 48
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:30:43.606817000 Z
+    zone: *1
+    time: 2017-06-27 08:30:43.606817000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:30:43.606817000 Z
+    zone: *1
+    time: 2017-06-27 08:30:43.606817000 Z
+  deleted_at: 
+  position: 7
+exerciseworkout_614:
+  id: 614
+  exercise_id: 429
+  workout_id: 48
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:33:24.400730000 Z
+    zone: *1
+    time: 2017-06-27 08:33:24.400730000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-27 13:33:24.400730000 Z
+    zone: *1
+    time: 2017-06-27 08:33:24.400730000 Z
+  deleted_at: 
+  position: 8
+exerciseworkout_615:
+  id: 615
+  exercise_id: 430
+  workout_id: 146
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:19:31.966065000 Z
+    zone: *1
+    time: 2017-06-27 20:19:31.966065000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:19:31.966065000 Z
+    zone: *1
+    time: 2017-06-27 20:19:31.966065000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_616:
+  id: 616
+  exercise_id: 431
+  workout_id: 146
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:21:43.133569000 Z
+    zone: *1
+    time: 2017-06-27 20:21:43.133569000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:21:43.133569000 Z
+    zone: *1
+    time: 2017-06-27 20:21:43.133569000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_617:
+  id: 617
+  exercise_id: 432
+  workout_id: 146
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:24:51.216856000 Z
+    zone: *1
+    time: 2017-06-27 20:24:51.216856000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:24:51.216856000 Z
+    zone: *1
+    time: 2017-06-27 20:24:51.216856000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_618:
+  id: 618
+  exercise_id: 433
+  workout_id: 146
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:29:21.552368000 Z
+    zone: *1
+    time: 2017-06-27 20:29:21.552368000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 01:29:21.552368000 Z
+    zone: *1
+    time: 2017-06-27 20:29:21.552368000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_619:
+  id: 619
+  exercise_id: 434
+  workout_id: 146
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:07:19.343275000 Z
+    zone: *1
+    time: 2017-06-27 21:07:19.343275000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:07:19.343275000 Z
+    zone: *1
+    time: 2017-06-27 21:07:19.343275000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_620:
+  id: 620
+  exercise_id: 435
+  workout_id: 147
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:12:24.787654000 Z
+    zone: *1
+    time: 2017-06-27 21:12:24.787654000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:12:24.787654000 Z
+    zone: *1
+    time: 2017-06-27 21:12:24.787654000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_621:
+  id: 621
+  exercise_id: 436
+  workout_id: 147
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:13:56.707481000 Z
+    zone: *1
+    time: 2017-06-27 21:13:56.707481000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:13:56.707481000 Z
+    zone: *1
+    time: 2017-06-27 21:13:56.707481000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_622:
+  id: 622
+  exercise_id: 437
+  workout_id: 147
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:15:37.486996000 Z
+    zone: *1
+    time: 2017-06-27 21:15:37.486996000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:15:37.486996000 Z
+    zone: *1
+    time: 2017-06-27 21:15:37.486996000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_623:
+  id: 623
+  exercise_id: 438
+  workout_id: 147
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:18:03.582409000 Z
+    zone: *1
+    time: 2017-06-27 21:18:03.582409000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:18:03.582409000 Z
+    zone: *1
+    time: 2017-06-27 21:18:03.582409000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_624:
+  id: 624
+  exercise_id: 439
+  workout_id: 147
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:19:22.408209000 Z
+    zone: *1
+    time: 2017-06-27 21:19:22.408209000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:19:22.408209000 Z
+    zone: *1
+    time: 2017-06-27 21:19:22.408209000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_625:
+  id: 625
+  exercise_id: 440
+  workout_id: 147
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:22:46.029422000 Z
+    zone: *1
+    time: 2017-06-27 21:22:46.029422000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-28 02:22:46.029422000 Z
+    zone: *1
+    time: 2017-06-27 21:22:46.029422000 Z
+  deleted_at: 
+  position: 6
+exerciseworkout_626:
+  id: 626
+  exercise_id: 441
+  workout_id: 148
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 01:22:40.078043000 Z
+    zone: *1
+    time: 2017-06-28 20:22:40.078043000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 01:22:40.078043000 Z
+    zone: *1
+    time: 2017-06-28 20:22:40.078043000 Z
+  deleted_at: 
+  position: 1
+exerciseworkout_627:
+  id: 627
+  exercise_id: 442
+  workout_id: 148
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:31:35.370564000 Z
+    zone: *1
+    time: 2017-06-29 05:31:35.370564000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:31:35.370564000 Z
+    zone: *1
+    time: 2017-06-29 05:31:35.370564000 Z
+  deleted_at: 
+  position: 2
+exerciseworkout_628:
+  id: 628
+  exercise_id: 443
+  workout_id: 148
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:32:02.250882000 Z
+    zone: *1
+    time: 2017-06-29 05:32:02.250882000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:32:02.250882000 Z
+    zone: *1
+    time: 2017-06-29 05:32:02.250882000 Z
+  deleted_at: 
+  position: 3
+exerciseworkout_629:
+  id: 629
+  exercise_id: 444
+  workout_id: 148
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:32:39.855283000 Z
+    zone: *1
+    time: 2017-06-29 05:32:39.855283000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:32:39.855283000 Z
+    zone: *1
+    time: 2017-06-29 05:32:39.855283000 Z
+  deleted_at: 
+  position: 4
+exerciseworkout_630:
+  id: 630
+  exercise_id: 445
+  workout_id: 148
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:33:06.151889000 Z
+    zone: *1
+    time: 2017-06-29 05:33:06.151889000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 10:33:06.151889000 Z
+    zone: *1
+    time: 2017-06-29 05:33:06.151889000 Z
+  deleted_at: 
+  position: 5
+exerciseworkout_631:
+  id: 631
+  exercise_id: 149
+  workout_id: 150
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:31:57.753499000 Z
+    zone: *1
+    time: 2017-06-29 15:31:57.753499000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-29 20:31:57.753499000 Z
+    zone: *1
+    time: 2017-06-29 15:31:57.753499000 Z
+  deleted_at: 
+  position: 1

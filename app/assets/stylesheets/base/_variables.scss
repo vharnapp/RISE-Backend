@@ -1,0 +1,168 @@
+// Breakpoints
+$small-screen: 468px;
+$medium-screen: 900px;
+$large-screen: 1280px;
+
+// Typography
+$base-font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+$mobile-font-size: .7em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$primary: #3adb76;
+$secondary: #2F705D;
+$dark-gray: #232323;
+$gray: #999999;
+$light-gray: #F1F1F1;
+$off-white: #F9F9F9;
+$green: #51BFA0;
+$dark-green: #2F705D;
+$dark-blue: #235DAA;
+$main-gradient: linear-gradient(180deg, #94E644 0%, #41E893 100%);
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $primary;
+
+//HR
+hr {
+  color: $light-gray;
+  margin-bottom: 6em !important;
+}
+hr.tiny {
+  margin-bottom: 1em !important;
+}
+//Vertical Rule
+.vr {
+  border-left: 2px solid #D8D8D8;
+  height: 195px;
+  margin-top: -10px;
+}
+.last {
+  width: 24%;
+}
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+.overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0,0,0,.5);
+}
+
+// Floats
+.left { float: left;}
+.right {float: right;}
+.clear {clear: both;}
+
+// Padding
+.padding-t-5 {padding-top: 5px;}
+.padding-t-10 {padding-top: 10px;}
+.padding-t-25 {padding-top: 25px;}
+
+// Margin
+.margin-t-35 {margin-top: 35px;}
+.margin-l-20 {margin-left: 20px;}
+
+// Shadows
+.shadowed {
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+}
+
+
+// Typography
+$base-font-family: Montserrat, 'Roboto', Helvetica, Arial, sans-serif;
+$heading-font-family: $base-font-family;
+
+$base-font-size: 1em;
+
+$bold-font-weight: 700;
+
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 4px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+
+// Colors
+$white: #fff;
+$black: #000;
+
+$blue: #1976d2;
+$red: #d32f2f;
+$light-yellow: #f0cd66;
+$light-green: #4ab471;
+
+$grey-0: #f6f7f7;
+$grey-1: #dfe0e1;
+$grey-2: #cfd8dc;
+$grey-5: #adb5bd;
+$grey-7: #293f54;
+
+$hint-grey: #7b808c;
+
+// Font Colors
+$base-font-color: $grey-7;
+$action-color: $primary;
+
+// Background Colors
+$base-background-color: $grey-0;
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 1px;
+
+// Flash Colors
+$flash-colors: (
+  alert: $light-yellow,
+  error: $red,
+  notice: mix($white, $blue, 50%),
+  success: $light-green
+);
+
+// Border
+$base-border-color: $grey-1;
+$base-border: 1px solid $base-border-color;
+
+// Transitions
+$base-duration: 250ms;
+$base-timing: ease-in-out;
+
+// Interactive
+.clickable {
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.form-actions {}
+.field_with_errors .error {
+  background-color: #ce0000;
+  border-radius: 2px;
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+  font-size: 12px;
+  width: 100%;
+}
+.error_notification {
+  width: 100%;
+}

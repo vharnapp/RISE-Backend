@@ -1,0 +1,43 @@
+.row.columns
+  br
+  h3.single-payment-heading Choose The Training Plan That’s Right For You
+
+  = form_tag verify_code_url, class: "verify-code-form"
+    = text_field_tag :affiliate_code, "#{(@affiliateCode.nil? ? "" : @affiliateCode.code)}", placeholder: "Promo / Discount code"
+    - if !@affiliateCode.nil?
+      span <strong>Note: </strong> Code #{@affiliateCode.code} is currently applied
+
+    = submit_tag "Redeem code"
+
+  .single-payment-section
+    -@single_payments.each do |single_payment|
+      div.single-payment-container class=( (single_payment.name.downcase.include? "coach") ? "coach" : "")
+        .single-payment
+          - if single_payment.special_label != ""
+            .green-label #{single_payment.special_label}
+
+          - if @affiliateCode.nil? || @affiliateCode.discount == 0
+            .price $#{@prices[single_payment.id]}
+          -else
+            .price.old-price $#{@oldPrices[single_payment.id]}
+            .price.price-discount $#{@prices[single_payment.id]}
+
+          .name #{single_payment.name}
+
+          div
+            - if current_user.has_archieved_user_payment(single_payment.id)
+              div.disabled-button-container
+                button.stripe-button-el disabled=true
+                  span Purchased
+            - else
+              = render 'plan_button', { button_label: "Buy Now", name: single_payment.name, payment_id: single_payment.id, price: @prices[single_payment.id], affiliate_code_id: (@affiliateCode.nil? ? "" : @affiliateCode.id) }
+
+          .specifications 
+            ul 
+              -@specifications[single_payment.id].each do |item|
+                li 
+                  - if item != "" && item != " "
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg>
+                    span #{item}
+                  - else
+                    span &nbsp;<br>

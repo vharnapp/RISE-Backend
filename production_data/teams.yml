@@ -1,0 +1,362 @@
+---
+team_2:
+  id: 2
+  name: Madison
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:47:01.587457000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Chicago
+    time: 2017-04-06 10:47:01.587457000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:40:43.114069000 Z
+    zone: *1
+    time: 2017-07-05 07:40:43.114069000 Z
+  club_id: 1
+  slug: team-pedro
+  deleted_at: 
+  position: 
+  code: Madison
+  logo: MadisonWisconsin-image.jpg
+  num_players: 20
+team_4:
+  id: 4
+  name: Lansing
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 15:49:19.969939000 Z
+    zone: *1
+    time: 2017-04-06 10:49:19.969939000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:40:52.439670000 Z
+    zone: *1
+    time: 2017-07-05 07:40:52.439670000 Z
+  club_id: 2
+  slug: bells
+  deleted_at: 
+  position: 
+  code: Lansing
+  logo: Lansing.jpg
+  num_players: 20
+team_7:
+  id: 7
+  name: I Have The Greatest Soccer Club
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 18:20:33.479481000 Z
+    zone: *1
+    time: 2017-04-06 13:20:33.479481000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-04-06 18:20:33.479481000 Z
+    zone: *1
+    time: 2017-04-06 13:20:33.479481000 Z
+  club_id: 4
+  slug: i-have-the-greatest-soccer-club
+  deleted_at: 
+  position: 
+  code: 
+  logo: 
+  num_players: 
+team_8:
+  id: 8
+  name: Green Bay
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-06-30 13:13:50.061954000 Z
+    zone: *1
+    time: 2017-06-30 08:13:50.061954000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-05 12:40:31.219871000 Z
+    zone: *1
+    time: 2017-07-05 07:40:31.219871000 Z
+  club_id: 1
+  slug: green-bay
+  deleted_at: 
+  position: 
+  code: GreenBay
+  logo: Emma_with_Girl_Scouts.jpg
+  num_players: 20
+team_9:
+  id: 9
+  name: JonTestTempTeam
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:45:35.163961000 Z
+    zone: *1
+    time: 2017-07-01 09:45:35.163961000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:45:35.163961000 Z
+    zone: *1
+    time: 2017-07-01 09:45:35.163961000 Z
+  club_id: 5
+  slug: jontesttempteam
+  deleted_at: 
+  position: 
+  code: 3D89F7
+  logo: 
+  num_players: 15
+team_10:
+  id: 10
+  name: Test Team 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.256256000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.256256000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.256256000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.256256000 Z
+  club_id: 6
+  slug: test-team-1
+  deleted_at: 
+  position: 
+  code: AB3173
+  logo: 
+  num_players: 2
+team_11:
+  id: 11
+  name: Test Team 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.544085000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.544085000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-01 14:46:10.544085000 Z
+    zone: *1
+    time: 2017-07-01 09:46:10.544085000 Z
+  club_id: 6
+  slug: test-team-2
+  deleted_at: 
+  position: 
+  code: 1BA039
+  logo: 
+  num_players: 1
+team_12:
+  id: 12
+  name: FunTeam
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:52.967902000 Z
+    zone: *1
+    time: 2017-07-02 16:13:52.967902000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:52.967902000 Z
+    zone: *1
+    time: 2017-07-02 16:13:52.967902000 Z
+  club_id: 9
+  slug: funteam
+  deleted_at: 
+  position: 
+  code: ABA453
+  logo: 
+  num_players: 10
+team_13:
+  id: 13
+  name: BadTeam
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.335551000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.335551000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 21:13:53.335551000 Z
+    zone: *1
+    time: 2017-07-02 16:13:53.335551000 Z
+  club_id: 9
+  slug: badteam
+  deleted_at: 
+  position: 
+  code: BF9CF7
+  logo: 
+  num_players: 11
+team_14:
+  id: 14
+  name: Hello Team 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:28.957130000 Z
+    zone: *1
+    time: 2017-07-02 18:45:28.957130000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:46:35.845832000 Z
+    zone: *1
+    time: 2017-07-02 18:46:35.845832000 Z
+  club_id: 11
+  slug: hello-team-1
+  deleted_at: 
+  position: 
+  code: 7AE148
+  logo: jon-kinney.jpg
+  num_players: 19
+team_15:
+  id: 15
+  name: Hello Team 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.332420000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.332420000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-02 23:45:29.332420000 Z
+    zone: *1
+    time: 2017-07-02 18:45:29.332420000 Z
+  club_id: 11
+  slug: hello-team-2
+  deleted_at: 
+  position: 
+  code: 9A36C3
+  logo: 
+  num_players: 10
+team_16:
+  id: 16
+  name: Girls U8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.477124000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.477124000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:39:14.887956000 Z
+    zone: *1
+    time: 2017-07-03 07:39:14.887956000 Z
+  club_id: 12
+  slug: girls-u8
+  deleted_at: 
+  position: 
+  code: 4C35E2
+  logo: Bowling_Green_Logo_1.png
+  num_players: 15
+team_17:
+  id: 17
+  name: Boys U8
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.768027000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.768027000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:30.768027000 Z
+    zone: *1
+    time: 2017-07-03 07:38:30.768027000 Z
+  club_id: 12
+  slug: boys-u8
+  deleted_at: 
+  position: 
+  code: 9FE914
+  logo: 
+  num_players: 15
+team_18:
+  id: 18
+  name: Girls U9
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:31.014504000 Z
+    zone: *1
+    time: 2017-07-03 07:38:31.014504000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 12:38:31.014504000 Z
+    zone: *1
+    time: 2017-07-03 07:38:31.014504000 Z
+  club_id: 12
+  slug: girls-u9
+  deleted_at: 
+  position: 
+  code: 45109D
+  logo: 
+  num_players: 15
+team_19:
+  id: 19
+  name: Boys U10
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.388321000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.388321000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:01:01.475881000 Z
+    zone: *1
+    time: 2017-07-03 08:01:01.475881000 Z
+  club_id: 13
+  slug: boys-u10
+  deleted_at: 
+  position: 
+  code: 6970EC
+  logo: columbus-crew-new-logo.jpg
+  num_players: 20
+team_20:
+  id: 20
+  name: Girls U10
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.647036000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.647036000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.647036000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.647036000 Z
+  club_id: 13
+  slug: girls-u10
+  deleted_at: 
+  position: 
+  code: 90EFE9
+  logo: 
+  num_players: 20
+team_21:
+  id: 21
+  name: Boys U11
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.879056000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.879056000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:01:31.669955000 Z
+    zone: *1
+    time: 2017-07-03 08:01:31.669955000 Z
+  club_id: 13
+  slug: boys-u11
+  deleted_at: 
+  position: 
+  code: 3AF3E5
+  logo: columbus-crew-new-logo.jpg
+  num_players: 20
+team_22:
+  id: 22
+  name: Girls U11
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.940760000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.940760000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-03 13:00:37.940760000 Z
+    zone: *1
+    time: 2017-07-03 08:00:37.940760000 Z
+  club_id: 13
+  slug: girls-u11
+  deleted_at: 
+  position: 
+  code: 5C41BC
+  logo: 
+  num_players: 20
+team_23:
+  id: 23
+  name: Local Players
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.273957000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.273957000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.273957000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.273957000 Z
+  club_id: 14
+  slug: local-players
+  deleted_at: 
+  position: 
+  code: 46F1BF
+  logo: 
+  num_players: 100
+team_24:
+  id: 24
+  name: Non-Local Players
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.372735000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.372735000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2017-07-04 01:10:31.372735000 Z
+    zone: *1
+    time: 2017-07-03 20:10:31.372735000 Z
+  club_id: 14
+  slug: non-local-players
+  deleted_at: 
+  position: 
+  code: CFB118
+  logo: 
+  num_players: 100
