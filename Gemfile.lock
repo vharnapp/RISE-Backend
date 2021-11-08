@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:headwayio/administrate-field-enum.git
+  remote: git://github.com/headwayio/administrate-field-enum.git
   revision: a9b51992df4753f2651d78ff210d9d2f3c14233e
   specs:
     administrate-field-enum (0.0.3)
@@ -7,7 +7,7 @@ GIT
       rails (~> 5.0)
 
 GIT
-  remote: git@github.com:headwayio/administrate-field-nested_has_many.git
+  remote: git://github.com/headwayio/administrate-field-nested_has_many.git
   revision: 30f55e802c7914519851619973d8fd6e4febd42a
   branch: rails_5
   specs:
@@ -17,7 +17,7 @@ GIT
       rails (~> 5.1)
 
 GIT
-  remote: git@github.com:headwayio/administrate.git
+  remote: git://github.com/headwayio/administrate.git
   revision: 1098a09adad949a6a16e4e6a153ea14e1a23629d
   branch: feature/custom_sorting_via_options
   specs:
@@ -34,7 +34,7 @@ GIT
       selectize-rails (~> 0.6)
 
 GIT
-  remote: git@github.com:headwayio/carrier_wave_base64_uploader
+  remote: https://github.com/headwayio/carrier_wave_base64_uploader
   revision: fbaf0f8a73b2a69eba34d975e102fcd1226644d5
   specs:
     carrier_wave_base64_uploader (0.1.2)
@@ -43,7 +43,7 @@ GIT
       rails (~> 5)
 
 GIT
-  remote: git@github.com:jondkinney/canard.git
+  remote: https://github.com/jondkinney/canard.git
   revision: 9223c271e338502be4f871814557a6e1b280fe3f
   branch: feature/fixed-generators-and-rails-5
   specs:
@@ -52,7 +52,7 @@ GIT
       role_model
 
 GIT
-  remote: git@github.com:mfazekas/nondestructive_migrations.git
+  remote: https://github.com/mfazekas/nondestructive_migrations.git
   revision: 0ee19ae8466d3c6e2c727b7c26fdc76ed2dc98cf
   branch: fix-orm-warning
   specs:
@@ -60,7 +60,7 @@ GIT
       activerecord (>= 4.0)
 
 GIT
-  remote: git@github.com:zencoder/zenflow.git
+  remote: https://github.com/zencoder/zenflow.git
   revision: 6319964909d79ea7a9746a995ad02922f63522a3
   specs:
     zenflow (0.8.13)

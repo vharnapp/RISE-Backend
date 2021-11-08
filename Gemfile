@@ -35,11 +35,11 @@ gem 'bootsnap', require: false
 gem 'trix'
 
 gem 'acts_as_list'
-gem 'administrate', git: 'git@github.com:headwayio/administrate.git', branch: 'feature/custom_sorting_via_options'#, path: '/rails/headway/administrate_gems/administrate'
+gem 'administrate', github: 'headwayio/administrate', branch: 'feature/custom_sorting_via_options'#, path: '/rails/headway/administrate_gems/administrate'
 gem 'administrate-field-carrierwave'#, '~> 0.2.0'
 gem 'administrate-field-collection_select'
-gem 'administrate-field-enum', git: 'git@github.com:headwayio/administrate-field-enum.git'
-gem 'administrate-field-nested_has_many', git: 'git@github.com:headwayio/administrate-field-nested_has_many.git', branch: 'rails_5'
+gem 'administrate-field-enum', github: 'headwayio/administrate-field-enum'
+gem 'administrate-field-nested_has_many', github: 'headwayio/administrate-field-nested_has_many', branch: 'rails_5'
 gem 'administrate-field-paperclip'
 gem 'administrate-field-password'
 gem 'administrate-field-select_essential'
@@ -60,7 +60,7 @@ gem 'responders' # respond to json/html/js more easily in controllers
 gem 'turbolinks'
 
 # Authentication / Authorization
-gem 'canard', git: 'git@github.com:jondkinney/canard.git', branch: 'feature/fixed-generators-and-rails-5' # ties into cancancan, adds roles for the user
+gem 'canard', git: 'https://github.com/jondkinney/canard.git', branch: 'feature/fixed-generators-and-rails-5' # ties into cancancan, adds roles for the user
 gem 'cancancan' # authorization library
 gem 'devise', '4.8.0'
 gem 'devise_invitable'
@@ -74,13 +74,13 @@ gem 'dynamic_form' # for custom messages without the database column
 gem 'friendly_id' # slugs in the url auto-generated
 gem 'nested_form_fields' # Dynamically add and remove nested has_many association fields in a Ruby on Rails form
 # gem 'nondestructive_migrations' # data migrations go here, not in regular ActiveRecord migrations
-gem 'nondestructive_migrations', git: 'git@github.com:mfazekas/nondestructive_migrations.git', branch: 'fix-orm-warning'
+gem 'nondestructive_migrations', git: 'https://github.com/mfazekas/nondestructive_migrations.git', branch: 'fix-orm-warning'
 gem 'paranoia' # soft-delete
 gem 'settingslogic' # yaml settings (project wide, non-editable), this is implemented with the model Settings.rb
 
 # User Uploads
 gem 'carrierwave'
-gem 'carrier_wave_base64_uploader', git: 'git@github.com:headwayio/carrier_wave_base64_uploader'
+gem 'carrier_wave_base64_uploader', git: 'https://github.com/headwayio/carrier_wave_base64_uploader'
 gem 'fog'
 gem 'mini_magick'
 
@@ -110,7 +110,7 @@ group :development do
   gem 'fix-db-schema-conflicts' # when working with multiple developers schema order of columns is standardized.
   gem 'meta_request' # for chrome rails console plugin found here: https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg?hl=en-US
   gem 'rails-erd' # auto gen ERD Diagram of models in the app on rake db:migrate
-  gem 'zenflow', git: 'git@github.com:zencoder/zenflow.git'
+  gem 'zenflow', git: 'https://github.com/zencoder/zenflow.git'
 end
 
 group :development, :test do
